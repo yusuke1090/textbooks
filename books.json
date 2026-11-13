@@ -1,0 +1,54 @@
+[
+  {
+    "id": "cow",
+    "icon": "🐄",
+    "langs": [
+      "ja",
+      "en"
+    ],
+    "title": {
+      "ja": "牛の教科書",
+      "en": "Dairy Cow Textbook"
+    },
+    "desc": {
+      "ja": "乳牛のからだ・繁殖と1年1産・エサ（配合飼料・チモシー・アルファルファ・サイレージ）・乳房炎・血乳・スマート酪農。日本語と英語で読めます。",
+      "en": "The dairy cow's body, breeding, feed, mastitis, blood in milk and smart dairy farming — in Japanese and English."
+    },
+    "home": {
+      "url": "https://yusuke1090.github.io/smart-agri-news/",
+      "label": {
+        "ja": "スマート農業News",
+        "en": "Smart Agri News"
+      }
+    },
+    "note": {
+      "ja": "数字は日本のホルスタインのおおよその目安です。病気の治療は獣医師が決めます。",
+      "en": "Numbers are rough guides for Holstein cows in Japan. A veterinarian decides how to treat a sick cow."
+    },
+    "terms": "terms.json",
+    "legacy": {
+      "pos": "cow-book-pos",
+      "lang": "cow-book-lang"
+    }
+  },
+  {
+    "id": "pico",
+    "icon": "🍓",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "ラズパイピコ開発ガイド（C++・VS Code）"
+    },
+    "desc": {
+      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の画面の横にも出るガイドです。"
+    },
+    "home": {
+      "url": "https://github.com/yusuke1090/pico-studio",
+      "label": {
+        "ja": "Pico Studio"
+      }
+    },
+    "glossary": "glossary.json"
+  }
+]

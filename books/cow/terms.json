@@ -1,0 +1,1724 @@
+[
+ {
+  "ja": "乳牛",
+  "yomi": "にゅうぎゅう",
+  "en": "dairy cow / dairy cattle",
+  "mean_ja": "乳をとるための牛（1章）",
+  "mean_en": "Cattle kept for milk (Ch. 1)",
+  "match_ja": [
+   "乳牛"
+  ],
+  "match_en": [
+   "dairy cow",
+   "dairy cattle"
+  ]
+ },
+ {
+  "ja": "肉牛",
+  "yomi": "にくぎゅう",
+  "en": "beef cattle",
+  "mean_ja": "肉をとるための牛",
+  "mean_en": "Cattle kept for meat",
+  "match_ja": [
+   "肉牛"
+  ],
+  "match_en": [
+   "beef cattle"
+  ]
+ },
+ {
+  "ja": "経産牛",
+  "yomi": "けいさんぎゅう",
+  "en": "cow",
+  "mean_ja": "お産をしたことのあるメス",
+  "mean_en": "A female that has calved",
+  "match_ja": [
+   "経産牛"
+  ],
+  "match_en": []
+ },
+ {
+  "ja": "未経産牛（育成牛）",
+  "yomi": "みけいさんぎゅう",
+  "en": "heifer",
+  "mean_ja": "まだお産をしていないメス",
+  "mean_en": "A young female that has not calved yet",
+  "match_ja": [
+   "未経産牛",
+   "育成牛"
+  ],
+  "match_en": [
+   "heifer"
+  ]
+ },
+ {
+  "ja": "子牛",
+  "yomi": "こうし",
+  "en": "calf（複数 calves）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "子牛"
+  ],
+  "match_en": [
+   "calf"
+  ]
+ },
+ {
+  "ja": "種雄牛",
+  "yomi": "しゅゆうぎゅう",
+  "en": "bull / sire",
+  "mean_ja": "精液をとる父牛",
+  "mean_en": "A male used for breeding (semen)",
+  "match_ja": [
+   "種雄牛"
+  ],
+  "match_en": [
+   "bull",
+   "sire"
+  ]
+ },
+ {
+  "ja": "牛群",
+  "yomi": "ぎゅうぐん",
+  "en": "herd",
+  "mean_ja": "牧場の牛の群れ",
+  "mean_en": "All the cows on a farm",
+  "match_ja": [
+   "牛群"
+  ],
+  "match_en": [
+   "herd"
+  ]
+ },
+ {
+  "ja": "反芻動物",
+  "yomi": "はんすうどうぶつ",
+  "en": "ruminant",
+  "mean_ja": "反芻する動物（2章）",
+  "mean_en": "An animal that ruminates (Ch. 2)",
+  "match_ja": [
+   "反芻動物"
+  ],
+  "match_en": [
+   "ruminant"
+  ]
+ },
+ {
+  "ja": "反芻",
+  "yomi": "はんすう",
+  "en": "rumination / chewing the cud",
+  "mean_ja": "飲み込んだエサを口に戻してかむこと",
+  "mean_en": "Bringing food back up and chewing it again",
+  "match_ja": [
+   "反芻"
+  ],
+  "match_en": [
+   "rumination",
+   "chewing the cud"
+  ]
+ },
+ {
+  "ja": "第一胃",
+  "yomi": "だいいちい",
+  "en": "rumen",
+  "mean_ja": "発酵タンクの胃（ミノ）",
+  "mean_en": "The fermentation-tank stomach",
+  "match_ja": [
+   "第一胃"
+  ],
+  "match_en": [
+   "rumen"
+  ]
+ },
+ {
+  "ja": "第二胃",
+  "yomi": "だいにい",
+  "en": "reticulum",
+  "mean_ja": "ハチノス",
+  "mean_en": "The second stomach",
+  "match_ja": [
+   "第二胃"
+  ],
+  "match_en": [
+   "reticulum"
+  ]
+ },
+ {
+  "ja": "第三胃",
+  "yomi": "だいさんい",
+  "en": "omasum",
+  "mean_ja": "センマイ",
+  "mean_en": "The third stomach",
+  "match_ja": [
+   "第三胃"
+  ],
+  "match_en": [
+   "omasum"
+  ]
+ },
+ {
+  "ja": "第四胃",
+  "yomi": "だいよんい",
+  "en": "abomasum",
+  "mean_ja": "ギアラ。人の胃と同じ",
+  "mean_en": "The fourth, \"true\" stomach",
+  "match_ja": [
+   "第四胃"
+  ],
+  "match_en": [
+   "abomasum"
+  ]
+ },
+ {
+  "ja": "揮発性脂肪酸",
+  "yomi": "きはつせいしぼうさん",
+  "en": "volatile fatty acids（VFA）",
+  "mean_ja": "第一胃の発酵でできる、牛のエネルギー",
+  "mean_en": "Made by rumen fermentation; the cow's main energy",
+  "match_ja": [
+   "揮発性脂肪酸"
+  ],
+  "match_en": [
+   "volatile fatty acids"
+  ]
+ },
+ {
+  "ja": "げっぷ",
+  "yomi": "げっぷ",
+  "en": "belching / eructation",
+  "mean_ja": "メタンが出る",
+  "mean_en": "How methane leaves the cow",
+  "match_ja": [
+   "げっぷ"
+  ],
+  "match_en": [
+   "belching",
+   "eructation"
+  ]
+ },
+ {
+  "ja": "体温",
+  "yomi": "たいおん",
+  "en": "body temperature",
+  "mean_ja": "38.0〜39.0 ℃",
+  "mean_en": "38.0–39.0 °C",
+  "match_ja": [
+   "体温"
+  ],
+  "match_en": [
+   "body temperature"
+  ]
+ },
+ {
+  "ja": "ボディコンディションスコア",
+  "yomi": "",
+  "en": "body condition score（BCS）",
+  "mean_ja": "やせ・太りの点数（1〜5）",
+  "mean_en": "A 1–5 score of how thin or fat a cow is",
+  "match_ja": [
+   "ボディコンディションスコア"
+  ],
+  "match_en": [
+   "body condition score"
+  ]
+ },
+ {
+  "ja": "繁殖",
+  "yomi": "はんしょく",
+  "en": "reproduction / breeding",
+  "mean_ja": "（3章）",
+  "mean_en": "(Ch. 3)",
+  "match_ja": [
+   "繁殖"
+  ],
+  "match_en": [
+   "reproduction",
+   "breeding"
+  ]
+ },
+ {
+  "ja": "発情",
+  "yomi": "はつじょう",
+  "en": "estrus / heat",
+  "mean_ja": "交配を受け入れる状態",
+  "mean_en": "The time when a female accepts mating",
+  "match_ja": [
+   "発情"
+  ],
+  "match_en": [
+   "estrus",
+   "heat"
+  ]
+ },
+ {
+  "ja": "発情周期",
+  "yomi": "はつじょうしゅうき",
+  "en": "estrous cycle",
+  "mean_ja": "約 21日",
+  "mean_en": "About 21 days",
+  "match_ja": [
+   "発情周期"
+  ],
+  "match_en": [
+   "estrous cycle"
+  ]
+ },
+ {
+  "ja": "排卵",
+  "yomi": "はいらん",
+  "en": "ovulation",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "排卵"
+  ],
+  "match_en": [
+   "ovulation"
+  ]
+ },
+ {
+  "ja": "人工授精",
+  "yomi": "じんこうじゅせい",
+  "en": "artificial insemination（AI）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "人工授精"
+  ],
+  "match_en": [
+   "artificial insemination"
+  ]
+ },
+ {
+  "ja": "授精師",
+  "yomi": "じゅせいし",
+  "en": "AI technician / inseminator",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "授精師"
+  ],
+  "match_en": [
+   "AI technician",
+   "inseminator"
+  ]
+ },
+ {
+  "ja": "凍結精液",
+  "yomi": "とうけつせいえき",
+  "en": "frozen semen（straw）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "凍結精液"
+  ],
+  "match_en": [
+   "frozen semen"
+  ]
+ },
+ {
+  "ja": "性選別精液",
+  "yomi": "せいせんべつせいえき",
+  "en": "sexed semen",
+  "mean_ja": "メスが生まれやすい精液",
+  "mean_en": "Semen that gives mostly female calves",
+  "match_ja": [
+   "性選別精液"
+  ],
+  "match_en": [
+   "sexed semen"
+  ]
+ },
+ {
+  "ja": "受胎",
+  "yomi": "じゅたい",
+  "en": "conception",
+  "mean_ja": "妊娠が成立すること",
+  "mean_en": "Becoming pregnant",
+  "match_ja": [
+   "受胎"
+  ],
+  "match_en": [
+   "conception"
+  ]
+ },
+ {
+  "ja": "受胎率",
+  "yomi": "じゅたいりつ",
+  "en": "conception rate",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "受胎率"
+  ],
+  "match_en": [
+   "conception rate"
+  ]
+ },
+ {
+  "ja": "妊娠鑑定",
+  "yomi": "にんしんかんてい",
+  "en": "pregnancy check / diagnosis",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "妊娠鑑定"
+  ],
+  "match_en": [
+   "pregnancy check",
+   "diagnosis"
+  ]
+ },
+ {
+  "ja": "妊娠期間",
+  "yomi": "にんしんきかん",
+  "en": "gestation period",
+  "mean_ja": "約 280日",
+  "mean_en": "About 280 days",
+  "match_ja": [
+   "妊娠期間"
+  ],
+  "match_en": [
+   "gestation period"
+  ]
+ },
+ {
+  "ja": "分娩",
+  "yomi": "ぶんべん",
+  "en": "calving / parturition",
+  "mean_ja": "お産",
+  "mean_en": "Giving birth",
+  "match_ja": [
+   "分娩"
+  ],
+  "match_en": [
+   "calving",
+   "parturition"
+  ]
+ },
+ {
+  "ja": "分娩間隔",
+  "yomi": "ぶんべんかんかく",
+  "en": "calving interval",
+  "mean_ja": "お産からお産まで",
+  "mean_en": "Days from one calving to the next",
+  "match_ja": [
+   "分娩間隔"
+  ],
+  "match_en": [
+   "calving interval"
+  ]
+ },
+ {
+  "ja": "空胎日数",
+  "yomi": "くうたいにっすう",
+  "en": "days open",
+  "mean_ja": "お産から妊娠まで",
+  "mean_en": "Days from calving to pregnancy",
+  "match_ja": [
+   "空胎日数"
+  ],
+  "match_en": [
+   "days open"
+  ]
+ },
+ {
+  "ja": "1年1産",
+  "yomi": "いちねんいっさん",
+  "en": "one calf per cow per year",
+  "mean_ja": "分娩間隔 365日",
+  "mean_en": "A 365-day calving interval",
+  "match_ja": [],
+  "match_en": [
+   "one calf per cow per year"
+  ]
+ },
+ {
+  "ja": "難産",
+  "yomi": "なんざん",
+  "en": "dystocia / difficult calving",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "難産"
+  ],
+  "match_en": [
+   "dystocia",
+   "difficult calving"
+  ]
+ },
+ {
+  "ja": "初乳",
+  "yomi": "しょにゅう",
+  "en": "colostrum",
+  "mean_ja": "抗体の多い最初の乳（4章）",
+  "mean_en": "First milk, full of antibodies (Ch. 4)",
+  "match_ja": [
+   "初乳"
+  ],
+  "match_en": [
+   "colostrum"
+  ]
+ },
+ {
+  "ja": "代用乳",
+  "yomi": "だいようにゅう",
+  "en": "milk replacer",
+  "mean_ja": "子牛用の粉ミルク",
+  "mean_en": "Powdered milk for calves",
+  "match_ja": [
+   "代用乳"
+  ],
+  "match_en": [
+   "milk replacer"
+  ]
+ },
+ {
+  "ja": "哺乳",
+  "yomi": "ほにゅう",
+  "en": "milk feeding",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "哺乳"
+  ],
+  "match_en": [
+   "milk feeding"
+  ]
+ },
+ {
+  "ja": "離乳",
+  "yomi": "りにゅう",
+  "en": "weaning",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "離乳"
+  ],
+  "match_en": [
+   "weaning"
+  ]
+ },
+ {
+  "ja": "下痢",
+  "yomi": "げり",
+  "en": "diarrhea / scours",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "下痢"
+  ],
+  "match_en": [
+   "diarrhea",
+   "scours"
+  ]
+ },
+ {
+  "ja": "飼料",
+  "yomi": "しりょう",
+  "en": "feed",
+  "mean_ja": "エサ（5章）",
+  "mean_en": "(Ch. 5)",
+  "match_ja": [],
+  "match_en": []
+ },
+ {
+  "ja": "粗飼料",
+  "yomi": "そしりょう",
+  "en": "roughage / forage",
+  "mean_ja": "繊維の多いエサ",
+  "mean_en": "Fiber-rich feed",
+  "match_ja": [
+   "粗飼料"
+  ],
+  "match_en": [
+   "roughage",
+   "forage"
+  ]
+ },
+ {
+  "ja": "濃厚飼料",
+  "yomi": "のうこうしりょう",
+  "en": "concentrate",
+  "mean_ja": "栄養の濃いエサ",
+  "mean_en": "Nutrient-dense feed",
+  "match_ja": [
+   "濃厚飼料"
+  ],
+  "match_en": [
+   "concentrate"
+  ]
+ },
+ {
+  "ja": "配合飼料",
+  "yomi": "はいごうしりょう",
+  "en": "compound feed / formulated feed",
+  "mean_ja": "工場で混ぜたエサ",
+  "mean_en": "Feed mixed in a factory",
+  "match_ja": [
+   "配合飼料"
+  ],
+  "match_en": [
+   "compound feed",
+   "formulated feed"
+  ]
+ },
+ {
+  "ja": "単味飼料",
+  "yomi": "たんみしりょう",
+  "en": "single feed ingredient",
+  "mean_ja": "1種類だけの原料",
+  "mean_en": "A feed of only one ingredient",
+  "match_ja": [
+   "単味飼料"
+  ],
+  "match_en": [
+   "single feed ingredient"
+  ]
+ },
+ {
+  "ja": "自給飼料",
+  "yomi": "じきゅうしりょう",
+  "en": "home-grown feed",
+  "mean_ja": "自分の畑で作るエサ",
+  "mean_en": "Feed grown on the farm",
+  "match_ja": [
+   "自給飼料"
+  ],
+  "match_en": [
+   "home-grown feed"
+  ]
+ },
+ {
+  "ja": "牧草",
+  "yomi": "ぼくそう",
+  "en": "grass / forage crop",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [],
+  "match_en": []
+ },
+ {
+  "ja": "乾草",
+  "yomi": "かんそう",
+  "en": "hay",
+  "mean_ja": "乾かした牧草（6章）",
+  "mean_en": "Dried grass (Ch. 6)",
+  "match_ja": [
+   "乾草"
+  ],
+  "match_en": [
+   "hay"
+  ]
+ },
+ {
+  "ja": "チモシー",
+  "yomi": "",
+  "en": "timothy",
+  "mean_ja": "イネ科の牧草",
+  "mean_en": "A grass",
+  "match_ja": [
+   "チモシー"
+  ],
+  "match_en": [
+   "timothy"
+  ]
+ },
+ {
+  "ja": "アルファルファ",
+  "yomi": "",
+  "en": "alfalfa / lucerne",
+  "mean_ja": "マメ科の牧草",
+  "mean_en": "A legume",
+  "match_ja": [
+   "アルファルファ"
+  ],
+  "match_en": [
+   "alfalfa",
+   "lucerne"
+  ]
+ },
+ {
+  "ja": "イネ科",
+  "yomi": "いねか",
+  "en": "grasses",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "イネ科"
+  ],
+  "match_en": [
+   "grasses"
+  ]
+ },
+ {
+  "ja": "マメ科",
+  "yomi": "まめか",
+  "en": "legumes",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "マメ科"
+  ],
+  "match_en": [
+   "legumes"
+  ]
+ },
+ {
+  "ja": "稲わら",
+  "yomi": "いなわら",
+  "en": "rice straw",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "稲わら"
+  ],
+  "match_en": [
+   "rice straw"
+  ]
+ },
+ {
+  "ja": "サイレージ",
+  "yomi": "",
+  "en": "silage",
+  "mean_ja": "発酵させたエサ（7章）",
+  "mean_en": "Fermented feed (Ch. 7)",
+  "match_ja": [
+   "サイレージ"
+  ],
+  "match_en": [
+   "silage"
+  ]
+ },
+ {
+  "ja": "コーンサイレージ",
+  "yomi": "",
+  "en": "corn silage",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "コーンサイレージ"
+  ],
+  "match_en": [
+   "corn silage"
+  ]
+ },
+ {
+  "ja": "ラップサイレージ",
+  "yomi": "",
+  "en": "wrapped bale silage / baleage",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "ラップサイレージ"
+  ],
+  "match_en": [
+   "wrapped bale silage",
+   "baleage"
+  ]
+ },
+ {
+  "ja": "サイロ",
+  "yomi": "",
+  "en": "silo",
+  "mean_ja": "サイレージを作る場所",
+  "mean_en": "Where silage is made",
+  "match_ja": [
+   "サイロ"
+  ],
+  "match_en": [
+   "silo"
+  ]
+ },
+ {
+  "ja": "乳酸菌",
+  "yomi": "にゅうさんきん",
+  "en": "lactic acid bacteria",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳酸菌"
+  ],
+  "match_en": [
+   "lactic acid bacteria"
+  ]
+ },
+ {
+  "ja": "二次発酵",
+  "yomi": "にじはっこう",
+  "en": "aerobic spoilage / secondary fermentation",
+  "mean_ja": "開けたあとに傷むこと",
+  "mean_en": "Spoiling after the silo is opened",
+  "match_ja": [
+   "二次発酵"
+  ],
+  "match_en": [
+   "aerobic spoilage",
+   "secondary fermentation"
+  ]
+ },
+ {
+  "ja": "穀類",
+  "yomi": "こくるい",
+  "en": "grains",
+  "mean_ja": "トウモロコシ（corn / maize）、大麦（barley）",
+  "mean_en": "corn / maize（トウモロコシ）, barley（大麦）",
+  "match_ja": [
+   "穀類"
+  ],
+  "match_en": []
+ },
+ {
+  "ja": "大豆かす",
+  "yomi": "だいずかす",
+  "en": "soybean meal",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "大豆かす"
+  ],
+  "match_en": [
+   "soybean meal"
+  ]
+ },
+ {
+  "ja": "ふすま",
+  "yomi": "",
+  "en": "wheat bran",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "ふすま"
+  ],
+  "match_en": [
+   "wheat bran"
+  ]
+ },
+ {
+  "ja": "TMR",
+  "yomi": "",
+  "en": "total mixed ration",
+  "mean_ja": "全部混ぜたエサ",
+  "mean_en": "Feed with everything mixed together",
+  "match_ja": [
+   "TMR"
+  ],
+  "match_en": [
+   "total mixed ration"
+  ]
+ },
+ {
+  "ja": "乾物",
+  "yomi": "かんぶつ",
+  "en": "dry matter（DM）",
+  "mean_ja": "水分を除いた部分",
+  "mean_en": "What is left without water",
+  "match_ja": [
+   "乾物"
+  ],
+  "match_en": [
+   "dry matter"
+  ]
+ },
+ {
+  "ja": "乾物摂取量",
+  "yomi": "かんぶつせっしゅりょう",
+  "en": "dry matter intake（DMI）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乾物摂取量"
+  ],
+  "match_en": [
+   "dry matter intake"
+  ]
+ },
+ {
+  "ja": "粗たんぱく質",
+  "yomi": "そたんぱくしつ",
+  "en": "crude protein（CP）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "粗たんぱく質"
+  ],
+  "match_en": [
+   "crude protein"
+  ]
+ },
+ {
+  "ja": "繊維",
+  "yomi": "せんい",
+  "en": "fiber（NDF）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [],
+  "match_en": [
+   "fiber"
+  ]
+ },
+ {
+  "ja": "飼料自給率",
+  "yomi": "しりょうじきゅうりつ",
+  "en": "feed self-sufficiency rate",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "飼料自給率"
+  ],
+  "match_en": [
+   "feed self-sufficiency rate"
+  ]
+ },
+ {
+  "ja": "生乳",
+  "yomi": "せいにゅう",
+  "en": "raw milk",
+  "mean_ja": "搾ったままの乳（8章）",
+  "mean_en": "Milk as it comes from the cow (Ch. 8)",
+  "match_ja": [
+   "生乳"
+  ],
+  "match_en": [
+   "raw milk"
+  ]
+ },
+ {
+  "ja": "乳房",
+  "yomi": "にゅうぼう",
+  "en": "udder",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳房"
+  ],
+  "match_en": [
+   "udder"
+  ]
+ },
+ {
+  "ja": "分房",
+  "yomi": "ぶんぼう",
+  "en": "quarter",
+  "mean_ja": "乳房の 4つの部屋",
+  "mean_en": "One of the four parts of the udder",
+  "match_ja": [
+   "分房"
+  ],
+  "match_en": [
+   "quarter"
+  ]
+ },
+ {
+  "ja": "乳頭",
+  "yomi": "にゅうとう",
+  "en": "teat",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳頭"
+  ],
+  "match_en": [
+   "teat"
+  ]
+ },
+ {
+  "ja": "乳頭口",
+  "yomi": "にゅうとうこう",
+  "en": "teat end / teat canal",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳頭口"
+  ],
+  "match_en": [
+   "teat end",
+   "teat canal"
+  ]
+ },
+ {
+  "ja": "泌乳",
+  "yomi": "ひにゅう",
+  "en": "lactation",
+  "mean_ja": "乳を出すこと",
+  "mean_en": "Giving milk",
+  "match_ja": [
+   "泌乳"
+  ],
+  "match_en": [
+   "lactation"
+  ]
+ },
+ {
+  "ja": "泌乳曲線",
+  "yomi": "ひにゅうきょくせん",
+  "en": "lactation curve",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "泌乳曲線"
+  ],
+  "match_en": [
+   "lactation curve"
+  ]
+ },
+ {
+  "ja": "乾乳",
+  "yomi": "かんにゅう",
+  "en": "dry-off / dry period",
+  "mean_ja": "乳を止めて休ませる",
+  "mean_en": "Stopping milking to rest the cow",
+  "match_ja": [
+   "乾乳"
+  ],
+  "match_en": [
+   "dry-off",
+   "dry period"
+  ]
+ },
+ {
+  "ja": "乾乳牛",
+  "yomi": "かんにゅうぎゅう",
+  "en": "dry cow",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乾乳牛"
+  ],
+  "match_en": []
+ },
+ {
+  "ja": "搾乳",
+  "yomi": "さくにゅう",
+  "en": "milking",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [],
+  "match_en": []
+ },
+ {
+  "ja": "前搾り",
+  "yomi": "ぜんしぼり",
+  "en": "forestripping",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "前搾り"
+  ],
+  "match_en": [
+   "forestripping"
+  ]
+ },
+ {
+  "ja": "ディッピング",
+  "yomi": "",
+  "en": "teat dipping（pre-dip / post-dip）",
+  "mean_ja": "乳頭の消毒",
+  "mean_en": "Disinfecting the teats",
+  "match_ja": [
+   "ディッピング"
+  ],
+  "match_en": [
+   "teat dipping"
+  ]
+ },
+ {
+  "ja": "ミルカー",
+  "yomi": "",
+  "en": "milking unit / cluster",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "ミルカー"
+  ],
+  "match_en": [
+   "milking unit",
+   "cluster"
+  ]
+ },
+ {
+  "ja": "搾乳ロボット",
+  "yomi": "さくにゅうロボット",
+  "en": "milking robot / automatic milking system（AMS）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "搾乳ロボット"
+  ],
+  "match_en": [
+   "milking robot",
+   "automatic milking system"
+  ]
+ },
+ {
+  "ja": "ミルキングパーラー",
+  "yomi": "",
+  "en": "milking parlor",
+  "mean_ja": "搾乳室",
+  "mean_en": "A milking room",
+  "match_ja": [
+   "ミルキングパーラー"
+  ],
+  "match_en": [
+   "milking parlor"
+  ]
+ },
+ {
+  "ja": "射乳",
+  "yomi": "しゃにゅう",
+  "en": "milk let-down",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "射乳"
+  ],
+  "match_en": [
+   "milk let-down"
+  ]
+ },
+ {
+  "ja": "乳量",
+  "yomi": "にゅうりょう",
+  "en": "milk yield",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳量"
+  ],
+  "match_en": [
+   "milk yield"
+  ]
+ },
+ {
+  "ja": "乳脂肪",
+  "yomi": "にゅうしぼう",
+  "en": "milk fat / butterfat",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳脂肪"
+  ],
+  "match_en": [
+   "milk fat",
+   "butterfat"
+  ]
+ },
+ {
+  "ja": "乳たんぱく質",
+  "yomi": "にゅうたんぱくしつ",
+  "en": "milk protein",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳たんぱく質"
+  ],
+  "match_en": [
+   "milk protein"
+  ]
+ },
+ {
+  "ja": "乳糖",
+  "yomi": "にゅうとう",
+  "en": "lactose",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳糖"
+  ],
+  "match_en": [
+   "lactose"
+  ]
+ },
+ {
+  "ja": "体細胞数",
+  "yomi": "たいさいぼうすう",
+  "en": "somatic cell count（SCC）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "体細胞数"
+  ],
+  "match_en": [
+   "somatic cell count"
+  ]
+ },
+ {
+  "ja": "牛群検定",
+  "yomi": "ぎゅうぐんけんてい",
+  "en": "milk recording / DHI",
+  "mean_ja": "月 1回の乳の検査",
+  "mean_en": "Monthly milk testing",
+  "match_ja": [
+   "牛群検定"
+  ],
+  "match_en": [
+   "milk recording",
+   "DHI"
+  ]
+ },
+ {
+  "ja": "休薬期間",
+  "yomi": "きゅうやくきかん",
+  "en": "withdrawal period",
+  "mean_ja": "薬を使ったあと出荷できない期間",
+  "mean_en": "Time after a drug when milk cannot be shipped",
+  "match_ja": [
+   "休薬期間"
+  ],
+  "match_en": [
+   "withdrawal period"
+  ]
+ },
+ {
+  "ja": "バルククーラー",
+  "yomi": "",
+  "en": "bulk tank",
+  "mean_ja": "乳を冷やすタンク",
+  "mean_en": "A tank that cools milk",
+  "match_ja": [
+   "バルククーラー"
+  ],
+  "match_en": [
+   "bulk tank"
+  ]
+ },
+ {
+  "ja": "乳房炎",
+  "yomi": "にゅうぼうえん",
+  "en": "mastitis",
+  "mean_ja": "（9章）",
+  "mean_en": "(Ch. 9)",
+  "match_ja": [
+   "乳房炎"
+  ],
+  "match_en": [
+   "mastitis"
+  ]
+ },
+ {
+  "ja": "臨床型乳房炎",
+  "yomi": "りんしょうがた",
+  "en": "clinical mastitis",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "臨床型乳房炎"
+  ],
+  "match_en": [
+   "clinical mastitis"
+  ]
+ },
+ {
+  "ja": "潜在性乳房炎",
+  "yomi": "せんざいせい",
+  "en": "subclinical mastitis",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "潜在性乳房炎"
+  ],
+  "match_en": [
+   "subclinical mastitis"
+  ]
+ },
+ {
+  "ja": "大腸菌",
+  "yomi": "だいちょうきん",
+  "en": "E. coli（Escherichia coli）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "大腸菌"
+  ],
+  "match_en": [
+   "E. coli"
+  ]
+ },
+ {
+  "ja": "黄色ブドウ球菌",
+  "yomi": "おうしょくブドウきゅうきん",
+  "en": "Staphylococcus aureus（Staph aureus）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "黄色ブドウ球菌"
+  ],
+  "match_en": [
+   "Staphylococcus aureus"
+  ]
+ },
+ {
+  "ja": "伝染性",
+  "yomi": "でんせんせい",
+  "en": "contagious",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "伝染性"
+  ],
+  "match_en": [
+   "contagious"
+  ]
+ },
+ {
+  "ja": "環境性",
+  "yomi": "かんきょうせい",
+  "en": "environmental",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "環境性"
+  ],
+  "match_en": [
+   "environmental"
+  ]
+ },
+ {
+  "ja": "エンドトキシン（内毒素）",
+  "yomi": "ないどくそ",
+  "en": "endotoxin",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "エンドトキシン",
+   "内毒素"
+  ],
+  "match_en": [
+   "endotoxin"
+  ]
+ },
+ {
+  "ja": "敷料",
+  "yomi": "しきりょう",
+  "en": "bedding",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "敷料"
+  ],
+  "match_en": [
+   "bedding"
+  ]
+ },
+ {
+  "ja": "血乳",
+  "yomi": "けつにゅう",
+  "en": "blood in milk / bloody milk",
+  "mean_ja": "（10章）",
+  "mean_en": "(Ch. 10)",
+  "match_ja": [
+   "血乳"
+  ],
+  "match_en": [
+   "blood in milk",
+   "bloody milk"
+  ]
+ },
+ {
+  "ja": "乳房浮腫",
+  "yomi": "にゅうぼうふしゅ",
+  "en": "udder edema",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳房浮腫"
+  ],
+  "match_en": [
+   "udder edema"
+  ]
+ },
+ {
+  "ja": "周産期",
+  "yomi": "しゅうさんき",
+  "en": "transition period / periparturient period",
+  "mean_ja": "（11章）",
+  "mean_en": "(Ch. 11)",
+  "match_ja": [
+   "周産期"
+  ],
+  "match_en": [
+   "transition period",
+   "periparturient period"
+  ]
+ },
+ {
+  "ja": "乳熱",
+  "yomi": "にゅうねつ",
+  "en": "milk fever（hypocalcemia）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "乳熱"
+  ],
+  "match_en": [
+   "milk fever"
+  ]
+ },
+ {
+  "ja": "ケトーシス",
+  "yomi": "",
+  "en": "ketosis",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "ケトーシス"
+  ],
+  "match_en": [
+   "ketosis"
+  ]
+ },
+ {
+  "ja": "第四胃変位",
+  "yomi": "だいよんいへんい",
+  "en": "displaced abomasum（DA）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "第四胃変位"
+  ],
+  "match_en": [
+   "displaced abomasum"
+  ]
+ },
+ {
+  "ja": "胎盤停滞",
+  "yomi": "たいばんていたい",
+  "en": "retained placenta",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "胎盤停滞"
+  ],
+  "match_en": [
+   "retained placenta"
+  ]
+ },
+ {
+  "ja": "子宮炎",
+  "yomi": "しきゅうえん",
+  "en": "metritis",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "子宮炎"
+  ],
+  "match_en": [
+   "metritis"
+  ]
+ },
+ {
+  "ja": "ルーメンアシドーシス",
+  "yomi": "",
+  "en": "rumen acidosis（SARA）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "ルーメンアシドーシス"
+  ],
+  "match_en": [
+   "rumen acidosis"
+  ]
+ },
+ {
+  "ja": "鼓脹症",
+  "yomi": "こちょうしょう",
+  "en": "bloat",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "鼓脹症"
+  ],
+  "match_en": [
+   "bloat"
+  ]
+ },
+ {
+  "ja": "跛行",
+  "yomi": "はこう",
+  "en": "lameness",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "跛行"
+  ],
+  "match_en": [
+   "lameness"
+  ]
+ },
+ {
+  "ja": "削蹄",
+  "yomi": "さくてい",
+  "en": "hoof trimming",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "削蹄"
+  ],
+  "match_en": [
+   "hoof trimming"
+  ]
+ },
+ {
+  "ja": "趾皮膚炎",
+  "yomi": "しひふえん",
+  "en": "digital dermatitis（DD）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "趾皮膚炎"
+  ],
+  "match_en": [
+   "digital dermatitis"
+  ]
+ },
+ {
+  "ja": "暑熱ストレス",
+  "yomi": "しょねつストレス",
+  "en": "heat stress",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "暑熱ストレス"
+  ],
+  "match_en": [
+   "heat stress"
+  ]
+ },
+ {
+  "ja": "温湿度指数",
+  "yomi": "おんしつどしすう",
+  "en": "temperature-humidity index（THI）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "温湿度指数"
+  ],
+  "match_en": [
+   "temperature-humidity index"
+  ]
+ },
+ {
+  "ja": "抗生物質",
+  "yomi": "こうせいぶっしつ",
+  "en": "antibiotic",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "抗生物質"
+  ],
+  "match_en": [
+   "antibiotic"
+  ]
+ },
+ {
+  "ja": "獣医師",
+  "yomi": "じゅういし",
+  "en": "veterinarian（vet）",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "獣医師"
+  ],
+  "match_en": [
+   "veterinarian"
+  ]
+ },
+ {
+  "ja": "酪農",
+  "yomi": "らくのう",
+  "en": "dairy farming",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "酪農"
+  ],
+  "match_en": [
+   "dairy farming"
+  ]
+ },
+ {
+  "ja": "酪農家",
+  "yomi": "らくのうか",
+  "en": "dairy farmer",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "酪農家"
+  ],
+  "match_en": [
+   "dairy farmer"
+  ]
+ },
+ {
+  "ja": "牛舎",
+  "yomi": "ぎゅうしゃ",
+  "en": "barn / cowshed",
+  "mean_ja": "（12章）",
+  "mean_en": "(Ch. 12)",
+  "match_ja": [
+   "牛舎"
+  ],
+  "match_en": [
+   "barn",
+   "cowshed"
+  ]
+ },
+ {
+  "ja": "つなぎ飼い",
+  "yomi": "つなぎがい",
+  "en": "tie-stall",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "つなぎ飼い"
+  ],
+  "match_en": [
+   "tie-stall"
+  ]
+ },
+ {
+  "ja": "フリーストール",
+  "yomi": "",
+  "en": "free-stall",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "フリーストール"
+  ],
+  "match_en": [
+   "free-stall"
+  ]
+ },
+ {
+  "ja": "放牧",
+  "yomi": "ほうぼく",
+  "en": "grazing",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "放牧"
+  ],
+  "match_en": [
+   "grazing"
+  ]
+ },
+ {
+  "ja": "カウコンフォート",
+  "yomi": "",
+  "en": "cow comfort",
+  "mean_ja": "牛の快適さ",
+  "mean_en": "How comfortable cows are",
+  "match_ja": [
+   "カウコンフォート"
+  ],
+  "match_en": [
+   "cow comfort"
+  ]
+ },
+ {
+  "ja": "耳標",
+  "yomi": "じひょう",
+  "en": "ear tag",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "耳標"
+  ],
+  "match_en": [
+   "ear tag"
+  ]
+ },
+ {
+  "ja": "個体識別番号",
+  "yomi": "こたいしきべつばんごう",
+  "en": "individual identification number",
+  "mean_ja": "耳標の 10けたの番号",
+  "mean_en": "The 10-digit number on the ear tag",
+  "match_ja": [
+   "個体識別番号"
+  ],
+  "match_en": [
+   "individual identification number"
+  ]
+ },
+ {
+  "ja": "活動量計",
+  "yomi": "かつどうりょうけい",
+  "en": "activity monitor / pedometer",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "活動量計"
+  ],
+  "match_en": [
+   "activity monitor",
+   "pedometer"
+  ]
+ },
+ {
+  "ja": "首輪",
+  "yomi": "くびわ",
+  "en": "collar",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "首輪"
+  ],
+  "match_en": [
+   "collar"
+  ]
+ },
+ {
+  "ja": "加速度センサー",
+  "yomi": "かそくどセンサー",
+  "en": "accelerometer",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "加速度センサー"
+  ],
+  "match_en": [
+   "accelerometer"
+  ]
+ },
+ {
+  "ja": "発情発見",
+  "yomi": "はつじょうはっけん",
+  "en": "heat detection",
+  "mean_ja": "",
+  "mean_en": "",
+  "match_ja": [
+   "発情発見"
+  ],
+  "match_en": [
+   "heat detection"
+  ]
+ },
+ {
+  "ja": "電気伝導度",
+  "yomi": "でんきでんどうど",
+  "en": "electrical conductivity",
+  "mean_ja": "乳房炎の目安",
+  "mean_en": "A sign of mastitis",
+  "match_ja": [
+   "電気伝導度"
+  ],
+  "match_en": [
+   "electrical conductivity"
+  ]
+ },
+ {
+  "ja": "精密畜産",
+  "yomi": "せいみつちくさん",
+  "en": "precision livestock farming（PLF）",
+  "mean_ja": "センサーで1頭ずつ管理する畜産",
+  "mean_en": "Managing each animal with sensors",
+  "match_ja": [
+   "精密畜産"
+  ],
+  "match_en": [
+   "precision livestock farming"
+  ]
+ }
+]

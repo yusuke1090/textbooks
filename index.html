@@ -1,0 +1,1141 @@
+<!doctype html>
+<html lang="ja" data-no-tr-chip>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>教科書</title>
+<meta name="description" content="いろいろなことを勉強するための教科書。牛の教科書、ラズパイピコ開発ガイドなど。">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>📚</text></svg>">
+<style>
+:root {
+  --bg: #f5f7f2; --panel: #ffffff; --border: #dde3d6; --text: #1e2a1c; --muted: #66735f;
+  --accent: #2e7d32; --accent-soft: #cfe6cc; --link: #1b5e20; --th: #eef3ea; --quote: #fff8e1; --quote-border: #f0c75e;
+  --code-bg: #fbfbfa; --ok: #1f7a3d; --warn: #c27c0e; --err: #d64545;
+  --hl-yellow: rgba(255, 214, 0, .55); --hl-pink: rgba(255, 105, 180, .38); --hl-green: rgba(60, 200, 100, .36);
+  --hl-blue: rgba(80, 150, 255, .34); --st-yellow: #f7d84a; --st-pink: #f6a5c8; --st-green: #8fd4a4; --st-blue: #9cc0fa;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #121611; --panel: #1a2019; --border: #2d372a; --text: #e4ebdf; --muted: #93a08c;
+    --accent: #66bb6a; --accent-soft: #2f4a2f; --link: #a5d6a7; --th: #222b20; --quote: #2a2618; --quote-border: #8a7330;
+    --code-bg: #151a14; --ok: #66bb6a; --warn: #e3a33b; --err: #f06a6a;
+    --hl-yellow: rgba(255, 214, 0, .38); --hl-pink: rgba(255, 92, 170, .45); --hl-green: rgba(70, 210, 110, .38); --hl-blue: rgba(90, 150, 255, .48);
+  }
+}
+* { box-sizing: border-box; }
+html { scroll-padding-top: 64px; }
+body { margin: 0; background: var(--bg); color: var(--text);
+  font: 15.5px/1.85 system-ui, -apple-system, "Hiragino Sans", "Noto Sans JP", "Yu Gothic", sans-serif; }
+a { color: var(--link); }
+button { font: inherit; }
+.wrap { max-width: 820px; margin: 0 auto; padding: 0 16px; }
+[hidden] { display: none !important; }
+
+/* ---------- 本棚 ---------- */
+.shelf-head { background: var(--panel); border-bottom: 1px solid var(--border); }
+.shelf-head .wrap { padding-top: 26px; padding-bottom: 20px; }
+.shelf-head h1 { margin: 0 0 4px; font-size: 24px; }
+.shelf-head p { margin: 0; color: var(--muted); font-size: 14px; }
+.books { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); padding: 22px 0 40px; }
+.card { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border: 1px solid var(--border); border-radius: 14px;
+  background: var(--panel); color: var(--text); text-decoration: none; }
+.card:hover { border-color: var(--accent); }
+.card .ic { font-size: 34px; line-height: 1.2; }
+.card h2 { margin: 0; font-size: 18px; line-height: 1.5; }
+.card .en { color: var(--muted); font-size: 13px; }
+.card p { margin: 2px 0 0; font-size: 13.5px; line-height: 1.7; color: var(--muted); }
+.card .meta { margin-top: auto; padding-top: 8px; font-size: 12.5px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
+.card .meta b { color: var(--link); font-weight: 600; }
+
+/* ---------- 読む画面 ---------- */
+header.top { background: var(--panel); border-bottom: 1px solid var(--border); }
+header.top .wrap { display: flex; align-items: center; gap: 8px 12px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; }
+.shelf-link { font-size: 13.5px; text-decoration: none; }
+.brand { font-size: 17px; font-weight: 700; margin-right: auto; }
+.home { font-size: 13px; text-decoration: none; }
+.home:hover, .shelf-link:hover { text-decoration: underline; }
+.langs { display: flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
+.langs button { font-size: 13px; padding: 3px 14px; border: 0; background: var(--panel); color: var(--muted); cursor: pointer; }
+.langs button[aria-pressed="true"] { background: var(--accent); color: #fff; font-weight: 700; }
+.bar { position: sticky; top: 0; z-index: 10; background: var(--bg); border-bottom: 1px solid var(--border); }
+.bar > .wrap { display: flex; gap: 6px; padding-top: 8px; padding-bottom: 8px; }
+.bar button { cursor: pointer; border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 8px; }
+.bar .step { width: 42px; flex: none; font-size: 14px; }
+.bar .step:disabled { opacity: .4; cursor: default; }
+#annoBtn { width: 46px; flex: none; font-size: 16px; }
+#annoBtn.on { border-color: var(--accent); }
+#tocBtn { flex: 1; min-width: 0; text-align: left; padding: 6px 12px; font-size: 14.5px; font-weight: 700; display: flex; align-items: center; gap: 8px; }
+#tocBtn .t { flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+#tocBtn .caret { color: var(--muted); font-size: 12px; }
+.drop { position: absolute; left: 0; right: 0; top: 100%; z-index: 11; }
+.drop .wrap { display: block; }
+.drop-in { background: var(--panel); border: 1px solid var(--border); border-radius: 0 0 12px 12px; box-shadow: 0 10px 30px rgba(0,0,0,.18);
+  max-height: min(72vh, 660px); overflow: auto; padding: 6px 0 10px; }
+.toc h3 { font-size: 12px; color: var(--muted); margin: 10px 16px 2px; font-weight: 700; letter-spacing: .03em; }
+.toc .row { display: flex; align-items: center; }
+.toc .row:hover { background: var(--bg); }
+.toc .tg { flex: none; width: 34px; height: 34px; margin-left: 6px; border: 0; border-radius: 6px; background: none; color: var(--muted); font-size: 11px; cursor: pointer; }
+.toc .tg:hover { color: var(--text); background: var(--th); }
+.toc .ch { flex: 1; min-width: 0; text-align: left; font-size: 14.5px; padding: 6px 16px 6px 2px; border: 0; background: none; color: var(--text); cursor: pointer; }
+.toc .row.on .ch { color: var(--accent); font-weight: 700; }
+.toc .pin { margin-left: 6px; font-size: 12px; }
+.toc .subs { padding: 0 0 6px; }
+.toc .sub { display: block; width: 100%; text-align: left; font-size: 13.5px; padding: 4px 16px 4px 48px; border: 0; background: none; color: var(--muted); cursor: pointer; }
+.toc .sub:hover { color: var(--text); background: var(--bg); }
+main { padding-bottom: 30px; }
+.msg { color: var(--muted); text-align: center; padding: 50px 0; }
+.msg.err { color: var(--err); }
+
+/* 本文 */
+#body h1 { font-size: 24px; line-height: 1.5; margin: 26px 0 10px; }
+#body h2 { font-size: 19px; margin: 34px 0 10px; padding-bottom: 4px; border-bottom: 2px solid var(--accent-soft); }
+#body h3 { font-size: 16.5px; margin: 24px 0 6px; }
+#body h4 { font-size: 15.5px; margin: 18px 0 4px; }
+#body p { margin: 8px 0; }
+#body ul, #body ol { margin: 8px 0; padding-left: 1.5em; }
+#body li { margin: 3px 0; }
+#body li ul { margin: 2px 0; }
+#body hr { border: 0; border-top: 1px solid var(--border); margin: 22px 0; }
+#body code { font-family: ui-monospace, Menlo, Consolas, monospace; font-size: .88em; background: var(--th); padding: 1px 5px; border-radius: 4px; }
+#body img { display: block; max-width: 100%; height: auto; margin: 14px auto; border-radius: 10px; border: 1px solid var(--border); }
+#body video, #body iframe { width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 10px; margin: 12px 0; background: #000; }
+#body figure { margin: 20px 0 22px; }
+#body figure img { margin: 0 auto; cursor: zoom-in; }
+#body figcaption { margin-top: 7px; font-size: 13px; line-height: 1.6; color: var(--muted); text-align: center; }
+#body figcaption b { color: var(--text); margin-right: 6px; }
+@media (max-width: 600px) { #body figcaption::after { content: attr(data-zoom); color: var(--link); white-space: nowrap; } }
+.tbl { overflow-x: auto; margin: 10px 0 14px; -webkit-overflow-scrolling: touch; }
+#body table { border-collapse: collapse; font-size: 14px; line-height: 1.6; min-width: 100%; }
+#body th, #body td { border: 1px solid var(--border); padding: 6px 10px; vertical-align: top; text-align: left; }
+#body th { background: var(--th); white-space: nowrap; }
+#body td { background: var(--panel); }
+#body blockquote { margin: 12px 0; padding: 8px 14px; background: var(--quote); border-left: 4px solid var(--quote-border); border-radius: 0 8px 8px 0; }
+#body blockquote p { margin: 4px 0; }
+.codeblock { margin: 12px 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
+.codeblock .cb-head { display: flex; align-items: center; gap: 6px; padding: 4px 8px; background: var(--th);
+  border-bottom: 1px solid var(--border); font-size: 12px; color: var(--muted); line-height: 1.6; }
+.codeblock .cb-head .grow { flex: 1; }
+.codeblock .cb-head button { padding: 1px 10px; font-size: 12px; border: 1px solid var(--border); border-radius: 6px; background: var(--panel); color: var(--text); cursor: pointer; }
+.codeblock.run .cb-head { color: var(--ok); }
+.codeblock pre { margin: 0; padding: 10px 12px; overflow-x: auto; background: var(--code-bg); line-height: 1.55; }
+#body .codeblock pre code { border: 0; background: none; padding: 0; white-space: pre; font-size: 13px; }
+.term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
+.pager { display: flex; justify-content: space-between; gap: 10px; margin: 36px 0 10px; }
+.pager button { font-size: 14px; padding: 10px 14px; border-radius: 10px; cursor: pointer; max-width: 48%;
+  border: 1px solid var(--border); background: var(--panel); color: var(--link); text-align: left; }
+.pager button.next { margin-left: auto; text-align: right; }
+.pager small { display: block; color: var(--muted); font-size: 12px; }
+footer { border-top: 1px solid var(--border); background: var(--panel); font-size: 12.5px; color: var(--muted); padding-bottom: 80px; }
+footer .wrap { padding-top: 14px; }
+
+/* 図を大きく */
+.zoom { position: fixed; inset: 0; z-index: 30; background: rgba(0, 0, 0, .93); overflow: auto; -webkit-overflow-scrolling: touch; }
+.zoom img { display: block; width: 820px; max-width: none; margin: 60px auto 14px; border-radius: 10px; background: #fff; }
+@media (min-width: 900px) { .zoom img { width: min(1200px, 94vw); } }
+.zoom p { margin: 0 16px 28px; color: #eee; font-size: 13px; text-align: center; }
+.zoom .x { position: fixed; top: 10px; right: 12px; z-index: 31; font-size: 14px; font-weight: 700; padding: 7px 16px; border: 0; border-radius: 999px; background: #fff; color: #111; cursor: pointer; }
+
+/* 言葉の説明 */
+#tip { position: fixed; z-index: 25; display: none; max-width: min(380px, calc(100vw - 24px)); padding: 10px 12px;
+  background: var(--panel); color: var(--text); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 8px 26px rgba(0,0,0,.28);
+  font-size: 13.5px; line-height: 1.7; }
+#tip .tip-head { display: flex; align-items: baseline; gap: 8px; margin-bottom: 4px; flex-wrap: wrap; }
+#tip .tip-key { font-weight: 700; color: var(--accent); }
+#tip .tip-key.code { font: 600 13px ui-monospace, Menlo, Consolas, monospace; }
+#tip .tip-kind { font-size: 11px; color: var(--muted); border: 1px solid var(--border); border-radius: 4px; padding: 0 5px; }
+#tip .tip-text { white-space: pre-line; }
+#tip .tip-sub { color: var(--muted); font-size: 12.5px; }
+#tip details { margin-top: 4px; font-size: 12.5px; color: var(--muted); }
+
+/* 付箋・線・メモ */
+.c-yellow { --hl: var(--hl-yellow); --st: var(--st-yellow); } .c-pink { --hl: var(--hl-pink); --st: var(--st-pink); }
+.c-green { --hl: var(--hl-green); --st: var(--st-green); } .c-blue { --hl: var(--hl-blue); --st: var(--st-blue); }
+mark.hl { color: inherit; background: linear-gradient(transparent 40%, var(--hl) 40%); padding: 0; border-radius: 2px;
+  cursor: pointer; -webkit-box-decoration-break: clone; box-decoration-break: clone; }
+#body code mark.hl { background: var(--hl); }
+mark.hl.note-end::after { content: "📝"; font-size: 11px; margin-left: 2px; vertical-align: super; line-height: 0; }
+.sticky-bar { display: flex; align-items: center; gap: 8px; width: fit-content; max-width: 100%; margin: 12px 0 4px;
+  padding: 2px 12px 2px 10px; background: var(--st); color: #1d2330; border-radius: 3px 12px 12px 3px;
+  box-shadow: 0 1px 3px rgba(0,0,0,.3); font-size: 13px; font-weight: 600; line-height: 1.6; cursor: pointer; user-select: none; -webkit-user-select: none; }
+.sticky-bar .st-date { font-size: 11px; font-weight: 400; opacity: .7; }
+li > .sticky-bar { margin-top: 4px; }
+.anno-flash { animation: annoFlash 1.8s ease-out; }
+@keyframes annoFlash { 0%, 45% { outline: 3px solid var(--accent); outline-offset: 2px; } 100% { outline: 3px solid transparent; outline-offset: 2px; } }
+#annoPop { position: fixed; z-index: 26; display: flex; flex-direction: column; gap: 8px; padding: 8px 10px;
+  background: var(--panel); color: var(--text); border: 1px solid var(--accent); border-radius: 10px;
+  box-shadow: 0 6px 24px rgba(0,0,0,.3); font-size: 13px; max-width: calc(100vw - 16px); }
+#annoPop .ap-row { display: flex; align-items: center; gap: 6px; flex-wrap: wrap; }
+#annoPop .grow { flex: 1; }
+#annoPop button { padding: 4px 10px; font-size: 13px; border: 1px solid var(--border); border-radius: 8px; background: var(--panel); color: var(--text); cursor: pointer; }
+#annoPop button.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+#annoPop .sep { width: 1px; align-self: stretch; background: var(--border); margin: 0 2px; }
+#annoPop textarea, #annoPop input[type=text] { font: inherit; font-size: 15px; color: var(--text); background: var(--bg); border: 1px solid var(--border);
+  border-radius: 6px; padding: 5px 8px; width: min(320px, calc(100vw - 40px)); }
+#annoPop textarea { resize: vertical; min-height: 64px; }
+#annoPop .kbd { font-size: 11px; color: var(--muted); }
+#annoPop button.sw { width: 26px; height: 26px; padding: 0; border-radius: 50%; background: var(--st); border: 2px solid transparent; }
+#annoPop button.sw.on { border-color: var(--text); }
+.notes .ap-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 4px 14px; }
+.notes .ap-top button { font-size: 13px; padding: 5px 12px; border-radius: 8px; border: 0; background: var(--accent); color: #fff; cursor: pointer; }
+.notes .ap-count { color: var(--muted); font-size: 12px; }
+.notes .ap-hint { margin: 6px 14px 4px; color: var(--muted); font-size: 12px; line-height: 1.6; }
+.notes .ap-ch { margin: 12px 14px 2px; font-size: 12px; font-weight: 700; color: var(--muted); }
+.notes .ap-item { display: flex; align-items: stretch; gap: 2px; border-left: 4px solid var(--st); border-radius: 4px; margin: 2px 10px; }
+.notes .ap-item:hover { background: var(--bg); }
+.notes .ap-go { flex: 1; min-width: 0; border: 0; background: none; color: var(--text); text-align: left; padding: 5px 8px; cursor: pointer; font-size: 13.5px; line-height: 1.6; }
+.notes .ap-go small { display: block; color: var(--muted); font-size: 11.5px; overflow-wrap: anywhere; }
+.notes .ap-go small.lost { color: var(--warn); }
+.notes .ap-del { border: 0; background: none; color: var(--muted); padding: 2px 10px; cursor: pointer; }
+.notes .ap-del:hover { color: var(--err); }
+.notes .empty { color: var(--muted); padding: 10px 14px; font-size: 13px; }
+#toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 40; padding: 8px 16px; border-radius: 10px;
+  background: #333; color: #fff; font-size: 13.5px; display: none; max-width: calc(100vw - 32px); }
+@media (max-width: 480px) { body { font-size: 15px; } #body h1 { font-size: 21px; } #body h2 { font-size: 17.5px; } #body table { font-size: 13px; } }
+</style>
+</head>
+<body>
+
+<div id="shelf" hidden>
+  <div class="shelf-head"><div class="wrap">
+    <h1>📚 教科書</h1>
+    <p>いろいろなことを、章ごとにまとめて勉強するための教科書です。文字を選ぶと、線・メモ・付箋を付けられます（このブラウザに保存）。</p>
+  </div></div>
+  <main class="wrap"><div class="books" id="books"><p class="msg">読み込み中…</p></div></main>
+  <footer><div class="wrap"><p><a href="https://github.com/yusuke1090/textbooks" target="_blank" rel="noopener">GitHub</a> ・ <a href="https://yusuke1090.github.io/smart-agri-news/">スマート農業News</a></p></div></footer>
+</div>
+
+<div id="reader" hidden>
+  <header class="top"><div class="wrap">
+    <a class="shelf-link" id="shelfLink" href="./">📚 教科書</a>
+    <span class="brand"><span id="bookIcon"></span> <span id="bookName"></span></span>
+    <a class="home" id="home" hidden></a>
+    <div class="langs" id="langs" role="group" aria-label="言語 / Language" hidden>
+      <button type="button" data-lang="ja" aria-pressed="true">日本語</button>
+      <button type="button" data-lang="en" aria-pressed="false">English</button>
+    </div>
+  </div></header>
+  <div class="bar">
+    <div class="wrap">
+      <button type="button" class="step" id="prev" aria-label="前の章">◀</button>
+      <button type="button" id="tocBtn" aria-expanded="false"><span class="t" id="chTitle"></span><span class="caret">▼</span></button>
+      <button type="button" class="step" id="next" aria-label="次の章">▶</button>
+      <button type="button" id="annoBtn" aria-expanded="false" title="付箋・線・メモの一覧">🔖</button>
+    </div>
+    <div class="drop toc" id="toc" hidden><div class="wrap"><div class="drop-in" id="tocIn"></div></div></div>
+    <div class="drop notes" id="notes" hidden><div class="wrap"><div class="drop-in" id="notesIn"></div></div></div>
+  </div>
+  <main class="wrap">
+    <article id="body"><p class="msg">読み込み中…</p></article>
+    <nav class="pager" id="pager"></nav>
+  </main>
+  <footer><div class="wrap"><p id="footNote"></p><p><a href="./" id="footShelf">📚 教科書の一覧</a></p></div></footer>
+</div>
+
+<div id="tip" role="tooltip"></div>
+<div id="annoPop" hidden></div>
+<div id="toast"></div>
+
+<script>
+(() => {
+  "use strict";
+  const $ = (id) => document.getElementById(id);
+  const store = {
+    get(k, d = null) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
+    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+  };
+  const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  let toastTimer = 0;
+  function toast(msg) {
+    const t = $("toast");
+    t.textContent = msg; t.style.display = "block";
+    clearTimeout(toastTimer); toastTimer = setTimeout(() => (t.style.display = "none"), 2600);
+  }
+  const getJSON = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status + " " + u); return r.json(); });
+  const getText = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status + " " + u); return r.text(); });
+  const L = (x, lang) => (x == null ? "" : typeof x === "string" ? x : x[lang] || x.ja || Object.values(x)[0]);
+
+  const UI = {
+    ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", footShelf: "📚 教科書の一覧", zoom: "　🔍 押すと拡大", close: "閉じる",
+          zoomHint: "横にずらしたり、2本の指で広げて拡大したりできます。", copy: "コピー", copied: "コピーしました",
+          fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした" },
+    en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", footShelf: "📚 All textbooks", zoom: "  🔍 tap to zoom", close: "Close",
+          zoomHint: "Scroll sideways, or pinch with two fingers to zoom.", copy: "Copy", copied: "Copied",
+          fig: "Fig. ", load: "Loading…", loadErr: "Could not load" },
+  };
+
+  const params = new URLSearchParams(location.search);
+  const bookId = params.get("b");
+  let books = [];
+
+  // =====================================================================
+  // 本棚
+  // =====================================================================
+  async function showShelf() {
+    $("shelf").hidden = false;
+    document.title = "📚 教科書";
+    let notes = [];
+    try { notes = JSON.parse(store.get("textbooks-notes", "[]")) || []; } catch (e) { notes = []; }
+    const cards = await Promise.all(books.map(async (b) => {
+      let chs = [];
+      try { chs = await getJSON(`books/${b.id}/chapters.json`); } catch (e) { /* 章の数は出さない */ }
+      let pos = null;
+      try { pos = JSON.parse(store.get("textbooks-pos-" + b.id, "null")); } catch (e) { pos = null; }
+      const lang = (pos && pos.lang) || b.langs[0];
+      const cont = pos && chs[pos.idx] ? `<span>続きから: <b>${esc(L(chs[pos.idx].title, lang))}</b></span>` : "";
+      const n = notes.filter((x) => x.book === b.id).length;
+      return `<a class="card" href="?b=${encodeURIComponent(b.id)}">
+        <span class="ic">${esc(b.icon || "📘")}</span>
+        <h2>${esc(L(b.title, "ja"))}</h2>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
+        <p>${esc(L(b.desc, "ja"))}</p>
+        <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}</span></a>`;
+    }));
+    $("books").innerHTML = cards.join("");
+  }
+
+  // =====================================================================
+  // 読む画面
+  // =====================================================================
+  let book = null, chapters = [], glossary = {}, terms = [];
+  const state = { idx: 0, lang: "ja" };
+  const mdCache = {};
+  const body = $("body"), bar = document.querySelector(".bar");
+  const POS_KEY = () => "textbooks-pos-" + book.id;
+  const t = (k) => UI[state.lang][k] || UI.ja[k];
+  const base = () => `books/${book.id}/`;
+  const mdPath = (file, lang) => base() + (book.langs.length > 1 ? lang + "/" : "") + file;
+  const url = (u) => (/^(https?:|\/|#|data:)/.test(u) ? u : base() + u);
+  const loadMd = (i, lang) => {
+    const key = lang + "/" + chapters[i].file;
+    return mdCache[key] || (mdCache[key] = getText(mdPath(chapters[i].file, lang)).catch((e) => { delete mdCache[key]; throw e; }));
+  };
+
+  // ---------- Markdown → HTML ----------
+  function youtubeId(u) {
+    const m = u.match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/)|youtu\.be\/)([\w-]{11})/);
+    return m ? m[1] : null;
+  }
+  function mediaHtml(alt, src) {
+    const yt = youtubeId(src);
+    if (yt) return `<iframe src="https://www.youtube-nocookie.com/embed/${yt}" title="${esc(alt)}" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>`;
+    if (/\.(mp4|webm)$/i.test(src)) return `<video src="${esc(url(src))}" controls preload="metadata" title="${esc(alt)}"></video>`;
+    return `<img src="${esc(url(src))}" alt="${esc(alt)}" loading="lazy">`;
+  }
+  function inline(text) {
+    const codes = [];
+    text = text.replace(/`([^`]+)`/g, (_, c) => { codes.push(c); return "\u0000" + (codes.length - 1) + "\u0000"; });
+    text = esc(text);
+    text = text.replace(/!\[([^\]]*)\]\(([^)\s]+)\)/g, (_, a, u) => mediaHtml(a, u));
+    text = text.replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_, tx, u) => {
+      const ext = /^https?:/.test(u);
+      return `<a href="${esc(ext ? u : url(u))}"${ext ? ' target="_blank" rel="noopener"' : ""}>${tx}</a>`;
+    });
+    text = text.replace(/\*\*([^*]+)\*\*/g, "<strong>$1</strong>");
+    return text.replace(/\u0000(\d+)\u0000/g, (_, i) => `<code>${esc(codes[i])}</code>`);
+  }
+  // 図の番号の頭（「図 9-1」の 9、付録なら A）
+  function figPrefix(ch) {
+    const s = L(ch.title, "ja"), m = s.match(/^(\d+)\./) || s.match(/^付録([A-Z])/) || s.match(/^Appendix ([A-Z])/);
+    return m ? m[1] : "";
+  }
+  function codeLabel(cl, flags) {
+    const run = flags.includes("run");
+    if (cl === "python" && run) return state.lang === "en" ? "MicroPython (try it in Pico Studio)" : "MicroPython のコード（Pico Studio で試せる）";
+    if (cl === "python") return state.lang === "en" ? "Python on the PC" : "PC で実行するコード（Python）";
+    if (cl === "cpp" && run) return "C++ のプログラム（VS Code のプロジェクトの .cpp に貼り付ける）";
+    if (cl === "cpp") return "C++ のコード（一部分）";
+    if (cl === "cmake") return "CMakeLists.txt";
+    return "";
+  }
+  function render(src, prefix) {
+    const lines = src.replace(/\r\n/g, "\n").split("\n"), out = [], codes = [];
+    let i = 0, m, fig = 0;
+    const isSep = (l) => /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(l);
+    const cells = (l) => l.trim().replace(/^\|/, "").replace(/(?<!\\)\|$/, "").split(/(?<!\\)\|/).map((c) => c.trim().replace(/\\\|/g, "|"));
+    while (i < lines.length) {
+      const line = lines[i];
+      if ((m = line.match(/^```\s*(\w*)\s*(.*)$/))) {                      // コード
+        const cl = m[1], flags = m[2].split(/\s+/), code = [];
+        i++;
+        while (i < lines.length && !/^```\s*$/.test(lines[i])) code.push(lines[i++]);
+        i++;
+        codes.push(code.join("\n"));
+        const run = flags.includes("run") && (cl === "python" || cl === "cpp");
+        out.push(`<div class="codeblock${run ? " run" : ""}"><div class="cb-head"><span class="grow">${esc(codeLabel(cl, flags))}</span>`
+          + `<button type="button" data-copy="${codes.length - 1}">${t("copy")}</button></div>`
+          + `<pre><code${cl === "bash" ? ' class="sh"' : ""}>${esc(code.join("\n"))}</code></pre></div>`);
+        continue;
+      }
+      if (!line.trim()) { i++; continue; }
+      if ((m = line.match(/^(#{1,4})\s+(.*)$/))) { out.push(`<h${m[1].length}>${inline(m[2])}</h${m[1].length}>`); i++; continue; }
+      if (/^\s*(---|\*\*\*)\s*$/.test(line)) { out.push("<hr>"); i++; continue; }
+      if ((m = line.match(/^\s*!\[([^\]]*)\]\(([^)\s]+)\)\s*$/))) {          // 1行だけの画像は、番号と説明の付いた図にする
+        if (youtubeId(m[2]) || /\.(mp4|webm)$/i.test(m[2])) { out.push(mediaHtml(m[1], m[2])); i++; continue; }
+        fig++;
+        const label = t("fig") + (prefix ? prefix + "-" : "") + fig;
+        out.push(`<figure><img src="${esc(url(m[2]))}" alt="${esc(m[1])}" loading="lazy"><figcaption data-zoom="${t("zoom")}"><b>${label}</b>${inline(m[1])}</figcaption></figure>`);
+        i++; continue;
+      }
+      if (line.trim().startsWith("|") && i + 1 < lines.length && isSep(lines[i + 1])) {   // 表
+        const head = cells(line), rows = [];
+        i += 2;
+        while (i < lines.length && lines[i].trim().startsWith("|")) rows.push(cells(lines[i++]));
+        out.push('<div class="tbl"><table><thead><tr>' + head.map((c) => `<th>${inline(c)}</th>`).join("") + "</tr></thead><tbody>"
+          + rows.map((r) => "<tr>" + r.map((c) => `<td>${inline(c)}</td>`).join("") + "</tr>").join("") + "</tbody></table></div>");
+        continue;
+      }
+      if (/^>\s?/.test(line)) {                                             // 引用（注意書き）
+        const q = [];
+        while (i < lines.length && /^>\s?/.test(lines[i])) q.push(lines[i++].replace(/^>\s?/, ""));
+        out.push("<blockquote>" + q.filter((l) => l.trim()).map((l) => `<p>${inline(l)}</p>`).join("") + "</blockquote>");
+        continue;
+      }
+      if (/^\s*([-*]|\d+\.)\s+/.test(line)) {                               // 箇条書き・番号付き
+        const ordered = /^\s*\d+\./.test(line), start = ordered ? parseInt(line.trim(), 10) : 1, items = [];
+        while (i < lines.length && /^\s*([-*]|\d+\.)\s+/.test(lines[i]) && !/^\s{2,}/.test(lines[i])) {
+          let item = lines[i++].replace(/^\s*([-*]|\d+\.)\s+/, "");
+          const subs = [];
+          while (i < lines.length && /^\s{2,}\S/.test(lines[i])) {
+            if (/^\s{2,}([-*]|\d+\.)\s+/.test(lines[i])) subs.push(lines[i++].replace(/^\s*([-*]|\d+\.)\s+/, ""));
+            else if (subs.length) subs[subs.length - 1] += " " + lines[i++].trim();
+            else item += " " + lines[i++].trim();
+          }
+          items.push(`<li>${inline(item)}${subs.length ? "<ul>" + subs.map((s) => `<li>${inline(s)}</li>`).join("") + "</ul>" : ""}</li>`);
+        }
+        out.push(ordered ? `<ol${start > 1 ? ` start="${start}"` : ""}>${items.join("")}</ol>` : `<ul>${items.join("")}</ul>`);
+        continue;
+      }
+      const para = [];                                                      // 段落
+      while (i < lines.length && lines[i].trim() && !/^(#{1,4}\s|```|>|\s*([-*]|\d+\.)\s+|\s*\||\s*!\[)/.test(lines[i])) para.push(inline(lines[i++].trim()));
+      if (para.length) out.push(`<p>${para.join("<br>")}</p>`);
+      else out.push(`<p>${inline(lines[i++])}</p>`);
+    }
+    return { html: out.join("\n"), codes };
+  }
+  // 章の見出し（##）と、ページの見出し（h1〜h4）の中での番号。コードの中の # は数えない
+  function outline(md) {
+    const res = [];
+    let n = 0, fence = false;
+    for (const l of md.split("\n")) {
+      if (/^```/.test(l)) { fence = !fence; continue; }
+      if (fence) continue;
+      const m = l.match(/^(#{1,4})\s+(.*)$/);
+      if (!m) continue;
+      if (m[1].length === 2) res.push({ h: n, text: m[2].replace(/\*\*|`/g, "") });
+      n++;
+    }
+    return res;
+  }
+
+  // ---------- 読んでいる場所（見出しの番号と、その節の中の割合） ----------
+  const headings = () => [...body.querySelectorAll("h1, h2, h3, h4")];
+  const topLine = () => bar.getBoundingClientRect().bottom + 8;
+  function anchor() {
+    const hs = headings(), line = topLine();
+    let h = 0;
+    for (let k = 0; k < hs.length; k++) { if (hs[k].getBoundingClientRect().top <= line) h = k; else break; }
+    if (!hs.length) return { h: 0, r: 0 };
+    const a = hs[h].getBoundingClientRect().top, b = hs[h + 1] ? hs[h + 1].getBoundingClientRect().top : body.getBoundingClientRect().bottom;
+    const r = b > a ? Math.max(0, Math.min(1, (line - a) / (b - a))) : 0;
+    return { h, r: Math.round(r * 1000) / 1000 };
+  }
+  function goAnchor(p) {
+    const hs = headings();
+    if (!p || !hs[p.h] || (p.h === 0 && !p.r)) { window.scrollTo(0, 0); return; }
+    const a = hs[p.h].getBoundingClientRect().top + scrollY;
+    const b = hs[p.h + 1] ? hs[p.h + 1].getBoundingClientRect().top + scrollY : body.getBoundingClientRect().bottom + scrollY;
+    window.scrollTo(0, Math.max(0, a + (b - a) * (p.r || 0) - topLine()));
+  }
+  let saveTimer = 0;
+  function savePos() {
+    clearTimeout(saveTimer);
+    saveTimer = setTimeout(() => {
+      const a = anchor();
+      store.set(POS_KEY(), JSON.stringify({ idx: state.idx, lang: state.lang, h: a.h, r: a.r }));
+    }, 250);
+  }
+  // 図が読み込まれて高さが変わっても、自分でスクロールするまでは同じ場所に合わせ直す
+  let userMoved = false, keepUntil = 0;
+  ["wheel", "touchstart", "keydown", "mousedown"].forEach((ev) => addEventListener(ev, () => { userMoved = true; }, { passive: true }));
+  function keepAnchor(pos) {
+    if (!pos) return;
+    userMoved = false;
+    keepUntil = Date.now() + 4000;
+    body.querySelectorAll("img").forEach((img) => {
+      if (!img.complete) img.addEventListener("load", () => { if (!userMoved && Date.now() < keepUntil) goAnchor(pos); });
+    });
+  }
+
+  // ---------- 章を出す ----------
+  let showSeq = 0, codes = [];
+  async function show(idx, lang, pos) {
+    const seq = ++showSeq;
+    state.idx = Math.max(0, Math.min(chapters.length - 1, idx));
+    state.lang = book.langs.includes(lang) ? lang : book.langs[0];
+    const ch = chapters[state.idx];
+    document.documentElement.lang = state.lang;
+    $("bookName").textContent = L(book.title, state.lang);
+    document.title = L(ch.title, state.lang) + (state.lang === "en" ? " | " : "｜") + L(book.title, state.lang);
+    $("shelfLink").textContent = t("shelf");
+    $("footShelf").textContent = t("footShelf");
+    $("footNote").textContent = L(book.note, state.lang);
+    if (book.home) { $("home").hidden = false; $("home").href = book.home.url; $("home").textContent = "← " + L(book.home.label, state.lang); }
+    $("prev").setAttribute("aria-label", t("prev")); $("next").setAttribute("aria-label", t("next"));
+    document.querySelectorAll("#langs button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === state.lang ? "true" : "false"));
+    $("chTitle").textContent = L(ch.title, state.lang);
+    $("prev").disabled = state.idx === 0;
+    $("next").disabled = state.idx === chapters.length - 1;
+    closeDrops(); hideTip(); closePop();
+    let md;
+    try { md = await loadMd(state.idx, state.lang); }
+    catch (e) { body.innerHTML = `<p class="msg err">${t("loadErr")}（${esc(e.message)}）</p>`; return; }
+    if (seq !== showSeq) return;
+    const r = render(md, figPrefix(ch));
+    body.innerHTML = r.html;
+    codes = r.codes;
+    markTerms();
+    const prev = chapters[state.idx - 1], next = chapters[state.idx + 1];
+    $("pager").innerHTML =
+      (prev ? `<button type="button" data-go="${state.idx - 1}"><small>◀ ${esc(t("prev"))}</small>${esc(L(prev.title, state.lang))}</button>` : "") +
+      (next ? `<button type="button" class="next" data-go="${state.idx + 1}"><small>${esc(t("next"))} ▶</small>${esc(L(next.title, state.lang))}</button>` : "");
+    const h = "#ch=" + state.idx + (book.langs.length > 1 && state.lang !== book.langs[0] ? "&lang=" + state.lang : "");
+    if (location.hash !== h) history.replaceState(null, "", location.pathname + location.search + h);
+    applyAnno();
+    goAnchor(pos);
+    keepAnchor(pos);
+    savePos();
+  }
+
+  // ---------- 目次（章ごとに ▶ で見出しを開く） ----------
+  const openSet = {};
+  const outlines = {};
+  async function buildToc() {
+    let html = "", part = "";
+    chapters.forEach((c, i) => {
+      if (L(c.part, state.lang) !== part) { part = L(c.part, state.lang); html += `<h3>${esc(part)}</h3>`; }
+      const on = !!openSet[i];
+      html += `<div class="row${i === state.idx ? " on" : ""}"><button type="button" class="tg" data-tg="${i}" aria-expanded="${on}">${on ? "▼" : "▶"}</button>`
+        + `<button type="button" class="ch" data-go="${i}">${esc(L(c.title, state.lang))}${pinBadge(c.file)}</button></div>`;
+      if (on) {
+        const o = outlines[state.lang + i];
+        html += '<div class="subs">' + (o ? o.map((x) => `<button type="button" class="sub" data-go="${i}" data-h="${x.h}">${esc(x.text)}</button>`).join("")
+          : `<span class="sub">${t("load")}</span>`) + "</div>";
+      }
+    });
+    $("tocIn").innerHTML = html;
+    // 開いている章の見出しを読み込んでいなければ、読み込んでから作り直す
+    const need = Object.keys(openSet).filter((i) => openSet[i] && !outlines[state.lang + i]);
+    if (need.length) {
+      await Promise.all(need.map((i) => loadMd(+i, state.lang).then((md) => { outlines[state.lang + i] = outline(md); }).catch(() => { outlines[state.lang + i] = []; })));
+      if (!$("toc").hidden) { const top = $("tocIn").scrollTop; buildToc(); $("tocIn").scrollTop = top; }
+    }
+  }
+  function closeDrops() {
+    $("toc").hidden = true; $("tocBtn").setAttribute("aria-expanded", "false");
+    $("notes").hidden = true; $("annoBtn").classList.remove("on"); $("annoBtn").setAttribute("aria-expanded", "false");
+  }
+  $("tocBtn").addEventListener("click", () => {
+    if (!$("toc").hidden) return closeDrops();
+    closeDrops();
+    openSet[state.idx] = true;
+    buildToc();
+    $("toc").hidden = false; $("tocBtn").setAttribute("aria-expanded", "true");
+    const on = $("tocIn").querySelector(".row.on");
+    if (on) $("tocIn").scrollTop = Math.max(0, on.offsetTop - 60);
+  });
+  $("tocIn").addEventListener("click", (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.dataset.tg) {
+      const k = +b.dataset.tg, top = $("tocIn").scrollTop;
+      openSet[k] = !openSet[k];
+      buildToc();
+      $("tocIn").scrollTop = top;
+      return;
+    }
+    const go = +b.dataset.go, pos = b.dataset.h ? { h: +b.dataset.h, r: 0 } : null;
+    if (go === state.idx && pos) { closeDrops(); goAnchor(pos); savePos(); }
+    else show(go, state.lang, pos);
+  });
+  $("prev").addEventListener("click", () => show(state.idx - 1, state.lang, null));
+  $("next").addEventListener("click", () => show(state.idx + 1, state.lang, null));
+  $("pager").addEventListener("click", (e) => { const b = e.target.closest("[data-go]"); if (b) show(+b.dataset.go, state.lang, null); });
+  document.querySelectorAll("#langs button").forEach((b) => b.addEventListener("click", () => {
+    if (b.dataset.lang === state.lang) return;
+    store.set("textbooks-lang-" + book.id, b.dataset.lang);
+    show(state.idx, b.dataset.lang, anchor());          // 同じ見出しの、同じくらいの所を出す
+  }));
+  addEventListener("scroll", () => { savePos(); hideTip(); if (pop.dataset.kind === "sel") placeSelBar(); }, { passive: true });
+  addEventListener("hashchange", () => {
+    const h = fromHash();
+    if (h && (h.idx !== state.idx || (h.lang && h.lang !== state.lang))) show(h.idx, h.lang || state.lang, null);
+  });
+  function fromHash() {
+    const m = location.hash.match(/ch=(\d+)/), l = location.hash.match(/lang=(\w+)/);
+    return m ? { idx: +m[1], lang: l ? l[1] : null } : null;
+  }
+
+  // ---------- コピー・図を大きく ----------
+  let zoomEl = null;
+  function closeZoom() { if (zoomEl) { zoomEl.remove(); zoomEl = null; document.body.style.overflow = ""; } }
+  function openZoom(img) {
+    const cap = img.parentNode.querySelector("figcaption"), lab = cap ? cap.querySelector("b").textContent : "";
+    zoomEl = document.createElement("div");
+    zoomEl.className = "zoom";
+    zoomEl.innerHTML = `<button type="button" class="x">✕ ${t("close")}</button><img src="${esc(img.getAttribute("src"))}" alt="${esc(img.alt)}">`
+      + `<p>${cap ? `<b>${esc(lab)}</b>　${esc(cap.textContent.slice(lab.length))}` : ""}<br>${t("zoomHint")}</p>`;
+    zoomEl.addEventListener("click", (ev) => { if (ev.target === zoomEl || ev.target.closest(".x")) closeZoom(); });
+    document.body.appendChild(zoomEl);
+    document.body.style.overflow = "hidden";
+  }
+  async function copyText(text) {
+    try { await navigator.clipboard.writeText(text); }
+    catch (e) { const ta = document.createElement("textarea"); ta.value = text; document.body.appendChild(ta); ta.select(); document.execCommand("copy"); ta.remove(); }
+    toast(t("copied"));
+  }
+
+  // =====================================================================
+  // 言葉の説明（コードの単語: glossary.json、本文の用語: terms.json）
+  // =====================================================================
+  const tipEl = $("tip");
+  function wordAt(text, pos) {
+    let s = pos, e = pos;
+    while (s > 0 && /\w/.test(text[s - 1])) s--;
+    while (e < text.length && /\w/.test(text[e])) e++;
+    return s === e ? null : { word: text.slice(s, e), start: s, end: e };
+  }
+  function enclosingCall(text, pos) {
+    let depth = 0;
+    for (let i = pos - 1; i >= 0; i--) {
+      const c = text[i];
+      if (")]}".includes(c)) depth++;
+      else if ("([{".includes(c)) {
+        if (depth > 0) { depth--; continue; }
+        if (c !== "(") return null;
+        const m = text.slice(0, i).match(/([A-Za-z_][\w.]*)\s*$/);
+        return m ? m[1] : null;
+      }
+    }
+    return null;
+  }
+  function headerTip(name, label) {
+    const v = glossary[`#include <${name.trim()}>`];
+    return typeof v === "string" ? { label, kind: "ヘッダー", text: v, code: true } : null;
+  }
+  function includeAt(text, pos) {
+    const start = text.lastIndexOf("\n", pos - 1) + 1, nl = text.indexOf("\n", pos);
+    const line = text.slice(start, nl < 0 ? text.length : nl);
+    const m = line.match(/^(\s*#\s*include\s*)(<([^>]*)>|"([^"]*)")/);
+    if (!m) return null;
+    const p = pos - start, s = m[1].length, e = s + m[2].length;
+    return p >= s && p <= e ? { name: m[3] ?? m[4], label: "#include " + m[2] } : null;
+  }
+  function lookupAt(text, pos) {
+    const inc = includeAt(text, pos);
+    if (inc) return headerTip(inc.name, inc.label);
+    const w = wordAt(text, pos);
+    if (!w || /^\d/.test(w.word)) return null;
+    const isKwarg = /^\s*=(?!=)/.test(text.slice(w.end));
+    const fn = isKwarg ? enclosingCall(text, w.start) : null;
+    const owner = text.slice(0, w.start).match(/([A-Za-z_]\w*)\.$/);
+    const cands = [];
+    if (fn) cands.push({ key: fn.split(".").pop() + "." + w.word, kind: "引数", label: `${fn}( ${w.word}= )` });
+    if (owner) cands.push({ key: owner[1] + "." + w.word, kind: "", label: owner[1] + "." + w.word });
+    cands.push({ key: w.word, kind: fn ? "引数" : /^\s*\(/.test(text.slice(w.end)) ? "関数" : "", label: fn ? `${fn}( ${w.word}= )` : w.word });
+    for (const c of cands) if (typeof glossary[c.key] === "string") return { ...c, text: glossary[c.key], code: true };
+    return null;
+  }
+  function shellKey(s) {
+    if (/^\/dev\/ttyACM/.test(s)) return "/dev/ttyACM0";
+    if (/\.uf2$/.test(s)) return "*.uf2";
+    return s.replace(/(.):$/, "$1");
+  }
+  const isShellCommand = (text) => typeof glossary["$ " + text.trim().split(/\s+/)[0]] === "string";
+  function shellLookup(text, pos) {
+    const start = text.lastIndexOf("\n", pos - 1) + 1, nl = text.indexOf("\n", pos);
+    const line = text.slice(start, nl < 0 ? text.length : nl), p = pos - start;
+    let toks = [...line.matchAll(/"[^"]*"|'[^']*'|\S+/g)].map((m) => ({ t: m[0], s: m.index, e: m.index + m[0].length }));
+    const comment = toks.findIndex((x) => x.t.startsWith("#"));
+    if (comment >= 0) toks = toks.slice(0, comment);
+    const i = toks.findIndex((x) => p >= x.s && p <= x.e);
+    if (i < 0) return null;
+    const tk = toks[i].t;
+    if (/^["']/.test(tk)) {
+      const quoted = glossary["$ " + tk.slice(1, -1)];
+      return lookupAt(text, pos) || (typeof quoted === "string" ? { label: "引用符の中の文字", kind: "", text: quoted } : null);
+    }
+    let b = i;
+    while (b > 0 && toks[b - 1].t !== "|") b--;
+    if (toks[b].t === "sudo" && b + 1 < toks.length) b++;
+    const cmd = toks[b].t, key = shellKey(tk), prev = i > b ? toks[i - 1].t : "";
+    const cands = [];
+    if (i > b) cands.push(`${cmd} ${prev} ${key}`, `${cmd} ${key}`);
+    cands.push(key);
+    if (tk.startsWith(":")) cands.push(":");
+    const kind = i === b || tk === "sudo" ? "コマンド" : tk.startsWith("-") ? "オプション" : "";
+    for (const c of cands) {
+      const v = glossary["$ " + c];
+      if (typeof v === "string") return { label: c.length > key.length ? c : tk, kind, text: v, code: true };
+    }
+    return null;
+  }
+  function inlineLookup(text, pos) {
+    const s = text.trim();
+    if (/^#\s*include\b/.test(s)) return lookupAt(text, pos);
+    const m = s.match(/^<([^<>\s]+)>$/);
+    return headerTip(m ? m[1] : s, s);
+  }
+  function showTip(hit, x, y) {
+    const m = hit.text.match(/^語源: (.*)\n([\s\S]*)$/);
+    tipEl.innerHTML = `<div class="tip-head"><span class="tip-key${hit.code ? " code" : ""}">${esc(hit.label)}</span>`
+      + `${hit.kind ? `<span class="tip-kind">${esc(hit.kind)}</span>` : ""}${hit.sub ? `<span class="tip-sub">${esc(hit.sub)}</span>` : ""}</div>`
+      + `<div class="tip-text">${esc(m ? m[2] : hit.text)}</div>${m ? `<details><summary>語源</summary><div>${esc(m[1])}</div></details>` : ""}`;
+    tipEl.style.display = "block";
+    const r = tipEl.getBoundingClientRect();
+    tipEl.style.left = Math.max(8, Math.min(x - 20, innerWidth - r.width - 8)) + "px";
+    tipEl.style.top = (y + 18 + r.height < innerHeight ? y + 18 : Math.max(8, y - r.height - 12)) + "px";
+  }
+  function hideTip() { tipEl.style.display = "none"; }
+  // 押した所が、要素の文字の何文字目か
+  function offsetAtPoint(el, x, y) {
+    let node, off;
+    if (document.caretPositionFromPoint) { const p = document.caretPositionFromPoint(x, y); if (p) { node = p.offsetNode; off = p.offset; } }
+    else if (document.caretRangeFromPoint) { const r = document.caretRangeFromPoint(x, y); if (r) { node = r.startContainer; off = r.startOffset; } }
+    if (!node || !el.contains(node)) return -1;
+    const before = document.createRange();
+    before.setStart(el, 0); before.setEnd(node, off);
+    return before.toString().length;
+  }
+  function codeTip(codeEl, e) {
+    if (!Object.keys(glossary).length) return false;
+    const pos = offsetAtPoint(codeEl, e.clientX, e.clientY);
+    if (pos < 0) return false;
+    const text = codeEl.textContent, isBlock = !!codeEl.closest("pre");
+    const shell = isBlock ? codeEl.classList.contains("sh") : isShellCommand(text);
+    const hit = shell ? shellLookup(text, pos) : isBlock ? lookupAt(text, pos) : inlineLookup(text, pos);
+    if (!hit) return false;
+    showTip(hit, e.clientX, e.clientY);
+    return true;
+  }
+  function termTip(el, e) {
+    const tm = terms[+el.dataset.t];
+    if (!tm) return;
+    if (state.lang === "en") showTip({ label: el.textContent, sub: `${tm.ja}（${tm.yomi || ""}）`.replace("（）", ""), text: tm.mean_en || tm.mean_ja || tm.ja }, e.clientX, e.clientY);
+    else showTip({ label: tm.ja, sub: [tm.yomi, tm.en].filter(Boolean).join(" / "), text: tm.mean_ja || tm.en }, e.clientX, e.clientY);
+  }
+  // 本文の用語に点線を付ける（章ごとに、最初に出てきた所だけ。用語集の章には付けない）
+  function markTerms() {
+    if (!terms.length || /words/.test(chapters[state.idx].file)) return;
+    const key = state.lang === "en" ? "match_en" : "match_ja";
+    const list = [];
+    terms.forEach((tm, i) => (tm[key] || []).forEach((v) => list.push({ v, i })));
+    if (!list.length) return;
+    list.sort((a, b) => b.v.length - a.v.length);
+    const reEsc = (s) => s.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+    const re = new RegExp(state.lang === "en" ? "\\b(" + list.map((x) => reEsc(x.v)).join("|") + ")\\b" : "(" + list.map((x) => reEsc(x.v)).join("|") + ")", state.lang === "en" ? "gi" : "g");
+    const which = new Map(list.map((x) => [x.v.toLowerCase(), x.i]));
+    const used = new Set();
+    const walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => n.parentElement.closest("h1,h2,h3,h4,code,pre,a,figcaption,.cb-head,.term") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    });
+    const nodes = [];
+    for (let n; (n = walker.nextNode());) nodes.push(n);
+    for (let node of nodes) {
+      re.lastIndex = 0;
+      let m;
+      while ((m = re.exec(node.data))) {
+        const ti = which.get(m[1].toLowerCase());
+        if (ti == null || used.has(ti)) continue;
+        used.add(ti);
+        const mid = node.splitText(m.index), rest = mid.splitText(m[1].length);
+        const span = document.createElement("span");
+        span.className = "term"; span.dataset.t = ti;
+        mid.before(span); span.appendChild(mid);
+        node = rest; re.lastIndex = 0;
+      }
+    }
+  }
+
+  // =====================================================================
+  // 付箋・線・メモ（このブラウザの localStorage に保存。場所は選んだ文字と前後の文字で覚える）
+  // =====================================================================
+  const COLORS = { yellow: "黄", pink: "ピンク", green: "緑", blue: "青" };
+  const NOTES_KEY = "textbooks-notes";
+  const anno = { items: [], lost: new Set(), pending: null };
+  try { anno.items = JSON.parse(store.get(NOTES_KEY, "[]")) || []; } catch (e) { anno.items = []; }
+  const pop = $("annoPop");
+  pop.dataset.kind = "";
+  function saveAnno() {
+    let all = [];
+    try { all = JSON.parse(store.get(NOTES_KEY, "[]")) || []; } catch (e) { all = []; }
+    // ほかのタブで書いたほかの本の分は残す
+    const others = all.filter((x) => x.book !== book.id);
+    store.set(NOTES_KEY, JSON.stringify(others.concat(anno.items.filter((x) => x.book === book.id))));
+  }
+  function textIndex(root) {
+    const nodes = [], starts = [];
+    let text = "";
+    const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+      acceptNode: (n) => n.parentElement.closest("[data-anno-ui], .cb-head") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+    });
+    for (let n; (n = w.nextNode());) { nodes.push(n); starts.push(text.length); text += n.data; }
+    return { nodes, starts, text };
+  }
+  function nodeAt(idx, off) {
+    for (let k = 0; k < idx.nodes.length; k++) if (off < idx.starts[k] + idx.nodes[k].data.length) return k;
+    return -1;
+  }
+  function pointToOffset(idx, container, offset) {
+    if (container.nodeType === Node.TEXT_NODE) { const k = idx.nodes.indexOf(container); if (k >= 0) return idx.starts[k] + offset; }
+    const probe = document.createRange();
+    probe.setStart(container, offset);
+    for (let k = 0; k < idx.nodes.length; k++) if (probe.comparePoint(idx.nodes[k], 0) >= 0) return idx.starts[k];
+    return idx.text.length;
+  }
+  const makeAnchor = (text, s, e) => ({ exact: text.slice(s, e), prefix: text.slice(Math.max(0, s - 32), s), suffix: text.slice(e, e + 32), pos: s });
+  function rangeToAnchor(range) {
+    const idx = textIndex(body);
+    let s = pointToOffset(idx, range.startContainer, range.startOffset), e = pointToOffset(idx, range.endContainer, range.endOffset);
+    while (s < e && /\s/.test(idx.text[s])) s++;
+    while (e > s && /\s/.test(idx.text[e - 1])) e--;
+    return e > s ? makeAnchor(idx.text, s, e) : null;
+  }
+  function locate(idx, a) {
+    const tx = idx.text;
+    let best = -1, bestScore = -Infinity;
+    for (let p = a.exact ? tx.indexOf(a.exact) : -1; p >= 0; p = tx.indexOf(a.exact, p + 1)) {
+      let sc = 0, k = 0;
+      const pre = a.prefix || "", suf = a.suffix || "", after = p + a.exact.length;
+      while (sc < pre.length && p - sc - 1 >= 0 && tx[p - sc - 1] === pre[pre.length - sc - 1]) sc++;
+      while (k < suf.length && tx[after + k] === suf[k]) k++;
+      const score = sc + k - Math.abs(p - (a.pos || 0)) / 1e7;
+      if (score > bestScore) { bestScore = score; best = p; }
+    }
+    return best < 0 ? null : { start: best, end: best + a.exact.length };
+  }
+  function wrapRange(root, start, end, make) {
+    const idx = textIndex(root), marks = [];
+    idx.nodes.forEach((n, k) => {
+      const ns = idx.starts[k], len = n.data.length;
+      if (ns + len <= start || ns >= end) return;
+      const a = Math.max(0, start - ns), b = Math.min(len, end - ns);
+      if (!n.data.slice(a, b).trim()) return;
+      let target = n;
+      if (a > 0) target = target.splitText(a);
+      if (b - a < target.data.length) target.splitText(b - a);
+      const m = make();
+      target.before(m); m.appendChild(target); marks.push(m);
+    });
+    return marks;
+  }
+  const fmtDate = (iso) => { const d = new Date(iso); return isNaN(d) ? "" : `${d.getMonth() + 1}/${d.getDate()}`; };
+  function placeSticky(root, node, it) {
+    const el0 = document.createElement("div");
+    el0.className = "sticky-bar c-" + it.color;
+    el0.dataset.annoUi = ""; el0.dataset.id = it.id;
+    el0.innerHTML = `<span>📌 ${esc(it.note || "付箋")}</span><span class="st-date">${fmtDate(it.created)}</span>`;
+    const el = node.parentElement, big = el.closest(".codeblock, .tbl, blockquote, li, figure");
+    if (el === root || !root.contains(el)) return root.prepend(el0);
+    if (big && big.tagName === "LI") return big.prepend(el0);
+    let b = big || el;
+    while (b.parentElement && b.parentElement !== root) b = b.parentElement;
+    b.before(el0);
+  }
+  const mine = () => anno.items.filter((x) => x.book === book.id && x.file === chapters[state.idx].file && (x.lang || book.langs[0]) === state.lang);
+  function applyAnno() {
+    anno.lost = new Set();
+    const list = mine();
+    for (const it of list.filter((x) => x.type === "mark")) {
+      const r = locate(textIndex(body), it);
+      if (!r) { anno.lost.add(it.id); continue; }
+      const marks = wrapRange(body, r.start, r.end, () => {
+        const m = document.createElement("mark");
+        m.className = "hl c-" + it.color; m.dataset.id = it.id;
+        if (it.note) m.title = it.note;
+        return m;
+      });
+      if (it.note && marks.length) marks[marks.length - 1].classList.add("note-end");
+    }
+    for (const it of list.filter((x) => x.type === "sticky")) {
+      const idx = textIndex(body), r = locate(idx, it);
+      if (!r) { anno.lost.add(it.id); continue; }
+      placeSticky(body, idx.nodes[nodeAt(idx, r.start)], it);
+    }
+  }
+  function refreshAnno() {
+    const y = scrollY;
+    body.querySelectorAll(".sticky-bar").forEach((b) => b.remove());
+    body.querySelectorAll("mark.hl").forEach((m) => m.replaceWith(...m.childNodes));
+    body.normalize();
+    applyAnno();
+    window.scrollTo(0, y);
+    if (!$("notes").hidden) renderNotes();
+  }
+  function addItem(type, anc, extra = {}) {
+    const it = { id: type[0] + Date.now().toString(36) + Math.random().toString(36).slice(2, 6), type, book: book.id,
+      file: chapters[state.idx].file, lang: state.lang, color: "yellow", note: "", created: new Date().toISOString(), ...anc, ...extra };
+    anno.items.push(it);
+    saveAnno();
+    return it;
+  }
+  function removeItem(id) { anno.items = anno.items.filter((x) => x.id !== id); saveAnno(); }
+  const findItem = (id) => anno.items.find((x) => x.id === id);
+
+  // ---------- 吹き出し ----------
+  function placePop(rect, below) {
+    pop.hidden = false;
+    const r = pop.getBoundingClientRect();
+    const left = Math.max(8, Math.min(rect.left, innerWidth - r.width - 8));
+    let top = below ? rect.bottom + 12 : rect.top - r.height - 8;
+    if (below && top + r.height > innerHeight - 8) top = rect.top - r.height - 12;
+    if (!below && top < 8) top = Math.min(rect.bottom + 8, innerHeight - r.height - 8);
+    pop.style.left = left + "px";
+    pop.style.top = Math.max(8, top) + "px";
+  }
+  function closePop() {
+    if (pop.hidden) return;
+    const done = pop._onclose;
+    pop._onclose = null; pop.hidden = true; pop.dataset.kind = "";
+    if (done) done();
+  }
+  const swatches = (cur) => Object.entries(COLORS).map(([c, name]) =>
+    `<button type="button" class="sw c-${c}${c === cur ? " on" : ""}" data-color="${c}" title="${name}" aria-label="${name}"></button>`).join("");
+
+  // 文字を選んだら、線・メモ・付箋・訳すのボタンを、選んだ所の下に出す（スマホは上にコピーなどのメニューが出るため）
+  function selRange() {
+    const sel = getSelection();
+    if (!sel.rangeCount || sel.isCollapsed) return null;
+    const range = sel.getRangeAt(0);
+    return body.contains(range.commonAncestorContainer) ? range : null;
+  }
+  function placeSelBar() {
+    const range = selRange();
+    if (!range) { closePop(); return; }
+    placePop(range.getBoundingClientRect(), true);
+  }
+  function showSelBar() {
+    const range = selRange();
+    if (!range) { if (pop.dataset.kind === "sel") closePop(); return; }
+    const a = rangeToAnchor(range);
+    if (!a) return;
+    if (a.exact.length > 3000) return toast("選んだ範囲が長すぎます（3000文字まで）");
+    hideTip();
+    if (pop.dataset.kind !== "sel") closePop();
+    anno.pending = { anchor: a, text: range.toString() };
+    pop.dataset.kind = "sel";
+    pop.innerHTML = `<div class="ap-row">${swatches("")}<span class="sep"></span>
+      <button type="button" data-act="memo">📝 メモ</button><button type="button" data-act="sticky">📌 付箋</button>
+      ${window.agriTranslate ? '<button type="button" data-act="tr">🔤 訳す</button>' : ""}</div>`;
+    pop.onclick = (e) => {
+      const b = e.target.closest("button");
+      if (!b || !anno.pending) return;
+      const { anchor: an, text } = anno.pending;
+      anno.pending = null;
+      getSelection().removeAllRanges();
+      closePop();
+      if (b.dataset.color) { addItem("mark", an, { color: b.dataset.color }); refreshAnno(); }
+      else if (b.dataset.act === "memo") { const it = addItem("mark", an); refreshAnno(); editMark(it.id, true); }
+      else if (b.dataset.act === "sticky") {
+        const it = addItem("sticky", { ...an, exact: an.exact.slice(0, 40), suffix: (an.exact.slice(40) + an.suffix).slice(0, 32) });
+        refreshAnno(); editSticky(it.id, true);
+      } else if (b.dataset.act === "tr" && window.agriTranslate) window.agriTranslate(text.trim());
+    };
+    placePop(range.getBoundingClientRect(), true);
+  }
+  let mouseDown = false, selTimer = 0;
+  document.addEventListener("mousedown", (e) => {
+    mouseDown = true;
+    if (!pop.hidden && !pop.contains(e.target)) closePop();
+  });
+  document.addEventListener("mouseup", () => { mouseDown = false; clearTimeout(selTimer); selTimer = setTimeout(showSelBar, 30); });
+  document.addEventListener("selectionchange", () => {
+    clearTimeout(selTimer);
+    selTimer = setTimeout(() => { if (!mouseDown) showSelBar(); }, 350);
+  });
+  pop.addEventListener("mousedown", (e) => { if (pop.dataset.kind === "sel") e.preventDefault(); });   // 押しても選んだ文字が消えないように
+
+  function editMark(id, fresh = false) {
+    const it = findItem(id), el = body.querySelector(`mark.hl[data-id="${id}"]`);
+    if (!it || !el) return;
+    closePop();
+    pop.dataset.kind = "mark";
+    pop.innerHTML = `<div class="ap-row">${swatches(it.color)}<span class="grow"></span><button type="button" data-act="del">🗑 消す</button></div>
+      <textarea id="annoNote" rows="3" placeholder="メモ（なくてもよい）">${esc(it.note || "")}</textarea>
+      <div class="ap-row"><span class="kbd">自動で保存されます</span><span class="grow"></span><button type="button" data-act="close" class="primary">閉じる</button></div>`;
+    const note = $("annoNote");
+    let tm = 0;
+    note.oninput = () => { it.note = note.value.trim(); saveAnno(); clearTimeout(tm); tm = setTimeout(refreshAnno, 600); };
+    pop.onclick = (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      if (b.dataset.color) { it.color = b.dataset.color; saveAnno(); refreshAnno(); pop.querySelectorAll(".sw").forEach((x) => x.classList.toggle("on", x === b)); }
+      else if (b.dataset.act === "del") { pop._onclose = null; closePop(); removeItem(id); refreshAnno(); }
+      else if (b.dataset.act === "close") closePop();
+    };
+    pop._onclose = () => { clearTimeout(tm); if (fresh && !it.note) removeItem(id); refreshAnno(); };
+    placePop(el.getBoundingClientRect(), true);
+    if (fresh) note.focus();
+  }
+  function editSticky(id, fresh = false) {
+    const it = findItem(id), el = body.querySelector(`.sticky-bar[data-id="${id}"]`);
+    if (!it || !el) return;
+    closePop();
+    pop.dataset.kind = "sticky";
+    pop.innerHTML = `<div class="ap-row"><strong>📌 付箋</strong><span class="grow"></span><button type="button" data-act="del">🗑 はがす</button></div>
+      <input type="text" id="annoLabel" maxlength="60" placeholder="例: ここまで読んだ、ここから試す" value="${esc(it.note || "")}">
+      <div class="ap-row">${swatches(it.color)}<span class="grow"></span><button type="button" data-act="close" class="primary">OK</button></div>`;
+    const label = $("annoLabel");
+    label.oninput = () => { it.note = label.value.trim(); saveAnno(); el.firstElementChild.textContent = "📌 " + (it.note || "付箋"); };
+    label.onkeydown = (e) => { if (e.key === "Enter") closePop(); };
+    pop.onclick = (e) => {
+      const b = e.target.closest("button");
+      if (!b) return;
+      if (b.dataset.color) { it.color = b.dataset.color; saveAnno(); el.className = "sticky-bar c-" + it.color; pop.querySelectorAll(".sw").forEach((x) => x.classList.toggle("on", x === b)); }
+      else if (b.dataset.act === "del") { pop._onclose = null; closePop(); removeItem(id); refreshAnno(); }
+      else if (b.dataset.act === "close") closePop();
+    };
+    pop._onclose = () => { if (!$("notes").hidden) renderNotes(); };
+    placePop(el.getBoundingClientRect(), true);
+    if (fresh) label.focus();
+  }
+  // 画面の上の端に見えている、最初の文字
+  function topAnchorText() {
+    const line = topLine(), idx = textIndex(body);
+    for (let k = 0; k < idx.nodes.length; k++) {
+      const n = idx.nodes[k];
+      if (!n.data.trim()) continue;
+      const r = document.createRange();
+      r.selectNodeContents(n);
+      const rect = r.getBoundingClientRect();
+      if (rect.height > 0 && rect.bottom > line + 4) {
+        const s = idx.starts[k] + (n.data.length - n.data.trimStart().length);
+        return makeAnchor(idx.text, s, Math.min(idx.text.length, s + 40));
+      }
+    }
+    return null;
+  }
+  function scrollToEl(el, center) {
+    const r = el.getBoundingClientRect();
+    window.scrollTo(0, r.top + scrollY - topLine() - (center ? innerHeight / 4 : 0));
+  }
+  function flash(els) { els.forEach((el) => { el.classList.remove("anno-flash"); void el.offsetWidth; el.classList.add("anno-flash"); }); }
+
+  // ---------- 一覧（🔖） ----------
+  function pinBadge(file) {
+    const n = anno.items.filter((x) => x.book === book.id && x.file === file && x.type === "sticky").length;
+    return n ? `<span class="pin">📌${n > 1 ? n : ""}</span>` : "";
+  }
+  function renderNotes() {
+    const order = new Map(chapters.map((c, i) => [c.file, i]));
+    const items = anno.items.filter((x) => x.book === book.id).sort((a, b) =>
+      (order.get(a.file) ?? 1e9) - (order.get(b.file) ?? 1e9) || (a.pos || 0) - (b.pos || 0));
+    const n = (f) => items.filter(f).length;
+    const cut = (s, len) => (s.length > len ? s.slice(0, len) + "…" : s).replace(/\s+/g, " ");
+    let html = `<div class="ap-top"><button type="button" id="annoAdd">📌 今見ている所に付箋を貼る</button>
+      <span class="ap-count">付箋 ${n((x) => x.type === "sticky")}・線 ${n((x) => x.type === "mark")}・メモ ${n((x) => x.type === "mark" && x.note)}</span></div>
+      <p class="ap-hint">本文の文字を選ぶと、線（4色）・📝 メモ・📌 付箋のボタンが出ます。付けた線や付箋を押すと、色を変えたり消したりできます。このブラウザに保存されます。</p>`;
+    let last = null;
+    for (const it of items) {
+      if (it.file !== last) {
+        last = it.file;
+        const ch = chapters[order.get(it.file)];
+        html += `<div class="ap-ch">${esc(ch ? L(ch.title, it.lang || state.lang) : it.file)}</div>`;
+      }
+      const lost = it.file === chapters[state.idx].file && anno.lost.has(it.id) ? '<small class="lost">本文が変わって、場所が見つかりません</small>' : "";
+      const quote = `<small>「${esc(cut(it.exact, 50))}」${fmtDate(it.created)}</small>`;
+      const main = it.type === "sticky" ? `📌 ${esc(it.note || "付箋")}` : it.note ? `📝 ${esc(cut(it.note, 80))}` : `「${esc(cut(it.exact, 60))}」`;
+      html += `<div class="ap-item c-${esc(it.color)}"><button type="button" class="ap-go" data-go="${esc(it.id)}">${main}
+        ${it.type === "sticky" || it.note ? quote : `<small>${fmtDate(it.created)}</small>`}${lost}</button>
+        <button type="button" class="ap-del" data-del="${esc(it.id)}" aria-label="消す">✕</button></div>`;
+    }
+    if (!items.length) html += '<p class="empty">まだありません</p>';
+    $("notesIn").innerHTML = html;
+  }
+  $("annoBtn").addEventListener("click", () => {
+    if (!$("notes").hidden) return closeDrops();
+    closeDrops();
+    renderNotes();
+    $("notes").hidden = false; $("annoBtn").classList.add("on"); $("annoBtn").setAttribute("aria-expanded", "true");
+  });
+  $("notesIn").addEventListener("click", async (e) => {
+    const b = e.target.closest("button");
+    if (!b) return;
+    if (b.id === "annoAdd") {
+      const a = topAnchorText();
+      if (!a) return toast("付箋を貼る場所が見つかりません");
+      closeDrops();
+      const it = addItem("sticky", a);
+      refreshAnno(); editSticky(it.id, true);
+      return;
+    }
+    if (b.dataset.del) { removeItem(b.dataset.del); refreshAnno(); renderNotes(); return; }
+    const it = findItem(b.dataset.go);
+    if (!it) return;
+    closeDrops();
+    const idx = chapters.findIndex((c) => c.file === it.file);
+    if (idx < 0) return toast("この章は今の教科書にありません。一覧の ✕ で消せます");
+    if (idx !== state.idx || (it.lang || book.langs[0]) !== state.lang) await show(idx, it.lang || book.langs[0], null);
+    const els = [...body.querySelectorAll(`[data-id="${it.id}"]`)];
+    if (!els.length) return toast("本文が変わったため、場所が見つかりませんでした。一覧の ✕ で消せます");
+    scrollToEl(els[0], it.type === "mark");
+    flash(els);
+  });
+
+  // ---------- 本文を押したとき ----------
+  body.addEventListener("click", (e) => {
+    if (!getSelection().isCollapsed) return;
+    const cp = e.target.closest("[data-copy]");
+    if (cp) return copyText(codes[+cp.dataset.copy]);
+    const img = e.target.closest("figure img");
+    if (img) return openZoom(img);
+    const sticky = e.target.closest(".sticky-bar");
+    if (sticky) return editSticky(sticky.dataset.id);
+    const term = e.target.closest(".term");
+    if (term) { termTip(term, e); return; }
+    const codeEl = e.target.closest("code");
+    if (codeEl && codeTip(codeEl, e)) return;
+    const m = e.target.closest("mark.hl");
+    if (m && !e.target.closest("a")) return editMark(m.dataset.id);
+    hideTip();
+  });
+  document.addEventListener("click", (e) => {
+    if (!e.target.isConnected) return;
+    if (!e.target.closest(".bar") && (!$("toc").hidden || !$("notes").hidden)) closeDrops();
+    if (!e.target.closest("#body, #tip")) hideTip();
+  });
+  document.addEventListener("keydown", (e) => {
+    if (e.key !== "Escape") return;
+    closeZoom(); hideTip(); closeDrops();
+    if (!pop.hidden) closePop();
+  });
+
+  // ---------- はじめに ----------
+  async function openBook() {
+    book = books.find((b) => b.id === bookId);
+    $("reader").hidden = false;
+    if (!book) { body.innerHTML = `<p class="msg err">「${esc(bookId)}」という教科書はありません。<a href="./">一覧へ</a></p>`; return; }
+    $("bookIcon").textContent = book.icon || "📘";
+    $("langs").hidden = book.langs.length < 2;
+    try { chapters = await getJSON(base() + "chapters.json"); }
+    catch (e) { body.innerHTML = `<p class="msg err">${esc(e.message)}</p>`; return; }
+    if (book.glossary) getJSON(base() + book.glossary).then((g) => { glossary = g; }).catch(() => {});
+    const termsReady = book.terms ? getJSON(base() + book.terms).then((x) => { terms = x; }).catch(() => {}) : Promise.resolve();
+    // 前の場所（スマート農業News の cow.html）で読んでいた所と言葉を引き継ぐ
+    if (book.legacy && !store.get(POS_KEY()) && book.legacy.pos && store.get(book.legacy.pos)) store.set(POS_KEY(), store.get(book.legacy.pos));
+    if (book.legacy && !store.get("textbooks-lang-" + book.id) && book.legacy.lang && store.get(book.legacy.lang)) store.set("textbooks-lang-" + book.id, store.get(book.legacy.lang));
+    let saved = null;
+    try { saved = JSON.parse(store.get(POS_KEY(), "null")); } catch (e) { saved = null; }
+    const h = fromHash();
+    const lang = (h && h.lang) || store.get("textbooks-lang-" + book.id) || (saved && saved.lang) || book.langs[0];
+    await termsReady;
+    if (h) await show(h.idx, lang, saved && saved.idx === h.idx && saved.lang === lang ? saved : null);
+    else if (saved) await show(saved.idx, lang, saved.lang === lang ? saved : { h: saved.h, r: saved.r });
+    else await show(0, lang, null);
+  }
+
+  getJSON("books.json").then((b) => { books = b; return bookId ? openBook() : showShelf(); })
+    .catch((e) => { document.body.insertAdjacentHTML("afterbegin", `<p class="msg err">読み込めませんでした（${esc(e.message)}）</p>`); });
+})();
+</script>
+<script src="https://yusuke1090.github.io/smart-agri-news/translate.js" defer></script>
+</body>
+</html>
