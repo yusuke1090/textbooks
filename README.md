@@ -9,6 +9,7 @@
 | [🐄 牛の教科書](https://yusuke1090.github.io/textbooks/?b=cow) | 乳牛のからだ・繁殖と1年1産・エサ・乳房炎・血乳・スマート酪農（13章と付録、図24枚） | 日本語・English |
 | [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録） | 日本語 |
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
+| [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録） | 日本語 |
 
 ## 読む画面でできること
 
@@ -89,3 +90,7 @@ tools/            図や用語の一覧を作るスクリプト
 - 2026-11-14 に、ラズパイピコ開発ガイドの「付録F. git と GitHub の使い方」を分けて作った。ピコのガイドの3章・4章は、ここへのリンクになっている
 - コマンドの言葉の説明は `glossary.json`（ピコのガイドの `glossary.json` から、git・ssh・gh などを写したもの）
 - 9章の VS Code の画面の図（`images/vscode-*.svg`、6枚）は `python3 tools/make_github_figures.py` で作る
+
+### 🌍 アフリカの教科書（books/africa）
+
+- 2026-11-14 に作った。数字と会社の状況は、そのときにウェブで調べたもの。出典は付録B（`b-sources.md`）にまとめ、直すときは出典も一緒に直す

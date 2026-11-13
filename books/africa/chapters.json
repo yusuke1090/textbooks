@@ -1,0 +1,13 @@
+[
+  {"part": "第1部 アフリカを知る", "file": "01-overview.md", "title": "1. アフリカのあらまし"},
+  {"part": "第1部 アフリカを知る", "file": "02-history.md", "title": "2. 歴史"},
+  {"part": "第1部 アフリカを知る", "file": "03-food.md", "title": "3. 食べ物"},
+  {"part": "第1部 アフリカを知る", "file": "04-culture.md", "title": "4. 文化と暮らし"},
+  {"part": "第1部 アフリカを知る", "file": "05-trends.md", "title": "5. いまのトレンド"},
+  {"part": "第2部 東アフリカの3か国", "file": "06-tanzania.md", "title": "6. タンザニア"},
+  {"part": "第2部 東アフリカの3か国", "file": "07-kenya.md", "title": "7. ケニア"},
+  {"part": "第2部 東アフリカの3か国", "file": "08-malawi.md", "title": "8. マラウイ"},
+  {"part": "第3部 参入するなら", "file": "09-entry.md", "title": "9. 3か国を比べて、参入を考える"},
+  {"part": "付録", "file": "a-words.md", "title": "付録A. スワヒリ語・チェワ語と用語"},
+  {"part": "付録", "file": "b-sources.md", "title": "付録B. 出典"}
+]
