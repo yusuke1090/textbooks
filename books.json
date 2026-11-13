@@ -50,5 +50,19 @@
       }
     },
     "glossary": "glossary.json"
+  },
+  {
+    "id": "github",
+    "icon": "🐙",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "GitHub の教科書"
+    },
+    "desc": {
+      "ja": "git で記録をとり、GitHub に置くまで。最初の設定、SSH キー、コミット・プッシュ・プル、前の状態に戻す、ブランチ、ラズパイ・Jetson からのクローン、よくあるエラー。"
+    },
+    "glossary": "glossary.json"
   }
 ]

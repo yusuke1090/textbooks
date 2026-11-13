@@ -315,7 +315,6 @@
   "$ git remote add": "リモートを、名前を付けて登録する。git remote add origin URL なら、URL を origin という名前で登録する。",
   "$ git remote set-url": "語源: set は「設定する」という意味の英単語。\n登録しているリモートの URL を変える。HTTPS から SSH に切り替えるときなど。",
   "$ git origin": "語源: origin は「元、起源」という意味の英単語。\nリモートの名前。GitHub のリポジトリを origin と呼ぶのが決まり。クローンすると、自動でこの名前になる。",
-  "$ git lan": "リモートの名前（自分で付けたもの）。付録F では、同じ LAN の PC に作った置き場（bare リポジトリ）。",
   "$ git main": "中心のブランチの名前。GitHub で新しく作るリポジトリは main になる。",
   "$ git master": "古いリポジトリで使われていた、中心のブランチの名前。今は main にするのがふつう。",
   "$ git push -u": "語源: -u は upstream（上流、つながる先）の略。\nこのブランチのつながる先を覚えさせる。次からは git push・git pull だけでよい。最初の1回だけ付ける。",

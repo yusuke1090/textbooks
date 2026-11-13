@@ -1,0 +1,12 @@
+[
+  {"part": "第1部 準備", "file": "01-git-github.md", "title": "1. git と GitHub とは"},
+  {"part": "第1部 準備", "file": "02-setup.md", "title": "2. 最初に1回だけする設定"},
+  {"part": "第1部 準備", "file": "03-ssh.md", "title": "3. SSH キーで GitHub とつなぐ"},
+  {"part": "第2部 ふだんの使い方", "file": "04-new-repo.md", "title": "4. 新しくリポジトリを作る"},
+  {"part": "第2部 ふだんの使い方", "file": "05-daily.md", "title": "5. ふだんの記録"},
+  {"part": "第2部 ふだんの使い方", "file": "06-undo.md", "title": "6. 前の状態に戻す"},
+  {"part": "第2部 ふだんの使い方", "file": "07-branch.md", "title": "7. ブランチで試す"},
+  {"part": "第3部 ほかの機械と", "file": "08-other-machines.md", "title": "8. 別の機械からクローンする"},
+  {"part": "付録", "file": "a-errors.md", "title": "付録A. よくあるエラー"},
+  {"part": "付録", "file": "b-commands.md", "title": "付録B. コマンドの一覧"}
+]
