@@ -120,5 +120,13 @@
   "$ collar": "この教科書の例で使っている、プロジェクトの名前（首輪のプログラム）。自分のプロジェクトの名前に変える。",
   "$ code": "VS Code をターミナルから動かすコマンド。\ncode collar なら collar フォルダを VS Code で開く。code . なら今いるフォルダ。",
   "$ .gitignore": "git で記録しないファイルを書いておくファイル。1行に1つ、build/ のようにフォルダや、*.csv のように形で書く。# から後ろはメモ。",
-  "$ code .": "今いるフォルダを VS Code で開く。"
+  "$ code .": "今いるフォルダを VS Code で開く。",
+  "$ code --install-extension": "語源: install は「入れる」、extension は「拡張機能」という意味の英単語。\nVS Code の拡張機能を、名前（ID）を指定して入れる。",
+  "$ mhutchie.git-graph": "拡張機能「Git Graph」の名前（ID）。コミットの歴史を、枝分かれの図で見る。",
+  "$ github.vscode-github-actions": "拡張機能「GitHub Actions」の名前（ID）。GitHub での自動ビルドの結果を VS Code で見る。",
+  "$ eamodio.gitlens": "拡張機能「GitLens」の名前（ID）。行ごとに、誰が・いつ・どのコミットで変えたかを出す。",
+  "$ github.vscode-pull-request-github": "拡張機能「GitHub Pull Requests」の名前（ID）。Pull Request と Issue を VS Code の中で扱う。",
+  "$ ms-vscode-remote.remote-ssh": "拡張機能「Remote - SSH」の名前（ID）。ssh でつないだ機械（ラズパイ・Jetson）のフォルダを、PC の VS Code で開く。",
+  "$ git --soft": "語源: soft は「やわらかい」という意味の英単語。\ngit reset --soft HEAD~1 で、直前のコミットだけを取り消す。変えた内容はステージに残る（VS Code の Undo Last Commit と同じ）。",
+  "$ git HEAD~1": "HEAD は今いるコミット、~1 はその1つ前。HEAD~1 で「直前のコミットの1つ前」を表す。"
 }

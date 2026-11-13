@@ -1,0 +1,77 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 430" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect x="0.0" y="0.0" width="820.0" height="430.0" rx="10" fill="#ffffff"/>
+<text x="410.0" y="28.0" font-size="16" text-anchor="middle" fill="#2b2f36" font-weight="700">拡張機能 Git Graph の画面（イメージ）</text>
+<rect x="20.0" y="50.0" width="780.0" height="270.0" rx="8" fill="#1f2329" stroke="#3a404a" stroke-width="2"/>
+<text x="34.0" y="72.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-weight="700">Graph</text>
+<text x="130.0" y="72.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-weight="700">Description</text>
+<text x="520.0" y="72.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-weight="700">Date</text>
+<text x="622.0" y="72.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-weight="700">Author</text>
+<text x="712.0" y="72.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-weight="700">Commit</text>
+<line x1="21.0" y1="82.0" x2="799.0" y2="82.0" stroke="#3a404a" stroke-width="1"/>
+<line x1="52.0" y1="100.0" x2="52.0" y2="160.0" stroke="#8b93a1" stroke-width="2" stroke-dasharray="3 3"/>
+<line x1="52.0" y1="160.0" x2="52.0" y2="220.0" stroke="#2f6fde" stroke-width="2"/>
+<path d="M76 130 L76 144 Q76 160 52 160" fill="none" stroke="#6b3fa0" stroke-width="2"/>
+<circle cx="52.0" cy="100.0" r="4.5" fill="#1f2329" stroke="#8b93a1" stroke-width="2"/>
+<text x="130.0" y="104.0" font-size="12" text-anchor="start" fill="#8b93a1" font-style="italic">Uncommitted Changes (2)</text>
+<text x="520.0" y="104.0" font-size="11.5" text-anchor="start" fill="#c9ced6">*</text>
+<text x="622.0" y="104.0" font-size="11.5" text-anchor="start" fill="#c9ced6">*</text>
+<text x="712.0" y="104.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">*</text>
+<circle cx="76.0" cy="130.0" r="4.5" fill="#6b3fa0" stroke="#6b3fa0" stroke-width="2"/>
+<rect x="130.0" y="122.0" width="66.8" height="16.0" rx="3" fill="#6b3fa0"/>
+<text x="136.0" y="134.0" font-size="10.5" text-anchor="start" fill="#ffffff">try-sleep</text>
+<text x="206.8" y="134.0" font-size="12" text-anchor="start" fill="#e3e7ee">スリープを試す</text>
+<text x="520.0" y="134.0" font-size="11.5" text-anchor="start" fill="#c9ced6">11/14 10:20</text>
+<text x="622.0" y="134.0" font-size="11.5" text-anchor="start" fill="#c9ced6">Taro</text>
+<text x="712.0" y="134.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">9f8e7d6</text>
+<circle cx="52.0" cy="160.0" r="4.5" fill="#1f2329" stroke="#2f6fde" stroke-width="2"/>
+<rect x="130.0" y="152.0" width="36.4" height="16.0" rx="3" fill="#2f6fde"/>
+<text x="136.0" y="164.0" font-size="10.5" text-anchor="start" fill="#ffffff" font-weight="700">main</text>
+<text x="176.4" y="164.0" font-size="12" text-anchor="start" fill="#e3e7ee">I2C の読み取りを足した</text>
+<text x="520.0" y="164.0" font-size="11.5" text-anchor="start" fill="#c9ced6">11/14 09:05</text>
+<text x="622.0" y="164.0" font-size="11.5" text-anchor="start" fill="#c9ced6">Taro</text>
+<text x="712.0" y="164.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">3d3b5db</text>
+<circle cx="52.0" cy="190.0" r="4.5" fill="#1f2329" stroke="#2f6fde" stroke-width="2"/>
+<rect x="130.0" y="182.0" width="79.0" height="16.0" rx="3" fill="#1f2329" stroke="#2f6fde" stroke-width="1"/>
+<text x="136.0" y="194.0" font-size="10.5" text-anchor="start" fill="#2f6fde">origin/main</text>
+<rect x="215.0" y="182.0" width="48.5" height="16.0" rx="3" fill="#c28a00"/>
+<text x="221.0" y="194.0" font-size="10.5" text-anchor="start" fill="#ffffff">v1.0.0</text>
+<text x="273.5" y="194.0" font-size="12" text-anchor="start" fill="#e3e7ee">LED のピンを変えた</text>
+<text x="520.0" y="194.0" font-size="11.5" text-anchor="start" fill="#c9ced6">11/13 17:40</text>
+<text x="622.0" y="194.0" font-size="11.5" text-anchor="start" fill="#c9ced6">Taro</text>
+<text x="712.0" y="194.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">a1c2e3f</text>
+<circle cx="52.0" cy="220.0" r="4.5" fill="#1f2329" stroke="#2f6fde" stroke-width="2"/>
+<text x="134.0" y="224.0" font-size="12" text-anchor="start" fill="#e3e7ee">最初のバージョン</text>
+<text x="520.0" y="224.0" font-size="11.5" text-anchor="start" fill="#c9ced6">11/13 15:12</text>
+<text x="622.0" y="224.0" font-size="11.5" text-anchor="start" fill="#c9ced6">Taro</text>
+<text x="712.0" y="224.0" font-size="11.5" text-anchor="start" fill="#c9ced6" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">5b6d7e8</text>
+<rect x="300.0" y="200.0" width="250.0" height="112.0" rx="5" fill="#252a31" stroke="#454c58" stroke-width="1"/>
+<text x="314.0" y="218.0" font-size="11.5" text-anchor="start" fill="#e3e7ee">Add Tag...</text>
+<text x="314.0" y="238.0" font-size="11.5" text-anchor="start" fill="#e3e7ee">Create Branch...</text>
+<text x="314.0" y="258.0" font-size="11.5" text-anchor="start" fill="#e3e7ee">Checkout...</text>
+<rect x="303.0" y="260.0" width="244.0" height="20.0" rx="0" fill="#2a4a72"/>
+<text x="314.0" y="278.0" font-size="11.5" text-anchor="start" fill="#e3e7ee">Revert...</text>
+<text x="314.0" y="298.0" font-size="11.5" text-anchor="start" fill="#e3e7ee">Copy Commit Hash to Clipboard</text>
+<circle cx="98.0" cy="130.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="98.0" y="134.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">1</text>
+<circle cx="118.0" cy="190.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="118.0" y="194.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">2</text>
+<circle cx="340.0" cy="100.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="340.0" y="104.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">3</text>
+<circle cx="288.0" cy="214.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="288.0" y="218.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">4</text>
+<circle cx="40.0" cy="346.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="40.0" y="350.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">1</text>
+<text x="60.0" y="350.0" font-size="12" text-anchor="start" fill="#2b2f36">点がコミット、線がブランチ。</text>
+<text x="60.0" y="366.0" font-size="12" text-anchor="start" fill="#2b2f36">枝分かれと合流が見える</text>
+<circle cx="420.0" cy="346.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="420.0" y="350.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">2</text>
+<text x="440.0" y="350.0" font-size="12" text-anchor="start" fill="#2b2f36">ブランチ（太字は今いるもの）・</text>
+<text x="440.0" y="366.0" font-size="12" text-anchor="start" fill="#2b2f36">GitHub の位置（origin/main）・タグ</text>
+<circle cx="40.0" cy="392.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="40.0" y="396.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">3</text>
+<text x="60.0" y="396.0" font-size="12" text-anchor="start" fill="#2b2f36">まだコミットしていない変更</text>
+<circle cx="420.0" cy="392.0" r="11" fill="#c0392b" stroke="#ffffff" stroke-width="1.5"/>
+<text x="420.0" y="396.0" font-size="12" text-anchor="middle" fill="#ffffff" font-weight="700">4</text>
+<text x="440.0" y="396.0" font-size="12" text-anchor="start" fill="#2b2f36">コミットを右クリック: タグ・ブランチを</text>
+<text x="440.0" y="412.0" font-size="12" text-anchor="start" fill="#2b2f36">作る、そこに移る、取り消す（Revert）</text>
+</svg>

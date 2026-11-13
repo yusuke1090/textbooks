@@ -7,6 +7,7 @@
   {"part": "第2部 ふだんの使い方", "file": "06-undo.md", "title": "6. 前の状態に戻す"},
   {"part": "第2部 ふだんの使い方", "file": "07-branch.md", "title": "7. ブランチで試す"},
   {"part": "第3部 ほかの機械と", "file": "08-other-machines.md", "title": "8. 別の機械からクローンする"},
+  {"part": "第4部 VS Code で使う", "file": "09-vscode.md", "title": "9. VS Code で git を使う"},
   {"part": "付録", "file": "a-errors.md", "title": "付録A. よくあるエラー"},
   {"part": "付録", "file": "b-commands.md", "title": "付録B. コマンドの一覧"}
 ]

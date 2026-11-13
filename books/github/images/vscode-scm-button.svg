@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 330" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<defs><marker id="ah-1f7a3d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1f7a3d"/></marker><marker id="ah-2f6fde" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2f6fde"/></marker></defs>
+<rect x="0.0" y="0.0" width="820.0" height="330.0" rx="10" fill="#ffffff"/>
+<text x="410.0" y="28.0" font-size="16" text-anchor="middle" fill="#2b2f36" font-weight="700">ソース管理の大きいボタンの変わり方</text>
+<rect x="20.0" y="50.0" width="174.0" height="216.0" rx="8" fill="#f3f4f6" stroke="#555c66" stroke-width="2"/>
+<text x="107.0" y="74.0" font-size="13.5" text-anchor="middle" fill="#555c66" font-weight="700">リポジトリでない</text>
+<text x="107.0" y="92.0" font-size="13.5" text-anchor="middle" fill="#555c66" font-weight="700">（git init の前）</text>
+<rect x="32.0" y="104.0" width="150.0" height="26.0" rx="4" fill="#2f6fde"/>
+<text x="107.0" y="121.5" font-size="11.5" text-anchor="middle" fill="#ffffff" font-weight="600">Initialize Repository</text>
+<rect x="32.0" y="138.0" width="150.0" height="26.0" rx="4" fill="#2f6fde"/>
+<text x="107.0" y="155.5" font-size="11.5" text-anchor="middle" fill="#ffffff" font-weight="600">Publish to GitHub</text>
+<text x="107.0" y="186.0" font-size="12" text-anchor="middle" fill="#2b2f36">リポジトリにする</text>
+<text x="107.0" y="203.0" font-size="12" text-anchor="middle" fill="#2b2f36">GitHub に置く（4章）</text>
+<text x="107.0" y="224.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">git init</text>
+<rect x="222.0" y="50.0" width="174.0" height="216.0" rx="8" fill="#fff6e0" stroke="#c28a00" stroke-width="2"/>
+<text x="309.0" y="74.0" font-size="13.5" text-anchor="middle" fill="#c28a00" font-weight="700">変えたファイルが</text>
+<text x="309.0" y="92.0" font-size="13.5" text-anchor="middle" fill="#c28a00" font-weight="700">ある</text>
+<rect x="234.0" y="112.0" width="150.0" height="26.0" rx="4" fill="#2f6fde"/>
+<text x="309.0" y="129.5" font-size="11.5" text-anchor="middle" fill="#ffffff" font-weight="600">✓ Commit</text>
+<text x="309.0" y="186.0" font-size="12" text-anchor="middle" fill="#2b2f36">記録する</text>
+<text x="309.0" y="207.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">git add</text>
+<text x="309.0" y="223.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">git commit</text>
+<rect x="424.0" y="50.0" width="174.0" height="216.0" rx="8" fill="#e7f4ec" stroke="#1f7a3d" stroke-width="2"/>
+<text x="511.0" y="74.0" font-size="13.5" text-anchor="middle" fill="#1f7a3d" font-weight="700">送っていない</text>
+<text x="511.0" y="92.0" font-size="13.5" text-anchor="middle" fill="#1f7a3d" font-weight="700">コミットがある</text>
+<rect x="436.0" y="112.0" width="150.0" height="26.0" rx="4" fill="#2f6fde"/>
+<text x="511.0" y="129.5" font-size="11.5" text-anchor="middle" fill="#ffffff" font-weight="600">↻ Sync Changes 1↑</text>
+<text x="511.0" y="186.0" font-size="12" text-anchor="middle" fill="#2b2f36">取り込んで、送る</text>
+<text x="511.0" y="207.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">git pull</text>
+<text x="511.0" y="223.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">git push</text>
+<rect x="626.0" y="50.0" width="174.0" height="216.0" rx="8" fill="#f1ebf8" stroke="#6b3fa0" stroke-width="2"/>
+<text x="713.0" y="74.0" font-size="13.5" text-anchor="middle" fill="#6b3fa0" font-weight="700">ブランチがまだ</text>
+<text x="713.0" y="92.0" font-size="13.5" text-anchor="middle" fill="#6b3fa0" font-weight="700">GitHub にない</text>
+<rect x="638.0" y="112.0" width="150.0" height="26.0" rx="4" fill="#2f6fde"/>
+<text x="713.0" y="129.5" font-size="11.5" text-anchor="middle" fill="#ffffff" font-weight="600">Publish Branch</text>
+<text x="713.0" y="186.0" font-size="12" text-anchor="middle" fill="#2b2f36">ブランチを送る</text>
+<text x="713.0" y="207.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">git push -u</text>
+<text x="713.0" y="223.0" font-size="11.5" text-anchor="middle" fill="#555c66" font-family="ui-monospace, 'DejaVu Sans Mono', 'Noto Sans Mono', monospace">origin 名前</text>
+<path d="M194 158 L218 158" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
+<path d="M396 158 L420 158" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
+<path d="M511 266 C511 300 309 300 309 270" fill="none" stroke="#1f7a3d" stroke-width="2" stroke-dasharray="5 4" marker-end="url(#ah-1f7a3d)"/>
+<text x="410.0" y="306.0" font-size="12" text-anchor="middle" fill="#1f7a3d">また書き換えると Commit に戻る</text>
+<line x1="612.0" y1="56.0" x2="612.0" y2="260.0" stroke="#555c66" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="713.0" y="290.0" font-size="12" text-anchor="middle" fill="#6b3fa0">新しいブランチを作ったとき</text>
+</svg>
