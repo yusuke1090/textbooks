@@ -1,0 +1,12 @@
+[
+  {"part": "第1部 Python の基本", "file": "01-start.md", "title": "1. Python とは・準備"},
+  {"part": "第1部 Python の基本", "file": "02-values.md", "title": "2. 値・変数・文字列"},
+  {"part": "第1部 Python の基本", "file": "03-containers.md", "title": "3. データの入れ物（リスト・タプル・辞書・集合）"},
+  {"part": "第1部 Python の基本", "file": "04-flow.md", "title": "4. 条件分岐と繰り返し"},
+  {"part": "第2部 プログラムを組み立てる", "file": "05-functions.md", "title": "5. 関数"},
+  {"part": "第2部 プログラムを組み立てる", "file": "06-modules.md", "title": "6. モジュール・ファイル・例外"},
+  {"part": "第2部 プログラムを組み立てる", "file": "07-classes.md", "title": "7. クラス"},
+  {"part": "第3部 データを扱うライブラリ", "file": "08-numpy.md", "title": "8. NumPy（数の配列）"},
+  {"part": "第3部 データを扱うライブラリ", "file": "09-pandas.md", "title": "9. pandas（表のデータ）"},
+  {"part": "第3部 データを扱うライブラリ", "file": "10-matplotlib.md", "title": "10. matplotlib（グラフ）"}
+]

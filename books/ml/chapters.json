@@ -1,0 +1,9 @@
+[
+  {"part": "第1部 はじめに", "file": "01-intro.md", "title": "1. 機械学習とは（アイリスの分類）"},
+  {"part": "第2部 教師あり学習", "file": "02-regression.md", "title": "2. 教師あり学習と回帰"},
+  {"part": "第2部 教師あり学習", "file": "03-classification.md", "title": "3. 分類のモデル"},
+  {"part": "第3部 教師なし学習", "file": "04-preprocess.md", "title": "4. 前処理と次元削減"},
+  {"part": "第3部 教師なし学習", "file": "05-clustering.md", "title": "5. クラスタリング"},
+  {"part": "第4部 データとモデルの評価", "file": "06-features.md", "title": "6. 特徴量エンジニアリング"},
+  {"part": "第4部 データとモデルの評価", "file": "07-evaluation.md", "title": "7. モデルの評価"}
+]

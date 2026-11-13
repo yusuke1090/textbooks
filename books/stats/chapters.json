@@ -1,0 +1,10 @@
+[
+  {"part": "第1部 基礎統計", "file": "01-variance.md", "title": "1. データのばらつき（分散・標準偏差）"},
+  {"part": "第1部 基礎統計", "file": "02-correlation.md", "title": "2. 2つのデータの関係（共分散・相関係数）"},
+  {"part": "第1部 基礎統計", "file": "03-distribution.md", "title": "3. 確率変数と分布"},
+  {"part": "第1部 基礎統計", "file": "04-expectation.md", "title": "4. 期待値と分散"},
+  {"part": "第1部 基礎統計", "file": "05-distributions.md", "title": "5. よく使う分布（正規・χ²・t・F）"},
+  {"part": "第2部 計量経済学", "file": "06-clt.md", "title": "6. 標本平均・大数の法則・中心極限定理"},
+  {"part": "第2部 計量経済学", "file": "07-ols.md", "title": "7. 回帰分析と OLS"},
+  {"part": "第2部 計量経済学", "file": "08-ols-caution.md", "title": "8. OLS の注意点（多重共線性・欠落変数バイアス）"}
+]

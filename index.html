@@ -119,6 +119,8 @@ main { padding-bottom: 30px; }
 .codeblock.run .cb-head { color: var(--ok); }
 .codeblock pre { margin: 0; padding: 10px 12px; overflow-x: auto; background: var(--code-bg); line-height: 1.55; }
 #body .codeblock pre code { border: 0; background: none; padding: 0; white-space: pre; font-size: 13px; }
+#body .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
+#body .katex { font-size: 1.08em; }
 .term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
 .pager { display: flex; justify-content: space-between; gap: 10px; margin: 36px 0 10px; }
 .pager button { font-size: 14px; padding: 10px 14px; border-radius: 10px; cursor: pointer; max-width: 48%;
@@ -198,7 +200,7 @@ li > .sticky-bar { margin-top: 4px; }
 <div id="shelf" hidden>
   <div class="shelf-head"><div class="wrap">
     <h1>📚 教科書</h1>
-    <p>いろいろなことを、章ごとにまとめて勉強するための教科書です。文字を選ぶと、線・メモ・付箋を付けられます（このブラウザに保存）。</p>
+    <p>いろいろなことを、章ごとにまとめて勉強するための教科書です。</p>
   </div></div>
   <main class="wrap"><div class="books" id="books"><p class="msg">読み込み中…</p></div></main>
   <footer><div class="wrap"><p><a href="https://github.com/yusuke1090/textbooks" target="_blank" rel="noopener">GitHub</a> ・ <a href="https://yusuke1090.github.io/smart-agri-news/">スマート農業News</a></p></div></footer>
@@ -465,6 +467,32 @@ li > .sticky-bar { margin-top: 4px; }
     });
   }
 
+  // ---------- 数式（books.json で "math": true の教科書だけ。$…$ と $$…$$ を KaTeX で表示する） ----------
+  const KATEX = "https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.16.9/";
+  let katexReady = null;
+  function loadScript(src) {
+    return new Promise((ok, ng) => { const el = document.createElement("script"); el.src = src; el.onload = ok; el.onerror = ng; document.head.appendChild(el); });
+  }
+  function ensureKatex() {
+    if (!katexReady) {
+      const css = document.createElement("link");
+      css.rel = "stylesheet"; css.href = KATEX + "katex.min.css";
+      document.head.appendChild(css);
+      katexReady = loadScript(KATEX + "katex.min.js").then(() => loadScript(KATEX + "contrib/auto-render.min.js"));
+    }
+    return katexReady;
+  }
+  async function renderMath() {
+    if (!book.math) return;
+    try {
+      await ensureKatex();
+      window.renderMathInElement(body, {
+        delimiters: [{ left: "$$", right: "$$", display: true }, { left: "$", right: "$", display: false }],
+        ignoredTags: ["script", "noscript", "style", "textarea", "pre", "code"], throwOnError: false,
+      });
+    } catch (e) { /* 読み込めないときは、数式をそのままの文字で出す */ }
+  }
+
   // ---------- 章を出す ----------
   let showSeq = 0, codes = [];
   async function show(idx, lang, pos) {
@@ -492,6 +520,8 @@ li > .sticky-bar { margin-top: 4px; }
     const r = render(md, figPrefix(ch));
     body.innerHTML = r.html;
     codes = r.codes;
+    await renderMath();
+    if (seq !== showSeq) return;
     markTerms();
     const prev = chapters[state.idx - 1], next = chapters[state.idx + 1];
     $("pager").innerHTML =
@@ -735,7 +765,7 @@ li > .sticky-bar { margin-top: 4px; }
     const which = new Map(list.map((x) => [x.v.toLowerCase(), x.i]));
     const used = new Set();
     const walker = document.createTreeWalker(body, NodeFilter.SHOW_TEXT, {
-      acceptNode: (n) => n.parentElement.closest("h1,h2,h3,h4,code,pre,a,figcaption,.cb-head,.term") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+      acceptNode: (n) => n.parentElement.closest("h1,h2,h3,h4,code,pre,a,figcaption,.cb-head,.term,.katex") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
     });
     const nodes = [];
     for (let n; (n = walker.nextNode());) nodes.push(n);
@@ -775,7 +805,7 @@ li > .sticky-bar { margin-top: 4px; }
     const nodes = [], starts = [];
     let text = "";
     const w = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-      acceptNode: (n) => n.parentElement.closest("[data-anno-ui], .cb-head") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
+      acceptNode: (n) => n.parentElement.closest("[data-anno-ui], .cb-head, .katex-mathml") ? NodeFilter.FILTER_REJECT : NodeFilter.FILTER_ACCEPT,
     });
     for (let n; (n = w.nextNode());) { nodes.push(n); starts.push(text.length); text += n.data; }
     return { nodes, starts, text };

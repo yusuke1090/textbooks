@@ -41,7 +41,7 @@
       "ja": "ラズパイピコ開発ガイド（C++・VS Code）"
     },
     "desc": {
-      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の画面の横にも出るガイドです。"
+      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の「📚 ガイド」からも開けます。"
     },
     "home": {
       "url": "https://github.com/yusuke1090/pico-studio",
@@ -79,6 +79,73 @@
     },
     "note": {
       "ja": "数字と会社の状況は 2026年11月に調べた目安です。使う前に付録B の出典で確かめてください。"
+    }
+  },
+  {
+    "id": "python",
+    "icon": "🐍",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "Python の教科書"
+    },
+    "desc": {
+      "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。"
+    }
+  },
+  {
+    "id": "stats",
+    "icon": "📊",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "統計の教科書"
+    },
+    "desc": {
+      "ja": "分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点（多重共線性・欠落変数バイアス）まで。"
+    },
+    "math": true
+  },
+  {
+    "id": "ml",
+    "icon": "🤖",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "機械学習の教科書"
+    },
+    "desc": {
+      "ja": "scikit-learn で、回帰・分類・前処理と次元削減・クラスタリング・特徴量エンジニアリング・モデルの評価まで。『Pythonではじめる機械学習』の学習ノートがもと。"
+    },
+    "math": true
+  },
+  {
+    "id": "cpp",
+    "icon": "⚙️",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "C++ の教科書"
+    },
+    "desc": {
+      "ja": "Ubuntu と VS Code（g++）で、変数・条件分岐・関数・ポインタから、クラス・継承・テンプレート・例外まで。『やさしいC++ 第5版』の学習ノートがもと。付録に Python との対応表。"
+    }
+  },
+  {
+    "id": "docker",
+    "icon": "🐳",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "Docker の教科書"
+    },
+    "desc": {
+      "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。"
     }
   }
 ]

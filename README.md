@@ -10,6 +10,11 @@
 | [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録） | 日本語 |
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録） | 日本語 |
+| [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語 |
+| [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語 |
+| [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語 |
+| [⚙️ C++ の教科書](https://yusuke1090.github.io/textbooks/?b=cpp) | g++ と VS Code で、変数・関数・ポインタからクラス・継承・テンプレート・例外まで（15章と付録） | 日本語 |
+| [🐳 Docker の教科書](https://yusuke1090.github.io/textbooks/?b=docker) | VS Code で Docker。コンテナ・Dockerfile・ボリューム・Compose・Dev Containers・ラズパイと Jetson（8章、図2枚） | 日本語 |
 
 ## 読む画面でできること
 
@@ -20,6 +25,7 @@
 - **言葉の説明**: 本文の点線の言葉（用語集にある言葉。章ごとに最初の1回）や、コードの関数・引数・コマンドを押すと、吹き出しで意味が出る
 - **付箋・線・メモ**: 文字を選ぶと、線（黄・ピンク・緑・青）・📝 メモ・📌 付箋・🔤 訳すのボタンが出る。🔖 で一覧を開き、押すとその場所へ飛ぶ
 - **コード**: 「コピー」ボタンで写せる
+- **数式**: `math` を付けた教科書（統計・機械学習）は、`$…$` の式を [KaTeX](https://katex.org/) で表示する（そのときだけ cdnjs から読み込む）
 - **🔤 訳す**: 英語の単語や文を、日本語に訳す（[スマート農業News](https://github.com/yusuke1090/smart-agri-news) の `translate.js` を読み込んで使う）
 
 付箋・線・メモと、読んでいた所は、見ているブラウザの `localStorage` に保存する（`textbooks-notes`、`textbooks-pos-<教科書>`）。iPhone と PC では別々。
@@ -55,7 +61,7 @@ tools/            図や用語の一覧を作るスクリプト
 ## 教科書を足す
 
 1. `books/<id>/` を作り、章の Markdown と `chapters.json` を置く
-2. `books.json` に1つ足す（`id`・`icon`・`langs`・`title`・`desc`。あれば `home`（戻り先）・`note`（下に出す注意）・`glossary`・`terms`）
+2. `books.json` に1つ足す（`id`・`icon`・`langs`・`title`・`desc`。あれば `home`（戻り先）・`note`（下に出す注意）・`glossary`・`terms`・`math`（数式を使うなら `true`））
 3. 手元で見て確かめてから push する
 
 ```json
@@ -68,6 +74,7 @@ tools/            図や用語の一覧を作るスクリプト
 - 段落、箇条書き（2文字下げで入れ子）、番号付きの手順（途中に図をはさんでも `4.` から続けられる）、表（縦線は `\|`）、引用（`>`、注意書き）、**太字**、リンク、`コード`、`---`（区切り）
 - 1行だけの画像 `![説明](images/名前.svg)` は図になり、「図 章-番号 説明」が付く。動画（mp4・webm・YouTube の URL）も同じ書き方
 - コードは ```` ```cpp ```` ・ ```` ```python ```` ・ ```` ```bash ```` など。```` ```cpp run ```` はそのままビルドできるプログラム、```` ```python run ```` は Pico Studio で試せる MicroPython（ラベルが変わる）
+- 数式（`math: true` の教科書）: 文の中は `$x^2$`、別の行に出すものは `$$…$$` を**1行で**書く。表の中では `|` の代わりに `\lvert` `\rvert`
 - 2つの言葉がある教科書は、`ja/` と `en/` に同じファイル名で書き、**見出しの数と順番、図の順番をそろえる**（切り替えるときに見出しの番号で場所を合わせるため）
 
 ## 教科書ごとのメモ
@@ -80,7 +87,7 @@ tools/            図や用語の一覧を作るスクリプト
 
 ### 🍓 ラズパイピコ開発ガイド（books/pico）
 
-- [Pico Studio](https://github.com/yusuke1090/pico-studio) の画面の横に出るガイドの本体。Pico Studio は `~/apps/textbooks/books/pico` を読む（別の場所なら `PICO_GUIDE`）
+- [Pico Studio](https://github.com/yusuke1090/pico-studio) のヘッダの「📚 ガイド」から開く。Pico Studio のテスト（下）は `~/apps/textbooks/books/pico` を読む（別の場所なら `PICO_GUIDE`）
 - 2026-11-13 に Pico Studio の `guide/` から移した
 - ```` ```cpp run ```` のプログラムが本物の Pico SDK でビルドできるかは、Pico Studio の `python3 tests/build_guide_cpp.py pico pico2` で確かめる
 - コードの言葉の説明は `glossary.json`（キーの書き方は Pico Studio の README の「ガイドの書き方」）
@@ -94,3 +101,29 @@ tools/            図や用語の一覧を作るスクリプト
 ### 🌍 アフリカの教科書（books/africa）
 
 - 2026-11-14 に作った。数字と会社の状況は、そのときにウェブで調べたもの。出典は付録B（`b-sources.md`）にまとめ、直すときは出典も一緒に直す
+
+### 🐍 Python の教科書（books/python）
+
+- 2026-11-14 に作った。もとになるノートはなく、ほかの教科書（統計・機械学習）の前に読む入門として書いた
+- コードは、NumPy・pandas・matplotlib を入れた仮想環境で、章ごとに上から実行して確かめた
+
+### 📊 統計の教科書（books/stats）
+
+- 2026-11-14 に、学習ノート [超基礎統計](https://note.com/k_1090/n/n920f21843b93)・[計量経済学の自分用まとめ](https://note.com/k_1090/n/n98bcfaa3190b)（見出しと画像だけのもの）をもとに、式と計算の例を足して作った
+- 図5枚（`images/`）は `python3 tools/make_study_figures.py` で作る（式から計算したもの）
+
+### 🤖 機械学習の教科書（books/ml）
+
+- 2026-11-14 に、『Pythonではじめる機械学習』の [学習ノート](https://note.com/k_1090/n/nca53389e754b) をもとに作った。ノートの誤り（TPR は適合率ではなく再現率、`get_dummies` の列の選び方、PCA はテストデータにも使える、など）は直してある
+- コードは scikit-learn 1.9 で確かめた（ロジスティック回帰の L1・L2 は `l1_ratio`、SVM の AUC は `decision_function`）
+- 図4枚は `python3 tools/make_study_figures.py` で作る
+
+### ⚙️ C++ の教科書（books/cpp）
+
+- 2026-11-14 に、『やさしいC++ 第5版』の [学習ノート](https://note.com/k_1090/n/n9ca36fcc9a8a) をもとに作った。ノートの誤り（`case 値:` のコロン、クラスの宣言の `};`、戻り値の型だけのオーバーロードはできない、など）は直し、`std::string`・`std::vector` などの今の書き方を足した
+- `main` のあるプログラムは、g++（`-std=c++17 -Wall`）でコンパイルと実行を確かめた
+
+### 🐳 Docker の教科書（books/docker）
+
+- 2026-11-14 に作った。VS Code（Container Tools・Dev Containers の拡張機能）で触る前提
+- 図2枚（仮想マシンとの比較、Dockerfile からコンテナまで）は `python3 tools/make_study_figures.py` で作る

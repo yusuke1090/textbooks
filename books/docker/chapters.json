@@ -1,0 +1,10 @@
+[
+  {"part": "第1部 はじめに", "file": "01-what.md", "title": "1. Docker とは"},
+  {"part": "第1部 はじめに", "file": "02-setup.md", "title": "2. 準備（Ubuntu と VS Code）"},
+  {"part": "第2部 イメージとコンテナ", "file": "03-run.md", "title": "3. コンテナを動かす"},
+  {"part": "第2部 イメージとコンテナ", "file": "04-dockerfile.md", "title": "4. Dockerfile でイメージを作る"},
+  {"part": "第2部 イメージとコンテナ", "file": "05-data.md", "title": "5. データと設定（ボリューム・環境変数）"},
+  {"part": "第3部 開発に使う", "file": "06-compose.md", "title": "6. Docker Compose（複数のコンテナ）"},
+  {"part": "第3部 開発に使う", "file": "07-devcontainer.md", "title": "7. Dev Containers（コンテナの中で開発する）"},
+  {"part": "第3部 開発に使う", "file": "08-trouble.md", "title": "8. 困ったとき・後片付け・ラズパイと Jetson"}
+]
