@@ -12,14 +12,14 @@
   --accent: #2e7d32; --accent-soft: #cfe6cc; --link: #1b5e20; --th: #eef3ea; --quote: #fff8e1; --quote-border: #f0c75e;
   --code-bg: #fbfbfa; --ok: #1f7a3d; --warn: #c27c0e; --err: #d64545;
   --hl-yellow: rgba(255, 214, 0, .55); --hl-pink: rgba(255, 105, 180, .38); --hl-green: rgba(60, 200, 100, .36);
-  --hl-blue: rgba(80, 150, 255, .34); --st-yellow: #f7d84a; --st-pink: #f6a5c8; --st-green: #8fd4a4; --st-blue: #9cc0fa;
+  --hl-blue: rgba(80, 150, 255, .34); --study-bg: #e4f0df; --st-yellow: #f7d84a; --st-pink: #f6a5c8; --st-green: #8fd4a4; --st-blue: #9cc0fa;
 }
 @media (prefers-color-scheme: dark) {
   :root {
     --bg: #121611; --panel: #1a2019; --border: #2d372a; --text: #e4ebdf; --muted: #93a08c;
     --accent: #66bb6a; --accent-soft: #2f4a2f; --link: #a5d6a7; --th: #222b20; --quote: #2a2618; --quote-border: #8a7330;
     --code-bg: #151a14; --ok: #66bb6a; --warn: #e3a33b; --err: #f06a6a;
-    --hl-yellow: rgba(255, 214, 0, .38); --hl-pink: rgba(255, 92, 170, .45); --hl-green: rgba(70, 210, 110, .38); --hl-blue: rgba(90, 150, 255, .48);
+    --hl-yellow: rgba(255, 214, 0, .38); --hl-pink: rgba(255, 92, 170, .45); --hl-green: rgba(70, 210, 110, .38); --hl-blue: rgba(90, 150, 255, .48); --study-bg: #1b2a1b;
   }
 }
 * { box-sizing: border-box; }
@@ -50,9 +50,15 @@ button { font: inherit; }
 .card .meta b { color: var(--link); font-weight: 600; }
 /* 今勉強中（カードをドラッグで出し入れ） */
 .books .card { -webkit-user-select: none; user-select: none; -webkit-touch-callout: none; }
-.zone { margin: 0 -12px; padding: 10px; min-height: 96px; border: 2px dashed transparent; border-radius: 18px; }
-.zone.empty, body.drag .zone { border-color: var(--border); }
+.zone { margin: 20px -12px 0; padding: 0 10px 12px; border: 2px dashed transparent; border-radius: 18px; background: var(--study-bg); }
+.zone .grp { margin-top: 12px; color: var(--accent); }
+.zone .books { min-height: 72px; }
+.zone.empty, body.drag .zone { border-color: var(--accent-soft); }
 body.drag .zone.over { border-color: var(--accent); background: var(--accent-soft); }
+.card .prog { display: none; }
+.zone .card .prog { display: flex; align-items: center; gap: 10px; font-size: 12px; color: var(--muted); }
+.pbar { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
+.pbar > span { display: block; height: 100%; background: var(--accent); }
 .zone-empty { grid-column: 1 / -1; align-self: center; margin: 0; text-align: center; font-size: 13.5px; color: var(--muted); }
 .card.dragging { opacity: .35; }
 .card.ghost { position: fixed; left: 0; top: 0; z-index: 50; margin: 0; pointer-events: none; opacity: .92;
@@ -301,11 +307,14 @@ li > .sticky-bar { margin-top: 4px; }
       const lang = (pos && pos.lang) || b.langs[0];
       const cont = pos && chs[pos.idx] ? `<span>続きから: <b>${esc(L(chs[pos.idx].title, lang))}</b></span>` : "";
       const n = notes.filter((x) => x.book === b.id).length;
+      // 進み具合（今いる章 / 章の数）。今勉強中の欄でだけ見せる
+      const at = pos && chs[pos.idx] ? pos.idx + 1 : 0;
+      const prog = chs.length ? `<span class="prog"><span class="pbar"><span style="width:${(at / chs.length * 100).toFixed(1)}%"></span></span>${at} / ${chs.length}</span>` : "";
       cardHtml[b.id] = `<a class="card" href="?b=${encodeURIComponent(b.id)}" data-id="${esc(b.id)}" draggable="false">
         <span class="ic">${esc(b.icon || "📘")}</span>
         <h3>${esc(L(b.title, "ja"))}</h3>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
         <p>${esc(L(b.desc, "ja"))}</p>
-        <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}</span></a>`;
+        <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}</span>${prog}</a>`;
     }));
     studying = studying.filter((id) => cardHtml[id]);
     renderShelf();
@@ -323,8 +332,8 @@ li > .sticky-bar { margin-top: 4px; }
       e.cards.push(cardHtml[b.id]);
     });
     $("books").innerHTML =
-      `<h2 class="grp">今勉強中</h2><div class="books zone${studying.length ? "" : " empty"}" id="studying">` +
-      (studying.map((id) => cardHtml[id]).join("") || `<p class="zone-empty">教科書をここへドラッグ（スマホは長押ししてから動かす）</p>`) + `</div>` +
+      `<section class="zone${studying.length ? "" : " empty"}" id="studying"><h2 class="grp">今勉強中</h2><div class="books">` +
+      (studying.map((id) => cardHtml[id]).join("") || `<p class="zone-empty">教科書をここへドラッグ（スマホは長押ししてから動かす）</p>`) + `</div></section>` +
       groups.map((g) => (g.name ? `<h2 class="grp">${esc(g.name)}</h2>` : "") + `<div class="books">${g.cards.join("")}</div>`).join("");
   }
 
