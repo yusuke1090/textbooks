@@ -4,13 +4,16 @@
     "icon": "🐍",
     "group": "プログラミング",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "Python の教科書"
+      "ja": "Python の教科書",
+      "en": "Python Textbook"
     },
     "desc": {
-      "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。"
+      "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。",
+      "en": "From getting started with Ubuntu and VS Code: values, containers, branching and loops, functions, files, exceptions, classes, and on to NumPy, pandas and matplotlib."
     }
   },
   {
