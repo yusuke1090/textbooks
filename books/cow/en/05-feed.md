@@ -33,6 +33,8 @@
 
 - Whole grains are hard to digest, so they are steamed and pressed (flaked) or ground before feeding
 
+![Soybean meal](images/soybean-meal.jpg)
+
 ## Compound feed
 
 - **Compound feed** (配合飼料, also called formulated feed): feed made in a factory by mixing many ingredients to match a cow's needs. It comes as pellets, mash (powder) or flakes
@@ -47,6 +49,8 @@
 - So world grain prices, exchange rates and shipping costs change feed prices a lot (this is often in the news)
 - Japan grows only about a quarter of all its livestock feed, and only a little over 10% of its concentrate
 - Feed is the biggest cost on a dairy farm, close to half of all costs
+
+![Compound feed pellets](images/pellets.jpg)
 
 ## Roughage
 
@@ -64,6 +68,10 @@
 - A factory that makes TMR for several farms in an area is called a **TMR center**
 - Cows only eat feed they can reach, so the feed they push away is pushed back (**feed pushing**; there are robots for this)
 - Cows sometimes pick out the parts they like (concentrate). This is called **sorting** (選び食い). Chop length and moisture help prevent it
+
+![A mixer wagon that mixes and delivers TMR](images/tmr-mixer.jpg)
+
+![TMR delivered along the feed fence (free-stall barn)](images/feeding-tmr.jpg)
 
 ## Dry matter and nutrient words
 

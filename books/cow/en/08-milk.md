@@ -17,6 +17,10 @@
 - The rear quarters are bigger and give about 60% of the milk
 - At the tip of each **teat** (乳頭) is the **teat canal** (乳頭口). It is normally closed by a muscle and a keratin plug, which keeps bacteria out
 
+![The udder and four teats](images/udder.jpg)
+
+![Holsteins with large udders](images/udders-big.jpg)
+
 ## How milk is made
 
 - Milk is made in tiny sacs inside the udder that look like bunches of grapes (**alveoli**, 乳腺胞). The cells around each sac take materials from the blood and make milk
@@ -50,6 +54,12 @@
 - Most farms milk twice a day (every 12 hours). Milking three times a day gives about 10% more milk
 - With a **milking robot** (automatic milking system, AMS), cows walk in by themselves and the robot finds the teats and milks them. Cows are milked 2.5–3 times a day on average
 - Milk is cooled right away in a bulk tank (to about 4 °C)
+
+![Milking with the teat cups attached](images/milking-unit.jpg)
+
+![A rotary parlour (cows are milked on a turning platform)](images/rotary.jpg)
+
+![A milking robot](images/robot.jpg)
 
 ## Milk components
 

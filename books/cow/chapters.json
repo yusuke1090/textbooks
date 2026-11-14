@@ -13,5 +13,6 @@
   {"file": "11-diseases.md", "part": {"ja": "第4部 乳と病気", "en": "Part 4: Milk and health"}, "title": {"ja": "11. お産の前後の病気・蹄・暑さ", "en": "11. Transition diseases, feet and heat"}},
   {"file": "12-smart.md", "part": {"ja": "第5部 牧場とスマート酪農", "en": "Part 5: The farm and smart dairy"}, "title": {"ja": "12. 牛の暮らしとスマート酪農", "en": "12. Cow life and smart dairy farming"}},
   {"file": "a-words.md", "part": {"ja": "付録", "en": "Appendix"}, "title": {"ja": "付録A. 用語集（日本語・英語）", "en": "Appendix A. Glossary (English and Japanese)"}},
-  {"file": "b-numbers.md", "part": {"ja": "付録", "en": "Appendix"}, "title": {"ja": "付録B. 数字の目安", "en": "Appendix B. Key numbers"}}
+  {"file": "b-numbers.md", "part": {"ja": "付録", "en": "Appendix"}, "title": {"ja": "付録B. 数字の目安", "en": "Appendix B. Key numbers"}},
+  {"file": "c-photos.md", "part": {"ja": "付録", "en": "Appendix"}, "title": {"ja": "付録C. 写真の出典", "en": "Appendix C. Photo credits"}}
 ]

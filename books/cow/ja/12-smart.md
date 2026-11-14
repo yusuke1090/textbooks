@@ -32,6 +32,10 @@
 | フリーバーン | free-barn（bedded pack） | 区切りのない広い寝床に敷料を厚く敷き、自由に過ごす |
 | 放牧 | grazing（pasture） | 牧草地で草を食べて過ごす。エサ代が少なく、牛も運動できる |
 
+![つなぎ飼いの牛舎で動く搾乳ロボット（日本）](images/robot-tiestall.jpg)
+
+![放牧](images/pasture.jpg)
+
 ## 酪農家の一日
 
 | 時刻（例） | 仕事 |
@@ -63,6 +67,10 @@
 | 環境センサー | climate sensor | 温度・湿度から THI を出す | 暑熱ストレス。送風機やミストを自動で動かす |
 | 給餌・エサ寄せロボット | feeding robot, feed pusher | エサを配る、押し寄せる | 食べる量を増やし、人の手間を減らす |
 | 哺乳ロボット | automatic calf feeder | 子牛ごとにミルクの量を決めて飲ませる | 飲んだ量・飲む速さ → 子牛の病気 |
+
+![首輪のセンサー](images/collar.jpg)
+
+![耳標](images/eartag.jpg)
 
 ### センサーで大事なこと
 

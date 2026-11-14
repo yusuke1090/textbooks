@@ -18,7 +18,7 @@ It aims to help you understand the words in the farming news on this site, and t
 | Part 3: Feed | Roughage and concentrate, compound feed, timothy and alfalfa, silage |
 | Part 4: Milk and health | How milk is made, milking, mastitis, blood in milk, diseases around calving |
 | Part 5: The farm and smart dairy | A cow's day, barns, what sensors and robots can tell us |
-| Appendix | Glossary (English and Japanese), key numbers |
+| Appendix | Glossary (English and Japanese), key numbers, photo credits |
 
 ## Reading order
 

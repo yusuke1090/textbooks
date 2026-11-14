@@ -29,6 +29,8 @@
 - Chewing makes a lot of saliva: 100–180 L a day
 - Saliva contains something like baking soda (sodium bicarbonate). It stops the rumen from becoming too acidic (this is called buffering)
 
+![Cows lying down and chewing the cud](images/cud.jpg)
+
 ### Why rumination matters
 
 - It breaks grass into small pieces, so microbes can digest it more easily
@@ -50,6 +52,8 @@
 
 - The microbes themselves are later digested in the abomasum and small intestine and become protein for the cow (microbial protein)
 - Fermentation also makes methane gas, which cows burp out. One cow makes hundreds of liters a day. Research to reduce it is active, because methane is a greenhouse gas (it is often in the news)
+
+![A research cow with a cannula, a window into the rumen. Rumen contents are taken out through it](images/cannulated.jpg)
 
 ## How feed becomes milk
 

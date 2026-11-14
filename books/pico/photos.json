@@ -1,0 +1,82 @@
+[
+  {
+    "file": "pico-board.jpg",
+    "src": "Raspberry Pi Pico oblique.jpg",
+    "author": "Phiarc",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_Pico_oblique.jpg"
+  },
+  {
+    "file": "pico2.jpg",
+    "src": "Raspberry PI Pico 2-01.jpg",
+    "author": "Suyash Dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberry_PI_Pico_2-01.jpg"
+  },
+  {
+    "file": "pico-wh.jpg",
+    "src": "Raspberry Pi Pico WH top and bottom with soldered pins.jpg",
+    "author": "Spageektti",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_Pico_WH_top_and_bottom_with_soldered_pins.jpg"
+  },
+  {
+    "file": "potentiometer.jpg",
+    "src": "Potentiometer.jpg",
+    "author": "Iainf",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Potentiometer.jpg"
+  },
+  {
+    "file": "breadboard.jpg",
+    "src": "400 points breadboard.jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:400_points_breadboard.jpg"
+  },
+  {
+    "file": "jumper-wires.jpg",
+    "src": "A few Jumper Wires.jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_few_Jumper_Wires.jpg"
+  },
+  {
+    "file": "soldering-kit.jpg",
+    "src": "Soldering iron and accessories.jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Soldering_iron_and_accessories.jpg"
+  },
+  {
+    "file": "mpu6050.jpg",
+    "src": "GY-521 MPU-6050 Module 3 Axis Gyroscope + Accelerometer 0487.jpg",
+    "author": "Nevit Dilmen (talk)",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:GY-521_MPU-6050_Module_3_Axis_Gyroscope_%2B_Accelerometer_0487.jpg"
+  },
+  {
+    "file": "multimeter.jpg",
+    "src": "2017 Cyfrowy miernik uniwersalny.jpg",
+    "author": "Jacek Halicki",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg"
+  },
+  {
+    "file": "pi-family.jpg",
+    "src": "Raspberry Pi 1, Pi 5, Pi 400, Pico and Zero 2 (cropped).jpg",
+    "author": "SimonWaldherr",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_1,_Pi_5,_Pi_400,_Pico_and_Zero_2_(cropped).jpg"
+  }
+]

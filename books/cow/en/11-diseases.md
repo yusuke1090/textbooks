@@ -49,6 +49,8 @@
 - Prevention: **hoof trimming** (削蹄, about twice a year), footbaths (walking through disinfectant), dry and clean floors, comfortable stalls for lying, and feed that prevents acidosis
 - Scoring how cows walk (locomotion score 1–5) finds problems early. There is also technology that scores it automatically with cameras
 
+![Hoof trimming in a trimming crate](images/hoof-trim.jpg)
+
 ## Heat stress
 
 - Cows are weak in hot weather, because rumen fermentation and milk production make a lot of heat inside the body

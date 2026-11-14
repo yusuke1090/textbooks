@@ -32,6 +32,10 @@
 | Free-barn (bedded pack) | フリーバーン | Cows move freely on one large bed with thick bedding and no dividers |
 | Grazing (pasture) | 放牧 | Cows eat grass in the field. Low feed costs, and cows get exercise |
 
+![A milking robot for tie-stall barns (Japan)](images/robot-tiestall.jpg)
+
+![Grazing on pasture](images/pasture.jpg)
+
 ## A dairy farmer's day
 
 | Time (example) | Work |
@@ -63,6 +67,10 @@
 | Climate sensor | 環境センサー | Calculates THI from temperature and humidity | Heat stress. Can turn fans and misting on automatically |
 | Feeding robot, feed pusher | 給餌・エサ寄せロボット | Delivers feed, pushes it back to the cows | Cows eat more, and farmers save work |
 | Automatic calf feeder | 哺乳ロボット | Gives each calf its own amount of milk | How much and how fast calves drink → early signs of calf disease |
+
+![Collar sensors](images/collar.jpg)
+
+![Ear tags](images/eartag.jpg)
 
 ### What matters with sensors
 

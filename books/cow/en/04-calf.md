@@ -16,6 +16,8 @@
 - On dairy farms, calves are usually separated from the mother soon and raised in a calf hutch or pen
 - An ear tag with a 10-digit individual ID number is attached (Chapter 12)
 
+![A cow licking her newborn calf (Hereford)](images/newborn.jpg)
+
 ## Colostrum
 
 - **Colostrum** (初乳): the first milk after calving. It is thick and yellow and full of **antibodies** (immunoglobulin, IgG)
@@ -33,11 +35,17 @@
 - If there is not enough, or the quality is poor, use frozen colostrum or a colostrum product
 - Calves that did not get enough colostrum get diarrhea and pneumonia more often, and more of them die
 
+![Colostrum stored in bottles](images/colostrum-harvest.jpg)
+
 ## Milk feeding
 
 - After colostrum, calves drink whole milk or **milk replacer** (代用乳, powdered milk for calves), for example twice a day
 - From early on, give **calf starter** (スターター, concentrate feed for calves), **water** and a little good hay. Eating solid feed makes the rumen grow (Chapter 2)
 - Some farms use an automatic calf feeder, which gives each calf its own amount of milk
+
+![A calf feeding bottle](images/calf-bottle.jpg)
+
+![Calf hutches (one calf in each)](images/calf-hutch.jpg)
 
 ## Weaning
 

@@ -44,6 +44,8 @@ Farmers sometimes add lactic acid bacteria (an inoculant) to help fermentation.
 | Whole-crop rice silage | 稲WCS（稲発酵粗飼料） | Rice is cut with the grain and made into silage. Rice paddies can be used to grow it |
 | Haylage | ヘイレージ | Grass silage with lower moisture (40–50%) |
 
+![Wrapped bale silage](images/wrapped-bales.jpg)
+
 ## Types of silos
 
 | Silo | Japanese | Description |
@@ -54,6 +56,10 @@ Farmers sometimes add lactic acid bacteria (an inoculant) to help fermentation.
 | Silo bag | バッグサイロ | Packed into a long plastic bag |
 | Wrapped bale | ロールベール | Each bale is wrapped in film (wrapped bale silage) |
 
+![A bunker silo. Tyres hold the plastic sheet down](images/silage-clamp.jpg)
+
+![A farm with tower silos (USA)](images/tower-silo.jpg)
+
 ## How to make it (corn silage example)
 
 1. When the corn kernels are turning hard and yellow, a forage harvester cuts the plants and chops them into 1–2 cm pieces
@@ -62,6 +68,8 @@ Farmers sometimes add lactic acid bacteria (an inoculant) to help fermentation.
 4. It is left to ferment for at least 3 weeks, and better for a month or more, before feeding starts
 
 Typical moisture is 65–70% for corn silage and 60–70% for grass silage.
+
+![Harvesting maize: it is chopped and blown into a trailer](images/maize-harvest.jpg)
 
 ## Bad silage
 

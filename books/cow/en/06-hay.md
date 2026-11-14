@@ -26,6 +26,8 @@
 - But grass from fields that got a lot of manure as fertilizer can be high in potassium, so be careful with dry cows
 - It is also well known as food for rabbits and horses
 
+![A timothy seed head](images/timothy.jpg)
+
 ## Alfalfa
 
 - **Alfalfa** (アルファルファ): a legume. In the UK and some other countries it is called **lucerne**. Its Japanese name is ムラサキウマゴヤシ
@@ -39,6 +41,8 @@
 - **Do not feed a lot to dry cows**: too much calcium and potassium makes it harder for the body to release calcium from the bones at calving, so milk fever (low blood calcium) becomes more likely (Chapter 11)
 - **Lots of fresh alfalfa can cause bloat**: gas in the rumen turns into foam that the cow cannot burp out, and the belly swells (Chapter 11)
 - **Most nutrients are in the leaves**: leaves fall off easily when drying, so handle it gently. Leafy alfalfa is the best quality
+
+![Alfalfa flowers](images/alfalfa.jpg)
 
 ## Timothy and alfalfa compared
 
@@ -74,6 +78,10 @@
 
 - Hay must be dried to **15% moisture or less**. If it is stacked wet, it can go moldy, heat up and even catch fire
 - Rain washes out nutrients and makes mold more likely. Japan has a lot of rain, so making hay is hard. Farmers often dry grass only a little and make silage instead (wrapped bale silage, Chapter 7)
+
+![Baling dried grass into small square bales](images/baling.jpg)
+
+![Square bales lined up in the field](images/hay-bales.jpg)
 
 ## When to cut
 

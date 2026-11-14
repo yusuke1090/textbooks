@@ -19,6 +19,8 @@
 - Only females give milk. Male calves born to dairy cows are raised for meat
 - Farmers often use Wagyu semen on dairy cows to get crossbred (F1) calves, which sell for a good price
 
+![Japanese Black (Tajima cattle, Hyogo)](images/wagyu.jpg)
+
 ## Dairy breeds
 
 | Breed | Japanese | Features |
@@ -29,6 +31,14 @@
 | Guernsey | ガーンジー | Light brown and white. Milk is slightly yellow |
 
 The numbers in this book are for Holsteins.
+
+![Holstein](images/holstein.jpg)
+
+![Jersey](images/jersey.jpg)
+
+![Brown Swiss](images/brown-swiss.jpg)
+
+![Guernsey (a farm in Nasu, Tochigi)](images/guernsey.jpg)
 
 ## Holsteins in numbers
 

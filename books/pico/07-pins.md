@@ -108,6 +108,8 @@ int main() {
 
 ![ボリュームをアナログ入力で読む](images/adc-pot.svg)
 
+![ボリューム（可変抵抗）](images/potentiometer.jpg)
+
 ### ボリュームをつないで読む
 
 1. USB を抜く

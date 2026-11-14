@@ -32,6 +32,10 @@
 - If there are many somatic cells, the mixture becomes a thick gel. How thick it gets shows how bad it is
 - It is a quick test you can do on the farm. In Japan it is called the PL test (PL テスト)
 
+![A CMT paddle with four cups](images/cmt-paddle.jpg)
+
+![Taking milk to test for mastitis](images/mastitis-test.jpg)
+
 ## The bacteria that cause it
 
 ![How contagious and environmental mastitis spread](images/mastitis-routes.svg)
@@ -74,6 +78,8 @@
 - **Whole body**: fever (40 °C or more), shivering, not eating, rumination stops, diarrhea, dehydration. In severe cases the cow cannot stand and may die of shock (peracute mastitis). If the temperature starts to fall below normal, that is a dangerous sign of shock
 - How severe it gets depends more on **the cow's immune condition** than on the number of bacteria. Just after calving, the immune system is weak, so cases are more severe
 - On the other hand, if the cow's immune system kills the bacteria quickly, many cases stay mild and clear up in a few days
+
+![Milk from E. coli mastitis (left, yellow and watery) and normal milk (right)](images/ecoli-milk.jpg)
 
 ### 5. Treatment
 

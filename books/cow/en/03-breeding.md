@@ -66,6 +66,8 @@
 - **Sexed semen** (性選別精液) gives about a 90% chance of a female calf. Farmers use it when they want replacement heifers
 - There is also a method that uses hormones to time ovulation, so cows can be inseminated on a fixed day (timed AI, for example Ovsynch)
 
+![Artificial insemination](images/ai.jpg)
+
 ## Pregnancy and calving
 
 - Pregnancy (gestation) lasts about **280 days** (275–285 days)
@@ -73,6 +75,8 @@
 - If heat comes again about 21 days after insemination, the cow is not pregnant
 - As **calving** (分娩) gets close, the udder fills up, the area around the tail head becomes loose, body temperature drops by about 0.5 °C, and the cow becomes restless. Sensors can also give an alert (Chapter 12)
 - The placenta (afterbirth) comes out within 12–24 hours after calving. If it does not, it is a retained placenta (Chapter 11)
+
+![A cow calving (Laos)](images/calving.jpg)
 
 ## Breeding numbers
 

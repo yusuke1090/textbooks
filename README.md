@@ -6,10 +6,10 @@
 
 | 教科書 | 中身 | 言葉 |
 | --- | --- | --- |
-| [🐄 牛の教科書](https://yusuke1090.github.io/textbooks/?b=cow) | 乳牛のからだ・繁殖と1年1産・エサ・乳房炎・血乳・スマート酪農（13章と付録、図24枚） | 日本語・English |
-| [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録） | 日本語 |
+| [🐄 牛の教科書](https://yusuke1090.github.io/textbooks/?b=cow) | 乳牛のからだ・繁殖と1年1産・エサ・乳房炎・血乳・スマート酪農（13章と付録、図24枚と写真38枚） | 日本語・English |
+| [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録、写真10枚） | 日本語 |
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
-| [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録） | 日本語 |
+| [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語 |
 | [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語 |
 | [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語 |
 | [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語 |
@@ -77,6 +77,7 @@ tools/            図や用語の一覧を作るスクリプト
 - コードは ```` ```cpp ```` ・ ```` ```python ```` ・ ```` ```bash ```` など。```` ```cpp run ```` はそのままビルドできるプログラム、```` ```python run ```` は Pico Studio で試せる MicroPython（ラベルが変わる）
 - 数式（`math: true` の教科書）: 文の中は `$x^2$`、別の行に出すものは `$$…$$` を**1行で**書く。表の中では `|` の代わりに `\lvert` `\rvert`
 - 2つの言葉がある教科書は、`ja/` と `en/` に同じファイル名で書き、**見出しの数と順番、図の順番をそろえる**（切り替えるときに見出しの番号で場所を合わせるため）
+- 写真は Wikimedia Commons から借りる（CC0・パブリックドメイン・CC BY・CC BY-SA だけ）。`books/<id>/photos.json` に並べて `python3 tools/fetch_photos.py <id>` を動かすと、幅 960 px の JPEG にして `images/` に入れ、付録「写真の出典」（ふつうは `c-photos.md`）を作り直す
 
 ## 教科書ごとのメモ
 

@@ -1,0 +1,482 @@
+[
+  {
+    "file": "africa-regions.jpg",
+    "src": "Africa map regions.svg",
+    "author": "No machine-readable author provided. Mvc assumed (based on copyright claims).",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Africa_map_regions.svg"
+  },
+  {
+    "file": "sahara.jpg",
+    "src": "Sand dune in the desert, Sahara Desert, Egypt.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sand_dune_in_the_desert,_Sahara_Desert,_Egypt.jpg"
+  },
+  {
+    "file": "rift-valley.jpg",
+    "src": "Great Rift Valley in Kenya by Renvoy (1).jpg",
+    "author": "Renvoy",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Great_Rift_Valley_in_Kenya_by_Renvoy_(1).jpg"
+  },
+  {
+    "file": "kilimanjaro.jpg",
+    "src": "Kilimanjaro from Amboseli.jpg",
+    "author": "Sergey Pesterev",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_from_Amboseli.jpg"
+  },
+  {
+    "file": "lake-victoria.jpg",
+    "src": "Boats by the Lake Victoria Shore.jpg",
+    "author": "Laura Awino",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Boats_by_the_Lake_Victoria_Shore.jpg"
+  },
+  {
+    "file": "lamu-mosque.jpg",
+    "src": "Al-Madina Mosque at Lamu Sea front.jpg",
+    "author": "Fat2022",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Al-Madina_Mosque_at_Lamu_Sea_front.jpg"
+  },
+  {
+    "file": "olduvai.jpg",
+    "src": "Olduvai gorge - Flickr - gailhampshire.jpg",
+    "author": "gailhampshire from Cradley, Malvern, U.K",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Olduvai_gorge_-_Flickr_-_gailhampshire.jpg"
+  },
+  {
+    "file": "laetoli.jpg",
+    "src": "NHM - Laetoli Fußspuren.jpg",
+    "author": "Wolfgang Sauber",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:NHM_-_Laetoli_Fu%C3%9Fspuren.jpg"
+  },
+  {
+    "file": "kilwa.jpg",
+    "src": "Ruins of Kilwa Kisiwani and Ruins of Songo Mnara-108275.jpg",
+    "author": "Ron Van Oers",
+    "license": "CC BY-SA 3.0 igo",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/igo/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Ruins_of_Kilwa_Kisiwani_and_Ruins_of_Songo_Mnara-108275.jpg"
+  },
+  {
+    "file": "great-zimbabwe.jpg",
+    "src": "Great-zim-aerial-looking-West.JPG",
+    "author": "Janice Bell",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Great-zim-aerial-looking-West.JPG"
+  },
+  {
+    "file": "dhow.jpg",
+    "src": "Dhow boat Zanzibar.jpg",
+    "author": "This photo was taken by Anton Zelenov. Please credit this with : Photo : Anton…",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dhow_boat_Zanzibar.jpg"
+  },
+  {
+    "file": "livingstone.jpg",
+    "src": "David Livingstone by Thomas Annan.jpg",
+    "author": "Thomas Annan / Adam Cuerden",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:David_Livingstone_by_Thomas_Annan.jpg"
+  },
+  {
+    "file": "nyerere.jpg",
+    "src": "Julius Nyerere (1965).jpg",
+    "author": "Eric Koch for Anefo",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Julius_Nyerere_(1965).jpg"
+  },
+  {
+    "file": "kenyatta.jpg",
+    "src": "Jomo Kenyatta 1978.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "CC BY-SA 3.0 nl",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0/nl/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Jomo_Kenyatta_1978.jpg"
+  },
+  {
+    "file": "banda.jpg",
+    "src": "Dr Banda speaks after arriving back in Malawi, 1958.jpg",
+    "author": "National Archives of Malawi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Dr_Banda_speaks_after_arriving_back_in_Malawi,_1958.jpg"
+  },
+  {
+    "file": "ugali-fish.jpg",
+    "src": "Fried Tilapia, Ugali, Sukuma Wiki and Kachumbari (From Kisumu).JPG",
+    "author": "Napendakukula",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Fried_Tilapia,_Ugali,_Sukuma_Wiki_and_Kachumbari_(From_Kisumu).JPG"
+  },
+  {
+    "file": "nsima-cooking.jpg",
+    "src": "Nsima being cooked.JPG",
+    "author": "PETER LUNGILE CHIDOTHE",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nsima_being_cooked.JPG"
+  },
+  {
+    "file": "nyama-choma.jpg",
+    "src": "Nyama choma barbeque.jpg",
+    "author": "safaritravelplus",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Nyama_choma_barbeque.jpg"
+  },
+  {
+    "file": "chapati.jpg",
+    "src": "Chapati kenya.jpg",
+    "author": "safaritravelplus",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Chapati_kenya.jpg"
+  },
+  {
+    "file": "chips-mayai.jpg",
+    "src": "Chips mayai na mboga mboga (Zege).jpg",
+    "author": "Misosi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chips_mayai_na_mboga_mboga_(Zege).jpg"
+  },
+  {
+    "file": "tanzania-plate.jpg",
+    "src": "Traditional Tanzanian food - pilau kuku, mishkaki, ndizi, &c..JPG",
+    "author": "Tcg1111",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Traditional_Tanzanian_food_-_pilau_kuku,_mishkaki,_ndizi,_%26c..JPG"
+  },
+  {
+    "file": "spice-market.jpg",
+    "src": "Spice Market in Stone town Zanzibar.JPG",
+    "author": "Kennedy Bundi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Spice_Market_in_Stone_town_Zanzibar.JPG"
+  },
+  {
+    "file": "githeri.jpg",
+    "src": "Githeri Meal.jpg",
+    "author": "safaritravelplus",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Githeri_Meal.jpg"
+  },
+  {
+    "file": "mukimo.jpg",
+    "src": "Mukimo and Kachumbari.jpg",
+    "author": "Jaymuiaphotography",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mukimo_and_Kachumbari.jpg"
+  },
+  {
+    "file": "mandazi.jpg",
+    "src": "Andazi.jpg",
+    "author": "Orrling",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Andazi.jpg"
+  },
+  {
+    "file": "mursik.jpg",
+    "src": "Serving Mursik.jpg",
+    "author": "Maliqbhai",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Serving_Mursik.jpg"
+  },
+  {
+    "file": "nsima-chambo.jpg",
+    "src": "Flickr - ggallice - Nsima ^ chambo.jpg",
+    "author": "Geoff Gallice from Gainesville, FL, USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_ggallice_-_Nsima_%5E_chambo.jpg"
+  },
+  {
+    "file": "chambo-market.jpg",
+    "src": "Chambo (tilapia) fish, Blantyre market, Malawi.jpg",
+    "author": "Michaelphoya",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Chambo_(tilapia)_fish,_Blantyre_market,_Malawi.jpg"
+  },
+  {
+    "file": "tea-plucking.jpg",
+    "src": "Tea farming in Kericho 05.JPG",
+    "author": "Ahero dala",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tea_farming_in_Kericho_05.JPG"
+  },
+  {
+    "file": "injera.jpg",
+    "src": "Injera with eight kinds of stew.jpg",
+    "author": "Artem.G",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Injera_with_eight_kinds_of_stew.jpg"
+  },
+  {
+    "file": "jollof.jpg",
+    "src": "Jollof rice with vegetable.jpg",
+    "author": "Segun Famisa",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jollof_rice_with_vegetable.jpg"
+  },
+  {
+    "file": "tagine.jpg",
+    "src": "Tagine-plated (3645137252).jpg",
+    "author": "Karen and Brad Emerson",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tagine-plated_(3645137252).jpg"
+  },
+  {
+    "file": "maasai.jpg",
+    "src": "Maasai people at the entrance to their house.jpg",
+    "author": "BarcarolIa",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maasai_people_at_the_entrance_to_their_house.jpg"
+  },
+  {
+    "file": "kanga.jpg",
+    "src": "Kanga and kitenge in Tengeru Market, Arusha, Tanzania.jpg",
+    "author": "Fanny Schertzer",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kanga_and_kitenge_in_Tengeru_Market,_Arusha,_Tanzania.jpg"
+  },
+  {
+    "file": "taarab.jpg",
+    "src": "Zanzibar Taarab Kidumbak Ensemble.jpg",
+    "author": "Nicholas Calvin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zanzibar_Taarab_Kidumbak_Ensemble.jpg"
+  },
+  {
+    "file": "tingatinga.jpg",
+    "src": "Punda Milia Baba na Mama.jpg",
+    "author": "Ingo Koll (scan) - Rubuni Rashid Said (artist)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Punda_Milia_Baba_na_Mama.jpg"
+  },
+  {
+    "file": "makonde.jpg",
+    "src": "Makonde carving 1.jpg",
+    "author": "Photo by MatthiasKabel",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Makonde_carving_1.jpg"
+  },
+  {
+    "file": "marathon.jpg",
+    "src": "2017 Zagreb Marathon 20171008 DSC 7667.jpg",
+    "author": "Branko Radovanović",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2017_Zagreb_Marathon_20171008_DSC_7667.jpg"
+  },
+  {
+    "file": "serengeti.jpg",
+    "src": "Wildebeest Migration in Serengeti National Park, Tanzania.jpg",
+    "author": "Daniel Rosengren",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wildebeest_Migration_in_Serengeti_National_Park,_Tanzania.jpg"
+  },
+  {
+    "file": "nairobi.jpg",
+    "src": "Nairobi Skyline Savannah Kenya May19 R1600687.jpg",
+    "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Nairobi_Skyline_Savannah_Kenya_May19_R1600687.jpg"
+  },
+  {
+    "file": "mpesa.jpg",
+    "src": "M-Pesa Kenyan Kiosk.JPG",
+    "author": "Realt0n12",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:M-Pesa_Kenyan_Kiosk.JPG"
+  },
+  {
+    "file": "solar-light.jpg",
+    "src": "Her first solar-powered light (18957749175).jpg",
+    "author": "USAID in Africa",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Her_first_solar-powered_light_(18957749175).jpg"
+  },
+  {
+    "file": "boda.jpg",
+    "src": "Boda Bodas awaiting customers in Bagamoyo, Tanzania.jpg",
+    "author": "Sarvesh Lutchmun",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Boda_Bodas_awaiting_customers_in_Bagamoyo,_Tanzania.jpg"
+  },
+  {
+    "file": "matatu.jpg",
+    "src": "KiXX matatu at a busy Nairobi intersection.jpg",
+    "author": "Lebu Ayiga",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:KiXX_matatu_at_a_busy_Nairobi_intersection.jpg"
+  },
+  {
+    "file": "drought.jpg",
+    "src": "Kenya 2009.jpg",
+    "author": "Uni.bea.2020",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kenya_2009.jpg"
+  },
+  {
+    "file": "tanzania-map.jpg",
+    "src": "Tanzania (orthographic projection).svg",
+    "author": "Marcos Elias de Oliveira Júnior",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Tanzania_(orthographic_projection).svg"
+  },
+  {
+    "file": "rice-kilombero.jpg",
+    "src": "Tanzanian Rice Farmer.JPG",
+    "author": "FelicityFeinman",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tanzanian_Rice_Farmer.JPG"
+  },
+  {
+    "file": "cloves.jpg",
+    "src": "Photo The clove harvest is laid out to dry in a village on the island of Pemba 1964 - Touring Club Italiano 1.2979.jpg",
+    "author": "Unknown authorUnknown author",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Photo_The_clove_harvest_is_laid_out_to_dry_in_a_village_on_the_island_of_Pemba_1964_-_Touring_Club_Italiano_1.2979.jpg"
+  },
+  {
+    "file": "maasai-cattle.jpg",
+    "src": "Maasai Ngorongoro.jpg",
+    "author": "Nicor",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Maasai_Ngorongoro.jpg"
+  },
+  {
+    "file": "kenya-map.jpg",
+    "src": "Kenya (orthographic projection).svg",
+    "author": "Mandingoesque",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kenya_(orthographic_projection).svg"
+  },
+  {
+    "file": "coffee.jpg",
+    "src": "Picking ripe coffee berries, in Kuria east Kenya.jpg",
+    "author": "Elite Jac",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Picking_ripe_coffee_berries,_in_Kuria_east_Kenya.jpg"
+  },
+  {
+    "file": "milking-kenya.jpg",
+    "src": "A man milks a cow in the agricultural rich Murang'a county Kenya.jpg",
+    "author": "Maina Pat Mbae",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:A_man_milks_a_cow_in_the_agricultural_rich_Murang%27a_county_Kenya.jpg"
+  },
+  {
+    "file": "milk-cans-kiambaa.jpg",
+    "src": "African Dairy Value Chain Seminar (15363518500).jpg",
+    "author": "ILRI from Nairobi, Kenya",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:African_Dairy_Value_Chain_Seminar_(15363518500).jpg"
+  },
+  {
+    "file": "kids-milk.jpg",
+    "src": "Kenya children drinking milk (8360059361).jpg",
+    "author": "ILRI from Nairobi, Kenya",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kenya_children_drinking_milk_(8360059361).jpg"
+  },
+  {
+    "file": "malawi-map.jpg",
+    "src": "Malawi (orthographic projection).svg",
+    "author": "Marcos Elias de Oliveira Júnior",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Malawi_(orthographic_projection).svg"
+  },
+  {
+    "file": "lake-malawi.jpg",
+    "src": "Cape McLear, Malawi (2498445835).jpg",
+    "author": "Joachim Huber from Switzerland",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cape_McLear,_Malawi_(2498445835).jpg"
+  },
+  {
+    "file": "mulanje.jpg",
+    "src": "Mount Mulanje (15695182882).jpg",
+    "author": "David Davies from Birmingham, UK",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mount_Mulanje_(15695182882).jpg"
+  },
+  {
+    "file": "tobacco.jpg",
+    "src": "Tobacco farm Malawi (54578766077).jpg",
+    "author": "Global State of Tobacco Harm Reduction",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tobacco_farm_Malawi_(54578766077).jpg"
+  },
+  {
+    "file": "maize-dehusk.jpg",
+    "src": "Flickr - ggallice - Dehusking maize.jpg",
+    "author": "Geoff Gallice from Gainesville, FL, USA",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Flickr_-_ggallice_-_Dehusking_maize.jpg"
+  },
+  {
+    "file": "malawi-dairy-cow.jpg",
+    "src": "ILRI, Stevie Mann - Dairy cow looks out from her stall in a village in central Malawi.jpg",
+    "author": "Photo: ILRI/Stevie Mann",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:ILRI,_Stevie_Mann_-_Dairy_cow_looks_out_from_her_stall_in_a_village_in_central_Malawi.jpg"
+  }
+]
