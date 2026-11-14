@@ -12,6 +12,7 @@
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語 |
 | [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語 |
+| [🛐 宗教の教科書](https://yusuke1090.github.io/textbooks/?b=religion) | 国ごとに多い宗教と、ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道の考え方・歴史・行事・暮らしの決まり（12章と付録、写真74枚） | 日本語 |
 | [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語 |
 | [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語 |
 | [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語 |
@@ -114,6 +115,12 @@ tools/            図や用語の一覧を作るスクリプト
 
 - 2026-11-14 に、アフリカの教科書と同じ形（国のこと → 農業と酪農 → 参入するなら）で作った。数字・政治・会社の状況は、そのときにウェブで調べたもの。出典は付録B（`b-sources.md`）
 - 写真は `photos.json` に並べ、`python3 tools/fetch_photos.py uk` で Wikimedia Commons から取ってくる。付録C（`c-photos.md`、写真の出典）もこれで作り直す
+
+### 🛐 宗教の教科書（books/religion）
+
+- 2026-11-15 に作った。信者の数は Pew Research Center の2020年の推計（2025年発表）にそろえ、日本は文化庁『宗教年鑑』と Pew の調査を並べている。出典は付録B（`b-sources.md`）
+- 宗教の説明は「信じている人はこう考える」の形で書き、どれが正しいかは決めない。争いの話は、宗教だけでなく土地・民族・政治が重なることを書く
+- 写真は `photos.json` と `python3 tools/fetch_photos.py religion`。本棚の分野は「文化」
 
 ### 🐍 Python の教科書（books/python）
 

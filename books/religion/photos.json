@@ -1,0 +1,594 @@
+[
+  {
+    "file": "world-religions-map.jpg",
+    "src": "Map of religions.png",
+    "author": "Yassine Mehdi",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Map_of_religions.png"
+  },
+  {
+    "file": "western-wall.jpg",
+    "src": "143905 prayers at the western wall jerusalem PikiWiki Israel.jpg",
+    "author": "רחל וייסלר",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:143905_prayers_at_the_western_wall_jerusalem_PikiWiki_Israel.jpg"
+  },
+  {
+    "file": "torah.jpg",
+    "src": "Two Torah scrolls.jpg",
+    "author": "Davidbena",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Two_Torah_scrolls.jpg"
+  },
+  {
+    "file": "torah-writing.jpg",
+    "src": "Torah scroll writing.jpg",
+    "author": "Liran1977",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Torah_scroll_writing.jpg"
+  },
+  {
+    "file": "synagogue.jpg",
+    "src": "Princes Road Synagogue Nave.jpg",
+    "author": "Michael D Beckwith",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Princes_Road_Synagogue_Nave.jpg"
+  },
+  {
+    "file": "shabbat.jpg",
+    "src": "Shabbat table setting.jpg",
+    "author": "Crzrussian",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Shabbat_table_setting.jpg"
+  },
+  {
+    "file": "seder.jpg",
+    "src": "Passover Seder plate with wine and matzot.jpg",
+    "author": "Mikael Häggström",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Passover_Seder_plate_with_wine_and_matzot.jpg"
+  },
+  {
+    "file": "menorah.jpg",
+    "src": "Hanukkah menorah at Zion Square, Jerusalem.jpg",
+    "author": "דוד שי",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hanukkah_menorah_at_Zion_Square,_Jerusalem.jpg"
+  },
+  {
+    "file": "holy-sepulchre.jpg",
+    "src": "Catholicon, Church of the Holy Sepulchre, Jerusalem1.jpg",
+    "author": "Diego Delso",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Catholicon,_Church_of_the_Holy_Sepulchre,_Jerusalem1.jpg"
+  },
+  {
+    "file": "st-peters.jpg",
+    "src": "Basilica Sancti Petri blue hour.jpg",
+    "author": "Jebulon",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Basilica_Sancti_Petri_blue_hour.jpg"
+  },
+  {
+    "file": "pope-audience.jpg",
+    "src": "2018-05-02 Pope Francis General Audience 0355.jpg",
+    "author": "Mariordo (Mario Roberto Durán Ortiz)",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2018-05-02_Pope_Francis_General_Audience_0355.jpg"
+  },
+  {
+    "file": "icon.jpg",
+    "src": "The Mother of God Trenousa (17-18. century).jpg",
+    "author": "Unknown artistUnknown artist",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Mother_of_God_Trenousa_(17-18._century).jpg"
+  },
+  {
+    "file": "st-basil.jpg",
+    "src": "Moscow - 2025 - Daytime view of St. Basil's Cathedral from Vasilyevsky Spusk.jpg",
+    "author": "Юрий Д.К.",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Moscow_-_2025_-_Daytime_view_of_St._Basil%27s_Cathedral_from_Vasilyevsky_Spusk.jpg"
+  },
+  {
+    "file": "hagia-sophia.jpg",
+    "src": "Hagia Sophia Mars 2013.jpg",
+    "author": "Arild Vågen",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hagia_Sophia_Mars_2013.jpg"
+  },
+  {
+    "file": "wittenberg.jpg",
+    "src": "Wittenberg, Schlosskirche (Juni 2026) 1.jpg",
+    "author": "Romzig",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Wittenberg,_Schlosskirche_(Juni_2026)_1.jpg"
+  },
+  {
+    "file": "gutenberg-bible.jpg",
+    "src": "Gutenberg Bible, New York Public Library, USA. Pic 01.jpg",
+    "author": "Joshua Keller",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gutenberg_Bible,_New_York_Public_Library,_USA._Pic_01.jpg"
+  },
+  {
+    "file": "lalibela.jpg",
+    "src": "Bete Giyorgis 01.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bete_Giyorgis_01.jpg"
+  },
+  {
+    "file": "nigeria-church.jpg",
+    "src": "WorshipatWLBC.jpg",
+    "author": "WLBC Media Team",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:WorshipatWLBC.jpg"
+  },
+  {
+    "file": "simbang-gabi.jpg",
+    "src": "Christmas Mass a.jpg",
+    "author": "FBenjr123",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Christmas_Mass_a.jpg"
+  },
+  {
+    "file": "kaaba.jpg",
+    "src": "The Kaaba during Hajj - edited.jpg",
+    "author": "Adli Wahid Minor modifications made by Basile Morin, from the original version.",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Kaaba_during_Hajj_-_edited.jpg"
+  },
+  {
+    "file": "arafat.jpg",
+    "src": "Hajj pilgrims leaving Arafat in droves for Muzdalifah at sunset - Flickr - Al Jazeera English.jpg",
+    "author": "Al Jazeera English",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Hajj_pilgrims_leaving_Arafat_in_droves_for_Muzdalifah_at_sunset_-_Flickr_-_Al_Jazeera_English.jpg"
+  },
+  {
+    "file": "dome-of-the-rock.jpg",
+    "src": "Jerusalem-2013-Temple Mount-Dome of the Rock-Detail 01.jpg",
+    "author": "Godot13",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jerusalem-2013-Temple_Mount-Dome_of_the_Rock-Detail_01.jpg"
+  },
+  {
+    "file": "quran.jpg",
+    "src": "Birmingham Quran manuscript.jpg",
+    "author": "AnonymousUnknown author",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Birmingham_Quran_manuscript.jpg"
+  },
+  {
+    "file": "salat.jpg",
+    "src": "Muslims praying in mosque in Srinagar, Kashmir.jpg",
+    "author": "irumge",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Muslims_praying_in_mosque_in_Srinagar,_Kashmir.jpg"
+  },
+  {
+    "file": "eid-bangladesh.jpg",
+    "src": "Eid Prayer in Bangladesh (DJI 0447).jpg",
+    "author": "Azimronnie",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Eid_Prayer_in_Bangladesh_(DJI_0447).jpg"
+  },
+  {
+    "file": "blue-mosque.jpg",
+    "src": "Exterior of Sultan Ahmed I Mosque in Istanbul, Turkey 002.jpg",
+    "author": "Moonik",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Exterior_of_Sultan_Ahmed_I_Mosque_in_Istanbul,_Turkey_002.jpg"
+  },
+  {
+    "file": "al-azhar.jpg",
+    "src": "Cairo - Islamic district - Al Azhar Mosque and University.JPG",
+    "author": "Daniel Mayer",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cairo_-_Islamic_district_-_Al_Azhar_Mosque_and_University.JPG"
+  },
+  {
+    "file": "imam-reza.jpg",
+    "src": "Imam Reza shrine.jpg",
+    "author": "mohammad hosein tabatabaeian",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Imam_Reza_shrine.jpg"
+  },
+  {
+    "file": "istiqlal.jpg",
+    "src": "Jakarta - Istiqlal Mosque, interior.jpg",
+    "author": "P. Hughes",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jakarta_-_Istiqlal_Mosque,_interior.jpg"
+  },
+  {
+    "file": "varanasi.jpg",
+    "src": "Varanasi, India, Varanasi eternal.jpg",
+    "author": "Vyacheslav Argenberg",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Varanasi,_India,_Varanasi_eternal.jpg"
+  },
+  {
+    "file": "kumbh-mela.jpg",
+    "src": "Kumbh Mela2001.JPG",
+    "author": "Yosarian",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Kumbh_Mela2001.JPG"
+  },
+  {
+    "file": "meenakshi.jpg",
+    "src": "Gopuram of the Meenakshi Temple at Madurai.jpg",
+    "author": "Richard Mortel from Riyadh, Saudi Arabia",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Gopuram_of_the_Meenakshi_Temple_at_Madurai.jpg"
+  },
+  {
+    "file": "ganesh.jpg",
+    "src": "2019 Khairatabad Ganesh immersion.png",
+    "author": "T9 NEWS Telugu",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:2019_Khairatabad_Ganesh_immersion.png"
+  },
+  {
+    "file": "diya.jpg",
+    "src": "Diya Diwali India.jpg",
+    "author": "Subharnab Majumdar",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Diya_Diwali_India.jpg"
+  },
+  {
+    "file": "holi.jpg",
+    "src": "Lathmar Holi 2022 in Nandgaon, Uttar Pradesh (edited).jpg",
+    "author": "Original: Sachinghai09 Derivative work: Radomianin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lathmar_Holi_2022_in_Nandgaon,_Uttar_Pradesh_(edited).jpg"
+  },
+  {
+    "file": "canang-sari.jpg",
+    "src": "Canang sari 1.jpg",
+    "author": "Mx. Granger",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Canang_sari_1.jpg"
+  },
+  {
+    "file": "lumbini.jpg",
+    "src": "Lumbini Maya Devi Temple 1.jpg",
+    "author": "Rangan Datta Wiki",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Lumbini_Maya_Devi_Temple_1.jpg"
+  },
+  {
+    "file": "mahabodhi.jpg",
+    "src": "Mahabodhi Temple South Wall (2).jpg",
+    "author": "Sumitsurai",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Mahabodhi_Temple_South_Wall_(2).jpg"
+  },
+  {
+    "file": "gandhara-buddha.jpg",
+    "src": "Afghanistan, Gandhara, Hadda, late Kushan Period - Seated Buddha - 1967.39 - Cleveland Museum of Art.jpg",
+    "author": "anonymous",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Afghanistan,_Gandhara,_Hadda,_late_Kushan_Period_-_Seated_Buddha_-_1967.39_-_Cleveland_Museum_of_Art.jpg"
+  },
+  {
+    "file": "alms.jpg",
+    "src": "Luang Prabang Monks Alm Dawn 01.jpg",
+    "author": "Benh LIEU SONG",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Luang_Prabang_Monks_Alm_Dawn_01.jpg"
+  },
+  {
+    "file": "shwedagon.jpg",
+    "src": "20160813 Shwedagon Pagoda 9949 DxO.jpg",
+    "author": "Jakub Hałun",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:20160813_Shwedagon_Pagoda_9949_DxO.jpg"
+  },
+  {
+    "file": "tooth-temple.jpg",
+    "src": "Temple of the Tooth, Sitting Buddha statues.- Kandy.jpg",
+    "author": "Pierre André Leclercq",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Temple_of_the_Tooth,_Sitting_Buddha_statues.-_Kandy.jpg"
+  },
+  {
+    "file": "borobudur.jpg",
+    "src": "Borobudur-Temple-Park Indonesia Stupas-of-Borobudur-12.jpg",
+    "author": "CEphoto, Uwe Aranas",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Borobudur-Temple-Park_Indonesia_Stupas-of-Borobudur-12.jpg"
+  },
+  {
+    "file": "potala.jpg",
+    "src": "Potala.jpg",
+    "author": "Ondřej Žváček",
+    "license": "CC BY 2.5",
+    "license_url": "https://creativecommons.org/licenses/by/2.5",
+    "page": "https://commons.wikimedia.org/wiki/File:Potala.jpg"
+  },
+  {
+    "file": "prayer-flags.jpg",
+    "src": "Prayer flags - Tibet in 2017.jpg",
+    "author": "cattan2011",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Prayer_flags_-_Tibet_in_2017.jpg"
+  },
+  {
+    "file": "golden-temple.jpg",
+    "src": "Harmandir Sahib, Amritsar, India.jpg",
+    "author": "Dey.sandip",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Harmandir_Sahib,_Amritsar,_India.jpg"
+  },
+  {
+    "file": "langar.jpg",
+    "src": "Sikh Indian men cooking at volunteer run community kitchen, langar Goindwal Sahib.jpg",
+    "author": "jasleen_kaur from USA",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sikh_Indian_men_cooking_at_volunteer_run_community_kitchen,_langar_Goindwal_Sahib.jpg"
+  },
+  {
+    "file": "ranakpur.jpg",
+    "src": "Interior of Ranakpur Jain Temple, Rajasthan.jpg",
+    "author": "Brihaspati",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Interior_of_Ranakpur_Jain_Temple,_Rajasthan.jpg"
+  },
+  {
+    "file": "confucius-temple.jpg",
+    "src": "Dacheng Hall, Qufu 1.jpg",
+    "author": "호고호",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Dacheng_Hall,_Qufu_1.jpg"
+  },
+  {
+    "file": "temple-of-heaven.jpg",
+    "src": "Temple of Heaven, Beijing - February 2024.jpg",
+    "author": "Lloyd Tudor",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Temple_of_Heaven,_Beijing_-_February_2024.jpg"
+  },
+  {
+    "file": "white-cloud.jpg",
+    "src": "WhiteCloudpic1.jpg",
+    "author": "Gene Zhang",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:WhiteCloudpic1.jpg"
+  },
+  {
+    "file": "mazu.jpg",
+    "src": "Praying with Incense before Statues of Deities at Lugang Mazu Temple.jpg",
+    "author": "曾 成訓",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Praying_with_Incense_before_Statues_of_Deities_at_Lugang_Mazu_Temple.jpg"
+  },
+  {
+    "file": "ise.jpg",
+    "src": "Ise Grand Shrine, Mie Prefecture; February 2015 (02).jpg",
+    "author": "foooomio",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Ise_Grand_Shrine,_Mie_Prefecture;_February_2015_(02).jpg"
+  },
+  {
+    "file": "fushimi-inari.jpg",
+    "src": "Torii path with lantern at Fushimi Inari Taisha Shrine, Kyoto, Japan.jpg",
+    "author": "Basile Morin",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Torii_path_with_lantern_at_Fushimi_Inari_Taisha_Shrine,_Kyoto,_Japan.jpg"
+  },
+  {
+    "file": "kamidana.jpg",
+    "src": "Typical-kamidana-tokyoarea-2017-12-22.jpg",
+    "author": "Nesnad",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Typical-kamidana-tokyoarea-2017-12-22.jpg"
+  },
+  {
+    "file": "hatsumode.jpg",
+    "src": "People lining up for hatsumode in Meiji shrine.jpg",
+    "author": "Pocsywe",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:People_lining_up_for_hatsumode_in_Meiji_shrine.jpg"
+  },
+  {
+    "file": "omikuji.jpg",
+    "src": "Omikuji at Namba Yasaka Shrine Osaka.jpg",
+    "author": "Ian G Shingler",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Omikuji_at_Namba_Yasaka_Shrine_Osaka.jpg"
+  },
+  {
+    "file": "shichigosan.jpg",
+    "src": "Shichigosan at Ikuta Jinja Shrine.JPG",
+    "author": "Bergmann at Japanese Wikipedia",
+    "license": "CC BY 3.0",
+    "license_url": "https://creativecommons.org/licenses/by/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Shichigosan_at_Ikuta_Jinja_Shrine.JPG"
+  },
+  {
+    "file": "horyuji.jpg",
+    "src": "Horyu-ji, November 2016.jpg",
+    "author": "Martin Falbisoner",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Horyu-ji,_November_2016.jpg"
+  },
+  {
+    "file": "todaiji.jpg",
+    "src": "Daibutsu Grand bouddha - Tōdai-ji - Nara.jpg",
+    "author": "Gilles Desjardins",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Daibutsu_Grand_bouddha_-_T%C5%8Ddai-ji_-_Nara.jpg"
+  },
+  {
+    "file": "kamakura.jpg",
+    "src": "The Great Buddha of Kōtoku-in (Kamakura Daibutsu).jpg",
+    "author": "Dandy1022",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:The_Great_Buddha_of_K%C5%8Dtoku-in_(Kamakura_Daibutsu).jpg"
+  },
+  {
+    "file": "ryoanji.jpg",
+    "src": "Ninna-ji and Ryoan-ji, Kyoto - Ryoanji7753.jpg",
+    "author": "lumoplank",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Ninna-ji_and_Ryoan-ji,_Kyoto_-_Ryoanji7753.jpg"
+  },
+  {
+    "file": "jizo.jpg",
+    "src": "Bandai-ji, Jizo Statue 001.jpg",
+    "author": "Naokijp",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bandai-ji,_Jizo_Statue_001.jpg"
+  },
+  {
+    "file": "bon-odori.jpg",
+    "src": "Bon Odori, a style of dancing performed during Obon, Japan; August 2014 (02).jpg",
+    "author": "jinkemoole",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bon_Odori,_a_style_of_dancing_performed_during_Obon,_Japan;_August_2014_(02).jpg"
+  },
+  {
+    "file": "oura.jpg",
+    "src": "Oura Cathedral 20180623.jpg",
+    "author": "Houjyou-Minori",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Oura_Cathedral_20180623.jpg"
+  },
+  {
+    "file": "tenrikyo.jpg",
+    "src": "Tenrikyo Church Headquarters Main Sanctuary with gate.jpg",
+    "author": "Singularity",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tenrikyo_Church_Headquarters_Main_Sanctuary_with_gate.jpg"
+  },
+  {
+    "file": "yazd.jpg",
+    "src": "Zoroastrian Fire Temple, Yazd 01.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Zoroastrian_Fire_Temple,_Yazd_01.jpg"
+  },
+  {
+    "file": "bahai.jpg",
+    "src": "Bahai Garden in Haifa Israel.jpg",
+    "author": "Dani Lavi 0007",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Bahai_Garden_in_Haifa_Israel.jpg"
+  },
+  {
+    "file": "vodun.jpg",
+    "src": "Caravane Vodun Days Bénin 2024 01.jpg",
+    "author": "Ksperentos",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Caravane_Vodun_Days_B%C3%A9nin_2024_01.jpg"
+  },
+  {
+    "file": "caodai.jpg",
+    "src": "Cao Dai Temple Tay Ninh.JPG",
+    "author": "Dominik Tefert",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Cao_Dai_Temple_Tay_Ninh.JPG"
+  },
+  {
+    "file": "ovoo.jpg",
+    "src": "Ovoo in Khövsgöl.jpg",
+    "author": "Bernard Gagnon",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Ovoo_in_Kh%C3%B6vsg%C3%B6l.jpg"
+  },
+  {
+    "file": "uluru.jpg",
+    "src": "Petermann Ranges (AU), Uluru-Kata Tjuta National Park, Uluru, Kuniya Walk -- 2019 -- 3674.jpg",
+    "author": "Dietmar Rabich",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Petermann_Ranges_(AU),_Uluru-Kata_Tjuta_National_Park,_Uluru,_Kuniya_Walk_--_2019_--_3674.jpg"
+  },
+  {
+    "file": "halal.jpg",
+    "src": "Sign for Halal food.jpg",
+    "author": "Emna Mizouni",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Sign_for_Halal_food.jpg"
+  },
+  {
+    "file": "kosher.jpg",
+    "src": "Kosher McDonald's restaurant in Ramat-Gan.jpg",
+    "author": "Otto Magnus",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Kosher_McDonald%27s_restaurant_in_Ramat-Gan.jpg"
+  }
+]

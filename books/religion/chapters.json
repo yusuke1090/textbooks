@@ -1,0 +1,17 @@
+[
+  {"part": "第1部 宗教を知る", "file": "01-what.md", "title": "1. 宗教とは"},
+  {"part": "第1部 宗教を知る", "file": "02-countries.md", "title": "2. 国と宗教"},
+  {"part": "第2部 アブラハムの宗教", "file": "03-judaism.md", "title": "3. ユダヤ教"},
+  {"part": "第2部 アブラハムの宗教", "file": "04-christianity.md", "title": "4. キリスト教"},
+  {"part": "第2部 アブラハムの宗教", "file": "05-islam.md", "title": "5. イスラム教"},
+  {"part": "第3部 インドで生まれた宗教", "file": "06-hinduism.md", "title": "6. ヒンドゥー教"},
+  {"part": "第3部 インドで生まれた宗教", "file": "07-buddhism.md", "title": "7. 仏教"},
+  {"part": "第3部 インドで生まれた宗教", "file": "08-sikh-jain.md", "title": "8. シク教とジャイナ教"},
+  {"part": "第4部 東アジアの宗教", "file": "09-china.md", "title": "9. 儒教と道教（中国・韓国・台湾）"},
+  {"part": "第4部 東アジアの宗教", "file": "10-japan.md", "title": "10. 日本の宗教"},
+  {"part": "第5部 そのほかと、いまの世界", "file": "11-others.md", "title": "11. そのほかの宗教"},
+  {"part": "第5部 そのほかと、いまの世界", "file": "12-today.md", "title": "12. 宗教といまの世界"},
+  {"part": "付録", "file": "a-words.md", "title": "付録A. 用語"},
+  {"part": "付録", "file": "b-sources.md", "title": "付録B. 出典"},
+  {"part": "付録", "file": "c-photos.md", "title": "付録C. 写真の出典"}
+]

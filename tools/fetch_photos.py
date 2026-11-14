@@ -106,7 +106,7 @@ def credits(book, photos, lang):
         text = (md_dir / ch["file"]).read_text()
         rows = []
         for alt, f in re.findall(r"^\s*!\[([^\]]*)\]\(images/([^)\s]+)\)\s*$", text, re.M):
-            if f in by_file and f not in used:
+            if f in by_file and f not in used and "page" in by_file[f]:   # 取り込めなかった写真は載せない
                 used.add(f)
                 p = by_file[f]
                 lic = f"[{p['license']}]({p['license_url']})" if p.get("license_url") else p["license"]
@@ -126,7 +126,11 @@ def main():
         dest = book / "images" / p["file"]
         if dest.exists() and "page" in p:
             continue
-        url, meta = info(p["src"])
+        try:
+            url, meta = info(p["src"])
+        except SystemExit as e:          # 見つからない・使えないライセンスは飛ばして、最後に知らせる
+            print(f"飛ばした: {e}")
+            continue
         p.update(meta)
         save(get(url), dest)
         print(f"取り込み {p['file']}  {meta['license']}  {meta['author'][:30]}")
