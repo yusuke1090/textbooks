@@ -36,12 +36,14 @@ button { font: inherit; }
 .shelf-head .wrap { padding-top: 26px; padding-bottom: 20px; }
 .shelf-head h1 { margin: 0 0 4px; font-size: 24px; }
 .shelf-head p { margin: 0; color: var(--muted); font-size: 14px; }
-.books { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); padding: 22px 0 40px; }
+.shelf-main { padding-bottom: 40px; }
+.grp { margin: 24px 0 10px; font-size: 15px; color: var(--muted); }
+.books { display: grid; gap: 14px; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); }
 .card { display: flex; flex-direction: column; gap: 6px; padding: 16px 18px; border: 1px solid var(--border); border-radius: 14px;
   background: var(--panel); color: var(--text); text-decoration: none; }
 .card:hover { border-color: var(--accent); }
 .card .ic { font-size: 34px; line-height: 1.2; }
-.card h2 { margin: 0; font-size: 18px; line-height: 1.5; }
+.card h3 { margin: 0; font-size: 18px; line-height: 1.5; }
 .card .en { color: var(--muted); font-size: 13px; }
 .card p { margin: 2px 0 0; font-size: 13.5px; line-height: 1.7; color: var(--muted); }
 .card .meta { margin-top: auto; padding-top: 8px; font-size: 12.5px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
@@ -202,7 +204,7 @@ li > .sticky-bar { margin-top: 4px; }
     <h1>📚 教科書</h1>
     <p>いろいろなことを、章ごとにまとめて勉強するための教科書です。</p>
   </div></div>
-  <main class="wrap"><div class="books" id="books"><p class="msg">読み込み中…</p></div></main>
+  <main class="wrap shelf-main" id="books"><p class="msg">読み込み中…</p></main>
   <footer><div class="wrap"><p><a href="https://github.com/yusuke1090/textbooks" target="_blank" rel="noopener">GitHub</a> ・ <a href="https://yusuke1090.github.io/smart-agri-news/">スマート農業News</a></p></div></footer>
 </div>
 
@@ -287,11 +289,20 @@ li > .sticky-bar { margin-top: 4px; }
       const n = notes.filter((x) => x.book === b.id).length;
       return `<a class="card" href="?b=${encodeURIComponent(b.id)}">
         <span class="ic">${esc(b.icon || "📘")}</span>
-        <h2>${esc(L(b.title, "ja"))}</h2>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
+        <h3>${esc(L(b.title, "ja"))}</h3>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
         <p>${esc(L(b.desc, "ja"))}</p>
         <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}</span></a>`;
     }));
-    $("books").innerHTML = cards.join("");
+    // books.json の "group" ごとに見出しを付ける（並びは books.json の順）
+    const groups = [];
+    books.forEach((b, i) => {
+      const g = b.group || "";
+      let e = groups.find((x) => x.name === g);
+      if (!e) groups.push((e = { name: g, cards: [] }));
+      e.cards.push(cards[i]);
+    });
+    $("books").innerHTML = groups.map((g) =>
+      (g.name ? `<h2 class="grp">${esc(g.name)}</h2>` : "") + `<div class="books">${g.cards.join("")}</div>`).join("");
   }
 
   // =====================================================================

@@ -1,7 +1,116 @@
 [
   {
+    "id": "python",
+    "icon": "🐍",
+    "group": "プログラミング",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "Python の教科書"
+    },
+    "desc": {
+      "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。"
+    }
+  },
+  {
+    "id": "cpp",
+    "icon": "⚙️",
+    "group": "プログラミング",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "C++ の教科書"
+    },
+    "desc": {
+      "ja": "Ubuntu と VS Code（g++）で、変数・条件分岐・関数・ポインタから、クラス・継承・テンプレート・例外まで。『やさしいC++ 第5版』の学習ノートがもと。付録に Python との対応表。"
+    }
+  },
+  {
+    "id": "pico",
+    "icon": "🍓",
+    "group": "プログラミング",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "ラズパイピコ開発ガイド（C++・VS Code）"
+    },
+    "desc": {
+      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の「📚 ガイド」からも開けます。"
+    },
+    "home": {
+      "url": "https://github.com/yusuke1090/pico-studio",
+      "label": {
+        "ja": "Pico Studio"
+      }
+    },
+    "glossary": "glossary.json"
+  },
+  {
+    "id": "stats",
+    "icon": "📊",
+    "group": "データ",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "統計の教科書"
+    },
+    "desc": {
+      "ja": "分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点（多重共線性・欠落変数バイアス）まで。"
+    },
+    "math": true
+  },
+  {
+    "id": "ml",
+    "icon": "🤖",
+    "group": "データ",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "機械学習の教科書"
+    },
+    "desc": {
+      "ja": "scikit-learn で、回帰・分類・前処理と次元削減・クラスタリング・特徴量エンジニアリング・モデルの評価まで。『Pythonではじめる機械学習』の学習ノートがもと。"
+    },
+    "math": true
+  },
+  {
+    "id": "github",
+    "icon": "🐙",
+    "group": "道具",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "GitHub の教科書"
+    },
+    "desc": {
+      "ja": "git で記録をとり、GitHub に置くまで。最初の設定、SSH キー、コミット・プッシュ・プル、前の状態に戻す、ブランチ、ラズパイ・Jetson からのクローン、よくあるエラー。VS Code のボタンでの操作と便利な拡張機能も。"
+    },
+    "glossary": "glossary.json"
+  },
+  {
+    "id": "docker",
+    "icon": "🐳",
+    "group": "道具",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "Docker の教科書"
+    },
+    "desc": {
+      "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。"
+    }
+  },
+  {
     "id": "cow",
     "icon": "🐄",
+    "group": "農業・地域",
     "langs": [
       "ja",
       "en"
@@ -32,42 +141,9 @@
     }
   },
   {
-    "id": "pico",
-    "icon": "🍓",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "ラズパイピコ開発ガイド（C++・VS Code）"
-    },
-    "desc": {
-      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の「📚 ガイド」からも開けます。"
-    },
-    "home": {
-      "url": "https://github.com/yusuke1090/pico-studio",
-      "label": {
-        "ja": "Pico Studio"
-      }
-    },
-    "glossary": "glossary.json"
-  },
-  {
-    "id": "github",
-    "icon": "🐙",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "GitHub の教科書"
-    },
-    "desc": {
-      "ja": "git で記録をとり、GitHub に置くまで。最初の設定、SSH キー、コミット・プッシュ・プル、前の状態に戻す、ブランチ、ラズパイ・Jetson からのクローン、よくあるエラー。VS Code のボタンでの操作と便利な拡張機能も。"
-    },
-    "glossary": "glossary.json"
-  },
-  {
     "id": "africa",
     "icon": "🌍",
+    "group": "農業・地域",
     "langs": [
       "ja"
     ],
@@ -79,73 +155,6 @@
     },
     "note": {
       "ja": "数字と会社の状況は 2026年11月に調べた目安です。使う前に付録B の出典で確かめてください。"
-    }
-  },
-  {
-    "id": "python",
-    "icon": "🐍",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "Python の教科書"
-    },
-    "desc": {
-      "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。"
-    }
-  },
-  {
-    "id": "stats",
-    "icon": "📊",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "統計の教科書"
-    },
-    "desc": {
-      "ja": "分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点（多重共線性・欠落変数バイアス）まで。"
-    },
-    "math": true
-  },
-  {
-    "id": "ml",
-    "icon": "🤖",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "機械学習の教科書"
-    },
-    "desc": {
-      "ja": "scikit-learn で、回帰・分類・前処理と次元削減・クラスタリング・特徴量エンジニアリング・モデルの評価まで。『Pythonではじめる機械学習』の学習ノートがもと。"
-    },
-    "math": true
-  },
-  {
-    "id": "cpp",
-    "icon": "⚙️",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "C++ の教科書"
-    },
-    "desc": {
-      "ja": "Ubuntu と VS Code（g++）で、変数・条件分岐・関数・ポインタから、クラス・継承・テンプレート・例外まで。『やさしいC++ 第5版』の学習ノートがもと。付録に Python との対応表。"
-    }
-  },
-  {
-    "id": "docker",
-    "icon": "🐳",
-    "langs": [
-      "ja"
-    ],
-    "title": {
-      "ja": "Docker の教科書"
-    },
-    "desc": {
-      "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。"
     }
   }
 ]

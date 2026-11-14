@@ -61,7 +61,7 @@ tools/            図や用語の一覧を作るスクリプト
 ## 教科書を足す
 
 1. `books/<id>/` を作り、章の Markdown と `chapters.json` を置く
-2. `books.json` に1つ足す（`id`・`icon`・`langs`・`title`・`desc`。あれば `home`（戻り先）・`note`（下に出す注意）・`glossary`・`terms`・`math`（数式を使うなら `true`））
+2. `books.json` に1つ足す（`id`・`icon`・`group`・`langs`・`title`・`desc`。本棚は `group`（プログラミング・データ・道具・農業・地域）ごとに見出しを付けて、books.json の順に並ぶので、同じ分野の、読む順のところに入れる。あれば `home`（戻り先）・`note`（下に出す注意）・`glossary`・`terms`・`math`（数式を使うなら `true`））
 3. 手元で見て確かめてから push する
 
 ```json
