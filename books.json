@@ -71,13 +71,16 @@
     "icon": "🤖",
     "group": "データ",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "機械学習の教科書"
+      "ja": "機械学習の教科書",
+      "en": "Machine Learning Textbook"
     },
     "desc": {
-      "ja": "scikit-learn で、回帰・分類・前処理と次元削減・クラスタリング・特徴量エンジニアリング・モデルの評価まで。『Pythonではじめる機械学習』の学習ノートがもと。"
+      "ja": "scikit-learn で、回帰・分類・前処理と次元削減・クラスタリング・特徴量エンジニアリング・モデルの評価まで。『Pythonではじめる機械学習』の学習ノートがもと。",
+      "en": "Regression, classification, preprocessing and dimensionality reduction, clustering, feature engineering and model evaluation with scikit-learn. Based on my study notes on Introduction to Machine Learning with Python."
     },
     "math": true
   },

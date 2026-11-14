@@ -1,9 +1,9 @@
 [
-  {"part": "第1部 はじめに", "file": "01-intro.md", "title": "1. 機械学習とは（アイリスの分類）"},
-  {"part": "第2部 教師あり学習", "file": "02-regression.md", "title": "2. 教師あり学習と回帰"},
-  {"part": "第2部 教師あり学習", "file": "03-classification.md", "title": "3. 分類のモデル"},
-  {"part": "第3部 教師なし学習", "file": "04-preprocess.md", "title": "4. 前処理と次元削減"},
-  {"part": "第3部 教師なし学習", "file": "05-clustering.md", "title": "5. クラスタリング"},
-  {"part": "第4部 データとモデルの評価", "file": "06-features.md", "title": "6. 特徴量エンジニアリング"},
-  {"part": "第4部 データとモデルの評価", "file": "07-evaluation.md", "title": "7. モデルの評価"}
+  {"part": {"ja": "第1部 はじめに", "en": "Part 1: Getting started"}, "file": "01-intro.md", "title": {"ja": "1. 機械学習とは（アイリスの分類）", "en": "1. What is machine learning? (classifying irises)"}},
+  {"part": {"ja": "第2部 教師あり学習", "en": "Part 2: Supervised learning"}, "file": "02-regression.md", "title": {"ja": "2. 教師あり学習と回帰", "en": "2. Supervised learning and regression"}},
+  {"part": {"ja": "第2部 教師あり学習", "en": "Part 2: Supervised learning"}, "file": "03-classification.md", "title": {"ja": "3. 分類のモデル", "en": "3. Classification models"}},
+  {"part": {"ja": "第3部 教師なし学習", "en": "Part 3: Unsupervised learning"}, "file": "04-preprocess.md", "title": {"ja": "4. 前処理と次元削減", "en": "4. Preprocessing and dimensionality reduction"}},
+  {"part": {"ja": "第3部 教師なし学習", "en": "Part 3: Unsupervised learning"}, "file": "05-clustering.md", "title": {"ja": "5. クラスタリング", "en": "5. Clustering"}},
+  {"part": {"ja": "第4部 データとモデルの評価", "en": "Part 4: Data and model evaluation"}, "file": "06-features.md", "title": {"ja": "6. 特徴量エンジニアリング", "en": "6. Feature engineering"}},
+  {"part": {"ja": "第4部 データとモデルの評価", "en": "Part 4: Data and model evaluation"}, "file": "07-evaluation.md", "title": {"ja": "7. モデルの評価", "en": "7. Evaluating models"}}
 ]

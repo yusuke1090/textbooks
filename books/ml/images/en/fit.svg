@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 282" font-family="system-ui, sans-serif" font-size="12">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52514e"/></marker></defs>
+<rect width="820" height="282" rx="10" fill="#ffffff"/>
+<rect x="30" y="18" width="255" height="250" rx="8" fill="#ffffff" stroke="#e6e5e0" stroke-width="1.5"/>
+<text x="157.0" y="40.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Underfitting</text>
+<text x="157.0" y="258.0" font-size="11.5" text-anchor="middle" fill="#52514e">A straight line misses the shape</text>
+<path d="M47.8 92.8 L267.2 185.5" fill="none" stroke="#2a78d6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="55.7" cy="120.7" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="71.3" cy="101.2" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="87.0" cy="101.5" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="102.7" cy="92.9" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="118.3" cy="95.0" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="134.0" cy="114.6" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="149.7" cy="122.0" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="165.3" cy="165.1" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="181.0" cy="171.8" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="196.7" cy="189.2" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="212.3" cy="191.7" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="228.0" cy="179.3" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="243.7" cy="161.6" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="259.3" cy="141.4" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<rect x="295" y="18" width="255" height="250" rx="8" fill="#ffffff" stroke="#e6e5e0" stroke-width="1.5"/>
+<text x="422.0" y="40.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Good fit</text>
+<text x="422.0" y="258.0" font-size="11.5" text-anchor="middle" fill="#52514e">Captures the overall shape</text>
+<path d="M312.8 130.3 L314.7 128.1 L316.5 125.9 L318.3 123.8 L320.1 121.7 L322.0 119.6 L323.8 117.6 L325.6 115.7 L327.5 113.8 L329.3 112.0 L331.1 110.3 L332.9 108.6 L334.8 107.0 L336.6 105.5 L338.4 104.1 L340.2 102.8 L342.1 101.6 L343.9 100.5 L345.7 99.5 L347.6 98.7 L349.4 97.9 L351.2 97.2 L353.0 96.6 L354.9 96.2 L356.7 95.9 L358.5 95.7 L360.4 95.6 L362.2 95.6 L364.0 95.7 L365.8 96.0 L367.7 96.3 L369.5 96.8 L371.3 97.4 L373.1 98.1 L375.0 99.0 L376.8 99.9 L378.6 100.9 L380.5 102.1 L382.3 103.3 L384.1 104.7 L385.9 106.1 L387.8 107.6 L389.6 109.2 L391.4 110.9 L393.3 112.6 L395.1 114.5 L396.9 116.4 L398.7 118.3 L400.6 120.4 L402.4 122.4 L404.2 124.6 L406.1 126.7 L407.9 128.9 L409.7 131.1 L411.5 133.4 L413.4 135.6 L415.2 137.9 L417.0 140.2 L418.8 142.5 L420.7 144.7 L422.5 147.0 L424.3 149.3 L426.2 151.5 L428.0 153.7 L429.8 155.8 L431.6 157.9 L433.5 160.0 L435.3 162.0 L437.1 163.9 L438.9 165.8 L440.8 167.7 L442.6 169.4 L444.4 171.1 L446.3 172.7 L448.1 174.2 L449.9 175.6 L451.7 176.9 L453.6 178.1 L455.4 179.2 L457.2 180.3 L459.1 181.2 L460.9 182.0 L462.7 182.7 L464.5 183.3 L466.4 183.7 L468.2 184.1 L470.0 184.3 L471.9 184.4 L473.7 184.4 L475.5 184.3 L477.3 184.1 L479.2 183.7 L481.0 183.3 L482.8 182.7 L484.6 182.0 L486.5 181.2 L488.3 180.3 L490.1 179.3 L492.0 178.2 L493.8 176.9 L495.6 175.6 L497.4 174.2 L499.3 172.7 L501.1 171.1 L502.9 169.5 L504.8 167.7 L506.6 165.9 L508.4 164.0 L510.2 162.1 L512.1 160.0 L513.9 158.0 L515.7 155.9 L517.5 153.7 L519.4 151.5 L521.2 149.3 L523.0 147.1 L524.9 144.8 L526.7 142.5 L528.5 140.3 L530.3 138.0 L532.2 135.7" fill="none" stroke="#2a78d6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="320.7" cy="120.7" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="336.3" cy="101.2" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="352.0" cy="101.5" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="367.7" cy="92.9" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="383.3" cy="95.0" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="399.0" cy="114.6" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="414.7" cy="122.0" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="430.3" cy="165.1" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="446.0" cy="171.8" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="461.7" cy="189.2" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="477.3" cy="191.7" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="493.0" cy="179.3" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="508.7" cy="161.6" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="524.3" cy="141.4" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<rect x="560" y="18" width="255" height="250" rx="8" fill="#ffffff" stroke="#e6e5e0" stroke-width="1.5"/>
+<text x="687.0" y="40.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Overfitting</text>
+<text x="687.0" y="258.0" font-size="11.5" text-anchor="middle" fill="#52514e">Hits every point, but fails on new data</text>
+<path d="M585.7 120.7 L601.3 101.2 L617.0 101.5 L632.7 92.9 L648.3 95.0 L664.0 114.6 L679.7 122.0 L695.3 165.1 L711.0 171.8 L726.7 189.2 L742.3 191.7 L758.0 179.3 L773.7 161.6 L789.3 141.4" fill="none" stroke="#2a78d6" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="585.7" cy="120.7" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="601.3" cy="101.2" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="617.0" cy="101.5" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="632.7" cy="92.9" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="648.3" cy="95.0" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="664.0" cy="114.6" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="679.7" cy="122.0" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="695.3" cy="165.1" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="711.0" cy="171.8" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="726.7" cy="189.2" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="742.3" cy="191.7" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="758.0" cy="179.3" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="773.7" cy="161.6" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+<circle cx="789.3" cy="141.4" r="4.5" fill="#1f1f1d" stroke="#ffffff" stroke-width="1.5"/>
+</svg>
