@@ -1,10 +1,10 @@
 [
-  {"part": "第1部 基礎統計", "file": "01-variance.md", "title": "1. データのばらつき（分散・標準偏差）"},
-  {"part": "第1部 基礎統計", "file": "02-correlation.md", "title": "2. 2つのデータの関係（共分散・相関係数）"},
-  {"part": "第1部 基礎統計", "file": "03-distribution.md", "title": "3. 確率変数と分布"},
-  {"part": "第1部 基礎統計", "file": "04-expectation.md", "title": "4. 期待値と分散"},
-  {"part": "第1部 基礎統計", "file": "05-distributions.md", "title": "5. よく使う分布（正規・χ²・t・F）"},
-  {"part": "第2部 計量経済学", "file": "06-clt.md", "title": "6. 標本平均・大数の法則・中心極限定理"},
-  {"part": "第2部 計量経済学", "file": "07-ols.md", "title": "7. 回帰分析と OLS"},
-  {"part": "第2部 計量経済学", "file": "08-ols-caution.md", "title": "8. OLS の注意点（多重共線性・欠落変数バイアス）"}
+  {"part": {"ja": "第1部 基礎統計", "en": "Part 1: Basic statistics"}, "file": "01-variance.md", "title": {"ja": "1. データのばらつき（分散・標準偏差）", "en": "1. How spread out data is (variance and standard deviation)"}},
+  {"part": {"ja": "第1部 基礎統計", "en": "Part 1: Basic statistics"}, "file": "02-correlation.md", "title": {"ja": "2. 2つのデータの関係（共分散・相関係数）", "en": "2. The relationship between two variables (covariance and correlation)"}},
+  {"part": {"ja": "第1部 基礎統計", "en": "Part 1: Basic statistics"}, "file": "03-distribution.md", "title": {"ja": "3. 確率変数と分布", "en": "3. Random variables and distributions"}},
+  {"part": {"ja": "第1部 基礎統計", "en": "Part 1: Basic statistics"}, "file": "04-expectation.md", "title": {"ja": "4. 期待値と分散", "en": "4. Expected value and variance"}},
+  {"part": {"ja": "第1部 基礎統計", "en": "Part 1: Basic statistics"}, "file": "05-distributions.md", "title": {"ja": "5. よく使う分布（正規・χ²・t・F）", "en": "5. Common distributions (normal, χ², t, F)"}},
+  {"part": {"ja": "第2部 計量経済学", "en": "Part 2: Econometrics"}, "file": "06-clt.md", "title": {"ja": "6. 標本平均・大数の法則・中心極限定理", "en": "6. Sample mean, the law of large numbers and the central limit theorem"}},
+  {"part": {"ja": "第2部 計量経済学", "en": "Part 2: Econometrics"}, "file": "07-ols.md", "title": {"ja": "7. 回帰分析と OLS", "en": "7. Regression analysis and OLS"}},
+  {"part": {"ja": "第2部 計量経済学", "en": "Part 2: Econometrics"}, "file": "08-ols-caution.md", "title": {"ja": "8. OLS の注意点（多重共線性・欠落変数バイアス）", "en": "8. Pitfalls of OLS (multicollinearity and omitted variable bias)"}}
 ]
