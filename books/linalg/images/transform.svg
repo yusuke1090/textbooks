@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 350" font-family="system-ui, 'Noto Sans JP', 'Hiragino Sans', sans-serif" font-size="12">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52514e"/></marker></defs>
+<rect width="820" height="350" rx="10" fill="#ffffff"/>
+<defs><marker id="m-s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2a78d6"/></marker><marker id="m-s2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#eb6834"/></marker><marker id="m-s3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1baf7a"/></marker><marker id="m-s4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#eda100"/></marker><marker id="m-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e34948"/></marker><marker id="m-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a8984"/></marker></defs>
+<path d="M90.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M140.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M190.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M240.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M290.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M340.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 350.0 H340.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 300.0 H340.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 250.0 H340.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 200.0 H340.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 150.0 H340.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 100.0 H340.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M90.0 300.0 H340.0" stroke="#9a9a95" stroke-width="1.5"/>
+<path d="M140.0 350.0 V100.0" stroke="#9a9a95" stroke-width="1.5"/>
+<text x="336.0" y="294.0" font-size="12" text-anchor="end" fill="#8a8984">x</text>
+<text x="146.0" y="112.0" font-size="12" text-anchor="start" fill="#8a8984">y</text>
+<text x="135.0" y="314.0" font-size="11" text-anchor="end" fill="#8a8984">O</text>
+<path d="M470.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M520.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M570.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M620.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M670.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M720.0 350.0 V100.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 350.0 H720.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 300.0 H720.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 250.0 H720.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 200.0 H720.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 150.0 H720.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 100.0 H720.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 300.0 H720.0" stroke="#9a9a95" stroke-width="1.5"/>
+<path d="M520.0 350.0 V100.0" stroke="#9a9a95" stroke-width="1.5"/>
+<text x="716.0" y="294.0" font-size="12" text-anchor="end" fill="#8a8984">x</text>
+<text x="526.0" y="112.0" font-size="12" text-anchor="start" fill="#8a8984">y</text>
+<text x="515.0" y="314.0" font-size="11" text-anchor="end" fill="#8a8984">O</text>
+<path d="M140.0 300.0 L190.0 300.0 L190.0 250.0 L140.0 250.0 L140.0 300.0" fill="#2a78d6" fill-opacity="0.15" stroke="#2a78d6" stroke-width="1.5"/>
+<line x1="140.0" y1="300.0" x2="190.0" y2="300.0" stroke="#2a78d6" stroke-width="2.6" marker-end="url(#m-s1)"/>
+<line x1="140.0" y1="300.0" x2="140.0" y2="250.0" stroke="#eb6834" stroke-width="2.6" marker-end="url(#m-s2)"/>
+<text x="196.0" y="316.0" font-size="13" text-anchor="start" fill="#2a78d6" font-weight="700">e₁</text>
+<text x="126.0" y="244.0" font-size="13" text-anchor="start" fill="#eb6834" font-weight="700">e₂</text>
+<text x="215.0" y="46.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">変換する前（面積 1）</text>
+<path d="M520.0 300.0 L620.0 250.0 L670.0 150.0 L570.0 200.0 L520.0 300.0" fill="#2a78d6" fill-opacity="0.15" stroke="#2a78d6" stroke-width="1.5"/>
+<line x1="520.0" y1="300.0" x2="620.0" y2="250.0" stroke="#2a78d6" stroke-width="2.6" marker-end="url(#m-s1)"/>
+<line x1="520.0" y1="300.0" x2="570.0" y2="200.0" stroke="#eb6834" stroke-width="2.6" marker-end="url(#m-s2)"/>
+<text x="626.0" y="266.0" font-size="12.5" text-anchor="start" fill="#2a78d6" font-weight="700">Ae₁ = (2, 1)</text>
+<text x="562.0" y="194.0" font-size="12.5" text-anchor="end" fill="#eb6834" font-weight="700">Ae₂ = (1, 2)</text>
+<text x="595.0" y="46.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">変換したあと（面積 3 = |det A|）</text>
+<line x1="348" y1="170" x2="462" y2="170" stroke="#52514e" stroke-width="1.8" marker-end="url(#m-muted)"/>
+<text x="405.0" y="160.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">A = (2 1; 1 2)</text>
+</svg>

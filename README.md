@@ -16,6 +16,7 @@
 | [🛐 宗教の教科書](https://yusuke1090.github.io/textbooks/?b=religion) | 国ごとに多い宗教と、ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道の考え方・歴史・行事・暮らしの決まり（12章と付録、写真74枚） | 日本語 |
 | [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語 |
 | [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語 |
+| [🧮 線形代数の教科書](https://yusuke1090.github.io/textbooks/?b=linalg) | ベクトル・行列・掃き出し法・行列式・ベクトル空間・線形写像・固有値と対角化・対称行列、最小二乗法と主成分分析（10章と付録、図6枚、例題と練習問題つき） | 日本語 |
 | [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語 |
 | [⚙️ C++ の教科書](https://yusuke1090.github.io/textbooks/?b=cpp) | g++ と VS Code で、変数・関数・ポインタからクラス・継承・テンプレート・例外まで（15章と付録） | 日本語 |
 | [🐳 Docker の教科書](https://yusuke1090.github.io/textbooks/?b=docker) | VS Code で Docker。コンテナ・Dockerfile・ボリューム・Compose・Dev Containers・ラズパイと Jetson（8章、図2枚） | 日本語 |
@@ -138,6 +139,12 @@ tools/            図や用語の一覧を作るスクリプト
 
 - 2026-11-14 に、学習ノート [超基礎統計](https://note.com/k_1090/n/n920f21843b93)・[計量経済学の自分用まとめ](https://note.com/k_1090/n/n98bcfaa3190b)（見出しと画像だけのもの）をもとに、式と計算の例を足して作った
 - 図5枚（`images/`）は `python3 tools/make_study_figures.py` で作る（式から計算したもの）
+
+### 🧮 線形代数の教科書（books/linalg）
+
+- 2026-11-15 に作った。マセマのキャンパス・ゼミくらいの、大学1〜2年のレベル。各章に例題（解答つき）と練習問題（答えつき）がある
+- 例題と練習問題の数は sympy と NumPy で確かめた。10章の NumPy のコードと出力は、NumPy 2.5 で実行したもの。数式は全部（約1,000個）KaTeX 0.16.9 で表示できることを確かめた
+- 図6枚は `python3 tools/make_linalg_figures.py` で作る（例題と同じ数値）
 
 ### 🤖 機械学習の教科書（books/ml）
 
