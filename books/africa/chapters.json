@@ -1,14 +1,14 @@
 [
-  {"part": "第1部 アフリカを知る", "file": "01-overview.md", "title": "1. アフリカのあらまし"},
-  {"part": "第1部 アフリカを知る", "file": "02-history.md", "title": "2. 歴史"},
-  {"part": "第1部 アフリカを知る", "file": "03-food.md", "title": "3. 食べ物"},
-  {"part": "第1部 アフリカを知る", "file": "04-culture.md", "title": "4. 文化と暮らし"},
-  {"part": "第1部 アフリカを知る", "file": "05-trends.md", "title": "5. いまのトレンド"},
-  {"part": "第2部 東アフリカの3か国", "file": "06-tanzania.md", "title": "6. タンザニア"},
-  {"part": "第2部 東アフリカの3か国", "file": "07-kenya.md", "title": "7. ケニア"},
-  {"part": "第2部 東アフリカの3か国", "file": "08-malawi.md", "title": "8. マラウイ"},
-  {"part": "第3部 参入するなら", "file": "09-entry.md", "title": "9. 3か国を比べて、参入を考える"},
-  {"part": "付録", "file": "a-words.md", "title": "付録A. スワヒリ語・チェワ語と用語"},
-  {"part": "付録", "file": "b-sources.md", "title": "付録B. 出典"},
-  {"part": "付録", "file": "c-photos.md", "title": "付録C. 写真の出典"}
+  {"part": {"ja": "第1部 アフリカを知る", "en": "Part 1: Getting to know Africa"}, "file": "01-overview.md", "title": {"ja": "1. アフリカのあらまし", "en": "1. An overview of Africa"}},
+  {"part": {"ja": "第1部 アフリカを知る", "en": "Part 1: Getting to know Africa"}, "file": "02-history.md", "title": {"ja": "2. 歴史", "en": "2. History"}},
+  {"part": {"ja": "第1部 アフリカを知る", "en": "Part 1: Getting to know Africa"}, "file": "03-food.md", "title": {"ja": "3. 食べ物", "en": "3. Food"}},
+  {"part": {"ja": "第1部 アフリカを知る", "en": "Part 1: Getting to know Africa"}, "file": "04-culture.md", "title": {"ja": "4. 文化と暮らし", "en": "4. Culture and daily life"}},
+  {"part": {"ja": "第1部 アフリカを知る", "en": "Part 1: Getting to know Africa"}, "file": "05-trends.md", "title": {"ja": "5. いまのトレンド", "en": "5. Trends today"}},
+  {"part": {"ja": "第2部 東アフリカの3か国", "en": "Part 2: Three East African countries"}, "file": "06-tanzania.md", "title": {"ja": "6. タンザニア", "en": "6. Tanzania"}},
+  {"part": {"ja": "第2部 東アフリカの3か国", "en": "Part 2: Three East African countries"}, "file": "07-kenya.md", "title": {"ja": "7. ケニア", "en": "7. Kenya"}},
+  {"part": {"ja": "第2部 東アフリカの3か国", "en": "Part 2: Three East African countries"}, "file": "08-malawi.md", "title": {"ja": "8. マラウイ", "en": "8. Malawi"}},
+  {"part": {"ja": "第3部 参入するなら", "en": "Part 3: If you were to enter"}, "file": "09-entry.md", "title": {"ja": "9. 3か国を比べて、参入を考える", "en": "9. Comparing the three countries, and thinking about market entry"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "a-words.md", "title": {"ja": "付録A. スワヒリ語・チェワ語と用語", "en": "Appendix A. Swahili, Chewa and key terms"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "b-sources.md", "title": {"ja": "付録B. 出典", "en": "Appendix B. Sources"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "c-photos.md", "title": {"ja": "付録C. 写真の出典", "en": "Appendix C. Photo credits"}}
 ]

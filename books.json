@@ -202,16 +202,20 @@
     "icon": "🌍",
     "group": "農業・地域",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "アフリカの教科書"
+      "ja": "アフリカの教科書",
+      "en": "Africa Textbook"
     },
     "desc": {
-      "ja": "アフリカの歴史・食べ物・文化・いまのトレンドと、タンザニア・ケニア・マラウイの農業と酪農、IoT・アグリテックの会社、参入するならどうするか。"
+      "ja": "アフリカの歴史・食べ物・文化・いまのトレンドと、タンザニア・ケニア・マラウイの農業と酪農、IoT・アグリテックの会社、参入するならどうするか。",
+      "en": "Africa's history, food, culture and current trends, plus agriculture and dairy in Tanzania, Kenya and Malawi, IoT and agritech companies, and how you might enter the market."
     },
     "note": {
-      "ja": "数字と会社の状況は 2026年11月に調べた目安です。使う前に付録B の出典で確かめてください。"
+      "ja": "数字と会社の状況は 2026年11月に調べた目安です。使う前に付録B の出典で確かめてください。",
+      "en": "Figures and the state of companies are rough guides researched in November 2026. Check the sources in Appendix B before using them."
     }
   },
   {
