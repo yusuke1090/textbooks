@@ -55,6 +55,23 @@
     "glossary": "glossary.json"
   },
   {
+    "id": "ros",
+    "icon": "🚁",
+    "group": "プログラミング",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "ROS 2 と ArduPilot の教科書"
+    },
+    "desc": {
+      "ja": "Ubuntu 24.04 と ROS 2 Jazzy で、ノード・トピック・サービス・launch・QoS から、ArduPilot の SITL・MAVLink、ROS 2 からドローンを飛ばす（AP_DDS）、Gazebo、Jetson・ラズパイの実機、日本の法律まで。"
+    },
+    "note": {
+      "ja": "実機を飛ばす前に、必ずシミュレーションで試し、12章の安全と法律を確かめてください。"
+    }
+  },
+  {
     "id": "stats",
     "icon": "📊",
     "group": "データ",
