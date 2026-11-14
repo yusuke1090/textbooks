@@ -1,14 +1,14 @@
 [
-  {"part": "第1部 イギリスを知る", "file": "01-overview.md", "title": "1. イギリスのあらまし"},
-  {"part": "第1部 イギリスを知る", "file": "02-history.md", "title": "2. 歴史"},
-  {"part": "第1部 イギリスを知る", "file": "03-food.md", "title": "3. 食べ物"},
-  {"part": "第1部 イギリスを知る", "file": "04-culture.md", "title": "4. 文化と暮らし"},
-  {"part": "第1部 イギリスを知る", "file": "05-trends.md", "title": "5. いまのトレンド"},
-  {"part": "第2部 イギリスの農業", "file": "06-farming.md", "title": "6. イギリスの農業"},
-  {"part": "第2部 イギリスの農業", "file": "07-dairy.md", "title": "7. イギリスの酪農"},
-  {"part": "第2部 イギリスの農業", "file": "08-agritech.md", "title": "8. アグリテックと IoT の会社"},
-  {"part": "第3部 参入するなら", "file": "09-entry.md", "title": "9. イギリスで農業の IoT をするなら"},
-  {"part": "付録", "file": "a-words.md", "title": "付録A. 農業と酪農の英語"},
-  {"part": "付録", "file": "b-sources.md", "title": "付録B. 出典"},
-  {"part": "付録", "file": "c-photos.md", "title": "付録C. 写真の出典"}
+  {"part": {"ja": "第1部 イギリスを知る", "en": "Part 1: Getting to know the UK"}, "file": "01-overview.md", "title": {"ja": "1. イギリスのあらまし", "en": "1. An overview of the UK"}},
+  {"part": {"ja": "第1部 イギリスを知る", "en": "Part 1: Getting to know the UK"}, "file": "02-history.md", "title": {"ja": "2. 歴史", "en": "2. History"}},
+  {"part": {"ja": "第1部 イギリスを知る", "en": "Part 1: Getting to know the UK"}, "file": "03-food.md", "title": {"ja": "3. 食べ物", "en": "3. Food"}},
+  {"part": {"ja": "第1部 イギリスを知る", "en": "Part 1: Getting to know the UK"}, "file": "04-culture.md", "title": {"ja": "4. 文化と暮らし", "en": "4. Culture and daily life"}},
+  {"part": {"ja": "第1部 イギリスを知る", "en": "Part 1: Getting to know the UK"}, "file": "05-trends.md", "title": {"ja": "5. いまのトレンド", "en": "5. Trends today"}},
+  {"part": {"ja": "第2部 イギリスの農業", "en": "Part 2: British agriculture"}, "file": "06-farming.md", "title": {"ja": "6. イギリスの農業", "en": "6. Farming in the UK"}},
+  {"part": {"ja": "第2部 イギリスの農業", "en": "Part 2: British agriculture"}, "file": "07-dairy.md", "title": {"ja": "7. イギリスの酪農", "en": "7. Dairy farming in the UK"}},
+  {"part": {"ja": "第2部 イギリスの農業", "en": "Part 2: British agriculture"}, "file": "08-agritech.md", "title": {"ja": "8. アグリテックと IoT の会社", "en": "8. Agritech and IoT companies"}},
+  {"part": {"ja": "第3部 参入するなら", "en": "Part 3: If you were to enter"}, "file": "09-entry.md", "title": {"ja": "9. イギリスで農業の IoT をするなら", "en": "9. If you were to do agricultural IoT in the UK"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "a-words.md", "title": {"ja": "付録A. 農業と酪農の英語", "en": "Appendix A. English for farming and dairy"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "b-sources.md", "title": {"ja": "付録B. 出典", "en": "Appendix B. Sources"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "c-photos.md", "title": {"ja": "付録C. 写真の出典", "en": "Appendix C. Photo credits"}}
 ]

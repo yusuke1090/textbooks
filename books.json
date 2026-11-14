@@ -223,16 +223,20 @@
     "icon": "🇬🇧",
     "group": "農業・地域",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "イギリスの教科書"
+      "ja": "イギリスの教科書",
+      "en": "UK Textbook"
     },
     "desc": {
-      "ja": "イギリスの歴史・食べ物・文化・いまのトレンドと、イギリスの農業と酪農、アグリテックの会社、参入するならどうするか。"
+      "ja": "イギリスの歴史・食べ物・文化・いまのトレンドと、イギリスの農業と酪農、アグリテックの会社、参入するならどうするか。",
+      "en": "British history, food, culture and current trends, plus British agriculture and dairy, agritech companies, and how you might enter the market. Lots of photos."
     },
     "note": {
-      "ja": "数字・政治・会社の状況は 2026年11月に調べた目安です。使う前に付録B の出典で確かめてください。"
+      "ja": "数字・政治・会社の状況は 2026年11月に調べた目安です。使う前に付録B の出典で確かめてください。",
+      "en": "Figures, politics and the state of companies are rough guides researched in November 2026. Check the sources in Appendix B before using them."
     }
   },
   {
