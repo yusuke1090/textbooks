@@ -7,6 +7,7 @@
 | 教科書 | 中身 | 言葉 |
 | --- | --- | --- |
 | [🐄 牛の教科書](https://yusuke1090.github.io/textbooks/?b=cow) | 乳牛のからだ・繁殖と1年1産・エサ・乳房炎・血乳・スマート酪農（13章と付録、図24枚と写真38枚） | 日本語・English |
+| [🌾 畑作と米の教科書](https://yusuke1090.github.io/textbooks/?b=crops) | 稲の育ち方・苗・水と肥料・病害虫・収穫と流通、北海道の輪作・麦・大豆・じゃがいも・てんさい、土と肥料、スマート農業（12章と付録、写真51枚） | 日本語 |
 | [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録、写真10枚） | 日本語 |
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語 |
@@ -86,6 +87,11 @@ tools/            図や用語の一覧を作るスクリプト
 - 図24枚。グラフと絵の19枚は `python3 tools/make_cow_figures.py` で作る（数値は本文の目安から作ったイメージ）。残りの5枚（胃・1年1産・エサの種類・サイレージの作り方・大腸菌の乳房炎）は SVG を直接書いている
 - 本文の用語の説明（`terms.json`）は、付録A（用語集）の表から `python3 tools/make_terms.py cow` で作る。用語集を直したら作り直す
 - 2026-11-13 に [スマート農業News](https://github.com/yusuke1090/smart-agri-news) から移した。前の `cow.html` は、ここへの移動の案内になっている
+
+### 🌾 畑作と米の教科書（books/crops）
+
+- 2026-11-15 に作った。第1部 米（1〜6章）、第2部 畑作（7〜10章）、第3部 土とスマート農業（11〜12章）。米の値段と政策（令和の米騒動、2027年度からの水田政策）は、そのときにウェブで調べたもの。出典は付録B
+- 写真は `photos.json` に並べ、`python3 tools/fetch_photos.py crops` で取ってくる
 
 ### 🍓 ラズパイピコ開発ガイド（books/pico）
 
