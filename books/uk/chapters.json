@@ -1,0 +1,14 @@
+[
+  {"part": "第1部 イギリスを知る", "file": "01-overview.md", "title": "1. イギリスのあらまし"},
+  {"part": "第1部 イギリスを知る", "file": "02-history.md", "title": "2. 歴史"},
+  {"part": "第1部 イギリスを知る", "file": "03-food.md", "title": "3. 食べ物"},
+  {"part": "第1部 イギリスを知る", "file": "04-culture.md", "title": "4. 文化と暮らし"},
+  {"part": "第1部 イギリスを知る", "file": "05-trends.md", "title": "5. いまのトレンド"},
+  {"part": "第2部 イギリスの農業", "file": "06-farming.md", "title": "6. イギリスの農業"},
+  {"part": "第2部 イギリスの農業", "file": "07-dairy.md", "title": "7. イギリスの酪農"},
+  {"part": "第2部 イギリスの農業", "file": "08-agritech.md", "title": "8. アグリテックと IoT の会社"},
+  {"part": "第3部 参入するなら", "file": "09-entry.md", "title": "9. イギリスで農業の IoT をするなら"},
+  {"part": "付録", "file": "a-words.md", "title": "付録A. 農業と酪農の英語"},
+  {"part": "付録", "file": "b-sources.md", "title": "付録B. 出典"},
+  {"part": "付録", "file": "c-photos.md", "title": "付録C. 写真の出典"}
+]

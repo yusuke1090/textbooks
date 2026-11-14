@@ -10,6 +10,7 @@
 | [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録） | 日本語 |
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録） | 日本語 |
+| [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語 |
 | [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語 |
 | [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語 |
 | [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語 |
@@ -101,6 +102,11 @@ tools/            図や用語の一覧を作るスクリプト
 ### 🌍 アフリカの教科書（books/africa）
 
 - 2026-11-14 に作った。数字と会社の状況は、そのときにウェブで調べたもの。出典は付録B（`b-sources.md`）にまとめ、直すときは出典も一緒に直す
+
+### 🇬🇧 イギリスの教科書（books/uk）
+
+- 2026-11-14 に、アフリカの教科書と同じ形（国のこと → 農業と酪農 → 参入するなら）で作った。数字・政治・会社の状況は、そのときにウェブで調べたもの。出典は付録B（`b-sources.md`）
+- 写真は `photos.json` に並べ、`python3 tools/fetch_photos.py uk` で Wikimedia Commons から取ってくる。付録C（`c-photos.md`、写真の出典）もこれで作り直す
 
 ### 🐍 Python の教科書（books/python）
 
