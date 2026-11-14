@@ -181,16 +181,20 @@
     "icon": "🌾",
     "group": "農業・地域",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "畑作と米の教科書"
+      "ja": "畑作と米の教科書",
+      "en": "Field Crops and Rice Textbook"
     },
     "desc": {
-      "ja": "稲の育ち方・苗づくり・水と肥料・病害虫・収穫と米の流通（令和の米騒動まで）と、北海道の輪作・麦・大豆・じゃがいも・てんさい・とうもろこし、土と肥料、スマート農業。"
+      "ja": "稲の育ち方・苗づくり・水と肥料・病害虫・収穫と米の流通（令和の米騒動まで）と、北海道の輪作・麦・大豆・じゃがいも・てんさい・とうもろこし、土と肥料、スマート農業。",
+      "en": "How rice grows, raising seedlings, water and fertilizer, pests, harvest and rice distribution (up to the Reiwa rice crisis), plus Hokkaido crop rotation, wheat, soybeans, potatoes, sugar beet and corn, soil and fertilizer, and smart agriculture."
     },
     "note": {
-      "ja": "栽培の数字は全国のおおよその目安です。実際に作るときは、県の栽培指針や JA の防除暦を見てください。"
+      "ja": "栽培の数字は全国のおおよその目安です。実際に作るときは、県の栽培指針や JA の防除暦を見てください。",
+      "en": "Growing figures are rough national guides. When actually growing crops, check the prefecture's cultivation guidelines and JA's spray calendar."
     }
   },
   {
