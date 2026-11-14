@@ -95,15 +95,19 @@
     "icon": "🐙",
     "group": "道具",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "GitHub の教科書"
+      "ja": "GitHub の教科書",
+      "en": "GitHub Textbook"
     },
     "desc": {
-      "ja": "git で記録をとり、GitHub に置くまで。最初の設定、SSH キー、コミット・プッシュ・プル、前の状態に戻す、ブランチ、ラズパイ・Jetson からのクローン、よくあるエラー。VS Code のボタンでの操作と便利な拡張機能も。"
+      "ja": "git で記録をとり、GitHub に置くまで。最初の設定、SSH キー、コミット・プッシュ・プル、前の状態に戻す、ブランチ、ラズパイ・Jetson からのクローン、よくあるエラー。VS Code のボタンでの操作と便利な拡張機能も。",
+      "en": "From recording with git to putting it on GitHub: first-time setup, SSH keys, commit, push and pull, going back to an earlier state, branches, cloning from a Raspberry Pi or Jetson, and common errors. Also using VS Code buttons and handy extensions."
     },
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "docker",

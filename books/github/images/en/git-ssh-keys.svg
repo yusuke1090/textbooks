@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 400" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<defs><marker id="ah-6b3fa0" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#6b3fa0"/></marker><marker id="ah-1f7a3d" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1f7a3d"/></marker></defs>
+<rect width="820" height="400" rx="10" fill="#ffffff"/>
+<text x="410.0" y="28" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Connecting to GitHub with an SSH key</text>
+<rect x="20" y="55" width="260" height="150" rx="8" fill="#e8f0fd" stroke="#2f6fde" stroke-width="2"/>
+<text x="150.0" y="78" font-size="14" text-anchor="middle" font-weight="700" fill="#2f6fde">Your PC</text>
+<rect x="36" y="92" width="228" height="46" rx="6" fill="#ffffff" stroke="#c0392b" stroke-width="1.5"/>
+<text x="150.0" y="111" font-size="12" text-anchor="middle" font-weight="700" fill="#c0392b">Private key (never share)</text>
+<text x="150.0" y="129" font-size="12" text-anchor="middle" fill="#555c66">~/.ssh/id_ed25519</text>
+<rect x="36" y="146" width="228" height="46" rx="6" fill="#ffffff" stroke="#1f7a3d" stroke-width="1.5"/>
+<text x="150.0" y="165" font-size="12" text-anchor="middle" font-weight="700" fill="#1f7a3d">Public key (fine to share)</text>
+<text x="150.0" y="183" font-size="12" text-anchor="middle" fill="#555c66">~/.ssh/id_ed25519.pub</text>
+<rect x="540" y="55" width="260" height="150" rx="8" fill="#f1ebf8" stroke="#6b3fa0" stroke-width="2"/>
+<text x="670.0" y="78" font-size="14" text-anchor="middle" font-weight="700" fill="#6b3fa0">GitHub (your account)</text>
+<text x="670.0" y="100" font-size="12" text-anchor="middle" fill="#555c66">Settings → SSH and GPG keys</text>
+<rect x="556" y="112" width="228" height="80" rx="6" fill="#ffffff" stroke="#1f7a3d" stroke-width="1.5"/>
+<text x="670.0" y="132" font-size="12" text-anchor="middle" font-weight="700" fill="#1f7a3d">Registered public keys</text>
+<text x="670.0" y="154" font-size="12" text-anchor="middle" fill="#555c66">main-pc (this PC)</text>
+<text x="670.0" y="174" font-size="12" text-anchor="middle" fill="#555c66">laptop (another PC)</text>
+<path d="M284 110 L536 110" fill="none" stroke="#6b3fa0" stroke-width="2" marker-start="url(#ah-6b3fa0)" marker-end="url(#ah-6b3fa0)"/>
+<text x="410" y="102" font-size="12" text-anchor="middle" font-weight="700" fill="#6b3fa0">② git clone, push (SSH)</text>
+<text x="410" y="127" font-size="11" text-anchor="middle" fill="#555c66">The private key proves it is you</text>
+<path d="M266 169 L552 169" fill="none" stroke="#1f7a3d" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ah-1f7a3d)"/>
+<text x="410" y="161" font-size="12" text-anchor="middle" font-weight="700" fill="#1f7a3d">① Register only the public key (once)</text>
+<rect x="20" y="235" width="260" height="110" rx="8" fill="#e7f4ec" stroke="#1f7a3d" stroke-width="2"/>
+<text x="150.0" y="258" font-size="14" text-anchor="middle" font-weight="700" fill="#1f7a3d">Raspberry Pi, Jetson, another PC</text>
+<text x="150.0" y="282" font-size="12" text-anchor="middle" fill="#555c66">Make a separate key pair on that machine</text>
+<text x="150.0" y="302" font-size="12" text-anchor="middle" fill="#555c66">The private key never leaves the machine</text>
+<text x="150.0" y="322" font-size="12" text-anchor="middle" fill="#555c66">e.g. ~/.ssh/collar_deploy</text>
+<rect x="540" y="235" width="260" height="110" rx="8" fill="#f1ebf8" stroke="#6b3fa0" stroke-width="2"/>
+<text x="670.0" y="258" font-size="14" text-anchor="middle" font-weight="700" fill="#6b3fa0">GitHub (repository collar)</text>
+<text x="670.0" y="282" font-size="12" text-anchor="middle" fill="#555c66">Settings → Deploy keys</text>
+<text x="670.0" y="302" font-size="12" text-anchor="middle" fill="#555c66">This repository only, read-only</text>
+<text x="670.0" y="322" font-size="12" text-anchor="middle" fill="#555c66">(dev PCs: register with your account)</text>
+<path d="M282 275 L536 275" fill="none" stroke="#1f7a3d" stroke-width="2" stroke-dasharray="6 4" marker-end="url(#ah-1f7a3d)"/>
+<text x="410" y="267" font-size="12" text-anchor="middle" font-weight="700" fill="#1f7a3d">① Register the public key</text>
+<path d="M538 312 L284 312" fill="none" stroke="#6b3fa0" stroke-width="2" marker-end="url(#ah-6b3fa0)"/>
+<text x="410" y="330" font-size="12" text-anchor="middle" font-weight="700" fill="#6b3fa0">② git clone, pull</text>
+<text x="410" y="378" font-size="12" text-anchor="middle" fill="#555c66">One key pair per machine. If you lose a machine, delete just its key from GitHub's list</text>
+</svg>

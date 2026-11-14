@@ -446,7 +446,7 @@ li > .sticky-bar { margin-top: 4px; }
   // =====================================================================
   // 読む画面
   // =====================================================================
-  let book = null, chapters = [], glossary = {}, terms = [];
+  let book = null, chapters = [], glossary = {}, glossaries = {}, terms = [];
   const state = { idx: 0, lang: "ja" };
   const mdCache = {};
   const body = $("body"), bar = document.querySelector(".bar");
@@ -642,12 +642,15 @@ li > .sticky-bar { margin-top: 4px; }
     } catch (e) { /* 読み込めないときは、数式をそのままの文字で出す */ }
   }
 
+  const pickGlossary = () => { glossary = state.lang === "en" && glossaries.en ? { ...glossaries.ja, ...glossaries.en } : glossaries.ja || {}; };
+
   // ---------- 章を出す ----------
   let showSeq = 0, codes = [];
   async function show(idx, lang, pos) {
     const seq = ++showSeq;
     state.idx = Math.max(0, Math.min(chapters.length - 1, idx));
     state.lang = book.langs.includes(lang) ? lang : book.langs[0];
+    pickGlossary();
     const ch = chapters[state.idx];
     document.documentElement.lang = state.lang;
     $("bookName").textContent = L(book.title, state.lang);
@@ -864,10 +867,10 @@ li > .sticky-bar { margin-top: 4px; }
     return headerTip(m ? m[1] : s, s);
   }
   function showTip(hit, x, y) {
-    const m = hit.text.match(/^語源: (.*)\n([\s\S]*)$/);
+    const m = hit.text.match(/^(語源|Origin): (.*)\n([\s\S]*)$/);
     tipEl.innerHTML = `<div class="tip-head"><span class="tip-key${hit.code ? " code" : ""}">${esc(hit.label)}</span>`
       + `${hit.kind ? `<span class="tip-kind">${esc(hit.kind)}</span>` : ""}${hit.sub ? `<span class="tip-sub">${esc(hit.sub)}</span>` : ""}</div>`
-      + `<div class="tip-text">${esc(m ? m[2] : hit.text)}</div>${m ? `<details><summary>語源</summary><div>${esc(m[1])}</div></details>` : ""}`;
+      + `<div class="tip-text">${esc(m ? m[3] : hit.text)}</div>${m ? `<details><summary>${esc(m[1])}</summary><div>${esc(m[2])}</div></details>` : ""}`;
     tipEl.style.display = "block";
     const r = tipEl.getBoundingClientRect();
     tipEl.style.left = Math.max(8, Math.min(x - 20, innerWidth - r.width - 8)) + "px";
@@ -1296,7 +1299,9 @@ li > .sticky-bar { margin-top: 4px; }
     $("langs").hidden = book.langs.length < 2;
     try { chapters = await getJSON(base() + "chapters.json"); }
     catch (e) { body.innerHTML = `<p class="msg err">${esc(e.message)}</p>`; return; }
-    if (book.glossary) getJSON(base() + book.glossary).then((g) => { glossary = g; }).catch(() => {});
+    // コードの言葉の説明。英語で読むときは glossary_en を上にかぶせる（ない言葉は日本語のまま）
+    if (book.glossary) getJSON(base() + book.glossary).then((g) => { glossaries.ja = g; pickGlossary(); }).catch(() => {});
+    if (book.glossary_en) getJSON(base() + book.glossary_en).then((g) => { glossaries.en = g; pickGlossary(); }).catch(() => {});
     const termsReady = book.terms ? getJSON(base() + book.terms).then((x) => { terms = x; }).catch(() => {}) : Promise.resolve();
     // 前の場所（スマート農業News の cow.html）で読んでいた所と言葉を引き継ぐ
     if (book.legacy && !store.get(POS_KEY()) && book.legacy.pos && store.get(book.legacy.pos)) store.set(POS_KEY(), store.get(book.legacy.pos));

@@ -1,13 +1,13 @@
 [
-  {"part": "第1部 準備", "file": "01-git-github.md", "title": "1. git と GitHub とは"},
-  {"part": "第1部 準備", "file": "02-setup.md", "title": "2. 最初に1回だけする設定"},
-  {"part": "第1部 準備", "file": "03-ssh.md", "title": "3. SSH キーで GitHub とつなぐ"},
-  {"part": "第2部 ふだんの使い方", "file": "04-new-repo.md", "title": "4. 新しくリポジトリを作る"},
-  {"part": "第2部 ふだんの使い方", "file": "05-daily.md", "title": "5. ふだんの記録"},
-  {"part": "第2部 ふだんの使い方", "file": "06-undo.md", "title": "6. 前の状態に戻す"},
-  {"part": "第2部 ふだんの使い方", "file": "07-branch.md", "title": "7. ブランチで試す"},
-  {"part": "第3部 ほかの機械と", "file": "08-other-machines.md", "title": "8. 別の機械からクローンする"},
-  {"part": "第4部 VS Code で使う", "file": "09-vscode.md", "title": "9. VS Code で git を使う"},
-  {"part": "付録", "file": "a-errors.md", "title": "付録A. よくあるエラー"},
-  {"part": "付録", "file": "b-commands.md", "title": "付録B. コマンドの一覧"}
+  {"part": {"ja": "第1部 準備", "en": "Part 1: Getting ready"}, "file": "01-git-github.md", "title": {"ja": "1. git と GitHub とは", "en": "1. What are git and GitHub?"}},
+  {"part": {"ja": "第1部 準備", "en": "Part 1: Getting ready"}, "file": "02-setup.md", "title": {"ja": "2. 最初に1回だけする設定", "en": "2. Settings you make only once"}},
+  {"part": {"ja": "第1部 準備", "en": "Part 1: Getting ready"}, "file": "03-ssh.md", "title": {"ja": "3. SSH キーで GitHub とつなぐ", "en": "3. Connecting to GitHub with an SSH key"}},
+  {"part": {"ja": "第2部 ふだんの使い方", "en": "Part 2: Everyday use"}, "file": "04-new-repo.md", "title": {"ja": "4. 新しくリポジトリを作る", "en": "4. Making a new repository"}},
+  {"part": {"ja": "第2部 ふだんの使い方", "en": "Part 2: Everyday use"}, "file": "05-daily.md", "title": {"ja": "5. ふだんの記録", "en": "5. Everyday recording"}},
+  {"part": {"ja": "第2部 ふだんの使い方", "en": "Part 2: Everyday use"}, "file": "06-undo.md", "title": {"ja": "6. 前の状態に戻す", "en": "6. Going back to an earlier state"}},
+  {"part": {"ja": "第2部 ふだんの使い方", "en": "Part 2: Everyday use"}, "file": "07-branch.md", "title": {"ja": "7. ブランチで試す", "en": "7. Trying things on a branch"}},
+  {"part": {"ja": "第3部 ほかの機械と", "en": "Part 3: With other machines"}, "file": "08-other-machines.md", "title": {"ja": "8. 別の機械からクローンする", "en": "8. Cloning from another machine"}},
+  {"part": {"ja": "第4部 VS Code で使う", "en": "Part 4: Using VS Code"}, "file": "09-vscode.md", "title": {"ja": "9. VS Code で git を使う", "en": "9. Using git in VS Code"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "a-errors.md", "title": {"ja": "付録A. よくあるエラー", "en": "Appendix A. Common errors"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "b-commands.md", "title": {"ja": "付録B. コマンドの一覧", "en": "Appendix B. List of commands"}}
 ]
