@@ -126,6 +126,9 @@ main { padding-bottom: 30px; }
 #body th, #body td { border: 1px solid var(--border); padding: 6px 10px; vertical-align: top; text-align: left; }
 #body th { background: var(--th); white-space: nowrap; }
 #body td { background: var(--panel); }
+#body .bx { word-break: keep-all; overflow-wrap: break-word; }
+#body td.bx.long { overflow-wrap: anywhere; }
+#body td.bx.long code { overflow-wrap: break-word; }
 #body blockquote { margin: 12px 0; padding: 8px 14px; background: var(--quote); border-left: 4px solid var(--quote-border); border-radius: 0 8px 8px 0; }
 #body blockquote p { margin: 4px 0; }
 .codeblock { margin: 12px 0; border: 1px solid var(--border); border-radius: 8px; overflow: hidden; }
@@ -209,7 +212,7 @@ li > .sticky-bar { margin-top: 4px; }
 .notes .empty { color: var(--muted); padding: 10px 14px; font-size: 13px; }
 #toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 40; padding: 8px 16px; border-radius: 10px;
   background: #333; color: #fff; font-size: 13.5px; display: none; max-width: calc(100vw - 32px); }
-@media (max-width: 480px) { body { font-size: 15px; } #body h1 { font-size: 21px; } #body h2 { font-size: 17.5px; } #body table { font-size: 13px; } }
+@media (max-width: 480px) { body { font-size: 15px; } #body h1 { font-size: 21px; } #body h2 { font-size: 17.5px; } #body table { font-size: 13px; } #body th, #body td { padding: 5px 7px; } }
 </style>
 </head>
 <body>
@@ -642,6 +645,61 @@ li > .sticky-bar { margin-top: 4px; }
     } catch (e) { /* 読み込めないときは、数式をそのままの文字で出す */ }
   }
 
+  // ---------- 表・見出し・図の説明を、日本語の文節の切れ目で折り返す（BudouX。「キリス／ト教」のように単語の途中で切らない） ----------
+  const BUDOUX = "https://cdn.jsdelivr.net/npm/budoux@0.10.0/module/";
+  let phraser = null, phraserReady = null;
+  function ensurePhraser() {
+    if (!phraserReady) phraserReady = Promise.all([import(BUDOUX + "parser.js"), import(BUDOUX + "data/models/ja.js")])
+      .then(([p, m]) => { phraser = new p.Parser(m.model); }).catch(() => {});
+    return phraserReady;
+  }
+  function phraseBreaks() {
+    if (!phraser || state.lang !== "ja") return;
+    body.querySelectorAll("th, td, h1, h2, h3, h4, figcaption").forEach((el) => {
+      const nodes = [], starts = [];
+      let text = "";
+      const w = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+      for (let n; (n = w.nextNode());) { nodes.push(n); starts.push(text.length); text += n.data; }
+      if (!/[぀-ヿ㐀-鿿]/.test(text)) return;
+      el.classList.add("bx");
+      if (/^[぀-ゟー]+$/.test(text.trim())) return;   // ひらがなだけ（読みがな）は1つの言葉として切らない
+      const cut = new Set(phraser.parseBoundaries(text));
+      for (let i = 1; i < text.length; i++) if (text[i - 1] === "・" && !/[・、。）」]/.test(text[i])) cut.add(i);   // 「中国・北朝鮮・日本」の並び
+      [...cut].sort((a, b) => b - a).forEach((b) => {
+        const pair = text[b - 1] + text[b];
+        if (/\s|\w\w|[〜～]/.test(pair) || /[ぁぃぅぇぉっゃゅょゎァィゥェォッャュョヮヵヶー々]/.test(text[b])) return;   // 空白は元から切れる。英数字の途中・「4〜6割」・小さい「ゅ」などの前では切らない
+        let k = nodes.length - 1;
+        while (k > 0 && starts[k] > b) k--;
+        const n = nodes[k];
+        if (n.parentElement.closest("code, .katex")) return;
+        const off = b - starts[k];
+        if (off >= n.data.length) return;
+        n.parentNode.insertBefore(document.createElement("wbr"), off ? n.splitText(off) : n);
+      });
+    });
+    fitTables();
+  }
+  // 表が横にはみ出すときだけ、長い文の列から順に、文節の途中でも折り返してよいことにする（短い言葉の列はなるべく切らない）
+  function fitTables() {
+    if (!phraser || state.lang !== "ja") return;
+    body.querySelectorAll(".tbl").forEach((w) => {
+      const tb = w.firstElementChild, fits = () => w.scrollWidth <= w.clientWidth + 1;
+      tb.querySelectorAll("td.long").forEach((x) => x.classList.remove("long"));
+      if (fits()) return;
+      const rows = [...tb.tBodies[0].rows], len = (cells) => Math.max(0, ...cells.map((x) => x.textContent.length));
+      const cols = [...tb.rows[0].cells].map((_, c) => rows.map((r) => r.cells[c]).filter(Boolean)).sort((a, b) => len(b) - len(a));
+      for (const cells of cols) {
+        cells.forEach((x) => x.classList.add("long"));
+        if (fits()) break;
+      }
+    });
+  }
+  let fitTimer = 0, fitW = innerWidth;
+  addEventListener("resize", () => {
+    if (innerWidth === fitW) return;
+    fitW = innerWidth; clearTimeout(fitTimer); fitTimer = setTimeout(fitTables, 200);
+  });
+
   const pickGlossary = () => { glossary = state.lang === "en" && glossaries.en ? { ...glossaries.ja, ...glossaries.en } : glossaries.ja || {}; };
 
   // ---------- 章を出す ----------
@@ -675,6 +733,11 @@ li > .sticky-bar { margin-top: 4px; }
     await renderMath();
     if (seq !== showSeq) return;
     markTerms();
+    if (state.lang === "ja") {
+      await Promise.race([ensurePhraser(), new Promise((ok) => setTimeout(ok, 1500))]);
+      if (seq !== showSeq) return;
+      phraseBreaks();
+    }
     const prev = chapters[state.idx - 1], next = chapters[state.idx + 1];
     $("pager").innerHTML =
       (prev ? `<button type="button" data-go="${state.idx - 1}"><small>◀ ${esc(t("prev"))}</small>${esc(L(prev.title, state.lang))}</button>` : "") +
