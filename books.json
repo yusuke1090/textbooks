@@ -104,13 +104,16 @@
     "icon": "🐳",
     "group": "道具",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "Docker の教科書"
+      "ja": "Docker の教科書",
+      "en": "Docker Textbook"
     },
     "desc": {
-      "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。"
+      "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。",
+      "en": "Using Docker with VS Code: running containers, Dockerfiles, volumes and environment variables, Compose, Dev Containers, Raspberry Pi and Jetson."
     }
   },
   {

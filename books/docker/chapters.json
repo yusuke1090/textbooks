@@ -1,10 +1,10 @@
 [
-  {"part": "第1部 はじめに", "file": "01-what.md", "title": "1. Docker とは"},
-  {"part": "第1部 はじめに", "file": "02-setup.md", "title": "2. 準備（Ubuntu と VS Code）"},
-  {"part": "第2部 イメージとコンテナ", "file": "03-run.md", "title": "3. コンテナを動かす"},
-  {"part": "第2部 イメージとコンテナ", "file": "04-dockerfile.md", "title": "4. Dockerfile でイメージを作る"},
-  {"part": "第2部 イメージとコンテナ", "file": "05-data.md", "title": "5. データと設定（ボリューム・環境変数）"},
-  {"part": "第3部 開発に使う", "file": "06-compose.md", "title": "6. Docker Compose（複数のコンテナ）"},
-  {"part": "第3部 開発に使う", "file": "07-devcontainer.md", "title": "7. Dev Containers（コンテナの中で開発する）"},
-  {"part": "第3部 開発に使う", "file": "08-trouble.md", "title": "8. 困ったとき・後片付け・ラズパイと Jetson"}
+  {"part": {"ja": "第1部 はじめに", "en": "Part 1: Getting started"}, "file": "01-what.md", "title": {"ja": "1. Docker とは", "en": "1. What is Docker?"}},
+  {"part": {"ja": "第1部 はじめに", "en": "Part 1: Getting started"}, "file": "02-setup.md", "title": {"ja": "2. 準備（Ubuntu と VS Code）", "en": "2. Setting up (Ubuntu and VS Code)"}},
+  {"part": {"ja": "第2部 イメージとコンテナ", "en": "Part 2: Images and containers"}, "file": "03-run.md", "title": {"ja": "3. コンテナを動かす", "en": "3. Running containers"}},
+  {"part": {"ja": "第2部 イメージとコンテナ", "en": "Part 2: Images and containers"}, "file": "04-dockerfile.md", "title": {"ja": "4. Dockerfile でイメージを作る", "en": "4. Building images with a Dockerfile"}},
+  {"part": {"ja": "第2部 イメージとコンテナ", "en": "Part 2: Images and containers"}, "file": "05-data.md", "title": {"ja": "5. データと設定（ボリューム・環境変数）", "en": "5. Data and settings (volumes and environment variables)"}},
+  {"part": {"ja": "第3部 開発に使う", "en": "Part 3: Using it for development"}, "file": "06-compose.md", "title": {"ja": "6. Docker Compose（複数のコンテナ）", "en": "6. Docker Compose (several containers)"}},
+  {"part": {"ja": "第3部 開発に使う", "en": "Part 3: Using it for development"}, "file": "07-devcontainer.md", "title": {"ja": "7. Dev Containers（コンテナの中で開発する）", "en": "7. Dev Containers (developing inside a container)"}},
+  {"part": {"ja": "第3部 開発に使う", "en": "Part 3: Using it for development"}, "file": "08-trouble.md", "title": {"ja": "8. 困ったとき・後片付け・ラズパイと Jetson", "en": "8. Troubleshooting, cleaning up, Raspberry Pi and Jetson"}}
 ]

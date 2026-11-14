@@ -1,0 +1,22 @@
+{
+ "Dockerfile からコンテナまで / From Dockerfile to container": "From Dockerfile to container",
+ "設計図（テキスト）": "Blueprint (text)",
+ "イメージ": "Image",
+ "ひな形（読むだけ）": "Template (read-only)",
+ "コンテナ": "Container",
+ "動いている実体": "The running thing",
+ "イメージの置き場": "Where images are kept",
+ "1つのイメージから": "Make as many as you like",
+ "いくつでも作れる": "from one image",
+ "仮想マシンとコンテナ / Virtual machine vs container": "Virtual machine vs container",
+ "仮想マシン / VM": "Virtual machine (VM)",
+ "ハードウェア": "Hardware",
+ "ホスト OS": "Host OS",
+ "ハイパーバイザー": "Hypervisor",
+ "ゲスト OS": "Guest OS",
+ "ライブラリ": "Libraries",
+ "アプリ": "App",
+ "コンテナ / Container": "Container",
+ "ホスト OS（Linux）": "Host OS (Linux)",
+ "コンテナは OS を持たず、ホストの Linux を共有する。だから軽く、すぐ起動する": "A container has no OS of its own and shares the host's Linux, so it is light and starts quickly"
+}
