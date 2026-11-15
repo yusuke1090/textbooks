@@ -83,3 +83,27 @@ $$E[Y \mid X = x] = \sum_y y\,P(Y = y \mid X = x)$$
 - The variance is $E[X^2]-(E[X])^2$. Multiplying by a constant has a squared effect, and for independent variables the variance of a sum is the sum of the variances
 - Standardizing gives mean 0 and variance 1. Skewness is lopsidedness, kurtosis is how heavy the tails are
 - Seeing the conditional expectation $E[Y\mid X=x]$ as a function of $x$ leads to the idea of regression
+
+## Exercises
+
+```quiz
+Q: What is the expected value of one roll of a die?
+A: 3.5
+E: (1 + 2 + 3 + 4 + 5 + 6) ÷ 6 = 3.5.
+
+Q: If $E[X]=2$ and $E[X^2]=7$, what is $V[X]$?
+A: 3
+E: $V[X] = E[X^2] - (E[X])^2 = 7 - 4 = 3$.
+
+Q: If $V[X]=4$, what is $V[3X]$?
+A: 36
+E: A constant factor is squared: $9 \times 4 = 36$.
+
+Q: $X$ and $Y$ are independent, with $V[X]=2$ and $V[Y]=3$. What is $V[X+Y]$?
+A: 5
+E: For independent variables, the variance of the sum is the sum of the variances.
+
+Q: What is the variance of a standardized random variable?
+A: 1
+E: Standardizing gives mean 0 and variance 1.
+```

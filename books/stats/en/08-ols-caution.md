@@ -80,3 +80,27 @@ What to do: include that variable, include a close substitute (a proxy variable)
 - t value $= \hat\beta/\mathrm{se}$. How much $x$ varies and how much data you have decide how precise the estimate is
 - Multicollinearity: when explanatory variables are highly correlated, the coefficients are unstable. Check with a correlation matrix and VIF
 - Omitted variable bias: if you leave out a variable that matters, the shift is $\beta_2\delta_1$. You can judge its direction from the table
+
+## Exercises
+
+```quiz
+Q: If $\hat\beta = 1.2$ and its standard error is 0.4, what is the t value?
+A: 3
+E: t $= \hat\beta/\mathrm{se} = 1.2/0.4 = 3$.
+
+Q: What is it called when explanatory variables are highly correlated and coefficients become unstable?
+A: multicollinearity
+E: Check with the correlation matrix and VIF.
+
+Q: What three letters name the measure used to check multicollinearity?
+A: VIF | variance inflation factor
+E: The bigger it is, the more that variable resembles the others.
+
+Q: What is the bias called when you leave out a variable that matters?
+A: omitted variable bias | omitted-variable bias | omitted variable
+E: The bias is $\beta_2\delta_1$.
+
+Q: The left-out variable's coefficient $\beta_2$ is positive and $\delta_1$ is negative. Is the bias positive or negative?
+A: negative | minus | -
+E: $\beta_2\delta_1$ is positive × negative = negative.
+```

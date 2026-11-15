@@ -92,3 +92,27 @@ print(res.summary())            # a table with standard errors, t values, p valu
 - Regression model $y = \beta_0 + \beta_1 x + u$. The error term $u$ is every factor other than $x$
 - OLS minimizes the sum of squared residuals. Slope $= S_{xy}/S_{xx}$, and the line passes through the point of means
 - $R^2$ is the share of the total variation explained by the line. In multiple regression, also look at $\bar{R}^2$
+
+## Exercises
+
+```quiz
+Q: Fit an OLS line to $x$ = 1, 2, 3, 4, 5 and $y$ = 2, 4, 5, 4, 5. What is the slope?
+A: 0.6
+E: $S_{xy} = 6$ and $S_{xx} = 10$, so the slope is $6/10 = 0.6$.
+
+Q: What is the intercept of the line in the previous question?
+A: 2.2
+E: The line passes through the means (3, 4): $4 - 0.6 \times 3 = 2.2$.
+
+Q: OLS (ordinary least squares) minimizes the sum of the squares of what?
+A: residuals | residual | errors
+E: A residual is the gap between the actual $y$ and the line.
+
+Q: If $R^2 = 0.8$, what percent of the total variation does the line explain?
+A: 80
+E: $R^2$ is the share of the total variation explained by the line.
+
+Q: In multiple regression, what is $\bar{R}^2$, which allows for the number of explanatory variables, called?
+A: adjusted coefficient of determination | adjusted R2 | adjusted R-squared | adjusted
+E: It corrects for $R^2$ rising just because variables are added.
+```

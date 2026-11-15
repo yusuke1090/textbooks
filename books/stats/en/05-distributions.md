@@ -85,3 +85,23 @@ print(stats.norm.cdf(1) - stats.norm.cdf(-1))   # 0.682... (share within ±1σ)
 - For the normal distribution, 68% falls within ±1σ and 95% within ±1.96σ
 - χ² is a sum of squared standard normals, t is a standard normal divided by a χ², and F is a ratio of two χ²
 - The t distribution approaches the normal distribution when the degrees of freedom are large. When you use $s$, think in terms of the t distribution
+
+## Exercises
+
+```quiz
+Q: About what percent of a normal distribution lies within ±1σ of the mean?
+A: 68
+E: Within ±1.96σ it is 95%.
+
+Q: Within ± how many σ of the mean does 95% of a normal distribution lie?
+A: 1.96
+E: This number is used for confidence intervals.
+
+Q: As the degrees of freedom grow, the t distribution approaches which distribution?
+A: normal | normal distribution | standard normal
+E: When you use $s$ instead of the population SD, think in terms of t.
+
+Q: Which distribution does a sum of squared standard normal values follow?
+A: chi-square | χ² | chi-squared | chi square
+E: t is a standard normal divided by a χ²; F is a ratio of two χ².
+```

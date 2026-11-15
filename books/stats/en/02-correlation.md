@@ -69,3 +69,23 @@ print(np.corrcoef(x, y)[0, 1])      # 0.7745...
 - Multiply the deviations and add them to get the co-variation; per value, it is the covariance. Its sign tells you whether the two rise or fall together
 - The correlation coefficient is the covariance divided by the standard deviations. It lies between −1 and 1 and can be compared regardless of units
 - It only measures straight-line relationships. Look at a scatter plot, watch out for outliers, and keep it separate from causation
+
+## Exercises
+
+```quiz
+Q: What is the largest value a correlation coefficient can take?
+A: 1
+E: It is always between −1 and 1.
+
+Q: The covariance is 6, the SD of $x$ is 2 and the SD of $y$ is 4. What is the correlation coefficient?
+A: 0.75
+E: 6 ÷ (2 × 4) = 0.75.
+
+Q: What is the correlation coefficient of $x$ = 1, 2, 3 and $y$ = 6, 4, 2?
+A: -1
+E: $y = 8 - 2x$ exactly, a straight line going down.
+
+Q: Correlation does not always mean one thing causes the other. What is a cause-and-effect relationship called?
+A: causation | causality | causal
+E: Correlation only measures straight-line relationships. Look at the scatter plot and watch for outliers.
+```

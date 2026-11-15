@@ -76,3 +76,23 @@ In the example above, $P(\text{rain}, \text{umbrella}) = 0.3$, but $P(\text{rain
 - The distribution function $F(x)=P(X\le x)$ increases from 0 to 1
 - Adding up the joint distribution gives the marginal distribution; dividing a joint probability by a marginal probability gives the conditional distribution
 - When the joint probability is always the product of the marginal probabilities, the variables are independent
+
+## Exercises
+
+```quiz
+Q: As $x$ grows, what value does the distribution function $F(x)=P(X\le x)$ approach?
+A: 1
+E: It rises from 0 to 1.
+
+Q: Roll a die once and call the result $X$. What is $P(X\le 2)$ (as a fraction or to two decimals)?
+A: 1/3 | 0.33
+E: 2 of the 6 outcomes (1 or 2).
+
+Q: For a continuous random variable, what part of the density graph gives a probability?
+A: area | the area
+E: The probability of one exact point is 0.
+
+Q: If $X$ and $Y$ are independent, the joint probability $P(X=a, Y=b)$ is what of $P(X=a)$ and $P(Y=b)$?
+A: product | the product | multiply
+E: Independence means the joint probability is always the product of the marginals.
+```

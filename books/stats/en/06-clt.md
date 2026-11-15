@@ -71,3 +71,27 @@ print(f"mean {mean:.2f}, 95% confidence interval {mean - t*s/np.sqrt(n):.2f} to 
 - Law of large numbers: if you examine enough, the sample mean approaches the population mean
 - Central limit theorem: whatever the original distribution, the sample mean is almost normally distributed
 - The 95% confidence interval is $\bar{x} \pm 1.96\,\sigma/\sqrt{n}$ (if you do not know $\sigma$, use $s$ and the t distribution)
+
+## Exercises
+
+```quiz
+Q: With population SD $\sigma=10$ and $n=25$, what is the standard error of the sample mean?
+A: 2
+E: $\sigma/\sqrt{n} = 10/5 = 2$.
+
+Q: If you make $n$ four times bigger, by what factor does the standard error change?
+A: 0.5 | 1/2 | half
+E: It is divided by $\sqrt{4} = 2$, so it halves.
+
+Q: What is the law that says the sample mean gets close to the population mean with enough data?
+A: law of large numbers | LLN
+E: The spread of the sample mean shrinks as $n$ grows.
+
+Q: What theorem says the sample mean is nearly normal whatever the original distribution?
+A: central limit theorem | CLT
+E: This is why we can build confidence intervals with the normal distribution.
+
+Q: With $\bar{x}=50$, $\sigma=10$ and $n=100$, what is the lower end of the 95% confidence interval?
+A: 48.04
+E: $50 - 1.96 \times 10/\sqrt{100} = 50 - 1.96 = 48.04$.
+```

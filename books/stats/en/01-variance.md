@@ -73,3 +73,23 @@ print(pd.Series(x).var())  # 4.571... (pandas uses n-1 by default)
 - Square the deviations $x_i-\bar{x}$ and add them to get the total variation; divide by the number of values to get the variance
 - The standard deviation is the square root of the variance, in the same unit as the data
 - To estimate the population variance, divide by $n-1$ (unbiased variance). Check which one your software uses by default
+
+## Exercises
+
+```quiz
+Q: What is the total variation (sum of squared deviations) of the data 2, 4, 6, 8?
+A: 20
+E: The mean is 5. Deviations are −3, −1, 1, 3, and their squares add up to 9 + 1 + 1 + 9 = 20.
+
+Q: What is the variance (dividing by $n$) of 2, 4, 6, 8?
+A: 5
+E: Divide the total variation 20 by the count 4.
+
+Q: What is the unbiased variance (dividing by $n-1$) of 2, 4, 6, 8? Give two decimal places.
+A: 6.67
+E: 20 ÷ 3 = 6.666…
+
+Q: If the variance is 9, what is the standard deviation?
+A: 3
+E: The standard deviation is the square root of the variance, in the same units as the data.
+```
