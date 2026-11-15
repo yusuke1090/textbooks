@@ -108,3 +108,23 @@ sim_vehicle.py -v ArduCopter --console --map --custom-location=42.92,143.20,40,0
 - ArduPilot records all in-flight data (sensors, estimated position, motor outputs, mode changes, errors) in **DataFlash logs** (`.bin`). In SITL they are saved in `logs/`, on a real vehicle on the SD card
 - You can view them as graphs with the web-based **UAV Log Viewer**, MAVProxy's **MAVExplorer**, or Mission Planner
 - "Why did it crash?" and "why could it not arm?" can usually be answered by looking at the logs. If there is trouble with a real vehicle, keep the logs first
+
+## Exercises
+
+```quiz
+Q: What is running ArduPilot firmware on a PC for simulation called?
+A: SITL | software in the loop
+E: A physics simulation on the PC creates the sensors and vehicle motion.
+
+Q: What is the name of the script that starts SITL?
+A: sim_vehicle.py | sim_vehicle
+E: For example `sim_vehicle.py -v ArduCopter --console --map`.
+
+Q: Which UDP port does QGroundControl use to connect to SITL automatically?
+A: 14550
+E: MAVProxy sends MAVLink to ports 14550 and 14551.
+
+Q: What file extension do ArduPilot flight logs have?
+A: .bin | bin
+E: They are DataFlash logs, saved to the SD card on real hardware.
+```

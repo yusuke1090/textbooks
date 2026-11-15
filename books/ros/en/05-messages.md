@@ -155,3 +155,27 @@ rviz2
 - Nodes running on a vehicle with no screen (like a Jetson) can be viewed in RViz on a computer on the same network (same `ROS_DOMAIN_ID`)
 
 ![A mobile robot with a LiDAR. LiDAR point clouds can be viewed in 3D in RViz](images/lidar-robot.jpg)
+
+## Exercises
+
+```quiz
+Q: ROS's earth-fixed frame has x east, y north and z up. What is it called?
+A: ENU
+E: ArduPilot and MAVLink use NED (north, east, down).
+
+Q: In NED, does the z axis point up or down?
+A: down
+E: NED stands for North, East, Down.
+
+Q: What system keeps track of the relationships between coordinate frames over time?
+A: tf2 | tf
+E: It can work out where a cow seen by the camera is on the map.
+
+Q: If the publisher uses BEST_EFFORT, what Reliability should the subscriber use to connect?
+A: BEST_EFFORT | best effort
+E: A RELIABLE subscriber silently receives nothing.
+
+Q: Which `ros2` command records topics and plays them back later?
+A: bag | ros2 bag
+E: `ros2 bag record` to record, `ros2 bag play` to replay.
+```

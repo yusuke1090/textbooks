@@ -123,3 +123,23 @@ journalctl -u micro-ros-agent -f        # view the logs
 8. Keep the DataFlash logs and a `ros2 bag` every time
 
 - Rovers are the same. At first, test with the wheels off the ground (on a stand)
+
+## Exercises
+
+```quiz
+Q: Which STM32 CPU family do flight controllers for AP_DDS use?
+A: H7 | STM32H7
+E: For example Pixhawk 6C/6X or Cube Orange.
+
+Q: Which ArduPilot web service builds firmware with the features you choose, such as DDS?
+A: Custom Firmware Builder
+E: Tick DDS in the feature list.
+
+Q: When connecting the FC and companion computer by UART, how are TX and RX wired?
+A: crossed | cross | crossover
+E: Both use 3.3 V signals. Do not connect 5V.
+
+Q: When testing on the desk, what is the most important thing to remove?
+A: propellers | propeller | props
+E: Propellers can cut fingers and even break bones.
+```

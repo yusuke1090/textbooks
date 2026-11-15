@@ -86,3 +86,23 @@ takeoff 5
   - 画面を出さずに動かす（ヘッドレス。`gz sim -s` のサーバーだけ）
   - シミュレーションの速さ（リアルタイム係数）が 1.0 より小さくても、結果は正しい。ただし、時刻は `/clock` を使う（`use_sim_time:=True`）
 - Gazebo なしで試せることは、7〜9章の SITL だけで試すほうが早い
+
+## 練習問題
+
+```quiz
+Q: ROS 2 Jazzy と組み合わせるのが基本の Gazebo の版の名前は何ですか。
+A: Harmonic | Gazebo Harmonic
+E: ROS 2 Lyrical は Gazebo Jetty です。
+
+Q: Gazebo と ROS 2 のトピックをつなぐものは何ですか。
+A: ros_gz_bridge
+E: Gazebo の中のカメラや LiDAR のデータが、ROS 2 のトピックになります。
+
+Q: Gazebo で、機体の形やセンサーの付け方を書く XML の形式は何ですか。
+A: SDF
+E: Iris のモデルをコピーして、カメラや LiDAR を足すのが近道です。
+
+Q: シミュレーションの時刻（`/clock`）を使うために、ノードに渡す設定は何ですか。
+A: use_sim_time | use_sim_time:=True
+E: シミュレーションの速さが 1.0 より小さくても、結果は正しくなります。
+```

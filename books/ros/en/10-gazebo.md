@@ -86,3 +86,23 @@ takeoff 5
   - Run without a display (headless: just the server, `gz sim -s`)
   - Even if the simulation speed (real-time factor) is below 1.0, the results are correct. But use `/clock` for time (`use_sim_time:=True`)
 - Things you can test without Gazebo are faster to test with SITL alone (Chapters 7–9)
+
+## Exercises
+
+```quiz
+Q: Which Gazebo release is the standard partner for ROS 2 Jazzy?
+A: Harmonic | Gazebo Harmonic
+E: ROS 2 Lyrical uses Gazebo Jetty.
+
+Q: What connects Gazebo topics to ROS 2 topics?
+A: ros_gz_bridge
+E: Camera and LiDAR data in Gazebo become ROS 2 topics.
+
+Q: Which XML format describes a vehicle's shape and sensors in Gazebo?
+A: SDF
+E: Copying the Iris model and adding a camera or LiDAR is the quickest way.
+
+Q: Which setting makes nodes use simulation time (`/clock`)?
+A: use_sim_time | use_sim_time:=True
+E: Results stay correct even if the simulation runs slower than real time.
+```

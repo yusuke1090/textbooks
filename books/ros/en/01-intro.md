@@ -81,3 +81,27 @@ A new version of ROS 2 (a **distribution**) comes out every May. They are named 
 - What you need: a computer with **Ubuntu 24.04** (with another OS, a virtual machine or Docker). 16 GB of memory or more; if you use Gazebo, faster graphics help
 - Real hardware comes last (Chapter 11). Until then you can try **everything in simulation inside the computer**. You will not break a vehicle and you need no legal paperwork, so get used to things in simulation first
 - It is easier if you know Linux commands, ssh and systemd, Python basics (the "Python Textbook"), Docker (the "Docker Textbook") and git (the "GitHub Textbook")
+
+## Exercises
+
+```quiz
+Q: In ROS 2, what is a small program that does one job called?
+A: node | nodes
+E: Nodes work by exchanging messages.
+
+Q: Which three-letter real-time communication standard does ROS 2 use?
+A: DDS
+E: ROS 1 support ended in May 2025.
+
+Q: What is the name of the ROS 2 LTS release from May 2024 used in this book?
+A: Jazzy | Jazzy Jalisco
+E: It is paired with Ubuntu 24.04.
+
+Q: What is the ArduPilot firmware for multicopters and helicopters called?
+A: ArduCopter | Copter
+E: Cars, boats and tractors use ArduRover.
+
+Q: What is the communication protocol between a vehicle and a ground station called?
+A: MAVLink
+E: Chapter 8 covers it in detail.
+```

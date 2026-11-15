@@ -255,3 +255,23 @@ ros2 launch mavros apm.launch fcu_url:=udp://:14550@
 | 座標 | ENU に変換ずみ | ENU に変換ずみ |
 | 機能 | 必要なものに絞っている（増えている途中） | MAVLink のほぼ全部 |
 | おすすめ | 新しく作るなら、こちらから | 古い FC、細かい機能が要るとき |
+
+## 練習問題
+
+```quiz
+Q: ArduPilot 4.5 から使える、フライトコントローラーが直接 DDS で話すしくみを何といいますか。
+A: AP_DDS
+E: この教科書のおもなやり方です。
+
+Q: XRCE-DDS と、ふつうの ROS 2 の間を中継する、コンパニオンコンピューターで動くものは何ですか。
+A: micro-ROS Agent | micro-ROS | microROS Agent | micro ros agent
+E: 小さなマイコンでも動くように、XRCE-DDS（DDS の軽い版）を使います。
+
+Q: 位置・GPS・電池のトピックを受け取るときに使う QoS のプロファイルは何ですか。
+A: qos_profile_sensor_data
+E: これらのトピックは BEST_EFFORT で送られます。
+
+Q: MAVLink と ROS 2 をつなぐ、AP_DDS より前からある中継のノードは何ですか。
+A: MAVROS
+E: 古い FC や、MAVLink の細かい機能が要るときに使います。
+```

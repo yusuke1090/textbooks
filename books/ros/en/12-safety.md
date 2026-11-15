@@ -96,3 +96,27 @@ The following kinds of flight are "**specified flights**", and need national **p
 - Driving on **public roads** is subject to rules on license plates, safety standards, drivers and more (the Road Transport Vehicle Act, the Road Traffic Act), and is normally not possible. Small robots that drive on sidewalks have a separate notification system (remote-controlled small vehicles)
 - For autonomous farm machinery (robot tractors), there are the Ministry of Agriculture, Forestry and Fisheries' "Guidelines for ensuring the safety of autonomous driving of agricultural machinery". Requirements include a person watching nearby and stopping when a person is detected
 - Heavy vehicles cause serious injuries if they hit someone. Limit the speed (with parameters) and fit an emergency stop button
+
+## Exercises
+
+```quiz
+Q: From what weight (g) is a drone an "unmanned aircraft" under Japan's Civil Aeronautics Act?
+A: 100
+E: The weight includes the battery.
+
+Q: What is the device that broadcasts a drone's registration number by radio?
+A: remote ID | RID
+E: Register through MLIT's DIPS 2.0.
+
+Q: Which Japanese certification mark must radio equipment have?
+A: Giteki | technical conformity mark | giteki mark
+E: Using uncertified radios breaks the Radio Act.
+
+Q: When not in use, to about how many volts per cell should a LiPo battery be stored?
+A: 3.8
+E: Do not leave it fully charged.
+
+Q: Spraying pesticide by drone counts as "carrying dangerous goods" and what else under the aviation law?
+A: dropping objects | dropping | dropping things
+E: You need permission and approval, or type certification and a pilot license.
+```

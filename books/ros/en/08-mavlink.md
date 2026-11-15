@@ -135,3 +135,23 @@ python3 fly.py
 - **Use frequencies allowed in Japan and radios with Japanese technical conformity certification (giteki)**. The 915 MHz and 433 MHz radios commonly sold overseas cannot be used as they are in Japan (Chapter 12)
 - When both the ground station and the companion computer want MAVLink, connect the companion computer to another FC serial port (TELEM2), or use **mavlink-router** to split one MAVLink stream to several places
 - When working from ROS 2, rather than writing MAVLink directly, you normally use **AP_DDS** from Chapter 9 (or MAVROS). Even so, knowing MAVLink helps you understand what is happening inside when you are stuck
+
+## Exercises
+
+```quiz
+Q: Which "I'm alive" message does everyone send once per second?
+A: HEARTBEAT | heartbeat
+E: It carries the vehicle type, mode and armed state.
+
+Q: What system ID does a ground station usually use?
+A: 255
+E: Vehicles use 1–255; give each vehicle a different ID when flying several.
+
+Q: Which Python library is used to work with MAVLink?
+A: pymavlink
+E: MAVProxy is built on pymavlink too.
+
+Q: By default, how many seconds without a new GUIDED velocity command before the vehicle stops?
+A: 3
+E: `GUID_TIMEOUT`. It stops the vehicle flying away if your program dies.
+```

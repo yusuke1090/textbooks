@@ -143,3 +143,23 @@ docker run -it --rm --net=host osrf/ros:jazzy-desktop
 
 - With `--net=host`, nodes inside and outside the container connect on the same network
 - Showing GUIs (RViz, turtlesim) needs X11 settings. Using VS Code's Dev Containers makes it easier
+
+## Exercises
+
+```quiz
+Q: When ros2 commands are not found in a new terminal, what command did you probably forget?
+A: source
+E: Run `source /opt/ros/jazzy/setup.bash`.
+
+Q: Which environment variable sets the group number so your nodes do not mix with someone else's robot?
+A: ROS_DOMAIN_ID
+E: Only nodes with the same number connect.
+
+Q: Which tool shows how nodes and topics are connected as a graph?
+A: rqt_graph
+E: Type `rqt_graph` in a terminal.
+
+Q: Which Docker option connects nodes inside and outside the container?
+A: --net=host | --net host | --network=host
+E: `docker run -it --rm --net=host osrf/ros:jazzy-desktop`.
+```

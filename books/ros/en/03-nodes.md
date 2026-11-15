@@ -169,3 +169,23 @@ ros2 run my_first listener
 | Nothing reaches the listener | Different topic names (`chatter` and `/chatter` are usually the same; watch out for namespaces), different types, different `ROS_DOMAIN_ID` |
 | Nodes on another computer are invisible | Firewall, a different network, `ROS_DOMAIN_ID`. Wi-Fi multicast is blocked |
 | You are told the data types do not match | Use `ros2 topic info -v topic_name` to see the sender's and receiver's types and QoS (Chapter 5) |
+
+## Exercises
+
+```quiz
+Q: What is the named channel that messages flow through called?
+A: topic | topics
+E: Publishers and subscribers connect only by topic name and type.
+
+Q: What is the function called each time a message arrives?
+A: callback
+E: For example a function like `on_msg`.
+
+Q: Which command builds ROS 2 packages?
+A: colcon build | colcon
+E: Always run it at the top of the workspace (`~/ros2_ws`).
+
+Q: Which `setup.py` field registers your Python nodes?
+A: entry_points
+E: Rebuild after editing it.
+```

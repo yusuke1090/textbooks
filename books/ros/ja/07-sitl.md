@@ -108,3 +108,23 @@ sim_vehicle.py -v ArduCopter --console --map --custom-location=42.92,143.20,40,0
 - ArduPilot は、飛行中のすべてのデータ（センサー・推定した位置・モーターへの出力・モードの変化・エラー）を **DataFlash ログ**（`.bin`）に記録します。SITL では `logs/` に、実機では SD カードに保存されます
 - ウェブの **UAV Log Viewer**、MAVProxy の **MAVExplorer**、Mission Planner で、グラフにして見られます
 - 「なぜ落ちたのか」「なぜアームできなかったのか」は、ログを見ればたいていわかります。実機でトラブルがあったら、まずログを残します
+
+## 練習問題
+
+```quiz
+Q: ArduPilot のファームウェアを、パソコンの上で動かしてシミュレーションするしくみを何といいますか。
+A: SITL | ソフトウェア・イン・ザ・ループ
+E: センサーと機体の動きは、パソコンの中の物理のシミュレーションが作ります。
+
+Q: SITL を起動するスクリプトの名前は何ですか。
+A: sim_vehicle.py | sim_vehicle
+E: `sim_vehicle.py -v ArduCopter --console --map` のように起動します。
+
+Q: QGroundControl が SITL に自動でつながる UDP のポートの番号は何ですか。
+A: 14550
+E: MAVProxy は 14550 番と 14551 番に MAVLink を流しています。
+
+Q: ArduPilot が飛行中のデータを記録するログの拡張子は何ですか。
+A: .bin | bin
+E: DataFlash ログといいます。実機では SD カードに保存されます。
+```

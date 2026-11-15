@@ -123,3 +123,23 @@ journalctl -u micro-ros-agent -f        # ログを見る
 8. 毎回、DataFlash のログと `ros2 bag` を残す
 
 - ローバーも同じです。はじめは車輪を浮かせて（台に載せて）試します
+
+## 練習問題
+
+```quiz
+Q: AP_DDS を使うフライトコントローラーの CPU は、STM32 の何ですか。
+A: H7 | STM32H7
+E: Pixhawk 6C/6X や Cube Orange などです。
+
+Q: DDS 入りのファームウェアを、ウェブで選んでビルドしてもらえる ArduPilot のサービスは何ですか。
+A: Custom Firmware Builder
+E: 機能の一覧で DDS にチェックを入れます。
+
+Q: FC とコンパニオンコンピューターを UART でつなぐとき、TX と RX はどうつなぎますか。
+A: 交差 | 交差させる | クロス | cross
+E: どちらも 3.3 V の信号です。5V はつなぎません。
+
+Q: 机の上で試すときに、いちばん大事なことは何を外すことですか。
+A: プロペラ | propeller | props
+E: プロペラは指を切り、骨も折ります。
+```

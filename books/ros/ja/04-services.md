@@ -181,3 +181,23 @@ ros2 launch my_first chat.launch.py
 
 - launch ファイルでは、引数（`DeclareLaunchArgument`）・名前空間（`namespace=`、同じノードを何台分も起動する）・トピック名の付け替え（`remappings=`）・ほかの launch ファイルの読み込み（`IncludeLaunchDescription`）もできます
 - ArduPilot のシミュレーター（9章）も、launch ファイルで、SITL・micro-ROS Agent・MAVProxy をまとめて起動します
+
+## 練習問題
+
+```quiz
+Q: 1回頼んで、1回答えをもらうやりとりを何といいますか。
+A: サービス | service
+E: トピックは「流しっぱなし」です。
+
+Q: 「目的地まで行って」のような時間のかかる仕事で、途中経過が届き、途中でやめることもできるしくみを何といいますか。
+A: アクション | action
+E: 途中経過は feedback、やめるのは cancel です。
+
+Q: プログラムを直さずに変えられる、ノードの設定値を何といいますか。
+A: パラメータ | parameter | パラメーター
+E: 起動するときや、動かしている途中に変えられます。
+
+Q: たくさんのノードを決まった設定で一度に起動するためのファイルを何といいますか。
+A: launch ファイル | launchファイル | launch | ローンチファイル
+E: Python で書くのがふつうです。`ros2 launch` で起動します。
+```

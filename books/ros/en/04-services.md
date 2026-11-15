@@ -181,3 +181,23 @@ ros2 launch my_first chat.launch.py
 
 - Launch files can also take arguments (`DeclareLaunchArgument`), namespaces (`namespace=`, to start the same node for several robots), topic renaming (`remappings=`) and include other launch files (`IncludeLaunchDescription`)
 - ArduPilot's simulator (Chapter 9) also starts SITL, the micro-ROS Agent and MAVProxy together with a launch file
+
+## Exercises
+
+```quiz
+Q: What is a single request-and-response exchange called?
+A: service | services
+E: Topics just keep flowing.
+
+Q: What mechanism is used for long tasks like "go to the goal", with progress updates and the option to cancel?
+A: action | actions
+E: Progress is feedback; stopping is cancel.
+
+Q: What are a node's settings that can change without editing the code called?
+A: parameters | parameter
+E: They can be set at launch or changed while running.
+
+Q: What kind of file starts many nodes at once with fixed settings?
+A: launch file | launch
+E: It is usually written in Python and started with `ros2 launch`.
+```

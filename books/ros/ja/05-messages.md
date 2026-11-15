@@ -155,3 +155,27 @@ rviz2
 - 画面がない機体（Jetson など）で動くノードも、同じネットワーク（同じ `ROS_DOMAIN_ID`）のパソコンの RViz で見られます
 
 ![LiDAR を付けた移動ロボット。LiDAR の点群は RViz で 3D で見られる](images/lidar-robot.jpg)
+
+## 練習問題
+
+```quiz
+Q: ROS の地面に固定した座標系は、x が東・y が北・z が上です。これを何といいますか。
+A: ENU
+E: ArduPilot・MAVLink は NED（北・東・下）です。
+
+Q: NED の z 軸は、上と下のどちらを向いていますか。
+A: 下 | した | down
+E: NED は North・East・Down です。
+
+Q: 座標系どうしの位置関係を、時刻ごとに管理するしくみは何ですか。
+A: tf2 | tf
+E: 「カメラで見えた牛は地図の上でどこか」を計算できます。
+
+Q: 送る側が BEST_EFFORT のとき、受け取る側の Reliability を何にするとつながりますか。
+A: BEST_EFFORT | best effort
+E: 受け取る側が RELIABLE だと、エラーも出ずに何も届きません。
+
+Q: トピックを記録して、あとで再生するコマンドは `ros2` の何ですか。
+A: bag | ros2 bag
+E: `ros2 bag record` で記録し、`ros2 bag play` で再生します。
+```

@@ -255,3 +255,23 @@ ros2 launch mavros apm.launch fcu_url:=udp://:14550@
 | Coordinates | Already converted to ENU | Already converted to ENU |
 | Features | Limited to what is needed (still growing) | Almost all of MAVLink |
 | Recommendation | Start here for new projects | Older FCs, or when you need detailed features |
+
+## Exercises
+
+```quiz
+Q: What is the feature, from ArduPilot 4.5, that lets the flight controller speak DDS directly?
+A: AP_DDS
+E: It is the main approach in this book.
+
+Q: What runs on the companion computer and relays between XRCE-DDS and normal ROS 2?
+A: micro-ROS Agent | micro-ROS | microROS Agent | micro ros agent
+E: XRCE-DDS is a light version of DDS for small microcontrollers.
+
+Q: Which QoS profile do you use to subscribe to position, GPS and battery topics?
+A: qos_profile_sensor_data
+E: These topics are sent BEST_EFFORT.
+
+Q: Which older bridge node connects MAVLink and ROS 2?
+A: MAVROS
+E: Use it with older flight controllers or for detailed MAVLink features.
+```

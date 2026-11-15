@@ -127,3 +127,27 @@ ArduPilot's behavior is switched with **flight modes**. The numbers are used whe
 - **Geofence**: an invisible fence. When it is about to exceed the maximum height (`FENCE_ALT_MAX`), the distance from home (`FENCE_RADIUS`) or a polygon area, it comes back with RTL or similar. It is an important insurance that keeps the vehicle inside the fence even if a ROS 2 program sends wrong commands
 
 ![An underwater robot running ArduSub (BlueROV2). The same ArduPilot runs underwater too](images/bluerov.jpg)
+
+## Exercises
+
+```quiz
+Q: What three letters name the extended Kalman filter that combines all sensors to estimate position, velocity and attitude?
+A: EKF | EKF3
+E: ArduPilot uses EKF3.
+
+Q: Which flight mode do you use to control the vehicle from ROS 2?
+A: GUIDED
+E: It flies to positions given from outside.
+
+Q: Which flight mode returns to the takeoff point (home) and lands?
+A: RTL | Return to Launch
+E: Always put it on a transmitter switch.
+
+Q: What is it called when the motors are allowed to spin?
+A: arm | arming | armed
+E: Stopping is disarming. Pre-arm checks run before arming.
+
+Q: What is the invisible fence that brings the vehicle back if it goes too high or too far?
+A: geofence | fence
+E: It is insurance in case a ROS 2 program sends a wrong command.
+```

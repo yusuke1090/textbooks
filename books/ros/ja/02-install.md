@@ -143,3 +143,23 @@ docker run -it --rm --net=host osrf/ros:jazzy-desktop
 
 - `--net=host` にすると、コンテナの中と外のノードが同じネットワークでつながります
 - GUI（RViz・turtlesim）を出すには、X11 の設定が要ります。VS Code の Dev Containers を使うと楽です
+
+## 練習問題
+
+```quiz
+Q: 新しいターミナルで ros2 のコマンドが見つからないとき、まず何を忘れていないか疑いますか（コマンド名）。
+A: source
+E: `source /opt/ros/jazzy/setup.bash` で使えるようにします。
+
+Q: 同じネットワークで別の人のロボットと混ざらないように決める、グループの番号の環境変数は何ですか。
+A: ROS_DOMAIN_ID
+E: 同じ番号のノードだけがつながります。
+
+Q: ノードとトピックのつながりを図で見るツールは何ですか。
+A: rqt_graph
+E: ターミナルで `rqt_graph` と打ちます。
+
+Q: ROS 2 を入れずに試すとき、Docker でコンテナの中と外のノードをつなぐオプションは何ですか。
+A: --net=host | --net host | --network=host
+E: `docker run -it --rm --net=host osrf/ros:jazzy-desktop` で使えます。
+```
