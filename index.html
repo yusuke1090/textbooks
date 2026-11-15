@@ -61,6 +61,8 @@ body.drag .zone.over { border-color: var(--accent); background: var(--accent-sof
 .card .qzdots { display: none; }
 .zone .card .qzdots:not(:empty) { display: flex; flex-wrap: wrap; gap: 5px 9px; }
 .qzdots > span { display: flex; gap: 3px; }
+.qz-clear { margin-left: auto; padding: 0 9px; font: inherit; font-size: 11.5px; line-height: 18px; color: var(--muted); background: none; border: 1px solid var(--border); border-radius: 9px; cursor: pointer; }
+.qz-clear:hover { color: var(--err); border-color: var(--err); }
 .qzdots i, .qz-log li i { width: 10px; height: 10px; box-sizing: border-box; border: 1.5px solid var(--muted); border-radius: 50%; opacity: .55; position: relative; }
 .qzdots i.ok, .qz-log li i.ok { background: var(--ok); border-color: var(--ok); opacity: 1; }
 .qzdots i.ng, .qz-log li i.ng { border: 0; border-radius: 0; opacity: 1; }
@@ -353,7 +355,7 @@ li > .sticky-bar { margin-top: 4px; }
       let qz = {};
       try { qz = JSON.parse(store.get(QUIZ_KEY(b.id), "{}")) || {}; } catch (e) { qz = {}; }
       const qa = Object.keys(qz).length, qc = Object.values(qz).filter((v) => v === 1).length;
-      const rate = qa ? `<span>✏️ 練習問題 <b>${Math.round(qc / qa * 100)}%</b>（${qc} / ${qa} 問）</span>` : "";
+      const rate = qa ? `<span class="qzrate">✏️ 練習問題 <b>${Math.round(qc / qa * 100)}%</b>（${qc} / ${qa} 問）</span>` : "";
       // 進み具合（今いる章 / 章の数）。今勉強中の欄でだけ見せる
       const at = pos && chs[pos.idx] ? pos.idx + 1 : 0;
       const prog = chs.length ? `<span class="prog"><span class="pbar"><span style="width:${(at / chs.length * 100).toFixed(1)}%"></span></span>${at} / ${chs.length}</span>` : "";
@@ -384,6 +386,7 @@ li > .sticky-bar { margin-top: 4px; }
       if (!qzCount[id]) return;
       let qz = {};
       try { qz = JSON.parse(store.get(QUIZ_KEY(id), "{}")) || {}; } catch (e) { qz = {}; }
+      const clear = Object.keys(qz).length ? `<button type="button" class="qz-clear">クリア</button>` : "";
       el.innerHTML = chs.map((c, i) => {
         const n = qzCount[id][i];
         if (!n) return "";
@@ -394,9 +397,20 @@ li > .sticky-bar { margin-top: 4px; }
           dots += `<i${v === 1 ? ' class="ok"' : v === 0 ? ' class="ng"' : ""}></i>`;
         }
         return `<span title="${esc(L(c.title, "ja"))}  ${ok} / ${n}">${dots}</span>`;
-      }).join("");
+      }).join("") + clear;
     });
   }
+  // クリアは ● × だけを消す（これまでの答えの履歴は残す）
+  $("books").addEventListener("click", (e) => {
+    const btn = e.target.closest(".qz-clear");
+    if (!btn) return;
+    e.preventDefault(); e.stopPropagation();
+    const id = btn.closest(".qzdots").dataset.id;
+    if (!confirm("練習問題の結果（● ×）を消しますか？\nこれまでの答えは残ります。")) return;
+    store.set(QUIZ_KEY(id), "{}");
+    cardHtml[id] = cardHtml[id].replace(/<span class="qzrate">.*?<\/span>/, "");
+    renderShelf();
+  });
   function countQuiz(md) {
     let n = 0, inQuiz = false;
     for (const l of md.split("\n")) {
