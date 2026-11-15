@@ -8,10 +8,10 @@ words/ のファイル（ファイル名の順に並べる）:
     2行目から  単語 | 品詞 | 日本語の意味 | English meaning | 例文
 品詞の記号: n 名詞, v 動詞, adj 形容詞, adv 副詞, phr 句, pv 句動詞, conj 接続詞, prep 前置詞, id 慣用句
 
-1章（ja/01-vocabulary.md・en/01-vocabulary.md）の「## 単語帳の使い方」（How to use this word list）から
+1章（ja/01-vocabulary.md・en/01-vocabulary.md）の「## 単語帳」（Word list）から
 「## 練習問題」（Exercises）の前までを作り直す。そこより前と後ろは手で書いた本文なので、そのまま残す。
-話題ごとに「## 題」と ```words のブロック（1行に「単語 | 品詞 | 意味 | 例文」）を書く。読む画面（index.html）が、
-○ のチェック・絞りこみ・意味を隠す・探す・発音の付いた単語帳にする。
+「## 単語帳」の説明と、1つの ```words のブロック（「## まとまり」「# 話題」の行と、1行に「単語 | 品詞 | 意味 | 例文」）を書く。
+読む画面（index.html）が、話題の一覧と 20語ずつのページ、○ のチェック・見直す・意味を隠す・探す・発音の付いた単語帳にする。
 例文の中の見出しの言葉（-s・-ed・-ing などの形も）を太字にする。同じ言葉が2回出てきたら知らせる。
 """
 import re
@@ -22,22 +22,22 @@ ROOT = Path(__file__).resolve().parent.parent
 BOOK = ROOT / "books" / "ielts"
 POS = {"n": ("名", "n."), "v": ("動", "v."), "adj": ("形", "adj."), "adv": ("副", "adv."), "phr": ("句", "phr."),
        "pv": ("句動", "phr. v."), "conj": ("接", "conj."), "prep": ("前", "prep."), "id": ("慣", "idiom")}
-HEAD = {"ja": ("## 単語帳の使い方", "## 練習問題"), "en": ("## How to use this word list", "## Exercises")}
+HEAD = {"ja": ("## 単語帳", "## 練習問題"), "en": ("## Word list", "## Exercises")}
+OLD_HEAD = {"ja": "## 単語帳の使い方", "en": "## How to use this word list"}   # 前の版の見出し（あれば、そこから作り直す）
+# 話題のまとまり（ファイル名の頭の番号の、はじめの番号）
+GROUPS = [(1, "学術の言葉", "Academic words"), (5, "話題ごとの言葉", "Words by topic"),
+          (23, "Writing と Speaking で使う言葉", "Words for Writing and Speaking")]
 INTRO = {
-    "ja": """- この単語帳には、IELTS のバンド7 に役立つ言葉が **{n:,} 語**あります。{t} の話題に分け、品詞・意味・例文を付けました
-- 品詞の記号: **名** 名詞、**動** 動詞、**形** 形容詞、**副** 副詞、**句** いくつかの語のまとまり、**句動** 句動詞（動詞＋副詞・前置詞）、**接** 接続詞、**前** 前置詞、**慣** 慣用句
-- 例文の太字が、その言葉です。動詞の形（-s・-ed・-ing）や名詞の複数形は、文に合わせて変えています。`sth` は something（何か）、`sb` は somebody（だれか）の略です
-- わからなかった単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」を押すと、チェックした単語だけが出ます（覚えたら、もう一度押して外す）。チェックはこの端末のブラウザに残ります
-- 「**意味を隠す**」で意味と例文がぼやけます。単語を見て意味を言えるか試し、押すと出ます
-- 「単語・意味で探す」に英語か日本語を入れると、その言葉をふくむ単語だけが出ます。🔊 で発音を聞けます
-- 1日に1つの話題を目安に、例文ごと声に出して読みます。目次の ▶ から、話題の所へ飛べます""",
-    "en": """- This word list has **{n:,} words** that help with IELTS Band 7, grouped into {t} topics, each with its part of speech, meaning and an example sentence
-- Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**
-- The word is in bold in its example. Verb forms (-s, -ed, -ing) and plurals change to fit the sentence. `sth` means something and `sb` means somebody
-- Tap the **○** next to a word you don't know to mark it. Press "**✓ Review**" at the top to show only marked words (tap again to unmark once you know it). Marks are saved in this browser
-- "**Hide meanings**" blurs the meanings and examples. Test yourself on each word, then tap it to reveal
-- Type English or Japanese in the search box to show only matching words. Tap 🔊 to hear a word
-- Aim for one topic a day, reading the examples aloud. Use the ▶ in the table of contents to jump to a topic""",
+    "ja": """- IELTS のバンド7 に役立つ言葉 **{n:,} 語**を、{t} の話題に分けました。品詞・意味・例文つきです
+- 下の一覧で話題を選ぶと、**20語ずつ**のページで出ます。下の番号で次のページへ、最後のページの「次の話題へ」で続けられます。次に開いたときは、前に見ていた所から始まります
+- わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを全部の話題から集めて出します（覚えたら、もう一度押して外す）
+- 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。🔊 で発音、「単語・意味で探す」で全部の話題から探せます
+- 品詞の記号: **名** 名詞、**動** 動詞、**形** 形容詞、**副** 副詞、**句** いくつかの語のまとまり、**句動** 句動詞、**接** 接続詞、**前** 前置詞、**慣** 慣用句。例文の太字がその言葉で、`sth` は something、`sb` は somebody の略です""",
+    "en": """- **{n:,} words** that help with IELTS Band 7, in {t} topics, each with its part of speech, meaning and an example
+- Choose a topic below to see it **20 words per page**. Use the numbers at the bottom to turn pages, and "Next topic" on the last page to carry on. Next time, you start where you left off
+- Tap the **○** next to a word you don't know to mark it. "**✓ Review**" at the top collects your marked words from every topic (tap ○ again to unmark once you know it)
+- "**Hide meanings**" blurs meanings and examples. Try to recall the meaning, then tap to check. Tap 🔊 to hear a word, and search all topics with the search box
+- Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**. The word is in bold in its example; `sth` means something and `sb` means somebody""",
 }
 
 IRREGULAR = {"take": "took|taken", "make": "made", "bring": "brought", "give": "gave|given", "go": "went|gone",
@@ -110,30 +110,35 @@ def load():
                 print(f"△ {f.name}:{k}: 「{parts[0]}」は {seen[key]} にもある")
             seen[key] = f.name
             rows.append(parts)
-        topics.append((ja, en, rows))
+        topics.append((int(f.name[:2]), ja, en, rows))
     return topics, bad
 
 
 def build(lang, topics):
-    n = sum(len(r) for _, _, r in topics)
-    out = [HEAD[lang][0], "", INTRO[lang].format(n=n, t=len(topics)), ""]
-    for ja, en, rows in topics:
-        out += [f"## {ja if lang == 'ja' else en}", "", "```words"]
+    n = sum(len(r) for *_, r in topics)
+    out = [HEAD[lang][0], "", INTRO[lang].format(n=n, t=len(topics)), "", "```words"]
+    gi = -1
+    for num, ja, en, rows in topics:
+        while gi + 1 < len(GROUPS) and num >= GROUPS[gi + 1][0]:
+            gi += 1
+            out.append(f"## {GROUPS[gi][1] if lang == 'ja' else GROUPS[gi][2]}")
+        out.append(f"# {ja if lang == 'ja' else en}")
         for word, pos, mja, men, ex in rows:
             p = POS[pos][0 if lang == "ja" else 1]
             out.append(f"{cell(word)} | {p} | {cell(mja if lang == 'ja' else men)} | {cell(bold(word, ex))}")
-        out += ["```", ""]
+    out += ["```", ""]
     return "\n".join(out)
-
 
 def main():
     topics, bad = load()
-    n = sum(len(r) for _, _, r in topics)
-    nobold = [(w, e) for _, _, rows in topics for w, _, _, _, e in rows if "**" not in bold(w, e)]
+    n = sum(len(r) for *_, r in topics)
+    nobold = [(w, e) for *_, rows in topics for w, _, _, _, e in rows if "**" not in bold(w, e)]
     for lang in ("ja", "en"):
         p = BOOK / lang / "01-vocabulary.md"
         text = p.read_text(encoding="utf-8")
         a, b = text.find("\n" + HEAD[lang][0] + "\n"), text.find("\n" + HEAD[lang][1] + "\n")
+        if a < 0:
+            a = text.find("\n" + OLD_HEAD[lang] + "\n")
         if a < 0 or b < 0 or b < a:
             sys.exit(f"{p}: 「{HEAD[lang][0]}」と「{HEAD[lang][1]}」の見出しが見つからない")
         p.write_text(text[:a + 1] + build(lang, topics) + "\n" + text[b + 1:], encoding="utf-8")

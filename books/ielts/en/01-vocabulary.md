@@ -122,19 +122,17 @@ Reading and Listening questions **paraphrase** the text. In Writing, paraphrase 
 | percent / percentage | after a number use percent (20 **percent**); without a number use percentage (a large **percentage**) |
 | information / research / equipment | uncountable nouns. × informations, × researches, × equipments |
 
-## How to use this word list
+## Word list
 
-- This word list has **2,017 words** that help with IELTS Band 7, grouped into 28 topics, each with its part of speech, meaning and an example sentence
-- Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**
-- The word is in bold in its example. Verb forms (-s, -ed, -ing) and plurals change to fit the sentence. `sth` means something and `sb` means somebody
-- Tap the **○** next to a word you don't know to mark it. Press "**✓ Review**" at the top to show only marked words (tap again to unmark once you know it). Marks are saved in this browser
-- "**Hide meanings**" blurs the meanings and examples. Test yourself on each word, then tap it to reveal
-- Type English or Japanese in the search box to show only matching words. Tap 🔊 to hear a word
-- Aim for one topic a day, reading the examples aloud. Use the ▶ in the table of contents to jump to a topic
-
-## Academic verbs: researching, showing and arguing
+- **2,017 words** that help with IELTS Band 7, in 28 topics, each with its part of speech, meaning and an example
+- Choose a topic below to see it **20 words per page**. Use the numbers at the bottom to turn pages, and "Next topic" on the last page to carry on. Next time, you start where you left off
+- Tap the **○** next to a word you don't know to mark it. "**✓ Review**" at the top collects your marked words from every topic (tap ○ again to unmark once you know it)
+- "**Hide meanings**" blurs meanings and examples. Try to recall the meaning, then tap to check. Tap 🔊 to hear a word, and search all topics with the search box
+- Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**. The word is in bold in its example; `sth` means something and `sb` means somebody
 
 ```words
+## Academic words
+# Academic verbs: researching, showing and arguing
 analyse | v. | examine something in detail | Researchers **analysed** data from over 2,000 farms.
 assess | v. | judge the value or quality of something | Vets **assess** each cow's health every month.
 evaluate | v. | judge how good or useful something is | The study **evaluates** three teaching methods.
@@ -264,11 +262,7 @@ verify | v. | check that something is true | The data must be **verified** by an
 confirm | v. | show that something is true | Tests **confirmed** that the water was clean.
 advocate | v. | publicly support | Many doctors **advocate** a sugar tax.
 propose | v. | suggest a plan | The council **proposed** a new cycle lane.
-```
-
-## Academic nouns: ideas, reasons and results
-
-```words
+# Academic nouns: ideas, reasons and results
 approach | n. | a way of dealing with something | We need a new **approach** to recycling.
 aspect | n. | one part or feature of something | Cost is an important **aspect** of the decision.
 assumption | n. | something believed true without proof | The plan is based on the **assumption** that prices will rise.
@@ -382,11 +376,7 @@ stage | n. | a step in a process | The project is at an early **stage**.
 phase | n. | a period in a process | The first **phase** of the plan is complete.
 extent | n. | the degree or size of something | To what **extent** do you agree?
 degree | n. | amount, or a university qualification | There is a high **degree** of risk.
-```
-
-## Adjectives for describing and evaluating
-
-```words
+# Adjectives for describing and evaluating
 significant | adj. | important or large | There has been a **significant** rise in house prices.
 substantial | adj. | large in amount | The project received **substantial** funding.
 considerable | adj. | quite large | It took a **considerable** amount of time.
@@ -514,11 +504,7 @@ long-term | adj. | lasting a long time | We need **long-term** solutions.
 short-term | adj. | lasting a short time | Cutting taxes is only a **short-term** fix.
 sustainable | adj. | able to continue without harm | We need **sustainable** sources of energy.
 affordable | adj. | not too expensive | There is a shortage of **affordable** housing.
-```
-
-## Adverbs: degree, certainty and attitude
-
-```words
+# Adverbs: degree, certainty and attitude
 significantly | adv. | by a large amount | Costs have fallen **significantly**.
 considerably | adv. | much, a lot | The new model is **considerably** cheaper.
 substantially | adv. | by a large amount | Profits rose **substantially** last year.
@@ -590,11 +576,8 @@ financially | adv. | in terms of money | The scheme is **financially** sustainab
 economically | adv. | in terms of the economy | The region is **economically** weak.
 socially | adv. | in terms of society | It is not **socially** acceptable.
 environmentally | adv. | in terms of the environment | Electric cars are more **environmentally** friendly.
-```
-
-## Education and learning
-
-```words
+## Words by topic
+# Education and learning
 curriculum | n. | the subjects taught at a school | Coding is now part of the school **curriculum**.
 syllabus | n. | the topics in a course | The **syllabus** covers modern history.
 tuition fees | phr. | money paid for teaching | Rising **tuition fees** discourage some students from applying.
@@ -678,11 +661,7 @@ faculty | n. | a group of departments, or the teachers | She joined the **Facult
 semester | n. | half of a school year | The **semester** starts in April.
 timetable | n. | a list of class times | The **timetable** changes each term.
 term | n. | a period of the school year | The summer **term** ends in July.
-```
-
-## Environment and climate
-
-```words
+# Environment and climate
 climate change | phr. | long-term change in the world's weather | **Climate change** threatens food production.
 global warming | phr. | the rise in the earth's temperature | **Global warming** is melting the ice caps.
 greenhouse gas | phr. | a gas that traps heat in the atmosphere | Methane is a powerful **greenhouse gas**.
@@ -773,11 +752,7 @@ consumption | n. | the amount used | Energy **consumption** rises in winter.
 consumerism | n. | the idea that buying more is good | **Consumerism** leads to more waste.
 packaging | n. | material used to wrap products | Supermarkets are reducing plastic **packaging**.
 upcycle | v. | turn waste into something better | She **upcycles** old clothes into bags.
-```
-
-## Energy and resources
-
-```words
+# Energy and resources
 renewable energy | phr. | energy from sun, wind and so on | **Renewable energy** now supplies a third of the country's power.
 solar power | phr. | electricity from sunlight | **Solar power** is cheap in sunny regions.
 solar panel | phr. | a panel that turns sunlight into electricity | Many farms have **solar panels** on their barns.
@@ -826,11 +801,7 @@ intermittent | adj. | stopping and starting | Wind power is **intermittent**.
 self-sufficient | adj. | able to supply your own needs | The farm is **self-sufficient** in energy.
 carbon capture | phr. | trapping CO₂ before it enters the air | **Carbon capture** is still expensive.
 emission-free | adj. | producing no harmful gases | Electric buses are **emission-free** on the street.
-```
-
-## Technology and the internet
-
-```words
+# Technology and the internet
 technology | n. | the use of science for practical purposes | **Technology** has changed how we work.
 technological | adj. | relating to technology | **Technological** progress creates new jobs.
 innovation | n. | new ideas or methods | Government funding can encourage **innovation**.
@@ -907,11 +878,7 @@ encryption | n. | turning data into a secret code | **Encryption** keeps message
 malfunction | v. | fail to work properly | The robot **malfunctioned** during milking.
 glitch | n. | a small technical problem | A **glitch** caused the website to crash.
 crash | v. | stop working suddenly | The computer **crashed** and I lost my work.
-```
-
-## Science and research
-
-```words
+# Science and research
 research | n. | careful study to find new facts | **Research** shows that sleep improves memory.
 researcher | n. | a person who does research | **Researchers** interviewed 500 farmers.
 experiment | n. | a scientific test | The **experiment** was repeated three times.
@@ -981,11 +948,7 @@ cutting-edge research | phr. | the most advanced research | The university is kn
 ethics | n. | moral principles | Animal research raises questions of **ethics**.
 animal testing | phr. | testing products on animals | **Animal testing** for cosmetics is banned in the EU.
 clone | v. | make an exact genetic copy | Scientists **cloned** a sheep in 1996.
-```
-
-## Health and medicine
-
-```words
+# Health and medicine
 healthcare | n. | medical services | **Healthcare** is free in many European countries.
 healthcare system | phr. | the system of medical care | An ageing population puts pressure on the **healthcare system**.
 public health | phr. | the health of the population as a whole | Smoking is a major **public health** problem.
@@ -1060,11 +1023,7 @@ ageing | n. | growing old | Exercise slows the effects of **ageing**.
 disability | n. | a condition that limits activity | Buildings must be accessible to people with **disabilities**.
 injury | n. | physical harm | Sports **injuries** are common among teenagers.
 epidemiology | n. | the study of how diseases spread | **Epidemiology** helps us plan for pandemics.
-```
-
-## Food and nutrition
-
-```words
+# Food and nutrition
 diet | n. | the food a person usually eats | A **diet** high in sugar is unhealthy.
 nutrient | n. | a substance needed for growth | Vegetables are rich in **nutrients**.
 nutritious | adj. | containing many nutrients | Milk is a **nutritious** drink.
@@ -1122,11 +1081,7 @@ supply chain | phr. | the steps that bring a product to the buyer | The drought 
 retailer | n. | a business that sells to the public | Big **retailers** control milk prices.
 supermarket | n. | a large food shop | **Supermarkets** sell milk below cost.
 farmers' market | phr. | a market where farmers sell their produce | We buy vegetables at the **farmers' market**.
-```
-
-## Work and employment
-
-```words
+# Work and employment
 employment | n. | having paid work | Tourism provides **employment** for local people.
 unemployment | n. | not having a job | **Unemployment** is high among young people.
 unemployment rate | phr. | the share of people without work | The **unemployment rate** fell to 3% last year.
@@ -1205,11 +1160,7 @@ discrimination | n. | unfair treatment | Age **discrimination** is illegal.
 harassment | n. | unwanted, threatening behaviour | Workplace **harassment** must be reported.
 burnt out | adj. | exhausted from overwork | Many doctors feel **burnt out**.
 motivated | adj. | keen to work hard | **Motivated** staff are more productive.
-```
-
-## The economy and business
-
-```words
+# The economy and business
 economy | n. | the system of trade and money in a country | The **economy** grew by 2% last year.
 economic growth | phr. | an increase in a country's wealth | **Economic growth** slowed during the crisis.
 recession | n. | a period when the economy shrinks | Many businesses closed during the **recession**.
@@ -1291,11 +1242,7 @@ downsize | v. | reduce the number of employees | The bank **downsized** its bran
 expand overseas | phr. | grow into other countries | The company plans to **expand overseas**.
 logistics | n. | moving goods from place to place | **Logistics** costs rose with fuel prices.
 infrastructure | n. | basic systems such as roads and power | Poor **infrastructure** limits growth.
-```
-
-## Money and daily life
-
-```words
+# Money and daily life
 afford | v. | have enough money for | Many young people cannot **afford** a house.
 affordable housing | phr. | homes people can pay for | Young people struggle to find **affordable housing**.
 expense | n. | money spent on something | Childcare is a major **expense**.
@@ -1345,11 +1292,7 @@ invest | v. | put money in to make a profit | It is wise to **invest** for retir
 squander | v. | waste money or chances | He **squandered** his savings on gambling.
 spending | n. | money spent | Public **spending** on transport has increased.
 price rise | phr. | an increase in price | **Price rises** hit poorer families hardest.
-```
-
-## Government, law and crime
-
-```words
+# Government, law and crime
 government | n. | the group that runs a country | The **government** announced new taxes.
 authority | n. | an official organisation, or power | Local **authorities** run the schools.
 policy | n. | a plan of action by a government or organisation | The **policy** aims to reduce waste.
@@ -1436,11 +1379,7 @@ sanction | n. | a penalty against a country | **Sanctions** were placed on the r
 national security | phr. | protecting a country | The law was passed for **national security**.
 legal system | phr. | the system of laws and courts | The **legal system** is slow.
 law-abiding | adj. | obeying the law | Most citizens are **law-abiding**.
-```
-
-## Society, family and population
-
-```words
+# Society, family and population
 society | n. | people living together in a community | Technology has changed **society**.
 community | n. | the people living in an area | Local festivals bring the **community** together.
 population | n. | the number of people in an area | The **population** of Tokyo is about 14 million.
@@ -1510,11 +1449,7 @@ taboo | n. | something not talked about | Mental illness is still a **taboo** su
 etiquette | n. | rules of polite behaviour | Table **etiquette** differs between countries.
 volunteer work | phr. | unpaid work for a cause | **Volunteer work** looks good on a CV.
 civic | adj. | relating to a city or citizens | Voting is a **civic** duty.
-```
-
-## Cities, housing and transport
-
-```words
+# Cities, housing and transport
 urbanisation | n. | people moving into cities | Rapid **urbanisation** has led to housing shortages.
 urban sprawl | phr. | cities spreading into the countryside | **Urban sprawl** destroys farmland.
 metropolis | n. | a very large city | Tokyo is a huge **metropolis**.
@@ -1594,11 +1529,7 @@ construction | n. | building | **Construction** of the new line will take five y
 high-speed rail | phr. | very fast trains | **High-speed rail** is an alternative to flying.
 airport expansion | phr. | making an airport bigger | Residents oppose **airport expansion**.
 emission zone | phr. | an area where polluting vehicles must pay | Diesel cars pay to enter the **emission zone**.
-```
-
-## Media and advertising
-
-```words
+# Media and advertising
 media | n. | TV, newspapers, the internet and so on | The **media** has a strong influence on opinion.
 mass media | phr. | media that reach many people | The **mass media** shapes public opinion.
 journalism | n. | the work of collecting and reporting news | Good **journalism** holds the powerful to account.
@@ -1649,11 +1580,7 @@ digital media | phr. | media on the internet | **Digital media** has overtaken T
 information overload | phr. | too much information to deal with | Social media causes **information overload**.
 echo chamber | phr. | a place where people only hear views they agree with | Social media can become an **echo chamber**.
 fact-check | v. | check that information is true | Journalists **fact-check** claims made by politicians.
-```
-
-## Culture, the arts and travel
-
-```words
+# Culture, the arts and travel
 culture | n. | the customs and ideas of a society | Food is an important part of **culture**.
 the arts | phr. | painting, music, theatre and so on | Governments should fund the **arts**.
 artistic | adj. | relating to art | She has **artistic** talent.
@@ -1720,11 +1647,7 @@ amateur | adj. | not paid, done for pleasure | He plays in an **amateur** band.
 cinema | n. | a place to watch films | Fewer people go to the **cinema** now.
 box office | phr. | ticket sales for films | The film was a **box office** hit.
 subtitles | n. | text of what is said on screen | I watch films with **subtitles**.
-```
-
-## Sport and leisure
-
-```words
+# Sport and leisure
 athlete | n. | a person who is good at sport | Professional **athletes** train every day.
 athletic | adj. | physically strong and fit | He is very **athletic**.
 professional | adj. | paid to do something | She became a **professional** footballer.
@@ -1763,11 +1686,7 @@ grassroots sport | phr. | sport at local, amateur level | More funding should go
 physical education | phr. | sport and exercise taught at school | **Physical education** should be compulsory.
 competitive spirit | phr. | the desire to win | Sport develops a **competitive spirit**.
 team spirit | phr. | loyalty to a team | The players showed great **team spirit**.
-```
-
-## Agriculture, dairy and animals
-
-```words
+# Agriculture, dairy and animals
 agriculture | n. | farming | **Agriculture** employs a third of the workforce.
 agricultural | adj. | relating to farming | **Agricultural** land is being lost to housing.
 farming | n. | growing crops or raising animals | **Farming** is hard physical work.
@@ -1850,11 +1769,7 @@ instinct | n. | natural behaviour | Cows have a strong herd **instinct**.
 captivity | n. | being kept, not free | Animals in **captivity** may suffer stress.
 zoo | n. | a place where animals are kept for people to see | **Zoos** help protect endangered species.
 pet | n. | an animal kept at home | **Pets** can reduce stress.
-```
-
-## Nature, geography and weather
-
-```words
+# Nature, geography and weather
 landscape | n. | the appearance of an area of land | The **landscape** is dotted with farms.
 terrain | n. | land of a particular type | The **terrain** is too steep for tractors.
 continent | n. | one of the earth's large land masses | Africa is the second largest **continent**.
@@ -1912,11 +1827,8 @@ natural phenomenon | phr. | something that happens in nature | A rainbow is a **
 erosion | n. | wearing away by wind or water | Coastal **erosion** threatens homes.
 sea ice | phr. | frozen sea water | Arctic **sea ice** is shrinking.
 permafrost | n. | ground that is always frozen | Thawing **permafrost** releases gases.
-```
-
-## Numbers and change (Writing Task 1)
-
-```words
+## Words for Writing and Speaking
+# Numbers and change (Writing Task 1)
 rise | v. | go up | Milk prices **rose** by 10% in 2022.
 increase | v. | become larger | The number of visitors **increased** steadily.
 grow | v. | become bigger | Online sales **grew** rapidly.
@@ -1978,11 +1890,7 @@ upward trend | phr. | a general rise | There was an **upward trend** in sales.
 downward trend | phr. | a general fall | The chart shows a **downward trend**.
 projected | adj. | expected in the future | The **projected** figure for 2030 is 50%.
 is expected to | phr. | is likely to | The population is **expected to** fall.
-```
-
-## Spoken phrases and idioms (Speaking)
-
-```words
+# Spoken phrases and idioms (Speaking)
 to be honest | phr. | saying what you really think | **To be honest**, I'm not much of a cook.
 as far as I know | phr. | based on what I know | **As far as I know**, the shop opens at nine.
 as far as I'm concerned | phr. | in my opinion | **As far as I'm concerned**, health is more important than money.
@@ -2042,11 +1950,7 @@ on the other hand | phr. | used to give the other side | **On the other hand**, 
 a big fan of | phr. | someone who likes something a lot | I'm a **big fan of** Japanese food.
 from time to time | phr. | occasionally | I go hiking **from time to time**.
 every now and then | phr. | sometimes | **Every now and then**, I cook for my friends.
-```
-
-## Phrasal verbs
-
-```words
+# Phrasal verbs
 bring about | phr. v. | cause to happen | The internet **brought about** huge changes.
 bring up | phr. v. | raise a child, or mention | She was **brought up** on a farm.
 carry out | phr. v. | do a task or study | Researchers **carried out** a survey.
@@ -2113,11 +2017,7 @@ try out | phr. v. | test something | Farmers can **try out** new machines at the
 cut back on | phr. v. | reduce spending or use | Families are **cutting back on** luxuries.
 opt for | phr. v. | choose | Many people **opt for** public transport.
 stick to | phr. v. | continue doing or following | It is hard to **stick to** a diet.
-```
-
-## Common collocations
-
-```words
+# Common collocations
 pose a threat | phr. | be a danger | Rising sea levels **pose a threat** to coastal cities.
 raise awareness | phr. | make people know more | The campaign aims to **raise awareness** of food waste.
 have an impact on | phr. | affect | Social media **has an impact on** how we think.
@@ -2178,11 +2078,7 @@ fulfil a need | phr. | provide what is needed | Libraries **fulfil an important 
 widen the gap | phr. | make a difference bigger | Private tutoring **widens the gap** between rich and poor.
 bridge the gap | phr. | reduce a difference | Free laptops can help **bridge the gap**.
 set an example | phr. | behave in a way others should copy | Parents should **set an example** for their children.
-```
-
-## Opinions and argument (Writing Task 2)
-
-```words
+# Opinions and argument (Writing Task 2)
 in my view | phr. | I think | **In my view**, the benefits outweigh the drawbacks.
 in my opinion | phr. | I believe | **In my opinion**, education should be free.
 I firmly believe | phr. | I am sure | **I firmly believe** that every child deserves a good education.
@@ -2232,11 +2128,7 @@ this essay will discuss | phr. | this essay will examine | **This essay will dis
 a number of factors | phr. | several causes | A **number of factors** explain this trend.
 weigh up | phr. v. | consider carefully | We need to **weigh up** the costs and benefits.
 by doing so | phr. | in this way | **By doing so**, cities can cut traffic.
-```
-
-## Personality and feelings (Speaking)
-
-```words
+# Personality and feelings (Speaking)
 easy-going | adj. | relaxed and not easily upset | My father is very **easy-going**.
 outgoing | adj. | friendly and liking to meet people | She is **outgoing** and makes friends easily.
 sociable | adj. | enjoying being with others | He is **sociable** and loves parties.

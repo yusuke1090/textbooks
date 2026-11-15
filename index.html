@@ -185,14 +185,26 @@ main { padding-bottom: 30px; }
 #body .ls-script p { margin: 4px 0; }
 .ls-script p.on { background: var(--accent-soft); border-radius: 4px; }
 .ls-script b { margin-right: 6px; }
-.wtool { position: sticky; top: var(--barh, 58px); z-index: 5; margin: 10px -4px 12px; padding: 8px 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,.06); }
-.wt-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-.wt-row button { padding: 5px 11px; font: inherit; font-size: 13px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; white-space: nowrap; }
-.wt-row button[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); font-weight: bold; }
-.wt-row .wn { display: inline-block; min-width: 1.4em; margin-left: 2px; padding: 0 5px; border-radius: 999px; background: var(--accent); color: var(--panel); font-size: 12px; text-align: center; }
-.wt-q { flex: 1 1 140px; min-width: 0; padding: 5px 10px; font: inherit; font-size: 16px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; }
-.wt-msg { margin: 6px 2px 0; font-size: 13px; color: var(--muted); }
-.wl { margin: 6px 0 22px; border: 1px solid var(--border); border-radius: 10px; background: var(--panel); overflow: hidden; }
+.wbk { margin: 10px 0 24px; }
+.wtool { position: sticky; top: var(--barh, 58px); z-index: 5; display: flex; flex-wrap: wrap; align-items: center; gap: 6px; margin: 0 -4px 12px; padding: 8px 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,.06); }
+.wtool button { padding: 5px 11px; font: inherit; font-size: 13px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; white-space: nowrap; }
+.wtool button[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); font-weight: bold; }
+.wn { display: inline-block; min-width: 1.4em; margin-left: 2px; padding: 0 5px; border-radius: 999px; background: var(--accent); color: var(--panel); font-size: 12px; font-weight: bold; text-align: center; }
+.wt-q { flex: 1 1 150px; min-width: 0; padding: 5px 12px; font: inherit; font-size: 16px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; }
+.wgrp { margin: 18px 2px 8px; font-size: 13px; font-weight: bold; color: var(--accent); }
+.wgrp:first-child { margin-top: 4px; }
+.wtopics { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
+.wtp { display: flex; flex-direction: column; gap: 6px; min-height: 76px; padding: 10px 12px; font: inherit; text-align: left; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; }
+.wtp:hover { border-color: var(--accent); }
+.wtp.last { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
+.wtp b { font-size: 14px; line-height: 1.45; }
+.wtp small { display: flex; gap: 8px; margin-top: auto; font-size: 12px; color: var(--muted); }
+.wtp small .c { color: var(--accent); font-weight: bold; }
+.whd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 2px 2px 10px; }
+.whd h3 { margin: 0 !important; font-size: 17px; }
+.whd span { font-size: 13px; color: var(--muted); }
+.wmsg { padding: 18px 14px; font-size: 14px; color: var(--muted); text-align: center; background: var(--panel); border: 1px dashed var(--border); border-radius: 10px; }
+.wl { border: 1px solid var(--border); border-radius: 10px; background: var(--panel); overflow: hidden; }
 .wr { display: flex; gap: 10px; padding: 9px 12px 10px 8px; border-top: 1px solid var(--border); }
 .wr:first-child { border-top: 0; }
 .wr.chk { background: var(--accent-soft); }
@@ -202,7 +214,8 @@ main { padding-bottom: 30px; }
 .wb { flex: 1; min-width: 0; }
 .wh { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
 .ww { font-size: 17px; }
-.wp { padding: 0 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.wp, .wtag { padding: 0 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.wtag { border-style: dashed; }
 .ws { margin-left: auto; padding: 0 4px; border: 0; background: none; font-size: 15px; cursor: pointer; opacity: .7; }
 .ws:hover { opacity: 1; }
 #body .wm { margin-top: 2px; font-size: 15px; line-height: 1.6; }
@@ -210,6 +223,11 @@ main { padding-bottom: 30px; }
 #body .we strong { color: var(--text); }
 #body.wl-hide .wr:not(.open) .wm, #body.wl-hide .wr:not(.open) .we { filter: blur(6px); opacity: .6; user-select: none; }
 #body.wl-hide .wr:not(.open) .wb { cursor: pointer; }
+.wpg { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 6px; margin: 14px 0 6px; }
+.wpg button { min-width: 38px; padding: 6px 10px; font: inherit; font-size: 14px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; }
+.wpg button[aria-current="page"] { color: var(--panel); background: var(--accent); border-color: var(--accent); font-weight: bold; }
+.wpg button:disabled { opacity: .35; cursor: default; }
+.wnext { display: block; width: 100%; margin-top: 8px; padding: 10px 12px; font: inherit; font-size: 14px; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 10px; cursor: pointer; }
 .term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
 .pager { display: flex; justify-content: space-between; gap: 10px; margin: 36px 0 10px; }
 .pager button { font-size: 14px; padding: 10px 14px; border-radius: 10px; cursor: pointer; max-width: 48%;
@@ -349,18 +367,22 @@ li > .sticky-bar { margin-top: 4px; }
           qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え",
           lsTitle: "🔊 音声", lsPlay: "▶ 再生", lsStop: "■ 止める", lsSlow: "ゆっくり", lsShow: "スクリプトを見る", lsHide: "スクリプトを隠す",
           lsNone: "この端末では読み上げが使えません",
-          wAll: "すべて", wChk: "✓ 見直す", wHide: "意味を隠す", wQ: "単語・意味で探す", wMark: "あとで見直す（チェック）",
+          wTopics: "☰ 話題", wChk: "✓ 見直す", wHide: "意味を隠す", wQ: "単語・意味で探す", wMark: "あとで見直す（チェック）",
           wSay: "発音を聞く", wNone: "まだチェックした単語はありません。わからない単語の ○ を押すと、ここに集まります。",
-          wHit: "件", wNoHit: "見つかりません" },
+          wNoHit: "見つかりません", wWords: "語", wBack: "← 話題の一覧", wPrev: "◀ 前", wNextP: "次 ▶", wNextT: "次の話題へ",
+          wChkTitle: "✓ チェックした単語", wFound: "の検索結果",
+          wFirst: "最初の話題へ" },
     en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", close: "Close",
           copy: "Copy", copied: "Copied",
           fig: "Fig. ", load: "Loading…", loadErr: "Could not load",
           qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer",
           lsTitle: "🔊 Audio", lsPlay: "▶ Play", lsStop: "■ Stop", lsSlow: "Slower", lsShow: "Show script", lsHide: "Hide script",
           lsNone: "Speech is not available on this device",
-          wAll: "All", wChk: "✓ Review", wHide: "Hide meanings", wQ: "Search words or meanings", wMark: "Mark to review",
+          wTopics: "☰ Topics", wChk: "✓ Review", wHide: "Hide meanings", wQ: "Search words or meanings", wMark: "Mark to review",
           wSay: "Hear it", wNone: "No words marked yet. Tap the ○ next to a word you don't know to collect it here.",
-          wHit: "found", wNoHit: "No matches" },
+          wNoHit: "No matches", wWords: "words", wBack: "← All topics", wPrev: "◀ Prev", wNextP: "Next ▶", wNextT: "Next topic",
+          wChkTitle: "✓ Marked words", wFound: ": search results",
+          wFirst: "Back to the first topic" },
   };
 
   const params = new URLSearchParams(location.search);
@@ -674,27 +696,39 @@ li > .sticky-bar { margin-top: 4px; }
       + `<button type="button" class="ls-show">${t(show ? "lsHide" : "lsShow")}</button></div>`
       + `<div class="ls-script"${show ? "" : " hidden"}>${script}</div></div>`;
   }
-  // 単語帳（```words、1行に「単語 | 品詞 | 意味 | 例文」）。○ でチェック（あとで見直す）、上の欄で絞りこみ・意味を隠す・探す
-  function wordsTool() {
-    return `<div class="wtool"><div class="wt-row"><button type="button" data-wf="all" aria-pressed="true">${t("wAll")}</button>`
-      + `<button type="button" data-wf="chk" aria-pressed="false">${t("wChk")} <span class="wn">0</span></button>`
+  // 単語帳（```words）。「## まとまり」「# 話題」の行と、1行に「単語 | 品詞 | 意味 | 例文」。
+  // 画面には話題の一覧（カード）を出し、話題を選ぶと 20語ずつのページで見せる（initWords・drawWords）
+  let wordBook = null;
+  function wordsBox(lines) {
+    const groups = [], topics = [], all = [];
+    const key = (w, ex) => { let h = 5381; for (const c of ex) h = (h * 33 + c.charCodeAt(0)) >>> 0; return w.toLowerCase() + "#" + h.toString(36); };
+    for (const l of lines) {
+      let m;
+      if (!l.trim()) continue;
+      if ((m = l.match(/^##\s+(.*)$/))) { groups.push({ name: m[1], topics: [] }); continue; }
+      if ((m = l.match(/^#\s+(.*)$/))) {
+        if (!groups.length) groups.push({ name: "", topics: [] });
+        topics.push({ name: m[1], rows: [] });
+        groups[groups.length - 1].topics.push(topics.length - 1);
+        continue;
+      }
+      if (!topics.length) topics.push({ name: "", rows: [] });
+      const [w = "", pos = "", mean = "", ex = ""] = l.split(/\s+\|\s+/);
+      const r = { w, pos, mean, ex, k: key(w, ex), t: topics.length - 1, low: (w + " " + mean).toLowerCase() };
+      topics[topics.length - 1].rows.push(r);
+      all.push(r);
+    }
+    if (!groups.length) groups.push({ name: "", topics: topics.map((_, i) => i) });
+    wordBook = { groups, topics, all };
+    return `<div class="wbk"><div class="wtool"><button type="button" data-wv="home">${t("wTopics")}</button>`
+      + `<button type="button" data-wv="chk">${t("wChk")} <span class="wn">0</span></button>`
       + `<button type="button" class="wt-hide" aria-pressed="false">${t("wHide")}</button>`
       + `<input type="search" class="wt-q" placeholder="${t("wQ")}" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"></div>`
-      + `<p class="wt-msg" hidden></p></div>`;
-  }
-  function wordsHtml(lines) {
-    const rows = lines.filter((l) => l.trim()).map((l) => l.split(/\s+\|\s+/));
-    // チェックの鍵は「単語＋例文」（例文は日本語版と英語版で同じ。同じつづりで品詞がちがう言葉を分けるため）
-    const key = (w, ex) => { let h = 5381; for (const c of ex) h = (h * 33 + c.charCodeAt(0)) >>> 0; return w.toLowerCase() + "#" + h.toString(36); };
-    return `<div class="wl">` + rows.map(([w = "", pos = "", mean = "", ex = ""]) => `<div class="wr" data-w="${esc(w.toLowerCase())}" data-k="${esc(key(w, ex))}">`
-      + `<button type="button" class="wc" aria-pressed="false" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
-      + `<div class="wb"><div class="wh"><b class="ww">${esc(w)}</b><span class="wp">${esc(pos)}</span>`
-      + `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button></div>`
-      + `<div class="wm">${inline(mean)}</div><div class="we">${inline(ex)}</div></div></div>`).join("") + `</div>`;
+      + `<div class="wmain"></div></div>`;
   }
   function render(src, prefix) {
     const lines = src.replace(/\r\n/g, "\n").split("\n"), out = [], codes = [];
-    let i = 0, m, fig = 0, qn = 0, ln = 0, wn = 0;
+    let i = 0, m, fig = 0, qn = 0, ln = 0;
     const isSep = (l) => /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(l);
     const cells = (l) => l.trim().replace(/^\|/, "").replace(/(?<!\\)\|$/, "").split(/(?<!\\)\|/).map((c) => c.trim().replace(/\\\|/g, "|"));
     while (i < lines.length) {
@@ -706,11 +740,7 @@ li > .sticky-bar { margin-top: 4px; }
         i++;
         if (cl === "quiz") { const q = quizHtml(code, qn); qn += q.n; out.push(q.html); continue; }
         if (cl === "listen") { ln++; out.push(listenHtml(code, ln, flags.includes("show"))); continue; }
-        if (cl === "words") {
-          if (!wn++) out.splice(/^<h[23]/.test(out[out.length - 1] || "") ? out.length - 1 : out.length, 0, wordsTool());   // 操作の欄は、最初の話題の見出しの前に
-          out.push(wordsHtml(code));
-          continue;
-        }
+        if (cl === "words") { out.push(wordsBox(code)); continue; }
         codes.push(code.join("\n"));
         const run = flags.includes("run") && (cl === "python" || cl === "cpp");
         out.push(`<div class="codeblock${run ? " run" : ""}"><div class="cb-head"><span class="grow">${esc(codeLabel(cl, flags))}</span>`
@@ -925,6 +955,7 @@ li > .sticky-bar { margin-top: 4px; }
     catch (e) { body.innerHTML = `<p class="msg err">${t("loadErr")}（${esc(e.message)}）</p>`; return; }
     if (seq !== showSeq) return;
     const r = render(md, figPrefix(ch));
+    if (!/```words/.test(md)) wordBook = null;
     body.innerHTML = r.html;
     codes = r.codes;
     initWords();
@@ -1592,47 +1623,79 @@ li > .sticky-bar { margin-top: 4px; }
     });
   }
 
-  // ---------- 単語帳のチェック・絞りこみ ----------
-  const WORDS_KEY = () => "textbooks-words-" + book.id;   // チェックした単語（小文字）の一覧。日本語版と英語版で同じ
+  // ---------- 単語帳: 話題の一覧・20語ずつのページ・チェック・見直す・探す ----------
+  const WORDS_KEY = () => "textbooks-words-" + book.id;          // チェックした単語の鍵（単語＋例文）。日本語版と英語版で同じ
+  const WVIEW_KEY = () => "textbooks-words-view-" + book.id;     // 最後に見ていた話題とページ
+  const WPAGE = 20;
   const wordSet = () => { try { return new Set(JSON.parse(store.get(WORDS_KEY(), "[]"))); } catch (e) { return new Set(); } };
+  let wv = { v: "home", t: 0, p: 0, q: "" };
   function initWords() {
-    const tool = body.querySelector(".wtool");
-    if (!tool) return;
+    const box = body.querySelector(".wbk");
+    if (!box || !wordBook) return;
     body.style.setProperty("--barh", bar.offsetHeight + "px");
-    const set = wordSet();
-    body.querySelectorAll(".wr").forEach((r) => {
-      const on = set.has(r.dataset.k);
-      r.classList.toggle("chk", on);
-      r.querySelector(".wc").setAttribute("aria-pressed", on);
-    });
+    let saved = null;
+    try { saved = JSON.parse(store.get(WVIEW_KEY(), "null")); } catch (e) { saved = null; }
+    wv = { v: saved && saved.v === "topic" ? "topic" : saved && saved.v === "chk" ? "chk" : "home",
+           t: Math.min(Math.max(0, saved ? saved.t | 0 : 0), wordBook.topics.length - 1), p: saved ? saved.p | 0 : 0, q: "", last: saved ? saved.last : null };
     const hide = store.get("textbooks-words-hide") === "1";
     body.classList.toggle("wl-hide", hide);
-    tool.querySelector(".wt-hide").setAttribute("aria-pressed", hide);
-    filterWords();
+    box.querySelector(".wt-hide").setAttribute("aria-pressed", hide);
+    drawWords();
   }
-  function filterWords() {
-    const tool = body.querySelector(".wtool");
-    if (!tool) return;
-    const onlyChk = tool.querySelector('[data-wf="chk"]').getAttribute("aria-pressed") === "true";
-    const q = tool.querySelector(".wt-q").value.trim().toLowerCase();
-    let shown = 0, chk = 0;
-    body.querySelectorAll(".wl").forEach((wl) => {
-      let any = false;
-      wl.querySelectorAll(".wr").forEach((r) => {
-        const c = r.classList.contains("chk");
-        if (c) chk++;
-        const ok = (!onlyChk || c) && (!q || r.dataset.w.includes(q) || r.querySelector(".wm").textContent.toLowerCase().includes(q));
-        r.hidden = !ok;
-        if (ok) { any = true; shown++; }
-      });
-      wl.hidden = !any;
-      const h = wl.previousElementSibling;
-      if (h && /^H[23]$/.test(h.tagName)) h.hidden = !any;
-    });
-    tool.querySelector(".wn").textContent = chk;
-    const msg = tool.querySelector(".wt-msg");
-    msg.textContent = onlyChk && !chk ? t("wNone") : q ? (shown ? `${shown} ${t("wHit")}` : t("wNoHit")) : "";
-    msg.hidden = !msg.textContent;
+  function wordRow(r, set, tag) {
+    const on = set.has(r.k);
+    return `<div class="wr${on ? " chk" : ""}" data-k="${esc(r.k)}"><button type="button" class="wc" aria-pressed="${on}" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
+      + `<div class="wb"><div class="wh"><b class="ww">${esc(r.w)}</b><span class="wp">${esc(r.pos)}</span>`
+      + (tag ? `<span class="wtag">${esc(wordBook.topics[r.t].name.replace(/\s*[（(:：].*$/, ""))}</span>` : "")
+      + `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button></div>`
+      + `<div class="wm">${inline(r.mean)}</div><div class="we">${inline(r.ex)}</div></div></div>`;
+  }
+  function pager(n) {
+    const pages = Math.ceil(n / WPAGE);
+    if (pages <= 1) return "";
+    let h = `<div class="wpg"><button type="button" data-wp="${wv.p - 1}"${wv.p ? "" : " disabled"}>${t("wPrev")}</button>`;
+    for (let k = 0; k < pages; k++) h += `<button type="button" data-wp="${k}"${k === wv.p ? ' aria-current="page"' : ""}>${k + 1}</button>`;
+    return h + `<button type="button" data-wp="${wv.p + 1}"${wv.p < pages - 1 ? "" : " disabled"}>${t("wNextP")}</button></div>`;
+  }
+  function drawWords() {
+    const box = body.querySelector(".wbk");
+    if (!box || !wordBook) return;
+    const set = wordSet(), main = box.querySelector(".wmain"), W = wordBook;
+    box.querySelector('[data-wv="home"]').setAttribute("aria-pressed", wv.v === "home" || wv.v === "topic");
+    box.querySelector('[data-wv="chk"]').setAttribute("aria-pressed", wv.v === "chk");
+    box.querySelector(".wn").textContent = W.all.filter((r) => set.has(r.k)).length;
+    if (wv.v === "home") {
+      main.innerHTML = W.groups.map((g) => (g.name ? `<p class="wgrp">${esc(g.name)}</p>` : "") + `<div class="wtopics">`
+        + g.topics.map((i) => {
+          const tp = W.topics[i], c = tp.rows.filter((r) => set.has(r.k)).length;
+          return `<button type="button" class="wtp${wv.last === i ? " last" : ""}" data-wt="${i}"><b>${esc(tp.name)}</b>`
+            + `<small><span>${tp.rows.length} ${t("wWords")}</span>${c ? `<span class="c">✓ ${c}</span>` : ""}</small></button>`;
+        }).join("") + `</div>`).join("");
+    } else {
+      let rows, title, tag = true;
+      if (wv.v === "topic") { rows = W.topics[wv.t].rows; title = W.topics[wv.t].name; tag = false; }
+      else if (wv.v === "chk") { rows = W.all.filter((r) => set.has(r.k)); title = t("wChkTitle"); }
+      else { const q = wv.q.toLowerCase(); rows = W.all.filter((r) => r.low.includes(q)); title = `「${esc(wv.q)}」${t("wFound")}`; }
+      const pages = Math.max(1, Math.ceil(rows.length / WPAGE));
+      wv.p = Math.min(Math.max(0, wv.p), pages - 1);
+      const from = wv.p * WPAGE, part = rows.slice(from, from + WPAGE);
+      const range = rows.length ? `${from + 1}–${from + part.length} / ${rows.length} ${t("wWords")}` : "";
+      let h = `<div class="whd"><h3>${title}</h3><span>${range}</span></div>`;
+      if (!rows.length) h += `<p class="wmsg">${wv.v === "chk" ? t("wNone") : t("wNoHit")}</p>`;
+      else h += `<div class="wl">${part.map((r) => wordRow(r, set, tag)).join("")}</div>` + pager(rows.length);
+      if (wv.v === "topic" && wv.p === pages - 1) {
+        const nt = (wv.t + 1) % W.topics.length;
+        h += `<button type="button" class="wnext" data-wt="${nt}">${nt ? `${t("wNextT")}: ${esc(W.topics[nt].name)} ▶` : t("wFirst") + " ▶"}</button>`;
+      }
+      if (wv.v !== "topic") h += `<button type="button" class="wnext" data-wv="home">${t("wBack")}</button>`;
+      main.innerHTML = h;
+    }
+    if (wv.v === "topic") wv.last = wv.t;
+    if (wv.v !== "search") store.set(WVIEW_KEY(), JSON.stringify({ v: wv.v, t: wv.t, p: wv.p, last: wv.last }));
+  }
+  function wordsTop() {
+    const box = body.querySelector(".wbk");
+    if (box) window.scrollTo(0, Math.max(0, box.getBoundingClientRect().top + scrollY - bar.offsetHeight - 6));
   }
   function sayWord(word) {
     if (!speech) { toast(t("lsNone")); return; }
@@ -1646,24 +1709,29 @@ li > .sticky-bar { margin-top: 4px; }
     speech.speak(u);
   }
   function wordsClick(e) {
+    if (!e.target.closest(".wbk")) return false;
     const c = e.target.closest(".wc");
-    if (c) {
+    if (c) {   // チェックを付ける・外す（見直すの画面でも、ページを変えるまでは行を残す）
       const r = c.closest(".wr"), set = wordSet(), on = !r.classList.contains("chk");
       if (on) set.add(r.dataset.k); else set.delete(r.dataset.k);
       store.set(WORDS_KEY(), JSON.stringify([...set]));
       r.classList.toggle("chk", on);
       c.setAttribute("aria-pressed", on);
-      const tool = body.querySelector(".wtool");
-      if (tool) tool.querySelector(".wn").textContent = body.querySelectorAll(".wr.chk").length;
+      body.querySelector(".wbk .wn").textContent = wordBook.all.filter((x) => set.has(x.k)).length;
       return true;
     }
     const s = e.target.closest(".ws");
     if (s) { sayWord(s.closest(".wr").querySelector(".ww").textContent.replace(/\(.*?\)/g, "").replace(/\b(sth|sb)\b/g, "")); return true; }
-    const f = e.target.closest("[data-wf]");
-    if (f) {
-      body.querySelectorAll("[data-wf]").forEach((b) => b.setAttribute("aria-pressed", b === f));
-      filterWords();
-      return true;
+    const go = (v) => { Object.assign(wv, v); drawWords(); wordsTop(); return true; };
+    const tp = e.target.closest("[data-wt]");
+    if (tp) { body.querySelector(".wt-q").value = ""; return go({ v: "topic", t: +tp.dataset.wt, p: 0, q: "" }); }
+    const pg = e.target.closest("[data-wp]");
+    if (pg && !pg.disabled) return go({ p: +pg.dataset.wp });
+    const vb = e.target.closest("[data-wv]");
+    if (vb) {
+      body.querySelector(".wt-q").value = "";
+      if (vb.dataset.wv === "chk" && wv.v === "chk") return go(wv.last != null ? { v: "topic", t: wv.last, p: 0, q: "" } : { v: "home", p: 0, q: "" });   // もう一度押すと、前の話題へ戻る
+      return go({ v: vb.dataset.wv, p: 0, q: "" });
     }
     const h = e.target.closest(".wt-hide");
     if (h) {
@@ -1680,7 +1748,14 @@ li > .sticky-bar { margin-top: 4px; }
   }
   let wqTimer = 0;
   body.addEventListener("input", (e) => {
-    if (e.target.classList.contains("wt-q")) { clearTimeout(wqTimer); wqTimer = setTimeout(filterWords, 150); }
+    if (!e.target.classList.contains("wt-q")) return;
+    clearTimeout(wqTimer);
+    wqTimer = setTimeout(() => {
+      const q = e.target.value.trim();
+      if (q) Object.assign(wv, { v: "search", q, p: 0 });
+      else if (wv.v === "search") Object.assign(wv, { v: "home", q: "", p: 0 });
+      drawWords();
+    }, 200);
   });
 
   // ---------- 練習問題の答え合わせ ----------

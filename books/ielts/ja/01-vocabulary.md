@@ -122,19 +122,17 @@ Reading と Listening の問題は、本文と**ちがう言葉で言いかえ�
 | percent / percentage | 数の後ろは percent（20 **percent**）、数のないときは percentage（a large **percentage**） |
 | information / research / equipment | 数えられない名詞。× informations、× researches、× equipments |
 
-## 単語帳の使い方
+## 単語帳
 
-- この単語帳には、IELTS のバンド7 に役立つ言葉が **2,017 語**あります。28 の話題に分け、品詞・意味・例文を付けました
-- 品詞の記号: **名** 名詞、**動** 動詞、**形** 形容詞、**副** 副詞、**句** いくつかの語のまとまり、**句動** 句動詞（動詞＋副詞・前置詞）、**接** 接続詞、**前** 前置詞、**慣** 慣用句
-- 例文の太字が、その言葉です。動詞の形（-s・-ed・-ing）や名詞の複数形は、文に合わせて変えています。`sth` は something（何か）、`sb` は somebody（だれか）の略です
-- わからなかった単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」を押すと、チェックした単語だけが出ます（覚えたら、もう一度押して外す）。チェックはこの端末のブラウザに残ります
-- 「**意味を隠す**」で意味と例文がぼやけます。単語を見て意味を言えるか試し、押すと出ます
-- 「単語・意味で探す」に英語か日本語を入れると、その言葉をふくむ単語だけが出ます。🔊 で発音を聞けます
-- 1日に1つの話題を目安に、例文ごと声に出して読みます。目次の ▶ から、話題の所へ飛べます
-
-## 学術の動詞（調べる・示す・論じる）
+- IELTS のバンド7 に役立つ言葉 **2,017 語**を、28 の話題に分けました。品詞・意味・例文つきです
+- 下の一覧で話題を選ぶと、**20語ずつ**のページで出ます。下の番号で次のページへ、最後のページの「次の話題へ」で続けられます。次に開いたときは、前に見ていた所から始まります
+- わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを全部の話題から集めて出します（覚えたら、もう一度押して外す）
+- 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。🔊 で発音、「単語・意味で探す」で全部の話題から探せます
+- 品詞の記号: **名** 名詞、**動** 動詞、**形** 形容詞、**副** 副詞、**句** いくつかの語のまとまり、**句動** 句動詞、**接** 接続詞、**前** 前置詞、**慣** 慣用句。例文の太字がその言葉で、`sth` は something、`sb` は somebody の略です
 
 ```words
+## 学術の言葉
+# 学術の動詞（調べる・示す・論じる）
 analyse | 動 | 分析する | Researchers **analysed** data from over 2,000 farms.
 assess | 動 | 評価する、見積もる | Vets **assess** each cow's health every month.
 evaluate | 動 | 評価する | The study **evaluates** three teaching methods.
@@ -264,11 +262,7 @@ verify | 動 | 確かめる | The data must be **verified** by an expert.
 confirm | 動 | 確認する、裏付ける | Tests **confirmed** that the water was clean.
 advocate | 動 | 支持する、提唱する | Many doctors **advocate** a sugar tax.
 propose | 動 | 提案する | The council **proposed** a new cycle lane.
-```
-
-## 学術の名詞（考え・理由・結果）
-
-```words
+# 学術の名詞（考え・理由・結果）
 approach | 名 | 取り組み方、方法 | We need a new **approach** to recycling.
 aspect | 名 | 側面 | Cost is an important **aspect** of the decision.
 assumption | 名 | 前提、思い込み | The plan is based on the **assumption** that prices will rise.
@@ -382,11 +376,7 @@ stage | 名 | 段階 | The project is at an early **stage**.
 phase | 名 | 段階、局面 | The first **phase** of the plan is complete.
 extent | 名 | 程度、範囲 | To what **extent** do you agree?
 degree | 名 | 程度、学位 | There is a high **degree** of risk.
-```
-
-## 説明と評価の形容詞
-
-```words
+# 説明と評価の形容詞
 significant | 形 | 重要な、かなりの | There has been a **significant** rise in house prices.
 substantial | 形 | かなりの、相当な | The project received **substantial** funding.
 considerable | 形 | かなりの | It took a **considerable** amount of time.
@@ -514,11 +504,7 @@ long-term | 形 | 長期的な | We need **long-term** solutions.
 short-term | 形 | 短期的な | Cutting taxes is only a **short-term** fix.
 sustainable | 形 | 持続可能な | We need **sustainable** sources of energy.
 affordable | 形 | 手ごろな値段の | There is a shortage of **affordable** housing.
-```
-
-## 副詞（程度・確かさ・態度）
-
-```words
+# 副詞（程度・確かさ・態度）
 significantly | 副 | 大きく、著しく | Costs have fallen **significantly**.
 considerably | 副 | かなり | The new model is **considerably** cheaper.
 substantially | 副 | 大幅に | Profits rose **substantially** last year.
@@ -590,11 +576,8 @@ financially | 副 | 財政的に | The scheme is **financially** sustainable.
 economically | 副 | 経済的に | The region is **economically** weak.
 socially | 副 | 社会的に | It is not **socially** acceptable.
 environmentally | 副 | 環境面で | Electric cars are more **environmentally** friendly.
-```
-
-## 教育と学び
-
-```words
+## 話題ごとの言葉
+# 教育と学び
 curriculum | 名 | 教育課程、カリキュラム | Coding is now part of the school **curriculum**.
 syllabus | 名 | 授業の内容の計画、シラバス | The **syllabus** covers modern history.
 tuition fees | 句 | 授業料 | Rising **tuition fees** discourage some students from applying.
@@ -678,11 +661,7 @@ faculty | 名 | 学部、教員全体 | She joined the **Faculty** of Agricultur
 semester | 名 | 学期 | The **semester** starts in April.
 timetable | 名 | 時間割 | The **timetable** changes each term.
 term | 名 | 学期 | The summer **term** ends in July.
-```
-
-## 環境と気候
-
-```words
+# 環境と気候
 climate change | 句 | 気候変動 | **Climate change** threatens food production.
 global warming | 句 | 地球温暖化 | **Global warming** is melting the ice caps.
 greenhouse gas | 句 | 温室効果ガス | Methane is a powerful **greenhouse gas**.
@@ -773,11 +752,7 @@ consumption | 名 | 消費（量） | Energy **consumption** rises in winter.
 consumerism | 名 | 大量消費主義 | **Consumerism** leads to more waste.
 packaging | 名 | 包装 | Supermarkets are reducing plastic **packaging**.
 upcycle | 動 | アップサイクルする | She **upcycles** old clothes into bags.
-```
-
-## エネルギーと資源
-
-```words
+# エネルギーと資源
 renewable energy | 句 | 再生可能エネルギー | **Renewable energy** now supplies a third of the country's power.
 solar power | 句 | 太陽光発電 | **Solar power** is cheap in sunny regions.
 solar panel | 句 | ソーラーパネル | Many farms have **solar panels** on their barns.
@@ -826,11 +801,7 @@ intermittent | 形 | 断続的な | Wind power is **intermittent**.
 self-sufficient | 形 | 自給自足の | The farm is **self-sufficient** in energy.
 carbon capture | 句 | 炭素回収 | **Carbon capture** is still expensive.
 emission-free | 形 | 排出のない | Electric buses are **emission-free** on the street.
-```
-
-## テクノロジーとインターネット
-
-```words
+# テクノロジーとインターネット
 technology | 名 | 技術、テクノロジー | **Technology** has changed how we work.
 technological | 形 | 技術の | **Technological** progress creates new jobs.
 innovation | 名 | 技術革新、新しい工夫 | Government funding can encourage **innovation**.
@@ -907,11 +878,7 @@ encryption | 名 | 暗号化 | **Encryption** keeps messages private.
 malfunction | 動 | 故障する | The robot **malfunctioned** during milking.
 glitch | 名 | ちょっとした不具合 | A **glitch** caused the website to crash.
 crash | 動 | （システムが）止まる | The computer **crashed** and I lost my work.
-```
-
-## 科学と研究
-
-```words
+# 科学と研究
 research | 名 | 研究 | **Research** shows that sleep improves memory.
 researcher | 名 | 研究者 | **Researchers** interviewed 500 farmers.
 experiment | 名 | 実験 | The **experiment** was repeated three times.
@@ -981,11 +948,7 @@ cutting-edge research | 句 | 最先端の研究 | The university is known for *
 ethics | 名 | 倫理 | Animal research raises questions of **ethics**.
 animal testing | 句 | 動物実験 | **Animal testing** for cosmetics is banned in the EU.
 clone | 動 | クローンを作る | Scientists **cloned** a sheep in 1996.
-```
-
-## 健康と医療
-
-```words
+# 健康と医療
 healthcare | 名 | 医療、保健 | **Healthcare** is free in many European countries.
 healthcare system | 句 | 医療制度 | An ageing population puts pressure on the **healthcare system**.
 public health | 句 | 公衆衛生 | Smoking is a major **public health** problem.
@@ -1060,11 +1023,7 @@ ageing | 名 | 老化、高齢化 | Exercise slows the effects of **ageing**.
 disability | 名 | 障害 | Buildings must be accessible to people with **disabilities**.
 injury | 名 | けが | Sports **injuries** are common among teenagers.
 epidemiology | 名 | 疫学 | **Epidemiology** helps us plan for pandemics.
-```
-
-## 食べ物と栄養
-
-```words
+# 食べ物と栄養
 diet | 名 | 食事、食生活 | A **diet** high in sugar is unhealthy.
 nutrient | 名 | 栄養素 | Vegetables are rich in **nutrients**.
 nutritious | 形 | 栄養のある | Milk is a **nutritious** drink.
@@ -1122,11 +1081,7 @@ supply chain | 句 | 供給網 | The drought disrupted the **supply chain**.
 retailer | 名 | 小売業者 | Big **retailers** control milk prices.
 supermarket | 名 | スーパーマーケット | **Supermarkets** sell milk below cost.
 farmers' market | 句 | 生産者が直接売る市場 | We buy vegetables at the **farmers' market**.
-```
-
-## 仕事と働き方
-
-```words
+# 仕事と働き方
 employment | 名 | 雇用 | Tourism provides **employment** for local people.
 unemployment | 名 | 失業 | **Unemployment** is high among young people.
 unemployment rate | 句 | 失業率 | The **unemployment rate** fell to 3% last year.
@@ -1205,11 +1160,7 @@ discrimination | 名 | 差別 | Age **discrimination** is illegal.
 harassment | 名 | 嫌がらせ | Workplace **harassment** must be reported.
 burnt out | 形 | 燃え尽きた | Many doctors feel **burnt out**.
 motivated | 形 | やる気のある | **Motivated** staff are more productive.
-```
-
-## 経済とビジネス
-
-```words
+# 経済とビジネス
 economy | 名 | 経済 | The **economy** grew by 2% last year.
 economic growth | 句 | 経済成長 | **Economic growth** slowed during the crisis.
 recession | 名 | 景気後退 | Many businesses closed during the **recession**.
@@ -1291,11 +1242,7 @@ downsize | 動 | 縮小する（人員を） | The bank **downsized** its branch
 expand overseas | 句 | 海外に進出する | The company plans to **expand overseas**.
 logistics | 名 | 物流 | **Logistics** costs rose with fuel prices.
 infrastructure | 名 | 社会基盤、インフラ | Poor **infrastructure** limits growth.
-```
-
-## お金と暮らし
-
-```words
+# お金と暮らし
 afford | 動 | 買う余裕がある | Many young people cannot **afford** a house.
 affordable housing | 句 | 手ごろな値段の住宅 | Young people struggle to find **affordable housing**.
 expense | 名 | 費用、出費 | Childcare is a major **expense**.
@@ -1345,11 +1292,7 @@ invest | 動 | 投資する | It is wise to **invest** for retirement.
 squander | 動 | 浪費する | He **squandered** his savings on gambling.
 spending | 名 | 支出 | Public **spending** on transport has increased.
 price rise | 句 | 値上がり | **Price rises** hit poorer families hardest.
-```
-
-## 政治・法律・犯罪
-
-```words
+# 政治・法律・犯罪
 government | 名 | 政府 | The **government** announced new taxes.
 authority | 名 | 当局、権限 | Local **authorities** run the schools.
 policy | 名 | 政策、方針 | The **policy** aims to reduce waste.
@@ -1436,11 +1379,7 @@ sanction | 名 | 制裁 | **Sanctions** were placed on the regime.
 national security | 句 | 国家の安全保障 | The law was passed for **national security**.
 legal system | 句 | 法制度 | The **legal system** is slow.
 law-abiding | 形 | 法を守る | Most citizens are **law-abiding**.
-```
-
-## 社会・家族・人口
-
-```words
+# 社会・家族・人口
 society | 名 | 社会 | Technology has changed **society**.
 community | 名 | 地域社会 | Local festivals bring the **community** together.
 population | 名 | 人口 | The **population** of Tokyo is about 14 million.
@@ -1510,11 +1449,7 @@ taboo | 名 | タブー | Mental illness is still a **taboo** subject.
 etiquette | 名 | 礼儀作法 | Table **etiquette** differs between countries.
 volunteer work | 句 | ボランティアの仕事 | **Volunteer work** looks good on a CV.
 civic | 形 | 市民の | Voting is a **civic** duty.
-```
-
-## 都市・住まい・交通
-
-```words
+# 都市・住まい・交通
 urbanisation | 名 | 都市化 | Rapid **urbanisation** has led to housing shortages.
 urban sprawl | 句 | 都市の無秩序な拡大 | **Urban sprawl** destroys farmland.
 metropolis | 名 | 大都市 | Tokyo is a huge **metropolis**.
@@ -1594,11 +1529,7 @@ construction | 名 | 建設 | **Construction** of the new line will take five ye
 high-speed rail | 句 | 高速鉄道 | **High-speed rail** is an alternative to flying.
 airport expansion | 句 | 空港の拡張 | Residents oppose **airport expansion**.
 emission zone | 句 | 排出規制区域 | Diesel cars pay to enter the **emission zone**.
-```
-
-## メディアと広告
-
-```words
+# メディアと広告
 media | 名 | メディア、報道機関 | The **media** has a strong influence on opinion.
 mass media | 句 | マスメディア | The **mass media** shapes public opinion.
 journalism | 名 | 報道、ジャーナリズム | Good **journalism** holds the powerful to account.
@@ -1649,11 +1580,7 @@ digital media | 句 | デジタルメディア | **Digital media** has overtaken
 information overload | 句 | 情報過多 | Social media causes **information overload**.
 echo chamber | 句 | エコーチェンバー（同じ意見ばかりの環境） | Social media can become an **echo chamber**.
 fact-check | 動 | 事実を確認する | Journalists **fact-check** claims made by politicians.
-```
-
-## 文化・芸術・旅行
-
-```words
+# 文化・芸術・旅行
 culture | 名 | 文化 | Food is an important part of **culture**.
 the arts | 句 | 芸術（全体） | Governments should fund the **arts**.
 artistic | 形 | 芸術的な | She has **artistic** talent.
@@ -1720,11 +1647,7 @@ amateur | 形 | アマチュアの | He plays in an **amateur** band.
 cinema | 名 | 映画館、映画 | Fewer people go to the **cinema** now.
 box office | 句 | 興行成績、切符売り場 | The film was a **box office** hit.
 subtitles | 名 | 字幕 | I watch films with **subtitles**.
-```
-
-## スポーツと余暇
-
-```words
+# スポーツと余暇
 athlete | 名 | 運動選手 | Professional **athletes** train every day.
 athletic | 形 | 運動の得意な | He is very **athletic**.
 professional | 形 | プロの、専門的な | She became a **professional** footballer.
@@ -1763,11 +1686,7 @@ grassroots sport | 句 | 地域のスポーツ | More funding should go to **gra
 physical education | 句 | 体育 | **Physical education** should be compulsory.
 competitive spirit | 句 | 闘争心 | Sport develops a **competitive spirit**.
 team spirit | 句 | 団結心 | The players showed great **team spirit**.
-```
-
-## 農業・酪農・動物
-
-```words
+# 農業・酪農・動物
 agriculture | 名 | 農業 | **Agriculture** employs a third of the workforce.
 agricultural | 形 | 農業の | **Agricultural** land is being lost to housing.
 farming | 名 | 農業、農作業 | **Farming** is hard physical work.
@@ -1850,11 +1769,7 @@ instinct | 名 | 本能 | Cows have a strong herd **instinct**.
 captivity | 名 | 飼育、とらわれの身 | Animals in **captivity** may suffer stress.
 zoo | 名 | 動物園 | **Zoos** help protect endangered species.
 pet | 名 | ペット | **Pets** can reduce stress.
-```
-
-## 自然・地理・天気
-
-```words
+# 自然・地理・天気
 landscape | 名 | 景色、風景 | The **landscape** is dotted with farms.
 terrain | 名 | 地形 | The **terrain** is too steep for tractors.
 continent | 名 | 大陸 | Africa is the second largest **continent**.
@@ -1912,11 +1827,8 @@ natural phenomenon | 句 | 自然現象 | A rainbow is a **natural phenomenon**.
 erosion | 名 | 浸食 | Coastal **erosion** threatens homes.
 sea ice | 句 | 海氷 | Arctic **sea ice** is shrinking.
 permafrost | 名 | 永久凍土 | Thawing **permafrost** releases gases.
-```
-
-## 数と変化（Writing Task 1）
-
-```words
+## Writing と Speaking で使う言葉
+# 数と変化（Writing Task 1）
 rise | 動 | 上がる | Milk prices **rose** by 10% in 2022.
 increase | 動 | 増える | The number of visitors **increased** steadily.
 grow | 動 | 伸びる、成長する | Online sales **grew** rapidly.
@@ -1978,11 +1890,7 @@ upward trend | 句 | 上昇傾向 | There was an **upward trend** in sales.
 downward trend | 句 | 下降傾向 | The chart shows a **downward trend**.
 projected | 形 | 予測された | The **projected** figure for 2030 is 50%.
 is expected to | 句 | 〜すると予想される | The population is **expected to** fall.
-```
-
-## 話すときの言い方と慣用句（Speaking）
-
-```words
+# 話すときの言い方と慣用句（Speaking）
 to be honest | 句 | 正直に言うと | **To be honest**, I'm not much of a cook.
 as far as I know | 句 | 私の知る限りでは | **As far as I know**, the shop opens at nine.
 as far as I'm concerned | 句 | 私に関して言えば | **As far as I'm concerned**, health is more important than money.
@@ -2042,11 +1950,7 @@ on the other hand | 句 | 一方で | **On the other hand**, city life is stress
 a big fan of | 句 | 〜の大ファン | I'm a **big fan of** Japanese food.
 from time to time | 句 | ときどき | I go hiking **from time to time**.
 every now and then | 句 | ときどき | **Every now and then**, I cook for my friends.
-```
-
-## 句動詞
-
-```words
+# 句動詞
 bring about | 句動 | 引き起こす、もたらす | The internet **brought about** huge changes.
 bring up | 句動 | 育てる、話題に出す | She was **brought up** on a farm.
 carry out | 句動 | 実行する | Researchers **carried out** a survey.
@@ -2113,11 +2017,7 @@ try out | 句動 | 試してみる | Farmers can **try out** new machines at the
 cut back on | 句動 | 削減する | Families are **cutting back on** luxuries.
 opt for | 句動 | 〜を選ぶ | Many people **opt for** public transport.
 stick to | 句動 | 守る、続ける | It is hard to **stick to** a diet.
-```
-
-## よく使うコロケーション
-
-```words
+# よく使うコロケーション
 pose a threat | 句 | 脅威をもたらす | Rising sea levels **pose a threat** to coastal cities.
 raise awareness | 句 | 関心を高める | The campaign aims to **raise awareness** of food waste.
 have an impact on | 句 | 〜に影響を与える | Social media **has an impact on** how we think.
@@ -2178,11 +2078,7 @@ fulfil a need | 句 | 必要を満たす | Libraries **fulfil an important need*
 widen the gap | 句 | 差を広げる | Private tutoring **widens the gap** between rich and poor.
 bridge the gap | 句 | 差を埋める | Free laptops can help **bridge the gap**.
 set an example | 句 | 手本を示す | Parents should **set an example** for their children.
-```
-
-## 意見と論じ方（Writing Task 2）
-
-```words
+# 意見と論じ方（Writing Task 2）
 in my view | 句 | 私の考えでは | **In my view**, the benefits outweigh the drawbacks.
 in my opinion | 句 | 私の意見では | **In my opinion**, education should be free.
 I firmly believe | 句 | 私は強く信じる | **I firmly believe** that every child deserves a good education.
@@ -2232,11 +2128,7 @@ this essay will discuss | 句 | 本稿では〜を論じる | **This essay will 
 a number of factors | 句 | いくつかの要因 | A **number of factors** explain this trend.
 weigh up | 句動 | 比較検討する | We need to **weigh up** the costs and benefits.
 by doing so | 句 | そうすることで | **By doing so**, cities can cut traffic.
-```
-
-## 人柄と気持ち（Speaking）
-
-```words
+# 人柄と気持ち（Speaking）
 easy-going | 形 | のんびりした、おおらかな | My father is very **easy-going**.
 outgoing | 形 | 社交的な | She is **outgoing** and makes friends easily.
 sociable | 形 | 人付き合いのよい | He is **sociable** and loves parties.
