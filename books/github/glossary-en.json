@@ -128,5 +128,9 @@
   "$ github.vscode-pull-request-github": "The name (ID) of the \"GitHub Pull Requests\" extension. Handles Pull Requests and Issues inside VS Code.",
   "$ ms-vscode-remote.remote-ssh": "The name (ID) of the \"Remote - SSH\" extension. Opens folders on a machine you connect to with ssh (Raspberry Pi, Jetson) in VS Code on your PC.",
   "$ git --soft": "git reset --soft HEAD~1 undoes only the last commit. The changes stay on the stage (the same as VS Code's Undo Last Commit).",
-  "$ git HEAD~1": "HEAD is the commit you are on, and ~1 means one before it. HEAD~1 means \"the commit just before the current one\"."
+  "$ git HEAD~1": "HEAD is the commit you are on, and ~1 means one before it. HEAD~1 means \"the commit just before the current one\".",
+
+  "$ apt update": "Refreshes the list of software (which versions are available). Do it before apt install",
+  "$ ls -l": "Lists files in detail (permissions, size, date and time)",
+  "$ .": "Loads a settings file into the current terminal (the same as source)"
 }

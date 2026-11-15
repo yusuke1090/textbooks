@@ -15,7 +15,8 @@
       "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。",
       "en": "From getting started with Ubuntu and VS Code: values, containers, branching and loops, functions, files, exceptions, classes, and on to NumPy, pandas and matplotlib."
     },
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "cpp",
@@ -33,7 +34,8 @@
       "ja": "Ubuntu と VS Code（g++）で、変数・条件分岐・関数・ポインタから、クラス・継承・テンプレート・例外まで。『やさしいC++ 第5版』の学習ノートがもと。付録に Python との対応表。",
       "en": "With g++ and VS Code on Ubuntu: variables, branching, functions and pointers, on to classes, inheritance, templates and exceptions. Based on my study notes on Easy C++ (5th edition). The appendix compares Python and C++."
     },
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "pico",
@@ -96,7 +98,8 @@
       "en": "From variance, correlation, probability distributions and expected values to the central limit theorem, regression analysis (OLS) and its pitfalls (multicollinearity and omitted variable bias)."
     },
     "math": true,
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "linalg",
@@ -131,7 +134,8 @@
       "en": "Regression, classification, preprocessing and dimensionality reduction, clustering, feature engineering and model evaluation with scikit-learn. Based on my study notes on Introduction to Machine Learning with Python."
     },
     "math": true,
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "github",
@@ -168,7 +172,8 @@
       "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。",
       "en": "Using Docker with VS Code: running containers, Dockerfiles, volumes and environment variables, Compose, Dev Containers, Raspberry Pi and Jetson."
     },
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "cow",
