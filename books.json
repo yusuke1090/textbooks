@@ -14,7 +14,8 @@
     "desc": {
       "ja": "Ubuntu と VS Code で始めるところから。値・入れ物・条件分岐と繰り返し・関数・ファイル・例外・クラス、そして NumPy・pandas・matplotlib まで。",
       "en": "From getting started with Ubuntu and VS Code: values, containers, branching and loops, functions, files, exceptions, classes, and on to NumPy, pandas and matplotlib."
-    }
+    },
+    "glossary": "glossary.json"
   },
   {
     "id": "cpp",
@@ -31,7 +32,8 @@
     "desc": {
       "ja": "Ubuntu と VS Code（g++）で、変数・条件分岐・関数・ポインタから、クラス・継承・テンプレート・例外まで。『やさしいC++ 第5版』の学習ノートがもと。付録に Python との対応表。",
       "en": "With g++ and VS Code on Ubuntu: variables, branching, functions and pointers, on to classes, inheritance, templates and exceptions. Based on my study notes on Easy C++ (5th edition). The appendix compares Python and C++."
-    }
+    },
+    "glossary": "glossary.json"
   },
   {
     "id": "pico",
@@ -69,7 +71,8 @@
     },
     "note": {
       "ja": "実機を飛ばす前に、必ずシミュレーションで試し、12章の安全と法律を確かめてください。"
-    }
+    },
+    "glossary": "glossary.json"
   },
   {
     "id": "stats",
@@ -87,7 +90,8 @@
       "ja": "分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点（多重共線性・欠落変数バイアス）まで。",
       "en": "From variance, correlation, probability distributions and expected values to the central limit theorem, regression analysis (OLS) and its pitfalls (multicollinearity and omitted variable bias)."
     },
-    "math": true
+    "math": true,
+    "glossary": "glossary.json"
   },
   {
     "id": "linalg",
@@ -102,7 +106,8 @@
     "desc": {
       "ja": "ベクトル・行列・逆行列・掃き出し法・行列式から、ベクトル空間・線形写像・固有値と対角化・対称行列まで。例題を1つずつ解きながら進む、大学1〜2年のレベル。最小二乗法と主成分分析とのつながりも。"
     },
-    "math": true
+    "math": true,
+    "glossary": "glossary.json"
   },
   {
     "id": "ml",
@@ -120,7 +125,8 @@
       "ja": "scikit-learn で、回帰・分類・前処理と次元削減・クラスタリング・特徴量エンジニアリング・モデルの評価まで。『Pythonではじめる機械学習』の学習ノートがもと。",
       "en": "Regression, classification, preprocessing and dimensionality reduction, clustering, feature engineering and model evaluation with scikit-learn. Based on my study notes on Introduction to Machine Learning with Python."
     },
-    "math": true
+    "math": true,
+    "glossary": "glossary.json"
   },
   {
     "id": "github",
@@ -156,7 +162,8 @@
     "desc": {
       "ja": "VS Code で Docker を使う。コンテナを動かす、Dockerfile、ボリュームと環境変数、Compose、Dev Containers、ラズパイと Jetson。",
       "en": "Using Docker with VS Code: running containers, Dockerfiles, volumes and environment variables, Compose, Dev Containers, Raspberry Pi and Jetson."
-    }
+    },
+    "glossary": "glossary.json"
   },
   {
     "id": "cow",

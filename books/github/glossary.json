@@ -128,5 +128,9 @@
   "$ github.vscode-pull-request-github": "拡張機能「GitHub Pull Requests」の名前（ID）。Pull Request と Issue を VS Code の中で扱う。",
   "$ ms-vscode-remote.remote-ssh": "拡張機能「Remote - SSH」の名前（ID）。ssh でつないだ機械（ラズパイ・Jetson）のフォルダを、PC の VS Code で開く。",
   "$ git --soft": "語源: soft は「やわらかい」という意味の英単語。\ngit reset --soft HEAD~1 で、直前のコミットだけを取り消す。変えた内容はステージに残る（VS Code の Undo Last Commit と同じ）。",
-  "$ git HEAD~1": "HEAD は今いるコミット、~1 はその1つ前。HEAD~1 で「直前のコミットの1つ前」を表す。"
+  "$ git HEAD~1": "HEAD は今いるコミット、~1 はその1つ前。HEAD~1 で「直前のコミットの1つ前」を表す。",
+
+  "$ apt update": "ソフトの一覧（どの版があるか）を新しくする。apt install の前にする",
+  "$ ls -l": "ファイルの一覧を、くわしく（権限・大きさ・日時）出す",
+  "$ .": "設定のファイルを、いまのターミナルに読み込む（source と同じ）"
 }

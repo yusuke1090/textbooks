@@ -921,13 +921,13 @@ li > .sticky-bar { margin-top: 4px; }
       const v = glossary["$ " + c];
       if (typeof v === "string") return { label: c.length > key.length ? c : tk, kind, text: v, code: true };
     }
-    return null;
+    return /[/.]/.test(tk) ? lookupAt(text, pos) : null;   // パスや型の名前（ardupilot_msgs/srv/ArmMotors）は、中の言葉で引く
   }
   function inlineLookup(text, pos) {
     const s = text.trim();
     if (/^#\s*include\b/.test(s)) return lookupAt(text, pos);
     const m = s.match(/^<([^<>\s]+)>$/);
-    return headerTip(m ? m[1] : s, s);
+    return headerTip(m ? m[1] : s, s) || lookupAt(text, pos);
   }
   function showTip(hit, x, y) {
     const m = hit.text.match(/^(語源|Origin): (.*)\n([\s\S]*)$/);
@@ -950,16 +950,34 @@ li > .sticky-bar { margin-top: 4px; }
     before.setStart(el, 0); before.setEnd(node, off);
     return before.toString().length;
   }
-  function codeTip(codeEl, e) {
-    if (!Object.keys(glossary).length) return false;
-    const pos = offsetAtPoint(codeEl, e.clientX, e.clientY);
-    if (pos < 0) return false;
+  // コードの pos 文字目の言葉の説明（なければ null）
+  function codeLookup(codeEl, pos) {
+    if (!Object.keys(glossary).length || pos < 0) return null;
     const text = codeEl.textContent, isBlock = !!codeEl.closest("pre");
     const shell = isBlock ? codeEl.classList.contains("sh") : isShellCommand(text);
-    const hit = shell ? shellLookup(text, pos) : isBlock ? lookupAt(text, pos) : inlineLookup(text, pos);
+    return shell ? shellLookup(text, pos) : isBlock ? lookupAt(text, pos) : inlineLookup(text, pos);
+  }
+  function codeTip(codeEl, e) {
+    const hit = codeLookup(codeEl, offsetAtPoint(codeEl, e.clientX, e.clientY));
     if (!hit) return false;
     showTip(hit, e.clientX, e.clientY);
     return true;
+  }
+  // 選んだ所がコードの中なら、その code 要素（コードとほかにまたがるときは null）
+  function codeOfRange(range) {
+    const el = (n) => (n.nodeType === 1 ? n : n.parentElement);
+    const a = el(range.startContainer).closest("pre code, code"), b = el(range.endContainer).closest("pre code, code");
+    return a && a === b ? a : null;
+  }
+  // コードの中で言葉を選んだら（ダブルクリック・長押し）、線やメモのボタンではなく、言葉の説明を出す
+  function selCodeTip(codeEl, range) {
+    const s = range.toString();
+    if (!s.trim() || /\s/.test(s.trim())) return hideTip();
+    const before = document.createRange();
+    before.setStart(codeEl, 0); before.setEnd(range.startContainer, range.startOffset);
+    const hit = codeLookup(codeEl, before.toString().length + (s.length - s.trimStart().length));
+    const r = range.getBoundingClientRect();
+    hit ? showTip(hit, r.left + 10, r.bottom - 8) : hideTip();
   }
   function termTip(el, e) {
     const tm = terms[+el.dataset.t];
@@ -1160,6 +1178,8 @@ li > .sticky-bar { margin-top: 4px; }
   function showSelBar() {
     const range = selRange();
     if (!range) { if (pop.dataset.kind === "sel") closePop(); return; }
+    const codeEl = codeOfRange(range);
+    if (codeEl) { if (pop.dataset.kind === "sel") closePop(); return selCodeTip(codeEl, range); }
     const a = rangeToAnchor(range);
     if (!a) return;
     if (a.exact.length > 3000) return toast("選んだ範囲が長すぎます（3000文字まで）");
