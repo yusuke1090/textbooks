@@ -317,5 +317,26 @@
     "note": {
       "ja": "話す人の数と国ごとの立場は、2026年11月に調べたものです。出典は付録C にあります。"
     }
+  },
+  {
+    "id": "ielts",
+    "icon": "🎓",
+    "group": "言葉",
+    "langs": [
+      "ja",
+      "en"
+    ],
+    "title": {
+      "ja": "IELTS の教科書（バンド7）",
+      "en": "IELTS Textbook (Band 7)"
+    },
+    "desc": {
+      "ja": "IELTS アカデミックでバンド7 をとるために。単語帳と、Writing・Reading・Speaking・Listening の解き方・模範解答・練習問題。Speaking と Listening は 🔊 で英文を聞ける。",
+      "en": "For Band 7 in IELTS Academic: a vocabulary list, plus how to tackle Writing, Reading, Speaking and Listening, with model answers and exercises. Speaking and Listening have 🔊 audio."
+    },
+    "note": {
+      "ja": "試験の形とスコアのしくみは、2026年11月の時点のものです。音声はブラウザの読み上げで、声は端末によってちがいます。",
+      "en": "The test format and scoring are as of November 2026. Audio uses your browser's speech, so voices differ by device."
+    }
   }
 ]

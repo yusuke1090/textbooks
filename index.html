@@ -178,6 +178,16 @@ main { padding-bottom: 30px; }
 #body .qz-res p { margin: 3px 0; }
 .qz-mark { font-weight: bold; }
 .qz.ok .qz-mark { color: var(--ok); } .qz.ng .qz-mark { color: var(--err); }
+.listen { margin: 12px 0 16px; padding: 10px 12px; border: 1px solid var(--border); border-left: 4px solid var(--accent); border-radius: 8px; background: var(--panel); }
+.ls-bar { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+.ls-bar b { margin-right: auto; font-size: 14px; }
+.ls-bar button { padding: 5px 12px; font: inherit; font-size: 13px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; cursor: pointer; }
+.ls-bar button.ls-play { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); }
+.ls-bar button[aria-pressed="true"] { border-color: var(--accent); color: var(--accent); }
+.ls-script { margin-top: 10px; padding-top: 6px; border-top: 1px dashed var(--border); }
+#body .ls-script p { margin: 4px 0; }
+.ls-script p.on { background: var(--accent-soft); border-radius: 4px; }
+.ls-script b { margin-right: 6px; }
 .term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
 .pager { display: flex; justify-content: space-between; gap: 10px; margin: 36px 0 10px; }
 .pager button { font-size: 14px; padding: 10px 14px; border-radius: 10px; cursor: pointer; max-width: 48%;
@@ -317,11 +327,15 @@ li > .sticky-bar { margin-top: 4px; }
     ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", footShelf: "📚 教科書の一覧", zoom: "　🔍 押すと拡大", close: "閉じる",
           zoomHint: "横にずらしたり、2本の指で広げて拡大したりできます。", copy: "コピー", copied: "コピーしました",
           fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした",
-          qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え" },
+          qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え",
+          lsTitle: "🔊 音声", lsPlay: "▶ 再生", lsStop: "■ 止める", lsSlow: "ゆっくり", lsShow: "スクリプトを見る", lsHide: "スクリプトを隠す",
+          lsNone: "この端末では読み上げが使えません" },
     en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", footShelf: "📚 All textbooks", zoom: "  🔍 tap to zoom", close: "Close",
           zoomHint: "Scroll sideways, or pinch with two fingers to zoom.", copy: "Copy", copied: "Copied",
           fig: "Fig. ", load: "Loading…", loadErr: "Could not load",
-          qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer" },
+          qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer",
+          lsTitle: "🔊 Audio", lsPlay: "▶ Play", lsStop: "■ Stop", lsSlow: "Slower", lsShow: "Show script", lsHide: "Hide script",
+          lsNone: "Speech is not available on this device" },
   };
 
   const params = new URLSearchParams(location.search);
@@ -619,9 +633,27 @@ li > .sticky-bar { margin-top: 4px; }
       + `<div class="qz-res" hidden><p class="qz-mark"></p><p><b>${t("qzAns")}:</b> ${inline(x.a[0] || "")}</p>${x.e ? `<p>${inline(x.e)}</p>` : ""}</div></div>`).join("");
     return { html: `<div class="quiz">${html}</div>`, n: qs.length };
   }
+  // 英文の読み上げ（```listen、題は最初の「# 題」の行）。「名前: 文」の行は、名前ごとに声を変える。
+  // スクリプトは「スクリプトを見る」を押すまで隠す（```listen show なら最初から見せる）
+  function listenHtml(lines, n, show) {
+    let title = "";
+    const rows = [];
+    for (const l of lines) {
+      if (!l.trim()) continue;
+      const h = l.match(/^#\s+(.*)$/);
+      if (h) { title = h[1]; continue; }
+      const m = l.match(/^([A-Z][\w .'-]{0,24}):\s+(.*)$/);
+      rows.push(m ? { who: m[1], text: m[2] } : { who: "", text: l.trim() });
+    }
+    const script = rows.map((r, k) => `<p data-k="${k}">${r.who ? `<b>${esc(r.who)}:</b>` : ""}${inline(r.text)}</p>`).join("");
+    return `<div class="listen" data-rows="${esc(JSON.stringify(rows))}"><div class="ls-bar"><b>${t("lsTitle")} ${n}${title ? "　" + inline(title) : ""}</b>`
+      + `<button type="button" class="ls-play">${t("lsPlay")}</button><button type="button" class="ls-slow" aria-pressed="false">${t("lsSlow")}</button>`
+      + `<button type="button" class="ls-show">${t(show ? "lsHide" : "lsShow")}</button></div>`
+      + `<div class="ls-script"${show ? "" : " hidden"}>${script}</div></div>`;
+  }
   function render(src, prefix) {
     const lines = src.replace(/\r\n/g, "\n").split("\n"), out = [], codes = [];
-    let i = 0, m, fig = 0, qn = 0;
+    let i = 0, m, fig = 0, qn = 0, ln = 0;
     const isSep = (l) => /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(l);
     const cells = (l) => l.trim().replace(/^\|/, "").replace(/(?<!\\)\|$/, "").split(/(?<!\\)\|/).map((c) => c.trim().replace(/\\\|/g, "|"));
     while (i < lines.length) {
@@ -632,6 +664,7 @@ li > .sticky-bar { margin-top: 4px; }
         while (i < lines.length && !/^```\s*$/.test(lines[i])) code.push(lines[i++]);
         i++;
         if (cl === "quiz") { const q = quizHtml(code, qn); qn += q.n; out.push(q.html); continue; }
+        if (cl === "listen") { ln++; out.push(listenHtml(code, ln, flags.includes("show"))); continue; }
         codes.push(code.join("\n"));
         const run = flags.includes("run") && (cl === "python" || cl === "cpp");
         out.push(`<div class="codeblock${run ? " run" : ""}"><div class="cb-head"><span class="grow">${esc(codeLabel(cl, flags))}</span>`
@@ -842,7 +875,7 @@ li > .sticky-bar { margin-top: 4px; }
     $("chTitle").textContent = L(ch.title, state.lang);
     $("prev").disabled = state.idx === 0;
     $("next").disabled = state.idx === chapters.length - 1;
-    closeDrops(); hideTip(); closePop();
+    closeDrops(); hideTip(); closePop(); stopSpeech();
     let md;
     try { md = await loadMd(state.idx, state.lang); }
     catch (e) { body.innerHTML = `<p class="msg err">${t("loadErr")}（${esc(e.message)}）</p>`; return; }
@@ -1466,6 +1499,56 @@ li > .sticky-bar { margin-top: 4px; }
     flash(els);
   });
 
+  // ---------- 英文の読み上げ ----------
+  const speech = window.speechSynthesis;
+  let speaking = null;
+  function englishVoices() {
+    const vs = speech ? speech.getVoices().filter((v) => /^en[-_]/i.test(v.lang)) : [];
+    const rank = (v) => (/GB/i.test(v.lang) ? 0 : /AU|IE|NZ/i.test(v.lang) ? 1 : /US/i.test(v.lang) ? 2 : 3);
+    return vs.sort((a, b) => rank(a) - rank(b) || (b.localService - a.localService));
+  }
+  if (speech) speech.getVoices();   // 声の一覧の読み込みを先に始めておく（Chrome は後から届く）
+  function stopSpeech() {
+    if (!speaking) return;
+    const box = speaking;
+    speaking = null;
+    speech.cancel();
+    box.querySelector(".ls-play").textContent = t("lsPlay");
+    box.querySelectorAll(".ls-script p.on").forEach((p) => p.classList.remove("on"));
+  }
+  function playListen(box) {
+    if (!speech) { toast(t("lsNone")); return; }
+    if (speaking === box) { stopSpeech(); return; }
+    stopSpeech();
+    let rows = [];
+    try { rows = JSON.parse(box.dataset.rows); } catch (e) { rows = []; }
+    const voices = englishVoices(), who = [];
+    rows.forEach((r) => { if (r.who && !who.includes(r.who)) who.push(r.who); });
+    const slow = box.querySelector(".ls-slow").getAttribute("aria-pressed") === "true";
+    const parts = [];
+    rows.forEach((r, k) => {
+      const i = Math.max(0, who.indexOf(r.who));
+      const voice = voices.length ? voices[i % voices.length] : null;
+      const pitch = voices.length > i ? 1 : [1, 0.8, 1.2, 0.9][i % 4];   // 声の数が足りないときは高さを変える
+      (r.text.match(/[^.!?]+[.!?]+["')]*\s*|[^.!?]+$/g) || [r.text]).forEach((x) => parts.push({ text: x.trim(), voice, pitch, k }));
+    });
+    speaking = box;
+    box.querySelector(".ls-play").textContent = t("lsStop");
+    parts.forEach((x, j) => {
+      const u = new SpeechSynthesisUtterance(x.text);
+      u.lang = x.voice ? x.voice.lang : "en-GB";
+      if (x.voice) u.voice = x.voice;
+      u.rate = slow ? 0.75 : 0.95;
+      u.pitch = x.pitch;
+      u.onstart = () => {
+        if (speaking !== box) return;
+        box.querySelectorAll(".ls-script p").forEach((p) => p.classList.toggle("on", +p.dataset.k === x.k));
+      };
+      if (j === parts.length - 1) u.onend = () => { if (speaking === box) stopSpeech(); };
+      speech.speak(u);
+    });
+  }
+
   // ---------- 練習問題の答え合わせ ----------
   // 全角・半角、大文字・小文字、カタカナ・ひらがな、空白や「」、などの記号、文の終わりの「です」のちがいは見ない。
   // 答えが数なら、入力の中の最初の数で比べる（「280日」「２８０」でもよい）
@@ -1569,6 +1652,16 @@ li > .sticky-bar { margin-top: 4px; }
   body.addEventListener("click", (e) => {
     const b = e.target.closest(".qz-btn");
     if (b) checkQuiz(b.closest(".qz"));
+    const ls = e.target.closest(".listen button");
+    if (!ls) return;
+    const box = ls.closest(".listen");
+    if (ls.classList.contains("ls-play")) playListen(box);
+    else if (ls.classList.contains("ls-slow")) ls.setAttribute("aria-pressed", ls.getAttribute("aria-pressed") === "true" ? "false" : "true");
+    else if (ls.classList.contains("ls-show")) {
+      const sc = box.querySelector(".ls-script");
+      sc.hidden = !sc.hidden;
+      ls.textContent = t(sc.hidden ? "lsShow" : "lsHide");
+    }
   });
   body.addEventListener("keydown", (e) => {
     if (e.key === "Enter" && !e.isComposing && e.target.classList.contains("qz-in")) { e.preventDefault(); checkQuiz(e.target.closest(".qz")); }
