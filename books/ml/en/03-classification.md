@@ -166,3 +166,23 @@ print("AUC:", roc_auc_score(y_test, lgbm.predict_proba(X_test)[:, 1]))
 - Decision trees are easy to explain but overfit easily. Random forests are robust thanks to the majority vote of many trees
 - Gradient boosting and LightGBM correct the mistakes of previous trees. Very accurate, but be careful with the settings
 - Try logistic regression and a random forest first, compare them, then fine-tune
+
+## Exercises
+
+```quiz
+Q: What is the width between the boundary and the nearest data points, which SVM maximizes?
+A: margin | the margin
+E: Standardization is a must for SVM.
+
+Q: Which model builds many decision trees and takes a majority vote?
+A: random forest | random forests
+E: It overfits less than a single tree.
+
+Q: When computing AUC, what do you pass instead of the labels from `predict`?
+A: probabilities | probability | predict_proba
+E: Logistic regression is a classifier that gives probabilities.
+
+Q: What method adds trees one by one, each fixing the errors of the last?
+A: gradient boosting | boosting
+E: LightGBM is in this family. It is accurate but needs careful settings.
+```

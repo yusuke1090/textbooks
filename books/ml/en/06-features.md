@@ -142,3 +142,23 @@ print("remaining features:", [n for n, s in zip(iris.feature_names, sel.get_supp
 - Scale continuous data; use dummy variables for categories. Binning lets a straight-line model express curved relationships
 - The index score is made from the share of the target. Calculate it from the training data only
 - Select features by looking at one at a time, by importance, stepwise (RFECV) or with L1 regularization. A person should check automatic results
+
+## Exercises
+
+```quiz
+Q: What do we call variables that turn categories into columns of 0 and 1?
+A: dummy variables | dummy | one-hot | dummies
+E: pandas `get_dummies` makes them.
+
+Q: What is splitting continuous values into ranges called?
+A: binning
+E: It lets a linear model show a curved relationship.
+
+Q: Which data do you use to compute a target-based score?
+A: training | training data | train
+E: Using the test answers leaks the answer.
+
+Q: Which scikit-learn class selects features by removing them one at a time with cross-validation?
+A: RFECV
+E: It is a stepwise method. People should check the automatic result.
+```

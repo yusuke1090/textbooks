@@ -120,3 +120,23 @@ print("weights that Lasso set to 0:", (lasso.coef_ == 0).sum())
 - Repeat: split → train → check → change features or settings
 - Evaluate linear regression with MSE and $R^2$
 - Holding the weights down with regularization (Ridge, Lasso) makes the model more robust to overfitting and multicollinearity. Lasso can select features
+
+## Exercises
+
+```quiz
+Q: Guessing a category is classification. What is guessing a number called?
+A: regression
+E: Predicting milk yield or a price is regression.
+
+Q: What is it called when a model fits the training data well but fails on new data?
+A: overfitting | over-fitting
+E: Regularization and fewer features help prevent it.
+
+Q: What three letters name the mean of squared errors used to judge regression?
+A: MSE | mean squared error
+E: Smaller is better. Look at $R^2$ too.
+
+Q: Which regularization can set weights to 0 and so select features: Ridge or Lasso?
+A: Lasso
+E: Lasso (L1) sets the weights of useless features to 0.
+```

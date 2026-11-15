@@ -128,3 +128,23 @@ X_tsne = TSNE(random_state=42).fit_transform(digits.data)
 - Fit scaling on the training data and apply the same transformation to the test data. Tree models do not need it
 - PCA combines features along the directions of largest variation. Standardize first
 - NMF splits data into parts of 0 or more. t-SNE is a two-dimensional map for looking at data and cannot be used on new data
+
+## Exercises
+
+```quiz
+Q: Do you `fit` a scaler on the training data or the test data?
+A: training | training data | train
+E: Fit on the training data, then apply the same transform to the test data.
+
+Q: What three letters name the method that summarizes data along the directions of greatest spread?
+A: PCA | principal component analysis
+E: Standardize first.
+
+Q: What three letters name the method that splits data into non-negative parts?
+A: NMF | non-negative matrix factorization
+E: It suits data made by adding parts together.
+
+Q: Which kind of model does not need scaling?
+A: tree | trees | tree-based | decision tree
+E: Decision trees and random forests only look at the order of values.
+```

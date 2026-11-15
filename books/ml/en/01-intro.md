@@ -111,3 +111,27 @@ In scikit-learn, every model is used in the same flow: **create it → learn wit
 - Look at the data first. Sometimes a summary is enough
 - Split the data into training and test sets, and check with the test set
 - scikit-learn follows the flow "create → fit → predict → score"
+
+## Exercises
+
+```quiz
+Q: What is machine learning from data with correct answers (labels) called?
+A: supervised learning | supervised
+E: Learning from data without answers is unsupervised learning.
+
+Q: Which scikit-learn method makes the model learn from data?
+A: fit | fit()
+E: The flow is "create → fit → predict → score".
+
+Q: Which method uses a trained model to guess answers for new data?
+A: predict | predict()
+E: `score` gives accuracy and similar measures.
+
+Q: Data is split into a training set and what other set to check the model?
+A: test | test set | testing
+E: You only learn the model's real ability on data it did not learn from.
+
+Q: What method guesses by a majority vote of the $k$ closest data points?
+A: k-nearest neighbors | k-nearest neighbours | kNN | k-NN | nearest neighbors
+E: We used it to classify irises.
+```

@@ -111,3 +111,23 @@ I reduced face images to 100 components with PCA and then tried the three method
 - Agglomerative clustering merges similar points one after another, and you can choose the number with the dendrogram
 - DBSCAN makes dense areas into clusters and also finds outliers. Standardize and tune `eps`
 - If you have answers, compare with ARI and NMI. If not, check by looking at the contents. It is good to try two or three methods and compare
+
+## Exercises
+
+```quiz
+Q: Which method groups data into $k$ clusters around their centers?
+A: k-means | kmeans
+E: It is good at round clusters, and you choose $k$ first.
+
+Q: In agglomerative clustering, what is the tree diagram of the merging order called?
+A: dendrogram
+E: You can pick the number of clusters from it.
+
+Q: Which method makes clusters from dense regions and also finds outliers?
+A: DBSCAN
+E: Standardize, then tune `eps`.
+
+Q: When true labels exist, name one three-letter measure for comparing them with the clusters.
+A: ARI | NMI
+E: Compare with ARI or NMI. Without labels, inspect the clusters yourself.
+```

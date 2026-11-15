@@ -178,3 +178,27 @@ f1_score(y_true, y_pred, average="macro")   # you can also choose "micro" or "we
 - For imbalanced data, look at precision, recall, F1 and AUC instead of accuracy. The true positive rate is the same as recall
 - AR value $= 2\,\text{AUC} - 1$. AIC balances fit against complexity
 - For multiclass, use macro, micro or weighted F1
+
+## Exercises
+
+```quiz
+Q: What method evaluates many different splits of the data to reduce luck?
+A: cross-validation | cross validation | CV
+E: Use grouped cross-validation when data comes in groups.
+
+Q: With 40 true positives and 10 false positives, what is the precision?
+A: 0.8 | 80% | 80
+E: Precision = 40 ÷ (40 + 10) = 0.8.
+
+Q: With 40 true positives and 60 false negatives, what is the recall?
+A: 0.4 | 40% | 40
+E: Recall = 40 ÷ (40 + 60) = 0.4. It equals the true positive rate.
+
+Q: If AUC is 0.8, what is the AR value (Gini coefficient)?
+A: 0.6
+E: AR = 2 × AUC − 1 = 0.6.
+
+Q: What method tries every combination of settings and picks the best?
+A: grid search | GridSearchCV
+E: Use the test data only once, at the very end.
+```
