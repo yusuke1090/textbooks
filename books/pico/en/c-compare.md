@@ -1,13 +1,5 @@
 # Appendix C. Comparing the Raspberry Pi and the Pico
 
-## What you will learn in this appendix
-
-- The differences between the Raspberry Pi, which runs Linux, and the Pico, a microcontroller
-- What tasks such as ssh, scp and systemd correspond to on the Pico
-- The differences between C++ on the Raspberry Pi and C++ on the Pico
-- Where Linux habits tend to trip you up
-- How to decide which one to use
-
 Here, "Raspberry Pi" means a board that runs Linux, such as the Raspberry Pi 4 or 5. A Jetson can be thought of in the same way.
 
 ## The biggest difference

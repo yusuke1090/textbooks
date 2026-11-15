@@ -1,12 +1,5 @@
 # 10. NumPy, and connections to statistics and machine learning
 
-## What you will learn in this chapter
-
-- Calculating with matrices in NumPy
-- Least squares (regression analysis) is "projection" and "the normal equations"
-- Principal component analysis is "the eigenvalues and eigenvectors of the variance–covariance matrix"
-- An outline of the singular value decomposition (SVD)
-
 Regression analysis (OLS) in the "Statistics Textbook" and dimensionality reduction (PCA) in the "Machine Learning Textbook" are built from the linear algebra in this textbook. The code was checked with NumPy 2.5 (for how to write Python, see the "Python Textbook").
 
 ## Calculating with matrices in NumPy

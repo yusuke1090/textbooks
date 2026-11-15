@@ -1,13 +1,5 @@
 # 10. Religion in Japan
 
-## What you will learn in this chapter
-
-- Do Japanese people believe in religion? (how to read the figures)
-- Shinto: the eight million kami and shrines
-- Japanese Buddhism: from its arrival to the Kamakura schools and the danka (temple-family) system
-- "Shinbutsu-shugo", worshipping kami and buddhas together, and their separation in the Meiji era
-- Christianity, new religions, and the events of the year
-
 ## Japanese religion in numbers
 
 | Survey | Figures |

@@ -1,12 +1,5 @@
 # 4. Operators
 
-## What you will learn
-
-- The four arithmetic operations, and a caution about integer division
-- Assignment operators and increments
-- Comparison and logical operators, and precedence
-- Converting types (casts)
-
 ## Expressions and operators
 
 Something that combines values and symbols, like `a + 5`, is called an **expression**. `+` is called an **operator**, and `a` and `5` are called **operands**.

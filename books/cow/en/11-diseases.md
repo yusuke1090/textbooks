@@ -1,13 +1,5 @@
 # 11. Transition diseases, feet and heat
 
-## What you will learn
-
-- Why many diseases happen around calving
-- The main transition diseases
-- Hoof and leg problems
-- Heat stress
-- Other diseases, and early warning signs
-
 ## The risky time around calving
 
 - The time from 3 weeks before to 3 weeks after calving is called the **transition period** (移行期, 周産期)

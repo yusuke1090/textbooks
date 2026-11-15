@@ -1,13 +1,5 @@
 # 12. Cow life and smart dairy farming
 
-## What you will learn
-
-- How a cow spends her day
-- Types of barns
-- A dairy farmer's day
-- What sensors and robots can tell us and do
-- What matters when using sensors
-
 ## A cow's day
 
 ![How a cow spends 24 hours](images/cow-day.svg)

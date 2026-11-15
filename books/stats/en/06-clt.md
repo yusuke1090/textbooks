@@ -1,12 +1,5 @@
 # 6. Sample mean, the law of large numbers and the central limit theorem
 
-## What you will learn
-
-- Population and sample
-- The expected value and variance of the sample mean (standard error)
-- The law of large numbers and the central limit theorem
-- Confidence intervals for a mean
-
 ## Population and sample
 
 The whole group you want to know about is called the **population**, and the part you actually take out and examine is called the **sample**. We usually do not know the population mean $\mu$ or variance $\sigma^2$, so we estimate them from the sample.

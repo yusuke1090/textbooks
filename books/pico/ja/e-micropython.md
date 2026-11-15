@@ -1,15 +1,5 @@
 # 付録E. MicroPython で手早く試す
 
-## この付録でわかること
-
-- MicroPython を使うとよい場面
-- ピコに MicroPython を書き込む方法
-- Pico Studio でコードを実行する・止める・保存する方法
-- よく使う書き方（LED・ボタン・ADC・I2C・MPU-6050）
-- MicroPython と C++ の書き方の対応
-- コマンド（mpremote）での操作
-- C++ のプログラムに戻す方法
-
 ## MicroPython を使うとよい場面
 
 **MicroPython** は、マイコン向けに小さくした Python です。書いたコードを送るとすぐ動くので、ビルドと書き込みを待たずに試せます。

@@ -1,13 +1,5 @@
 # 3. From seed rice to transplanting
 
-## What you will learn
-
-- Preparing the seed (salt-water selection, disinfection, soaking, sprouting)
-- How to raise seedlings (seedling trays, young and middle-aged seedlings, dense seedlings)
-- Plowing and puddling
-- How transplanting is done
-- Direct seeding
-
 There is a Japanese saying, ***nae-hansaku*** (苗半作): "the seedling is half the crop". If you raise good seedlings, you are already halfway to success.
 
 ## Preparing the seed

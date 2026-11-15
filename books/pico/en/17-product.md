@@ -1,14 +1,5 @@
 # 17. Getting ready to make a product
 
-## What you will learn
-
-- What differs between a prototype and a product
-- How to test the classification logic on a PC, even without a Pico
-- How to put a name and version into the program
-- How to stop and investigate line by line with a Debug Probe and gdb
-- How to flash many Picos, and a number for each unit
-- Ways to avoid trouble in the field, and a pre-shipping checklist
-
 This uses the content of Chapters 11–16, with the collar (Chapter 16) as the example.
 
 ## Differences between a prototype and a product

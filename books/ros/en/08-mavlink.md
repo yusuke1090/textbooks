@@ -1,12 +1,5 @@
 # 8. MAVLink and pymavlink
 
-## What you will learn in this chapter
-
-- How MAVLink works (messages, system IDs, heartbeats)
-- Commonly used messages and commands
-- Making a SITL vehicle take off, move and land with Python (pymavlink)
-- Telemetry radios, and splitting MAVLink to several places
-
 ## What is MAVLink?
 
 - **MAVLink** is a small, lightweight **communication protocol** for drones to talk with ground stations and companion computers. ArduPilot, PX4 and many ground stations use it

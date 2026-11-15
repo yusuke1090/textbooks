@@ -1,11 +1,5 @@
 # 5. Functions
 
-## What you will learn
-
-- How to make functions (def and return)
-- Ways to pass arguments (positional, keyword, default, variable-length)
-- Scope, type hints and lambda
-
 ## Making a function
 
 ```python

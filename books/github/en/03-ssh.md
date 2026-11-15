@@ -1,12 +1,5 @@
 # 3. Connecting to GitHub with an SSH key
 
-## What you will learn
-
-- Two ways to connect to GitHub (SSH keys and HTTPS)
-- How to make an SSH key and register it with GitHub
-- How to check that the connection works
-- How to switch a repository you used over HTTPS to SSH
-
 ## Choosing how to connect
 
 To clone a private repository or to push, your PC has to prove to GitHub that it is you. **Your GitHub password cannot be used** (it is refused if you type it). There are two ways.

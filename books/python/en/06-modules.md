@@ -1,11 +1,5 @@
 # 6. Modules, files and exceptions
 
-## What you will learn
-
-- Loading modules (import) and making your own module
-- Reading and writing files (text, CSV and JSON)
-- Catching exceptions (try and except), and common errors
-
 ## import
 
 This lets you use functions and other things written in another file.

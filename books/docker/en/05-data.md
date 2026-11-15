@@ -1,11 +1,5 @@
 # 5. Data and settings (volumes and environment variables)
 
-## What you will learn
-
-- How to keep data even when you remove a container (volumes and bind mounts)
-- Using a local folder from a container
-- Passing settings with environment variables and .env
-
 ## Two ways to keep data
 
 Files inside a container disappear when you remove the container (Chapter 3). Keep what you want to keep outside the container.

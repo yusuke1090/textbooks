@@ -1,12 +1,5 @@
 # 3. Judaism
 
-## What you will learn in this chapter
-
-- An overview of Judaism and its long history
-- The "covenant" with the one God, and the law (Torah)
-- The Sabbath, food rules and festivals
-- Links with Christianity and Islam
-
 ## Overview
 
 | Item | Details |

@@ -1,12 +1,5 @@
 # 10. Blood in milk
 
-## What you will learn
-
-- What blood in milk is
-- Why blood gets into milk
-- How to tell the causes apart
-- What to watch out for
-
 ## What is blood in milk?
 
 - **Blood in milk** (血乳, also called bloody milk): milk mixed with blood, so it looks pink to red. Sometimes blood clots come out too

@@ -1,13 +1,5 @@
 # 1. What is a dairy cow?
 
-## What you will learn
-
-- The difference between dairy cattle and beef cattle
-- Dairy breeds
-- Typical body size and milk yield
-- The life of a dairy cow
-- What kind of animal a cow is
-
 ## Dairy cattle and beef cattle
 
 | Type | Japanese | Purpose | Main breeds in Japan |

@@ -1,13 +1,5 @@
 # 8. Malawi
 
-## What you will learn
-
-- An overview of Malawi
-- Agriculture today (tobacco and corn)
-- Dairy today (small, but with room to grow)
-- IoT and agritech companies
-- If you were to enter
-
 ## The country at a glance
 
 ![Where Malawi is](images/malawi-map.jpg)

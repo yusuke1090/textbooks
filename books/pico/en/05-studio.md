@@ -1,13 +1,5 @@
 # 5. Checking the connection with Pico Studio
 
-## What you will learn
-
-- What Pico Studio does, and how to start it
-- How to check whether the Pico is connected and what is running on it
-- How to check whether the development environment is complete
-- How to see the `printf` output of a C++ program
-- How to fix things when it will not connect
-
 Pico Studio's screen is in Japanese, so this chapter gives each button's Japanese label followed by its meaning in English.
 
 ## What is Pico Studio?

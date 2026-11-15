@@ -1,12 +1,5 @@
 # 4. Services, parameters, actions and launch
 
-## What you will learn in this chapter
-
-- Writing a service (request → answer)
-- Parameters (a node's settings)
-- Actions (jobs that take time)
-- Starting many nodes together with a launch file
-
 ## Services
 
 - A topic "keeps flowing"; a **service** is an exchange of "ask once, get one answer"

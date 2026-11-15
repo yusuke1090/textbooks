@@ -1,12 +1,5 @@
 # 13. Constructors and static members
 
-## What you will learn
-
-- Constructors (initialization when an object is made) and destructors (cleanup when it disappears)
-- Overloading constructors, and initializer lists
-- Arrays of objects
-- Static members (shared by all objects)
-
 ## Constructors
 
 A function that is called automatically when an object is made. It is used to initialize members.

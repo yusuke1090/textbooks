@@ -1,11 +1,5 @@
 # 7. Dev Containers（コンテナの中で開発する）
 
-## この章でわかること
-
-- Dev Containers とは何か
-- devcontainer.json を作って、コンテナの中でフォルダを開く
-- 拡張機能・ライブラリ・ポートの設定、作り直し
-
 ## Dev Containers とは
 
 VS Code の **Dev Containers** 拡張機能を使うと、VS Code の画面は手元のまま、**フォルダをコンテナの中で開いて**開発できます。ターミナル・Python・コンパイラ・拡張機能が、全部コンテナの中で動きます。

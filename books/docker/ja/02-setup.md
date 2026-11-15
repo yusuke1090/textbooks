@@ -1,11 +1,5 @@
 # 2. 準備（Ubuntu と VS Code）
 
-## この章でわかること
-
-- Ubuntu に Docker を入れる
-- sudo なしで docker を使えるようにする
-- VS Code の拡張機能（Container Tools・Dev Containers）
-
 ## Docker を入れる
 
 Ubuntu のパッケージで入れるのが手軽です。

@@ -1,11 +1,5 @@
 # 0. How to use this book
 
-## What you will learn
-
-- What this book covers
-- Which order to read the chapters in
-- How to switch between Japanese and English
-
 ## About this book
 
 This book covers the basics of dairy cows (mostly Holsteins): their body, breeding, feed, milk, diseases and farm work.

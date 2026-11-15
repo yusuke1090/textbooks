@@ -1,12 +1,5 @@
 # 4. Culture and daily life
 
-## What you will learn
-
-- Ethnic groups, and ties of family and community
-- Greetings, time and clothing
-- Music, art, sports and film
-- Things to keep in mind when meeting for business
-
 ## Ethnic groups
 
 | Country | Ethnic groups |

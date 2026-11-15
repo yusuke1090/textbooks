@@ -1,13 +1,5 @@
 # 2. How the rice plant grows
 
-## What you will learn
-
-- The body of the rice plant (roots, stems, leaves, ears)
-- Measuring growth by the number of leaves (leaf age)
-- Tillering, panicle initiation, heading and grain filling
-- How yield is decided (yield components)
-- Cold damage and heat damage
-
 ## The body of the rice plant
 
 - Rice is a grass in the **grass family (Poaceae)**. Wheat, corn and barnyard millet are in the same family

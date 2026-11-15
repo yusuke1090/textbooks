@@ -1,11 +1,5 @@
 # 3. Variables and types
 
-## What you will learn
-
-- Declaring, assigning and initializing variables
-- The kinds of types and their sizes
-- How to read input from the keyboard (cin)
-
 ## Variables
 
 A box that holds a value is called a **variable**. In C++, before using one, you decide its **type** (the kind of value it holds) and its name (a **declaration**).

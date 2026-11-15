@@ -1,13 +1,5 @@
 # 9. Driving ArduPilot from ROS 2
 
-## What you will learn in this chapter
-
-- AP_DDS (the mechanism by which ArduPilot speaks ROS 2 directly)
-- Making a workspace and connecting SITL to ROS 2
-- ArduPilot's topics and services
-- Taking off, moving and landing with a Python node
-- The other method (MAVROS)
-
 ## How AP_DDS works
 
 ![How ArduPilot and ROS 2 connect](images/en/ardupilot-ros2.svg)

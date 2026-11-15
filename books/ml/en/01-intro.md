@@ -1,11 +1,5 @@
 # 1. What is machine learning? (classifying irises)
 
-## What you will learn
-
-- The problems machine learning can solve (supervised and unsupervised)
-- Getting to know your data before building a model
-- The basic flow of scikit-learn (classifying irises)
-
 This textbook is based on my [study notes](https://note.com/k_1090/n/nca53389e754b) on *Introduction to Machine Learning with Python* (Andreas C. Müller and Sarah Guido, O'Reilly). For how to write Python, see the "Python Textbook".
 
 ## Problems machine learning can solve

@@ -1,13 +1,5 @@
 # 2. Setting up the development environment
 
-## What you will learn
-
-- What you need to develop for the Pico in C++
-- How to install VS Code and the "Raspberry Pi Pico" extension
-- What the extension installs automatically, and where
-- How to get Pico Studio working
-- How to check that everything is in place
-
 These steps are for Ubuntu. You only do them once.
 
 ## What you need

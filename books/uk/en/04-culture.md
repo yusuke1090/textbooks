@@ -1,13 +1,5 @@
 # 4. Culture and daily life
 
-## What you will learn
-
-- Sports (football, rugby, cricket)
-- Music, literature and theater
-- Customs and manners
-- British English
-- The look of the towns (buses, the Underground, phone boxes)
-
 Many of the sports played around the world today — football, rugby, cricket, tennis, golf and others — got their rules in 19th-century Britain.
 
 ## Sports

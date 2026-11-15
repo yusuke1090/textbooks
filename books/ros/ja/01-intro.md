@@ -1,12 +1,5 @@
 # 1. ROS 2 と ArduPilot とは
 
-## この章でわかること
-
-- ROS 2 は何をするものか
-- ArduPilot は何をするものか
-- 2つを組み合わせると何ができるか
-- この教科書で使う環境（Ubuntu 24.04 と ROS 2 Jazzy）
-
 ## ROS 2
 
 - **ROS**（Robot Operating System、ロス）は、ロボットのプログラムを作るための**道具と部品のセット**です。名前に OS と付いていますが、Windows や Linux のような OS ではなく、Linux（Ubuntu）の上で動くライブラリとツールの集まりです

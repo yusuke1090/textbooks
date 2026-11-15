@@ -1,13 +1,5 @@
 # 6. From harvest to the dinner table
 
-## What you will learn
-
-- How to judge harvest time
-- Combines, drying, hulling and sorting
-- Rice inspection and grades
-- How rice is sold, and its price
-- The history of acreage reduction, and the Reiwa rice crisis
-
 ## Harvest time
 
 - The guide is an **accumulated temperature of about 1,000 °C** from heading, or about 40–45 days after heading

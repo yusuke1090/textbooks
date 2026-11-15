@@ -1,13 +1,5 @@
 # 7. Regression analysis and OLS
 
-## What you will learn
-
-- The regression model and the error term
-- The ordinary least squares (OLS) estimator
-- Properties of the residuals
-- The coefficient of determination $R^2$
-- Multiple regression and calculating it in Python
-
 ## Regression model
 
 A straight-line model that explains $y$ by $x$ is called a **simple regression model**.

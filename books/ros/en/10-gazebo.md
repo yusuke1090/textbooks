@@ -1,12 +1,5 @@
 # 10. Simulation with Gazebo
 
-## What you will learn in this chapter
-
-- What Gazebo is (and how it combines with SITL)
-- Installing ardupilot_gz and flying a drone in a 3D world
-- Viewing it in RViz at the same time
-- Rovers, cameras and your own worlds
-
 ## What is Gazebo?
 
 - **Gazebo** is a 3D robot simulator. It reproduces physics such as gravity, collisions and ground friction, and sensors such as cameras, LiDAR and IMUs, inside the computer

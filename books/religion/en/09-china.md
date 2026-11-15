@@ -1,11 +1,5 @@
 # 9. Confucianism and Taoism (China, Korea, Taiwan)
 
-## What you will learn in this chapter
-
-- The ideas of Confucianism and Taoism, born in China
-- How religion is part of daily life in China, South Korea and Taiwan
-- The relationship between today's China and religion
-
 ## Overview of East Asian religion
 
 - In East Asia, rather than believing in just one religion, it is normal to **use Confucianism, Taoism, Buddhism, ancestral rites and folk gods in different situations**

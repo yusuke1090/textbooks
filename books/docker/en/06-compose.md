@@ -1,11 +1,5 @@
 # 6. Docker Compose (several containers)
 
-## What you will learn
-
-- Describing several containers together in compose.yaml
-- Commands such as up, down and logs
-- Connecting containers to each other by name
-
 ## What is Compose?
 
 When you combine several containers, like a web app and a database, typing `docker run` many times with long options is tiring. **Docker Compose** is a tool that lets you write all of that in one file, `compose.yaml`, and run everything together with one command.

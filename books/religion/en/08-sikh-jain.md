@@ -1,11 +1,5 @@
 # 8. Sikhism and Jainism
 
-## What you will learn in this chapter
-
-- Two more religions born in India
-- Sikhism: one God, equality, the turban, free community kitchens
-- Jainism: taking "non-harming" of living beings to the utmost
-
 ## Sikhism
 
 ### Overview

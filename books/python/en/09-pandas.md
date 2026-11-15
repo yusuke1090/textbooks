@@ -1,12 +1,5 @@
 # 9. pandas (table data)
 
-## What you will learn
-
-- Series and DataFrame
-- Reading and writing CSV, and checking what is in the data
-- Taking out columns and rows, filtering by conditions, adding columns
-- Sorting, aggregating by group, missing values, joining tables
-
 pandas is a library for handling table data, like Excel, in Python.
 
 ```python

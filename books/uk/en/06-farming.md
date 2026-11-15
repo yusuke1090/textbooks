@@ -1,13 +1,5 @@
 # 6. Farming in the UK
 
-## What you will learn
-
-- British agriculture in numbers (compared with Japan)
-- Arable farming in the east, livestock in the west and north
-- The main crops (wheat, barley, oilseed rape, sugar beet, potatoes) and sheep
-- After EU subsidies (SFI), and the inheritance tax row
-- Current worries (drought, labor, money)
-
 ## In numbers
 
 | Item | UK | Japan |

@@ -1,12 +1,5 @@
 # 10. Large programs (scope, dynamic memory, splitting files)
 
-## What you will learn
-
-- Where a variable can be used (scope), and how long it lives (storage duration)
-- Dynamic memory (new and delete)
-- How to split a program into several files
-- Namespaces
-
 ## Scope
 
 The range where a variable can be used is called its **scope**.

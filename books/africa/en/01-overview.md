@@ -1,12 +1,5 @@
 # 1. An overview of Africa
 
-## What you will learn
-
-- Africa's size, number of countries and population
-- How the regions are divided, and the major landforms
-- Languages and religions
-- Groups of countries (AU, EAC, SADC and others)
-
 The first half of this textbook (Chapters 1–5) is about Africa as a whole, and the second half (Chapters 6–9) is about agriculture and dairy in Tanzania, Kenya and Malawi, IoT companies, and how you might enter the market.
 
 ## Africa in numbers

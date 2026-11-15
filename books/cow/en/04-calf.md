@@ -1,13 +1,5 @@
 # 4. Raising calves
 
-## What you will learn
-
-- What to do right after birth
-- Why colostrum is so important
-- Milk feeding and weaning
-- Common calf diseases
-- Raising heifers
-
 ## Right after birth
 
 - Check that the calf is breathing and that its nose and mouth are clear of fluid

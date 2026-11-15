@@ -1,12 +1,5 @@
 # 2. Values, variables and strings
 
-## What you will learn
-
-- Numbers, strings and true/false values, and how to calculate
-- How to create variables and name them
-- Working with strings, and f-strings
-- Input and converting types
-
 ## Printing to the screen, and comments
 
 ```python

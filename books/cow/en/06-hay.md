@@ -1,13 +1,5 @@
 # 6. Hay and grasses: timothy and alfalfa
 
-## What you will learn
-
-- The two groups of forage plants (grasses and legumes)
-- The features of timothy and alfalfa, and how they differ
-- Other roughages
-- How hay is made, and when to cut
-- How to tell good hay
-
 ## Two groups of forage plants
 
 | Group | Japanese | Features | Examples |

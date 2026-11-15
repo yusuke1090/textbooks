@@ -1,12 +1,5 @@
 # 2. Writing
 
-## What you will learn in this chapter
-
-- The Writing test format and the four marking criteria (what Band 7 looks like)
-- How to structure Task 1 (describing graphs, tables and diagrams), with a model answer
-- Task 2 (opinion essays): question types, structure and a model answer
-- How to write at Band 7, and common mistakes
-
 ## The Writing test
 
 | | Task 1 | Task 2 |

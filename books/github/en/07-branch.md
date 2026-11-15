@@ -1,10 +1,5 @@
 # 7. Trying things on a branch
 
-## What you will learn
-
-- How to try things on a separate branch and bring them into main
-- How to fix it when both sides changed the same place (a conflict)
-
 ## Making a branch
 
 When you want to try a big change (adding power saving, changing a sensor and so on) without breaking a working main, make a branch.

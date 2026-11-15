@@ -1,11 +1,5 @@
 # 5. Clustering
 
-## What you will learn
-
-- How k-means, agglomerative clustering and DBSCAN work and how to use them
-- The strengths and weaknesses of each
-- Evaluating clustering (ARI and others)
-
 Gathering similar data into groups (**clusters**) is called **clustering**. It is unsupervised learning, with no answers.
 
 ## k-means

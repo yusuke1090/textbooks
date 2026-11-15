@@ -1,12 +1,5 @@
 # 2. Four stomachs and rumination
 
-## What you will learn
-
-- What each of the four stomachs does
-- What rumination is, and why it matters
-- Rumen microbes, and how feed becomes milk
-- Rumen acidosis
-
 ## The four stomachs
 
 ![The four stomachs and the flow of feed](images/stomach.svg)

@@ -1,11 +1,5 @@
 # 3. Classification models
 
-## What you will learn
-
-- Typical models for binary classification and their features
-- Logistic regression, SVM, decision trees, random forests, gradient boosting and LightGBM
-- Multiclass classification and neural networks
-
 Predicting which of two classes something belongs to is called **binary classification** (defective or good, fraudulent transaction or not, benign or malignant). In this chapter, we compare models on scikit-learn's breast cancer data (whether a tumor is benign or malignant). The ROC curve and AUC used for evaluation are explained in detail in Chapter 7.
 
 ```python

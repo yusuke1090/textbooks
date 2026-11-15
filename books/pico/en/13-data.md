@@ -1,12 +1,5 @@
 # 13. Recording and sending data
 
-## What you will learn
-
-- Ways to keep measured data (comparing three methods)
-- Saving data in the Pico's flash and bringing it to the PC (in C++, saved in flash as raw numbers, then printed as CSV)
-- Sending data to the PC over USB serial and saving it on the PC side
-- Points to watch about memory and storage capacity
-
 ## Comparing the methods
 
 ![Three ways to keep measured data](images/en/data-paths.svg)

@@ -1,11 +1,5 @@
 # 1. How spread out data is (variance and standard deviation)
 
-## What you will learn
-
-- The mean and deviations
-- Total variation (sum of squared deviations), variance and standard deviation
-- The difference between variance divided by $n$ and unbiased variance divided by $n-1$
-
 This textbook is based on my study notes ([超基礎統計 (Very basic statistics)](https://note.com/k_1090/n/n920f21843b93) and [計量経済学の自分用まとめ (My econometrics summary)](https://note.com/k_1090/n/n98bcfaa3190b)), with explanations of the formulas and worked examples added. For how to write Python, see the "Python Textbook".
 
 ## Mean and deviation

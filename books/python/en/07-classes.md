@@ -1,12 +1,5 @@
 # 7. Classes
 
-## What you will learn
-
-- Classes and instances, `__init__` and `self`
-- Methods, and `__str__`
-- Inheritance and `super()`
-- dataclass
-
 ## What is a class?
 
 A **class** is a type that bundles data (**attributes**) with the functions that use it (**methods**). A concrete thing made from a class is called an **instance** (object).

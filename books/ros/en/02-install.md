@@ -1,13 +1,5 @@
 # 2. Installing ROS 2
 
-## What you will learn in this chapter
-
-- Installing ROS 2 Jazzy on Ubuntu 24.04
-- Making it usable with `source`
-- Checking that it works with turtlesim and the demos
-- The basics of the `ros2` command
-- Avoiding crosstalk with other robots on the same network (ROS_DOMAIN_ID)
-
 ## Installing
 
 These are the same steps as the official ROS 2 instructions (the Jazzy "Ubuntu (deb packages)" page on docs.ros.org).

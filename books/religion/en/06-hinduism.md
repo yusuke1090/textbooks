@@ -1,12 +1,5 @@
 # 6. Hinduism
 
-## What you will learn in this chapter
-
-- An overview of Hinduism and its many gods
-- The ideas of rebirth (samsara), karma and liberation (moksha)
-- Its relationship with the caste system
-- Festivals, rules of daily life, and links with Japan
-
 ## Overview
 
 | Item | Details |

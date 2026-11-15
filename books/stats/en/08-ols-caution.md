@@ -1,12 +1,5 @@
 # 8. Pitfalls of OLS (multicollinearity and omitted variable bias)
 
-## What you will learn
-
-- How the population regression relates to OLS on a sample
-- The assumptions OLS needs to work well, and the t values of coefficients
-- Multicollinearity
-- Omitted variable bias
-
 ## Thinking about OLS in the population and the sample
 
 We assume that in the population there is a true relationship $y = \beta_0 + \beta_1 x + u$ (the **population regression**). The $\hat\beta_0, \hat\beta_1$ you calculate by OLS from your sample are estimates of it. If you take a new sample, $\hat\beta_1$ also changes, so $\hat\beta_1$ is a random variable too.

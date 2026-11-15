@@ -1,13 +1,5 @@
 # 2. ROS 2 を入れる
 
-## この章でわかること
-
-- Ubuntu 24.04 に ROS 2 Jazzy を入れる
-- `source` で使えるようにする
-- turtlesim とデモで動きを確かめる
-- `ros2` コマンドの基本
-- 同じネットワークの別のロボットとの混線を防ぐ（ROS_DOMAIN_ID）
-
 ## 入れる
 
 ROS 2 の公式の手順（docs.ros.org の Jazzy の「Ubuntu (deb packages)」）と同じです。

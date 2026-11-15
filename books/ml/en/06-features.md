@@ -1,12 +1,5 @@
 # 6. Feature engineering
 
-## What you will learn
-
-- Types of features
-- Dummy variables (one-hot) and binning
-- Index scores (transformations that use the target)
-- How to select features (univariate, importance, stepwise, regularization)
-
 Searching for the best way to represent the data for a particular algorithm is called **feature engineering**. Working on the features often improves the score more than changing the model.
 
 ## Types of features

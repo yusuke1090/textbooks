@@ -1,11 +1,5 @@
 # 10. Potatoes, sugar beet and corn
 
-## What you will learn
-
-- How potatoes are grown, and varieties for each use
-- Sugar beet, and how sugar is made
-- Corn (for feed, sweet corn and grain corn)
-
 ## Potatoes
 
 ![A potato field (Hokkaido). White and purple flowers bloom in July](images/potato-field.jpg)

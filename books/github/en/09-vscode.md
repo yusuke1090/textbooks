@@ -1,12 +1,5 @@
 # 9. Using git in VS Code
 
-## What you will learn
-
-- How to read the Source Control view, and how the big button changes
-- Committing, pushing and pulling with buttons, and viewing changes
-- How to put a repository on GitHub, clone, use branches, fix conflicts and go back to an earlier state in VS Code
-- Handy extensions and settings
-
 git is built into VS Code from the start, and you can do many of the commands from the earlier chapters with buttons.
 What runs inside VS Code is the git installed on your PC (Chapter 2). Your name, email address and SSH key settings (Chapters 2 and 3) are used as they are.
 

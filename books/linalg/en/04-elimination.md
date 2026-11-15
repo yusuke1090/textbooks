@@ -1,13 +1,5 @@
 # 4. Systems of linear equations and elimination
 
-## What you will learn in this chapter
-
-- The augmented matrix and elementary row operations
-- Solving systems of equations by elimination (Gaussian elimination)
-- Rank and the number of solutions (one, infinitely many, none)
-- Homogeneous systems
-- Finding the inverse by elimination
-
 ## Elementary row operations
 
 When solving a system of equations, you may do the following three operations.

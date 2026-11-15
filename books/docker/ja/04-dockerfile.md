@@ -1,12 +1,5 @@
 # 4. Dockerfile でイメージを作る
 
-## この章でわかること
-
-- Dockerfile の書き方（FROM・WORKDIR・COPY・RUN・CMD）
-- イメージを作って（build）動かす
-- レイヤーとキャッシュ、.dockerignore
-- イメージを Docker Hub に置く
-
 ## 作るもの
 
 Python の小さな Web アプリ（Flask）をイメージにします。VS Code で、次のファイルを作ります。

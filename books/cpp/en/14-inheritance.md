@@ -1,12 +1,5 @@
 # 14. Extending classes (inheritance and virtual functions)
 
-## What you will learn
-
-- Inheritance (making a new class that adds features to an existing one)
-- protected, and how to call the base class's constructor
-- Overriding and virtual functions
-- Abstract classes
-
 ## Inheritance
 
 Making a new class with added members based on an existing class is called **inheritance**.

@@ -1,11 +1,5 @@
 # 11. Making types (typedef, enum, structs)
 
-## What you will learn
-
-- Giving types another name (typedef, using)
-- Enumerations (enum, enum class)
-- Structs (struct), and pointers and references to them
-
 ## typedef and using
 
 You can give a type another name.

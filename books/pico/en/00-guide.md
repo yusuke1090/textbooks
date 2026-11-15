@@ -1,12 +1,5 @@
 # 0. How to use this guide
 
-## What you will learn
-
-- What you will be able to do with this guide
-- The roles of the three tools used for development (VS Code, Pico Studio, the terminal)
-- The order in which to read it
-- How to read the guide (code labels, word explanations, sticky notes, highlights and notes)
-
 ## About this guide
 
 This guide covers the steps for using a Raspberry Pi Pico to build a device that reads sensors, makes judgments and sends data (for example, a cow collar), **all the way to a product**.

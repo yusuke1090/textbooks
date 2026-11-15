@@ -1,12 +1,5 @@
 # 9. Arrays and strings
 
-## What you will learn
-
-- How to make and use arrays, and sorting
-- Multidimensional arrays
-- How arrays and pointers are related, and how to pass arrays to functions
-- Strings (char arrays and std::string), and std::vector
-
 ## Arrays
 
 A row of boxes that hold values of the same type together is called an **array**.

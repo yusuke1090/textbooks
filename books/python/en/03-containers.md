@@ -1,11 +1,5 @@
 # 3. Containers for data (lists, tuples, dictionaries and sets)
 
-## What you will learn
-
-- How to use lists, tuples, dictionaries and sets, and how they differ
-- The difference between a copy and "pointing to the same thing"
-- Comprehensions
-
 ## Four containers
 
 | Container | How to write it | Order | Can be changed later | Main use |

@@ -1,12 +1,5 @@
 # 8. NumPy (arrays of numbers)
 
-## What you will learn
-
-- How to make NumPy arrays (ndarray), and their shape and type
-- Calculating without for (vectorization) and broadcasting
-- Aggregation and axis, and ways to take out values (slices and conditions)
-- Matrix calculations and random numbers
-
 NumPy is a library for calculating arrays of numbers all at once, fast. pandas, matplotlib and scikit-learn also use NumPy inside.
 
 ```python

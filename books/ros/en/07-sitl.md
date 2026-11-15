@@ -1,13 +1,5 @@
 # 7. SITL: flying inside a computer
 
-## What you will learn in this chapter
-
-- What SITL (Software In The Loop) is
-- Installing ArduPilot from source and running SITL
-- Taking off, moving and landing with MAVProxy
-- Connecting a ground station (QGroundControl, Mission Planner)
-- Rover, and changing the location
-
 ## What is SITL?
 
 - **SITL** (software in the loop) runs ArduPilot's firmware **on a computer** instead of a flight controller. A physics simulation inside the computer produces the sensors and the vehicle's motion

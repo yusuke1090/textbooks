@@ -1,13 +1,5 @@
 # 3. Creating and running a project in VS Code
 
-## What you will learn
-
-- How things work when you develop with the VS Code extension
-- Where to keep your development folders, and how to put them on GitHub
-- How to create a new project, and what the generated files mean
-- The flow of write → build → flash → view output
-- Getting your first program (a blinking LED) running
-
 This assumes the development environment from Chapter 2 is ready. If you follow this chapter, the LED on the board will blink and `printf` output will appear in VS Code.
 
 ## How it works

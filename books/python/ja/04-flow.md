@@ -1,11 +1,5 @@
 # 4. 条件分岐と繰り返し
 
-## この章でわかること
-
-- if・elif・else と字下げ
-- for と range・enumerate・zip
-- while、break と continue
-
 ## if 文
 
 ```python

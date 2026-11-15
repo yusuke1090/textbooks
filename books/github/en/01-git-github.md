@@ -1,11 +1,5 @@
 # 1. What are git and GitHub?
 
-## What you will learn
-
-- The difference between git and GitHub
-- Words that come up often
-- The places a file passes through, from your computer to GitHub
-
 This textbook covers how to use git and GitHub with commands.
 
 | Chapter | Contents |

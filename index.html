@@ -79,8 +79,7 @@ header.top { background: var(--panel); border-bottom: 1px solid var(--border); }
 header.top .wrap { display: flex; align-items: center; gap: 8px 12px; padding-top: 10px; padding-bottom: 10px; flex-wrap: wrap; }
 .shelf-link { font-size: 13.5px; text-decoration: none; }
 .brand { font-size: 17px; font-weight: 700; margin-right: auto; }
-.home { font-size: 13px; text-decoration: none; }
-.home:hover, .shelf-link:hover { text-decoration: underline; }
+.shelf-link:hover { text-decoration: underline; }
 .langs { display: flex; border: 1px solid var(--border); border-radius: 999px; overflow: hidden; }
 .langs button { font-size: 13px; padding: 3px 14px; border: 0; background: var(--panel); color: var(--muted); cursor: pointer; }
 .langs button[aria-pressed="true"] { background: var(--accent); color: #fff; font-weight: 700; }
@@ -130,7 +129,6 @@ main { padding-bottom: 30px; }
 #body figure img { margin: 0 auto; cursor: zoom-in; }
 #body figcaption { margin-top: 7px; font-size: 13px; line-height: 1.6; color: var(--muted); text-align: center; }
 #body figcaption b { color: var(--text); margin-right: 6px; }
-@media (max-width: 600px) { #body figcaption::after { content: attr(data-zoom); color: var(--link); white-space: nowrap; } }
 .tbl { overflow-x: auto; margin: 10px 0 14px; -webkit-overflow-scrolling: touch; }
 #body table { border-collapse: collapse; font-size: 14px; line-height: 1.6; min-width: 100%; }
 #body th, #body td { border: 1px solid var(--border); padding: 6px 10px; vertical-align: top; text-align: left; }
@@ -245,8 +243,6 @@ li > .sticky-bar { margin-top: 4px; }
 #annoPop button.sw.on { border-color: var(--text); }
 .notes .ap-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 4px 14px; }
 .notes .ap-top button { font-size: 13px; padding: 5px 12px; border-radius: 8px; border: 0; background: var(--accent); color: #fff; cursor: pointer; }
-.notes .ap-count { color: var(--muted); font-size: 12px; }
-.notes .ap-hint { margin: 6px 14px 4px; color: var(--muted); font-size: 12px; line-height: 1.6; }
 .notes .ap-ch { margin: 12px 14px 2px; font-size: 12px; font-weight: 700; color: var(--muted); }
 .notes .ap-item { display: flex; align-items: stretch; gap: 2px; border-left: 4px solid var(--st); border-radius: 4px; margin: 2px 10px; }
 .notes .ap-item:hover { background: var(--bg); }
@@ -276,7 +272,6 @@ li > .sticky-bar { margin-top: 4px; }
   <header class="top"><div class="wrap">
     <a class="shelf-link" id="shelfLink" href="./">📚 教科書</a>
     <span class="brand"><span id="bookIcon"></span> <span id="bookName"></span></span>
-    <a class="home" id="home" hidden></a>
     <div class="langs" id="langs" role="group" aria-label="言語 / Language" hidden>
       <button type="button" data-lang="ja" aria-pressed="true">日本語</button>
       <button type="button" data-lang="en" aria-pressed="false">English</button>
@@ -296,7 +291,7 @@ li > .sticky-bar { margin-top: 4px; }
     <article id="body"><p class="msg">読み込み中…</p></article>
     <nav class="pager" id="pager"></nav>
   </main>
-  <footer><div class="wrap"><p id="footNote"></p><p><a href="./" id="footShelf">📚 教科書の一覧</a></p></div></footer>
+  <footer><div class="wrap"><p id="footNote"></p></div></footer>
 </div>
 
 <div id="tip" role="tooltip"></div>
@@ -323,14 +318,14 @@ li > .sticky-bar { margin-top: 4px; }
   const L = (x, lang) => (x == null ? "" : typeof x === "string" ? x : x[lang] || x.ja || Object.values(x)[0]);
 
   const UI = {
-    ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", footShelf: "📚 教科書の一覧", zoom: "　🔍 押すと拡大", close: "閉じる",
-          zoomHint: "横にずらしたり、2本の指で広げて拡大したりできます。", copy: "コピー", copied: "コピーしました",
+    ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", close: "閉じる",
+          copy: "コピー", copied: "コピーしました",
           fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした",
           qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え",
           lsTitle: "🔊 音声", lsPlay: "▶ 再生", lsStop: "■ 止める", lsSlow: "ゆっくり", lsShow: "スクリプトを見る", lsHide: "スクリプトを隠す",
           lsNone: "この端末では読み上げが使えません" },
-    en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", footShelf: "📚 All textbooks", zoom: "  🔍 tap to zoom", close: "Close",
-          zoomHint: "Scroll sideways, or pinch with two fingers to zoom.", copy: "Copy", copied: "Copied",
+    en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", close: "Close",
+          copy: "Copy", copied: "Copied",
           fig: "Fig. ", load: "Loading…", loadErr: "Could not load",
           qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer",
           lsTitle: "🔊 Audio", lsPlay: "▶ Play", lsStop: "■ Stop", lsSlow: "Slower", lsShow: "Show script", lsHide: "Hide script",
@@ -603,10 +598,8 @@ li > .sticky-bar { margin-top: 4px; }
   }
   function codeLabel(cl, flags) {
     const run = flags.includes("run");
-    if (cl === "python" && run) return state.lang === "en" ? "MicroPython (try it in Pico Studio)" : "MicroPython のコード（Pico Studio で試せる）";
-    if (cl === "python") return state.lang === "en" ? "Python on the PC" : "PC で実行するコード（Python）";
-    if (cl === "cpp" && run) return state.lang === "en" ? "C++ program (paste into the .cpp of your VS Code project)" : "C++ のプログラム（VS Code のプロジェクトの .cpp に貼り付ける）";
-    if (cl === "cpp") return state.lang === "en" ? "C++ code (excerpt)" : "C++ のコード（一部分）";
+    if (cl === "python") return run ? "MicroPython" : "Python";
+    if (cl === "cpp") return "C++";
     if (cl === "cmake") return "CMakeLists.txt";
     return "";
   }
@@ -678,7 +671,7 @@ li > .sticky-bar { margin-top: 4px; }
         if (youtubeId(m[2]) || /\.(mp4|webm)$/i.test(m[2])) { out.push(mediaHtml(m[1], m[2])); i++; continue; }
         fig++;
         const label = t("fig") + (prefix ? prefix + "-" : "") + fig;
-        out.push(`<figure><img src="${esc(url(m[2]))}" alt="${esc(m[1])}" loading="lazy"><figcaption data-zoom="${t("zoom")}"><b>${label}</b>${inline(m[1])}</figcaption></figure>`);
+        out.push(`<figure><img src="${esc(url(m[2]))}" alt="${esc(m[1])}" loading="lazy"><figcaption><b>${label}</b>${inline(m[1])}</figcaption></figure>`);
         i++; continue;
       }
       if (line.trim().startsWith("|") && i + 1 < lines.length && isSep(lines[i + 1])) {   // 表
@@ -866,9 +859,7 @@ li > .sticky-bar { margin-top: 4px; }
     $("bookName").textContent = L(book.title, state.lang);
     document.title = L(ch.title, state.lang) + (state.lang === "en" ? " | " : "｜") + L(book.title, state.lang);
     $("shelfLink").textContent = t("shelf");
-    $("footShelf").textContent = t("footShelf");
     $("footNote").textContent = L(book.note, state.lang);
-    if (book.home) { $("home").hidden = false; $("home").href = book.home.url; $("home").textContent = "← " + L(book.home.label, state.lang); }
     $("prev").setAttribute("aria-label", t("prev")); $("next").setAttribute("aria-label", t("next"));
     document.querySelectorAll("#langs button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === state.lang ? "true" : "false"));
     $("chTitle").textContent = L(ch.title, state.lang);
@@ -980,7 +971,7 @@ li > .sticky-bar { margin-top: 4px; }
     zoomEl = document.createElement("div");
     zoomEl.className = "zoom";
     zoomEl.innerHTML = `<button type="button" class="x">✕ ${t("close")}</button><img src="${esc(img.getAttribute("src"))}" alt="${esc(img.alt)}">`
-      + `<p>${cap ? `<b>${esc(lab)}</b>　${esc(cap.textContent.slice(lab.length))}` : ""}<br>${t("zoomHint")}</p>`;
+      + `<p>${cap ? `<b>${esc(lab)}</b>　${esc(cap.textContent.slice(lab.length))}` : ""}</p>`;
     zoomEl.addEventListener("click", (ev) => { if (ev.target === zoomEl || ev.target.closest(".x")) closeZoom(); });
     document.body.appendChild(zoomEl);
     document.body.style.overflow = "hidden";
@@ -1446,11 +1437,9 @@ li > .sticky-bar { margin-top: 4px; }
     const order = new Map(chapters.map((c, i) => [c.file, i]));
     const items = anno.items.filter((x) => x.book === book.id).sort((a, b) =>
       (order.get(a.file) ?? 1e9) - (order.get(b.file) ?? 1e9) || (a.pos || 0) - (b.pos || 0));
-    const n = (f) => items.filter(f).length;
     const cut = (s, len) => (s.length > len ? s.slice(0, len) + "…" : s).replace(/\s+/g, " ");
     let html = `<div class="ap-top"><button type="button" id="annoAdd">📌 今見ている所に付箋を貼る</button>
-      <span class="ap-count">付箋 ${n((x) => x.type === "sticky")}・線 ${n((x) => x.type === "mark")}・メモ ${n((x) => x.type === "mark" && x.note)}</span></div>
-      <p class="ap-hint">本文の文字を選ぶと、線（4色）・📝 メモ・📌 付箋のボタンが出ます。付けた線や付箋を押すと、色を変えたり消したりできます。このブラウザに保存されます。</p>`;
+</div>`;
     let last = null;
     for (const it of items) {
       if (it.file !== last) {
@@ -1465,7 +1454,7 @@ li > .sticky-bar { margin-top: 4px; }
         ${it.type === "sticky" || it.note ? quote : `<small>${fmtDate(it.created)}</small>`}${lost}</button>
         <button type="button" class="ap-del" data-del="${esc(it.id)}" aria-label="消す">✕</button></div>`;
     }
-    if (!items.length) html += '<p class="empty">まだありません</p>';
+    if (!items.length) html += '<p class="empty">文字を選ぶと、線・メモ・付箋を付けられます</p>';
     $("notesIn").innerHTML = html;
   }
   $("annoBtn").addEventListener("click", () => {

@@ -1,12 +1,5 @@
 # 3. Nodes and topics
 
-## What you will learn in this chapter
-
-- Nodes, topics and messages
-- Making a workspace and a package
-- Writing a sending node (publisher) and a receiving node (subscriber) in Python
-- Building with colcon and running
-
 ## Nodes, topics and messages
 
 ![How nodes, topics and services relate](images/en/ros-graph.svg)

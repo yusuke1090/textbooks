@@ -1,13 +1,5 @@
 # 3. Breeding: one calf a year
 
-## What you will learn
-
-- Why a cow must calve to give milk
-- What "one calf a year" means, and why it matters
-- Heat (estrus) and the signs of heat
-- Insemination, pregnancy and calving
-- Numbers used to measure breeding performance
-
 ## A cow must calve to give milk
 
 - After a cow gives birth, she starts giving milk (**lactation**, 泌乳)

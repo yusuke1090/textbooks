@@ -1,12 +1,5 @@
 # 8. NumPy（数の配列）
 
-## この章でわかること
-
-- NumPy の配列（ndarray）の作り方と、形・型
-- for を使わない計算（ベクトル化）とブロードキャスト
-- 集計と axis、取り出し方（スライス・条件）
-- 行列の計算と乱数
-
 NumPy は、数の配列をまとめて速く計算するライブラリです。pandas・matplotlib・scikit-learn も、中で NumPy を使っています。
 
 ```python

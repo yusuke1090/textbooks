@@ -1,11 +1,5 @@
 # 2. Basic grammar
 
-## What you will learn
-
-- The shape of a C++ program (the main function, statements, blocks, comments)
-- How to show text and numbers on screen
-- How to write characters, strings and numbers (literals), and escape sequences
-
 ## The shape of a program
 
 ```cpp

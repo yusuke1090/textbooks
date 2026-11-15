@@ -1,11 +1,5 @@
 # 4. Branching and loops
 
-## What you will learn
-
-- if, elif, else and indentation
-- for, with range, enumerate and zip
-- while, break and continue
-
 ## The if statement
 
 ```python

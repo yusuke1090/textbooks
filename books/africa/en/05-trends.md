@@ -1,13 +1,5 @@
 # 5. Trends today
 
-## What you will learn
-
-- How fast the population and cities are growing
-- How smartphones and money (mobile money) have changed daily life
-- Startups and the flow of money
-- New forms of electricity, internet and transport
-- Climate change, politics and relations with other countries
-
 ## Many young people, and still growing
 
 - The population is expected to grow from about 1.55 billion (2025) to about 2.5 billion in 2050. Many of the world's children are born in Africa

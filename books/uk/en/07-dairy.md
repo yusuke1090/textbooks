@@ -1,13 +1,5 @@
 # 7. Dairy farming in the UK
 
-## What you will learn
-
-- British dairy in numbers (compared with Japan)
-- Grazing and housing, and cattle breeds
-- Milk prices, and the companies that buy milk (milk processors)
-- Milking robots and sensors
-- Current worries (bovine TB, prices, labor, the environment)
-
 For the cow's body, breeding, feed and mastitis, see the "Dairy Cow Textbook". This chapter is about how dairy farming is done in Britain.
 
 ![A herd of Holstein-Friesians. Almost all British dairy cows are this breed](images/dairy-cows.jpg)

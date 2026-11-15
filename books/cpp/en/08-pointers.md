@@ -1,11 +1,5 @@
 # 8. Pointers and references
 
-## What you will learn
-
-- Addresses and pointers (`&` and `*`)
-- Using pointers as arguments to change the caller's variables
-- References and pass by reference
-
 ## Addresses
 
 A variable is stored somewhere in memory. The number of that place is called its **address**. Putting `&` (the **address-of operator**) in front of a variable gives you its address.

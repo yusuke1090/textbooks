@@ -1,13 +1,5 @@
 # 12. Safety and law
 
-## What you will learn in this chapter
-
-- Safety rules before operating real hardware
-- Handling LiPo batteries
-- Japan's drone laws (the Civil Aeronautics Act, the Small Unmanned Aircraft Flight Prohibition Act)
-- Radio law (the Radio Act, technical conformity certification)
-- Rules for spraying pesticides, and for rovers
-
 The legal information in this chapter was researched in November 2026. Laws and procedures change often, so check the pages of the Ministry of Land, Infrastructure, Transport and Tourism (MLIT) and the Ministry of Internal Affairs and Communications before flying.
 
 ## Safety rules

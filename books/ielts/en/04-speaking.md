@@ -1,12 +1,5 @@
 # 4. Speaking
 
-## What you will learn in this chapter
-
-- The Speaking test format and the four marking criteria (what Band 7 looks like)
-- How to answer Part 1, Part 2 and Part 3, with model answers (press 🔊 to hear them)
-- Phrases to buy thinking time and to ask for repetition
-- Pronunciation points for speakers of Japanese
-
 ## The Speaking test
 
 You talk one-to-one with an examiner for **11–14 minutes**. The conversation is recorded.

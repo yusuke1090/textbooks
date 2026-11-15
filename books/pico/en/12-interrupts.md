@@ -1,14 +1,5 @@
 # 12. Interrupts, timers and two cores
 
-## What you will learn
-
-- What interrupts are, and how they differ from polling
-- Acting the moment a button is pressed (GPIO interrupts)
-- Acting precisely at fixed intervals (repeating timers)
-- Passing data safely between interrupts and `main` (a ring buffer)
-- Running separate work on the two cores
-- What you must not do inside an interrupt
-
 This assumes you understand the "no-waiting style" in Chapter 11.
 
 ## What is an interrupt?

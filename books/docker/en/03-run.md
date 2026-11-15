@@ -1,11 +1,5 @@
 # 3. Running containers
 
-## What you will learn
-
-- Getting an image (pull) and running a container (run)
-- Listing, stopping and removing containers, viewing logs and going inside
-- Common options of `docker run` (ports, names, running in the background)
-
 ## Run Python just once
 
 ```bash

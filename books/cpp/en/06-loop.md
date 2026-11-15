@@ -1,11 +1,5 @@
 # 6. Loops
 
-## What you will learn
-
-- for statements, while statements and do while statements
-- Nesting statements (a times table)
-- break and continue
-
 ## The for statement
 
 Use it for loops that run a fixed number of times.

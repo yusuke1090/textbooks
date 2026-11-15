@@ -1,13 +1,5 @@
 # 8. Connecting sensors
 
-## What you will learn
-
-- How to use a breadboard and jumper wires
-- How to attach pin headers (soldering)
-- How to connect I2C sensors
-- Wiring an accelerometer (MPU-6050) and a pressure sensor (BMP280)
-- Checking whether connected sensors can be seen (I2C scan)
-
 > For programs that use I2C, add `hardware_i2c` to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 4). If you choose **I2C** under Features when creating the project, it is included from the start.
 
 ## What you need

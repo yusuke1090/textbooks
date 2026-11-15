@@ -1,11 +1,5 @@
 # 4. Preprocessing and dimensionality reduction
 
-## What you will learn
-
-- The two ways unsupervised learning is used
-- Scaling (standardization, normalization and others), and applying the same transformation to training and test data
-- Principal component analysis (PCA), NMF and t-SNE
-
 ## What is unsupervised learning?
 
 Unsupervised learning pulls something out of the data alone, without using answers (labels).

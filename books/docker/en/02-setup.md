@@ -1,11 +1,5 @@
 # 2. Setting up (Ubuntu and VS Code)
 
-## What you will learn
-
-- Installing Docker on Ubuntu
-- Making docker usable without sudo
-- VS Code extensions (Container Tools and Dev Containers)
-
 ## Installing Docker
 
 The easiest way is with Ubuntu's packages.

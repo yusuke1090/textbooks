@@ -1,13 +1,5 @@
 # 2. Supervised learning and regression
 
-## What you will learn
-
-- Classification and regression
-- Generalization, underfitting and overfitting
-- How to proceed with supervised learning
-- Linear regression and how to evaluate it (MSE and $R^2$)
-- Regularization (Lasso and Ridge)
-
 ## Classification and regression
 
 | Type | What it predicts | Examples |

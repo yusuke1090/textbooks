@@ -1,12 +1,5 @@
 # 4. Christianity
 
-## What you will learn in this chapter
-
-- An overview of Christianity and the teachings of Jesus
-- Its history of spreading from the Roman Empire to the world
-- The differences between Catholic, Orthodox and Protestant
-- Events, and Christianity in Japan
-
 ## Overview
 
 | Item | Details |

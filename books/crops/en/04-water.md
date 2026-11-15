@@ -1,12 +1,5 @@
 # 4. Water and fertilizer in the paddy
 
-## What you will learn
-
-- The water depth for each stage (water management)
-- The purpose of midseason drainage, and extending it to reduce methane
-- How to apply fertilizer (basal and panicle fertilizer), and the amount of nitrogen
-- Rice straw and building up the soil
-
 In rice growing, people say "**water is fertilizer**". Walking around the paddies every morning and changing the water depth is an important daily job for rice farmers.
 
 ![Lush green paddies before the rainy season (Niigata)](images/green-paddy.jpg)

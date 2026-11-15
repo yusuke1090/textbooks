@@ -1,13 +1,5 @@
 # 9. Reading sensors
 
-## What you will learn
-
-- How to read and write a sensor's registers over I2C
-- How to turn the bytes you read into numbers
-- Reading acceleration and angular velocity with the MPU-6050
-- Reading pressure and temperature with the BMP280
-- How to take data at fixed intervals
-
 This assumes you have done the wiring and I2C scan in Chapter 8.
 
 > The programs in this chapter use I2C. Add `hardware_i2c` to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 4).

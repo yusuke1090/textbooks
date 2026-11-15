@@ -1,15 +1,5 @@
 # 11. Writing C++ for microcontrollers
 
-## What you will learn
-
-- What is different from a PC when writing C++ on a microcontroller
-- How to choose integer and decimal types
-- Where memory lives, and writing without `new`
-- Which parts of the standard library you may use, and which to avoid
-- How to handle errors (without exceptions)
-- Handling sensors with classes, and splitting files
-- Running several things at once with a "no waiting" style (a state machine)
-
 This assumes you can create a VS Code project as in Chapter 3. The complete programs in this chapter can be tried by pasting them into your project's `.cpp` and doing Compile → Run.
 
 ## Differences from C++ on a PC

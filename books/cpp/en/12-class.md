@@ -1,11 +1,5 @@
 # 12. Class basics
 
-## What you will learn
-
-- Classes and objects (instances)
-- Member variables and member functions
-- public and private (encapsulation)
-
 ## What is a class?
 
 A **class** is a type that bundles data (**member variables**) with the features that use that data (**member functions**). For a "Car" class, the license number and the amount of gasoline are the data, and "show" and "refuel" are the features.

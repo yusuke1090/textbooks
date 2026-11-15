@@ -1,11 +1,5 @@
 # 5. Common distributions (normal, χ², t, F)
 
-## What you will learn
-
-- The normal distribution and the 68%, 95% and 99.7% ranges
-- How the χ² (chi-squared), t and F distributions are built, and what they are used for
-- How to get their values in Python
-
 ## Normal distribution
 
 The density function of the **normal distribution** $N(\mu, \sigma^2)$ with mean $\mu$ and variance $\sigma^2$ looks like this.

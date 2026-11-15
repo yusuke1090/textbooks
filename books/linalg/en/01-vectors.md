@@ -1,13 +1,5 @@
 # 1. Vectors
 
-## What you will learn in this chapter
-
-- The components of a vector; sum, difference and scalar multiple
-- The magnitude of a vector and unit vectors
-- The dot product, the angle between two vectors, and orthogonality
-- Orthogonal projection
-- The cross product of space vectors
-
 This textbook covers the linear algebra taught in the first and second years of university, working through examples one at a time. It is written so that you can read it if you know high-school math (vectors, quadratic equations, trigonometric functions). Each chapter ends with exercises and answers. Calculations in Python (NumPy) are collected in Chapter 10.
 
 ## What is a vector?

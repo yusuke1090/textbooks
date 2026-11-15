@@ -1,13 +1,5 @@
 # 6. Tanzania
 
-## What you will learn
-
-- An overview of Tanzania
-- Agriculture today
-- Dairy today (many cattle, yet milk does not reach the factories)
-- IoT and agritech companies
-- If you were to enter
-
 ## The country at a glance
 
 ![Where Tanzania is](images/tanzania-map.jpg)

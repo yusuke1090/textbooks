@@ -1,12 +1,5 @@
 # 8. Eigenvalues and eigenvectors
 
-## What you will learn in this chapter
-
-- What eigenvalues and eigenvectors mean
-- Finding eigenvalues with the characteristic equation, and then eigenvectors
-- Diagonalization and when it is possible
-- Finding $A^n$ by diagonalization
-
 ## Eigenvalues and eigenvectors
 
 For a square matrix $A$, a number $\lambda$ such that

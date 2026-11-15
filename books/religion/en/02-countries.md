@@ -1,11 +1,5 @@
 # 2. Countries and religion
 
-## What you will learn in this chapter
-
-- By region, which religions are largest in which countries
-- For each religion, the countries with the most believers
-- Examples of countries divided by religion
-
 Unless stated otherwise, figures are Pew's 2020 estimates. Where a census year is given, it is that country's own survey. All are rough guides, rounded and marked "about".
 
 ## Countries with the most believers of each religion

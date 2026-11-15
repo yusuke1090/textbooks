@@ -1,15 +1,5 @@
 # 4. Getting more out of VS Code
 
-## What you will learn
-
-- What each item in the Quick Access menu means
-- Features that help you write (completion, go to definition, the problems list)
-- How to add libraries, and how to split files
-- How to stop at a line and investigate with a Debug Probe
-- Version control with git
-- Recommended extensions
-- When to use VS Code and when to use Pico Studio
-
 This assumes you have created a project and got the blinking LED running in Chapter 3.
 
 ## The Quick Access menu

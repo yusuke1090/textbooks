@@ -1,13 +1,5 @@
 # 15. Applying classes (operators, templates and exceptions)
 
-## What you will learn
-
-- Operator overloading
-- Conversion functions and converting constructors
-- Templates (function templates and class templates)
-- Exception handling (try, throw, catch)
-- The standard library (STL)
-
 ## Operator overloading
 
 You can make operators such as `+` and `<<` work with your own classes too. Write a function whose name is `operator` plus the operator.

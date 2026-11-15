@@ -1,13 +1,5 @@
 # 8. How milk is made, and milking
 
-## What you will learn
-
-- The structure of the udder
-- How milk is made, and how it comes out
-- The steps of milking
-- Milk components and milk tests
-- Milk that cannot be shipped
-
 ## The structure of the udder
 
 ![The udder: four quarters, and inside one quarter](images/udder.svg)

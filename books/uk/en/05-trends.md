@@ -1,13 +1,5 @@
 # 5. Trends today
 
-## What you will learn
-
-- Major political developments in 2024–2026
-- The cost of living, and resetting relations with the EU
-- Energy (ending coal, moving to offshore wind)
-- London as a tech city
-- Links with Japan
-
 This chapter is based on research done in November 2026. Politics moves fast, so check the latest news before relying on it.
 
 ## Politics: two prime ministers in two years

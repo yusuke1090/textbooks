@@ -1,13 +1,5 @@
 # 6. Vector spaces
 
-## What you will learn in this chapter
-
-- Vector spaces (collections where you can add and multiply by scalars)
-- Subspaces
-- Linear combinations, linear independence and dependence, and how to test them
-- Bases and dimension
-- Coordinates with respect to a basis
-
 From here things get a little more abstract. The idea of this chapter is to forget "arrows" and think of anything as a vector if "**you can add it and multiply it by scalars, and the usual rules of calculation hold**".
 
 ## Vector spaces

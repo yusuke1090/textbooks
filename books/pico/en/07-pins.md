@@ -1,15 +1,5 @@
 # 7. Pin and power basics
 
-## What you will learn
-
-- How to read pin numbers (physical pin numbers and GP numbers)
-- Which power pin to use for what
-- Digital input/output and pull-ups
-- Reading voltage with analog input (ADC)
-- Changing an LED's brightness with PWM
-- Pins for communication (I2C, SPI, UART)
-- Precautions to avoid damage
-
 > For the programs in this chapter, add `hardware_adc` (for ADC) and `hardware_pwm` (for PWM) to `target_link_libraries` in `CMakeLists.txt` before building ("Adding libraries" in Chapter 4).
 
 ## Two kinds of numbers

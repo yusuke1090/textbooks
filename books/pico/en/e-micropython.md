@@ -1,15 +1,5 @@
 # Appendix E. Quick tests with MicroPython
 
-## What you will learn in this appendix
-
-- When MicroPython is worth using
-- How to flash MicroPython to the Pico
-- How to run, stop and save code in Pico Studio
-- Commonly used code (LED, button, ADC, I2C, MPU-6050)
-- How MicroPython and C++ code correspond
-- Working with commands (mpremote)
-- How to go back to a C++ program
-
 ## When MicroPython is worth using
 
 **MicroPython** is a small version of Python for microcontrollers. Code runs as soon as you send it, so you can try things without waiting for a build and flash.

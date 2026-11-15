@@ -1,14 +1,5 @@
 # 1. What is the Raspberry Pi Pico?
 
-## What you will learn
-
-- What a microcontroller is, and how it differs from a PC
-- The features and types of the Raspberry Pi Pico
-- The names of the parts of the board (BOOT, USR and RST buttons and more)
-- How to enter flashing mode (BOOTSEL)
-- Ways to write programs for the Pico (C/C++ and MicroPython) and when to use each
-- Words that come up often in this guide
-
 ## What is a microcontroller?
 
 A **microcontroller** (MCU) is a small computer with a CPU, memory and input/output circuits on a single chip.

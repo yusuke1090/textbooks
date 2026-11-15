@@ -1,11 +1,5 @@
 # 1. What is Docker?
 
-## What you will learn
-
-- What a container is, and how it differs from a virtual machine
-- How images, containers and Dockerfiles are related
-- What Docker is good for
-
 ## No more "but it works on my computer"
 
 A program only runs when its **environment** — the OS, the Python version, the libraries and so on — is in place.

@@ -1,13 +1,5 @@
 # 15. Saving power and running for a long time
 
-## What you will learn
-
-- Ways to reduce the Pico's power use, and how effective each is
-- Measuring the battery voltage to know how much is left
-- Restarting automatically when it hangs (the watchdog)
-- Recording the reason for a restart
-- Keeping settings and calibration values even when the power is off (flash)
-
 For products that run on batteries for months, like a collar, this chapter is essential. How to calculate battery life is in Chapter 16.
 
 ## Ways to reduce power

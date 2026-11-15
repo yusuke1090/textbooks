@@ -1,12 +1,5 @@
 # 4. Building images with a Dockerfile
 
-## What you will learn
-
-- How to write a Dockerfile (FROM, WORKDIR, COPY, RUN, CMD)
-- Building an image (build) and running it
-- Layers and the cache, and .dockerignore
-- Putting an image on Docker Hub
-
 ## What we will make
 
 We will turn a small Python web app (Flask) into an image. In VS Code, create these files.

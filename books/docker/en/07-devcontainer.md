@@ -1,11 +1,5 @@
 # 7. Dev Containers (developing inside a container)
 
-## What you will learn
-
-- What Dev Containers are
-- Creating devcontainer.json and opening a folder inside a container
-- Settings for extensions, libraries and ports, and rebuilding
-
 ## What are Dev Containers?
 
 With VS Code's **Dev Containers** extension, the VS Code window stays on your computer, but you **open the folder inside a container** and develop there. The terminal, Python, the compiler and the extensions all run inside the container.

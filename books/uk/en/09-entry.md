@@ -1,12 +1,5 @@
 # 9. If you were to do agricultural IoT in the UK
 
-## What you will learn
-
-- The good points and the hard points of the British market
-- The rules for selling products (certification, radio, data)
-- How to proceed (research → trade shows → trials → sales)
-- What could be done with IoT for dairy
-
 Reading this alongside Chapter 9 of the Africa Textbook (Tanzania, Kenya, Malawi) makes the differences clear.
 
 ## Good points and hard points

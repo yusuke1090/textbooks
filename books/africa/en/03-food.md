@@ -1,12 +1,5 @@
 # 3. Food
 
-## What you will learn
-
-- The staple food of East Africa, and everyday side dishes
-- Specialties and drinks of the three countries
-- Typical dishes from other regions
-- Table manners
-
 ## The staple is "stiff cornmeal porridge"
 
 From East to Southern Africa, the staple is a white, firm, rice-cake-like food made by stirring cornmeal into boiling water. Its name changes by country.

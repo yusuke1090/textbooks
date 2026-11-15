@@ -1,11 +1,5 @@
 # 11. Other religions
 
-## What you will learn in this chapter
-
-- Religions with few believers that are still important in history or in their regions
-- African traditional religions, and the religions that crossed to the Americas
-- Indigenous faiths and shamanism
-
 ## Zoroastrianism
 
 | Item | Details |

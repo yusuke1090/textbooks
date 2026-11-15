@@ -1,11 +1,5 @@
 # 1. An overview of the UK
 
-## What you will learn
-
-- That the UK is made up of "four countries"
-- Its size, population, currency and system of government
-- Landforms and climate (arable land in the east, grassland in the west and north)
-
 The first half of this textbook (Chapters 1–5) is about the UK as a country, and the second half (Chapters 6–9) is about British agriculture and dairy, agritech companies, and how you might enter the market.
 
 ![The Houses of Parliament (Palace of Westminster) in London, and the clock tower Big Ben](images/westminster.jpg)

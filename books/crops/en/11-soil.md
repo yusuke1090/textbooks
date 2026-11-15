@@ -1,13 +1,5 @@
 # 11. Soil and fertilizer
 
-## What you will learn
-
-- What good soil is (the three phases, crumb structure, humus)
-- pH, and the right values for each crop
-- The three main nutrients of fertilizer (nitrogen, phosphate, potassium) and other nutrients
-- Compost and green manure
-- Soil testing
-
 This chapter applies to both rice and upland crops.
 
 ## How soil is made up

@@ -1,13 +1,5 @@
 # 8. Wheat and barley
 
-## What you will learn
-
-- The differences between wheat, barley and naked barley, and their uses
-- The year of autumn-sown wheat
-- The main varieties
-- Fusarium head blight and pre-harvest sprouting
-- How domestic wheat is distributed
-
 ![A wheat field in Furano (Hokkaido). In July it turns harvest gold](images/wheat-furano.jpg)
 
 ## Types of wheat and barley

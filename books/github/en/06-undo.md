@@ -1,12 +1,5 @@
 # 6. Going back to an earlier state
 
-## What you will learn
-
-- How to throw away changes you have not committed
-- How to fix the last commit
-- How to undo a commit you have pushed
-- How to look at or take out an earlier state
-
 ## Commands by what you want to do
 
 | What you want to do | Command | Caution |

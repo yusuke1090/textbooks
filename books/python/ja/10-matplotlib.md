@@ -1,11 +1,5 @@
 # 10. matplotlib（グラフ）
 
-## この章でわかること
-
-- 図（Figure）と軸（Axes）の考え方
-- 折れ線・散布図・棒・ヒストグラム・箱ひげ図
-- 日本語の表示、複数のグラフを並べる、画像に保存する
-
 ```python
 import matplotlib.pyplot as plt
 ```

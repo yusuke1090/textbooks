@@ -1,13 +1,5 @@
 # 7. Kenya
 
-## What you will learn
-
-- An overview of Kenya
-- Agriculture today (tea and flowers)
-- Dairy today (the most advanced in East Africa)
-- IoT and agritech companies
-- If you were to enter
-
 ## The country at a glance
 
 ![Where Kenya is](images/kenya-map.jpg)

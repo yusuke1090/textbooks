@@ -1,11 +1,5 @@
 # 7. Functions
 
-## What you will learn
-
-- Defining and calling functions, arguments and return values
-- Function declarations (prototypes)
-- Pass by value, default arguments and overloading
-
 ## What is a function?
 
 A bundle of processing steps given a name is called a **function**. You do not have to write the same steps many times, and the program becomes easier to read.

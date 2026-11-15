@@ -1,11 +1,5 @@
 # 12. Religion and today's world
 
-## What you will learn in this chapter
-
-- The relationship between states and religion (state religions, separation of religion and state, countries that restrict religion)
-- How to look at conflicts involving religion
-- What to be careful about regarding religion at work and when traveling
-
 ## States and religion
 
 | Form | Contents | Examples |

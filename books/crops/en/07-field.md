@@ -1,13 +1,5 @@
 # 7. An overview of upland field crops
 
-## What you will learn
-
-- Upland farming, and Japan's field crops in numbers
-- Large-scale field farming in Hokkaido, and crop rotation
-- Continuous cropping injury
-- Wheat and soybeans grown in paddies in Honshu (crop conversion and paddy–upland rotation)
-- How subsidies for field crops work
-
 ![The hills of Biei (Hokkaido). Fields of many different crops lie side by side like a patchwork](images/biei.jpg)
 
 ## What is upland farming?

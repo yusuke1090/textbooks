@@ -1,13 +1,5 @@
 # 7. SITL: パソコンの中で飛ばす
 
-## この章でわかること
-
-- SITL（Software In The Loop）とは
-- ArduPilot をソースから入れて、SITL を動かす
-- MAVProxy で離陸・移動・着陸
-- 地上局（QGroundControl・Mission Planner）をつなぐ
-- Rover と、場所の変え方
-
 ## SITL とは
 
 - **SITL**（ソフトウェア・イン・ザ・ループ）は、ArduPilot のファームウェアを、フライトコントローラーではなく**パソコンの上で動かす**しくみです。センサーと機体の動きは、パソコンの中の物理のシミュレーションが作ります

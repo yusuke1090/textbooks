@@ -1,13 +1,5 @@
 # 11. Real hardware: connecting a Jetson or Raspberry Pi
 
-## What you will learn in this chapter
-
-- How to choose a companion computer
-- Installing firmware with DDS on the flight controller
-- Wiring and parameters for serial (UART) and USB connections
-- Running the micro-ROS Agent automatically at startup (systemd)
-- The order to test things on the desk
-
 ## Choosing a companion computer
 
 ![Raspberry Pi 5. Small, cheap and low-power](images/raspberry-pi5.jpg)

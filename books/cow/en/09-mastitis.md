@@ -1,13 +1,5 @@
 # 9. Mastitis (and E. coli mastitis)
 
-## What you will learn
-
-- What mastitis is
-- Clinical and subclinical mastitis
-- The bacteria that cause it (contagious and environmental)
-- How E. coli causes mastitis
-- How to find it, and sensors
-
 ## What is mastitis?
 
 - **Mastitis** (乳房炎): inflammation inside the udder (the mammary gland). Most cases happen when **bacteria enter through the teat canal**

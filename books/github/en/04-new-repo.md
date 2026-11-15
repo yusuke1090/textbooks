@@ -1,11 +1,5 @@
 # 4. Making a new repository
 
-## What you will learn
-
-- How to turn a local folder into a repository and make the first commit
-- Three ways to make a place on GitHub and send it there
-- How to copy a repository on GitHub to your computer (clone)
-
 The flow is "make it a repository locally and make the first commit → make a place on GitHub and send it". There are three ways to make the place, and they all give the same result.
 
 | Method | What you do | Good when |

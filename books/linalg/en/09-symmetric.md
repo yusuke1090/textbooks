@@ -1,12 +1,5 @@
 # 9. Inner product spaces and diagonalizing symmetric matrices
 
-## What you will learn in this chapter
-
-- Orthonormal bases and the Gram–Schmidt process
-- Orthogonal matrices (transformations that keep lengths and angles)
-- A real symmetric matrix can always be diagonalized by an orthogonal matrix
-- The standard form of quadratic forms (straightening a slanted ellipse)
-
 ## Orthonormal bases
 
 The dot product of Chapter 1 is defined in the same way in $\mathbb{R}^n$, by $\boldsymbol{a} \cdot \boldsymbol{b} = a_1b_1 + \cdots + a_nb_n$ (also written $(\boldsymbol{a}, \boldsymbol{b})$). A vector space with an inner product is called an **inner product space**.

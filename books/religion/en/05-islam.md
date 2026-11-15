@@ -1,12 +1,5 @@
 # 5. Islam
 
-## What you will learn in this chapter
-
-- An overview of Islam, and its history starting with Muhammad
-- The six articles of faith and the five pillars of practice
-- Sunni and Shia
-- Rules of daily life such as halal and Ramadan
-
 ## Overview
 
 | Item | Details |

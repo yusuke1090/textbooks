@@ -1,13 +1,5 @@
 # Appendix A. Working with commands
 
-## What you will learn in this appendix
-
-- How to build and flash C++ programs with terminal commands alone, without VS Code
-- How to install the command-line tools (what `setup-sdk.sh` does)
-- How to keep and build several programs in one folder
-- Commands for switching to flashing mode, flashing, viewing output and inspecting what is on the Pico
-- How to put the steps into a script
-
 Everyday development is done in VS Code (Chapter 3). Use this appendix in situations like these.
 
 - You want to put the steps into a script (such as flashing for mass production; Chapter 17)

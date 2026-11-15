@@ -1,12 +1,5 @@
 # 1. What is religion?
 
-## What you will learn in this chapter
-
-- What religion is, and what parts it is made of
-- Ways to classify religions (the number of gods, the region of origin, whether there is a founder)
-- The number of believers in the world
-- That more people answer "no religion"
-
 ## What is religion?
 
 A religion is a system in which people believe in something beyond human power (gods, buddhas, spirits, the laws of the universe and so on), decide how to live, pray and hold ceremonies based on that belief, and connect with others who share the same faith. Giving answers to "what happens when we die?", "what do we live for?" and "what is right conduct?" is also a major role of religion.

@@ -1,12 +1,5 @@
 # 9. Comparing the three countries, and thinking about market entry
 
-## What you will learn
-
-- A comparison of Tanzania, Kenya and Malawi
-- Hardware and system requirements for selling IoT in East Africa
-- Ways to get paid
-- Steps toward entering the market
-
 ## Comparing the three countries
 
 | Item | Tanzania | Kenya | Malawi |

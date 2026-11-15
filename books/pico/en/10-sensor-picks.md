@@ -1,12 +1,5 @@
 # 10. Recommended sensors
 
-## What you will learn
-
-- Sensors to use first, and sensors for agriculture
-- Things to watch out for when choosing sensors
-- How to connect and read the SHT31 and a soil moisture sensor
-- What "requires an ADC converter" means in a product description
-
 > For the SHT31 program, add `hardware_i2c`, and for the soil moisture sensor program, add `hardware_adc`, to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 4).
 
 ## To start with

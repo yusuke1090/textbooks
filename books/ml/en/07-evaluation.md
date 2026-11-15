@@ -1,12 +1,5 @@
 # 7. Evaluating models
 
-## What you will learn
-
-- Cross-validation and group cross-validation
-- Grid search, and the three datasets: training, validation and test
-- Metrics for binary classification (confusion matrix, accuracy, precision, recall, F1, ROC/AUC, AR value, AIC)
-- Metrics for multiclass classification
-
 ## Cross-validation
 
 If you split into training and test data only once, the split may happen to be a good (or bad) one. **Cross-validation** divides the data into $k$ parts and trains and evaluates $k$ times, switching which part is used for evaluation.

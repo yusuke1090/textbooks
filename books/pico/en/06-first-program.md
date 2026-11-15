@@ -1,13 +1,5 @@
 # 6. Your first programs
 
-## What you will learn
-
-- Running your first C++ programs and learning to read them
-- Sending results to the PC with `printf`
-- Blinking LEDs ("blinky"): the board's LED, an external LED and an RGB LED
-- Reading a button
-- How to stop a flashed program, and what happens at power-on
-
 This assumes you have created a VS Code project and flashed the blinking LED in Chapter 3.
 For every program in this chapter, "Copy" it, replace the contents of the `.cpp` in your VS Code project, and try it with **Compile Project → Run Project (USB)**. View the output in Serial Monitor or Pico Studio (Chapter 3).
 

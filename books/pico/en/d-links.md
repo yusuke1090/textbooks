@@ -1,12 +1,5 @@
 # Appendix D. What microcontrollers can do, and recommended links
 
-## What you will learn in this appendix
-
-- Where microcontrollers are used
-- How to judge whether a microcontroller suits your project
-- Parts worth getting first
-- Useful sites for learning, and the order to read them in
-
 ## Main uses of microcontrollers
 
 | Field | Examples |

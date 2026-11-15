@@ -1,12 +1,5 @@
 # 3. Random variables and distributions
 
-## What you will learn
-
-- Random variables, and the difference between discrete and continuous
-- Probability mass functions, probability density functions and distribution functions
-- Joint, marginal and conditional distributions
-- Statistical independence
-
 ## Random variables
 
 Something like the number on a die — a value is decided each time you try, and how likely each value is (its probability) is fixed — is called a **random variable**. We write it with a capital letter $X$, and the value that actually came out with a small letter $x$.

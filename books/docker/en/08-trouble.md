@@ -1,11 +1,5 @@
 # 8. Troubleshooting, cleaning up, Raspberry Pi and Jetson
 
-## What you will learn
-
-- Common errors and how to fix them
-- Cleaning up images and containers you no longer use
-- Things to watch out for when using Docker on a Raspberry Pi or Jetson
-
 ## Common errors
 
 | Message | Cause | Fix |

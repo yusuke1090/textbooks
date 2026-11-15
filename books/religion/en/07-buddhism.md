@@ -1,12 +1,5 @@
 # 7. Buddhism
 
-## What you will learn in this chapter
-
-- An overview of Buddhism and the life of the Buddha
-- The Buddha's teachings: the Four Noble Truths, the Eightfold Path, dependent origination, impermanence and more
-- The differences between Theravada, Mahayana and Tibetan Buddhism
-- Its history of spreading through Asia, and Buddhism today
-
 ## Overview
 
 | Item | Details |

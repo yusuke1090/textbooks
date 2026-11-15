@@ -1,11 +1,5 @@
 # 1. Running a program
 
-## What you will learn
-
-- The steps until a program runs (source code → compile → run)
-- Getting ready to write and run C++ on Ubuntu with VS Code
-- Running your first program
-
 This textbook is based on my [study notes](https://note.com/k_1090/n/n9ca36fcc9a8a) on *やさしいC++ 第5版* (*Easy C++, 5th edition*, by Mana Takahashi, SB Creative). Mistakes in the notes have been fixed, and a few ways of writing that are common in today's C++ (`std::string`, `std::vector` and others) have been added.
 
 ## Until a program runs

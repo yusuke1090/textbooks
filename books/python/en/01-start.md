@@ -1,11 +1,5 @@
 # 1. What is Python? Getting ready
 
-## What you will learn
-
-- Python's features and what it can be used for
-- Getting ready to write and run Python on Ubuntu with VS Code (virtual environments)
-- How to read errors
-
 ## What is Python?
 
 | Feature | Explanation |

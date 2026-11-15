@@ -1,12 +1,5 @@
 # 5. Diseases, pests and weeds
 
-## What you will learn
-
-- The most feared disease, "rice blast", and other main diseases
-- Stink bugs that lower the grade of rice, and planthoppers that fly across the sea
-- Apple snails
-- Paddy weeds and herbicides
-
 How often and how much pesticide to apply is decided from the local **spray calendar** (*bōjoreki*: a table from the prefecture or JA showing what to apply when) and **pest forecasts** (*hassei yosatsu*: forecasts of disease and insect outbreaks issued by the prefecture's plant protection office). Always follow the crop, amount, number of times and timing written on the pesticide label (the Agricultural Chemicals Regulation Act).
 
 ## Diseases

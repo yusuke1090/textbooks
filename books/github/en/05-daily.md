@@ -1,11 +1,5 @@
 # 5. Everyday recording
 
-## What you will learn
-
-- The commands to type at the start and end of your work
-- How to read `git status`
-- Things you must not upload to GitHub
-
 ## What to type at the start and end
 
 When you start working and when you finish, type these in order.

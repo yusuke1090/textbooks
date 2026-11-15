@@ -1,12 +1,5 @@
 # 9. Soybeans, adzuki beans and buckwheat
 
-## What you will learn
-
-- The year of soybeans, and what root nodule bacteria do
-- What makes soybeans hard to grow (waterlogging, weeds, insects)
-- Adzuki beans and kidney beans (Hokkaido's beans)
-- Buckwheat
-
 ![A soybean field. In summer the leaves grow so thick that you can no longer see between the ridges](images/soybean-field.jpg)
 
 ## Soybeans

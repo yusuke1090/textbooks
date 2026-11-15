@@ -1,13 +1,5 @@
 # 5. Messages, coordinates, QoS and recording
 
-## What you will learn in this chapter
-
-- Commonly used message types
-- Making your own message type
-- Coordinate conventions (ROS's ENU and drones' NED) and tf2
-- QoS (delivery agreements) and why messages sometimes do not arrive
-- Recording and playing back with ros2 bag, and viewing with RViz
-
 ## Commonly used message types
 
 | Package | Type | Contents |

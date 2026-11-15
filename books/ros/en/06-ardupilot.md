@@ -1,13 +1,5 @@
 # 6. How ArduPilot works
 
-## What you will learn in this chapter
-
-- The flight controller and the parts connected to it
-- Sensors and the EKF (estimating position and orientation)
-- Parameters
-- Flight modes (Copter and Rover)
-- Arming, pre-arm checks, failsafes and geofences
-
 ## The flight controller
 
 ![Pixhawk (the original). A typical flight controller used with both ArduPilot and PX4](images/pixhawk.jpg)

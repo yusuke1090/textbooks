@@ -1,11 +1,5 @@
 # 2. Settings you make only once
 
-## What you will learn
-
-- How to install git and gh
-- Registering the name and email address that go into commits
-- Preparing a GitHub account
-
 ## Installing git and gh
 
 ```bash

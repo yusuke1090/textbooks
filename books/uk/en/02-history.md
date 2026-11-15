@@ -1,13 +1,5 @@
 # 2. History
 
-## What you will learn
-
-- From ancient times to the Norman Conquest (how English came to be)
-- Why Parliament became stronger than the king
-- The Agricultural and Industrial Revolutions, and the British Empire
-- After the two world wars: joining and leaving the EU
-- Links with Japan
-
 ## Timeline
 
 | Year | Event |

@@ -1,12 +1,5 @@
 # 12. Smart agriculture
 
-## What you will learn
-
-- Why smart agriculture now
-- Smart agriculture for rice (drones, water management, automated driving, yield-measuring combines)
-- Smart agriculture for upland crops (auto-steering, variable-rate fertilizing, sensing)
-- Costs and challenges
-
 ## Why now
 
 - The number of people farming has roughly halved in the last 20 years, and their average age is about 70. The remaining farmers take over the paddies and fields of farmers who quit, so the area per farm keeps growing

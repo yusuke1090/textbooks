@@ -1,12 +1,5 @@
 # 7. Linear maps
 
-## What you will learn in this chapter
-
-- Linear maps and their representation matrices
-- The kernel (Ker) and image (Im)
-- The rank–nullity theorem
-- How the representation matrix changes when you change the basis ($P^{-1}AP$)
-
 ## Linear maps
 
 When a map $f$ from a vector space $V$ to $W$ satisfies

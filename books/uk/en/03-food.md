@@ -1,13 +1,5 @@
 # 3. Food
 
-## What you will learn
-
-- British breakfast, lunch and dinner
-- Fish and chips, the Sunday roast, afternoon tea
-- Pubs
-- Cheese and whisky (made from milk and grain)
-- Food brought by immigrants
-
 People often say "British food is bad", but the ingredients (beef, lamb, dairy products, potatoes) are good, and restaurant standards have risen recently. Home cooking is mainly simple: roasting, boiling and frying.
 
 ## Meals of the day

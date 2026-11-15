@@ -1,13 +1,5 @@
 # 8. Agritech and IoT companies
 
-## What you will learn
-
-- Why agritech is growing in the UK
-- Government support, and places for research
-- The main companies (robots, apps, cameras)
-- Drone rules
-- Lessons from things that did not work
-
 The state of the companies in this chapter was researched in November 2026. Startups change quickly, so check before relying on it.
 
 ## Why is it growing?

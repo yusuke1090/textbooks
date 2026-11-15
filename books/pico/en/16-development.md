@@ -1,12 +1,5 @@
 # 16. The real development flow
 
-## What you will learn
-
-- How data travels from the sensor to the screen in a real product
-- How to divide roles between the collar's microcontroller, the receiver and the phone
-- The order in which to build a cow behavior classification system
-- What to decide when moving from prototype to practical use
-
 This chapter is an example plan using a cow behavior classification system. The numbers are rough guides to explain the ideas, and have not been tested on real cows.
 
 ## The overall system

@@ -1,11 +1,5 @@
 # 2. The relationship between two variables (covariance and correlation)
 
-## What you will learn
-
-- Co-variation and covariance
-- The correlation coefficient and how to read it
-- Things to watch out for when looking at correlation
-
 ## Co-variation and covariance
 
 To measure whether two kinds of data $(x_i, y_i)$ go up and down together, multiply their deviations.

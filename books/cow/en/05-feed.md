@@ -1,13 +1,5 @@
 # 5. Feed basics: roughage, concentrate, compound feed
 
-## What you will learn
-
-- The difference between roughage and concentrate
-- Types of concentrate
-- What compound feed is
-- TMR and component feeding
-- Words about dry matter and nutrients
-
 ## Types of feed
 
 ![Types of feed](images/feed-types.svg)

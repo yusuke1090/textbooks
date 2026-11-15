@@ -1,11 +1,5 @@
 # 10. matplotlib (graphs)
 
-## What you will learn
-
-- The idea of Figures and Axes
-- Line plots, scatter plots, bar charts, histograms and box plots
-- Displaying Japanese, placing several graphs side by side, and saving as an image
-
 ```python
 import matplotlib.pyplot as plt
 ```

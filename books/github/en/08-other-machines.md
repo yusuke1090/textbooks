@@ -1,12 +1,5 @@
 # 8. Cloning from another machine
 
-## What you will learn
-
-- Getting ready to develop on another PC
-- How to put a read-only key (a deploy key) on a Raspberry Pi or Jetson
-- How to lend your PC's key with ssh -A
-- How to clone directly from your PC without going through GitHub
-
 ## Choosing a method
 
 To get a **private** GitHub repository on a Raspberry Pi, Jetson or another PC, that machine also has to prove to GitHub that it is you. Choose according to how you use it.

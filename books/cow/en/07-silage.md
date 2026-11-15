@@ -1,13 +1,5 @@
 # 7. Silage
 
-## What you will learn
-
-- What silage is
-- How fermentation works
-- Types of silage and silos
-- How to make it
-- Problems, and how to tell good silage
-
 ## What is silage?
 
 - **Silage** (サイレージ): cut grass or corn that is sealed with the air pressed out and **fermented by lactic acid bacteria** so it keeps. It is easy to think of it as "pickled grass"

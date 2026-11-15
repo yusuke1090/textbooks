@@ -1,13 +1,5 @@
 # 3. Reading
 
-## What you will learn in this chapter
-
-- The Reading test format and how many correct answers Band 7 needs
-- The question types and how to tackle each one
-- How to tell TRUE, FALSE and NOT GIVEN apart
-- Skimming, scanning and how to use the 60 minutes
-- A practice passage with questions
-
 ## The Reading test
 
 - **60 minutes** for **three long passages** (about 700–900 words each) and **40 questions**. The passages get harder as you go

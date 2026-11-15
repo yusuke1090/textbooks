@@ -1,14 +1,5 @@
 # Appendix B. Troubleshooting
 
-## What you will learn in this appendix
-
-- How to investigate when you cannot flash from VS Code (a flowchart)
-- How to read build errors, and common errors
-- How to fix strange behavior after flashing
-- When Pico Studio will not connect
-- How to return the Pico to its initial state
-- Tips for looking things up
-
 ## When you cannot flash from VS Code
 
 First check by following this flowchart.

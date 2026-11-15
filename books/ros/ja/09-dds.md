@@ -1,13 +1,5 @@
 # 9. ROS 2 から ArduPilot を動かす
 
-## この章でわかること
-
-- AP_DDS（ArduPilot が直接 ROS 2 で話すしくみ）
-- ワークスペースを作って、SITL と ROS 2 をつなぐ
-- ArduPilot のトピックとサービス
-- Python のノードで、離陸・移動・着陸
-- もう1つの方法（MAVROS）
-
 ## AP_DDS のしくみ
 
 ![ArduPilot と ROS 2 のつながり](images/ardupilot-ros2.svg)

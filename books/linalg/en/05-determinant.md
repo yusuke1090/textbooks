@@ -1,13 +1,5 @@
 # 5. Determinants
 
-## What you will learn in this chapter
-
-- Determinants of order 2 and 3 (the rule of Sarrus)
-- Properties of determinants (how row operations change them)
-- Cofactor expansion, and calculating determinants of order 4 and higher
-- Finding the inverse with the adjugate matrix
-- Cramer's rule
-
 ## Determinants of order 2 and 3
 
 For a square matrix $A$ we define a single number $\det A$ (also written $\lvert A \rvert$). This is called the **determinant**.

@@ -1,12 +1,5 @@
 # 4. Expected value and variance
 
-## What you will learn
-
-- Expected value and the rules for calculating it
-- Variance and standard deviation (for random variables)
-- Standardization, skewness and kurtosis
-- Covariance, correlation coefficient and conditional expectation
-
 Chapters 1 and 2 were calculations on the data you have. In this chapter, we think about the same things for random variables (distributions).
 
 ## Expected value

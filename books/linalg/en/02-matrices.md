@@ -1,12 +1,5 @@
 # 2. Matrices and their operations
 
-## What you will learn in this chapter
-
-- The shape of a matrix ($m \times n$ matrix) and its entries
-- Sum, scalar multiple and product
-- Changing the order of a product changes the answer ($AB \ne BA$)
-- The identity matrix, zero matrix, transpose and symmetric matrices
-
 ## What is a matrix?
 
 Numbers arranged in a rectangle are called a **matrix**. A horizontal line of numbers is a **row**, and a vertical line is a **column**.

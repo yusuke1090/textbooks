@@ -1,13 +1,5 @@
 # 2. History
 
-## What you will learn
-
-- Africa as the continent where humans began
-- Kingdoms and trade before colonization
-- The slave trade, and the division of Africa by Europe
-- Independence and what came after
-- The paths of Tanzania, Kenya and Malawi
-
 ## Timeline
 
 | When | Event |

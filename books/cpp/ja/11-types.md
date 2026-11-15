@@ -1,11 +1,5 @@
 # 11. 型を作る（typedef・enum・構造体）
 
-## この章でわかること
-
-- 型に別名を付ける（typedef・using）
-- 列挙型（enum・enum class）
-- 構造体（struct）と、そのポインタ・参照
-
 ## typedef と using
 
 型に別の名前を付けられます。

@@ -1,13 +1,5 @@
 # 5. Listening
 
-## What you will learn in this chapter
-
-- The Listening test format and what each of the four parts contains
-- The question types and how to prepare before you listen (prediction)
-- Distractors (corrections) and signposting words
-- Catching spellings and numbers
-- Practising with 🔊 audio (it uses your browser's speech)
-
 ## The Listening test
 
 - About **30 minutes**, **4 parts**, **40 questions**. You hear the recording **once only**

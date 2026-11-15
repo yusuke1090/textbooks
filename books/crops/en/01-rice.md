@@ -1,12 +1,5 @@
 # 1. An overview of rice and the rice plant
 
-## What you will learn
-
-- The difference between the rice plant and rice, and japonica vs. indica
-- Japan's rice in numbers (area, harvest, consumption)
-- The main varieties
-- The year's work, step by step
-
 The first half of this textbook (Chapters 1–6) is about rice (rice farming), the second half (Chapters 7–10) is about upland field crops (wheat, beans, potatoes, sugar beet and others), and the last part (Chapters 11–12) covers soil and fertilizer, which both share, and smart agriculture.
 
 ![The Echigo Plain (Niigata). Paddy fields flooded with water before rice planting stretch into the distance](images/rice-field-echigo.jpg)
