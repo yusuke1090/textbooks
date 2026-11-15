@@ -87,3 +87,23 @@ If you keep growing the same crop (or crops of the same family) in the same fiel
   - **Direct payments for field crops** (the "*geta*" measure): paid according to the amount and quality of wheat, soybeans, sugar beet, potatoes for starch, buckwheat and rapeseed produced
   - **Measures to ease income decline** (the "*narashi*" measure): when income from rice, wheat, soybeans and so on falls well below a normal year, part of it is made up
 - From fiscal 2027, the government plans to revise the grants for paddy conversion (Chapter 6) into a system that supports "farmers who raise yields of wheat, soybeans and feed crops, whether on paddies or upland fields". A form in which the grant grows the more a farmer harvests above average is being considered, and there are worries in Hokkaido that gaps between regions will widen
+
+## Exercises
+
+```quiz
+Q: What is the main field-crop area around Obihiro in Hokkaido called?
+A: Tokachi
+E: The other center is Okhotsk, around Abashiri and Kitami.
+
+Q: What is it called when the same crop grown again and again in one field grows worse?
+A: continuous cropping injury | replant problem | continuous cropping
+E: The best measure is crop rotation.
+
+Q: Rice → wheat → soybeans is called "how many crops in two years"?
+A: 3 | three
+E: Rice in year one, wheat sown in autumn and harvested in early summer, then soybeans.
+
+Q: What do we call pipes buried underground to drain water from a field?
+A: underdrains | underdrain | tile drains
+E: Ditches dug to carry water away are open ditches.
+```

@@ -94,3 +94,27 @@ A worked example (about right for Koshihikari):
 
 - Recently, **heat damage** has become a bigger problem than cold damage. In the extreme heat of 2023, the share of first-grade Koshihikari in Niigata dropped sharply
 - So farmers are switching to heat-tolerant varieties (Niji no Kirameki, Tsuyahime, Shinnosuke, Kinumusume and others) and shifting their growing season
+
+## Exercises
+
+```quiz
+Q: What do we call new stems branching from the nodes at the base of the stem?
+A: tillering | tillers | tiller
+E: 3–5 seedlings per hill can grow into 20 or more stems.
+
+Q: What is the last leaf on the main culm, which is important for filling the ear, called?
+A: flag leaf
+E: The ear comes out of the flag leaf sheath (heading).
+
+Q: About how many days before heading does the young panicle start to form?
+A: 25
+E: The fertilizer given at this time is panicle fertilizer.
+
+Q: Cold below 17 °C at the meiosis stage stops pollen forming. What type of cold damage is this?
+A: sterility-type | sterility-type cold damage | sterility
+E: A cool summer that delays ripening causes delayed-growth cold damage.
+
+Q: What are the cloudy white grains caused by heat after heading called?
+A: chalky immature grains | chalky grains | chalky
+E: Heat damage is now a bigger problem than cold damage.
+```

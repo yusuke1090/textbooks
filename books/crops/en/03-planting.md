@@ -89,3 +89,23 @@ There is a Japanese saying, ***nae-hansaku*** (苗半作): "the seedling is half
 
 - Difficulties: uneven emergence, many weeds, plants fall over easily, damage from birds and apple snails. Yields are often a little lower than with transplanting
 - It is only a few percent of Japan's paddies, but it is slowly increasing as the number of workers falls. There is also a method of sowing seed by drone (Chapter 12)
+
+## Exercises
+
+```quiz
+Q: What is the step called where seeds are put in salt water and the floating ones are thrown away?
+A: salt-water selection | salt water selection | seed selection
+E: For non-glutinous rice the density is 1.13 (about 2 kg of salt in 10 L of water).
+
+Q: In hot-water disinfection, seeds are soaked in water at what temperature (°C)?
+A: 60
+E: 10 minutes in 60 °C water prevents seed-borne diseases.
+
+Q: What do we call flooding the field a few days before transplanting and mixing the soil into smooth mud?
+A: puddling
+E: Plowing the dry field in spring comes before it.
+
+Q: What is the method of sowing seeds straight into the paddy, without raising seedlings, called?
+A: direct seeding | direct sowing
+E: There is flooded direct seeding and dry direct seeding.
+```

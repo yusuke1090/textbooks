@@ -97,3 +97,27 @@ How often and how much pesticide to apply is decided from the local **spray cale
   - For weeds that remain, use products that work in the mid or late season
 - If you keep using the same chemical, **weeds that herbicides do not work on** (resistance) appear. Combine several kinds
 - Methods without pesticides: mechanical weeding (weeders and robots), deep water, spreading rice bran, planting through paper mulch and so on. They take effort, but the rice sells at a higher price as organic rice
+
+## Exercises
+
+```quiz
+Q: What is the most feared rice disease, with spindle-shaped spots on leaves and black panicle necks?
+A: blast | rice blast
+E: It spreads with low temperatures, long rains and too much nitrogen.
+
+Q: What is rice with brown-black marks from stink bugs sucking the grains called?
+A: pecky rice | pecky
+E: More than 0.1% drops the rice to second grade.
+
+Q: Which rice pest flies in on the wind from mainland China each rainy season?
+A: planthopper | planthoppers | brown planthopper
+E: Many brown planthoppers cause round patches of collapsed rice (hopperburn).
+
+Q: What is the common English name of the jumbo snail (sukumiringogai)?
+A: golden apple snail | apple snail
+E: It comes from South America. The government asks people not to release them on purpose.
+
+Q: For about how many days should the water be kept still after applying herbicide?
+A: 7
+E: A layer of herbicide forms on the water, and it does not flow into rivers.
+```

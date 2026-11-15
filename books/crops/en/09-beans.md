@@ -80,3 +80,23 @@
 - The flowers are pollinated by insects (honeybees and others), so without bees the seeds fill poorly
 - It falls over easily in rain and typhoons and is weak against frost. Yields are low, about 50–100 kg per 10 a, and change greatly with the weather
 - Domestic buckwheat is 20–30% of consumption, and the rest is imported from China, the United States and elsewhere. It is often grown on former paddies as a conversion crop
+
+## Exercises
+
+```quiz
+Q: What bacteria live inside the nodules on soybean roots?
+A: rhizobia | rhizobium
+E: They turn nitrogen from the air into ammonia the plant can use (nitrogen fixation).
+
+Q: What do we call plants, like soybeans, that flower when days get shorter?
+A: short-day plants | short-day plant | short day
+E: Farmers must choose varieties that suit their region.
+
+Q: Which prefecture grows about 90% of Japan's adzuki beans?
+A: Hokkaido
+E: Mostly Tokachi. Adzuki beans are weak in cold and must be cut before frost.
+
+Q: About how many days after sowing can buckwheat be harvested?
+A: 70–80 days | 70 | 75 | 80
+E: It grows on poor land and in cold places, so mountain villages have long grown it.
+```

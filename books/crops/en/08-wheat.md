@@ -87,3 +87,27 @@ Almost all Japanese wheat is **autumn-sown wheat**, sown in autumn and grown thr
 - Domestic wheat is sold by tender to flour milling companies through JA and others. Besides the price, the government's ***geta*** grant (Chapter 7) is paid to farmers according to the amount and quality (grade, protein and so on). The grant is often larger than what the farmer gets from the sale
 - Foreign wheat is imported in bulk by the government and sold to flour millers (the government resale price). When international prices rose after the 2022 invasion of Ukraine, interest in domestic wheat grew
 - Products that feature domestic wheat, such as "bread made with 100% Hokkaido wheat" and "udon made with local wheat", are also increasing
+
+## Exercises
+
+```quiz
+Q: What is the trait called where wheat needs winter cold before it can form ears?
+A: vernalization | vernalisation
+E: Most Japanese wheat is autumn-sown and overwinters.
+
+Q: What is the Japanese name for the early-summer season when wheat turns gold?
+A: bakushū | bakushu
+E: Wheat on Honshu is harvested before the rainy season.
+
+Q: Which wheat disease produces the mycotoxin DON?
+A: Fusarium head blight | head blight | scab
+E: Spray fungicide at the start of flowering and again 7–10 days later.
+
+Q: What is it called when grains sprout on the ear because of rain before harvest?
+A: pre-harvest sprouting | preharvest sprouting | sprouting
+E: The starch breaks down and quality falls a lot.
+
+Q: To what percent moisture or less is harvested wheat dried?
+A: 12.5
+E: Lower than rice (about 15%).
+```

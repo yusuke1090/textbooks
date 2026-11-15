@@ -101,3 +101,27 @@
 
 - This crisis showed how fragile the system had become: the government's outlook assumed "there is a little rice surplus every year", and after years of cutting production to the bare minimum, a small change was enough to cause a shortage
 - On the other hand, if prices fall too far, there is a worry that more farmers will give up growing rice. Keeping **a price at which growers make a living and eaters can still afford to buy** is the challenge ahead
+
+## Exercises
+
+```quiz
+Q: Rice is ready to harvest when the accumulated temperature after heading reaches about how many °C?
+A: 1000 | 1,000
+E: About 40–45 days after heading, when 80–90% of the grains are yellow.
+
+Q: Harvested rice is dried down to about what percent moisture?
+A: 15
+E: Slowly, to 14.5–15.0%. Drying too fast cracks the grains.
+
+Q: What is the old way of hanging bundles of rice on racks to dry in the sun called?
+A: hazakake | hasagake
+E: Some farms still do it for special rice.
+
+Q: What was the policy from 1970 that assigned paddy areas to cut rice production called?
+A: acreage reduction | gentan | production adjustment
+E: The government stopped assigning amounts to each prefecture in 2018.
+
+Q: In 2025, what rice did the government sell from its emergency supply?
+A: stockpiled rice | stockpile
+E: In the Reiwa rice crisis, stockpiled rice went on sale at about 2,000 yen for 5 kg.
+```

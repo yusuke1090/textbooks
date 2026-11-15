@@ -100,3 +100,23 @@
 ---
 
 How to build and run your own drones and robots (ArduPilot and ROS 2) is covered in the "**ROS 2 and ArduPilot Textbook**".
+
+## Exercises
+
+```quiz
+Q: Which four-letter index turns leaf color into a number for plant health, used by satellites and drones?
+A: NDVI
+E: It shows uneven growth across paddies and fields.
+
+Q: Which method uses correction data from a base station to measure position to the centimeter?
+A: RTK
+E: Farmers use base stations run by JA or local governments, or network RTK from mobile companies.
+
+Q: Which four letters name low-power, long-range radio such as 920 MHz LoRa?
+A: LPWA
+E: It links paddy water level sensors and automatic water valves.
+
+Q: What do we call spreading different amounts of fertilizer in each part of a field, using a fertilizer map?
+A: variable-rate fertilizing | variable-rate fertilization | variable rate | VRA
+E: The map is made from uneven growth, soil tests and last year's yield map.
+```

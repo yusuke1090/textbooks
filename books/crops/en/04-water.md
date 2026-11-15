@@ -75,3 +75,27 @@ In rice growing, people say "**water is fertilizer**". Walking around the paddie
 - But if it is not plowed in during autumn and is left until spring, more methane and gases harmful to roots are produced as the straw rots in the paddy. **Plowing it in during autumn** is recommended
 - Adding compost (cow manure and the like) to keep the soil fertile is also important. **Crop–livestock cooperation** (*kōchiku renkei*), in which dairy farmers and rice farmers exchange straw (cattle feed and bedding) and compost (fertilizer for paddies), is a good, long-standing system (see the Dairy Cow Textbook)
 - Fertilizers rich in silica (calcium silicate and others) make rice leaves harder and the plants more resistant to disease and lodging
+
+## Exercises
+
+```quiz
+Q: What is it called when the paddy is drained for 7–10 days once there are enough productive tillers?
+A: midseason drainage | mid-season drainage
+E: It stops tillering and makes the roots stronger.
+
+Q: Which gas, about 28 times stronger than carbon dioxide as a greenhouse gas, comes from flooded paddies?
+A: methane | CH4
+E: Making midseason drainage 7 or more days longer cuts methane by about 30%.
+
+Q: What is the system called where the government certifies greenhouse gas cuts so they can be sold to companies?
+A: J-Credits | J-Credit | J Credits
+E: Farmers can sell methane cuts from longer midseason drainage.
+
+Q: Which nutrient has the biggest effect on rice growth and yield?
+A: nitrogen | N
+E: Too much causes lodging, blast and higher protein in rice.
+
+Q: What is the fertilizer given from about 25 days before heading called?
+A: panicle fertilizer
+E: Fertilizer before transplanting is basal fertilizer.
+```

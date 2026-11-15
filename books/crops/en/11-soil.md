@@ -102,3 +102,27 @@ Soil is made of three things (**the three phases of soil**).
 - Every few years, take soil from the field and send it to JA, the prefectural experiment station or a fertilizer company, to measure pH, EC (salt concentration), phosphate, potassium, lime, magnesium, CEC and so on
 - Look at the results and **add what is short and reduce what is too much**. If you spread the same fertilizer in the same amount for years, phosphate and potassium often build up too much in the soil
 - Using less fertilizer saves money and also reduces runoff into rivers and groundwater (harm to the environment)
+
+## Exercises
+
+```quiz
+Q: What are the small clumps of soil particles stuck together by organic matter called?
+A: aggregates | aggregate | soil aggregates
+E: They improve both drainage and water retention.
+
+Q: What three letters name the soil's ability to hold nutrient cations?
+A: CEC | cation exchange capacity
+E: The more clay and humus, the higher the CEC.
+
+Q: What is spread on acidic soil to raise its pH?
+A: lime | calcium carbonate
+E: Japan's heavy rain tends to make soils acidic.
+
+Q: A 20 kg bag of "8-8-8" fertilizer contains how many kg of nitrogen?
+A: 1.6
+E: 20 kg × 8% = 1.6 kg.
+
+Q: What do we call a crop grown while a field rests, then plowed into the soil?
+A: green manure | cover crop
+E: It adds organic matter, and legumes also add nitrogen.
+```

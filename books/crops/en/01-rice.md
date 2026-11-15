@@ -92,3 +92,27 @@ This is a rough example for central Honshu (Koshihikari, planted in early May). 
   - You can grow rice in the same place every year (there is almost no **continuous cropping injury**, because the water washes away diseases and harmful substances)
   - River water brings in nutrients
 - On the other hand, the soil of flooded paddies gives off **methane** (a greenhouse gas) (Chapters 4 and 12)
+
+## Exercises
+
+```quiz
+Q: What do we call rice with the husk removed but the bran and germ still on?
+A: brown rice | genmai
+E: Momi → genmai (husk removed) → seimai (bran and germ polished off).
+
+Q: When rice prices are quoted "per bale" (1 hyō), how many kg of brown rice is that?
+A: 60
+E: Prices are talked about as "yen per 60 kg (1 bale) of brown rice".
+
+Q: Which long, fluffy type of rice makes up about 80% of the world's rice?
+A: Indica
+E: Japan grows Japonica, which is short, round and sticky.
+
+Q: Rice gets stickier the less it has of which part of its starch?
+A: amylose
+E: Glutinous rice has almost 0% amylose.
+
+Q: Which variety is planted on about a third of Japan's rice land?
+A: Koshihikari
+E: It is sticky and sweet, but tall and falls over easily.
+```

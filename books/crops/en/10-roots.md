@@ -86,3 +86,27 @@
 - **Grain corn**, like wheat and soybeans, can be grown in bulk with large machines (general-purpose combines) and takes little labor, so it has been increasing on large farms and converted paddies in Hokkaido and Tohoku
 - Corn roots grow deep, so including it in a rotation improves soil drainage and the growth of the next crop
 - Watch out for the pest **fall armyworm** (an insect from the Americas that arrived in Japan in 2019)
+
+## Exercises
+
+```quiz
+Q: What is the Japanese statistical name for potatoes?
+A: bareisho
+E: About 80% of Japan's potatoes come from Hokkaido.
+
+Q: Which bitter, harmful substance increases when potatoes turn green in sunlight?
+A: solanine
+E: Hilling soil up around the plants prevents it.
+
+Q: Which crop that stores sugar in its root is grown only in Hokkaido in Japan?
+A: sugar beet | beet | sugar beets
+E: About 80% of Japan's home-grown sugar comes from sugar beet.
+
+Q: What is the pulp left after sugar is taken from beets, used as cattle feed?
+A: beet pulp
+E: At the factory, sugar is drawn out with hot water and crystallized.
+
+Q: Which feed corn is chopped whole for cattle silage?
+A: dent corn
+E: Corn dried for its grain only, as a feed ingredient, is grain corn.
+```
