@@ -44,7 +44,6 @@ button { font: inherit; }
 .card:hover { border-color: var(--accent); }
 .card .ic { font-size: 34px; line-height: 1.2; }
 .card h3 { margin: 0; font-size: 18px; line-height: 1.5; }
-.card .en { color: var(--muted); font-size: 13px; }
 .card p { margin: 2px 0 0; font-size: 13.5px; line-height: 1.7; color: var(--muted); }
 .card .meta { margin-top: auto; padding-top: 8px; font-size: 12.5px; color: var(--muted); display: flex; gap: 10px; flex-wrap: wrap; }
 .card .meta b { color: var(--link); font-weight: 600; }
@@ -369,15 +368,15 @@ li > .sticky-bar { margin-top: 4px; }
       let qz = {};
       try { qz = JSON.parse(store.get(QUIZ_KEY(b.id), "{}")) || {}; } catch (e) { qz = {}; }
       const qa = Object.keys(qz).length, qc = Object.values(qz).filter((v) => v === 1).length;
-      const rate = qa ? `<span class="qzrate">✏️ 練習問題 <b>${Math.round(qc / qa * 100)}%</b>（${qc} / ${qa} 問）</span>` : "";
+      const rate = qa ? `<span class="qzrate">✏️ 練習問題 <b>${Math.round(qc / qa * 100)}%</b></span>` : "";
       // 進み具合（今いる章 / 章の数）。今勉強中の欄でだけ見せる
       const at = pos && chs[pos.idx] ? pos.idx + 1 : 0;
       const prog = chs.length ? `<span class="prog"><span class="pbar"><span style="width:${(at / chs.length * 100).toFixed(1)}%"></span></span>${at} / ${chs.length}</span>` : "";
       cardHtml[b.id] = `<a class="card" href="?b=${encodeURIComponent(b.id)}" data-id="${esc(b.id)}" draggable="false">
         <span class="ic">${esc(b.icon || "📘")}</span>
-        <h3>${esc(L(b.title, "ja"))}</h3>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
+        <h3>${esc(L(b.title, "ja"))}</h3>
         <p>${esc(L(b.desc, "ja"))}</p>
-        <span class="meta">${chs.length ? `<span>${chs.length} 章</span>` : ""}${cont}${n ? `<span>🔖 ${n}</span>` : ""}${rate}</span><span class="qzdots" data-id="${esc(b.id)}"></span>${prog}</a>`;
+        <span class="meta">${cont}${n ? `<span>🔖 ${n}</span>` : ""}${rate}</span><span class="qzdots" data-id="${esc(b.id)}"></span>${prog}</a>`;
     }));
     studying = studying.filter((id) => cardHtml[id]);
     renderShelf();
