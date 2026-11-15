@@ -134,3 +134,30 @@ match command:
 - `if 条件:` の後ろは字下げ。`elif`・`else` で分ける
 - `for x in 入れ物:`。回数なら `range`、番号付きは `enumerate`、並べるなら `zip`
 - `while` は条件の間くり返す。`break` で終わり、`continue` で次へ
+
+## 練習問題
+
+```quiz
+Q: 次のコードは何を表示しますか。
+| print(list(range(1, 10, 3)))
+A: [1, 4, 7] | 1, 4, 7
+E: 1 から始めて 3 ずつ、10 の手前までです。
+
+Q: 次のコードは何を表示しますか。
+| total = 0
+| for i in range(5):
+|     if i == 3:
+|         continue
+|     total += i
+| print(total)
+A: 7
+E: 0 + 1 + 2 + 4 = 7。`continue` で 3 だけ飛ばしています。
+
+Q: `for` で、番号と値を一緒に取り出すときに使う関数は何ですか。
+A: enumerate | enumerate()
+E: 2つの入れ物を並べて回すときは `zip` です。
+
+Q: ループをそこで終わらせる文は何ですか。
+A: break
+E: `continue` は、その回だけ飛ばして次へ進みます。
+```

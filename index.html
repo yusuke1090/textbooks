@@ -1404,7 +1404,9 @@ li > .sticky-bar { margin-top: 4px; }
     return m ? m[0] : null;
   }
   function qzMatch(input, answers) {
-    const v = qzNorm(input), sing = (x) => (x.length > 3 ? x.replace(/s$/, "") : x);
+    // 記号だけの答え（[] や @ など）は、記号を消すと空になるので、空白だけを除いて比べる
+    const norm = (x) => qzNorm(x) || String(x).normalize("NFKC").toLowerCase().replace(/\s/g, "");
+    const v = norm(input), sing = (x) => (x.length > 3 ? x.replace(/s$/, "") : x);
     if (!v) return false;
     return answers.some((a) => {
       const an = String(a).normalize("NFKC").replace(/(\d),(?=\d{3})/g, "$1").replace(/[−–]/g, "-").trim();
@@ -1414,7 +1416,7 @@ li > .sticky-bar { margin-top: 4px; }
         const d = (an.split(".")[1] || "").length;
         return +x === +an || (d > 0 && (+x).toFixed(d) === (+an).toFixed(d));
       }
-      const w = qzNorm(a);
+      const w = norm(a);
       return v === w || sing(v) === sing(w);
     });
   }

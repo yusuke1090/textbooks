@@ -115,3 +115,28 @@ print([c["name"] for c in cows_sorted])    # ['Hanako', 'Momo']
 - Arguments can be passed by position or keyword. Do not use `[]` as a default value
 - Variables inside a function are local. Pass values through arguments and return values
 - Type hints make code easier to read. Set the sort key with `sorted(..., key=lambda x: ...)`
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| def area(w, h=2):
+|     return w * h
+| print(area(3) + area(3, h=4))
+A: 18
+E: area(3) uses h=2 and gives 6; area(3, h=4) gives 12. Total 18.
+
+Q: What does this code print?
+| cows = [("Hana", 30), ("Mimi", 25), ("Sora", 35)]
+| print(sorted(cows, key=lambda c: c[1])[0][0])
+A: Mimi
+E: It sorts by the second value (milk) from smallest and prints the first name.
+
+Q: Which mutable container should never be a default argument value (two characters)?
+A: [] | list
+E: `[]` is made only once when the function is defined and is shared between calls.
+
+Q: What is the string at the start of a function that explains it called?
+A: docstring
+E: Write it with `"""…"""`.
+```

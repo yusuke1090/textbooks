@@ -134,3 +134,27 @@ print(c == Cow("Hanako", 2)) # True
 - `__str__` decides how it is displayed
 - Inherit with `class Child(Parent):`, and call the parent's initialization with `super().__init__()`
 - For a class that just holds data, use `@dataclass`
+
+## Exercises
+
+```quiz
+Q: What is the name of the method called when an instance is created?
+A: __init__
+E: Write `def __init__(self, ...):`.
+
+Q: What is the first parameter of a method, which refers to the instance itself?
+A: self
+E: `self.x` is a variable that belongs to each instance.
+
+Q: Which special method decides how an object looks when you `print()` it?
+A: __str__
+E: It should return a string.
+
+Q: How do you call the parent's initializer inside a child class's `__init__`?
+A: super().__init__() | super().__init__ | super()
+E: Inherit with `class Child(Parent):`.
+
+Q: Which decorator, starting with `@`, makes a class that just holds data?
+A: @dataclass | dataclass
+E: It writes `__init__` and more for you.
+```

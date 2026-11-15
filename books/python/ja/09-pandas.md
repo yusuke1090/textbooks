@@ -147,3 +147,26 @@ pd.concat([df, df])                                  # 縦につなぐ
 - 列は `df["列"]`、行と列は `loc`（名前）・`iloc`（位置）
 - 条件は `df[(条件1) & (条件2)]`。変えるときは `.copy()` か `loc`
 - `sort_values`・`groupby(...).agg(...)`・`merge` で並べ、まとめ、つなぐ
+
+## 練習問題
+
+```quiz
+Q: pandas で、表全体を表す型は何ですか。
+A: DataFrame | データフレーム
+E: 1列は `Series` です。
+
+Q: 行と列を「名前」で取り出すのは `loc` です。「位置（番号）」で取り出すのは何ですか。
+A: iloc
+E: `df.iloc[0, 1]` のように番号で指定します。
+
+Q: 次のコードは何を表示しますか。
+| import pandas as pd
+| df = pd.DataFrame({"farm": ["A", "B", "A"], "milk": [30, 20, 40]})
+| print(df.groupby("farm")["milk"].mean()["A"])
+A: 35.0 | 35
+E: 牧場 A の (30 + 40) / 2 = 35.0 です。
+
+Q: 2つの表を、同じ列の値でつなぐ関数は何ですか。
+A: merge | pd.merge
+E: `pd.merge(左, 右, on="列")` のように書きます。
+```

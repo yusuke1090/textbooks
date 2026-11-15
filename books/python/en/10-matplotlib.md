@@ -107,3 +107,23 @@ df["milk"].plot.hist(bins=10)
 - Add axis labels, a title and a legend (`legend`). Tidy up with `tight_layout`
 - For Japanese, install `fonts-noto-cjk` and set `font.family`
 - Save with `fig.savefig("name.png", dpi=150, bbox_inches="tight")`
+
+## Exercises
+
+```quiz
+Q: Which `plt.` function creates a figure (fig) and axes (ax) together?
+A: subplots | plt.subplots | subplots()
+E: Write `fig, ax = plt.subplots()`.
+
+Q: Which `ax.` method draws a scatter plot?
+A: scatter | ax.scatter
+E: A line chart is `ax.plot`.
+
+Q: Which `ax.` method adds a legend?
+A: legend | ax.legend | legend()
+E: Give each line a `label=` when you draw it.
+
+Q: Which `fig.` method saves the figure as an image file?
+A: savefig | fig.savefig
+E: `fig.savefig("name.png", dpi=150, bbox_inches="tight")`.
+```

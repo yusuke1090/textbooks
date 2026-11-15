@@ -131,3 +131,33 @@ Equal is `==`, and not equal is `!=`.
 - Create variables without writing the type. Use `snake_case` for names
 - Take parts of strings with `[0]` and `[1:3]`, and work with them using `split`, `join`, `strip` and so on
 - Put values into text with f-strings (`f"{x:.1f}"`). `input()` gives a string, so convert it with `int()` and the like
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| print(7 // 2)
+A: 3
+E: `//` is floor division.
+
+Q: What does this code print?
+| print(7 / 2)
+A: 3.5
+E: `/` always gives a float.
+
+Q: What does this code print?
+| s = "Holstein"
+| print(s[1:3])
+A: ol
+E: `[1:3]` goes from index 1 up to, but not including, index 3. Indexes start at 0.
+
+Q: What does this code print?
+| x = 28.456
+| print(f"{x:.1f}")
+A: 28.5
+E: `:.1f` shows one digit after the decimal point (rounded).
+
+Q: What type is the value you get from `input()`?
+A: str | string
+E: Convert it with `int()` or `float()` to use it as a number.
+```

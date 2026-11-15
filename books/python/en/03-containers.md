@@ -110,3 +110,30 @@ The form is `[expression for variable in container if condition]`. If it gets lo
 - `b = a` is not a copy; it points to the same thing. Use `a.copy()` to make a separate one
 - Look up keys that may be missing safely with `get`
 - Comprehensions like `[m for m in milk if m >= 30]` let you write things briefly
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| a = [1, 2, 3]
+| b = a
+| b.append(4)
+| print(len(a))
+A: 4
+E: `b = a` is not a copy; both names point to the same list. Use `a.copy()` to make a separate one.
+
+Q: What does this code print?
+| milk = [28, 31, 25, 33]
+| print([m for m in milk if m >= 30])
+A: [31, 33] | 31, 33
+E: The comprehension keeps only values of 30 or more.
+
+Q: What does this code print?
+| print(len({3, 1, 3, 2, 1}))
+A: 3
+E: A set removes duplicates, leaving {1, 2, 3}.
+
+Q: Which dictionary method looks up a key safely, without an error if it is missing?
+A: get | .get | get()
+E: You can give a default, as in `d.get("key", 0)`.
+```

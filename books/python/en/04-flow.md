@@ -134,3 +134,30 @@ match command:
 - After `if condition:`, indent. Branch with `elif` and `else`
 - `for x in container:`. For a number of times use `range`, for numbers use `enumerate`, to go side by side use `zip`
 - `while` repeats while the condition holds. `break` ends it, `continue` goes to the next round
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| print(list(range(1, 10, 3)))
+A: [1, 4, 7] | 1, 4, 7
+E: Start at 1, step by 3, stop before 10.
+
+Q: What does this code print?
+| total = 0
+| for i in range(5):
+|     if i == 3:
+|         continue
+|     total += i
+| print(total)
+A: 7
+E: 0 + 1 + 2 + 4 = 7. `continue` skips only 3.
+
+Q: Which function gives you the index and the value together in a `for` loop?
+A: enumerate | enumerate()
+E: To loop over two containers side by side, use `zip`.
+
+Q: Which statement ends a loop right there?
+A: break
+E: `continue` skips just the current turn.
+```

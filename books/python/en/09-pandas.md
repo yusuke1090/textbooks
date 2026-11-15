@@ -147,3 +147,26 @@ pd.concat([df, df])                                  # stack vertically
 - Columns are `df["column"]`; rows and columns are `loc` (names) and `iloc` (positions)
 - Conditions are `df[(condition1) & (condition2)]`. When changing values, use `.copy()` or `loc`
 - Sort, summarize and join with `sort_values`, `groupby(...).agg(...)` and `merge`
+
+## Exercises
+
+```quiz
+Q: In pandas, what type represents a whole table?
+A: DataFrame
+E: A single column is a `Series`.
+
+Q: `loc` selects rows and columns by name. Which selects them by position (number)?
+A: iloc
+E: For example `df.iloc[0, 1]`.
+
+Q: What does this code print?
+| import pandas as pd
+| df = pd.DataFrame({"farm": ["A", "B", "A"], "milk": [30, 20, 40]})
+| print(df.groupby("farm")["milk"].mean()["A"])
+A: 35.0 | 35
+E: Farm A: (30 + 40) / 2 = 35.0.
+
+Q: Which function joins two tables on matching column values?
+A: merge | pd.merge
+E: Write `pd.merge(left, right, on="column")`.
+```

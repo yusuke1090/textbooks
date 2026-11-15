@@ -107,3 +107,23 @@ df["milk"].plot.hist(bins=10)
 - 軸の名前・タイトル・凡例（`legend`）を付ける。`tight_layout` で整える
 - 日本語は `fonts-noto-cjk` を入れて `font.family` を指定する
 - `fig.savefig("名前.png", dpi=150, bbox_inches="tight")` で保存する
+
+## 練習問題
+
+```quiz
+Q: 図（fig）と軸（ax）を一緒に作る関数は `plt.` の何ですか。
+A: subplots | plt.subplots | subplots()
+E: `fig, ax = plt.subplots()` と書きます。
+
+Q: 点を散らばらせて描く散布図のメソッドは `ax.` の何ですか。
+A: scatter | ax.scatter
+E: 折れ線は `ax.plot` です。
+
+Q: 凡例を付けるメソッドは `ax.` の何ですか。
+A: legend | ax.legend | legend()
+E: 線を描くときに `label=` を付けておきます。
+
+Q: 図を画像のファイルに保存するメソッドは `fig.` の何ですか。
+A: savefig | fig.savefig
+E: `fig.savefig("名前.png", dpi=150, bbox_inches="tight")` で保存します。
+```

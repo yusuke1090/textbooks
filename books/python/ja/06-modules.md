@@ -153,3 +153,28 @@ finally:
 - 自分の `.py` もモジュール。試しのコードは `if __name__ == "__main__":` の中に
 - ファイルは `with open(..., encoding="utf-8") as f:` で読み書きする
 - `try` / `except 種類:` で例外を受け止める。エラーの名前から原因を考える
+
+## 練習問題
+
+```quiz
+Q: `import numpy as np` の `np` のように、短い名前を付けるキーワードは何ですか。
+A: as
+E: `from モジュール import 名前` で、名前だけを取り込むこともできます。
+
+Q: 自分の `.py` の中で、直接実行したときだけ動かすコードを書く `if` の条件は何ですか。
+A: __name__ == "__main__" | __name__ == '__main__' | if __name__ == "__main__":
+E: ほかのファイルから import されたときは動きません。
+
+Q: 存在しないファイルを `open` で開こうとしたときに出るエラーの名前は何ですか。
+A: FileNotFoundError
+E: `try` / `except FileNotFoundError:` で受け止められます。
+
+Q: 次のコードは何を表示しますか。
+| try:
+|     n = int("abc")
+| except ValueError:
+|     n = -1
+| print(n)
+A: -1
+E: "abc" は整数に変えられず、ValueError になります。
+```

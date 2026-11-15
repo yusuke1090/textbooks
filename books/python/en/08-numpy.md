@@ -115,3 +115,32 @@ Distributions such as the normal distribution are explained in Chapter 5 of the 
 - In aggregation, `axis=0` gives a result per column and `axis=1` per row
 - Take out values with `m[row, column]` and `a[a >= 30]`. `@` is the matrix product
 - Random numbers come from `np.random.default_rng(seed)`
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| import numpy as np
+| a = np.array([[1, 2, 3], [4, 5, 6]])
+| print(a.shape)
+A: (2, 3) | 2, 3 | 2 3
+E: 2 rows and 3 columns.
+
+Q: What does this code print?
+| import numpy as np
+| a = np.array([[1, 2, 3], [4, 5, 6]])
+| print(a.sum(axis=0))
+A: [5 7 9] | 5 7 9 | 5, 7, 9
+E: `axis=0` adds down each column.
+
+Q: What does this code print?
+| import numpy as np
+| a = np.array([28, 35, 31, 26])
+| print(a[a >= 30])
+A: [35 31] | 35 31 | 35, 31
+E: A condition picks out only the matching values.
+
+Q: Which operator is matrix multiplication in NumPy?
+A: @
+E: `*` multiplies element by element.
+```

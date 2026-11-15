@@ -99,3 +99,23 @@ ZeroDivisionError: division by zero
 - ライブラリは仮想環境（`python3 -m venv .venv` → `source .venv/bin/activate` → `pip install`）に入れる
 - VS Code では「Python: Select Interpreter」で `.venv` を選ぶ
 - エラーは一番下の行から読む
+
+## 練習問題
+
+```quiz
+Q: 仮想環境 `.venv` を作るコマンドは `python3 -m` のあとに何と書きますか。
+A: venv .venv | venv
+E: `python3 -m venv .venv` → `source .venv/bin/activate` → `pip install` の順です。
+
+Q: 仮想環境を使い始める（有効にする）コマンドは `source` のあとに何と書きますか。
+A: .venv/bin/activate
+E: 有効になると、プロンプトの頭に `(.venv)` が付きます。
+
+Q: ライブラリを入れるコマンドは何ですか（例: `??? install numpy`）。
+A: pip | pip3
+E: 仮想環境を有効にしてから `pip install` します。
+
+Q: Python のエラーの表示は、上と下のどちらの行から読みますか。
+A: 下 | 一番下 | いちばん下 | 下から
+E: 一番下の行に、エラーの種類と理由が書いてあります。
+```

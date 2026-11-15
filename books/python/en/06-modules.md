@@ -153,3 +153,28 @@ finally:
 - Your own `.py` files are modules too. Put test code inside `if __name__ == "__main__":`
 - Read and write files with `with open(..., encoding="utf-8") as f:`
 - Catch exceptions with `try` / `except Type:`. Use the error's name to work out the cause
+
+## Exercises
+
+```quiz
+Q: Which keyword gives a module a short name, like `np` in `import numpy as np`?
+A: as
+E: `from module import name` imports just one name.
+
+Q: In your own `.py` file, what `if` condition marks code that runs only when the file is run directly?
+A: __name__ == "__main__" | __name__ == '__main__' | if __name__ == "__main__":
+E: It does not run when another file imports it.
+
+Q: What error do you get when you `open` a file that does not exist?
+A: FileNotFoundError
+E: Catch it with `try` / `except FileNotFoundError:`.
+
+Q: What does this code print?
+| try:
+|     n = int("abc")
+| except ValueError:
+|     n = -1
+| print(n)
+A: -1
+E: "abc" cannot become an integer, so ValueError is raised.
+```

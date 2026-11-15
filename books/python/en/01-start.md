@@ -99,3 +99,23 @@ Common errors are summarized in Chapter 6.
 - Install libraries in a virtual environment (`python3 -m venv .venv` → `source .venv/bin/activate` → `pip install`)
 - In VS Code, choose `.venv` with "Python: Select Interpreter"
 - Read errors from the last line
+
+## Exercises
+
+```quiz
+Q: What comes after `python3 -m` to create the virtual environment `.venv`?
+A: venv .venv | venv
+E: `python3 -m venv .venv` → `source .venv/bin/activate` → `pip install`.
+
+Q: What comes after `source` to start using (activate) the virtual environment?
+A: .venv/bin/activate
+E: When it is active, the prompt starts with `(.venv)`.
+
+Q: Which command installs libraries (for example `??? install numpy`)?
+A: pip | pip3
+E: Activate the virtual environment first, then `pip install`.
+
+Q: Do you read a Python error from the top line or the bottom line?
+A: bottom | the bottom | bottom line
+E: The bottom line gives the error type and the reason.
+```
