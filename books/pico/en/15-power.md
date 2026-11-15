@@ -272,3 +272,27 @@ After flashing, "start-up number N" goes up each time you unplug and replug USB.
 - On the official Pico, GP29 (ADC3) gives the battery voltage (a third of VSYS)
 - Use the watchdog to restart automatically on a hang. Send the signal only when all the work has gone correctly
 - Save settings in the last sector of flash, with a marker and a check value. Save only when needed
+
+## Exercises
+
+```quiz
+Q: Energy used is current multiplied by what?
+A: time
+E: Rest while waiting, lower the clock and put sensors to sleep.
+
+Q: On the official Pico, which GP pin measures battery voltage?
+A: 29 | GP29
+E: ADC3 reads one third of VSYS.
+
+Q: If GP29 reads 1.4 V, what is VSYS (V)?
+A: 4.2
+E: It shows one third of VSYS: 1.4 × 3 = 4.2 V.
+
+Q: What is the mechanism that restarts the Pico automatically if it hangs?
+A: watchdog | watchdog timer
+E: Feed it only when every task has run correctly.
+
+Q: What is the deepest sleep mode called?
+A: DORMANT | dormant
+E: Use `pico_sleep` from pico-extras.
+```

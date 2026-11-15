@@ -291,3 +291,23 @@ Change things little by little and see how the behavior changes.
 - Call `stdio_init_all()` first. Output right after startup is easy to miss, so wait with `sleep_ms(1500)`
 - Handle LEDs and buttons with `gpio_init` → `gpio_set_dir` → `gpio_put` / `gpio_get`
 - The flashed program runs as is at power-on. To stop it, flash a different program
+
+## Exercises
+
+```quiz
+Q: Which function do you call first so `printf` goes out over USB?
+A: stdio_init_all | stdio_init_all()
+E: Output right after start-up is easy to miss, so wait with `sleep_ms(1500)`.
+
+Q: `gpio_set_dir` makes a pin an output. Which function sets the pin to 1 or 0?
+A: gpio_put
+E: Reading uses `gpio_get`.
+
+Q: What code waits 500 milliseconds?
+A: sleep_ms(500) | sleep_ms(500);
+E: `sleep_ms` waits in milliseconds.
+
+Q: How do you stop a program you wrote to the Pico? Write a different what?
+A: program | another program | a different program
+E: The program runs every time the Pico powers on.
+```

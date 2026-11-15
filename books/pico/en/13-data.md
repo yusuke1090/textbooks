@@ -279,3 +279,23 @@ void measure() {
 - Print records as CSV with `printf` and copy them from Serial Monitor or the like to bring them to the PC
 - When connected to a PC, `printf` → receive and save with pyserial on the PC side. Free the port from other programs first
 - Put large arrays outside functions (static). Avoid `new` where possible
+
+## Exercises
+
+```quiz
+Q: In how many bytes at a time is the Pico's flash erased?
+A: 4096
+E: It is written 256 bytes at a time.
+
+Q: In how many bytes at a time is the Pico's flash written?
+A: 256
+E: It is erased 4096 bytes (one sector) at a time.
+
+Q: Which Python library on the PC receives data sent from the Pico over USB?
+A: pyserial
+E: Free the port from other programs first.
+
+Q: In what format do you `printf` records so they are easy to bring to the PC?
+A: CSV
+E: Copy from Serial Monitor and open it in a spreadsheet.
+```

@@ -354,3 +354,29 @@ Which sensors to buy is summarized in the next chapter, Chapter 10.
 - MPU-6050: write 0 to 0x6B to wake it, and read 14 bytes from 0x3B. Usable through the class in `mpu6050.h`
 - BMP280: read the compensation coefficients and calculate with the datasheet's formulas. It shows changes in height
 - For sampling at fixed intervals, use `delayed_by_ms` and `sleep_until`
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| uint8_t hi = 0x01, lo = 0x02;
+| int16_t v = (hi << 8) | lo;
+| printf("%d", v);
+A: 258
+E: 0x0102 = 256 + 2 = 258. Join two bytes with `(hi << 8) | lo`.
+
+Q: What does this code print?
+| uint8_t hi = 0xFF, lo = 0x38;
+| int16_t v = (hi << 8) | lo;
+| printf("%d", v);
+A: -200
+E: 0xFF38 is negative as `int16_t` (65336 − 65536 = −200).
+
+Q: Which register do you write 0 to, to wake the MPU-6050 (hex, starting 0x)?
+A: 0x6B | 6B
+E: Then read 14 bytes from 0x3B.
+
+Q: Which C++ function reads from a sensor over I2C?
+A: i2c_read_blocking
+E: Send the register number with `i2c_write_blocking`.
+```

@@ -174,3 +174,23 @@ When yours arrives, check that the value changes a lot between air and water.
 - SHT31 for temperature and humidity, a capacitive soil moisture sensor for soil moisture
 - Check that every sensor works at 3.3 V, and take power from 3V3(OUT)
 - The Pico has a built-in ADC, so an "ADC converter" is not needed
+
+## Exercises
+
+```quiz
+Q: Which sensor does the guide recommend for temperature and humidity?
+A: SHT31
+E: It connects over I2C.
+
+Q: What type of soil moisture sensor does the guide recommend?
+A: capacitive
+E: Its electrodes do not corrode easily, so it lasts.
+
+Q: What does the Pico have built in, so you do not need to buy one (three letters)?
+A: ADC
+E: Even if a listing says "needs an ADC converter", you do not need it.
+
+Q: Which first sensor measures air pressure and temperature?
+A: BMP280
+E: For acceleration and gyro, use the MPU-6050.
+```

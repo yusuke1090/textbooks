@@ -311,3 +311,23 @@ When you put a radio module on a board you made yourself, check with the seller'
 - For mass-production flashing, script `.uf2` copying or `picotool load -v -x`
 - Use the unique ID as each unit's number, and keep numbers people decide in flash
 - Avoid trouble in the field with the watchdog, error records and LED indicators
+
+## Exercises
+
+```quiz
+Q: Which Pico SDK macro embeds a program's name and version?
+A: bi_decl
+E: Also print it at start-up and match it to a git tag.
+
+Q: Which command writes to and verifies many Picos?
+A: picotool | picotool load
+E: Script `picotool load -v -x`.
+
+Q: What built-in number can identify each Pico?
+A: unique ID | unique id
+E: Numbers chosen by people are stored in flash.
+
+Q: Where do you test the calculations (features and judgement) that do not depend on the Pico?
+A: PC | the PC | computer
+E: Separate the calculations from Pico-specific parts and test them on the PC.
+```

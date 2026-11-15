@@ -123,3 +123,23 @@ python3 ~/apps/pico-studio/devenv.py check
 - The first time you create a project, it takes a few minutes to download
 - Pico Studio needs pyserial and the udev rules
 - Check that everything is in place with Pico Studio's "C++ development environment" or `devenv.py check`
+
+## Exercises
+
+```quiz
+Q: What is the name of the VS Code extension for Pico development?
+A: Raspberry Pi Pico
+E: Also install Serial Monitor.
+
+Q: In which folder does the extension install the compiler and SDK?
+A: ~/.pico-sdk | .pico-sdk
+E: The first new project downloads them, which takes a few minutes.
+
+Q: What kind of rules let you use the Pico without sudo?
+A: udev | udev rules
+E: Reinstall them even if you installed them before.
+
+Q: Which Python serial library does Pico Studio need?
+A: pyserial
+E: Prepare it together with the udev rules.
+```

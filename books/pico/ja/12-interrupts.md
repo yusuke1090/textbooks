@@ -284,3 +284,23 @@ critical_section_exit(&lock);
 - 割り込みで書き換える変数には `volatile`。ハンドラは短く、`printf` や待ちは入れない
 - 割り込みと `main` の受け渡しはリングバッファ。取り出す間だけ割り込みを止める
 - 2つのコアは `multicore_launch_core1`。受け渡しは FIFO か、鍵をかけた共有の変数
+
+## 練習問題
+
+```quiz
+Q: 割り込みで書き換える変数に付けるキーワードは何ですか。
+A: volatile
+E: ハンドラは短く、`printf` や待ちは入れません。
+
+Q: 決まった間隔で関数を呼んでもらう関数は何ですか。
+A: add_repeating_timer_ms
+E: GPIO の割り込みは `gpio_set_irq_enabled_with_callback` です。
+
+Q: ピコの CPU のコアはいくつですか。
+A: 2 | 二
+E: 2つめのコアは `multicore_launch_core1` で動かします。
+
+Q: 割り込みと `main` の間でデータを受け渡すための、輪の形のバッファを何といいますか。
+A: リングバッファ | ring buffer | 循環バッファ
+E: 取り出す間だけ割り込みを止めます。
+```

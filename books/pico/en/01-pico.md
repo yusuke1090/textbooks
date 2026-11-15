@@ -169,3 +169,23 @@ In this guide, Appendix E explains how to use it as a tool for quickly checking 
 - The Raspberry Pi Pico is a microcontroller board with an RP2040. Different types are written in almost the same way
 - BOOT is for flashing mode, RST restarts, and USR is a button for your own use
 - This guide uses C/C++ (Pico SDK). MicroPython is for quick tests (Appendix E)
+
+## Exercises
+
+```quiz
+Q: What is the name of the microcontroller chip on the Raspberry Pi Pico?
+A: RP2040
+E: Different Pico boards are programmed in almost the same way.
+
+Q: Which button do you hold while plugging in to put the Pico in programming mode?
+A: BOOT | BOOTSEL
+E: RST restarts; USR is a button for your own use.
+
+Q: Which language does this guide use for product programs?
+A: C++ | C/C++ | cpp
+E: It uses the Pico SDK. MicroPython is for quick tests.
+
+Q: A PC has something a microcontroller lacks, such as Windows or Linux. What is it?
+A: OS | operating system
+E: A microcontroller is a small computer without an OS, good at controlling sensors and LEDs.
+```

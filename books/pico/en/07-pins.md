@@ -278,3 +278,27 @@ In this guide, the I2C sensors from Chapter 8 onward use GP4 and GP5.
 
 - For I2C, start with GP4 (SDA) and GP5 (SCL)
 - The Pico is 3.3 V. Do not put in 5 V
+
+## Exercises
+
+```quiz
+Q: Do programs use physical pin numbers or GP numbers?
+A: GP | GP numbers | GP number
+E: Do not confuse them with physical pin numbers.
+
+Q: What is the highest voltage you may put on a Pico GPIO pin (V)?
+A: 3.3
+E: 5V will damage it.
+
+Q: What is the largest value C++ `adc_read()` returns?
+A: 4095
+E: It is 12-bit, so 0–4095.
+
+Q: With a pull-up button, what does `gpio_get` return while pressed: 0 or 1?
+A: 0
+E: With a pull-up, pressed means 0.
+
+Q: For I2C, GP4 is SDA. What is GP5?
+A: SCL
+E: SDA is the data line; SCL is the clock line.
+```

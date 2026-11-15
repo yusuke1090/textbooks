@@ -257,3 +257,23 @@ code --install-extension ms-vscode.vscode-serial-monitor
 - プロジェクトは GitHub に置き、動いたらこまめにコミット・プッシュする（ソース管理）
 - 拡張機能は、プロジェクトを開いたときのおすすめ（C/C++・Serial Monitor など）を「すべてインストール」。Error Lens もあると便利
 - 書くのは VS Code、つながりの確認は Pico Studio
+
+## 練習問題
+
+```quiz
+Q: 機能（ライブラリ）を使うときに、CMakeLists.txt で足す命令は何ですか。
+A: target_link_libraries
+E: 例えば I2C なら `hardware_i2c` を足します。
+
+Q: `.cpp` のファイルを足したら、CMakeLists.txt のどこに書きますか。
+A: add_executable
+E: 書かないと、ビルドに入りません。
+
+Q: SDK の関数の中身（定義）に飛ぶキーは何ですか。
+A: F12
+E: 問題の一覧は Ctrl + Shift + M です。
+
+Q: Debug Probe でデバッグを始めるキーは何ですか。
+A: F5
+E: F10 で1行ずつ、F11 で関数の中へ入ります。
+```

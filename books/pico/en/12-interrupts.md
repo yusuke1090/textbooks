@@ -284,3 +284,23 @@ critical_section_exit(&lock);
 - Mark variables changed in interrupts as `volatile`. Keep handlers short, with no `printf` or waiting
 - Pass data between interrupts and `main` with a ring buffer. Stop interrupts only while taking data out
 - Use the two cores with `multicore_launch_core1`. Pass data through the FIFO or locked shared variables
+
+## Exercises
+
+```quiz
+Q: Which keyword do you add to variables changed inside an interrupt?
+A: volatile
+E: Keep handlers short, with no `printf` or waiting.
+
+Q: Which function calls your function at a fixed interval?
+A: add_repeating_timer_ms
+E: GPIO interrupts use `gpio_set_irq_enabled_with_callback`.
+
+Q: How many CPU cores does the Pico have?
+A: 2 | two
+E: Start the second core with `multicore_launch_core1`.
+
+Q: What circular buffer passes data between interrupts and `main`?
+A: ring buffer | circular buffer
+E: Disable interrupts only while taking data out.
+```

@@ -257,3 +257,23 @@ How to read build errors is in Appendix B.
 - Put projects on GitHub, and commit and push often whenever something works (Source Control)
 - For extensions, "Install All" of the recommendations when you open a project (C/C++, Serial Monitor and others). Error Lens is also handy
 - Write in VS Code; check the connection in Pico Studio
+
+## Exercises
+
+```quiz
+Q: Which CMakeLists.txt command adds a library you want to use?
+A: target_link_libraries
+E: For I2C, add `hardware_i2c`.
+
+Q: After adding a `.cpp` file, where do you list it in CMakeLists.txt?
+A: add_executable
+E: Otherwise it is not built.
+
+Q: Which key jumps to the definition of an SDK function?
+A: F12
+E: Ctrl + Shift + M shows the problems list.
+
+Q: Which key starts debugging with a Debug Probe?
+A: F5
+E: F10 steps one line; F11 steps into a function.
+```

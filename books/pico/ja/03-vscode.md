@@ -256,3 +256,23 @@ cp ~/apps/pico-studio/cpp/include/*.h ~/apps/blink/
 - ふだんは「書く → Compile → Run (USB) → Serial Monitor」のくり返し
 - MicroPython が動いているピコや、USB を使わないプログラムのときは、BOOT を押しながらつないでから Run
 - ポートは1つのソフトでしか使えない。書き込む前に Serial Monitor や Pico Studio を止める
+
+## 練習問題
+
+```quiz
+Q: VS Code で新しいピコのプロジェクトを作るメニューは何ですか。
+A: New C/C++ Project | New C++ Project
+E: 場所を `~/apps` にし、Console over USB と Generate C++ code に ☑ します。
+
+Q: ふだんの開発で「書く → Compile → ？ → Serial Monitor」の ？ に入るのは何ですか。
+A: Run | Run (USB) | Run Project (USB)
+E: Compile でビルドし、Run で書き込みます。
+
+Q: 1つのシリアルポートは、いくつのソフトで同時に使えますか。
+A: 1 | 一 | 1つ
+E: 書き込む前に Serial Monitor や Pico Studio を止めます。
+
+Q: MicroPython が動いているピコに C++ を書き込むときは、どのボタンを押しながらつなぎますか。
+A: BOOT | BOOTSEL
+E: USB を使わないプログラムのときも同じです。
+```

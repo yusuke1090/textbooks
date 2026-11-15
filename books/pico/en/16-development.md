@@ -216,3 +216,23 @@ The movements that are easy to see depend on where it is attached. The neck is t
 - The most important thing is collecting labeled data on cows
 - The Pico is good for prototypes. Running for months on batteries needs extra work or a different board
 - The result is not a diagnosis but an alert for a person to check
+
+## Exercises
+
+```quiz
+Q: The collar program loops "read → calculate → ? → send". What is "?"?
+A: judge | classify | decide | judgement
+E: Send only the results, to save battery.
+
+Q: To detect heat or illness, what do you compare a cow's data with?
+A: her usual behavior | usual | normal | her normal behavior | usual behavior
+E: A receiver keeps records and compares with the cow's usual behavior.
+
+Q: The most important thing is to collect data from cows with what attached?
+A: correct labels | labels | answers | correct answers
+E: Record the true behavior, together with video.
+
+Q: Is the result a diagnosis, or an alert for a person to check?
+A: alert | an alert | notice
+E: It is not a diagnosis. A person makes the final check.
+```

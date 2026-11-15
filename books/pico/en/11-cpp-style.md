@@ -317,3 +317,23 @@ This form is the same idea as MicroPython's `asyncio` or an event loop on a PC. 
 - Do not use `std::cout`, exceptions or `std::thread`. Report errors through return values (`bool`, `std::optional`, `enum class`)
 - Bundle sensors into classes. Communicate in `begin()`, not in the constructor
 - Run several things by looking at the time (a state machine). Do not `sleep_ms` for long
+
+## Exercises
+
+```quiz
+Q: What is the type for an unsigned integer of exactly 8 bits?
+A: uint8_t
+E: Use fixed-size types such as `int16_t` and `uint32_t`.
+
+Q: Which keyword marks a constant fixed at compile time?
+A: constexpr
+E: States are written with `enum class`.
+
+Q: Which keyword for dynamic memory should you avoid on a microcontroller?
+A: new
+E: Avoid `new` and `std::vector`; put large data outside functions (static).
+
+Q: In a sensor class, which function starts communication instead of the constructor?
+A: begin | begin()
+E: I2C may not be ready yet when the constructor runs.
+```

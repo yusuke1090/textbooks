@@ -256,3 +256,23 @@ cp ~/apps/pico-studio/cpp/include/*.h ~/apps/blink/
 - Normally you repeat "write → Compile → Run (USB) → Serial Monitor"
 - For a Pico running MicroPython, or a program that does not use USB, hold BOOT while plugging in, then Run
 - A port can only be used by one program. Stop Serial Monitor or Pico Studio before flashing
+
+## Exercises
+
+```quiz
+Q: Which VS Code menu item creates a new Pico project?
+A: New C/C++ Project | New C++ Project
+E: Set the location to `~/apps` and tick Console over USB and Generate C++ code.
+
+Q: The daily loop is "write → Compile → ? → Serial Monitor". What is "?"?
+A: Run | Run (USB) | Run Project (USB)
+E: Compile builds; Run writes the program to the Pico.
+
+Q: How many programs can use one serial port at the same time?
+A: 1 | one
+E: Stop Serial Monitor or Pico Studio before writing.
+
+Q: When the Pico is running MicroPython, which button do you hold while plugging in before running C++?
+A: BOOT | BOOTSEL
+E: The same goes for programs that do not use USB.
+```

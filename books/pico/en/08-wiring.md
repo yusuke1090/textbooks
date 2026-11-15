@@ -225,3 +225,23 @@ If the addresses found are shown, the wiring is correct.
 - I2C connects several sensors side by side on two wires, SDA and SCL
 - Power from 3V3(OUT), shared GND, and start with GP4 (SDA) and GP5 (SCL)
 - After wiring, check with an I2C scan that the addresses can be seen
+
+## Exercises
+
+```quiz
+Q: How many holes in a breadboard column are connected?
+A: 5 | five
+E: The long + / − rails are connected too.
+
+Q: I2C uses two wires: SDA and what?
+A: SCL
+E: Many sensors can share the two wires.
+
+Q: From which Pico pin do sensors get power?
+A: 3V3(OUT) | 3V3 | 3V3OUT
+E: All GNDs are connected together.
+
+Q: After wiring, what do you run to check the sensor addresses appear?
+A: I2C scan | scan
+E: If nothing is found, check the wiring and power.
+```

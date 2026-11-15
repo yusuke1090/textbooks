@@ -123,3 +123,23 @@ python3 ~/apps/pico-studio/devenv.py check
 - 初めてプロジェクトを作るときに、数分かけてダウンロードする
 - Pico Studio を使うには pyserial と udev ルール
 - そろったかは、Pico Studio の「C++ の開発環境」か `devenv.py check` で確かめる
+
+## 練習問題
+
+```quiz
+Q: VS Code に入れる、ピコの開発のための拡張機能の名前は何ですか。
+A: Raspberry Pi Pico
+E: もう1つ、Serial Monitor も入れます。
+
+Q: 拡張機能が、コンパイラと SDK を入れるフォルダはどこですか。
+A: ~/.pico-sdk | .pico-sdk
+E: 初めてプロジェクトを作るときに、数分かけてダウンロードします。
+
+Q: ピコを sudo なしで使えるようにするために入れるルールを何といいますか。
+A: udev | udev ルール | udevルール
+E: 前に入れていても、入れ直します。
+
+Q: Pico Studio を使うために必要な、Python のシリアル通信のライブラリは何ですか。
+A: pyserial
+E: udev ルールと一緒に用意します。
+```

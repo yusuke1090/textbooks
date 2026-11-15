@@ -179,3 +179,23 @@ If the line starts **with a `+`**, like `crw-rw----+`, it worked.
 - The `printf` output of C++ programs can also be seen in the output box. Press "切断" (Disconnect) before flashing from VS Code
 - In flashing mode, you can flash MicroPython or a `.uf2`
 - If it will not connect, try in this order: cable → USB port → connect while holding BOOT
+
+## Exercises
+
+```quiz
+Q: Is Pico Studio a tool for developing or for checking?
+A: checking | check | for checking
+E: Develop in VS Code.
+
+Q: Which button do you press in Pico Studio before writing from VS Code?
+A: Disconnect | 切断
+E: Only one program can use the port at a time.
+
+Q: What file extension can you drag onto a Pico in programming mode?
+A: .uf2 | uf2
+E: MicroPython firmware is also a `.uf2` file.
+
+Q: When it will not connect, what do you suspect first?
+A: cable | USB cable | the cable
+E: Try cable → USB port → hold BOOT and plug in.
+```
