@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 210" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+  <rect width="760" height="210" rx="10" fill="#ffffff"/>
+  <defs>
+    <marker id="arr" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M0 0 L10 5 L0 10 z" fill="#667085"/>
+    </marker>
+  </defs>
+  <g text-anchor="middle">
+    <rect x="20" y="50" width="160" height="110" rx="10" fill="#e6f4ea" stroke="#1f7a3d" stroke-width="2"/>
+    <text x="100" y="40" fill="#1f7a3d" font-weight="700" font-size="12">Pico</text>
+    <text x="100" y="88" font-weight="700" font-size="16" fill="#1d2330">① Collect</text>
+    <text x="100" y="112" fill="#344054">Acceleration every 2 s</text>
+    <text x="100" y="130" fill="#344054">summarized into features</text>
+    <text x="100" y="148" fill="#344054">and saved with labels</text>
+
+    <rect x="210" y="50" width="160" height="110" rx="10" fill="#e8effc" stroke="#2f6fde" stroke-width="2"/>
+    <text x="290" y="40" fill="#2f6fde" font-weight="700" font-size="12">PC</text>
+    <text x="290" y="88" font-weight="700" font-size="16" fill="#1d2330">② Train</text>
+    <text x="290" y="112" fill="#344054">With scikit-learn</text>
+    <text x="290" y="130" fill="#344054">build a decision tree</text>
+    <text x="290" y="148" fill="#344054">Check the accuracy</text>
+
+    <rect x="400" y="50" width="160" height="110" rx="10" fill="#e8effc" stroke="#2f6fde" stroke-width="2"/>
+    <text x="480" y="40" fill="#2f6fde" font-weight="700" font-size="12">PC</text>
+    <text x="480" y="88" font-weight="700" font-size="16" fill="#1d2330">③ Convert</text>
+    <text x="480" y="112" fill="#344054">Write the tree</text>
+    <text x="480" y="130" fill="#344054">as if statements</text>
+    <text x="480" y="148" fill="#344054">in model.py</text>
+
+    <rect x="590" y="50" width="150" height="110" rx="10" fill="#e6f4ea" stroke="#1f7a3d" stroke-width="2"/>
+    <text x="665" y="40" fill="#1f7a3d" font-weight="700" font-size="12">Pico</text>
+    <text x="665" y="88" font-weight="700" font-size="16" fill="#1d2330">④ Infer</text>
+    <text x="665" y="112" fill="#344054">From sensor values</text>
+    <text x="665" y="130" fill="#344054">classify behavior</text>
+    <text x="665" y="148" fill="#344054">on the spot</text>
+  </g>
+  <g stroke="#667085" stroke-width="2" marker-end="url(#arr)">
+    <line x1="182" y1="105" x2="206" y2="105"/>
+    <line x1="372" y1="105" x2="396" y2="105"/>
+    <line x1="562" y1="105" x2="586" y2="105"/>
+  </g>
+  <text x="380" y="192" text-anchor="middle" fill="#555c66" font-size="12">Copy features.csv to the PC → train → save model.py on the Pico</text>
+</svg>

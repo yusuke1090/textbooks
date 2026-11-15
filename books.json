@@ -40,21 +40,26 @@
     "icon": "🍓",
     "group": "プログラミング",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "ラズパイピコ開発ガイド（C++・VS Code）"
+      "ja": "ラズパイピコ開発ガイド（C++・VS Code）",
+      "en": "Raspberry Pi Pico Development Guide (C++, VS Code)"
     },
     "desc": {
-      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の「📚 ガイド」からも開けます。"
+      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の「📚 ガイド」からも開けます。",
+      "en": "Developing for the Raspberry Pi Pico with C++ and VS Code, reading sensors, all the way to a product. Can also be opened from \"📚 ガイド\" in Pico Studio."
     },
     "home": {
       "url": "https://github.com/yusuke1090/pico-studio",
       "label": {
-        "ja": "Pico Studio"
+        "ja": "Pico Studio",
+        "en": "Pico Studio"
       }
     },
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "ros",

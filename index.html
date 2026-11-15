@@ -495,8 +495,8 @@ li > .sticky-bar { margin-top: 4px; }
     const run = flags.includes("run");
     if (cl === "python" && run) return state.lang === "en" ? "MicroPython (try it in Pico Studio)" : "MicroPython のコード（Pico Studio で試せる）";
     if (cl === "python") return state.lang === "en" ? "Python on the PC" : "PC で実行するコード（Python）";
-    if (cl === "cpp" && run) return "C++ のプログラム（VS Code のプロジェクトの .cpp に貼り付ける）";
-    if (cl === "cpp") return "C++ のコード（一部分）";
+    if (cl === "cpp" && run) return state.lang === "en" ? "C++ program (paste into the .cpp of your VS Code project)" : "C++ のプログラム（VS Code のプロジェクトの .cpp に貼り付ける）";
+    if (cl === "cpp") return state.lang === "en" ? "C++ code (excerpt)" : "C++ のコード（一部分）";
     if (cl === "cmake") return "CMakeLists.txt";
     return "";
   }
