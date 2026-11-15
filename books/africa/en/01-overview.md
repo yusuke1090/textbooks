@@ -101,3 +101,27 @@ The first half of this textbook (Chapters 1–5) is about Africa as a whole, and
 
 - Tanzania is in both the EAC and SADC, placing it where East and Southern Africa connect
 - Tariffs are lower within the same group, which matters when deciding which country to set up a base in
+
+## Exercises
+
+```quiz
+Q: What is the highest mountain in Africa (5,895 m)?
+A: Kilimanjaro | Mount Kilimanjaro
+E: It is in Tanzania.
+
+Q: What is the long valley, formed as the land is pulled apart, that runs from Ethiopia through Kenya and Tanzania to Lake Malawi?
+A: Great Rift Valley | Rift Valley
+E: Many fossils of human ancestors are found there.
+
+Q: What is the largest lake in Africa?
+A: Lake Victoria | Victoria
+E: It is shared by Tanzania, Kenya and Uganda.
+
+Q: Which official language of Tanzania and Kenya has more than 100 million speakers?
+A: Swahili | Kiswahili
+E: In Malawi, Chichewa (Chewa) is widely spoken.
+
+Q: What is the short name of the East African Community, which includes Kenya and Tanzania and has common tariffs?
+A: EAC
+E: Tanzania belongs to both the EAC and SADC.
+```

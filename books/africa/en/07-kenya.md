@@ -154,3 +154,27 @@ Kenyan dairy is the most commercialized in East Africa. Milk is an everyday drin
 - Connect payments through Safaricom's M-Pesa API (Daraja)
 - Get introductions to dairies and cooperatives through JICA (Project NINJA, SHEP) or TICAD connections
 - Partner with local startups (Savanna Circuit, DigiCow and others) and take charge of the sensor and hardware side
+
+## Exercises
+
+```quiz
+Q: Because it has so many start-ups, what is Kenya nicknamed?
+A: Silicon Savannah
+E: In 2025 its start-ups raised the most money in Africa.
+
+Q: How many counties is Kenya divided into?
+A: 47
+E: Agriculture is a county job, so support and rules differ between counties.
+
+Q: What is it called when cattle are kept in a shed and cut grass is carried to them?
+A: zero grazing | zero-grazing
+E: Land is scarce in Kenya, so this is common.
+
+Q: What do we call vending machines that sell loose milk in towns?
+A: milk ATM | milk ATMs
+E: People bring their own containers.
+
+Q: Which JICA approach, born in Kenya, helps small horticulture farmers "grow to sell"?
+A: SHEP
+E: It has spread across Africa.
+```

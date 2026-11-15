@@ -127,3 +127,23 @@ Other staples
 - Even so, most food is bought at markets and small shops (*duka*, kiosks), just as much as is needed for that day
 - Many homes have no refrigerator, so milk is drunk the same day or made into fermented milk. This connects to the "cooling milk" story in Chapters 6–8
 - Child malnutrition (stunting, when children do not grow tall enough) is a big problem in Tanzania and Malawi. There is demand for delivering protein such as milk, eggs and fish cheaply
+
+## Exercises
+
+```quiz
+Q: What is the staple of Kenya and Tanzania, made by stirring maize flour into hot water?
+A: ugali
+E: In Malawi and Zambia the same food is called nsima.
+
+Q: What is the most popular fish in Malawi, caught in Lake Malawi?
+A: chambo
+E: It is a kind of tilapia, eaten with nsima.
+
+Q: What is the sweet East African milk tea called, made by boiling water, milk, tea leaves and sugar together?
+A: chai
+E: Ginger is sometimes added. Kenya is one of the world's top tea exporters.
+
+Q: In East Africa, which hand do you use to eat and to hand things to people?
+A: right | right hand | the right hand
+E: The left hand is seen as unclean.
+```

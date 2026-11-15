@@ -106,3 +106,27 @@
 - **Do not criticize in public**: when pointing out a mistake, do it gently and where others cannot hear
 - **Courtesy calls on officials**: when doing business in rural areas, visiting county or district officials and the village head is the quickest route
 - **Confirm agreements**: "yes" may be politeness in the moment rather than real agreement. Put what you decided in writing
+
+## Exercises
+
+```quiz
+Q: What greeting do you use for older people in Tanzania (the reply is "marahaba")?
+A: shikamoo
+E: It means "I am at your feet."
+
+Q: Which Kenyan word, meaning "let's all pull together", is used for community fundraising for schools and hospitals?
+A: harambee
+E: It is written on Kenya's coat of arms.
+
+Q: Which Swahili phrase means "slowly, slowly"?
+A: pole pole | polepole
+E: Time moves slowly, though business meetings in Nairobi now often start on time.
+
+Q: In Swahili time, what hour in the morning is counted as "0 o'clock"?
+A: 6 | 6 am | six
+E: "Saa moja" (one o'clock) is 7 in the morning.
+
+Q: Which app gets faster replies than email for business in East Africa?
+A: WhatsApp
+E: Voice messages are also common.
+```

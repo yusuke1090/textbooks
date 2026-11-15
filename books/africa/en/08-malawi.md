@@ -153,3 +153,23 @@ Agritech in Malawi is still at a stage with mostly small companies and little in
 - Connect with JICA projects and volunteers, and get introduced to milk bulking groups on the ground
 - Join an aid organization's dairy or agriculture project as the sensor and visualization partner
 - Partner with young local entrepreneurs (Seedgro, Mechro and others) to build a setup that can repair things locally
+
+## Exercises
+
+```quiz
+Q: Malawi calls itself "the ___ of Africa". Fill in the blank.
+A: Warm Heart | warm heart
+E: People are calm, and it is said to be safer than its neighbors.
+
+Q: What is Malawi's biggest export?
+A: tobacco
+E: It makes up about half to 60% of exports.
+
+Q: What is Malawi's currency?
+A: kwacha
+E: It was devalued by 44% in November 2023.
+
+Q: What three letters name the farmer groups that have pooled and cooled milk in Malawi since the 1960s?
+A: MBG | Milk Bulking Group | MBGs
+E: About half of the milk not used at home goes through them.
+```

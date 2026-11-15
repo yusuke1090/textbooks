@@ -110,3 +110,27 @@
 - The 2019 presidential election was annulled by the courts because of irregularities, and opposition leader Chakwera won the rerun in 2020. It drew attention as a rare case in Africa
 
 ![Banda speaking on his return to Malawi (1958)](images/banda.jpg)
+
+## Exercises
+
+```quiz
+Q: In which Tanzanian gorge did the Leakeys find early human fossils and stone tools?
+A: Olduvai Gorge | Olduvai | Oldupai
+E: At nearby Laetoli there are footprints of upright walkers from about 3.66 million years ago.
+
+Q: What does "Swahili" mean in Arabic?
+A: people of the coast | coast people | the coast | coast
+E: It grew from Bantu languages mixed with Arabic words in coastal trade.
+
+Q: What was the village-based African socialism of Tanzania's first president Nyerere called?
+A: Ujamaa
+E: It means "familyhood" in Swahili.
+
+Q: What was the 1952–60 uprising for land and freedom in Kenya called?
+A: Mau Mau | Mau Mau uprising | Mau Mau rebellion
+E: Kenya became independent in 1963, with Jomo Kenyatta as first president.
+
+Q: In what year did Malawi become independent?
+A: 1964
+E: President Banda ruled for almost 30 years under a one-party system.
+```

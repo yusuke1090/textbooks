@@ -135,3 +135,23 @@
 - Join an aid organization's dairy project (Solidaridad, Heifer International and others) as the technology partner
 - Partner with a local startup (MazaoHub and others)
 - The Japanese precedent is WASSHA. Renting out devices through village shops and getting paid by mobile money could also work for coolers and sensors
+
+## Exercises
+
+```quiz
+Q: What are the native humped cattle that make up most of Tanzania's herd called?
+A: zebu
+E: They resist heat and disease but give only 1–2 L of milk a day.
+
+Q: About what percent of Tanzania's milk is processed in factories?
+A: 2–3% | 2 | 3
+E: The factories have spare capacity; the problem is cooling and transport.
+
+Q: Which tick-borne cattle disease is common in East Africa?
+A: East Coast fever | ECF
+E: There are also tsetse-borne diseases and mastitis.
+
+Q: What is the short name of the Tanzanian communications regulator that certifies radio equipment?
+A: TCRA
+E: Companies handling personal data must also register with the PDPC.
+```

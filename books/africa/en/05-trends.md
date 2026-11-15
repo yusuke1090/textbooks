@@ -89,3 +89,27 @@
 - **The United States**: in 2025, the U.S. aid agency USAID was drastically cut, and many agriculture and health projects that depended on aid stopped
 - Gulf states, Turkey, India and Russia are also strengthening ties with Africa through investment and the military
 - African countries try not to depend on any single country, dealing with many in order to get favorable terms
+
+## Exercises
+
+```quiz
+Q: Which service, started in Kenya in 2007, lets people send money by mobile phone?
+A: M-Pesa | Mpesa
+E: 82% of Kenyan adults now use mobile money (2024).
+
+Q: What is it called when a country skips landlines and bank branches and goes straight to mobile phones?
+A: leapfrogging | leapfrog
+E: On basic phones, USSD and text messages are still important.
+
+Q: What is the installment system called where people pay a little each day by mobile money for solar kits?
+A: PAYGo | Pay-As-You-Go | pay as you go
+E: If you do not pay, the device is switched off remotely. It is IoT in action.
+
+Q: What are motorbike taxis called in East Africa?
+A: boda boda | bodaboda | boda-boda
+E: They carry people, goods and milk cans.
+
+Q: What is the conference on African development that Japan has held since 1993?
+A: TICAD | Tokyo International Conference on African Development
+E: TICAD 9 was held in Yokohama in August 2025.
+```

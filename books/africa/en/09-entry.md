@@ -83,3 +83,19 @@ Devices made for Japanese farms will not work if you simply take them there. Mat
 
 - Cattle bodies, mastitis, silage and the basics of sensors: the [Dairy Cow Textbook](https://yusuke1090.github.io/textbooks/?b=cow)
 - Building the sensor hardware: the [Raspberry Pi Pico Development Guide](https://yusuke1090.github.io/textbooks/?b=pico)
+
+## Exercises
+
+```quiz
+Q: Which country does this book suggest as the safest first country?
+A: Kenya
+E: It has the dairy system, payments, people and investors, and you can work in English.
+
+Q: Which country, with the most cattle and milk, is best for growing big?
+A: Tanzania
+E: Systems built in Kenya can be taken there in Swahili.
+
+Q: Which country is best seen as a test bed for cheap, tough devices, working with aid projects?
+A: Malawi
+E: It is the hardest of the three to enter as a normal business.
+```
