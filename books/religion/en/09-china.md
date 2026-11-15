@@ -98,3 +98,23 @@
 - Confucianism: Confucius. Benevolence, propriety, filial piety. The order of family and society. Ancestral rites
 - Taoism: Laozi. The Tao and acting without forcing. Long life, yin and yang, feng shui
 - In China the state manages religion. South Korea has many Christians, and in Taiwan folk religion and Taoism flourish
+
+## Exercises
+
+```quiz
+Q: Who founded Confucianism?
+A: Confucius | Kongzi
+E: He taught benevolence, ritual and filial piety, and social order.
+
+Q: What is the Confucian virtue of respecting and caring for your parents?
+A: filial piety | xiao
+E: Ancestor rituals are tied to filial piety.
+
+Q: What is "the Way", the source of everything in Taoism, called?
+A: Tao | Dao
+E: Laozi's teaching: wu wei, long life, yin and yang, feng shui.
+
+Q: Which East Asian country is about 30% Christian, while Confucian manners and ancestor rites remain strong?
+A: South Korea | Korea
+E: Most Christians there are Protestant.
+```

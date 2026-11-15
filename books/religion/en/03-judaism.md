@@ -120,3 +120,23 @@
 - Judaism values the covenant with the one God, and living by the law is the center of faith
 - The Sabbath (Friday night to Saturday), kosher food, and festivals such as Passover and Hanukkah
 - It is the root of Christianity and Islam. Jerusalem is the holy city of all three religions
+
+## Exercises
+
+```quiz
+Q: What is the day of rest in Judaism, from Friday evening to Saturday, called?
+A: Shabbat | Sabbath | Shabbos
+E: Living by the Law is at the center of Jewish faith.
+
+Q: What do we call food that fits Jewish dietary law?
+A: kosher
+E: No pork or shellfish, and meat and dairy are not eaten together.
+
+Q: Which city is holy to Judaism, Christianity and Islam?
+A: Jerusalem
+E: Judaism is the root of Christianity and Islam.
+
+Q: What is the Jewish spring festival that remembers leaving Egypt?
+A: Passover | Pesach
+E: In winter there is Hanukkah, the festival of lights.
+```

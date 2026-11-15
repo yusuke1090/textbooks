@@ -143,3 +143,23 @@
 - Shinto: the eight million kami, impurity and purification, matsuri. Shrines and kamidana
 - Buddhism: arrived in the 6th century, with many schools in the Kamakura period. Through the Edo-period danka system, it took on the role of funerals and ancestor memorials
 - Shinbutsu-shugo lasted a long time and was separated in the Meiji era. Separation of religion and state after the war
+
+## Exercises
+
+```quiz
+Q: Shinto says there are "eight million" gods. What is this phrase in Japanese?
+A: yaoyorozu | yaoyorozu no kami
+E: Shinto values purity, purification and festivals (matsuri).
+
+Q: In which century did Buddhism come to Japan?
+A: 6 | 6th | sixth
+E: Many schools appeared in the Kamakura period.
+
+Q: What was the Edo-period system in which families belonged to a temple that handled funerals and memorial rites?
+A: danka | danka system | terauke | terauke system
+E: This is how temples came to handle funerals and ancestor rites.
+
+Q: What is the long-standing blending of kami and buddhas called?
+A: shinbutsu-shugo | shinbutsu-shūgō | shinbutsu shugo | syncretism
+E: Meiji separated them, and the postwar constitution separated religion and state.
+```

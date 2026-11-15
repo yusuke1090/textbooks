@@ -113,3 +113,23 @@
 - Dependent origination, impermanence, non-self. It taught that anyone could practice and attain enlightenment, and did not accept caste
 - Three branches: Theravada (South and Southeast Asia), Mahayana (East Asia) and Tibetan Buddhism
 - It almost vanished from India, where it was born, and spread throughout Asia
+
+## Exercises
+
+```quiz
+Q: What is the Buddha's path of eight right practices to end suffering called?
+A: Eightfold Path | Noble Eightfold Path | Eightfold
+E: The Four Noble Truths and the Eightfold Path lead to nirvana.
+
+Q: What is the peaceful state of enlightenment where suffering ends called?
+A: nirvana | nibbana
+E: Buddhism also teaches impermanence and no-self.
+
+Q: Which branch of Buddhism spread in South and Southeast Asia (Sri Lanka, Thailand)?
+A: Theravada | Theravada Buddhism
+E: East Asia follows Mahayana; there is also Tibetan Buddhism.
+
+Q: In which country did Buddhism begin (where it almost disappeared later)?
+A: India
+E: It spread across all of Asia.
+```

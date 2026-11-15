@@ -137,3 +137,23 @@ Today about 30% of the world's Christians live in this region.
 | Malaysia | Ethnicity and religion overlap (Malays are Muslim; ethnic Chinese Buddhist, Taoist or Christian; ethnic Indians Hindu) |
 | Bosnia and Herzegovina | Bosniaks are Muslim, Serbs Orthodox, Croats Catholic |
 | Northern Ireland (UK) | Catholics and Protestants clashed, and the conflict continued until the 1998 peace agreement |
+
+## Exercises
+
+```quiz
+Q: Which country has the most Muslims?
+A: Indonesia
+E: About 240 million, followed by Pakistan, India and Bangladesh.
+
+Q: Which country is home to about 95% of the world's Hindus?
+A: India
+E: Hindus are 79% of India's people and 81% of Nepal's.
+
+Q: Which is the only place in the world where "other religions" (folk religion, Taoism and so on) are the majority?
+A: Taiwan
+E: Folk religion, Taoism and Buddhism are strong there.
+
+Q: Which country recognizes 18 sects and shares out political posts among them?
+A: Lebanon
+E: Nigeria is split between a Muslim north and a Christian south.
+```

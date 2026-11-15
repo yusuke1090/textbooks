@@ -112,3 +112,23 @@
 - Believes that Jesus is the savior (Christ), and teaches God's love and love of neighbor. His death on the cross and resurrection are central
 - Three major branches: Catholic, Orthodox and Protestant
 - The religion with the most believers. Now growing in Africa and Latin America, and declining in Europe and North America
+
+## Exercises
+
+```quiz
+Q: Christians believe Jesus is the "Christ". What does this mean?
+A: savior | saviour | messiah | the Messiah
+E: His death on the cross and resurrection are at the center of the faith.
+
+Q: The three main branches of Christianity are Catholic, Protestant and what?
+A: Orthodox | Eastern Orthodox | Orthodox Church
+E: It is strong in Russia, Greece and Eastern Europe.
+
+Q: What is the head of the Catholic Church called?
+A: Pope | the Pope
+E: He lives in Vatican City in Rome.
+
+Q: Christianity is growing in sub-Saharan Africa and which other region (it is shrinking in Europe and North America)?
+A: Latin America | South America
+E: It is growing in Africa and Latin America and shrinking in Europe and North America.
+```

@@ -88,3 +88,23 @@
 - The Bahá'í Faith: all religions come from one God. The oneness of humanity
 - African traditional religions: ancestral and nature spirits. In the Americas, they became Vodou, Santería and Candomblé
 - Indigenous faiths and shamanism. There are also new religions that combine several religions, such as Cao Dai
+
+## Exercises
+
+```quiz
+Q: Which religion from ancient Iran teaches a battle between good and evil and has fire temples?
+A: Zoroastrianism | Zoroastrian
+E: It influenced later religions.
+
+Q: Which religion teaches that all religions come from one God and that humanity is one?
+A: Baha'i | Bahai | Baha'i Faith
+E: It began in 19th-century Iran.
+
+Q: Which religion, rooted in African traditional religion, grew up in Haiti?
+A: Vodou | Voodoo | Vodun
+E: There is also Santería in Cuba and Candomblé in Brazil.
+
+Q: What is the belief in people who contact spirits to heal or tell the future called?
+A: shamanism
+E: It is found in many Indigenous faiths.
+```

@@ -83,3 +83,27 @@ These are 2020 figures from a study published in 2025 by the Pew Research Center
 - Chapter 12 covers the relationship of religion with politics and conflict, and what to be careful of at work and when traveling
 - Religious figures vary greatly with how they are counted (what people say about themselves, or national or religious registrations). The figures in this book are rough guides. Sources are collected in Appendix B
 - Religions are described in the form "believers think this way". This is not a book to decide which religion is right
+
+## Exercises
+
+```quiz
+Q: What do we call a religion that believes there is only one God?
+A: monotheism | monotheistic | monotheistic religion
+E: Judaism, Christianity, Islam and Sikhism. Religions with many gods are polytheistic.
+
+Q: Judaism, Christianity and Islam share one ancestor of faith. Whose name is used for this group of religions?
+A: Abraham | Abrahamic
+E: They believe in the same one God and value scripture.
+
+Q: In 2020, which religion had the most followers in the world?
+A: Christianity | Christian | Christians
+E: About 2.3 billion (28.8%). Second is Islam (about 2.0 billion).
+
+Q: Which was the only religion whose number of followers fell between 2010 and 2020?
+A: Buddhism | Buddhist | Buddhists
+E: About 320 million (4.1%).
+
+Q: What do we call a religion with no founder that grew slowly within one people's way of life?
+A: ethnic religion | folk religion | ethnic
+E: Judaism, Hinduism and Shinto. Religions with a clear founder are founded religions.
+```

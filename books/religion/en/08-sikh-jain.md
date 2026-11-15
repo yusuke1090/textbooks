@@ -91,3 +91,23 @@
 - Sikhism: founded by Nanak in the 15th century. One God, rejection of caste, and equality. The turban and the Five Ks, and the langar where anyone can eat
 - Jainism: Mahavira, a contemporary of the Buddha. Takes non-harming to the utmost; many do not even eat root vegetables
 - Both inherited the Indian ideas of rebirth and karma while making their own paths
+
+## Exercises
+
+```quiz
+Q: Who founded Sikhism in the 15th century?
+A: Guru Nanak | Nanak
+E: He taught one God and equality, rejecting caste.
+
+Q: What is the free kitchen at a Sikh temple, where anyone can eat, called?
+A: langar
+E: Everyone sits together and eats, whatever their religion or status.
+
+Q: What is the Jain teaching of not harming any living thing?
+A: ahimsa | non-violence | nonviolence
+E: Many Jains do not even eat root vegetables, to avoid killing small creatures in the soil.
+
+Q: Who founded Jainism, around the same time as the Buddha?
+A: Mahavira
+E: Both religions kept the Indian ideas of rebirth and karma.
+```

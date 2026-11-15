@@ -104,3 +104,23 @@ In fact, conflicts rarely arise from religious difference alone. Land, ethnicity
 - The relationship between state and religion varies: state religions, religious law, separation of religion and state, restriction of religion
 - Most conflicts arise where land, ethnicity and politics overlap with religion. Do not judge a whole religion by one incident
 - Know the rules on food, prayer, days off and dress, and when unsure, ask the person
+
+## Exercises
+
+```quiz
+Q: What is the separation of religion and the state called?
+A: separation of church and state | secularism | separation
+E: Some countries have a state religion, some use religious law, and some restrict religion.
+
+Q: What do we call food that is allowed under Islamic law?
+A: halal
+E: Pork and alcohol are avoided.
+
+Q: What is it called when religion becomes less powerful in society?
+A: secularization | secularisation
+E: At the same time, religion is growing stronger in some places.
+
+Q: When you are not sure about someone's religious rules, what does this book suggest you do?
+A: ask | ask them | ask the person
+E: Learn the rules on food, prayer, rest and dress, and ask when you are not sure.
+```

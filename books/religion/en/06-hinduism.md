@@ -128,3 +128,23 @@ Some Indian gods came to Japan with Buddhism by way of China, and became gods pr
 - Rebirth, karma and liberation. Living by fulfilling one's dharma (duty)
 - Cows are sacred and many are vegetarian. Diwali and Holi are major festivals
 - 95% of believers are in India. Japan's Benten and Daikokuten were originally Indian gods
+
+## Exercises
+
+```quiz
+Q: What is the endless cycle of death and rebirth called?
+A: samsara | rebirth | reincarnation
+E: Escaping from it is called moksha (liberation).
+
+Q: What is the idea that your actions decide what happens to you later?
+A: karma
+E: Living by dharma (your duty) is important.
+
+Q: Which animal is sacred in Hinduism, so many Hindus do not eat it?
+A: cow | cattle | cows
+E: Many Hindus are vegetarian.
+
+Q: Which big Hindu festival is the "festival of lights"?
+A: Diwali | Deepavali
+E: The spring festival of colored powder is Holi.
+```

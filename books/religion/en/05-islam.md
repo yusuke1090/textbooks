@@ -129,3 +129,27 @@
 - The six articles of faith and five pillars. Prayer five times a day, fasting in Ramadan, pilgrimage to Mecca
 - Most are Sunni; the Shia are numerous in Iran and elsewhere
 - Halal, avoiding pork and alcohol. Most believers live in Asia
+
+## Exercises
+
+```quiz
+Q: What is the holy book of Islam?
+A: Quran | Qur'an | Koran
+E: It is believed to be the words of God, given through the last prophet, Muhammad.
+
+Q: How many times a day do Muslims pray?
+A: 5 | five
+E: Prayer is one of the Five Pillars.
+
+Q: What is the month of fasting from dawn to sunset, the ninth month of the Islamic calendar?
+A: Ramadan | Ramadhan
+E: Fasting is one of the Five Pillars.
+
+Q: Which city is the holiest place in Islam, where Muslims go on pilgrimage?
+A: Mecca | Makkah
+E: Those who can should go once in their life.
+
+Q: Which branch makes up most of Islam?
+A: Sunni | Sunnis | Sunni Islam
+E: Shia Muslims are many in Iran and some other places.
+```
