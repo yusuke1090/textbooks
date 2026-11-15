@@ -285,16 +285,20 @@
     "icon": "🛐",
     "group": "文化",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "宗教の教科書"
+      "ja": "宗教の教科書",
+      "en": "Religion Textbook"
     },
     "desc": {
-      "ja": "どの国でどの宗教が多いか。ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道などの考え方と歴史、祭りと暮らしの決まり。"
+      "ja": "どの国でどの宗教が多いか。ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道などの考え方と歴史、祭りと暮らしの決まり。",
+      "en": "Which religions are largest in which countries. The beliefs and history of Judaism, Christianity, Islam, Hinduism, Buddhism, Sikhism, Jainism, Confucianism, Taoism, Shinto and more, with their festivals and rules of daily life."
     },
     "note": {
-      "ja": "信者の数は 2026年11月に調べた目安です（おもに Pew Research Center の2020年の推計）。出典は付録B にあります。"
+      "ja": "信者の数は 2026年11月に調べた目安です（おもに Pew Research Center の2020年の推計）。出典は付録B にあります。",
+      "en": "Numbers of believers are rough figures checked in November 2026 (mainly Pew Research Center's 2020 estimates). Sources are in Appendix B."
     }
   }
 ]
