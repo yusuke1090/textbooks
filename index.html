@@ -1417,8 +1417,24 @@ li > .sticky-bar { margin-top: 4px; }
         return +x === +an || (d > 0 && (+x).toFixed(d) === (+an).toFixed(d));
       }
       const w = norm(a);
-      return v === w || sing(v) === sing(w);
+      return v === w || sing(v) === sing(w) || qzHas(input, a);
     });
+  }
+  // 入力の中に答えが入っていれば正解（「BOOTボタン」「Python, C++」）。
+  // 英数字は単語の途中に入っているだけなら数えない（as と class など）。1文字の答えと記号だけの答えはしない
+  function qzLoose(s) {
+    s = String(s).normalize("NFKC").toLowerCase().replace(/[ァ-ヶ]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+    return " " + s.replace(/[\s"'`“”‘’「」『』()【】、。,.!?:;・〜~/]+/g, " ").trim() + " ";
+  }
+  function qzHas(input, a) {
+    const w = qzLoose(a).trim(), v = qzLoose(input), W = /[a-z0-9]/;
+    if ([...w].length < 2 || !qzNorm(a)) return false;
+    for (let i = v.indexOf(w); i >= 0; i = v.indexOf(w, i + 1)) {
+      if (W.test(w[0]) && W.test(v[i - 1])) continue;
+      if (W.test(w[w.length - 1]) && W.test(v[i + w.length])) continue;
+      return true;
+    }
+    return false;
   }
   function checkQuiz(q) {
     const inp = q.querySelector(".qz-in");
