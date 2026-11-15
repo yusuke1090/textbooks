@@ -100,3 +100,23 @@ code .
 - `git init` → 最初のコミット → `gh repo create`（または GitHub の画面で作って `git remote add`）→ `git push -u origin main`
 - 最初のコミットの前に `git status` で、`build/` やパスワードが入っていないか確かめる
 - 別の PC では `git clone` で始める
+
+## 練習問題
+
+```quiz
+Q: フォルダを git のリポジトリにするコマンドは何ですか。
+A: git init | init
+E: このあと最初のコミットをします。
+
+Q: gh で GitHub にリポジトリを作るコマンドは `gh repo` のあとに何と書きますか。
+A: create | gh repo create
+E: GitHub の画面で作ったときは、`git remote add` でつなぎます。
+
+Q: 最初のプッシュで、送り先をおぼえさせるために `git push` に付けるオプションは何ですか（`git push ? origin main`）。
+A: -u | --set-upstream
+E: `git push -u origin main` と打つと、次からは `git push` だけで送れます。
+
+Q: 最初のコミットの前に、`build/` やパスワードが入っていないかを確かめるコマンドは何ですか。
+A: git status | status
+E: 何が記録されるかを、コミットの前に必ず見ます。
+```

@@ -69,3 +69,23 @@ On another PC, first copy everything from GitHub with `git clone`, and after tha
 - git is software that keeps records inside your PC, and GitHub is where they are stored
 - Send with `add` → `commit` → `push`, and on another machine get them with `clone` → `pull`
 - The record is in the `.git` folder. Do not delete it
+
+## Exercises
+
+```quiz
+Q: git keeps records of changes on your PC. What is the online service where those records are stored?
+A: GitHub
+E: git is software on your PC; GitHub is where you keep the records.
+
+Q: To send changes to GitHub you run `add` → `commit` → what?
+A: push | git push
+E: On another machine you use `clone` → `pull` to get them.
+
+Q: Which command copies a whole GitHub repository to another machine for the first time?
+A: clone | git clone
+E: After that, `git pull` brings only the new changes.
+
+Q: What is the name of the folder that holds git's records, which you must not delete?
+A: .git | git
+E: Deleting it loses all the history.
+```

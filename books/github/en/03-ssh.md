@@ -151,3 +151,23 @@ Check with `git remote -v` that the URL of `origin` has changed to `git@github.c
 - You cannot clone or push with your GitHub password. Use an SSH key or `gh auth login`
 - One SSH key pair per machine. Never give away the private key; register the public key (`.pub`) with GitHub
 - Check with `ssh -T git@github.com`
+
+## Exercises
+
+```quiz
+Q: Of the two SSH keys, which one do you register on GitHub?
+A: public key | public | the public key
+E: Never give your private key to anyone.
+
+Q: What extension does the public key file end with?
+A: .pub | pub
+E: For example `~/.ssh/id_ed25519.pub`.
+
+Q: Which command checks that you can connect to GitHub over SSH?
+A: ssh -T git@github.com
+E: If it greets you by name, you are connected.
+
+Q: How many SSH key pairs do you make for each machine?
+A: 1 | one
+E: One pair per machine; register each public key on GitHub.
+```

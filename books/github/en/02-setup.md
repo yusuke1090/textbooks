@@ -50,3 +50,19 @@ Also set up **two-factor authentication** (when you log in, you confirm one more
 - Install with `sudo apt install git gh`
 - On each PC, set your name, email address and `main` once at the start
 - Turn on two-factor authentication for your GitHub account
+
+## Exercises
+
+```quiz
+Q: On Ubuntu, what comes after `sudo apt install` to install git and gh?
+A: git gh | gh git
+E: Run `sudo apt install git gh`.
+
+Q: Once on each PC you set your name, email address and what branch name for new repositories?
+A: main
+E: Set the first branch name to `main`.
+
+Q: What is the extra check, besides the password, that you add to protect your GitHub account?
+A: two-factor authentication | 2FA | two factor | 2-factor authentication
+E: You confirm with a phone app or similar as well.
+```

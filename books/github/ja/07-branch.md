@@ -83,3 +83,19 @@ const int SAMPLE_HZ = 100;
 - 大きな変更は `git switch -c` で枝を分けて試し、うまくいったら `git merge` で main に取り込む
 - コンフリクトは、残すほうを選んで印の3行を消し、`add` → `commit` → `push`
 - 始める前に `git pull`、終わったら `git push` で防ぐ
+
+## 練習問題
+
+```quiz
+Q: 新しいブランチを作って、そこに移るコマンドは何ですか。
+A: git switch -c | switch -c
+E: 大きな変更は枝を分けて試します。
+
+Q: うまくいったブランチを main に取り込むコマンドは何ですか。
+A: git merge | merge
+E: main に移ってから `git merge 枝の名前` と打ちます。
+
+Q: 同じ所を両方の枝で変えて、git が自動でまとめられないことを何といいますか。
+A: コンフリクト | 衝突 | conflict
+E: 残すほうを選んで印の3行を消し、`add` → `commit` → `push` します。
+```

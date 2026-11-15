@@ -151,3 +151,23 @@ git remote -v
 - GitHub のパスワードでは、クローン・プッシュできない。SSH キーか、`gh auth login` を使う
 - SSH キーは機械ごとに1組。秘密鍵は渡さず、公開鍵（`.pub`）を GitHub に登録する
 - `ssh -T git@github.com` で確かめる
+
+## 練習問題
+
+```quiz
+Q: SSH キーの2つの鍵のうち、GitHub に登録するのはどちらですか。
+A: 公開鍵 | こうかいかぎ | こうかいけん | public key
+E: 秘密鍵はだれにも渡しません。
+
+Q: 公開鍵のファイル名の最後に付いている拡張子は何ですか。
+A: .pub | pub
+E: 例えば `~/.ssh/id_ed25519.pub` です。
+
+Q: GitHub に SSH でつながるかを確かめるコマンドは何ですか。
+A: ssh -T git@github.com | ssh -T git@github.com
+E: 名前のあいさつが出れば、つながっています。
+
+Q: SSH キーは、機械ごとに何組作りますか。
+A: 1 | 一 | 1組
+E: 機械ごとに1組作り、それぞれの公開鍵を GitHub に登録します。
+```

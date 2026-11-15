@@ -138,3 +138,19 @@ git remote add lan ~/git/collar.git
 - To develop on another PC, make a key on that PC too and register it with GitHub
 - If a Raspberry Pi or Jetson only fetches code, use a read-only deploy key
 - To avoid GitHub, connect to your PC over ssh and clone from it
+
+## Exercises
+
+```quiz
+Q: What is the read-only key for one repository, used on a Raspberry Pi or Jetson that only fetches code?
+A: deploy key | deploy keys
+E: It cannot write, so losing the device does less harm.
+
+Q: Which ssh option lends your PC's key to the machine you connect to?
+A: -A | ssh -A
+E: You can use your PC's key only while connected.
+
+Q: If you develop on another PC, what must you make on that PC and register on GitHub?
+A: SSH key | key | ssh key pair
+E: Make one key pair per machine.
+```

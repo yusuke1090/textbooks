@@ -100,3 +100,23 @@ code .
 - `git init` → first commit → `gh repo create` (or make it on GitHub's website and `git remote add`) → `git push -u origin main`
 - Before the first commit, check with `git status` that `build/` and passwords are not included
 - On another PC, start with `git clone`
+
+## Exercises
+
+```quiz
+Q: Which command turns a folder into a git repository?
+A: git init | init
+E: Then you make your first commit.
+
+Q: To create a GitHub repository with gh, what comes after `gh repo`?
+A: create | gh repo create
+E: If you create it on the GitHub website, connect it with `git remote add`.
+
+Q: Which option do you add to the first push so git remembers where to send (`git push ? origin main`)?
+A: -u | --set-upstream
+E: After `git push -u origin main`, plain `git push` works.
+
+Q: Which command checks that `build/` or passwords are not included before the first commit?
+A: git status | status
+E: Always look at what will be recorded before you commit.
+```

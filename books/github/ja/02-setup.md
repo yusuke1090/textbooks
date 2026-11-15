@@ -50,3 +50,19 @@ git config --global --list
 - `sudo apt install git gh` で入れる
 - PC ごとに最初に1回、名前・メールアドレス・`main` を設定する
 - GitHub のアカウントには2段階認証を付ける
+
+## 練習問題
+
+```quiz
+Q: Ubuntu で git と gh を入れるコマンドは `sudo apt install` のあとに何と書きますか。
+A: git gh | gh git
+E: `sudo apt install git gh` で入れます。
+
+Q: PC ごとに最初に1回、名前・メールアドレスと、もう1つ何を設定しますか（最初のブランチの名前）。
+A: main
+E: 最初のブランチの名前を `main` にします。
+
+Q: GitHub のアカウントを守るために付ける、パスワードのほかにもう1つ確かめる仕組みを何といいますか。
+A: 2段階認証 | 二段階認証 | 2要素認証 | 二要素認証 | 2FA
+E: スマホのアプリなどで、もう1つ確かめます。
+```

@@ -29,3 +29,23 @@
 - Undo uncommitted changes with `git restore`, and pushed commits with `git revert`
 - `--amend` only before pushing
 - Do not use `reset --hard` or `push --force`
+
+## Exercises
+
+```quiz
+Q: Which command throws away changes that are not committed yet?
+A: git restore | restore
+E: The file goes back to its last committed state.
+
+Q: Which command undoes a commit you already pushed, by adding a new commit?
+A: git revert | revert
+E: It does not rewrite history, so it is safe after pushing.
+
+Q: `git commit --amend` fixes the last commit. When is it safe to use?
+A: before pushing | before push | before you push
+E: Using it after pushing makes your history differ from GitHub.
+
+Q: This book says never to use `reset --hard` and what other command?
+A: push --force | git push --force | --force | push -f
+E: Both can destroy records in a way you cannot undo.
+```

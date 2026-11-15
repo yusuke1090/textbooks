@@ -211,3 +211,23 @@ Type a name in the box at the top of **Ctrl + ,** (Settings) to find that settin
 - Branches are from the name in the lower left. For conflicts, press Accept … then ＋ → Commit
 - For operations without a button, use `Git:` in the Command Palette. See errors with Git: Show Git Output
 - To see the history as a diagram, use Git Graph; to work on a Raspberry Pi or Jetson from your PC, use Remote - SSH
+
+## Exercises
+
+```quiz
+Q: Which keys open the Source Control view in VS Code?
+A: Ctrl+Shift+G | Ctrl + Shift + G | Ctrl Shift G
+E: The big blue button tells you what to do next.
+
+Q: In VS Code, a green mark next to a line number means the line was what?
+A: added | add
+E: Blue means changed, red means deleted.
+
+Q: Which extension shows branch history as a graph?
+A: Git Graph | GitGraph
+E: Remote - SSH lets you work on a Raspberry Pi or Jetson from your PC.
+
+Q: What do you type in the Command Palette to find git actions that have no button?
+A: Git: | Git
+E: To see errors, use Git: Show Git Output.
+```

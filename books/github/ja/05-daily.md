@@ -88,3 +88,19 @@ Untracked files:
 - 始める前に `git pull`、終わったら `add` → `commit` → `push`
 - 迷ったら `git status`
 - パスワードと `build/` は上げない。`.gitignore` に書く
+
+## 練習問題
+
+```quiz
+Q: 作業を始める前に打つコマンドは何ですか。
+A: git pull | pull
+E: ほかの機械での変更を先に取ってきます。
+
+Q: 迷ったときに打つと、今の状態がわかるコマンドは何ですか。
+A: git status | status
+E: どのファイルが変わり、何が記録されるかがわかります。
+
+Q: GitHub に上げたくないファイル（`build/` など）を書いておくファイルの名前は何ですか。
+A: .gitignore | gitignore
+E: パスワードと `build/` は上げません。
+```

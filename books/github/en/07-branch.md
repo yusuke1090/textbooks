@@ -83,3 +83,19 @@ From `<<<<<<<` to `=======` is your local side, and from `=======` to `>>>>>>>` 
 - Try big changes on a separate branch with `git switch -c`, and if they work, bring them into main with `git merge`
 - For a conflict, choose which side to keep, delete the three marker lines, then `add` → `commit` → `push`
 - Prevent conflicts with `git pull` before you start and `git push` when you finish
+
+## Exercises
+
+```quiz
+Q: Which command creates a new branch and switches to it?
+A: git switch -c | switch -c
+E: Try big changes on a separate branch.
+
+Q: Which command brings a finished branch into main?
+A: git merge | merge
+E: Switch to main, then run `git merge branch-name`.
+
+Q: What is it called when both branches changed the same lines and git cannot combine them?
+A: conflict | merge conflict
+E: Choose what to keep, delete the three marker lines, then `add` → `commit` → `push`.
+```

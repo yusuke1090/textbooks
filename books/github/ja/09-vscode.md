@@ -211,3 +211,23 @@ git と GitHub へのサインインは、最初から VS Code に入ってい�
 - ブランチは左下の名前から。コンフリクトは Accept … を押して ＋ → Commit
 - ボタンにない操作は、コマンドパレットの `Git:`。エラーは Git: Show Git Output で見る
 - 歴史を図で見るなら Git Graph、ラズパイ・Jetson を PC から触るなら Remote - SSH
+
+## 練習問題
+
+```quiz
+Q: VS Code のソース管理の画面を開くキーは何ですか。
+A: Ctrl+Shift+G | Ctrl + Shift + G | Ctrl Shift G
+E: 青い大きなボタンが、次にすることを教えてくれます。
+
+Q: VS Code で、行番号の横が緑のとき、その行はどうなっていますか。
+A: 足した | 追加 | 足した行 | 追加した
+E: 青は変えた行、赤は消した行です。
+
+Q: ブランチの歴史を図で見るときに便利な拡張機能は何ですか。
+A: Git Graph | GitGraph
+E: ラズパイ・Jetson を PC から触るなら Remote - SSH です。
+
+Q: ボタンにない git の操作は、コマンドパレットで何と打って探しますか。
+A: Git: | Git
+E: エラーは Git: Show Git Output で見ます。
+```

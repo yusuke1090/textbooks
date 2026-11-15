@@ -88,3 +88,19 @@ For example, when you use WiFi on a Pico W, write the password in `secrets.h` an
 - `git pull` before you start; `add` → `commit` → `push` when you finish
 - When in doubt, `git status`
 - Do not upload passwords or `build/`. Write them in `.gitignore`
+
+## Exercises
+
+```quiz
+Q: Which command do you run before you start work?
+A: git pull | pull
+E: It brings in changes made on other machines first.
+
+Q: Which command shows the current state when you are unsure?
+A: git status | status
+E: It shows which files changed and what will be recorded.
+
+Q: Which file lists the files you do not want to upload, such as `build/`?
+A: .gitignore | gitignore
+E: Never upload passwords or `build/`.
+```
