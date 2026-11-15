@@ -7,19 +7,19 @@
 | 教科書 | 中身 | 言葉 |
 | --- | --- | --- |
 | [🐄 牛の教科書](https://yusuke1090.github.io/textbooks/?b=cow) | 乳牛のからだ・繁殖と1年1産・エサ・乳房炎・血乳・スマート酪農（13章と付録、図24枚と写真38枚） | 日本語・English |
-| [🌾 畑作と米の教科書](https://yusuke1090.github.io/textbooks/?b=crops) | 稲の育ち方・苗・水と肥料・病害虫・収穫と流通、北海道の輪作・麦・大豆・じゃがいも・てんさい、土と肥料、スマート農業（12章と付録、写真51枚） | 日本語 |
-| [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録、写真10枚） | 日本語 |
-| [🚁 ROS 2 と ArduPilot の教科書](https://yusuke1090.github.io/textbooks/?b=ros) | ROS 2 Jazzy の基本、ArduPilot の SITL・MAVLink、ROS 2 からドローンを飛ばす（AP_DDS）、Gazebo、Jetson・ラズパイ、安全と法律（12章と付録、図2枚と写真17枚） | 日本語 |
-| [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語 |
-| [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語 |
-| [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語 |
-| [🛐 宗教の教科書](https://yusuke1090.github.io/textbooks/?b=religion) | 国ごとに多い宗教と、ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道の考え方・歴史・行事・暮らしの決まり（12章と付録、写真74枚） | 日本語 |
-| [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語 |
-| [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語 |
-| [🧮 線形代数の教科書](https://yusuke1090.github.io/textbooks/?b=linalg) | ベクトル・行列・掃き出し法・行列式・ベクトル空間・線形写像・固有値と対角化・対称行列、最小二乗法と主成分分析（10章と付録、図6枚、例題と練習問題つき） | 日本語 |
-| [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語 |
-| [⚙️ C++ の教科書](https://yusuke1090.github.io/textbooks/?b=cpp) | g++ と VS Code で、変数・関数・ポインタからクラス・継承・テンプレート・例外まで（15章と付録） | 日本語 |
-| [🐳 Docker の教科書](https://yusuke1090.github.io/textbooks/?b=docker) | VS Code で Docker。コンテナ・Dockerfile・ボリューム・Compose・Dev Containers・ラズパイと Jetson（8章、図2枚） | 日本語 |
+| [🌾 畑作と米の教科書](https://yusuke1090.github.io/textbooks/?b=crops) | 稲の育ち方・苗・水と肥料・病害虫・収穫と流通、北海道の輪作・麦・大豆・じゃがいも・てんさい、土と肥料、スマート農業（12章と付録、写真51枚） | 日本語・English |
+| [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録、写真10枚） | 日本語・English |
+| [🚁 ROS 2 と ArduPilot の教科書](https://yusuke1090.github.io/textbooks/?b=ros) | ROS 2 Jazzy の基本、ArduPilot の SITL・MAVLink、ROS 2 からドローンを飛ばす（AP_DDS）、Gazebo、Jetson・ラズパイ、安全と法律（12章と付録、図2枚と写真17枚） | 日本語・English |
+| [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語・English |
+| [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語・English |
+| [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語・English |
+| [🛐 宗教の教科書](https://yusuke1090.github.io/textbooks/?b=religion) | 国ごとに多い宗教と、ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道の考え方・歴史・行事・暮らしの決まり（12章と付録、写真74枚） | 日本語・English |
+| [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語・English |
+| [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語・English |
+| [🧮 線形代数の教科書](https://yusuke1090.github.io/textbooks/?b=linalg) | ベクトル・行列・掃き出し法・行列式・ベクトル空間・線形写像・固有値と対角化・対称行列、最小二乗法と主成分分析（10章と付録、図6枚、例題と練習問題つき） | 日本語・English |
+| [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語・English |
+| [⚙️ C++ の教科書](https://yusuke1090.github.io/textbooks/?b=cpp) | g++ と VS Code で、変数・関数・ポインタからクラス・継承・テンプレート・例外まで（15章と付録） | 日本語・English |
+| [🐳 Docker の教科書](https://yusuke1090.github.io/textbooks/?b=docker) | VS Code で Docker。コンテナ・Dockerfile・ボリューム・Compose・Dev Containers・ラズパイと Jetson（8章、図2枚） | 日本語・English |
 
 ## 読む画面でできること
 
@@ -55,6 +55,8 @@ books/<id>/
   ja/ en/         章の Markdown（2つの言葉があるとき）。1つの言葉なら books/<id>/ に直接
   images/         図
   glossary.json   コードの言葉の説明（あれば。pico・github は手で書き、ほかは tools/make_glossaries.py で作る）
+  glossary-en.json  その英語版（tools/glossary/en/ の辞書から tools/make_glossaries.py で作る。pico・github は足りない言葉だけ足す）
+  figures-en.json 図の中の日本語と英語の対応。tools/translate_figures.py が images/en/ に英語の図を作る
   terms.json      本文の用語の説明（あれば。tools/make_terms.py で用語集の章から作る）
 tools/            図や用語の一覧を作るスクリプト
 ```
@@ -80,7 +82,9 @@ tools/            図や用語の一覧を作るスクリプト
 - 1行だけの画像 `![説明](images/名前.svg)` は図になり、「図 章-番号 説明」が付く。動画（mp4・webm・YouTube の URL）も同じ書き方
 - コードは ```` ```cpp ```` ・ ```` ```python ```` ・ ```` ```bash ```` など。```` ```cpp run ```` はそのままビルドできるプログラム、```` ```python run ```` は Pico Studio で試せる MicroPython（ラベルが変わる）
 - 数式（`math: true` の教科書）: 文の中は `$x^2$`、別の行に出すものは `$$…$$` を**1行で**書く。表の中では `|` の代わりに `\lvert` `\rvert`
-- 2つの言葉がある教科書は、`ja/` と `en/` に同じファイル名で書き、**見出しの数と順番、図の順番をそろえる**（切り替えるときに見出しの番号で場所を合わせるため）
+- 2つの言葉がある教科書は、`ja/` と `en/` に同じファイル名で書き、**見出しの数と順番、図の順番をそろえる**（切り替えるときに見出しの番号で場所を合わせるため）。`python3 tools/check_langs.py [id]` で、見出し・図の順番と、英語版に日本語が残っていないかを確かめる
+- 英語版のコードは日本語版と同じにし、コメントと表示する文字だけを訳す（コードの言葉の説明は日本語版のコードから選ぶ）
+- 英語の図: 図を直したら `python3 tools/translate_figures.py <id> --init` で新しい文字を `figures-en.json` に足して英語を書き、`python3 tools/translate_figures.py <id>` で `images/en/` を作り直す。英語版の Markdown は `images/en/名前.svg` を使う
 - 写真は Wikimedia Commons から借りる（CC0・パブリックドメイン・CC BY・CC BY-SA だけ）。`books/<id>/photos.json` に並べて `python3 tools/fetch_photos.py <id>` を動かすと、幅 960 px の JPEG にして `images/` に入れ、付録「写真の出典」（ふつうは `c-photos.md`）を作り直す
 
 ## 教科書ごとのメモ
