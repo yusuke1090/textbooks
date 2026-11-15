@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 440" font-family="system-ui, sans-serif" font-size="12">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52514e"/></marker></defs>
+<rect width="820" height="440" rx="10" fill="#ffffff"/>
+<defs><marker id="m-s1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#2a78d6"/></marker><marker id="m-s2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#eb6834"/></marker><marker id="m-s3" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#1baf7a"/></marker><marker id="m-s4" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#eda100"/></marker><marker id="m-red" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#e34948"/></marker><marker id="m-muted" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#8a8984"/></marker></defs>
+<path d="M198.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M232.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M266.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M300.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M334.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M368.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M402.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M436.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M470.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M504.0 420.0 V46.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 420.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 386.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 352.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 318.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 284.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 250.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 216.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 182.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 148.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 114.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 80.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 46.0 H504.0" stroke="#e6e5e0" stroke-width="1"/>
+<path d="M198.0 250.0 H504.0" stroke="#9a9a95" stroke-width="1.5"/>
+<path d="M300.0 420.0 V46.0" stroke="#9a9a95" stroke-width="1.5"/>
+<text x="500.0" y="244.0" font-size="12" text-anchor="end" fill="#8a8984">x</text>
+<text x="306.0" y="58.0" font-size="12" text-anchor="start" fill="#8a8984">y</text>
+<text x="295.0" y="264.0" font-size="11" text-anchor="end" fill="#8a8984">O</text>
+<path d="M215.0 335.0 L497.2 52.8" fill="none" fill-opacity="1" stroke="#2a78d6" stroke-width="1" stroke-dasharray="3 4"/>
+<path d="M259.2 168.4 L385.0 420.0" fill="none" fill-opacity="1" stroke="#eb6834" stroke-width="1" stroke-dasharray="3 4"/>
+<line x1="300.0" y1="250.0" x2="470.0" y2="80.0" stroke="#2a78d6" stroke-width="2" marker-end="url(#m-s1)" stroke-dasharray="6 4"/>
+<line x1="300.0" y1="250.0" x2="334.0" y2="216.0" stroke="#2a78d6" stroke-width="3.4" marker-end="url(#m-s1)"/>
+<line x1="300.0" y1="250.0" x2="368.0" y2="386.0" stroke="#eb6834" stroke-width="2" marker-end="url(#m-s2)" stroke-dasharray="6 4"/>
+<line x1="300.0" y1="250.0" x2="334.0" y2="318.0" stroke="#eb6834" stroke-width="3.4" marker-end="url(#m-s2)"/>
+<line x1="300.0" y1="250.0" x2="300.0" y2="216.0" stroke="#8a8984" stroke-width="2.2" marker-end="url(#m-muted)"/>
+<line x1="300.0" y1="250.0" x2="334.0" y2="148.0" stroke="#8a8984" stroke-width="1.6" marker-end="url(#m-muted)" stroke-dasharray="6 4"/>
+<text x="340.0" y="230.0" font-size="12" text-anchor="start" fill="#2a78d6" font-weight="700">x₁ = (1, 1)</text>
+<text x="464.0" y="74.0" font-size="12" text-anchor="end" fill="#2a78d6" font-weight="700">Ax₁ = 5x₁</text>
+<text x="340.0" y="312.0" font-size="12" text-anchor="start" fill="#eb6834" font-weight="700">x₂ = (1, −2)</text>
+<text x="374.0" y="380.0" font-size="12" text-anchor="start" fill="#eb6834" font-weight="700">Ax₂ = 2x₂</text>
+<text x="292.0" y="220.0" font-size="11.5" text-anchor="end" fill="#8a8984" font-weight="700">(0, 1)</text>
+<text x="326.0" y="142.0" font-size="11.5" text-anchor="end" fill="#8a8984" font-weight="700">A(0, 1) = (1, 3)</text>
+<text x="560.0" y="70.0" font-size="13" text-anchor="start" fill="#1f1f1d" font-weight="700">A = (4 1; 2 3)</text>
+<text x="560.0" y="100.0" font-size="12.5" text-anchor="start" fill="#52514e">An eigenvector keeps its direction;</text>
+<text x="560.0" y="122.0" font-size="12.5" text-anchor="start" fill="#52514e">only its length scales by the eigenvalue</text>
+<text x="560.0" y="160.0" font-size="12.5" text-anchor="start" fill="#1f1f1d" font-weight="700">(1, 1) becomes 5 times, (1, −2) 2 times</text>
+<text x="560.0" y="198.0" font-size="12.5" text-anchor="start" fill="#52514e">An ordinary vector (gray) like (0, 1)</text>
+<text x="560.0" y="220.0" font-size="12.5" text-anchor="start" fill="#52514e">becomes (1, 3): its direction changes too</text>
+</svg>

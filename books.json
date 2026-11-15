@@ -106,16 +106,20 @@
     "icon": "🧮",
     "group": "データ",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "線形代数の教科書"
+      "ja": "線形代数の教科書",
+      "en": "Linear Algebra Textbook"
     },
     "desc": {
-      "ja": "ベクトル・行列・逆行列・掃き出し法・行列式から、ベクトル空間・線形写像・固有値と対角化・対称行列まで。例題を1つずつ解きながら進む、大学1〜2年のレベル。最小二乗法と主成分分析とのつながりも。"
+      "ja": "ベクトル・行列・逆行列・掃き出し法・行列式から、ベクトル空間・線形写像・固有値と対角化・対称行列まで。例題を1つずつ解きながら進む、大学1〜2年のレベル。最小二乗法と主成分分析とのつながりも。",
+      "en": "From vectors, matrices, inverses, elimination and determinants to vector spaces, linear maps, eigenvalues and diagonalization, and symmetric matrices. First- and second-year university level, working through examples one at a time. Also shows the links to least squares and principal component analysis."
     },
     "math": true,
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "ml",

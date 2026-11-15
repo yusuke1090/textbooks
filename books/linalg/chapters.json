@@ -1,13 +1,13 @@
 [
-  {"part": "第1部 ベクトルと行列", "file": "01-vectors.md", "title": "1. ベクトル"},
-  {"part": "第1部 ベクトルと行列", "file": "02-matrices.md", "title": "2. 行列とその計算"},
-  {"part": "第1部 ベクトルと行列", "file": "03-2x2.md", "title": "3. 2次の正方行列と1次変換"},
-  {"part": "第2部 連立方程式と行列式", "file": "04-elimination.md", "title": "4. 連立1次方程式と掃き出し法"},
-  {"part": "第2部 連立方程式と行列式", "file": "05-determinant.md", "title": "5. 行列式"},
-  {"part": "第3部 ベクトル空間と線形写像", "file": "06-space.md", "title": "6. ベクトル空間"},
-  {"part": "第3部 ベクトル空間と線形写像", "file": "07-linear-map.md", "title": "7. 線形写像"},
-  {"part": "第4部 固有値と対角化", "file": "08-eigen.md", "title": "8. 固有値と固有ベクトル"},
-  {"part": "第4部 固有値と対角化", "file": "09-symmetric.md", "title": "9. 内積空間と対称行列の対角化"},
-  {"part": "第4部 固有値と対角化", "file": "10-applications.md", "title": "10. NumPy と、統計・機械学習とのつながり"},
-  {"part": "付録", "file": "a-formulas.md", "title": "付録A. 公式のまとめ"}
+  {"part": {"ja": "第1部 ベクトルと行列", "en": "Part 1: Vectors and matrices"}, "file": "01-vectors.md", "title": {"ja": "1. ベクトル", "en": "1. Vectors"}},
+  {"part": {"ja": "第1部 ベクトルと行列", "en": "Part 1: Vectors and matrices"}, "file": "02-matrices.md", "title": {"ja": "2. 行列とその計算", "en": "2. Matrices and their operations"}},
+  {"part": {"ja": "第1部 ベクトルと行列", "en": "Part 1: Vectors and matrices"}, "file": "03-2x2.md", "title": {"ja": "3. 2次の正方行列と1次変換", "en": "3. 2×2 square matrices and linear transformations"}},
+  {"part": {"ja": "第2部 連立方程式と行列式", "en": "Part 2: Systems of equations and determinants"}, "file": "04-elimination.md", "title": {"ja": "4. 連立1次方程式と掃き出し法", "en": "4. Systems of linear equations and elimination"}},
+  {"part": {"ja": "第2部 連立方程式と行列式", "en": "Part 2: Systems of equations and determinants"}, "file": "05-determinant.md", "title": {"ja": "5. 行列式", "en": "5. Determinants"}},
+  {"part": {"ja": "第3部 ベクトル空間と線形写像", "en": "Part 3: Vector spaces and linear maps"}, "file": "06-space.md", "title": {"ja": "6. ベクトル空間", "en": "6. Vector spaces"}},
+  {"part": {"ja": "第3部 ベクトル空間と線形写像", "en": "Part 3: Vector spaces and linear maps"}, "file": "07-linear-map.md", "title": {"ja": "7. 線形写像", "en": "7. Linear maps"}},
+  {"part": {"ja": "第4部 固有値と対角化", "en": "Part 4: Eigenvalues and diagonalization"}, "file": "08-eigen.md", "title": {"ja": "8. 固有値と固有ベクトル", "en": "8. Eigenvalues and eigenvectors"}},
+  {"part": {"ja": "第4部 固有値と対角化", "en": "Part 4: Eigenvalues and diagonalization"}, "file": "09-symmetric.md", "title": {"ja": "9. 内積空間と対称行列の対角化", "en": "9. Inner product spaces and diagonalizing symmetric matrices"}},
+  {"part": {"ja": "第4部 固有値と対角化", "en": "Part 4: Eigenvalues and diagonalization"}, "file": "10-applications.md", "title": {"ja": "10. NumPy と、統計・機械学習とのつながり", "en": "10. NumPy, and connections to statistics and machine learning"}},
+  {"part": {"ja": "付録", "en": "Appendices"}, "file": "a-formulas.md", "title": {"ja": "付録A. 公式のまとめ", "en": "Appendix A. Summary of formulas"}}
 ]

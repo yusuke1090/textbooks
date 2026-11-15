@@ -34,6 +34,8 @@ NOTE_EN = ("Explanations shown when you click a word in the code (English). tool
 def corpus(book):
     """本の中のコード（コードブロックと `…`）の、言葉とコマンドの切れはし"""
     d = ROOT / "books" / book
+    if (d / "ja").is_dir():                 # 英語版はコードが同じでコメントだけ英語なので、日本語版だけを見る
+        d = d / "ja"
     text = "\n".join(p.read_text(encoding="utf-8") for p in sorted(d.glob("**/*.md")))
     code = re.findall(r"```[^\n]*\n(.*?)```", text, re.S) + re.findall(r"`([^`\n]+)`", text)
     joined = "\n".join(code)

@@ -95,7 +95,6 @@
   "$ python3": "Origin: version 3 of Python.\nRuns a Python program on the PC.",
   "$ mkdir": "Origin: short for make directory.\nMakes a folder.",
   "$ mkdir -p": "Origin: -p is short for parents.\nAlso makes the folders along the way. No error if it already exists.",
-  "$ make": "Builds using the steps cmake created. make blink builds only blink.",
   "$ g++": "The C++ compiler for the PC. Makes programs that run on the PC, not the Pico (the tests in Chapter 17).",
   "$ g++ -Wall": "Shows all warnings about common mistakes",
   "$ g++ -o": "Sets the name of the executable to make",
