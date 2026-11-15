@@ -108,3 +108,33 @@ for (int t : test) {
 - 回数が決まっていれば `for`、決まっていなければ `while`、必ず1回するなら `do while`
 - `break` で終わる、`continue` で次の回へ
 - 止まらないときは Ctrl + C
+
+## 練習問題
+
+```quiz
+Q: 次のコードは何を表示しますか。
+| int sum = 0;
+| for (int i = 1; i <= 4; i++) sum += i;
+| cout << sum;
+A: 10
+E: 1 + 2 + 3 + 4 = 10 です。
+
+Q: 次のコードは何を表示しますか。
+| int i = 10;
+| do { cout << i; } while (i < 5);
+A: 10
+E: `do while` は、条件を見る前に必ず1回動きます。
+
+Q: 次のコードは何を表示しますか。
+| for (int i = 0; i < 6; i++) {
+|     if (i == 4) break;
+|     if (i % 2 == 0) continue;
+|     cout << i;
+| }
+A: 13 | 1 3
+E: 偶数は飛ばし、4 で終わるので、1 と 3 だけが出ます。
+
+Q: 止まらなくなったプログラムを止めるキーは何ですか。
+A: Ctrl+C | Ctrl + C | Ctrl C
+E: 無限ループのときに使います。
+```

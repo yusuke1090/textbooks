@@ -144,3 +144,30 @@ If you take out an element with `at`, as in `test.at(10)`, going out of range is
 - Array indexes start from 0. Do not go out of range
 - An array name is the address of the first element. Pass it to functions together with the number of elements
 - Using `std::string` for strings and `std::vector` for arrays whose size changes is safe and easy
+
+## Exercises
+
+```quiz
+Q: What is the index of the last element of `int a[5];`?
+A: 4
+E: Indexes start at 0, so they are 0–4.
+
+Q: What does this code print?
+| int a[] = {4, 7, 1, 9};
+| int m = a[0];
+| for (int x : a) if (x > m) m = x;
+| cout << m;
+A: 9
+E: A range-based for loop finds the largest value.
+
+Q: What does this code print?
+| vector<int> v = {1, 2, 3};
+| v.push_back(4);
+| cout << v.size();
+A: 4
+E: `push_back` adds one at the end.
+
+Q: Which standard library type should you use for strings in modern C++?
+A: std::string | string
+E: It is safer and easier than a char array (C string).
+```

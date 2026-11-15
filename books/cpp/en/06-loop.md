@@ -108,3 +108,33 @@ for (int t : test) {
 - `for` if the number of times is fixed, `while` if not, `do while` if it must run at least once
 - `break` ends the loop, `continue` goes to the next round
 - If it will not stop, press Ctrl + C
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| int sum = 0;
+| for (int i = 1; i <= 4; i++) sum += i;
+| cout << sum;
+A: 10
+E: 1 + 2 + 3 + 4 = 10.
+
+Q: What does this code print?
+| int i = 10;
+| do { cout << i; } while (i < 5);
+A: 10
+E: `do while` always runs once before checking the condition.
+
+Q: What does this code print?
+| for (int i = 0; i < 6; i++) {
+|     if (i == 4) break;
+|     if (i % 2 == 0) continue;
+|     cout << i;
+| }
+A: 13 | 1 3
+E: Even numbers are skipped and the loop ends at 4, so only 1 and 3 print.
+
+Q: Which keys stop a program that will not stop?
+A: Ctrl+C | Ctrl + C | Ctrl C
+E: Use it for infinite loops.
+```

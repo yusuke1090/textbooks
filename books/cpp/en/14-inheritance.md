@@ -133,3 +133,37 @@ In C++, you can inherit from two or more classes (`class C : public A, public B`
 - Add `override` when overriding, and `virtual` to the base class's function
 - With virtual functions, the derived class's function is called through a base class pointer. Make the destructor `virtual` too
 - An abstract class with an `= 0` pure virtual function cannot have objects
+
+## Exercises
+
+```quiz
+Q: Which access specifier lets derived classes use a member but not outside code?
+A: protected
+E: `private` members cannot be used even by derived classes.
+
+Q: What does this program print?
+| class Animal {
+| public:
+|     virtual void cry() { cout << "..."; }
+|     virtual ~Animal() {}
+| };
+| class Cow : public Animal {
+| public:
+|     void cry() override { cout << "moo"; }
+| };
+| int main() {
+|     Animal* p = new Cow;
+|     p->cry();
+|     delete p;
+| }
+A: moo
+E: Because it is virtual, the derived class's function is called through a base pointer.
+
+Q: What is a class with a pure virtual function (`= 0`), which cannot be made into objects, called?
+A: abstract class | abstract
+E: Use it through derived classes that define the function.
+
+Q: Which keyword do you add when a derived class replaces a base class function?
+A: override
+E: The base class function needs `virtual`.
+```

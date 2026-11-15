@@ -1396,7 +1396,7 @@ li > .sticky-bar { margin-top: 4px; }
   function qzNorm(s) {
     s = String(s).normalize("NFKC").toLowerCase().trim().replace(/^(the|an?)\s+/, "");
     s = s.replace(/[\u30a1-\u30f6]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
-    return s.replace(/[\s"'`“”‘’「」『』()\[\]【】、。,.!?:;・〜~]/g, "").replace(/(です|でした|である)$/, "");
+    return s.replace(/[\s"'`“”‘’「」『』()【】、。,.!?:;・〜~]/g, "").replace(/(です|でした|である)$/, "");
   }
   const NUM = /^[-−]?\d+(\.\d+)?$/;
   function qzNum(s) {

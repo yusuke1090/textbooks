@@ -88,3 +88,24 @@ cout << "Learning \"C++\"\n";   // Learning "C++"
 - A program starts from the `main` function. Statements end with `;`, and blocks are `{ }`
 - Show things on screen with `cout << value`. A newline is `"\n"`
 - A character is `'A'` and a string is `"ABC"`. Write special characters with escape sequences such as `\n`
+
+## Exercises
+
+```quiz
+Q: Which function does a C++ program start from?
+A: main | main()
+E: It starts running inside `int main() { … }`.
+
+Q: Which character ends a statement in C++?
+A: ; | semicolon
+E: Blocks are wrapped in `{ }`.
+
+Q: What does this code print?
+| cout << "A" << 1 + 2 << "B";
+A: A3B
+E: `1 + 2` is calculated as 3.
+
+Q: Which escape sequence means a new line inside a string?
+A: \n
+E: Tab is `\t`, and `"` is written `\"`.
+```

@@ -133,3 +133,37 @@ C++ では、2つ以上のクラスを継承できます（`class C : public A, 
 - オーバーライドには `override`、基本クラスの関数には `virtual` を付ける
 - 仮想関数なら、基本クラスのポインタから派生クラスの関数が呼ばれる。デストラクタも `virtual`
 - `= 0` の純粋仮想関数を持つ抽象クラスは、オブジェクトを作れない
+
+## 練習問題
+
+```quiz
+Q: 派生クラスからは使えるが、外からは使えないアクセス指定は何ですか。
+A: protected
+E: `private` は派生クラスからも使えません。
+
+Q: 次のプログラムは何を表示しますか。
+| class Animal {
+| public:
+|     virtual void cry() { cout << "..."; }
+|     virtual ~Animal() {}
+| };
+| class Cow : public Animal {
+| public:
+|     void cry() override { cout << "moo"; }
+| };
+| int main() {
+|     Animal* p = new Cow;
+|     p->cry();
+|     delete p;
+| }
+A: moo
+E: 仮想関数なので、基本クラスのポインタから派生クラスの関数が呼ばれます。
+
+Q: `= 0` を付けた純粋仮想関数を持つ、オブジェクトを作れないクラスを何といいますか。
+A: 抽象クラス | abstract class | 抽象
+E: 派生クラスで関数を作ってから使います。
+
+Q: 派生クラスで基本クラスの関数を上書きするときに付けるキーワードは何ですか。
+A: override
+E: 基本クラスの関数には `virtual` を付けます。
+```

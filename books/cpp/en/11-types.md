@@ -105,3 +105,19 @@ A `union` is a type whose members share the same memory. Only one member can be 
 - A struct is `struct Name { members };`. Use members with `.`, or `->` from a pointer
 - Pass structs by reference (`const` if you do not change them)
 - The class in the next chapter is a struct with "features (functions)" added
+
+## Exercises
+
+```quiz
+Q: What is the modern C++ way to give a type another name (`??? Alias = Type;`)?
+A: using
+E: The old way is `typedef`.
+
+Q: How do you write a type-safe enumeration for a fixed set of values (colors, seasons and so on)?
+A: enum class
+E: For example `enum class Color { Red, Green };`.
+
+Q: Which operator accesses a member through a pointer to a struct?
+A: ->
+E: With a normal struct variable, use `.`.
+```

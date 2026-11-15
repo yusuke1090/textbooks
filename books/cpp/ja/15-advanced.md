@@ -211,3 +211,28 @@ for (const auto& [name, kg] : milk) {        // C++17
 - `template <typename T>` で、型だけちがう関数・クラスをまとめる
 - `throw` で投げ、`try` / `catch` で受け取る
 - 入れ物や道具は、まず標準ライブラリ（`string`・`vector`・`map`・`algorithm`）を使う
+
+## 練習問題
+
+```quiz
+Q: 型だけちがう関数やクラスを1つにまとめる書き方は何ですか（`??? <typename T>`）。
+A: template
+E: `template <typename T> T max2(T a, T b)` のように書きます。
+
+Q: 例外を投げるキーワードは何ですか。
+A: throw
+E: `try` / `catch` で受け取ります。
+
+Q: 次のコードは何を表示しますか。
+| try {
+|     throw runtime_error("no milk");
+| } catch (const exception& e) {
+|     cout << e.what();
+| }
+A: no milk
+E: `what()` で、例外に入れた文字を取り出せます。
+
+Q: 勝手な型の変換を止めるために、コンストラクタに付けるキーワードは何ですか。
+A: explicit
+E: 変換コンストラクタが知らないうちに使われるのを防ぎます。
+```

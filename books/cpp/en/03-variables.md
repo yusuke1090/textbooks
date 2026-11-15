@@ -78,3 +78,23 @@ int main()
 - Make a variable with "type name = initial value;". Always initialize it
 - Integers are `int`, decimals `double`, true/false `bool`, one character `char`
 - Values that do not change are `const`. Read input with `cin >> variable`
+
+## Exercises
+
+```quiz
+Q: Which type does this book use for decimal numbers?
+A: double
+E: Integers are `int`, true/false is `bool`, one character is `char`.
+
+Q: Which keyword before the type makes a value that cannot change?
+A: const
+E: For example `const int MAX = 100;`.
+
+Q: What reads a value from the keyboard into a variable (`??? >> x;`)?
+A: cin
+E: Printing to the screen uses `cout`.
+
+Q: Which keyword lets the compiler choose the type from the initial value?
+A: auto
+E: With `auto x = 3.5;`, x becomes a double.
+```

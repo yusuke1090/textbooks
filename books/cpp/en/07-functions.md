@@ -139,3 +139,31 @@ Adding `inline` to a function asks the compiler to expand its body at the place 
 - It needs a declaration (prototype) before it is used
 - Normal arguments are copies (pass by value). Default arguments go from the end
 - Overloads must differ in the types or number of arguments. A different return type alone is not enough
+
+## Exercises
+
+```quiz
+Q: What is the return type of a function that returns nothing?
+A: void
+E: For example `void hello() { … }`.
+
+Q: What does this program print?
+| void twice(int x) { x = x * 2; }
+| int main() {
+|     int a = 5;
+|     twice(a);
+|     cout << a;
+| }
+A: 5
+E: Normal arguments are copies (pass by value), so a does not change.
+
+Q: What does this program print?
+| int add(int a, int b = 10) { return a + b; }
+| int main() { cout << add(3) << " " << add(3, 4); }
+A: 13 7
+E: If b is left out, the default 10 is used.
+
+Q: What is it called when several functions share a name but differ in parameter types or count?
+A: overloading | overload | function overloading
+E: Functions that differ only in return type are not allowed.
+```

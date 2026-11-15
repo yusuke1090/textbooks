@@ -106,3 +106,23 @@ The original book uses Visual Studio on Windows.
 - Compile and link the source code to make an executable, then run it
 - On Ubuntu, compile with `g++ -std=c++17 -Wall -o name file.cpp` and run with `./name`
 - For errors, look at the line number and fix from the top
+
+## Exercises
+
+```quiz
+Q: What do we call turning source code into a file the computer can run (the step before linking)?
+A: compile | compiling | compilation
+E: Compile and link to make an executable, then run it.
+
+Q: Which command compiles C++ on Ubuntu?
+A: g++
+E: `g++ -std=c++17 -Wall -o name file.cpp`.
+
+Q: Which `g++` option sets the name of the executable?
+A: -o
+E: With `-o hello`, run it as `./hello`.
+
+Q: When there are many compile errors, do you fix them from the top or the bottom?
+A: top | the top | from the top
+E: The first error often causes the ones after it.
+```

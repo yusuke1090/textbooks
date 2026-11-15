@@ -123,3 +123,23 @@ public:
 - An object is a concrete thing (instance) made from a class. It does not mean the variables inside the class
 - Member functions are defined as `ClassName::functionName`
 - Data is `private`, and the functions you use are `public` (encapsulation)
+
+## Exercises
+
+```quiz
+Q: Which access specifier hides members from code outside the class?
+A: private
+E: Functions others may use are `public`. This is encapsulation.
+
+Q: When you define a member function outside the class, what goes between the class name and function name?
+A: ::
+E: For example `Cow::milk()`.
+
+Q: What do we call a real thing made from a class?
+A: object | instance
+E: It is not the variables inside the class.
+
+Q: Which keyword after a member function shows it does not change member variables?
+A: const
+E: For example `int age() const { … }`.
+```

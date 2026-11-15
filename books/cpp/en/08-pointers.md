@@ -124,3 +124,33 @@ void show(const string& name)     // no copy. Changing name inside is an error
 - `&a` gives the address, `int* p = &a;` makes a pointer, and `*p` is the value it points to
 - If you pass an address or a reference, a function can change the caller's variables
 - Pass large arguments you do not change as `const Type&`
+
+## Exercises
+
+```quiz
+Q: How do you get the address of variable a?
+A: &a
+E: With `int* p = &a;`, p is a pointer to a.
+
+Q: What does this code print?
+| int a = 3;
+| int* p = &a;
+| *p = 8;
+| cout << a;
+A: 8
+E: `*p` is what p points to, which is a itself.
+
+Q: What does this program print?
+| void twice(int& x) { x = x * 2; }
+| int main() {
+|     int a = 5;
+|     twice(a);
+|     cout << a;
+| }
+A: 10
+E: It is passed by reference (`int&`), so the caller's a changes.
+
+Q: How do you pass a large argument that will not change without copying it (for a `string`)?
+A: const string& | const std::string& | const string &
+E: `const Type&` avoids the copy and prevents changes.
+```

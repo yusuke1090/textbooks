@@ -121,3 +121,31 @@ cout << (double)sum / n << "\n";                  // 3.5 (the old way)
 - `x -= 10` is `x = x - 10`. With `++`, prefix and postfix give different expression values
 - Equal is `==`. `&&` (and), `||` (or), `!` (not)
 - To calculate with decimals, cast with `static_cast<double>(...)`
+
+## Exercises
+
+```quiz
+Q: What does this code print?
+| cout << 17 / 5 << " " << 17 % 5;
+A: 3 2
+E: `/` between integers drops the remainder; `%` gives the remainder.
+
+Q: What does this code print?
+| int a = 5;
+| int b = a++;
+| cout << a << " " << b;
+A: 6 5
+E: Postfix `a++` gives the value before it increases (5).
+
+Q: What does this code print?
+| int x = 100;
+| x -= 10;
+| x *= 2;
+| cout << x;
+A: 180
+E: (100 − 10) × 2 = 180.
+
+Q: Which cast lets you divide integers as decimals (`???<double>(a)`)?
+A: static_cast
+E: Write `static_cast<double>(a) / b`.
+```

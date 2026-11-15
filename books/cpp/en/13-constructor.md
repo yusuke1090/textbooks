@@ -147,3 +147,32 @@ void Car::setNum(int num)
 - A destructor is `~ClassName`. It cleans up when the object disappears
 - `static` members are shared by all objects and used with `ClassName::name`
 - `this` is a pointer to the object itself
+
+## Exercises
+
+```quiz
+Q: What is the function that cleans up when an object is destroyed called?
+A: destructor
+E: Its name is `~ClassName`.
+
+Q: What does this program print?
+| class A {
+| public:
+|     A() { cout << "1"; }
+|     ~A() { cout << "2"; }
+| };
+| int main() {
+|     A a;
+|     cout << "3";
+| }
+A: 132 | 1 3 2
+E: The constructor runs on creation (1), and the destructor at the end of main (2).
+
+Q: Which keyword makes a member shared by all objects?
+A: static
+E: Use it as `ClassName::name`.
+
+Q: Inside a member function, what pointer points to the object itself?
+A: this
+E: For example `this->x`.
+```

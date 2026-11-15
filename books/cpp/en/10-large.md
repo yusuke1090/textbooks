@@ -153,3 +153,29 @@ The `std` in `std::cout` is also a namespace.
 - Local variables exist only inside their block. `::` refers to the global one. A `static` local variable keeps its value
 - If you borrow with `new`, give it back with `delete` (`delete[]` for arrays). Today, use `vector` or `unique_ptr`
 - Declarations go in headers (`.h`), definitions in sources (`.cpp`). Pass all the `.cpp` files to `g++`
+
+## Exercises
+
+```quiz
+Q: What does this program print?
+| void count() {
+|     static int n = 0;
+|     n++;
+|     cout << n;
+| }
+| int main() { count(); count(); count(); }
+A: 123 | 1 2 3
+E: A `static` local variable keeps its value after the function returns.
+
+Q: What do you use to give back memory for an array allocated with `new`?
+A: delete[] | delete []
+E: For a single object use `delete`. Today, use `vector` or `unique_ptr`.
+
+Q: What extension do header files for declarations use?
+A: .h | h | .hpp
+E: Definitions go in source files (`.cpp`), and you pass all `.cpp` files to `g++`.
+
+Q: Which symbol in front of a name refers to the global variable?
+A: ::
+E: `::x` means the global x, not a local with the same name.
+```

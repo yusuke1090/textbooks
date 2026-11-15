@@ -211,3 +211,28 @@ for (const auto& [name, kg] : milk) {        // C++17
 - Combine functions and classes that differ only in type with `template <typename T>`
 - Throw with `throw`, and catch with `try` / `catch`
 - For containers and tools, use the standard library first (`string`, `vector`, `map`, `algorithm`)
+
+## Exercises
+
+```quiz
+Q: How do you write one function or class for many types (`??? <typename T>`)?
+A: template
+E: For example `template <typename T> T max2(T a, T b)`.
+
+Q: Which keyword throws an exception?
+A: throw
+E: Catch it with `try` / `catch`.
+
+Q: What does this code print?
+| try {
+|     throw runtime_error("no milk");
+| } catch (const exception& e) {
+|     cout << e.what();
+| }
+A: no milk
+E: `what()` returns the message stored in the exception.
+
+Q: Which keyword on a constructor stops unwanted automatic type conversion?
+A: explicit
+E: It stops a converting constructor being used without you noticing.
+```
