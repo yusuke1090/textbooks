@@ -377,7 +377,7 @@ li > .sticky-bar { margin-top: 4px; }
         <span class="ic">${esc(b.icon || "📘")}</span>
         <h3>${esc(L(b.title, "ja"))}</h3>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
         <p>${esc(L(b.desc, "ja"))}</p>
-        <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}${rate}</span><span class="qzdots" data-id="${esc(b.id)}"></span>${prog}</a>`;
+        <span class="meta">${chs.length ? `<span>${chs.length} 章</span>` : ""}${cont}${n ? `<span>🔖 ${n}</span>` : ""}${rate}</span><span class="qzdots" data-id="${esc(b.id)}"></span>${prog}</a>`;
     }));
     studying = studying.filter((id) => cardHtml[id]);
     renderShelf();

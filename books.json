@@ -50,8 +50,8 @@
       "en": "Raspberry Pi Pico Development Guide (C++, VS Code)"
     },
     "desc": {
-      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。Pico Studio の「📚 ガイド」からも開けます。",
-      "en": "Developing for the Raspberry Pi Pico with C++ and VS Code, reading sensors, all the way to a product. Can also be opened from \"📚 ガイド\" in Pico Studio."
+      "ja": "Raspberry Pi Pico を C++ と VS Code で開発して、センサーを読み、製品にするまで。",
+      "en": "Developing for the Raspberry Pi Pico with C++ and VS Code, reading sensors, all the way to a product."
     },
     "home": {
       "url": "https://github.com/yusuke1090/pico-studio",
