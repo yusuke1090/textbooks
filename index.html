@@ -305,6 +305,50 @@ li > .sticky-bar { margin-top: 4px; }
 .notes .ap-del { border: 0; background: none; color: var(--muted); padding: 2px 10px; cursor: pointer; }
 .notes .ap-del:hover { color: var(--err); }
 .notes .empty { color: var(--muted); padding: 10px 14px; font-size: 13px; }
+/* 今日の勉強（本棚の一番上）: 目標の輪・連続日数・カレンダー */
+.today { margin: 18px -12px 0; padding: 14px 14px 12px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); }
+.td-top { display: flex; align-items: center; gap: 16px; }
+.td-ring { position: relative; flex: none; width: 92px; height: 92px; }
+.td-ring svg { width: 100%; height: 100%; transform: rotate(-90deg); }
+.td-ring circle { fill: none; stroke-width: 9; }
+.td-ring .bg { stroke: var(--border); }
+.td-ring .fg { stroke: var(--accent); stroke-linecap: round; transition: stroke-dashoffset .6s ease; }
+.td-ring .in { position: absolute; inset: 0; display: grid; place-content: center; text-align: center; line-height: 1.2; }
+.td-ring .in b { font-size: 21px; }
+.td-ring .in small { font-size: 11.5px; color: var(--muted); }
+.td-ring.done .fg { stroke: #e8a317; }
+.td-info { flex: 1; min-width: 0; display: flex; flex-direction: column; gap: 6px; }
+.td-streak { font-size: 18px; font-weight: 700; }
+.td-streak small { margin-left: 6px; font-size: 12.5px; font-weight: 400; color: var(--muted); }
+.td-msg { font-size: 13px; color: var(--muted); }
+.td-goal { font-size: 12.5px; color: var(--muted); }
+.td-goal select { margin-left: 4px; padding: 2px 6px; font: inherit; font-size: 13px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; }
+.td-cont { display: block; margin-top: 12px; padding: 9px 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 700; text-decoration: none;
+  color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 10px; }
+.td-cal { --c: 13px; margin-top: 14px; padding: 10px 2px 3px; border-top: 1px solid var(--border); overflow-x: auto; overflow-y: hidden; }
+@media (min-width: 700px) { .td-cal { --c: 15px; } }
+.cal { display: grid; grid-auto-flow: column; grid-template-rows: 14px repeat(7, var(--c)); gap: 3px; width: max-content; margin: 0 auto; }
+.cal .mo, .cal .wd { font-size: 10px; line-height: 14px; color: var(--muted); white-space: nowrap; }
+.cal .wd { line-height: var(--c); padding-right: 4px; }
+.cal i { width: var(--c); height: var(--c); border-radius: 3px; background: var(--border); cursor: pointer; }
+.cal i.l1 { background: color-mix(in srgb, var(--accent) 30%, var(--panel)); }
+.cal i.l2 { background: color-mix(in srgb, var(--accent) 55%, var(--panel)); }
+.cal i.l3 { background: color-mix(in srgb, var(--accent) 80%, var(--panel)); }
+.cal i.l4 { background: var(--accent); }
+.cal i.now { outline: 2px solid var(--text); outline-offset: 0; }
+.cal i.fut { visibility: hidden; }
+.td-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin-top: 8px; font-size: 12px; color: var(--muted); }
+.td-foot .lg { display: inline-flex; align-items: center; gap: 3px; }
+.td-foot .lg i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--border); }
+.td-foot .lg i.l2 { background: color-mix(in srgb, var(--accent) 55%, var(--panel)); }
+.td-foot .lg i.l4 { background: var(--accent); }
+/* 目標に届いたときのお祝い */
+#cheer { position: fixed; left: 50%; top: 50%; z-index: 60; transform: translate(-50%, -50%) scale(.8); opacity: 0; pointer-events: none; transition: transform .25s, opacity .25s;
+  width: min(86vw, 340px); padding: 22px 20px 18px; text-align: center; background: var(--panel); border: 2px solid var(--accent); border-radius: 20px; box-shadow: 0 16px 50px rgba(0,0,0,.3); }
+#cheer.on { transform: translate(-50%, -50%) scale(1); opacity: 1; pointer-events: auto; cursor: pointer; }
+#cheer .big { font-size: 44px; line-height: 1.1; }
+#cheer b { display: block; margin-top: 8px; font-size: 18px; }
+#cheer p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
 #toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 40; padding: 8px 16px; border-radius: 10px;
   background: #333; color: #fff; font-size: 13.5px; display: none; max-width: calc(100vw - 32px); }
 @media (max-width: 480px) { body { font-size: 15px; } #body h1 { font-size: 21px; } #body h2 { font-size: 17.5px; } #body table { font-size: 13px; } #body th, #body td { padding: 5px 7px; } }
@@ -317,10 +361,12 @@ li > .sticky-bar { margin-top: 4px; }
     <h1>📚 教科書</h1>
     <p>興味あることを勉強するための教科書</p>
   </div></div>
+  <div class="wrap"><section class="today" id="today" hidden></section></div>
   <main class="wrap shelf-main" id="books"><p class="msg">読み込み中…</p></main>
   <footer><div class="wrap"><p><a href="https://github.com/yusuke1090/textbooks" target="_blank" rel="noopener">GitHub</a> ・ <a href="https://yusuke1090.github.io/smart-agri-news/">スマート農業News</a></p></div></footer>
 </div>
 
+<div id="cheer" role="status" aria-live="polite"></div>
 <div id="reader" hidden>
   <header class="top"><div class="wrap">
     <a class="shelf-link" id="shelfLink" href="./">📚 教科書</a>
@@ -361,6 +407,32 @@ li > .sticky-bar { margin-top: 4px; }
     set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
   };
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
+  // ---------- 勉強した時間（毎日の目標・連続日数・カレンダー） ----------
+  // textbooks-study: { days: { "YYYY-MM-DD": 秒 }, met: { "YYYY-MM-DD": 1 }（目標に届いた日）, goal: 分, cheer: お祝いを出した日 }
+  const STUDY_LOG = "textbooks-study";
+  const dayKey = (d = new Date()) => `${d.getFullYear()}-${String(d.getMonth() + 1).padStart(2, "0")}-${String(d.getDate()).padStart(2, "0")}`;
+  function loadStudy() {
+    let s = null;
+    try { s = JSON.parse(store.get(STUDY_LOG, "null")); } catch (e) { s = null; }
+    s = s && typeof s === "object" ? s : {};
+    s.days = s.days || {}; s.met = s.met || {}; s.goal = +s.goal || 15;
+    return s;
+  }
+  const saveStudy = (s) => store.set(STUDY_LOG, JSON.stringify(s));
+  function streakOf(s) {   // 目標に届いた日が、今日（まだなら昨日）から何日続いているか。最長も
+    const d = new Date();
+    if (!s.met[dayKey(d)]) d.setDate(d.getDate() - 1);
+    let cur = 0;
+    while (s.met[dayKey(d)]) { cur++; d.setDate(d.getDate() - 1); }
+    let best = 0, run = 0, prev = null;
+    Object.keys(s.met).sort().forEach((k) => {
+      const t = new Date(k + "T12:00:00");
+      run = prev && Math.round((t - prev) / 864e5) === 1 ? run + 1 : 1;
+      best = Math.max(best, run); prev = t;
+    });
+    return { cur, best: Math.max(best, cur) };
+  }
+  const fmtMin = (sec) => { const m = Math.floor(sec / 60); return m >= 60 ? `${Math.floor(m / 60)}時間${m % 60 ? m % 60 + "分" : ""}` : `${m}分`; };
   let toastTimer = 0;
   function toast(msg) {
     const t = $("toast");
@@ -440,6 +512,68 @@ li > .sticky-bar { margin-top: 4px; }
     studying = studying.filter((id) => cardHtml[id]);
     renderShelf();
     setupDrag();
+    renderToday();
+  }
+
+  // 本棚の一番上の「今日の勉強」: 目標の輪、連続日数、続きから、カレンダー（17週）
+  function renderToday() {
+    const el = $("today"), s = loadStudy(), today = dayKey(), sec = s.days[today] || 0, goal = s.goal * 60;
+    const st = streakOf(s), done = !!s.met[today], ratio = Math.min(1, sec / goal), C = 2 * Math.PI * 38;
+    const msg = done ? "今日の目標を達成しました 🎉" : sec ? `あと ${Math.max(1, Math.ceil((goal - sec) / 60))}分で今日の目標` : st.cur ? "今日も続けて、連続記録をのばそう" : "教科書を開くと、読んでいる時間を数えます";
+    // 続きから: 最後に開いた本の、読んでいた章
+    const last = store.get("textbooks-last"), lb = books.find((b) => b.id === last);
+    let cont = "";
+    if (lb) {
+      let pos = null;
+      try { pos = JSON.parse(store.get("textbooks-pos-" + lb.id, "null")); } catch (e) { pos = null; }
+      const ch = pos && (chsOf[lb.id] || [])[pos.idx];
+      cont = `<a class="td-cont" href="?b=${encodeURIComponent(lb.id)}">▶ 続きから: ${esc(lb.icon || "📘")} ${esc(L(lb.title, "ja"))}${ch ? "　" + esc(L(ch.title, pos.lang || lb.langs[0])) : ""}</a>`;
+    }
+    // カレンダー: 日曜はじまりで、今週をふくむ 17週（広い画面は 26週）
+    const W = innerWidth >= 700 ? 26 : 17, start = new Date(); start.setHours(12, 0, 0, 0); start.setDate(start.getDate() - start.getDay() - (W - 1) * 7);
+    let cal = `<span></span>` + ["日", "", "火", "", "木", "", "土"].map((w) => `<span class="wd">${w}</span>`).join("");
+    let lastMonth = -1, monthSec = 0, total = 0;
+    const now = new Date(), d = new Date(start);
+    Object.values(s.days).forEach((v) => { total += v; });
+    Object.keys(s.days).forEach((k) => { if (k.slice(0, 7) === today.slice(0, 7)) monthSec += s.days[k]; });
+    for (let w = 0; w < W; w++) {
+      const mo = d.getMonth();
+      const nd = new Date(d); nd.setDate(nd.getDate() + 7);
+      const label = mo !== lastMonth && (w > 0 || nd.getMonth() === mo);   // 左はしの週だけの月は、次の月と重なるので書かない
+      cal += `<span class="mo">${label ? mo + 1 + "月" : ""}</span>`;
+      lastMonth = mo;
+      for (let k = 0; k < 7; k++) {
+        const key = dayKey(d), v = s.days[key] || 0, fut = d > now;
+        const lv = !v ? 0 : s.met[key] ? (v >= goal * 2 ? 4 : 3) : v >= goal / 2 ? 2 : 1;
+        cal += `<i class="${lv ? "l" + lv : ""}${key === today ? " now" : ""}${fut ? " fut" : ""}" data-d="${key}" data-v="${v}" title="${d.getMonth() + 1}月${d.getDate()}日 ${fmtMin(v)}"></i>`;
+        d.setDate(d.getDate() + 1);
+      }
+    }
+    el.innerHTML = `<div class="td-top"><div class="td-ring${done ? " done" : ""}"><svg viewBox="0 0 92 92"><circle class="bg" cx="46" cy="46" r="38"/>`
+      + `<circle class="fg" cx="46" cy="46" r="38" stroke-dasharray="${C.toFixed(1)}" stroke-dashoffset="${(C * (1 - ratio)).toFixed(1)}"/></svg>`
+      + `<div class="in"><b>${Math.floor(sec / 60)}</b><small>/ ${s.goal}分</small></div></div>`
+      + `<div class="td-info"><div class="td-streak">🔥 ${st.cur ? `${st.cur}日連続` : "今日から連続記録"}${st.best ? `<small>最長 ${st.best}日</small>` : ""}</div><div class="td-msg">${msg}</div>`
+      + `<label class="td-goal">1日の目標<select id="goalSel">${[5, 10, 15, 20, 30, 45, 60].map((m) => `<option value="${m}"${m === s.goal ? " selected" : ""}>${m}分</option>`).join("")}</select></label></div></div>`
+      + cont
+      + `<div class="td-cal"><div class="cal">${cal}</div></div>`
+      + `<div class="td-foot"><span id="calTip">今月 ${fmtMin(monthSec)}・これまで ${fmtMin(total)}</span>`
+      + `<span class="lg">少 <i></i><i class="l2"></i><i class="l4"></i> 多</span></div>`;
+    el.hidden = false;
+    const cw = el.querySelector(".td-cal");
+    cw.scrollLeft = cw.scrollWidth;   // 狭い画面では、今週が見えるように右はしへ
+    $("goalSel").onchange = (e) => {
+      const s2 = loadStudy();
+      s2.goal = +e.target.value;
+      if ((s2.days[dayKey()] || 0) >= s2.goal * 60) s2.met[dayKey()] = 1;
+      saveStudy(s2);
+      renderToday();
+    };
+    el.querySelector(".cal").onclick = (e) => {
+      const c = e.target.closest("i[data-d]");
+      if (!c) return;
+      const [y, m, dd] = c.dataset.d.split("-").map(Number), wd = "日月火水木金土"[new Date(y, m - 1, dd).getDay()];
+      $("calTip").textContent = `${m}月${dd}日（${wd}） ${fmtMin(+c.dataset.v)}${loadStudy().met[c.dataset.d] ? "　🎯 目標達成" : ""}`;
+    };
   }
 
   // 今勉強中の本は、章ごとの練習問題の数を数えて、問題ごとの結果を ● × ○ で並べる
@@ -1919,8 +2053,33 @@ li > .sticky-bar { margin-top: 4px; }
   });
 
   // ---------- はじめに ----------
+  // 読んでいる時間を数える（画面が見えていて、2分以内に操作があったときか、読み上げ中だけ。10秒ごと）
+  let lastAct = Date.now();
+  ["scroll", "pointerdown", "keydown", "touchstart", "wheel", "input"].forEach((ev) => addEventListener(ev, () => { lastAct = Date.now(); }, { passive: true, capture: true }));
+  setInterval(() => {
+    if (!book || document.hidden || !document.hasFocus()) return;
+    if (Date.now() - lastAct > 120000 && !(window.speechSynthesis && speechSynthesis.speaking)) return;
+    const s = loadStudy(), k = dayKey();
+    s.days[k] = (s.days[k] || 0) + 10;
+    if (s.days[k] >= s.goal * 60 && !s.met[k]) s.met[k] = 1;
+    const cheerNow = s.met[k] && s.cheer !== k;
+    if (cheerNow) s.cheer = k;
+    saveStudy(s);
+    if (cheerNow) cheer(s);
+  }, 10000);
+  function cheer(s) {
+    const st = streakOf(s), el = $("cheer"), en = state.lang === "en";
+    el.innerHTML = `<div class="big">🎉</div><b>${en ? `Today's goal reached: ${s.goal} min` : `今日の目標 ${s.goal}分 達成！`}</b>`
+      + `<p>🔥 ${en ? `${st.cur}-day streak` : `${st.cur}日連続`}${st.cur > 1 && st.cur >= st.best ? (en ? " — your best!" : "（最長記録）") : ""}</p>`;
+    el.classList.add("on");
+    const off = () => el.classList.remove("on");
+    el.onclick = off;
+    setTimeout(off, 5000);
+  }
+
   async function openBook() {
     book = books.find((b) => b.id === bookId);
+    if (book) store.set("textbooks-last", book.id);
     $("reader").hidden = false;
     if (!book) { body.innerHTML = `<p class="msg err">「${esc(bookId)}」という教科書はありません。<a href="./">一覧へ</a></p>`; return; }
     $("bookIcon").textContent = book.icon || "📘";
