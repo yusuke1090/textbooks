@@ -94,3 +94,27 @@ Typical moisture: hay 10–15%, silage 60–70%, compound feed 12–13%. For exa
 - **Compound feed** is concentrate made by mixing grains, oilseed meals, minerals and more in a factory. Most ingredients are imported
 - Feeding methods: **component feeding** (separately) and **TMR** (all mixed)
 - Feed amounts and nutrients are compared as **dry matter** (without water)
+
+## Exercises
+
+```quiz
+Q: What do we call fiber-rich feed such as hay and silage?
+A: roughage | forage
+E: Roughage keeps the rumen working and the cow ruminating.
+
+Q: What do we call nutrient-dense, low-fiber feed such as grain?
+A: concentrate | concentrates
+E: Balancing roughage and concentrate is the most important thing.
+
+Q: What is concentrate called when grains, oilseed meals and minerals are mixed in a factory?
+A: compound feed
+E: Most of its ingredients are imported.
+
+Q: What three letters name the method of mixing all the feed together?
+A: TMR | total mixed ration
+E: TMR. Feeding each part separately is component feeding.
+
+Q: What do we call the weight of feed without its water?
+A: dry matter | DM
+E: Wet silage and dry hay are compared by dry matter.
+```

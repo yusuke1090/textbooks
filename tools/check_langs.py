@@ -7,6 +7,7 @@
 確かめること:
 - chapters.json の章が ja/ と en/ の両方にあり、題名と部に ja と en がある
 - 見出し（##・###・####）の数と深さの並びが同じ（言葉を切り替えたとき、見出しの番号で場所を合わせるため）
+- 練習問題（```quiz）の問題の数が同じ
 - 図・写真の数と順番が同じ（図の番号がずれないように）。英語の章の図は、日本語の入った SVG なら images/en/ を使う
 - 使っている画像のファイルがある
 - 英語の章に日本語が残りすぎていない（多い行を出す。用語集などで日本語を見せる行はそのままでよい）
@@ -44,6 +45,18 @@ def shape(text):
     return heads, imgs
 
 
+def quiz(text):
+    """練習問題（```quiz）の Q: と E: の行"""
+    out, inq = [], False
+    for line in text.splitlines():
+        if line.lstrip().startswith("```"):
+            inq = (not inq) and line.strip() == "```quiz"
+            continue
+        if inq and re.match(r"^[QE]:", line):
+            out.append(line)
+    return out
+
+
 def norm(src):
     return re.sub(r"^images/en/", "images/", src)
 
@@ -64,6 +77,9 @@ def check(bid):
         (hj, ij), (he, ie) = shape(paths["ja"].read_text()), shape(paths["en"].read_text())
         if hj != he:
             errs.append(f"{f}: 見出しがちがう（ja {len(hj)} 個 {''.join(map(str, hj))} / en {len(he)} 個 {''.join(map(str, he))}）")
+        qj, qe = (sum(l.startswith("Q:") for l in quiz(paths[k].read_text())) for k in ("ja", "en"))
+        if qj != qe:
+            errs.append(f"{f}: 練習問題の数がちがう（ja {qj} / en {qe}）")
         if [norm(s) for s in ij] != [norm(s) for s in ie]:
             errs.append(f"{f}: 図の並びがちがう（ja {ij} / en {ie}）")
         for src in ie:
@@ -79,6 +95,7 @@ def check(bid):
                 errs.append(f"ja/{f}: 画像がない {src}")
         lines = strip_code(paths["en"].read_text())
         many = [i + 1 for i, l in enumerate(lines) if len(JA.findall(l)) > 12]
+        many += [l[:30] for l in quiz(paths["en"].read_text()) if len(JA.findall(l)) > 12]
         if many and not f.startswith(("a-", "b-", "c-", "d-", "e-", "f-")):
             warns.append(f"en/{f}: 日本語の多い行 {many[:8]}")
     return errs, warns

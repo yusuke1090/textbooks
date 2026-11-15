@@ -87,3 +87,23 @@
 - Dairy work has no days off and there are not enough workers, so sensors and robots are spreading
 - Activity shows heat, rumination shows illness, electrical conductivity shows mastitis, body temperature shows calving, and THI shows heat stress
 - An alert is not a diagnosis. Look at the difference from normal, and let a person check
+
+## Exercises
+
+```quiz
+Q: About how many hours a day do cows rest?
+A: 10–14 hours | 10 | 11 | 12 | 13 | 14
+E: Cows that rest well give more milk.
+
+Q: What do we call a barn where each cow is tied in its place?
+A: tie-stall | tie stall | tiestall
+E: Other types are free-stall, free-barn and grazing.
+
+Q: What does an activity (walking) sensor mainly find?
+A: heat | estrus | oestrus
+E: Cows walk more when they are in heat.
+
+Q: Measuring what property of milk helps find mastitis early?
+A: electrical conductivity | conductivity | EC
+E: Conductivity rises when a cow has mastitis.
+```

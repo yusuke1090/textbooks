@@ -118,3 +118,27 @@
 - Bacteria are **contagious** (spread cow to cow, such as Staph aureus) or **environmental** (from manure and bedding, such as E. coli)
 - E. coli: dirty, wet bedding → the open teat canal right after milking → bacteria grow in milk → they break apart and release endotoxin → the whole body is affected
 - Prevent it with dry, clean bedding, post-dipping and keeping cows standing after milking. Call a vet right away in severe cases
+
+## Exercises
+
+```quiz
+Q: What do we call mastitis that you cannot see?
+A: subclinical | subclinical mastitis
+E: You can see clinical mastitis. Find subclinical cases with SCC and the CMT.
+
+Q: Which cow-side test mixes milk with a reagent to find subclinical mastitis? (three letters)
+A: CMT | California Mastitis Test | PL test
+E: In the CMT, milk turns thick and gel-like when SCC is high.
+
+Q: What is a typical contagious mastitis bacterium that spreads from cow to cow?
+A: Staph aureus | Staphylococcus aureus | staph
+E: Environmental bacteria such as E. coli come from manure and bedding.
+
+Q: When E. coli break apart, what toxin do they release?
+A: endotoxin
+E: E. coli mastitis can quickly become severe.
+
+Q: Cows are kept standing after milking because which part of the teat is still open?
+A: teat canal | teat end | teat opening
+E: Bacteria from bedding can enter the open teat canal.
+```

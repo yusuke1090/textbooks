@@ -99,3 +99,27 @@
 - Oxytocin lets milk down. Attach the unit 60–90 seconds after stimulation. Milk quietly, with the same routine
 - Forestrip → disinfect → wipe → milk → post-dip
 - SCC is a sign of mastitis. Colostrum, abnormal milk and milk in the withdrawal period are not shipped
+
+## Exercises
+
+```quiz
+Q: How many quarters is the udder divided into?
+A: 4 | four
+E: The four quarters are separate from each other.
+
+Q: About how many liters of blood pass through the udder for 1 L of milk?
+A: 400–500 L | 400 | 450 | 500
+E: Milk is made from blood.
+
+Q: Which hormone lets milk down?
+A: oxytocin
+E: Attach the unit 60–90 seconds after stimulation.
+
+Q: What is it called when you dip the teats in disinfectant after milking?
+A: post-dipping | post-dip | post dipping | teat dipping
+E: The routine is forestrip → disinfect → wipe → milk → post-dip.
+
+Q: Which count of cells in milk is a sign of mastitis? (three letters)
+A: SCC | somatic cell count
+E: A high SCC suggests mastitis.
+```

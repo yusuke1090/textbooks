@@ -70,3 +70,23 @@ Milk is made from blood (Chapter 8). Many very thin blood vessels (capillaries) 
 - The most common cause is udder swelling right after calving (especially in first-calf heifers). Most cases clear up in a few days to two weeks
 - Other causes: injury, the way the cow is milked, mastitis, and rarely diseases that stop blood from clotting
 - Find which quarter it comes from. If it lasts or the cow has a fever, call a vet
+
+## Exercises
+
+```quiz
+Q: Blood in milk happens when what breaks around the milk-making tissue?
+A: blood vessels | blood vessel | capillaries | vessels
+E: Thin blood vessels break and blood mixes with the milk.
+
+Q: Blood in milk is most common in which cows?
+A: first-calf heifers | first-calf heifer | heifers | heifer
+E: The most common cause is udder swelling right after calving.
+
+Q: Most cases right after calving clear up within about how many weeks?
+A: 2 | two
+E: Most clear up in a few days to two weeks.
+
+Q: Can milk with blood in it be shipped? Answer "yes" or "no".
+A: no
+E: It cannot be shipped. Find which quarter it comes from.
+```

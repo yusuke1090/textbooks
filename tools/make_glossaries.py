@@ -37,7 +37,10 @@ def corpus(book):
     if (d / "ja").is_dir():                 # 英語版はコードが同じでコメントだけ英語なので、日本語版だけを見る
         d = d / "ja"
     text = "\n".join(p.read_text(encoding="utf-8") for p in sorted(d.glob("**/*.md")))
-    code = re.findall(r"```[^\n]*\n(.*?)```", text, re.S) + re.findall(r"`([^`\n]+)`", text)
+    blocks = re.findall(r"```([^\n]*)\n(.*?)```", text, re.S)
+    code = [b for info, b in blocks if info.strip() != "quiz"]
+    code += ["\n".join(re.findall(r"^\|\s?(.*)$", b, re.M)) for info, b in blocks if info.strip() == "quiz"]   # 練習問題はコードの行だけ
+    code += re.findall(r"`([^`\n]+)`", text)
     joined = "\n".join(code)
     return set(re.findall(r"\w+", joined)), set(joined.split()), joined
 

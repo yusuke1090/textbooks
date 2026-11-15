@@ -78,3 +78,27 @@
 - Raise calves on milk replacer and starter, and wean at 2–3 months
 - Diarrhea and pneumonia are common. Prevent them with colostrum, cleanliness and ventilation
 - First insemination at 13–15 months, first calving at 22–24 months
+
+## Exercises
+
+```quiz
+Q: What is the first, thick milk after calving that is full of antibodies?
+A: colostrum
+E: A calf's immunity depends on colostrum.
+
+Q: Within how many hours after birth should a calf drink colostrum?
+A: 2
+E: "Quickly (within 2 hours), enough (4 L), good quality".
+
+Q: How many liters of colostrum should a calf get?
+A: 4
+E: About 4 L at the first feeding.
+
+Q: What is it called when a calf stops drinking milk and eats only starter and forage?
+A: weaning | wean
+E: Calves are raised on milk replacer and starter, and weaned at 2–3 months.
+
+Q: The common calf diseases are diarrhea and what?
+A: pneumonia
+E: Prevent them with colostrum, cleanliness and ventilation.
+```

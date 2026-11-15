@@ -97,3 +97,27 @@ Typical moisture is 65–70% for corn silage and 60–70% for grass silage.
 - Corn silage is high in energy. Wrapped bale silage is the big white rolls in fields
 - The keys are keeping air out, enough sugar and the right moisture. Mistakes cause butyric fermentation or mold
 - After opening, take silage from the face every day to prevent aerobic spoilage
+
+## Exercises
+
+```quiz
+Q: Which bacteria ferment silage?
+A: lactic acid bacteria | LAB | lactic acid
+E: Silage is "pickled grass" sealed without air.
+
+Q: Good silage becomes stable at about what pH?
+A: 4
+E: At about pH 4, bad bacteria cannot grow.
+
+Q: What silage, made from whole chopped maize plants, is high in energy?
+A: corn silage | maize silage
+E: The big white rolls in fields are wrapped bale silage.
+
+Q: Mistakes in silage making can cause what kind of bad-smelling fermentation?
+A: butyric fermentation | butyric | butyric acid
+E: If air, sugar or moisture is wrong, butyric fermentation or mold can happen.
+
+Q: What is it called when silage heats up and spoils after it meets air?
+A: aerobic spoilage | aerobic deterioration | secondary fermentation
+E: To prevent it, take silage from the face every day.
+```

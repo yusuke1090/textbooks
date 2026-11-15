@@ -141,6 +141,20 @@ main { padding-bottom: 30px; }
 #body .codeblock pre code { border: 0; background: none; padding: 0; white-space: pre; font-size: 13px; }
 #body .katex-display { overflow-x: auto; overflow-y: hidden; padding: 4px 0; }
 #body .katex { font-size: 1.08em; }
+.quiz { margin: 12px 0 18px; }
+.qz { margin: 10px 0; padding: 10px 12px; border: 1px solid var(--border); border-radius: 8px; background: var(--panel); }
+.qz.ok { border-color: var(--ok); } .qz.ng { border-color: var(--err); }
+#body .qz-q { margin: 0 0 8px; }
+.qz-q > b:first-child { margin-right: 6px; color: var(--accent); }
+.qz pre.qz-code { margin: 6px 0 8px; padding: 8px 12px; overflow-x: auto; background: var(--code-bg); border: 1px solid var(--border); border-radius: 6px; line-height: 1.55; }
+#body .qz pre.qz-code code { border: 0; background: none; padding: 0; white-space: pre; font-size: 13px; }
+.qz-row { display: flex; gap: 8px; }
+.qz-in { flex: 1; min-width: 0; padding: 6px 10px; font: inherit; font-size: 16px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; }
+.qz-btn { padding: 6px 16px; font: inherit; font-size: 14px; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 6px; cursor: pointer; white-space: nowrap; }
+.qz-res { margin-top: 8px; font-size: 14px; line-height: 1.7; }
+#body .qz-res p { margin: 3px 0; }
+.qz-mark { font-weight: bold; }
+.qz.ok .qz-mark { color: var(--ok); } .qz.ng .qz-mark { color: var(--err); }
 .term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
 .pager { display: flex; justify-content: space-between; gap: 10px; margin: 36px 0 10px; }
 .pager button { font-size: 14px; padding: 10px 14px; border-radius: 10px; cursor: pointer; max-width: 48%;
@@ -279,10 +293,12 @@ li > .sticky-bar { margin-top: 4px; }
   const UI = {
     ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", footShelf: "📚 教科書の一覧", zoom: "　🔍 押すと拡大", close: "閉じる",
           zoomHint: "横にずらしたり、2本の指で広げて拡大したりできます。", copy: "コピー", copied: "コピーしました",
-          fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした" },
+          fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした",
+          qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え" },
     en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", footShelf: "📚 All textbooks", zoom: "  🔍 tap to zoom", close: "Close",
           zoomHint: "Scroll sideways, or pinch with two fingers to zoom.", copy: "Copy", copied: "Copied",
-          fig: "Fig. ", load: "Loading…", loadErr: "Could not load" },
+          fig: "Fig. ", load: "Loading…", loadErr: "Could not load",
+          qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer" },
   };
 
   const params = new URLSearchParams(location.search);
@@ -296,6 +312,7 @@ li > .sticky-bar { margin-top: 4px; }
   let studying = [];
   try { studying = JSON.parse(store.get(STUDY_KEY, "[]")) || []; } catch (e) { studying = []; }
   const cardHtml = {};
+  const QUIZ_KEY = (id) => "textbooks-quiz-" + id;   // 練習問題の結果 { "章のファイル#問の番号": 1 正解 / 0 不正解 }
 
   async function showShelf() {
     $("shelf").hidden = false;
@@ -310,6 +327,11 @@ li > .sticky-bar { margin-top: 4px; }
       const lang = (pos && pos.lang) || b.langs[0];
       const cont = pos && chs[pos.idx] ? `<span>続きから: <b>${esc(L(chs[pos.idx].title, lang))}</b></span>` : "";
       const n = notes.filter((x) => x.book === b.id).length;
+      // 練習問題の正答率（問題ごとの最後の結果）
+      let qz = {};
+      try { qz = JSON.parse(store.get(QUIZ_KEY(b.id), "{}")) || {}; } catch (e) { qz = {}; }
+      const qa = Object.keys(qz).length, qc = Object.values(qz).filter((v) => v === 1).length;
+      const rate = qa ? `<span>✏️ 練習問題 <b>${Math.round(qc / qa * 100)}%</b>（${qc} / ${qa} 問）</span>` : "";
       // 進み具合（今いる章 / 章の数）。今勉強中の欄でだけ見せる
       const at = pos && chs[pos.idx] ? pos.idx + 1 : 0;
       const prog = chs.length ? `<span class="prog"><span class="pbar"><span style="width:${(at / chs.length * 100).toFixed(1)}%"></span></span>${at} / ${chs.length}</span>` : "";
@@ -317,7 +339,7 @@ li > .sticky-bar { margin-top: 4px; }
         <span class="ic">${esc(b.icon || "📘")}</span>
         <h3>${esc(L(b.title, "ja"))}</h3>${b.title.en && b.langs.length > 1 ? `<span class="en">${esc(b.title.en)}</span>` : ""}
         <p>${esc(L(b.desc, "ja"))}</p>
-        <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}</span>${prog}</a>`;
+        <span class="meta"><span>${chs.length ? chs.length + " 章" : ""}${b.langs.length > 1 ? "・日本語 / English" : ""}</span>${cont}${n ? `<span>🔖 ${n}</span>` : ""}${rate}</span>${prog}</a>`;
     }));
     studying = studying.filter((id) => cardHtml[id]);
     renderShelf();
@@ -500,9 +522,31 @@ li > .sticky-bar { margin-top: 4px; }
     if (cl === "cmake") return "CMakeLists.txt";
     return "";
   }
+  // 練習問題（```quiz）。Q: 問題 / | コードの行 / A: 答え | 別の書き方 … / E: 解説。答えと解説は「回答」を押すまで隠す
+  function quizHtml(lines, start) {
+    const qs = [];
+    let cur = null, last = "";
+    for (const l of lines) {
+      let m;
+      if ((m = l.match(/^Q:\s*(.*)$/))) { cur = { q: m[1], code: [], a: [], e: "" }; qs.push(cur); last = "q"; }
+      else if (!cur) continue;
+      else if ((m = l.match(/^\|\s?(.*)$/))) cur.code.push(m[1]);
+      else if ((m = l.match(/^A:\s*(.*)$/))) { cur.a = m[1].split(/\s+\|\s+/).map((x) => x.trim()).filter(Boolean); last = "a"; }
+      else if ((m = l.match(/^E:\s*(.*)$/))) { cur.e = m[1]; last = "e"; }
+      else if (l.trim() && last === "q") cur.q += " " + l.trim();
+      else if (l.trim() && last === "e") cur.e += " " + l.trim();
+    }
+    const html = qs.map((x, k) => `<div class="qz" data-n="${start + k + 1}" data-a="${esc(JSON.stringify(x.a))}">`
+      + `<p class="qz-q"><b>${t("qz")}${start + k + 1}</b>${inline(x.q)}</p>`
+      + (x.code.length ? `<pre class="qz-code"><code>${esc(x.code.join("\n"))}</code></pre>` : "")
+      + `<div class="qz-row"><input type="text" class="qz-in" placeholder="${t("qzPh")}" autocomplete="off" autocapitalize="off" autocorrect="off" spellcheck="false" enterkeyhint="done">`
+      + `<button type="button" class="qz-btn">${t("qzBtn")}</button></div>`
+      + `<div class="qz-res" hidden><p class="qz-mark"></p><p><b>${t("qzAns")}:</b> ${inline(x.a[0] || "")}</p>${x.e ? `<p>${inline(x.e)}</p>` : ""}</div></div>`).join("");
+    return { html: `<div class="quiz">${html}</div>`, n: qs.length };
+  }
   function render(src, prefix) {
     const lines = src.replace(/\r\n/g, "\n").split("\n"), out = [], codes = [];
-    let i = 0, m, fig = 0;
+    let i = 0, m, fig = 0, qn = 0;
     const isSep = (l) => /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(l);
     const cells = (l) => l.trim().replace(/^\|/, "").replace(/(?<!\\)\|$/, "").split(/(?<!\\)\|/).map((c) => c.trim().replace(/\\\|/g, "|"));
     while (i < lines.length) {
@@ -512,6 +556,7 @@ li > .sticky-bar { margin-top: 4px; }
         i++;
         while (i < lines.length && !/^```\s*$/.test(lines[i])) code.push(lines[i++]);
         i++;
+        if (cl === "quiz") { const q = quizHtml(code, qn); qn += q.n; out.push(q.html); continue; }
         codes.push(code.join("\n"));
         const run = flags.includes("run") && (cl === "python" || cl === "cpp");
         out.push(`<div class="codeblock${run ? " run" : ""}"><div class="cb-head"><span class="grow">${esc(codeLabel(cl, flags))}</span>`
@@ -1166,7 +1211,7 @@ li > .sticky-bar { margin-top: 4px; }
   // 文字を選んだら、線・メモ・付箋・訳すのボタンを、選んだ所の下に出す（スマホは上にコピーなどのメニューが出るため）
   function selRange() {
     const sel = getSelection();
-    if (!sel.rangeCount || sel.isCollapsed) return null;
+    if (!sel.rangeCount || sel.isCollapsed || document.activeElement?.matches?.("input, textarea")) return null;
     const range = sel.getRangeAt(0);
     return body.contains(range.commonAncestorContainer) ? range : null;
   }
@@ -1343,6 +1388,59 @@ li > .sticky-bar { margin-top: 4px; }
     if (!els.length) return toast("本文が変わったため、場所が見つかりませんでした。一覧の ✕ で消せます");
     scrollToEl(els[0], it.type === "mark");
     flash(els);
+  });
+
+  // ---------- 練習問題の答え合わせ ----------
+  // 全角・半角、大文字・小文字、カタカナ・ひらがな、空白や「」、などの記号、文の終わりの「です」のちがいは見ない。
+  // 答えが数なら、入力の中の最初の数で比べる（「280日」「２８０」でもよい）
+  function qzNorm(s) {
+    s = String(s).normalize("NFKC").toLowerCase().trim().replace(/^(the|an?)\s+/, "");
+    s = s.replace(/[\u30a1-\u30f6]/g, (c) => String.fromCharCode(c.charCodeAt(0) - 0x60));
+    return s.replace(/[\s"'`“”‘’「」『』()\[\]【】、。,.!?:;・〜~]/g, "").replace(/(です|でした|である)$/, "");
+  }
+  const NUM = /^[-−]?\d+(\.\d+)?$/;
+  function qzNum(s) {
+    const m = String(s).normalize("NFKC").replace(/(\d),(?=\d{3})/g, "$1").replace(/[−–]/g, "-").match(/-?\d+(\.\d+)?/);
+    return m ? m[0] : null;
+  }
+  function qzMatch(input, answers) {
+    const v = qzNorm(input), sing = (x) => (x.length > 3 ? x.replace(/s$/, "") : x);
+    if (!v) return false;
+    return answers.some((a) => {
+      const an = String(a).normalize("NFKC").replace(/(\d),(?=\d{3})/g, "$1").replace(/[−–]/g, "-").trim();
+      if (NUM.test(an)) {
+        const x = qzNum(input);
+        if (x === null) return false;
+        const d = (an.split(".")[1] || "").length;
+        return +x === +an || (d > 0 && (+x).toFixed(d) === (+an).toFixed(d));
+      }
+      const w = qzNorm(a);
+      return v === w || sing(v) === sing(w);
+    });
+  }
+  function checkQuiz(q) {
+    const inp = q.querySelector(".qz-in");
+    if (!inp.value.trim()) { inp.focus(); return; }
+    let ans = [];
+    try { ans = JSON.parse(q.dataset.a); } catch (e) { ans = []; }
+    const ok = qzMatch(inp.value, ans);
+    q.classList.toggle("ok", ok); q.classList.toggle("ng", !ok);
+    q.querySelector(".qz-mark").textContent = t(ok ? "qzOk" : "qzNg");
+    q.querySelector(".qz-res").hidden = false;
+    // 正答率に使うのは、この画面で最初に答えたときだけ（答えを見たあとの入れ直しは数えない）
+    if (q.dataset.done) return;
+    q.dataset.done = "1";
+    let res = {};
+    try { res = JSON.parse(store.get(QUIZ_KEY(book.id), "{}")) || {}; } catch (e) { res = {}; }
+    res[chapters[state.idx].file + "#" + q.dataset.n] = ok ? 1 : 0;
+    store.set(QUIZ_KEY(book.id), JSON.stringify(res));
+  }
+  body.addEventListener("click", (e) => {
+    const b = e.target.closest(".qz-btn");
+    if (b) checkQuiz(b.closest(".qz"));
+  });
+  body.addEventListener("keydown", (e) => {
+    if (e.key === "Enter" && !e.isComposing && e.target.classList.contains("qz-in")) { e.preventDefault(); checkQuiz(e.target.closest(".qz")); }
   });
 
   // ---------- 本文を押したとき ----------

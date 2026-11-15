@@ -95,3 +95,23 @@ Noticing "something is different from usual" early is what matters. Sensors watc
 - Lameness is common. Prevent it with hoof trimming, clean floors and comfortable stalls
 - Cows are weak in heat. When THI goes above 68–72, use fans, misting and water
 - Changes from normal in eating, rumination, milk yield and body temperature are early warning signs
+
+## Exercises
+
+```quiz
+Q: What is the period of 3 weeks before and after calving called?
+A: transition period | transition | periparturient period
+E: Cows run short of energy and calcium at this time.
+
+Q: Which disease is caused by low blood calcium, so the cow cannot stand after calving?
+A: milk fever | hypocalcemia
+E: Milk fever, ketosis and displaced abomasum tend to come together.
+
+Q: What do we call it when a cow walks in pain and limps?
+A: lameness | lame
+E: Prevent it with hoof trimming, clean floors and comfortable stalls.
+
+Q: Which three-letter index, made from temperature and humidity, shows heat stress?
+A: THI | temperature-humidity index
+E: When THI goes above 68–72, use fans, misting and water.
+```

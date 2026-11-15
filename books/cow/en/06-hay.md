@@ -113,3 +113,23 @@ Besides looking at it, farmers send samples for analysis (feed analysis) and use
 - **Timothy** suits dry cows, heifers and calves. **Alfalfa** suits milking cows
 - With alfalfa, watch out for milk fever in dry cows and bloat from fresh plants
 - Hay is dried to 15% moisture or less. The earlier it is cut, the higher the nutrients
+
+## Exercises
+
+```quiz
+Q: Which grass suits dry cows, heifers and calves?
+A: timothy
+E: It is high in fiber and lower in protein and calcium.
+
+Q: Which legume suits milking cows?
+A: alfalfa | lucerne
+E: Alfalfa is high in protein and calcium.
+
+Q: To what percent moisture or less is hay dried?
+A: 15
+E: Hay at 15% moisture or less keeps without mold.
+
+Q: Which gives more nutrients: cutting early or cutting late?
+A: early | cutting early | earlier
+E: The earlier it is cut, the higher the nutrients; later cuts have more fiber.
+```

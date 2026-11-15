@@ -87,3 +87,27 @@ To prevent it: feed enough grass (fiber), do not feed a lot of concentrate at on
 - Cows ruminate 7–10 hours a day. Saliva protects the rumen. Less rumination is a sign of trouble
 - Microbes ferment grass into VFAs, which give the cow energy and become milk
 - Too much grain causes rumen acidosis. Balance it with grass
+
+## Exercises
+
+```quiz
+Q: How many stomachs does a cow have?
+A: 4 | four
+E: The cow has four stomachs, from the rumen to the abomasum.
+
+Q: What is the name of the first stomach, the fermentation tank full of microbes?
+A: rumen | the rumen
+E: Microbes in the rumen ferment grass.
+
+Q: About how many hours a day does a cow ruminate?
+A: 7–10 hours | 7 | 8 | 9 | 10
+E: 7–10 hours a day. Less rumination is a sign of trouble.
+
+Q: Microbes ferment grass into acids that give the cow energy and become milk. What are they called (three letters)?
+A: VFA | VFAs | volatile fatty acids
+E: VFAs (volatile fatty acids) are the cow's main source of energy.
+
+Q: What is the disease called when too much grain makes the rumen too acidic?
+A: rumen acidosis | acidosis | SARA
+E: Balance grain with grass. Saliva protects the rumen by neutralizing acid.
+```

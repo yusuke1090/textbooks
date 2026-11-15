@@ -89,3 +89,23 @@ Milk yield is often counted over 305 days after one calving (the "305-day yield"
 - Cows give milk only after calving. They repeat "calving → milking → dry period"
 - First insemination at 13–15 months, first calving at 22–24 months. Most cows leave the farm at 5–6 years old
 - Cows are ruminants, live in herds and are weak in hot weather
+
+## Exercises
+
+```quiz
+Q: Which black-and-white breed makes up almost all dairy cows in Japan?
+A: Holstein | Holsteins | Holstein-Friesian
+E: Holsteins weigh 600–700 kg and give 8,000–10,000 kg of milk a year.
+
+Q: What do we call the resting time before the next calving, when the cow is not milked?
+A: dry period | dry | drying off
+E: Dairy cows repeat "calving → milking → dry period".
+
+Q: At about how many months old does a cow calve for the first time? Answer with a number.
+A: 22–24 months | 22 | 23 | 24
+E: First insemination is at 13–15 months, and first calving at 22–24 months.
+
+Q: What do we call an animal, like the cow, that brings food back up to chew it again?
+A: ruminant | ruminants
+E: Cows are ruminants, live in herds and are weak in hot weather.
+```

@@ -96,3 +96,27 @@
 - One calf a year = a 365-day calving interval. Pregnancy lasts 280 days, so the cow must get pregnant within 85 days after calving
 - Heat comes every 21 days and lasts only 10–18 hours. Finding it is important, and sensors help
 - Most cows are bred by AI, 12–18 hours after heat starts
+
+## Exercises
+
+```quiz
+Q: About how many days does a cow's pregnancy last?
+A: 280
+E: About 280 days, almost the same as in humans.
+
+Q: For one calf a year, within how many days after calving must the cow get pregnant?
+A: 85
+E: 365 days − 280 days = 85 days.
+
+Q: Every how many days does heat (estrus) come?
+A: 21
+E: Every 21 days, and it lasts only 10–18 hours, so it is easy to miss.
+
+Q: What is it called when a person, not a bull, places semen in the cow to make her pregnant? (two letters or two words)
+A: AI | artificial insemination
+E: Most dairy cows are bred by AI, 12–18 hours after heat starts.
+
+Q: About how many months before the next calving is a cow dried off?
+A: 2 | two
+E: About two months before calving, milking stops so the udder and body can rest.
+```
