@@ -300,5 +300,22 @@
       "ja": "信者の数は 2026年11月に調べた目安です（おもに Pew Research Center の2020年の推計）。出典は付録B にあります。",
       "en": "Numbers of believers are rough figures checked in November 2026 (mainly Pew Research Center's 2020 estimates). Sources are in Appendix B."
     }
+  },
+  {
+    "id": "swahili",
+    "icon": "🗣️",
+    "group": "言葉",
+    "langs": [
+      "ja"
+    ],
+    "title": {
+      "ja": "スワヒリ語の教科書"
+    },
+    "desc": {
+      "ja": "発音・あいさつ・数から、名詞のクラスと動詞の形まで。市場・移動・畑・牛と酪農・仕事の場面の言葉と会話。各章に練習と答え。"
+    },
+    "note": {
+      "ja": "話す人の数と国ごとの立場は、2026年11月に調べたものです。出典は付録C にあります。"
+    }
   }
 ]

@@ -1,0 +1,23 @@
+[
+  {"part": "第1部 はじめの一歩", "file": "01-about.md", "title": "1. スワヒリ語とは"},
+  {"part": "第1部 はじめの一歩", "file": "02-sounds.md", "title": "2. 発音と文字"},
+  {"part": "第1部 はじめの一歩", "file": "03-greetings.md", "title": "3. あいさつ"},
+  {"part": "第1部 はじめの一歩", "file": "04-intro.md", "title": "4. 自己紹介と「〜です」"},
+  {"part": "第1部 はじめの一歩", "file": "05-numbers.md", "title": "5. 数・お金・時刻・曜日"},
+  {"part": "第2部 文法の骨組み", "file": "06-noun-classes.md", "title": "6. 名詞のクラス"},
+  {"part": "第2部 文法の骨組み", "file": "07-verbs.md", "title": "7. 動詞と時制"},
+  {"part": "第2部 文法の骨組み", "file": "08-negative.md", "title": "8. 打ち消し"},
+  {"part": "第2部 文法の骨組み", "file": "09-adjectives.md", "title": "9. 形容詞・「〜の」・「この」"},
+  {"part": "第2部 文法の骨組み", "file": "10-questions.md", "title": "10. たずねる言葉"},
+  {"part": "第2部 文法の骨組み", "file": "11-objects.md", "title": "11. 目的語・命令・お願い"},
+  {"part": "第2部 文法の骨組み", "file": "12-longer.md", "title": "12. 動詞の形を変える・長い文"},
+  {"part": "第3部 東アフリカで使う", "file": "13-food.md", "title": "13. 食べ物と市場"},
+  {"part": "第3部 東アフリカで使う", "file": "14-travel.md", "title": "14. 移動・宿・町"},
+  {"part": "第3部 東アフリカで使う", "file": "15-farm.md", "title": "15. 畑と作物"},
+  {"part": "第3部 東アフリカで使う", "file": "16-dairy.md", "title": "16. 牛と酪農"},
+  {"part": "第3部 東アフリカで使う", "file": "17-business.md", "title": "17. 仕事と商売"},
+  {"part": "付録", "file": "a-words.md", "title": "付録A. 単語帳"},
+  {"part": "付録", "file": "b-tables.md", "title": "付録B. 早見表"},
+  {"part": "付録", "file": "c-sources.md", "title": "付録C. 出典"},
+  {"part": "付録", "file": "d-photos.md", "title": "付録D. 写真の出典"}
+]

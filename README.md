@@ -14,6 +14,7 @@
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語・English |
 | [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語・English |
 | [🛐 宗教の教科書](https://yusuke1090.github.io/textbooks/?b=religion) | 国ごとに多い宗教と、ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道の考え方・歴史・行事・暮らしの決まり（12章と付録、写真74枚） | 日本語・English |
+| [🗣️ スワヒリ語の教科書](https://yusuke1090.github.io/textbooks/?b=swahili) | 発音・あいさつ・数、名詞のクラスと動詞の形、市場・移動・畑・牛と酪農・仕事の場面の言葉と会話（17章と付録、写真37枚、練習と答えつき） | 日本語 |
 | [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語・English |
 | [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語・English |
 | [🧮 線形代数の教科書](https://yusuke1090.github.io/textbooks/?b=linalg) | ベクトル・行列・掃き出し法・行列式・ベクトル空間・線形写像・固有値と対角化・対称行列、最小二乗法と主成分分析（10章と付録、図6枚、例題と練習問題つき） | 日本語・English |
@@ -133,6 +134,12 @@ tools/            図や用語の一覧を作るスクリプト
 - 2026-11-15 に作った。信者の数は Pew Research Center の2020年の推計（2025年発表）にそろえ、日本は文化庁『宗教年鑑』と Pew の調査を並べている。出典は付録B（`b-sources.md`）
 - 宗教の説明は「信じている人はこう考える」の形で書き、どれが正しいかは決めない。争いの話は、宗教だけでなく土地・民族・政治が重なることを書く
 - 写真は `photos.json` と `python3 tools/fetch_photos.py religion`。本棚の分野は「文化」
+
+### 🗣️ スワヒリ語の教科書（books/swahili）
+
+- 2026-11-15 に作った。タンザニアの標準のスワヒリ語で、ケニアでのちがいはそのつど書く。第1部 はじめの一歩（1〜5章）、第2部 文法（6〜12章）、第3部 市場・移動・畑・牛と酪農・仕事（13〜17章）。各章に練習と答え
+- 1章の話す人の数と国ごとの立場は、そのときにウェブで調べたもの。出典は付録C（`c-sources.md`）
+- 写真は `photos.json` と `python3 tools/fetch_photos.py swahili`（付録D `d-photos.md` も作り直す）。本棚の分野は「言葉」
 
 ### 🐍 Python の教科書（books/python）
 
