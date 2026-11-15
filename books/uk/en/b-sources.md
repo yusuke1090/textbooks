@@ -26,6 +26,7 @@ Figures and news were researched on the following pages in November 2026. Figure
 - Milking robots: [FAS (Farm Advisory Service, Scotland)](https://www.fas.scot/article/the-dairy-labour-crisis-who-will-milk-the-cows-tomorrow/), [Herdwatch (2026)](https://herdwatch.com/en-ie/dairy-farm-technology-2026-what-is-actually-working/)
 - Bovine TB and badgers: [Farmers Weekly](https://www.fwi.co.uk/livestock/badger-cull-exit-strategy-raises-tb-disease-control-fears), [Born Free](https://www.bornfree.org.uk/news/does-the-end-of-culling-licences-mark-a-permanent-reprieve-for-englands-badgers/), [GOV.UK](https://www.gov.uk/government/news/next-phase-of-tb-eradication-strategy-set-out-by-government)
 - CattleEye: [GEA (March 2026)](https://gea.com/en/news/trade-press/2026/dairy-farming-software-lab-belfast), [The Dairy Site](https://www.thedairysite.com/news/gea-adds-proven-ai-solution-to-portfolio-with-cattleeye-acquisition)
+- CowAlert (Peacock Technology bought IceRobotics): [Peacock Technology (May 2022)](https://www.peacocktechnology.com/en/news/peacock-technology-acquires-icerobotics-to-expand-offering-to-dairy-sector)
 
 ## Agritech (Chapter 8)
 

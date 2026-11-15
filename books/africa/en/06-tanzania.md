@@ -73,8 +73,8 @@
 | Company | Location | Features |
 | --- | --- | --- |
 | Tanga Fresh | Tanga (northeast coast) | The country's largest dairy. Collects from about 6,000 small farmers. Can process 120,000 L a day, but runs at only about 15% because not enough milk is collected |
-| ASAS | Iringa (southern highlands) | Can process 100,000 L a day |
-| Kilimanjaro Fresh, Milkcom and others | North, Dar es Salaam | |
+| [ASAS](https://asas.co.tz/ASAS-dairy) | Iringa (southern highlands) | Can process 100,000 L a day |
+| [Kilimanjaro Fresh](https://kilimanjarofresh.co.tz/), Milkcom and others | North, Dar es Salaam | |
 
 ### Problems
 
@@ -94,12 +94,12 @@
 
 | Company or project | What it does |
 | --- | --- |
-| **MazaoHub** | Solar-powered soil sensors (nutrients, moisture, pH) and AI recommend fertilizer and work. Used by more than 35,000 farmers. Raised 2 million dollars in 2025 |
+| [**MazaoHub**](https://www.mazaohub.com/) | Solar-powered soil sensors (nutrients, moisture, pH) and AI recommend fertilizer and work. Used by more than 35,000 farmers. Raised 2 million dollars in 2025 |
 | **Kilimo Fresh** | Collects vegetables and fruit from small farmers and supplies shops and restaurants in Dar es Salaam |
-| **WASSHA** (a Japanese company) | Rents out IoT solar lanterns through small village shops. Payment by mobile money. JICA has also invested. Based in Dar es Salaam |
-| Tetra Pak and the dairy Jambo | Run five mobile milk collection centers with solar cooling units in Shinyanga Region |
-| Solidaridad and Tanga Fresh | A trial of building hubs near farmers to collect and cool milk |
-| Vodacom (M-Pesa) and others | The foundation for payments, loans and insurance for farmers |
+| [**WASSHA**](https://wassha.com/en/) (a Japanese company) | Rents out IoT solar lanterns through small village shops. Payment by mobile money. JICA has also invested. Based in Dar es Salaam |
+| [Tetra Pak](https://www.tetrapak.com/) and the dairy [Jambo](https://jambogroup.co.tz/) | Run five mobile milk collection centers with solar cooling units in Shinyanga Region |
+| [Solidaridad](https://www.solidaridadnetwork.org/) and Tanga Fresh | A trial of building hubs near farmers to collect and cool milk |
+| [Vodacom](https://vodacom.co.tz/) (M-Pesa) and others | The foundation for payments, loans and insurance for farmers |
 
 - A 2024 survey found that about 17% of Tanzania's roughly 1,000 startups are agritech
 - In competitions for young entrepreneurs (such as Heifer International's AYuTe Africa), companies working on cattle feed have won prizes

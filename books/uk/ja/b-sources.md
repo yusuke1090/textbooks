@@ -26,6 +26,7 @@
 - 搾乳ロボット: [FAS（スコットランド農業助言サービス）](https://www.fas.scot/article/the-dairy-labour-crisis-who-will-milk-the-cows-tomorrow/)、[Herdwatch（2026年）](https://herdwatch.com/en-ie/dairy-farm-technology-2026-what-is-actually-working/)
 - ウシ結核とアナグマ: [Farmers Weekly](https://www.fwi.co.uk/livestock/badger-cull-exit-strategy-raises-tb-disease-control-fears)、[Born Free](https://www.bornfree.org.uk/news/does-the-end-of-culling-licences-mark-a-permanent-reprieve-for-englands-badgers/)、[GOV.UK](https://www.gov.uk/government/news/next-phase-of-tb-eradication-strategy-set-out-by-government)
 - CattleEye: [GEA（2026年3月）](https://gea.com/en/news/trade-press/2026/dairy-farming-software-lab-belfast)、[The Dairy Site](https://www.thedairysite.com/news/gea-adds-proven-ai-solution-to-portfolio-with-cattleeye-acquisition)
+- CowAlert（ピーコック・テクノロジーがアイスロボティクスを買った）: [Peacock Technology（2022年5月）](https://www.peacocktechnology.com/en/news/peacock-technology-acquires-icerobotics-to-expand-offering-to-dairy-sector)
 
 ## アグリテック（8章）
 

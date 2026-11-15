@@ -80,10 +80,10 @@ A feature of British dairy is how wide the range of systems is.
 
 | Company | In brief |
 | --- | --- |
-| Arla Foods | A Danish–Swedish cooperative. British farmers are members too |
-| Müller | A German company. Milk and yogurt |
-| First Milk | A cooperative of British farmers. Cheese |
-| Saputo Dairy UK | A Canadian company. Cheese (Cathedral City) |
+| [Arla Foods](https://www.arlafoods.co.uk/) | A Danish–Swedish cooperative. British farmers are members too |
+| [Müller](https://www.muller.co.uk/) | A German company. Milk and yogurt |
+| [First Milk](https://www.firstmilk.co.uk/) | A cooperative of British farmers. Cheese |
+| [Saputo Dairy UK](https://uk.saputo.com/) | A Canadian company. Cheese (Cathedral City) |
 
 - **Milk prices differ by company and contract**, and go up and down almost every month, because they are pulled by world prices for butter and skimmed milk powder
   - In 2026, the price fell to about 34 pence per L in April and recovered to about 37 pence in August
@@ -117,11 +117,11 @@ A feature of British dairy is how wide the range of systems is.
 
 | Product | Company | Where it goes |
 | --- | --- | --- |
-| SenseHub | MSD Animal Health (originally Israel's SCR) | Neck, ear |
-| CowManager | Netherlands | Ear |
-| CowScout | GEA (Germany) | Neck, leg |
-| CowAlert | IceRobotics (Edinburgh) | Hind leg |
-| Moocall | Ireland | Tail (calving alerts) |
+| [SenseHub](https://msd.sensehub.com/) | MSD Animal Health (originally Israel's SCR) | Neck, ear |
+| [CowManager](https://www.cowmanager.com/) | Netherlands | Ear |
+| [CowScout](https://www.gea.com/en/products/milking-farming-barn/gea-herd-management/activity-detection-cowscout/) | GEA (Germany) | Neck, leg |
+| [CowAlert](https://www.peacocktechnology.com/cowalert) | Peacock Technology (Scotland; bought IceRobotics of Edinburgh in 2022) | Hind leg |
+| [Moocall](https://www.moocall.com/) | Ireland | Tail (calving alerts) |
 
-- **Cameras and AI**: cameras above barn passageways automatically score gait (**lameness**) and body condition (BCS) every day. Companies include **CattleEye** in Belfast (a GEA company since 2024; GEA opened a software lab in Belfast in March 2026). In a 2026 survey, the technology farmers were "most interested in" was **camera AI**, ahead of milking robots
+- **Cameras and AI**: cameras above barn passageways automatically score gait (**lameness**) and body condition (BCS) every day. Companies include [**CattleEye**](https://cattleeye.com/) in Belfast (a GEA company since 2024; GEA opened a software lab in Belfast in March 2026). In a 2026 survey, the technology farmers were "most interested in" was **camera AI**, ahead of milking robots
 - British milk processors and supermarkets often require regular recording of **mobility scores** (lameness scores), so there is demand for scoring them automatically

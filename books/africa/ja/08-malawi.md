@@ -109,10 +109,10 @@
 | --- | --- |
 | **Seedgro** | 畑に埋めた土のセンサーのデータを、IoT・クラウドで集め、ショートメッセージ・音声・USSD で農家に伝える |
 | **Mechro Limited** | ブランタイヤの会社。小さな農家向けの安い土の水分のセンサー（Chameleon）と、AI で作物や作業をすすめる仕組み。2025年にアフリカ電気通信連合の発明の大会で上位10に入った |
-| **Nuru Solutions** | 農業のデータを、農家の判断の道具にする（2024年に始まった。創業者は保険の Pula の出身） |
-| **Noble Agriculture Technologies** | リロングウェの、IoT の農業の会社。2019年に気候への適応の賞（SEED）を受けた |
+| [**Nuru Solutions**](https://nuru.solutions/) | 農業のデータを、農家の判断の道具にする（2024年に始まった。創業者は保険の Pula の出身） |
+| [**Noble Agriculture Technologies**](https://nobleagritech.com/) | リロングウェの、IoT の農業の会社。2019年に気候への適応の賞（SEED）を受けた |
 | **Mbora** | 小さな農家への少額のローン |
-| **Ulangizi**（Opportunity International） | WhatsApp で、英語かチェワ語で農業の質問に答える AI。写真で作物の病気を見分ける。スマホのない農家には、相談員が代わりに使う |
+| **Ulangizi**（[Opportunity International](https://opportunity.org/)） | WhatsApp で、英語かチェワ語で農業の質問に答える AI。写真で作物の病気を見分ける。スマホのない農家には、相談員が代わりに使う |
 | **Inyosi Tech Hub** | スタートアップを育て、若者にデジタルの技術を教える |
 
 - 2017年、ユニセフとマラウイ政府は、アフリカで初めての「人道支援のドローンの試験空域」をカスング県に作りました。ドローンで検体や薬を運ぶ試験が行われ、ドローンの技術者が育っています

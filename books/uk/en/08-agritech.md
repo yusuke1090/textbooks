@@ -43,7 +43,7 @@ The state of the companies in this chapter was researched in November 2026. Star
 
 ### Robots
 
-- **Fieldwork Robotics** (Cambridge): a robot that finds raspberries and other fruit with cameras and picks them. In April 2026 it raised £3 million, and under a "harvesting as a service" model (not selling the robots, but being paid by the amount picked) it will run on farms in Norfolk and Staffordshire for two years. It plans to deploy many robots side by side in 2027
+- [**Fieldwork Robotics**](https://fieldworkrobotics.com/) (Cambridge): a robot that finds raspberries and other fruit with cameras and picks them. In April 2026 it raised £3 million, and under a "harvesting as a service" model (not selling the robots, but being paid by the amount picked) it will run on farms in Norfolk and Staffordshire for two years. It plans to deploy many robots side by side in 2027
 - Strawberries are often grown on waist-high tables inside polytunnels (simple plastic greenhouses), a setup that robots can get into easily
 
 ![Strawberry polytunnels (Herefordshire). Many British strawberries are grown in these](images/polytunnels.jpg)
@@ -52,7 +52,7 @@ The state of the companies in this chapter was researched in November 2026. Star
 
 ### Apps and data
 
-- **Breedr**: an app born in Britain in 2018 for recording each animal (weight, feed, health) and for buying and selling cattle. It judges how good the feed is from how fast cattle gain weight. In August 2026 it raised 27 million dollars and records more than 2 million cattle. It has now moved its headquarters to the United States (Austin, Texas) and operates in the US, the UK and Australia
+- [**Breedr**](https://www.breedr.co/): an app born in Britain in 2018 for recording each animal (weight, feed, health) and for buying and selling cattle. It judges how good the feed is from how fast cattle gain weight. In August 2026 it raised 27 million dollars and records more than 2 million cattle. It has now moved its headquarters to the United States (Austin, Texas) and operates in the US, the UK and Australia
 - For dairy camera AI (CattleEye and others) and sensor companies, see Chapter 7
 
 ### Indoor farming
@@ -65,8 +65,8 @@ The state of the companies in this chapter was researched in November 2026. Star
 ## Drone rules
 
 - Until 2023, **spraying** pesticides and the like from drones **was prohibited**, and weight was limited to 25 kg
-- In 2023, a spraying drone from China's XAG became the first to receive an "operational authorization" from the Civil Aviation Authority (**CAA**)
-- After that, a company called AutoSpray Systems got permission to spray liquids and spread granular fertilizer with a large 120 kg drone, and in March 2025 also got permission to **fly beyond visual line of sight (BVLOS)** (it was accepted that agricultural flights below 15 m pose little danger to other aircraft)
+- In 2023, a spraying drone from China's [XAG](https://www.xa.com/) became the first to receive an "operational authorization" from the Civil Aviation Authority (**CAA**)
+- After that, a company called [AutoSpray Systems](https://autospraysystems.com/) got permission to spray liquids and spread granular fertilizer with a large 120 kg drone, and in March 2025 also got permission to **fly beyond visual line of sight (BVLOS)** (it was accepted that agricultural flights below 15 m pose little danger to other aircraft)
 - Today, farmers hire companies that hold permits to spray by drone. The government (the Health and Safety Executive, HSE, and Defra) is putting together the procedures for applying pesticides by drone
 - In Japan, drone spraying is normal, but in Britain it is "still to come". This may be a field where Japanese experience can help
 

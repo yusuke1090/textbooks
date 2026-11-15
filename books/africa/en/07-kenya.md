@@ -95,22 +95,22 @@ Kenyan dairy is the most commercialized in East Africa. Milk is an everyday drin
 
 | Company | What it does |
 | --- | --- |
-| **Savanna Circuit Technologies** | A solar milk cooler mounted on a motorbike (keeps 140 L cold for 15 hours). Rented rather than sold, charging per liter carried ("cooling as a service"). More than 1,000 units in 26 counties (company figures) |
+| [**Savanna Circuit Technologies**](https://sav-circuit.com/) | A solar milk cooler mounted on a motorbike (keeps 140 L cold for 15 hours). Rented rather than sold, charging per liter carried ("cooling as a service"). More than 1,000 units in 26 counties (company figures) |
 | **FRESH Networks** | Refrigerated delivery with IoT temperature monitoring, and milk ATMs for low-income areas |
-| **DigiCow** | Record-keeping app, training and loans for dairy farmers. Records can be kept without internet, and it also works by text message |
-| **Dairy Sense** | A portable milk tester for use at farms and collection centers. Building a system that sets prices by quality |
+| [**DigiCow**](https://digicow.co.ke/) | Record-keeping app, training and loans for dairy farmers. Records can be kept without internet, and it also works by text message |
+| [**Dairy Sense**](https://dairysense.tech/) | A portable milk tester for use at farms and collection centers. Building a system that sets prices by quality |
 | **SpaceAI** | Manages small dairy farmers' milk data with AI, from collection to factory |
 
 ### Crops, money and communications
 
 | Company | What it does |
 | --- | --- |
-| **SunCulture** | Sells solar irrigation pumps on installment plans. Monitors pump status remotely |
-| **UjuziKilimo** | Uses soil sensors to check soil conditions and recommend fertilizer and work |
-| **Synnefa** | Greenhouse and field sensors, and a cloud service for farmers |
-| **Apollo Agriculture** | Screens farmers using satellite images and machine learning, and sells seed and fertilizer on credit |
-| **Pula** | Insurance for farmers using weather and yield data |
-| **Safaricom** | M-Pesa. "DigiFarm" for farmers (advance payments to tea farmers, advice through an AI chat). Also IoT connectivity (NB-IoT) for meters and the like |
+| [**SunCulture**](https://sunculture.io/) | Sells solar irrigation pumps on installment plans. Monitors pump status remotely |
+| [**UjuziKilimo**](https://www.ujuzikilimo.com/) | Uses soil sensors to check soil conditions and recommend fertilizer and work |
+| [**Synnefa**](https://synnefa.io/) | Greenhouse and field sensors, and a cloud service for farmers |
+| [**Apollo Agriculture**](https://www.apolloagriculture.com/) | Screens farmers using satellite images and machine learning, and sells seed and fertilizer on credit |
+| [**Pula**](https://www.pula-advisors.com/) | Insurance for farmers using weather and yield data |
+| [**Safaricom**](https://www.safaricom.co.ke/) | M-Pesa. "DigiFarm" for farmers (advance payments to tea farmers, advice through an AI chat). Also IoT connectivity (NB-IoT) for meters and the like |
 
 - In Kenya, many apps are given out free by aid organizations and companies. Farmers often think "free is normal", so charging farmers directly is hard
 - As with the failure of the logistics company Twiga Foods (Chapter 5), some companies do not last even after raising money
@@ -120,7 +120,7 @@ Kenyan dairy is the most commercialized in East Africa. Milk is an everyday drin
 - JICA's **SHEP** (an approach that changes small horticulture farmers to "grow to sell") was born in Kenya and has spread across Africa
 - At TICAD 9 in 2025, the Toyota Mobility Foundation, New KCC and JICA held talks on helping small dairy farmers and young people through transport
 - JICA's **Project NINJA** connects Kenyan startups with Japanese investors
-- There are also companies started in Kenya by Japanese founders (for example **HAKKI AFRICA**, which lends cars to ride-hailing drivers)
+- There are also companies started in Kenya by Japanese founders (for example [**HAKKI AFRICA**](https://hakki-group.com/), which lends cars to ride-hailing drivers)
 
 ## If you were to enter
 

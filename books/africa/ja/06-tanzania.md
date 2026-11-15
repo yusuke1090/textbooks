@@ -73,8 +73,8 @@
 | 会社 | 場所 | 特徴 |
 | --- | --- | --- |
 | Tanga Fresh | タンガ（北東の海岸） | 国でいちばん大きな乳業。約6,000の小さな農家から集める。1日12万 L 加工できるが、乳が集まらず約15%しか動いていない |
-| ASAS | イリンガ（南部の高地） | 1日10万 L 加工できる |
-| Kilimanjaro Fresh、Milkcom など | 北部・ダルエスサラーム | |
+| [ASAS](https://asas.co.tz/ASAS-dairy) | イリンガ（南部の高地） | 1日10万 L 加工できる |
+| [Kilimanjaro Fresh](https://kilimanjarofresh.co.tz/)、Milkcom など | 北部・ダルエスサラーム | |
 
 ### 困っていること
 
@@ -94,12 +94,12 @@
 
 | 会社・取り組み | 何をしている |
 | --- | --- |
-| **MazaoHub** | 太陽光で動く土のセンサー（養分・水分・pH）と AI で、肥料や作業をすすめる。3.5万をこえる農家が使う。2025年に200万ドルを集めた |
+| [**MazaoHub**](https://www.mazaohub.com/) | 太陽光で動く土のセンサー（養分・水分・pH）と AI で、肥料や作業をすすめる。3.5万をこえる農家が使う。2025年に200万ドルを集めた |
 | **Kilimo Fresh** | 小さな農家の野菜・果物を集めて、ダルエスサラームの店やレストランに卸す |
-| **WASSHA**（日本の会社） | 村の小さな店を通して、IoT のソーラーランタンを貸し出す。料金はモバイルマネー。JICA も出資。ダルエスサラームに拠点 |
-| Tetra Pak と乳業の Jambo | シニャンガ州で、太陽光の冷却装置をのせた移動式の集乳所を5台動かす |
-| Solidaridad と Tanga Fresh | 農家の近くに、乳を集めて冷やす拠点を作る試み |
-| Vodacom（M-Pesa）ほか | 農家への支払い、ローン、保険の土台になる |
+| [**WASSHA**](https://wassha.com/)（日本の会社） | 村の小さな店を通して、IoT のソーラーランタンを貸し出す。料金はモバイルマネー。JICA も出資。ダルエスサラームに拠点 |
+| [Tetra Pak](https://www.tetrapak.com/) と乳業の [Jambo](https://jambogroup.co.tz/) | シニャンガ州で、太陽光の冷却装置をのせた移動式の集乳所を5台動かす |
+| [Solidaridad](https://www.solidaridadnetwork.org/) と Tanga Fresh | 農家の近くに、乳を集めて冷やす拠点を作る試み |
+| [Vodacom](https://vodacom.co.tz/)（M-Pesa）ほか | 農家への支払い、ローン、保険の土台になる |
 
 - 2024年の調べでは、タンザニアのスタートアップ約1,000社のうち、約17%がアグリテックです
 - 若い起業家の大会（Heifer International の AYuTe Africa など）で、牛のエサや飼料の会社が賞をとっています

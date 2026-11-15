@@ -109,10 +109,10 @@ Agritech in Malawi is still at a stage with mostly small companies and little in
 | --- | --- |
 | **Seedgro** | Collects data from soil sensors buried in fields through IoT and the cloud, and tells farmers by text message, voice and USSD |
 | **Mechro Limited** | A Blantyre company. A cheap soil moisture sensor for small farmers (Chameleon) and AI recommendations for crops and work. Placed in the top 10 of the African Telecommunications Union's innovation competition in 2025 |
-| **Nuru Solutions** | Turns agricultural data into decision tools for farmers (started in 2024; the founder came from the insurance company Pula) |
-| **Noble Agriculture Technologies** | An IoT agriculture company in Lilongwe. Received a climate adaptation award (SEED) in 2019 |
+| [**Nuru Solutions**](https://nuru.solutions/) | Turns agricultural data into decision tools for farmers (started in 2024; the founder came from the insurance company Pula) |
+| [**Noble Agriculture Technologies**](https://nobleagritech.com/) | An IoT agriculture company in Lilongwe. Received a climate adaptation award (SEED) in 2019 |
 | **Mbora** | Small loans for small farmers |
-| **Ulangizi** (Opportunity International) | An AI that answers farming questions on WhatsApp in English or Chewa. It identifies crop diseases from photos. For farmers without smartphones, advisers use it on their behalf |
+| **Ulangizi** ([Opportunity International](https://opportunity.org/)) | An AI that answers farming questions on WhatsApp in English or Chewa. It identifies crop diseases from photos. For farmers without smartphones, advisers use it on their behalf |
 | **Inyosi Tech Hub** | Nurtures startups and teaches digital skills to young people |
 
 - In 2017, UNICEF and the Government of Malawi set up Africa's first "humanitarian drone testing corridor" in Kasungu District. Trials of carrying samples and medicines by drone were held, and drone engineers are being trained
