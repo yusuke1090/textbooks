@@ -61,11 +61,11 @@ body.drag .zone.over { border-color: var(--accent); background: var(--accent-sof
 .card .qzdots { display: none; }
 .zone .card .qzdots:not(:empty) { display: flex; flex-wrap: wrap; gap: 5px 9px; }
 .qzdots > span { display: flex; gap: 3px; }
-.qzdots i { width: 10px; height: 10px; box-sizing: border-box; border: 1.5px solid var(--muted); border-radius: 50%; opacity: .55; position: relative; }
-.qzdots i.ok { background: var(--ok); border-color: var(--ok); opacity: 1; }
-.qzdots i.ng { border: 0; border-radius: 0; opacity: 1; }
-.qzdots i.ng::before, .qzdots i.ng::after { content: ""; position: absolute; left: 4px; top: -1px; width: 2px; height: 12px; border-radius: 1px; background: var(--err); transform: rotate(45deg); }
-.qzdots i.ng::after { transform: rotate(-45deg); }
+.qzdots i, .qz-log li i { width: 10px; height: 10px; box-sizing: border-box; border: 1.5px solid var(--muted); border-radius: 50%; opacity: .55; position: relative; }
+.qzdots i.ok, .qz-log li i.ok { background: var(--ok); border-color: var(--ok); opacity: 1; }
+.qzdots i.ng, .qz-log li i.ng { border: 0; border-radius: 0; opacity: 1; }
+.qzdots i.ng::before, .qzdots i.ng::after, .qz-log li i.ng::before, .qz-log li i.ng::after { content: ""; position: absolute; left: 4px; top: -1px; width: 2px; height: 12px; border-radius: 1px; background: var(--err); transform: rotate(45deg); }
+.qzdots i.ng::after, .qz-log li i.ng::after { transform: rotate(-45deg); }
 .pbar { flex: 1; height: 6px; border-radius: 3px; background: var(--border); overflow: hidden; }
 .pbar > span { display: block; height: 100%; background: var(--accent); }
 .zone-empty { grid-column: 1 / -1; align-self: center; margin: 0; text-align: center; font-size: 13.5px; color: var(--muted); }
@@ -161,6 +161,18 @@ main { padding-bottom: 30px; }
 .qz-in { flex: 1; min-width: 0; padding: 6px 10px; font: inherit; font-size: 16px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; }
 .qz-btn { padding: 6px 16px; font: inherit; font-size: 14px; color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 6px; cursor: pointer; white-space: nowrap; }
 .qz-res { margin-top: 8px; font-size: 14px; line-height: 1.7; }
+/* 答えの履歴（折りたたみ。開くと新しい順に並ぶ） */
+.qz-log { margin-top: 8px; font-size: 13px; color: var(--muted); }
+.qz-log summary { display: flex; align-items: center; gap: 8px; width: fit-content; cursor: pointer; list-style: none; -webkit-user-select: none; user-select: none; }
+.qz-log summary::-webkit-details-marker { display: none; }
+.qz-log summary::before { content: "▸"; font-size: 11px; transition: transform .15s; }
+.qz-log[open] summary::before { transform: rotate(90deg); }
+.qz-log .qzdots { display: inline-flex; gap: 3px; }
+#body .qz-log ol { list-style: none; margin: 6px 0 0; padding: 6px 0 0 2px; border-top: 1px dashed var(--border); max-height: 230px; overflow-y: auto; }
+#body .qz-log li { display: flex; align-items: center; gap: 10px; margin: 0; padding: 3px 0; }
+.qz-log li span { flex: 1; min-width: 0; color: var(--text); overflow-wrap: anywhere; }
+.qz-log li time { white-space: nowrap; font-variant-numeric: tabular-nums; }
+.qz-log li i { flex: none; }
 #body .qz-res p { margin: 3px 0; }
 .qz-mark { font-weight: bold; }
 .qz.ok .qz-mark { color: var(--ok); } .qz.ng .qz-mark { color: var(--err); }
@@ -824,6 +836,7 @@ li > .sticky-bar { margin-top: 4px; }
     const r = render(md, figPrefix(ch));
     body.innerHTML = r.html;
     codes = r.codes;
+    fillQuizLogs();
     await renderMath();
     if (seq !== showSeq) return;
     markTerms();
@@ -1485,6 +1498,34 @@ li > .sticky-bar { margin-top: 4px; }
     }
     return false;
   }
+  // ---------- 答えの履歴（問題の下に折りたたんで出す） ----------
+  // { "章のファイル#問の番号": [[時刻, 1 正解 / 0 不正解, "入れた答え"], …] }。問題ごとに新しい30回まで
+  const LOG_KEY = (id) => "textbooks-quizlog-" + id;
+  const qzKey = (q) => chapters[state.idx].file + "#" + q.dataset.n;
+  function readLog() {
+    try { return JSON.parse(store.get(LOG_KEY(book.id), "{}")) || {}; } catch (e) { return {}; }
+  }
+  function stamp(ms) {
+    const d = new Date(ms), p = (x) => String(x).padStart(2, "0");
+    return (d.getFullYear() !== new Date().getFullYear() ? d.getFullYear() + "/" : "")
+      + `${d.getMonth() + 1}/${d.getDate()} ${p(d.getHours())}:${p(d.getMinutes())}`;
+  }
+  function showQuizLog(q, list) {
+    let el = q.querySelector(".qz-log");
+    if (!list || !list.length) { if (el) el.remove(); return; }
+    const en = state.lang === "en", open = !!(el && el.open);
+    if (!el) { el = document.createElement("details"); el.className = "qz-log"; q.appendChild(el); }
+    // 閉じているときは回数と、最近10回の ● × を見せる
+    el.innerHTML = `<summary>${en ? "Your answers" : "これまでの答え"}<span>${list.length}${en ? "" : " 回"}</span>`
+      + `<span class="qzdots">${list.slice(-10).map((x) => `<i class="${x[1] ? "ok" : "ng"}"></i>`).join("")}</span></summary>`
+      + `<ol>${list.slice().reverse().map((x) => `<li><i class="${x[1] ? "ok" : "ng"}"></i><span>${esc(x[2])}</span><time>${stamp(x[0])}</time></li>`).join("")}</ol>`;
+    el.open = open;
+  }
+  function fillQuizLogs() {
+    if (!body.querySelector(".qz")) return;
+    const log = readLog();
+    body.querySelectorAll(".qz").forEach((q) => showQuizLog(q, log[qzKey(q)]));
+  }
   function checkQuiz(q) {
     const inp = q.querySelector(".qz-in");
     if (!inp.value.trim()) { inp.focus(); return; }
@@ -1494,6 +1535,15 @@ li > .sticky-bar { margin-top: 4px; }
     q.classList.toggle("ok", ok); q.classList.toggle("ng", !ok);
     q.querySelector(".qz-mark").textContent = t(ok ? "qzOk" : "qzNg");
     q.querySelector(".qz-res").hidden = false;
+    // 入れた答えは毎回 履歴に残す（同じ画面で同じ答えのまま もう一度押したときは残さない）
+    const v = inp.value.trim().slice(0, 200);
+    if (q.dataset.last !== v) {
+      q.dataset.last = v;
+      const log = readLog(), k = qzKey(q);
+      log[k] = (log[k] || []).concat([[Date.now(), ok ? 1 : 0, v]]).slice(-30);
+      store.set(LOG_KEY(book.id), JSON.stringify(log));
+      showQuizLog(q, log[k]);
+    }
     // 正答率に使うのは、この画面で最初に答えたときだけ（答えを見たあとの入れ直しは数えない）
     if (q.dataset.done) return;
     q.dataset.done = "1";
