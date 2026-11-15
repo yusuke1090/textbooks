@@ -87,6 +87,16 @@ header.top .wrap { display: flex; align-items: center; gap: 8px 12px; padding-to
 .bar > .wrap { display: flex; gap: 6px; padding-top: 8px; padding-bottom: 8px; }
 .bar button { cursor: pointer; border: 1px solid var(--border); background: var(--panel); color: var(--text); border-radius: 8px; }
 .bar .step { width: 42px; flex: none; font-size: 14px; }
+.bar .home { width: 42px; flex: none; display: grid; place-items: center; margin-right: 4px; font-size: 18px; line-height: 1; text-decoration: none;
+  background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 8px; }
+.bar .home:hover { filter: brightness(1.05); box-shadow: 0 0 0 2px var(--accent-soft); }
+@media (max-width: 480px) {   /* スマホでは、章の題を読める幅を残すため、まわりのボタンを細くする */
+  .bar > .wrap { gap: 5px; }
+  .bar .step, .bar .home { width: 36px; }
+  .bar .home { margin-right: 2px; font-size: 17px; }
+  #annoBtn { width: 38px; }
+  #tocBtn { padding: 6px 10px; }
+}
 .bar .step:disabled { opacity: .4; cursor: default; }
 #annoBtn { width: 46px; flex: none; font-size: 16px; }
 #annoBtn.on { border-color: var(--accent); }
@@ -322,6 +332,7 @@ li > .sticky-bar { margin-top: 4px; }
   </div></header>
   <div class="bar">
     <div class="wrap">
+      <a class="home" id="homeBtn" href="./" title="教科書の一覧に戻る" aria-label="教科書の一覧に戻る">📚</a>
       <button type="button" class="step" id="prev" aria-label="前の章">◀</button>
       <button type="button" id="tocBtn" aria-expanded="false"><span class="t" id="chTitle"></span><span class="caret">▼</span></button>
       <button type="button" class="step" id="next" aria-label="次の章">▶</button>
@@ -361,7 +372,7 @@ li > .sticky-bar { margin-top: 4px; }
   const L = (x, lang) => (x == null ? "" : typeof x === "string" ? x : x[lang] || x.ja || Object.values(x)[0]);
 
   const UI = {
-    ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", close: "閉じる",
+    ja: { prev: "前の章", next: "次の章", shelf: "📚 教科書", home: "教科書の一覧に戻る", close: "閉じる",
           copy: "コピー", copied: "コピーしました",
           fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした",
           qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え",
@@ -372,7 +383,7 @@ li > .sticky-bar { margin-top: 4px; }
           wNoHit: "見つかりません", wWords: "語", wBack: "← 話題の一覧", wPrev: "◀ 前", wNextP: "次 ▶", wNextT: "次の話題へ",
           wChkTitle: "✓ チェックした単語", wFound: "の検索結果",
           wFirst: "最初の話題へ" },
-    en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", close: "Close",
+    en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", home: "Back to all textbooks", close: "Close",
           copy: "Copy", copied: "Copied",
           fig: "Fig. ", load: "Loading…", loadErr: "Could not load",
           qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer",
@@ -943,6 +954,8 @@ li > .sticky-bar { margin-top: 4px; }
     $("bookName").textContent = L(book.title, state.lang);
     document.title = L(ch.title, state.lang) + (state.lang === "en" ? " | " : "｜") + L(book.title, state.lang);
     $("shelfLink").textContent = t("shelf");
+    $("homeBtn").title = t("home");
+    $("homeBtn").setAttribute("aria-label", t("home"));
     $("footNote").textContent = L(book.note, state.lang);
     $("prev").setAttribute("aria-label", t("prev")); $("next").setAttribute("aria-label", t("next"));
     document.querySelectorAll("#langs button").forEach((b) => b.setAttribute("aria-pressed", b.dataset.lang === state.lang ? "true" : "false"));
