@@ -68,18 +68,23 @@
     "icon": "🚁",
     "group": "プログラミング",
     "langs": [
-      "ja"
+      "ja",
+      "en"
     ],
     "title": {
-      "ja": "ROS 2 と ArduPilot の教科書"
+      "ja": "ROS 2 と ArduPilot の教科書",
+      "en": "ROS 2 and ArduPilot Textbook"
     },
     "desc": {
-      "ja": "Ubuntu 24.04 と ROS 2 Jazzy で、ノード・トピック・サービス・launch・QoS から、ArduPilot の SITL・MAVLink、ROS 2 からドローンを飛ばす（AP_DDS）、Gazebo、Jetson・ラズパイの実機、日本の法律まで。"
+      "ja": "Ubuntu 24.04 と ROS 2 Jazzy で、ノード・トピック・サービス・launch・QoS から、ArduPilot の SITL・MAVLink、ROS 2 からドローンを飛ばす（AP_DDS）、Gazebo、Jetson・ラズパイの実機、日本の法律まで。",
+      "en": "With Ubuntu 24.04 and ROS 2 Jazzy: from nodes, topics, services, launch and QoS to ArduPilot's SITL and MAVLink, flying a drone from ROS 2 (AP_DDS), Gazebo, real hardware with a Jetson or Raspberry Pi, and Japanese law."
     },
     "note": {
-      "ja": "実機を飛ばす前に、必ずシミュレーションで試し、12章の安全と法律を確かめてください。"
+      "ja": "実機を飛ばす前に、必ずシミュレーションで試し、12章の安全と法律を確かめてください。",
+      "en": "Before flying real hardware, always test in simulation and check the safety and law in Chapter 12."
     },
-    "glossary": "glossary.json"
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json"
   },
   {
     "id": "stats",
