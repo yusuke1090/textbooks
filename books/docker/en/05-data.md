@@ -87,3 +87,23 @@ docker run --rm --env-file .env postgres:16 env | grep TZ
 - Put data you cannot afford to lose in a volume (`-v name:/place`) or a bind mount (`-v "$(pwd)":/place`)
 - With a bind mount, you can edit local code and try it in the container right away. Match the owner with `--user "$(id -u):$(id -g)"`
 - Pass settings with `-e` or `--env-file .env`. Do not upload `.env` to GitHub
+
+## Exercises
+
+```quiz
+Q: What is the named storage managed by Docker for keeping data called?
+A: volume | volumes
+E: Attach it with `-v name:/path`.
+
+Q: What do we call connecting a folder on your PC directly into a container?
+A: bind mount | bind mounts
+E: You can edit code on your PC and test it in the container right away.
+
+Q: Which `docker run` option passes one environment variable?
+A: -e | --env
+E: For many, use `--env-file .env`.
+
+Q: Which file holds passwords and must not be uploaded to GitHub?
+A: .env | env
+E: Add it to `.gitignore`.
+```

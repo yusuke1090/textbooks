@@ -84,3 +84,23 @@ VS Code の **Remote - SSH**（GitHub の教科書の9章）でラズパイや J
 - `docker system df` で確かめて、`prune` で片付ける。ボリュームのデータは消すと戻らない
 - ラズパイ・Jetson は arm64。その上で build するか、`buildx --platform linux/arm64`
 - Jetson で GPU を使うときは `--runtime nvidia` と、L4T の版に合ったイメージ
+
+## 練習問題
+
+```quiz
+Q: コンテナがうまく動かないとき、まず見るコマンドは何ですか。
+A: docker logs | logs
+E: ポートの重なり・名前の重なり・グループの入り直しが多い原因です。
+
+Q: ラズパイや Jetson の CPU の種類（アーキテクチャ）は何ですか。
+A: arm64 | aarch64 | ARM
+E: パソコン（amd64）で作るなら `buildx --platform linux/arm64` を使います。
+
+Q: 使っていないイメージやコンテナを片付けるときに使う言葉は何ですか（`docker system ???`）。
+A: prune
+E: 先に `docker system df` で、どれだけ使っているかを確かめます。
+
+Q: Jetson で GPU を使うときに `docker run` に付けるオプションは何ですか。
+A: --runtime nvidia | --runtime=nvidia
+E: L4T の版に合ったイメージを使います。
+```

@@ -122,3 +122,23 @@ services:
 - Containers reach each other by service name
 - Run with `docker compose up -d --build` and clean up with `down` (`-v` also removes the data)
 - During development, connect your local code with `volumes: - .:/app`
+
+## Exercises
+
+```quiz
+Q: What is the file where Compose lists your containers called?
+A: compose.yaml | compose.yml | docker-compose.yml
+E: Containers go one by one under `services`.
+
+Q: How do Compose containers find each other?
+A: by service name | service name | name
+E: A service called `db` is reached at the host name `db`.
+
+Q: Which command rebuilds and starts Compose in the background?
+A: docker compose up -d --build | up -d --build
+E: Clean up with `docker compose down`.
+
+Q: Which option for `docker compose down` also deletes volume data?
+A: -v | --volumes
+E: It cannot be undone, so use it with care.
+```

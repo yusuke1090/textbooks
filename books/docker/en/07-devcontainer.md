@@ -99,3 +99,23 @@ When you change `devcontainer.json` or the Dockerfile, rebuild with **Ctrl + Shi
 - Create `devcontainer.json` with "Add Dev Container Configuration Files" and go in with "Reopen in Container"
 - Write the extensions, `postCreateCommand` and `forwardPorts`. After changes, use "Rebuild Container"
 - Put `.devcontainer/` on GitHub and you have the same environment everywhere
+
+## Exercises
+
+```quiz
+Q: What is the Dev Containers settings file called?
+A: devcontainer.json
+E: Create it with "Add Dev Container Configuration Files".
+
+Q: Which VS Code command reopens the folder inside the container?
+A: Reopen in Container
+E: To go back, use "Reopen Folder Locally".
+
+Q: Which command rebuilds the container after you change settings?
+A: Rebuild Container
+E: Changes are not used until you rebuild.
+
+Q: Which devcontainer.json setting holds a command that runs once after the container is created?
+A: postCreateCommand
+E: For example, a command that installs libraries.
+```

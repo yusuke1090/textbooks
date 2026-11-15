@@ -81,3 +81,19 @@ code .
 - `sudo usermod -aG docker $USER` のあと、ログインし直すと sudo なしで使える
 - `docker run hello-world` で確かめる
 - VS Code には Container Tools と Dev Containers を入れる
+
+## 練習問題
+
+```quiz
+Q: Docker を sudo なしで使うために、自分を入れるグループの名前は何ですか。
+A: docker
+E: `sudo usermod -aG docker $USER` のあと、ログインし直します。
+
+Q: Docker が動くかを確かめるときに動かす、テスト用のイメージの名前は何ですか。
+A: hello-world | hello world
+E: `docker run hello-world` で、あいさつの文が出れば動いています。
+
+Q: VS Code で、フォルダをコンテナの中で開いて開発するための拡張機能は何ですか。
+A: Dev Containers | DevContainers
+E: もう1つ、Container Tools も入れます。
+```

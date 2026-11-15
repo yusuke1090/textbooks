@@ -57,3 +57,23 @@
 - コンテナは、アプリと環境を入れた軽い箱。OS はホストの Linux を共有する
 - Dockerfile（レシピ）→ `docker build` → イメージ（ひな形）→ `docker run` → コンテナ（実体）
 - イメージは Docker Hub からもらえる
+
+## 練習問題
+
+```quiz
+Q: コンテナのもとになる、ひな形を何といいますか。
+A: イメージ | image | Docker イメージ
+E: Dockerfile（レシピ）→ `docker build` → イメージ → `docker run` → コンテナです。
+
+Q: イメージを作るためのレシピになるファイルの名前は何ですか。
+A: Dockerfile
+E: `docker build` で、Dockerfile からイメージを作ります。
+
+Q: いろいろなイメージをもらえる、Docker の公式の置き場は何ですか。
+A: Docker Hub | DockerHub
+E: `python` や `nginx` などのイメージがあります。
+
+Q: コンテナが仮想マシンより軽いのは、何をホストと共有しているからですか。
+A: OS | Linux | カーネル | Linux カーネル
+E: コンテナはホストの Linux（カーネル）を共有します。仮想マシンは OS ごと持ちます。
+```

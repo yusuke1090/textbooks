@@ -81,3 +81,19 @@ code .
 - After `sudo usermod -aG docker $USER`, log in again and you can use it without sudo
 - Check with `docker run hello-world`
 - Install Container Tools and Dev Containers in VS Code
+
+## Exercises
+
+```quiz
+Q: Which group do you join to use Docker without sudo?
+A: docker
+E: Run `sudo usermod -aG docker $USER`, then log in again.
+
+Q: What test image do you run to check that Docker works?
+A: hello-world | hello world
+E: If `docker run hello-world` prints a greeting, it works.
+
+Q: Which VS Code extension lets you open a folder inside a container to develop?
+A: Dev Containers | DevContainers
+E: Also install Container Tools.
+```

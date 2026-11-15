@@ -153,3 +153,27 @@ You can also use GitHub's Container Registry (`ghcr.io`). For things you do not 
 - Build with `docker build -t name .` and run with `docker run`. Rebuild when you change the code
 - Make the app listen on `0.0.0.0`
 - Writing things that rarely change (libraries) first makes builds faster thanks to the cache. Put unneeded things in `.dockerignore`
+
+## Exercises
+
+```quiz
+Q: Which Dockerfile instruction, written first, chooses the base image?
+A: FROM
+E: The order is `FROM` → `WORKDIR` → `COPY` → `RUN` → `CMD`.
+
+Q: Which instruction sets the command that runs when the container starts?
+A: CMD
+E: `RUN` runs once, while the image is built.
+
+Q: Which command builds an image named "myapp" from the Dockerfile in the current folder?
+A: docker build -t myapp .
+E: The final `.` means "the current folder".
+
+Q: Which IP address should an app inside a container listen on?
+A: 0.0.0.0
+E: With `127.0.0.1`, nothing outside the container can connect.
+
+Q: Which file lists files you do not want in the image?
+A: .dockerignore | dockerignore
+E: Put things that rarely change (libraries) first to make use of the cache.
+```

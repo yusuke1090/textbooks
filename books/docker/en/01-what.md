@@ -57,3 +57,23 @@ Containers run on a Linux mechanism. On Windows and Mac, Docker Desktop runs a s
 - A container is a light box holding an app and its environment. It shares the host's Linux as its OS
 - Dockerfile (recipe) → `docker build` → image (template) → `docker run` → container (the running thing)
 - You can get images from Docker Hub
+
+## Exercises
+
+```quiz
+Q: What is the template that containers are made from called?
+A: image | Docker image
+E: Dockerfile (recipe) → `docker build` → image → `docker run` → container.
+
+Q: What is the name of the recipe file used to build an image?
+A: Dockerfile
+E: `docker build` turns a Dockerfile into an image.
+
+Q: What is Docker's official registry where you can get many images?
+A: Docker Hub | DockerHub
+E: It has images such as `python` and `nginx`.
+
+Q: Containers are lighter than virtual machines because they share what with the host?
+A: OS | kernel | Linux | Linux kernel
+E: Containers share the host's Linux kernel; a VM carries a whole OS.
+```

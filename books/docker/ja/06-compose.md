@@ -122,3 +122,23 @@ services:
 - コンテナ同士は、サービスの名前でつながる
 - `docker compose up -d --build` で動かし、`down` で片付ける（`-v` はデータも消す）
 - 開発中は `volumes: - .:/app` で手元のコードをつなぐ
+
+## 練習問題
+
+```quiz
+Q: Compose で、コンテナを並べて書くファイルの名前は何ですか。
+A: compose.yaml | compose.yml | docker-compose.yml
+E: `services` の下に、コンテナを1つずつ書きます。
+
+Q: Compose のコンテナ同士は、何でつながりますか。
+A: サービスの名前 | サービス名 | 名前 | service name
+E: 例えば `db` というサービスには、ホスト名 `db` でつながります。
+
+Q: Compose で、作り直してから後ろで動かすコマンドは何ですか。
+A: docker compose up -d --build | up -d --build
+E: 片付けるのは `docker compose down` です。
+
+Q: `docker compose down` に付けると、ボリュームのデータも消すオプションは何ですか。
+A: -v | --volumes
+E: 消すと戻らないので、気をつけて使います。
+```

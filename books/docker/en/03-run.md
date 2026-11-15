@@ -86,3 +86,27 @@ Files and changes you make inside a container **disappear when you remove that c
 - `-d` background, `--name` name, `-p computer:container` port, `-it` interactive, `--rm` remove automatically
 - `ps`, `logs`, `exec -it ... bash`, `stop`, `rm`. You can also use the whale icon in VS Code
 - Removing a container also removes the changes inside it
+
+## Exercises
+
+```quiz
+Q: Which `docker run` option runs a container in the background?
+A: -d | --detach
+E: Check the output with `docker logs`.
+
+Q: Which option connects port 8080 on your PC to port 80 in the container (`-p ?`)?
+A: -p 8080:80 | 8080:80
+E: The order is `-p pc:container`.
+
+Q: Which option removes the container automatically when it stops?
+A: --rm
+E: Handy for one-off runs.
+
+Q: Which command lists running containers?
+A: docker ps | ps
+E: `docker ps -a` shows stopped ones too.
+
+Q: What happens to files changed inside a container when you delete the container?
+A: they are lost | lost | deleted | gone
+E: Keep data you need in a volume or bind mount (chapter 5).
+```

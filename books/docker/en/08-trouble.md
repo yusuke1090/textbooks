@@ -84,3 +84,23 @@ If you connect to a Raspberry Pi or Jetson with VS Code's **Remote - SSH** (Chap
 - Check with `docker system df` and clean up with `prune`. Volume data cannot be recovered once removed
 - Raspberry Pi and Jetson are arm64. Build on them, or use `buildx --platform linux/arm64`
 - To use the GPU on a Jetson, use `--runtime nvidia` and an image that matches your L4T version
+
+## Exercises
+
+```quiz
+Q: What command do you check first when a container is not working?
+A: docker logs | logs
+E: Port clashes, name clashes and needing to log in again are common causes.
+
+Q: What CPU architecture do Raspberry Pi and Jetson use?
+A: arm64 | aarch64 | ARM
+E: To build on a PC (amd64), use `buildx --platform linux/arm64`.
+
+Q: Which word cleans up unused images and containers (`docker system ???`)?
+A: prune
+E: First check usage with `docker system df`.
+
+Q: Which `docker run` option lets a container use the GPU on a Jetson?
+A: --runtime nvidia | --runtime=nvidia
+E: Use an image that matches your L4T version.
+```

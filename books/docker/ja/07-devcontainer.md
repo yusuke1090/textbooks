@@ -99,3 +99,23 @@ Compose を使うと、データベースなどのコンテナも一緒に動き
 - 「Add Dev Container Configuration Files」で `devcontainer.json` を作り、「Reopen in Container」で入る
 - 拡張機能・`postCreateCommand`・`forwardPorts` を書いておく。変えたら「Rebuild Container」
 - `.devcontainer/` を GitHub に入れれば、どこでも同じ環境
+
+## 練習問題
+
+```quiz
+Q: Dev Containers の設定を書くファイルの名前は何ですか。
+A: devcontainer.json
+E: 「Add Dev Container Configuration Files」で作ります。
+
+Q: フォルダをコンテナの中で開き直す VS Code のコマンドは何ですか。
+A: Reopen in Container
+E: 手元にもどるときは「Reopen Folder Locally」です。
+
+Q: 設定を変えたあとに、コンテナを作り直すコマンドは何ですか。
+A: Rebuild Container
+E: 変えた設定は、作り直すまで使われません。
+
+Q: コンテナを作ったあとに1回動かすコマンドを書く、devcontainer.json の項目は何ですか。
+A: postCreateCommand
+E: ライブラリを入れるコマンドなどを書きます。
+```
