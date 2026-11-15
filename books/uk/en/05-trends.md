@@ -78,3 +78,23 @@ This chapter is based on research done in November 2026. Politics moves fast, so
 | Farm machinery | Kubota, Yanmar and Iseki tractors and machines are sold there (Chapter 9) |
 
 - About 60,000 Japanese people live in the UK, the most of any country in Europe. Many Japanese companies have their European headquarters in London
+
+## Exercises
+
+```quiz
+Q: After closing its last coal power station in 2024, what kind of power did Britain greatly expand in the North Sea?
+A: offshore wind | wind | wind power
+E: Wind supplies about 30% of the year's electricity.
+
+Q: What was the price rise of 2022 called in Britain?
+A: cost of living crisis | cost-of-living crisis | cost of living
+E: Inflation went above 11% a year.
+
+Q: Which Cambridge company designs the CPUs used in almost all smartphones?
+A: Arm | ARM
+E: Japan's SoftBank Group owns most of it.
+
+Q: Which Pacific trade agreement, which includes Japan, did the UK join in December 2024?
+A: CPTPP | TPP
+E: The UK and Japan also have the UK–Japan EPA (from 2021).
+```

@@ -84,3 +84,23 @@ The state of the companies in this chapter was researched in November 2026. Star
 - **Farmers are strict about profit**: milk prices go up and down every month, and wheat prices are set by world markets. If you cannot clearly show "how many pounds they gain", they will not buy
 - **Connecting data**: farmers already use several pieces of software — milking robots, cattle registration, accounts. New products are disliked unless they can exchange data with these
 - **Weather and seasons**: many crops give one trial result a year, so results take time. If you try to sell during busy seasons (harvest, calving), nobody will meet you
+
+## Exercises
+
+```quiz
+Q: Which institute, founded in 1843, is one of the world's oldest agricultural research stations?
+A: Rothamsted | Rothamsted Research
+E: Fertilizer experiments began there.
+
+Q: What was Harper Adams University's 2017 project that grew and harvested barley without people entering the field?
+A: Hands Free Hectare | Hands-Free Hectare
+E: It used only automated machines and drones.
+
+Q: Which UK government agency funds research and development, including farming?
+A: Innovate UK
+E: With Defra it runs the Farming Innovation Programme.
+
+Q: Which fruit do Fieldwork Robotics' robots in Cambridge find with cameras and pick?
+A: raspberries | raspberry
+E: They sell "harvesting as a service": farmers pay for the amount picked instead of buying the robot.
+```

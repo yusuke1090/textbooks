@@ -125,3 +125,27 @@ A feature of British dairy is how wide the range of systems is.
 
 - **Cameras and AI**: cameras above barn passageways automatically score gait (**lameness**) and body condition (BCS) every day. Companies include [**CattleEye**](https://cattleeye.com/) in Belfast (a GEA company since 2024; GEA opened a software lab in Belfast in March 2026). In a 2026 survey, the technology farmers were "most interested in" was **camera AI**, ahead of milking robots
 - British milk processors and supermarkets often require regular recording of **mobility scores** (lameness scores), so there is demand for scoring them automatically
+
+## Exercises
+
+```quiz
+Q: What is the most common UK milking parlour, where cows stand at an angle?
+A: herringbone | herringbone parlour
+E: Large herds also use rotary parlours.
+
+Q: About what percent of new milking systems installed in the UK are robots?
+A: 35
+E: Labour is scarce and expensive.
+
+Q: What is the biggest disease worry for dairy farms in south-west England and Wales?
+A: bovine TB | bTB | TB | bovine tuberculosis
+E: Wild badgers have been blamed for spreading it.
+
+Q: Which wild animal, said to spread TB, was culled from 2013?
+A: badger | badgers
+E: Culling ended in 2026; testing and vaccination will be used instead.
+
+Q: Which British food safety and quality scheme do most farmers belong to?
+A: Red Tractor
+E: Aligned contracts with supermarkets have even stricter conditions.
+```

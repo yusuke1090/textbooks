@@ -83,3 +83,27 @@ Many of the sports played around the world today — football, rugby, cricket, t
 - Red double-decker buses and black taxis (black cabs) are symbols of London
 - Old brick houses are normal. People live in houses more than 100 years old, repairing them as they go. The older the house, the more popular it is
 - People love their gardens, and gardening is a national hobby
+
+## Exercises
+
+```quiz
+Q: Which sport, born at an English school, is the national sport of Wales?
+A: rugby | rugby union
+E: The Six Nations is played every spring.
+
+Q: What is the night of 5 November called, remembering the 1605 plot to blow up Parliament?
+A: Guy Fawkes Night | Bonfire Night | Guy Fawkes
+E: There are fireworks and bonfires.
+
+Q: What is the holiday on 26 December called?
+A: Boxing Day
+E: Christmas is the biggest event of the year.
+
+Q: Which city has the world's oldest underground railway, opened in 1863?
+A: London | the Tube | London Underground
+E: People call it "the Tube".
+
+Q: On which side of the road do people drive in the UK?
+A: left | the left | left side
+E: Cars are right-hand drive, the same as in Japan.
+```

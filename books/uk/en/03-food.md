@@ -100,3 +100,27 @@ People often say "British food is bad", but the ingredients (beef, lamb, dairy p
 - **Curry**: there are many restaurants run by people from India, Pakistan and Bangladesh, and curry is now a national dish of Britain. **Chicken tikka masala** is said to be a dish born in Britain
 - Chinese takeaways, Turkish kebabs and Polish grocery stores are also common
 - Recently, Japanese food is popular too. Supermarkets sell sushi, and there are chains selling ramen and katsu curry (so much so that in Britain "katsu curry" is used to mean a curry-flavored sauce)
+
+## Exercises
+
+```quiz
+Q: In Britain, "chips" are French fries. What are potato chips called?
+A: crisps
+E: Watch out — it differs from American English.
+
+Q: What is the batter of flour, eggs and milk puffed up in the oven and served with a Sunday roast?
+A: Yorkshire pudding | Yorkshire puddings
+E: Plenty of gravy made from the meat juices goes on top.
+
+Q: What thick, rich cream from Devon and Cornwall is eaten on scones?
+A: clotted cream
+E: Scones, clotted cream, jam and tea make a cream tea.
+
+Q: Which cheese, named after a village in Somerset, makes up over half the cheese eaten in Britain?
+A: Cheddar
+E: Making it involves "cheddaring": stacking and turning the curds.
+
+Q: What Scottish dish is sheep's offal mixed with oats and stuffed into a sheep's stomach?
+A: haggis
+E: It is eaten on Burns Night, 25 January.
+```

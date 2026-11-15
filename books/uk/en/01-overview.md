@@ -87,3 +87,27 @@ The official name is the **United Kingdom of Great Britain and Northern Ireland*
 - Even within English, pronunciation and vocabulary differ a lot by region (Chapter 4)
 - The state church is the **Church of England** (Christian). The king is its head. However, few people go to church every week, and more and more people answer that they have "no religion"
 - Large cities such as London and Birmingham also have many Muslims, Hindus and Sikhs
+
+## Exercises
+
+```quiz
+Q: What is the large island with England, Scotland and Wales called (Northern Ireland is not on it)?
+A: Great Britain | GB | Britain
+E: This is why statistics separate "GB" from "UK".
+
+Q: What is the system called where Scotland, Wales and Northern Ireland make their own decisions on farming, education and health?
+A: devolution
+E: That is why farm subsidies differ between the four nations.
+
+Q: Milk prices are given in pence per litre. What are the three letters for this?
+A: ppl
+E: Short for pence per litre.
+
+Q: What is the elected lower house of the UK Parliament called?
+A: House of Commons | Commons
+E: It has 650 members. The upper house, the House of Lords, is not elected.
+
+Q: What is the national church of England?
+A: Church of England | the Church of England | Anglican Church
+E: The monarch is its head.
+```

@@ -101,3 +101,23 @@ Reading this alongside Chapter 9 of the Africa Textbook (Tanzania, Kenya, Malawi
 - Britain is "a mature market where people have reasons to pay". In return, competition is fierce and results in numbers are demanded
 - Build radio (868 MHz), certification (CE/UKCA), security (PSTI) and data (UK GDPR) into the product from the start
 - Listen at trade shows and agricultural shows, partner with universities, vets and dealers, test small, then expand
+
+## Exercises
+
+```quiz
+Q: Which frequency (MHz) do LoRaWAN devices use in the UK (Japan uses 920 MHz)?
+A: 868
+E: Japanese-certified devices cannot be used as they are.
+
+Q: What is the UK's own product safety marking (the EU CE mark is also accepted)?
+A: UKCA | UKCA mark
+E: Northern Ireland needs the CE mark.
+
+Q: Which law, from April 2024, bans the same default password on all connected products?
+A: PSTI | PSTI Act
+E: Makers must also give a way to report weaknesses and say how long updates will last.
+
+Q: Which January show in Birmingham is one of the UK's biggest for farm machinery and technology?
+A: LAMMA
+E: The dairy-only technology show is Dairy-Tech, in February.
+```

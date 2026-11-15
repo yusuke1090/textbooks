@@ -115,3 +115,27 @@
 - **NFU** (National Farmers' Union): the large farmers' organization for England and Wales. It lobbies the government and puts out news
 - **AHDB**: an organization that uses money collected from farmers for market information and research. It publishes statistics such as milk prices and cattle numbers
 - There are many places for agricultural research and education, such as **Rothamsted Research** (Chapter 8), Harper Adams University and SRUC (Scotland)
+
+## Exercises
+
+```quiz
+Q: About two-thirds of UK farmland is what?
+A: grassland | grass | pasture
+E: Plenty of rain makes grass grow well, which suits cattle and sheep.
+
+Q: About how many tonnes of wheat per hectare does the UK harvest?
+A: 8
+E: That is 1.5–2 times Japan's 4–5 tonnes.
+
+Q: What do we call a living fence of shrubs between fields?
+A: hedgerow | hedge | hedgerows
+E: They are protected with subsidies as homes for birds and insects.
+
+Q: What three letters name England's scheme that pays farmers for chosen "actions" such as protecting soil and hedges?
+A: SFI | Sustainable Farming Incentive
+E: It reopened in 2026 as SFI26.
+
+Q: What is the short name of the National Farmers' Union for England and Wales?
+A: NFU
+E: AHDB publishes statistics and research.
+```

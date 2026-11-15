@@ -129,3 +129,27 @@
 - The **Anglo-Japanese Alliance** was signed in 1902 (lasting until 1923)
 - Japan and Britain are both island nations next to a continent, with a royal (imperial) family and driving on the left. They have a lot in common, and many people in each country feel a friendly closeness to the other
 - Today many Japanese companies operate there, such as Hitachi's railway trains (Britain's intercity express trains) and Nissan's Sunderland factory (Chapter 5)
+
+## Exercises
+
+```quiz
+Q: In what year did the Norman Conquest happen, when William of Normandy became king of England?
+A: 1066
+E: This is why English often has two words for one thing: live animals in English, meat in French.
+
+Q: Which 1215 document made King John promise that the king, too, must obey the law?
+A: Magna Carta
+E: It is one of the roots of constitutional monarchy and parliamentary government.
+
+Q: What is the four-year rotation of wheat → turnips → barley → clover called?
+A: Norfolk four-course | Norfolk | Norfolk rotation | Norfolk system
+E: It ended fallow years and let farmers feed livestock in winter.
+
+Q: What three letters name the tax-funded national health service started in 1948?
+A: NHS | National Health Service
+E: Care is almost free, but waiting times are always an issue.
+
+Q: In what year was the EU referendum?
+A: 2016
+E: 52% voted to leave, and the UK left on 31 January 2020.
+```
