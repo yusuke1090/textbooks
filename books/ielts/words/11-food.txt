@@ -1,0 +1,58 @@
+# 食べ物と栄養 | Food and nutrition
+diet | n | 食事、食生活 | the food a person usually eats | A diet high in sugar is unhealthy.
+nutrient | n | 栄養素 | a substance needed for growth | Vegetables are rich in nutrients.
+nutritious | adj | 栄養のある | containing many nutrients | Milk is a nutritious drink.
+protein | n | たんぱく質 | a nutrient in meat, eggs and beans | Beans are a cheap source of protein.
+carbohydrate | n | 炭水化物 | a nutrient in bread, rice and potatoes | Rice is mainly carbohydrate.
+fibre | n | 食物繊維 | plant material that helps digestion | Whole grains are high in fibre.
+vitamin | n | ビタミン | a substance needed in small amounts | Oranges contain vitamin C.
+calcium | n | カルシウム | a mineral for strong bones | Dairy products are high in calcium.
+calorie | n | カロリー | a unit of energy in food | Fast food is high in calories.
+saturated fat | phr | 飽和脂肪 | a type of fat linked to heart disease | Butter contains saturated fat.
+processed food | phr | 加工食品 | food changed by industrial methods | Processed food often contains a lot of salt.
+ready meal | phr | 調理済み食品 | a prepared meal you just heat | Busy workers buy ready meals.
+fast food | phr | ファストフード | quick, cheap food from restaurants | Fast food is linked to obesity.
+junk food | phr | ジャンクフード | unhealthy food high in fat or sugar | Schools have banned junk food.
+sugary drink | phr | 甘い飲み物 | a drink with a lot of sugar | Some countries tax sugary drinks.
+organic food | phr | 有機食品 | food grown without artificial chemicals | Organic food is more expensive.
+wholefood | n | 自然食品 | food that is not processed | She prefers wholefoods to ready meals.
+vegetarian | n | 菜食主義者 | a person who does not eat meat | Vegetarians get protein from beans and eggs.
+vegan | n | 完全菜食主義者 | a person who eats no animal products | Vegans do not drink milk.
+plant-based | adj | 植物性の | made from plants | Plant-based milk is becoming popular.
+dairy products | phr | 乳製品 | milk, cheese, butter and so on | Dairy products are a source of calcium.
+staple food | phr | 主食 | the main food of a population | Rice is the staple food in Japan.
+cuisine | n | 料理（ある地域の） | a style of cooking | Japanese cuisine is popular worldwide.
+ingredient | n | 材料 | a food used in a recipe | Use fresh ingredients.
+recipe | n | 作り方、レシピ | instructions for cooking | She follows her grandmother's recipe.
+flavour | n | 味、風味 | taste | The cheese has a strong flavour.
+appetite | n | 食欲 | the desire to eat | Illness can reduce appetite.
+portion | n | 一人前 | an amount of food for one person | Restaurant portions are getting bigger.
+snack | n | 軽食、おやつ | a small amount of food between meals | Children eat too many snacks.
+beverage | n | 飲み物 | a drink | Hot beverages are served all day.
+food security | phr | 食料安全保障 | reliable access to enough food | Imports are vital for Japan's food security.
+food waste | phr | 食品ロス | food that is thrown away | About a third of food becomes food waste.
+food miles | phr | フードマイル（食べ物の輸送距離） | the distance food travels to reach you | Local food has fewer food miles.
+famine | n | 飢饉 | extreme lack of food | Famine killed millions in the 1840s.
+hunger | n | 飢え | lack of food | Hunger remains a global problem.
+malnourished | adj | 栄養不良の | not getting enough nutrition | Many children in the region are malnourished.
+food poisoning | phr | 食中毒 | illness from bad food | Undercooked chicken can cause food poisoning.
+hygiene standards | phr | 衛生基準 | rules for keeping food clean | Restaurants must meet strict hygiene standards.
+expiry date | phr | 消費期限 | the date after which food should not be eaten | Check the expiry date before drinking milk.
+best-before date | phr | 賞味期限 | the date until which food is at its best | Food is often safe after its best-before date.
+label | n | 表示、ラベル | information printed on a product | Food labels show the amount of sugar.
+additive | n | 添加物 | a substance added to food | Some additives cause allergies.
+preservative | n | 保存料 | a substance that keeps food fresh | Bread without preservatives goes stale quickly.
+allergy | n | アレルギー | a bad reaction to a substance | Nut allergies can be very dangerous.
+intolerance | n | 不耐症 | difficulty digesting a food | Many adults have lactose intolerance.
+lactose | n | 乳糖 | the sugar found in milk | Lactose-free milk is widely available.
+digest | v | 消化する | break down food in the body | Cows can digest grass that humans cannot.
+digestion | n | 消化 | breaking down food | Fibre helps digestion.
+overeat | v | 食べすぎる | eat too much | People tend to overeat when stressed.
+skip | v | 抜く（食事を） | miss a meal | Many students skip breakfast.
+home-cooked | adj | 家庭で作った | prepared at home | Home-cooked meals are usually healthier.
+takeaway | n | 持ち帰りの料理 | food bought to eat elsewhere | We ordered a takeaway on Friday.
+food chain | phr | 食物連鎖、食品の流通網 | how food passes from producer to consumer | Plastic enters the food chain through fish.
+supply chain | phr | 供給網 | the steps that bring a product to the buyer | The drought disrupted the supply chain.
+retailer | n | 小売業者 | a business that sells to the public | Big retailers control milk prices.
+supermarket | n | スーパーマーケット | a large food shop | Supermarkets sell milk below cost.
+farmers' market | phr | 生産者が直接売る市場 | a market where farmers sell their produce | We buy vegetables at the farmers' market.

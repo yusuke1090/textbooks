@@ -1,0 +1,83 @@
+# 農業・酪農・動物 | Agriculture, dairy and animals
+agriculture | n | 農業 | farming | Agriculture employs a third of the workforce.
+agricultural | adj | 農業の | relating to farming | Agricultural land is being lost to housing.
+farming | n | 農業、農作業 | growing crops or raising animals | Farming is hard physical work.
+arable | adj | 耕作に適した | used for growing crops | Arable land covers the east of the country.
+crop | n | 作物 | a plant grown for food | Wheat is the main crop.
+crop yield | phr | 作物の収量 | the amount a crop produces | New varieties have increased crop yields.
+harvest | n | 収穫 | gathering crops | The harvest was poor this year.
+cultivate | v | 耕す、栽培する | grow crops on land | Rice has been cultivated here for centuries.
+irrigation | n | かんがい | supplying water to crops | Irrigation allows farming in dry regions.
+fertiliser | n | 肥料 | a substance that helps plants grow | Too much fertiliser pollutes rivers.
+crop rotation | phr | 輪作 | growing different crops in turn | Crop rotation keeps soil healthy.
+monoculture | n | 単一栽培 | growing only one crop | Monoculture increases the risk of disease.
+soil | n | 土、土壌 | the top layer of the earth | Healthy soil stores carbon.
+fertile | adj | 肥沃な | good for growing plants | The valley has fertile soil.
+barren | adj | 不毛の | unable to produce crops | The land became barren after years of drought.
+livestock | n | 家畜 | farm animals | Livestock produce a significant amount of methane.
+cattle | n | 牛（複数扱い） | cows and bulls | The cattle graze in the hills.
+herd | n | 群れ（牛などの） | a group of animals | The farmer has a herd of 200 cows.
+graze | v | 草を食べる、放牧する | eat grass in a field | Cows graze outside in summer.
+pasture | n | 牧草地 | land covered with grass for animals | The cows are moved to fresh pasture.
+grassland | n | 草原 | land covered mainly with grass | Two-thirds of the farmland is grassland.
+dairy farming | phr | 酪農 | keeping cows for milk | Dairy farming is the main industry in the region.
+dairy | adj | 乳製品の、酪農の | relating to milk | Dairy products are rich in calcium.
+milk yield | phr | 乳量 | the amount of milk a cow gives | Milk yield falls in hot weather.
+calve | v | 子牛を産む | give birth to a calf | Most cows calve in spring.
+breed | n | 品種 | a type of animal | Holsteins are the most common dairy breed.
+breeding | n | 繁殖、育種 | producing young animals | Breeding programmes improve milk yield.
+feed | n | 飼料、エサ | food for animals | Feed costs have doubled.
+fodder | n | 飼い葉 | dried food for animals | Hay is stored as winter fodder.
+silage | n | サイレージ | fermented grass for animals | Cows eat silage in winter.
+barn | n | 納屋、牛舎 | a farm building for animals or crops | The cows sleep in the barn.
+manure | n | ふん尿、堆肥 | animal waste used as fertiliser | Manure is spread on the fields.
+poultry | n | 家禽（鶏など） | chickens and other birds kept for food | Poultry farming is highly industrialised.
+free-range | adj | 放し飼いの | allowed to move outside | Free-range eggs are more expensive.
+factory farming | phr | 工場式畜産 | keeping many animals indoors in small spaces | Factory farming raises welfare concerns.
+intensive farming | phr | 集約農業 | farming that produces a lot from small land | Intensive farming uses more chemicals.
+animal welfare | phr | 動物福祉 | the health and wellbeing of animals | Consumers care about animal welfare.
+veterinary | adj | 獣医の | relating to animal medicine | Veterinary costs are rising.
+vet | n | 獣医 | an animal doctor | Call a vet if the cow has a fever.
+slaughter | v | 食肉処理する | kill animals for food | Cattle are slaughtered at a licensed plant.
+meat consumption | phr | 肉の消費量 | the amount of meat eaten | Meat consumption is falling in Europe.
+food production | phr | 食料生産 | growing and making food | Food production must rise to feed the world.
+self-sufficiency | n | 自給 | producing what you need yourself | The country's food self-sufficiency rate is below 40%.
+organic | adj | 有機の | grown without artificial chemicals | Demand for organic milk has grown steadily.
+precision agriculture | phr | 精密農業 | farming guided by data | Precision agriculture uses data to apply fertiliser only where it is needed.
+agritech | n | 農業技術、アグリテック | technology for farming | Agritech start-ups attract investors.
+smallholder | n | 小規模農家 | a farmer with a small piece of land | Smallholders produce most of Africa's milk.
+landowner | n | 地主 | a person who owns land | Landowners receive subsidies for hedgerows.
+rural economy | phr | 農村経済 | the economy of the countryside | Tourism helps the rural economy.
+agribusiness | n | 農業関連産業 | large-scale commercial farming | Agribusiness dominates food supply.
+farmland | n | 農地 | land used for farming | Farmland is disappearing near cities.
+greenhouse | n | 温室 | a glass building for growing plants | Tomatoes are grown in greenhouses.
+vertical farming | phr | 垂直農業 | growing crops in stacked layers indoors | Vertical farming uses little land.
+genetically modified crops | phr | 遺伝子組み換え作物 | crops with altered genes | Genetically modified crops are banned in some countries.
+pest | n | 害虫 | an insect or animal that damages crops | Pests destroyed half the harvest.
+weed | n | 雑草 | an unwanted plant | Weeds compete with crops for water.
+herbicide | n | 除草剤 | a chemical that kills plants | Herbicides control weeds.
+pollinate | v | 受粉させる | carry pollen between flowers | Bees pollinate many crops.
+pollinator | n | 送粉者（ハチなど） | an insect that carries pollen | Pollinators are declining.
+beekeeping | n | 養蜂 | keeping bees for honey | Beekeeping has become a popular hobby.
+fishery | n | 漁業、漁場 | a place or business for catching fish | Coastal fisheries are under pressure.
+aquaculture | n | 養殖 | farming fish and seafood | Aquaculture supplies half of the world's fish.
+forestry | n | 林業 | managing forests | Forestry provides jobs in rural areas.
+plough | v | 耕す | turn over soil | Farmers plough the fields in spring.
+tractor | n | トラクター | a vehicle used on farms | Self-driving tractors can work at night.
+combine harvester | phr | コンバイン | a machine that cuts and threshes grain | A combine harvester can do the work of many people.
+milking robot | phr | 搾乳ロボット | a machine that milks cows automatically | Milking robots let cows choose when to be milked.
+cooperative | n | 協同組合 | a business owned by its members | Farmers sell milk through a cooperative.
+subsistence farming | phr | 自給農業 | growing food mainly for your family | Subsistence farming is common in poor regions.
+cash crop | phr | 換金作物 | a crop grown to sell | Coffee is an important cash crop.
+food price | phr | 食料価格 | the cost of food | Food prices rose after the drought.
+farm subsidy | phr | 農業補助金 | government money for farmers | Farm subsidies support rural communities.
+domesticate | v | 家畜化する | tame animals to live with people | Cattle were domesticated about 10,000 years ago.
+mammal | n | 哺乳類 | an animal that feeds its young on milk | Cows and whales are mammals.
+predator | n | 捕食者 | an animal that hunts others | Wolves are natural predators.
+prey | n | 獲物 | an animal hunted by another | Rabbits are prey for foxes.
+migrate | v | 移動する、渡る | move to another place in a season | Birds migrate south in winter.
+nocturnal | adj | 夜行性の | active at night | Owls are nocturnal.
+instinct | n | 本能 | natural behaviour | Cows have a strong herd instinct.
+captivity | n | 飼育、とらわれの身 | being kept, not free | Animals in captivity may suffer stress.
+zoo | n | 動物園 | a place where animals are kept for people to see | Zoos help protect endangered species.
+pet | n | ペット | an animal kept at home | Pets can reduce stress.

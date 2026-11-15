@@ -1,0 +1,70 @@
+# 社会・家族・人口 | Society, family and population
+society | n | 社会 | people living together in a community | Technology has changed society.
+community | n | 地域社会 | the people living in an area | Local festivals bring the community together.
+population | n | 人口 | the number of people in an area | The population of Tokyo is about 14 million.
+ageing population | phr | 高齢化した人口 | a population with more old people | An ageing population means fewer workers support more retirees.
+birth rate | phr | 出生率 | the number of births in a population | The birth rate has fallen sharply.
+fertility rate | phr | 合計特殊出生率 | the average number of children per woman | Japan's fertility rate is about 1.2.
+demographic | adj | 人口の、人口統計の | relating to population | Demographic change affects pensions.
+generation | n | 世代 | people born around the same time | The younger generation uses social media for news.
+generation gap | phr | 世代の差 | differences between young and old | The generation gap is clear in music tastes.
+the elderly | phr | 高齢者 | old people as a group | The elderly need better care.
+senior citizen | phr | 高齢者 | an older person | Senior citizens travel free on buses.
+retiree | n | 退職者 | a retired person | Many retirees move to the countryside.
+youth | n | 若者、青春期 | young people, or being young | Youth unemployment is high.
+adolescent | n | 青年期の若者 | a teenager | Adolescents need more sleep.
+childhood | n | 子ども時代 | the time of being a child | I spent my childhood on a farm.
+upbringing | n | しつけ、育てられ方 | the way a child is raised | Her upbringing taught her to work hard.
+parenting | n | 子育て | raising children | Parenting styles vary between cultures.
+nuclear family | phr | 核家族 | parents and children only | The nuclear family is the most common type.
+extended family | phr | 拡大家族 | relatives beyond parents and children | Many people live with their extended family.
+single parent | phr | ひとり親 | a parent raising children alone | Single parents face financial pressure.
+sibling | n | きょうだい | a brother or sister | I have two siblings.
+household | n | 世帯 | the people living in one home | The average household has 2.3 people.
+marriage | n | 結婚 | the relationship of a married couple | People are delaying marriage.
+divorce | n | 離婚 | the legal end of a marriage | The divorce rate has fallen.
+childcare | n | 保育 | looking after children | The cost of childcare is very high.
+gender | n | 性別、ジェンダー | being male, female or another identity | Gender roles have changed.
+gender equality | phr | 男女平等 | equal rights for men and women | Gender equality in the workplace is improving.
+role model | phr | 手本となる人 | a person others copy | Athletes are role models for children.
+social class | phr | 社会階級 | a group based on wealth and status | Social class still affects education.
+inequality | n | 不平等 | an unfair difference | Inequality has grown in many countries.
+equality | n | 平等 | being equal | Equality before the law is essential.
+discriminate | v | 差別する | treat unfairly | It is illegal to discriminate on the basis of age.
+diversity | n | 多様性 | variety of people or things | Diversity makes cities more interesting.
+multicultural | adj | 多文化の | having many cultures | London is a multicultural city.
+integration | n | 統合、溶けこむこと | becoming part of a group | Language classes help the integration of immigrants.
+minority | n | 少数派 | a smaller group | Ethnic minorities are underrepresented in politics.
+majority | n | 多数派 | the larger part | The majority of people support the plan.
+ethnic | adj | 民族の | relating to a racial or cultural group | The country has many ethnic groups.
+identity | n | 個性、アイデンティティ | who a person is | Language is part of cultural identity.
+tradition | n | 伝統 | a long-held custom | It is a tradition to eat noodles on New Year's Eve.
+custom | n | 習慣、慣習 | a usual way of behaving | Bowing is a Japanese custom.
+religion | n | 宗教 | belief in a god or gods | Religion plays a role in many people's lives.
+volunteering | n | ボランティア活動 | working without pay to help others | Volunteering builds community spirit.
+charity work | phr | 慈善活動 | unpaid work to help others | She does charity work at weekends.
+social problem | phr | 社会問題 | a problem affecting society | Homelessness is a growing social problem.
+loneliness | n | 孤独 | feeling alone | Loneliness is common among older people.
+isolation | n | 孤立 | being alone or separated | Social isolation harms health.
+peer group | phr | 仲間、同年代の集団 | people of the same age or status | Teenagers are influenced by their peer group.
+juvenile delinquency | phr | 少年非行 | crime by young people | Juvenile delinquency is linked to poverty.
+antisocial behaviour | phr | 迷惑行為 | behaviour that harms others | Antisocial behaviour is a problem in some areas.
+social mobility | phr | 社会的な移動（階層を上がること） | moving to a higher social position | Education increases social mobility.
+privilege | n | 特権 | a special advantage | Private education is a privilege of the rich.
+disadvantaged | adj | 恵まれない | lacking money or opportunities | Disadvantaged children need extra support.
+vulnerable | adj | 弱い立場の、傷つきやすい | easily harmed | Heatwaves are dangerous for vulnerable people.
+welfare state | phr | 福祉国家 | a state that provides social support | The welfare state was created after the war.
+social security | phr | 社会保障 | government payments to people in need | Social security spending has risen.
+life satisfaction | phr | 生活の満足度 | how happy people are with their lives | Life satisfaction is highest in Nordic countries.
+quality of life | phr | 生活の質 | how good a person's life is | Parks improve quality of life.
+lifestyle | n | 生き方、暮らし方 | the way a person lives | City lifestyles are often stressful.
+individualism | n | 個人主義 | valuing the individual above the group | Western cultures tend towards individualism.
+conformity | n | 同調、従うこと | following the rules of a group | Japanese schools value conformity.
+peer | n | 同年代の人、仲間 | a person of the same age or status | Children learn from their peers.
+neighbourhood | n | 近所、地域 | the area around your home | It is a quiet neighbourhood.
+public opinion | phr | 世論 | what most people think | Public opinion has turned against the war.
+social norm | phr | 社会の決まり、規範 | expected behaviour in a society | Social norms around marriage are changing.
+taboo | n | タブー | something not talked about | Mental illness is still a taboo subject.
+etiquette | n | 礼儀作法 | rules of polite behaviour | Table etiquette differs between countries.
+volunteer work | phr | ボランティアの仕事 | unpaid work for a cause | Volunteer work looks good on a CV.
+civic | adj | 市民の | relating to a city or citizens | Voting is a civic duty.

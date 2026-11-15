@@ -1,0 +1,91 @@
+# 環境と気候 | Environment and climate
+climate change | phr | 気候変動 | long-term change in the world's weather | Climate change threatens food production.
+global warming | phr | 地球温暖化 | the rise in the earth's temperature | Global warming is melting the ice caps.
+greenhouse gas | phr | 温室効果ガス | a gas that traps heat in the atmosphere | Methane is a powerful greenhouse gas.
+emissions | n | 排出（量） | gases sent into the air | Farming accounts for a large share of greenhouse gas emissions.
+carbon dioxide | phr | 二酸化炭素 | a gas produced by burning fuel | Trees absorb carbon dioxide.
+methane | n | メタン | a strong greenhouse gas from cattle and wetlands | Cows produce methane when they digest grass.
+carbon footprint | phr | 二酸化炭素の排出量（ある活動の） | CO₂ produced by an activity | Eating local food can reduce your carbon footprint.
+carbon neutral | adj | カーボンニュートラルの | causing no net carbon emissions | The company aims to be carbon neutral by 2040.
+net zero | phr | 実質ゼロ（排出） | balancing emissions with removals | The UK has a net zero target for 2050.
+offset | n | 相殺（排出量の） | an action that balances out emissions | Some airlines sell carbon offsets.
+atmosphere | n | 大気 | the gases around the earth | Pollutants are released into the atmosphere.
+ozone layer | phr | オゾン層 | a layer of gas that blocks UV light | The ozone layer is slowly recovering.
+pollution | n | 汚染 | harmful substances in air, water or land | Air pollution causes breathing problems.
+pollutant | n | 汚染物質 | a harmful substance | Cars release pollutants into the air.
+contaminate | v | 汚染する | make dirty or poisonous | Chemicals contaminated the water supply.
+toxic | adj | 有毒な | poisonous | Toxic waste was dumped in the river.
+smog | n | スモッグ | polluted fog over cities | Smog hangs over the city in winter.
+acid rain | phr | 酸性雨 | rain made acidic by pollution | Acid rain damaged the forests.
+waste | n | 廃棄物、無駄 | things thrown away, or poor use | Households produce tonnes of waste.
+landfill | n | 埋め立て地、埋め立て処分 | a place where rubbish is buried | Most plastic ends up in landfill.
+recycle | v | リサイクルする | process used materials to use again | Aluminium cans can be recycled endlessly.
+recycling | n | リサイクル | processing used materials | Recycling rates are low in many countries.
+reuse | v | 再利用する | use again | Reuse shopping bags instead of buying new ones.
+disposable | adj | 使い捨ての | made to be thrown away after use | Disposable cups are being banned.
+single-use plastic | phr | 使い捨てのプラスチック | plastic used once and thrown away | Many cities have banned single-use plastic.
+biodegradable | adj | 生分解性の | able to break down naturally | Biodegradable packaging is better for the environment.
+compost | n | 堆肥 | decayed plants used to feed soil | Food waste can be turned into compost.
+litter | n | ごみ（ポイ捨ての） | rubbish left in public places | The beach was covered in litter.
+dump | v | 捨てる、投棄する | get rid of carelessly | Factories dumped waste into the sea.
+biodiversity | n | 生物の多様性 | the variety of living things | Hedgerows help protect biodiversity on farmland.
+ecosystem | n | 生態系 | living things and their environment | Coral reefs are fragile ecosystems.
+habitat | n | 生息地 | the natural home of an animal or plant | Building destroys wildlife habitats.
+species | n | 種（単数・複数同形） | a group of similar living things | Many species are at risk.
+endangered | adj | 絶滅の危機にある | at risk of disappearing | The tiger is an endangered species.
+extinct | adj | 絶滅した | no longer existing | Dinosaurs became extinct millions of years ago.
+extinction | n | 絶滅 | dying out completely | Many insects face extinction.
+wildlife | n | 野生生物 | wild animals and plants | The park is home to rare wildlife.
+conservation | n | 保護、保全 | protecting nature | Conservation projects protect rare birds.
+deforestation | n | 森林破壊 | cutting down forests | Deforestation is driven largely by the demand for farmland.
+reforestation | n | 森林再生 | planting trees in a former forest | Reforestation can help absorb carbon.
+desertification | n | 砂漠化 | land turning into desert | Overgrazing contributes to desertification.
+soil erosion | phr | 土壌の浸食 | loss of topsoil by wind or water | Hedges help prevent soil erosion.
+drought | n | 干ばつ | a long period without rain | The 2025 drought cut wheat yields sharply.
+flood | n | 洪水 | a large amount of water covering land | Floods destroyed hundreds of homes.
+heatwave | n | 熱波 | a period of very hot weather | The heatwave reduced milk yields.
+extreme weather | phr | 異常気象 | unusually severe weather | Extreme weather is becoming more frequent.
+natural disaster | phr | 自然災害 | an event such as an earthquake or flood | Japan is prone to natural disasters.
+sea level | phr | 海面 | the height of the sea | Rising sea levels threaten coastal cities.
+ice cap | phr | 氷床、氷冠 | a large area of ice | The polar ice caps are shrinking.
+glacier | n | 氷河 | a large mass of moving ice | Glaciers in the Alps are melting.
+fossil fuel | phr | 化石燃料 | coal, oil or gas | We must reduce our dependence on fossil fuels.
+renewable | adj | 再生可能な | able to be replaced naturally | Wind is a renewable source of energy.
+sustainable development | phr | 持続可能な開発 | growth that does not harm the future | The UN promotes sustainable development.
+sustainability | n | 持続可能性 | the ability to continue without harm | Companies report on their sustainability.
+eco-friendly | adj | 環境にやさしい | not harmful to the environment | Eco-friendly products are becoming cheaper.
+green | adj | 環境の、環境にやさしい | relating to protecting the environment | The city invests in green transport.
+mitigate | v | （害を）和らげる | make something less harmful | Planting trees can help mitigate the effects of flooding.
+mitigation | n | 緩和（策） | reducing harm | Climate mitigation requires cutting emissions.
+adaptation | n | 適応（策） | changing to cope with new conditions | Farmers need support for climate adaptation.
+resilience | n | 回復力、強さ | the ability to recover quickly | Diverse crops increase resilience to drought.
+deplete | v | 使い果たす、減らす | reduce greatly | Overfishing has depleted fish stocks.
+depletion | n | 枯渇 | the reduction of a resource | Ozone depletion has slowed.
+exploit | v | 開発する、搾取する | use, often unfairly | Companies exploit natural resources.
+overfishing | n | 乱獲 | catching too many fish | Overfishing threatens the cod industry.
+overgrazing | n | 過放牧 | animals eating too much of the grass | Overgrazing damages grassland.
+pesticide | n | 農薬（殺虫剤など） | a chemical that kills pests | Drones spray pesticides more precisely than tractors.
+fertiliser runoff | phr | 肥料の流出 | fertiliser washed into rivers | Fertiliser runoff causes algae to grow in lakes.
+water scarcity | phr | 水不足 | lack of clean water | Water scarcity affects billions of people.
+air quality | phr | 大気の質 | how clean the air is | Air quality is poor in big cities.
+noise pollution | phr | 騒音公害 | harmful levels of noise | Noise pollution affects sleep.
+light pollution | phr | 光害 | too much artificial light at night | Light pollution hides the stars.
+environmentalist | n | 環境保護活動家 | a person who works to protect nature | Environmentalists protested against the dam.
+activist | n | 活動家 | a person who campaigns for change | Climate activists blocked the road.
+campaign | n | 運動、キャンペーン | organised action to achieve a goal | The campaign aims to reduce plastic use.
+protest | n | 抗議 | a public show of disagreement | Thousands joined the climate protest.
+treaty | n | 条約 | a formal agreement between countries | The Paris Agreement is a climate treaty.
+regulation | n | 規制 | an official rule | New regulations limit factory emissions.
+carbon tax | phr | 炭素税 | a tax on carbon emissions | A carbon tax would encourage cleaner energy.
+incentivise | v | 奨励する、動機を与える | encourage by offering a reward | Subsidies incentivise farmers to plant trees.
+irreversible | adj | 元に戻せない | impossible to undo | Some damage to the climate is irreversible.
+fragile | adj | 壊れやすい、もろい | easily damaged | The Arctic is a fragile environment.
+pristine | adj | 手つかずの、汚れていない | in its original, unspoilt state | The island has pristine beaches.
+emit | v | 排出する | send out gas, heat or light | Cars emit carbon dioxide.
+absorb | v | 吸収する | take in | Forests absorb large amounts of carbon.
+release | v | 放出する | let out | Melting permafrost releases methane.
+footprint | n | 影響の大きさ、足跡 | the effect something has on the environment | Flying has a large environmental footprint.
+consumption | n | 消費（量） | the amount used | Energy consumption rises in winter.
+consumerism | n | 大量消費主義 | the idea that buying more is good | Consumerism leads to more waste.
+packaging | n | 包装 | material used to wrap products | Supermarkets are reducing plastic packaging.
+upcycle | v | アップサイクルする | turn waste into something better | She upcycles old clothes into bags.

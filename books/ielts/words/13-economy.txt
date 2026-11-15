@@ -1,0 +1,82 @@
+# 経済とビジネス | The economy and business
+economy | n | 経済 | the system of trade and money in a country | The economy grew by 2% last year.
+economic growth | phr | 経済成長 | an increase in a country's wealth | Economic growth slowed during the crisis.
+recession | n | 景気後退 | a period when the economy shrinks | Many businesses closed during the recession.
+inflation | n | インフレ、物価上昇 | a general rise in prices | Inflation reached 10% in 2022.
+interest rate | phr | 金利 | the cost of borrowing money | The bank raised interest rates.
+GDP | n | 国内総生産 | the total value of goods and services in a year | GDP per person is a common measure of wealth.
+prosperity | n | 繁栄 | wealth and success | Trade brought prosperity to the port.
+prosperous | adj | 繁栄した | rich and successful | It is a prosperous farming region.
+poverty | n | 貧困 | being very poor | Millions still live in poverty.
+wealth | n | 富 | a large amount of money or property | Wealth is unevenly distributed.
+income inequality | phr | 所得の格差 | the gap between rich and poor | Income inequality has widened over the past decade.
+cost of living | phr | 生活費 | the money needed for daily life | The cost of living has risen faster than wages.
+standard of living | phr | 生活水準 | the level of comfort people have | The standard of living has improved.
+market | n | 市場 | buying and selling, or a place to trade | The market for organic milk is growing.
+demand and supply | phr | 需要と供給 | how much is wanted and how much is available | Prices depend on demand and supply.
+competition | n | 競争 | trying to be more successful than others | Competition between supermarkets keeps prices low.
+competitive | adj | 競争力のある、競争の激しい | able to compete, or involving competition | The market is highly competitive.
+competitor | n | 競争相手 | a rival business | The company lost customers to competitors.
+consumer | n | 消費者 | a person who buys goods | Consumers want cheaper food.
+producer | n | 生産者 | a person or company that makes goods | Japan is a major producer of cars.
+manufacturer | n | 製造業者 | a company that makes products | The manufacturer recalled faulty cars.
+manufacturing | n | 製造業 | making goods in factories | Manufacturing has declined in the UK.
+industry | n | 産業 | a type of business | The tourism industry employs millions.
+industrial | adj | 工業の、産業の | relating to industry | The city has a long industrial history.
+service sector | phr | サービス業 | businesses that provide services | The service sector employs most workers.
+trade | n | 貿易、商売 | buying and selling between countries | Trade between the two countries has doubled.
+export | n | 輸出（品） | goods sold to another country | Cars are Japan's biggest export.
+import | n | 輸入（品） | goods bought from another country | The country depends on food imports.
+tariff | n | 関税 | a tax on imports | The government raised tariffs on steel.
+free trade | phr | 自由貿易 | trade without tariffs or limits | Free trade agreements reduce prices.
+globalisation | n | グローバル化 | the world becoming more connected | Globalisation has created winners and losers.
+multinational | adj | 多国籍の | operating in many countries | Multinational companies pay little tax.
+corporation | n | 大企業、法人 | a large company | The corporation employs 50,000 people.
+enterprise | n | 企業、事業 | a business or project | Small enterprises create most new jobs.
+start-up | n | 新興企業 | a newly created company | Many start-ups fail in their first year.
+entrepreneur | n | 起業家 | a person who starts businesses | Young entrepreneurs are using social media.
+small business | phr | 中小企業 | a company with few employees | Small businesses struggled during the pandemic.
+investment | n | 投資 | money put into something to make a profit | The region needs foreign investment.
+invest in | phr | 〜に投資する | put money into | Farmers are reluctant to invest in expensive robots.
+investor | n | 投資家 | a person who invests money | Investors lost confidence in the company.
+profit | n | 利益 | money earned after costs | The company made a large profit.
+profitable | adj | 利益の出る | making money | Small dairy farms are rarely profitable.
+loss | n | 損失 | money lost | The airline reported a loss.
+revenue | n | 収入、収益 | income of a business or government | Tourism brings in revenue.
+turnover | n | 売上高、離職率 | total sales, or the rate of staff leaving | Staff turnover is high in restaurants.
+expenditure | n | 支出 | money spent | Government expenditure on health has risen.
+budget | n | 予算 | a plan for spending money | The school's budget was cut.
+cost-effective | adj | 費用対効果の高い | giving good value for money | Prevention is more cost-effective than treatment.
+boost | v | 押し上げる、高める | increase or improve | Tourism can boost the local economy.
+stimulate | v | 刺激する、活性化する | encourage activity | Lower taxes may stimulate growth.
+decline | n | 衰退、減少 | a gradual fall | The town has been in decline for years.
+boom | n | 好景気、急成長 | a period of fast growth | There was a housing boom in the 2000s.
+crisis | n | 危機 | a time of great difficulty | The financial crisis hit many countries.
+debt | n | 借金、負債 | money owed | Government debt has reached record levels.
+bankrupt | adj | 破産した | unable to pay debts | The company went bankrupt.
+merger | n | 合併 | two companies joining | The merger created the largest dairy company.
+monopoly | n | 独占 | complete control of a market | The company has a monopoly on rail travel.
+brand | n | ブランド、銘柄 | a product name | Supermarket brands are cheaper.
+marketing | n | マーケティング | promoting and selling products | The company spends a lot on marketing.
+advertise | v | 宣伝する | promote a product publicly | Junk food should not be advertised to children.
+customer | n | 顧客 | a person who buys from a shop or business | The shop has loyal customers.
+client | n | 顧客、依頼人 | a person who pays for a service | The lawyer met her client.
+negotiate | v | 交渉する | discuss to reach an agreement | Farmers negotiated a better milk price.
+contract | n | 契約 | a legal agreement | The farm signed a contract with a dairy.
+deal | n | 取引 | an agreement | The two companies made a deal.
+partnership | n | 提携、協力関係 | working together | The project is a partnership between the city and businesses.
+stakeholder | n | 利害関係者 | a person with an interest in a business | All stakeholders were consulted.
+shareholder | n | 株主 | a person who owns shares | Shareholders received a large dividend.
+stock market | phr | 株式市場 | where shares are bought and sold | The stock market fell sharply.
+privatisation | n | 民営化 | selling a state business to private owners | The privatisation of the railways was controversial.
+regulate the market | phr | 市場を規制する | control the market with rules | Governments regulate the market to protect consumers.
+economic downturn | phr | 景気の低迷 | a decline in economic activity | Sales fell during the economic downturn.
+purchasing power | phr | 購買力 | how much people can buy | Inflation reduces purchasing power.
+consumer spending | phr | 個人消費 | money spent by households | Consumer spending drives the economy.
+economies of scale | phr | 規模の経済 | lower costs from producing more | Large farms benefit from economies of scale.
+outsource | v | 外注する | pay another company to do work | Many firms outsource customer service.
+relocate | v | 移転する | move to a new place | The factory relocated to Vietnam.
+downsize | v | 縮小する（人員を） | reduce the number of employees | The bank downsized its branches.
+expand overseas | phr | 海外に進出する | grow into other countries | The company plans to expand overseas.
+logistics | n | 物流 | moving goods from place to place | Logistics costs rose with fuel prices.
+infrastructure | n | 社会基盤、インフラ | basic systems such as roads and power | Poor infrastructure limits growth.

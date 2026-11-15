@@ -1,0 +1,130 @@
+# 学術の動詞（調べる・示す・論じる） | Academic verbs: researching, showing and arguing
+analyse | v | 分析する | examine something in detail | Researchers analysed data from over 2,000 farms.
+assess | v | 評価する、見積もる | judge the value or quality of something | Vets assess each cow's health every month.
+evaluate | v | 評価する | judge how good or useful something is | The study evaluates three teaching methods.
+examine | v | 調べる、検討する | look at something carefully | This essay examines the causes of urban poverty.
+investigate | v | 調査する | try to find out the facts about something | Police are investigating the cause of the fire.
+interpret | v | 解釈する | decide what something means | The results can be interpreted in two ways.
+identify | v | 特定する、見つける | recognise and name something | The sensor can identify cows that are unwell.
+indicate | v | 示す | show or suggest something | Recent figures indicate a fall in birth rates.
+illustrate | v | 説明する、例示する | explain by giving examples | This case illustrates the risks of relying on one crop.
+demonstrate | v | 証明する、示す | show clearly that something is true | The trial demonstrated that the drug was safe.
+reveal | v | 明らかにする | make something known | The survey revealed that most students work part-time.
+imply | v | ほのめかす、意味する | suggest without saying directly | His tone implied that he disagreed.
+infer | v | 推測する | reach an opinion from the information you have | From the data, we can infer that demand will grow.
+conclude | v | 結論づける | decide after thinking about the facts | The authors conclude that more research is needed.
+deduce | v | 推論する | work something out from evidence | Scientists deduced the animal's age from its teeth.
+estimate | v | 見積もる、推定する | guess the size or amount roughly | It is estimated that 30% of food is wasted.
+calculate | v | 計算する | find a number using maths | We calculated the cost of feeding each cow.
+measure | v | 測る | find the size or amount of something | The device measures soil moisture every hour.
+compare | v | 比べる | look at how things are similar or different | The graph compares sales in three countries.
+contrast | v | 対比する | show the differences between things | The writer contrasts city life with rural life.
+distinguish | v | 区別する | see the difference between things | Children learn to distinguish right from wrong.
+classify | v | 分類する | put things into groups | Plants are classified according to their features.
+categorise | v | 分類する | put into categories | Responses were categorised as positive or negative.
+define | v | 定義する | say exactly what something means | It is hard to define success.
+describe | v | 説明する、描写する | say what something is like | Describe a place you would like to visit.
+outline | v | 概要を述べる | give the main points | The report outlines a plan to reduce emissions.
+summarise | v | 要約する | give the main points briefly | Summarise the information in the chart.
+emphasise | v | 強調する | give special importance to something | The minister emphasised the need for reform.
+highlight | v | 目立たせる、強調する | draw attention to something | The study highlights the dangers of air pollution.
+clarify | v | はっきりさせる | make something easier to understand | Could you clarify what you mean?
+justify | v | 正当化する、理由を示す | show that something is reasonable | It is difficult to justify such high prices.
+argue | v | 主張する、論じる | give reasons for an opinion | Some people argue that zoos should be closed.
+claim | v | 主張する | say something is true without proof | The company claims its product is eco-friendly.
+assert | v | 断言する | state firmly | She asserted that she was innocent.
+contend | v | 強く主張する | argue that something is true | Critics contend that the policy has failed.
+acknowledge | v | 認める | accept that something is true | We must acknowledge the limits of this study.
+concede | v | （しぶしぶ）認める | admit that something is true | He conceded that the plan had some weaknesses.
+dispute | v | 異議を唱える | say that something is not correct | Few scientists dispute that the climate is warming.
+challenge | v | 疑問を投げかける | question whether something is right | The findings challenge the traditional view.
+criticise | v | 批判する | say what is wrong with something | The government was criticised for its slow response.
+refute | v | 反論する、論破する | prove that something is wrong | The author refutes the idea that IQ is fixed.
+contradict | v | 矛盾する、否定する | say the opposite | The new data contradict earlier findings.
+undermine | v | 弱める、損なう | make something less effective | Corruption undermines trust in government.
+reinforce | v | 強化する、裏付ける | make stronger | The results reinforce the case for early education.
+strengthen | v | 強める | make stronger | Trade agreements can strengthen ties between countries.
+enhance | v | 高める | improve the quality of something | Good lighting enhances the appearance of a room.
+promote | v | 促進する、広める | help something develop or become popular | Schools should promote healthy eating.
+facilitate | v | 容易にする | make something easier | Technology facilitates communication across borders.
+enable | v | 可能にする | make it possible for someone to do something | Online banking enables people to pay bills at home.
+hinder | v | 妨げる | make something difficult | Poor roads hinder economic development.
+restrict | v | 制限する | limit | The law restricts the sale of alcohol to adults.
+constrain | v | 制約する | limit or control | Growth is constrained by a lack of skilled workers.
+prohibit | v | 禁止する | officially forbid | Smoking is prohibited in all public buildings.
+regulate | v | 規制する | control with rules | The government regulates the use of pesticides.
+monitor | v | 監視する、見守る | watch over a period of time | Sensors monitor the temperature of the milk tank.
+achieve | v | 達成する | succeed in doing something | Few countries have achieved full employment.
+attain | v | 到達する | reach a goal | Only 10% of candidates attain the highest grade.
+accomplish | v | 成し遂げる | complete successfully | The team accomplished the task ahead of schedule.
+obtain | v | 得る | get something | Data were obtained from government sources.
+acquire | v | 習得する、手に入れる | gain knowledge or skills, or get something | Children acquire language remarkably quickly.
+generate | v | 生み出す | produce or create | Tourism generates jobs in remote areas.
+establish | v | 設立する、確立する | start or set up | The university was established in 1890.
+construct | v | 建設する、組み立てる | build | A new bridge is being constructed across the river.
+implement | v | 実行する | put a plan into action | The new policy will be implemented next year.
+adopt | v | 採用する | start using | Many farms have adopted automatic milking systems.
+adapt | v | 適応する、適応させる | change to suit new conditions | Animals adapt to their environment over time.
+modify | v | 修正する | change slightly | The design was modified after the first test.
+alter | v | 変える | change | Climate change may alter rainfall patterns.
+transform | v | 一変させる | change completely | The internet has transformed the way we shop.
+convert | v | 変換する、転換する | change into another form | Solar panels convert sunlight into electricity.
+replace | v | 取って代わる、取り替える | take the place of | Robots are replacing workers in many factories.
+substitute | v | 代わりに使う | use one thing instead of another | You can substitute honey for sugar.
+eliminate | v | 取り除く、なくす | remove completely | The aim is to eliminate child poverty.
+minimise | v | 最小限にする | reduce to the smallest amount | Careful planning minimises the risk of accidents.
+maximise | v | 最大限にする | increase to the greatest amount | Farmers want to maximise their profits.
+optimise | v | 最適化する | make as effective as possible | The software optimises delivery routes.
+expand | v | 拡大する | become or make larger | The company plans to expand into Asia.
+broaden | v | 広げる | make wider | Travel broadens the mind.
+contribute | v | 貢献する、一因となる | help to cause something | Many factors contribute to obesity.
+constitute | v | 構成する、〜になる | form or be | Women constitute 40% of the workforce.
+comprise | v | 〜から成る | consist of | The committee comprises ten members.
+consist of | phr | 〜から成る | be made of | The diet consists of grass and grain.
+involve | v | 含む、伴う | include as a necessary part | The job involves a lot of travel.
+encompass | v | 含む、包み込む | include a wide range of things | The course encompasses history and politics.
+require | v | 必要とする | need | The job requires good communication skills.
+necessitate | v | 必要とする | make necessary | The rise in student numbers necessitated new buildings.
+entail | v | 伴う | involve as a necessary result | The project entails a great deal of risk.
+ensure | v | 確実にする | make certain that something happens | Regular checks ensure that food is safe.
+guarantee | v | 保証する | promise that something will happen | A degree does not guarantee a good job.
+sustain | v | 持続させる | keep something going | It is hard to sustain growth without investment.
+preserve | v | 保存する、守る | keep something as it is | The town has preserved its historic buildings.
+conserve | v | 節約する、保護する | use carefully, protect from waste | We must conserve water during droughts.
+safeguard | v | 守る | protect from harm | Laws safeguard the rights of workers.
+tackle | v | 取り組む | deal with a problem | The city is tackling air pollution.
+resolve | v | 解決する | find a solution | The dispute was resolved through negotiation.
+overcome | v | 克服する | succeed in dealing with a difficulty | She overcame many obstacles to become a doctor.
+cope with | phr | 対処する | deal successfully with something difficult | Hospitals struggle to cope with the demand.
+allocate | v | 割り当てる | give for a particular purpose | More money should be allocated to education.
+distribute | v | 分配する、配る | share out | Food was distributed to families in need.
+prioritise | v | 優先する | treat as most important | Governments should prioritise public health.
+emerge | v | 現れる、明らかになる | appear or become known | New problems emerged during the trial.
+arise | v | 生じる | happen, appear | Difficulties may arise if staff are not trained.
+occur | v | 起こる | happen | Most accidents occur in the home.
+persist | v | 続く、持続する | continue to exist | Inequality persists despite economic growth.
+prevail | v | 広く行き渡る、勝つ | be widespread, or win | Common sense prevailed in the end.
+exceed | v | 超える | be more than | Demand for milk exceeded supply.
+surpass | v | 上回る | be better or greater than | China surpassed the USA as the largest exporter.
+outweigh | v | 上回る（重要さで） | be more important than | The benefits outweigh the drawbacks.
+offset | v | 相殺する | balance the effect of something | Higher prices offset the fall in sales.
+compensate for | phr | 埋め合わせる | make up for a loss | Nothing can compensate for the loss of a child.
+correlate with | phr | 相関する | have a connection with | Income correlates with level of education.
+attribute sth to | phr | 〜のせいにする、〜に帰する | say that something is caused by | The fall in crime is attributed to better policing.
+derive from | phr | 〜に由来する | come from | Many English words derive from Latin.
+stem from | phr | 〜から生じる | be caused by | Many health problems stem from poor diet.
+result in | phr | 〜という結果になる | cause | The drought resulted in crop failure.
+lead to | phr | 〜につながる | cause something to happen | Stress can lead to illness.
+trigger | v | 引き起こす | cause something to start | The price rise triggered protests.
+determine | v | 決定する、突き止める | decide or find out | Genes partly determine our height.
+rely on | phr | 頼る | depend on | Many villages rely on tourism.
+account for | phr | 占める、説明する | form a part of, or explain | Exports account for half of the country's income.
+perceive | v | 認識する、受け止める | see or understand in a particular way | Farming is often perceived as hard work.
+assume | v | 仮定する、思い込む | think something is true without proof | We cannot assume that all students learn the same way.
+predict | v | 予測する | say what will happen | Experts predict a rise in sea levels.
+anticipate | v | 予期する | expect and prepare for | We did not anticipate such a strong reaction.
+speculate | v | 推測する | guess without full information | It is too early to speculate about the cause.
+verify | v | 確かめる | check that something is true | The data must be verified by an expert.
+confirm | v | 確認する、裏付ける | show that something is true | Tests confirmed that the water was clean.
+advocate | v | 支持する、提唱する | publicly support | Many doctors advocate a sugar tax.
+propose | v | 提案する | suggest a plan | The council proposed a new cycle lane.

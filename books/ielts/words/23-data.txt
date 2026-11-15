@@ -1,0 +1,62 @@
+# 数と変化（Writing Task 1） | Numbers and change (Writing Task 1)
+rise | v | 上がる | go up | Milk prices rose by 10% in 2022.
+increase | v | 増える | become larger | The number of visitors increased steadily.
+grow | v | 伸びる、成長する | become bigger | Online sales grew rapidly.
+climb | v | 上昇する | rise gradually | Unemployment climbed to 8%.
+soar | v | 急上昇する | rise very quickly | House prices soared in the 2010s.
+surge | v | 急増する | increase suddenly | Demand for bicycles surged in 2020.
+rocket | v | 急騰する | rise very fast | Energy prices rocketed in 2022.
+fall | v | 下がる | go down | The birth rate fell to a record low.
+decrease | v | 減る | become smaller | The number of farms decreased by a third.
+decline | v | 減少する | become less | Newspaper sales have declined.
+drop | v | 落ちる | fall | Temperatures dropped below zero.
+dip | v | 少し下がる | fall slightly for a short time | Sales dipped in February before recovering.
+plummet | v | 急落する | fall very quickly | Profits plummeted after the scandal.
+plunge | v | 急落する | fall suddenly | The share price plunged by 40%.
+fluctuate | v | 変動する | go up and down | The price of wheat fluctuated throughout the year.
+level off | pv | 横ばいになる | stop rising or falling | Growth levelled off after 2015.
+stabilise | v | 安定する | become steady | The population stabilised at around 5 million.
+plateau | v | 頭打ちになる | stay at the same level after rising | Sales plateaued in the second half of the year.
+peak | v | 頂点に達する | reach the highest point | Consumption peaked at 120 litres in 2005.
+remain stable | phr | 安定したままである | stay the same | The figure remained stable at 30%.
+remain constant | phr | 一定のままである | not change | Prices remained constant over the period.
+hit a low | phr | 最低になる | reach the lowest point | The figure hit a low of 5% in 2009.
+double | v | 2倍になる | become twice as large | The number of users doubled in two years.
+triple | v | 3倍になる | become three times as large | The figure almost tripled by 2010.
+halve | v | 半分になる | become half | The cost of solar panels halved.
+overtake | v | 追い越す | become greater than | Country C overtook Country B in 2015.
+make up | pv | 構成する、占める | form a part of | Women make up half of the students.
+represent | v | 占める、表す | be equal to | This represents a 20% increase.
+proportion of | phr | 〜の割合 | a share of a total | The proportion of older people is rising.
+percentage | n | 割合、パーセンテージ | an amount out of 100 | A large percentage of farms are family-owned.
+the majority of | phr | 大多数の | most of | The majority of students live at home.
+a minority of | phr | 少数の | a small part of | Only a minority of farms use robots.
+the vast majority | phr | 大多数 | almost all | The vast majority of milk is sold to supermarkets.
+a quarter | phr | 4分の1 | one of four equal parts | A quarter of the budget goes on fuel.
+a third | phr | 3分の1 | one of three equal parts | A third of food is wasted.
+two-thirds | phr | 3分の2 | two of three equal parts | Two-thirds of the land is grassland.
+just over | phr | 〜を少し超える | a little more than | Just over half of people agreed.
+just under | phr | 〜を少し下回る | a little less than | Just under 40% of homes have solar panels.
+figure | n | 数値 | a number | The figure for Japan was much lower.
+proportionally | adv | 割合で見ると | in relation to the whole | Proportionally, more young people use buses.
+respectively | adv | それぞれ | in the order mentioned | Sales in 2010 and 2020 were 40 and 60 respectively.
+by contrast | phr | 対照的に | showing a difference | By contrast, sales in Asia rose.
+whereas | conj | 一方で | while, in contrast | Sales rose in Asia, whereas they fell in Europe.
+compared with | phr | 〜と比べて | in comparison to | Prices were low compared with last year.
+in comparison | phr | 比べると | when compared | In comparison, rail travel is cheaper.
+the highest | phr | 最も高い | the greatest | Japan had the highest life expectancy.
+the lowest | phr | 最も低い | the smallest | The lowest figure was recorded in 2009.
+twice as much as | phr | 〜の2倍 | double the amount of | Country A produced twice as much milk as Country B.
+three times | phr | 3倍 | multiplied by three | The figure was three times higher.
+over the period | phr | その期間を通して | during the time shown | Over the period, sales doubled.
+throughout | prep | 〜の間ずっと | during the whole time | Prices rose throughout the decade.
+from … to … | phr | 〜から〜まで | between two points | Sales rose from 20 to 35 million.
+decade | n | 10年間 | a period of ten years | Over the next decade, demand will grow.
+quarter | n | 四半期 | a three-month period | Profits rose in the third quarter.
+annual | adj | 年間の、毎年の | happening every year | Annual rainfall is about 1,500 mm.
+per capita | phr | 一人あたり | for each person | Milk consumption per capita has fallen.
+average | n | 平均 | the usual amount | The average was 35 litres per person.
+upward trend | phr | 上昇傾向 | a general rise | There was an upward trend in sales.
+downward trend | phr | 下降傾向 | a general fall | The chart shows a downward trend.
+projected | adj | 予測された | expected in the future | The projected figure for 2030 is 50%.
+is expected to | phr | 〜すると予想される | is likely to | The population is expected to fall.

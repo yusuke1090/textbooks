@@ -1,0 +1,77 @@
+# テクノロジーとインターネット | Technology and the internet
+technology | n | 技術、テクノロジー | the use of science for practical purposes | Technology has changed how we work.
+technological | adj | 技術の | relating to technology | Technological progress creates new jobs.
+innovation | n | 技術革新、新しい工夫 | new ideas or methods | Government funding can encourage innovation.
+invention | n | 発明（品） | something newly made | The printing press was a great invention.
+device | n | 装置、機器 | a machine or tool | Most people own more than one device.
+gadget | n | 小さな機器 | a small useful machine | He loves the latest gadgets.
+software | n | ソフトウェア | programs used by a computer | The software updates automatically.
+hardware | n | ハードウェア | the physical parts of a computer | The hardware is old and slow.
+application | n | アプリ、応用 | a program, or a practical use | The technology has many applications.
+automation | n | 自動化 | machines doing work automatically | Automation is replacing many routine jobs.
+automate | v | 自動化する | make a process work by itself | Factories have automated most tasks.
+artificial intelligence | phr | 人工知能 | computers that imitate human thinking | Artificial intelligence is increasingly used to diagnose diseases.
+machine learning | phr | 機械学習 | computers learning from data | Machine learning predicts which cows will fall ill.
+algorithm | n | アルゴリズム | a set of rules a computer follows | Social media algorithms decide what we see.
+robot | n | ロボット | a machine that does tasks automatically | Robots now milk cows on many farms.
+robotics | n | ロボット工学 | the science of robots | She is studying robotics.
+data | n | データ | facts and figures | The sensors collect data every minute.
+big data | phr | ビッグデータ | very large sets of data | Supermarkets use big data to predict demand.
+database | n | データベース | an organised collection of data | The database stores records of every cow.
+cloud computing | phr | クラウドコンピューティング | using computers over the internet | Cloud computing reduces costs for small firms.
+digital | adj | デジタルの | using computers or electronic data | Digital skills are essential for most jobs.
+digitalisation | n | デジタル化 | the move to digital technology | The digitalisation of banking is almost complete.
+digital divide | phr | 情報格差 | the gap in access to technology | The digital divide between cities and rural areas is narrowing.
+data privacy | phr | 個人データの保護 | protection of personal data | Many users are concerned about data privacy.
+personal data | phr | 個人情報 | information about a person | Companies must protect personal data.
+surveillance | n | 監視 | close watching of people | CCTV surveillance is common in cities.
+cybersecurity | n | サイバーセキュリティ | protection against attacks online | Banks spend billions on cybersecurity.
+cybercrime | n | サイバー犯罪 | crime using the internet | Cybercrime costs businesses billions.
+hacker | n | ハッカー | a person who breaks into computer systems | Hackers stole customer data.
+password | n | パスワード | a secret word for access | Use a different password for each account.
+breach | n | 侵害、漏えい | a break in security | The data breach affected millions of users.
+online | adj | オンラインの | on the internet | Online shopping is growing quickly.
+access | n | 利用、接近 | the ability to use something | Many villages lack internet access.
+connectivity | n | 接続性 | the ability to connect to the internet | Poor connectivity holds back rural business.
+broadband | n | ブロードバンド | fast internet connection | Fast broadband is now available in most towns.
+wireless | adj | 無線の | without wires | Wireless sensors are easy to install.
+smartphone | n | スマートフォン | a mobile phone with a computer | Most teenagers own a smartphone.
+screen time | phr | 画面を見る時間 | time spent using screens | Doctors advise limiting children's screen time.
+social media | phr | ソーシャルメディア | websites for sharing content | Social media spreads news very fast.
+platform | n | 基盤、プラットフォーム | a system or website used by many | Video platforms pay creators for content.
+user | n | 利用者 | a person who uses something | The app has ten million users.
+user-friendly | adj | 使いやすい | easy to use | The new system is very user-friendly.
+upgrade | v | 更新する、性能を上げる | improve to a newer version | We upgraded our computers last year.
+update | n | 更新 | a newer version, or new information | Install the latest software update.
+obsolete | adj | 時代遅れの、使われなくなった | no longer used | Fax machines have become largely obsolete.
+outdated | adj | 古くなった | old-fashioned | The equipment is outdated.
+cutting-edge | adj | 最先端の | the most advanced | The farm uses cutting-edge sensors to monitor each cow.
+state-of-the-art | adj | 最新鋭の | using the latest technology | The hospital has state-of-the-art equipment.
+high-tech | adj | 高度な技術の | using advanced technology | High-tech industries need skilled workers.
+breakthrough | n | 大発見、突破口 | an important discovery | Scientists made a breakthrough in cancer treatment.
+prototype | n | 試作品 | the first model of a design | The engineers tested the prototype on a farm.
+sensor | n | センサー | a device that detects changes | A sensor on the collar measures rumination.
+remote | adj | 遠隔の、離れた | far away, or controlled from a distance | Farmers can check their cows by remote monitoring.
+remote working | phr | 在宅勤務、離れた所で働くこと | working away from the office | Remote working became common after 2020.
+virtual | adj | 仮想の | existing on computers | Virtual meetings save travel time.
+virtual reality | phr | 仮想現実 | a computer-made world you can explore | Virtual reality is used to train surgeons.
+download | v | ダウンロードする | copy data from the internet | Download the app to start.
+browse | v | 閲覧する | look through websites | I browsed the internet for ideas.
+stream | v | ストリーミングで見る・聴く | play video or music over the internet | Most people stream music rather than buy CDs.
+e-commerce | n | 電子商取引 | buying and selling online | E-commerce has hurt high-street shops.
+cashless | adj | 現金を使わない | without using cash | Sweden is becoming a cashless society.
+drone | n | ドローン | an aircraft without a pilot | Drones are used to spray crops.
+3D printing | phr | 3D プリント | making objects layer by layer from a design | 3D printing can produce spare parts quickly.
+wearable | adj | 身に着ける（機器） | designed to be worn | Wearable devices track heart rate.
+addictive | adj | 中毒性のある | making people want more | Online games can be highly addictive.
+misinformation | n | 誤った情報 | false information | Misinformation spreads quickly online.
+fake news | phr | フェイクニュース | false stories presented as news | Fake news can influence elections.
+tech-savvy | adj | テクノロジーに強い | good with technology | Young farmers are often tech-savvy.
+dependence | n | 依存 | relying on something | Our dependence on smartphones is growing.
+innovate | v | 革新する | introduce new ideas | Companies must innovate to survive.
+patent | n | 特許 | the legal right to an invention | The company holds patents on its sensors.
+intellectual property | phr | 知的財産 | ownership of ideas and designs | Software is protected as intellectual property.
+encryption | n | 暗号化 | turning data into a secret code | Encryption keeps messages private.
+malfunction | v | 故障する | fail to work properly | The robot malfunctioned during milking.
+glitch | n | ちょっとした不具合 | a small technical problem | A glitch caused the website to crash.
+crash | v | （システムが）止まる | stop working suddenly | The computer crashed and I lost my work.

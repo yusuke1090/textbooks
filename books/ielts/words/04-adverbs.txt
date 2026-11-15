@@ -1,0 +1,72 @@
+# 副詞（程度・確かさ・態度） | Adverbs: degree, certainty and attitude
+significantly | adv | 大きく、著しく | by a large amount | Costs have fallen significantly.
+considerably | adv | かなり | much, a lot | The new model is considerably cheaper.
+substantially | adv | 大幅に | by a large amount | Profits rose substantially last year.
+dramatically | adv | 劇的に | suddenly and greatly | Prices increased dramatically.
+slightly | adv | わずかに | a little | Sales fell slightly in May.
+marginally | adv | ほんの少し | by a very small amount | The figure was marginally higher than before.
+relatively | adv | 比較的 | compared with others | The test is relatively easy.
+comparatively | adv | 比較的 | when compared with something else | Crime is comparatively low here.
+increasingly | adv | ますます | more and more | Online shopping is increasingly popular.
+gradually | adv | 徐々に | slowly over time | The weather gradually improved.
+steadily | adv | 着実に | at a regular rate | The population grew steadily.
+rapidly | adv | 急速に | very quickly | The disease spread rapidly.
+sharply | adv | 急激に | suddenly and by a lot | Unemployment rose sharply.
+largely | adv | 主に、大部分は | mostly | The success was largely due to luck.
+mainly | adv | 主に | mostly | The workers are mainly young people.
+primarily | adv | 主として | mainly | The course is primarily for beginners.
+predominantly | adv | 主に、圧倒的に | mostly | The town is predominantly rural.
+mostly | adv | 大部分は | almost all | The visitors were mostly tourists.
+partly | adv | 部分的に、一部は | to some extent | The delay was partly my fault.
+entirely | adv | 完全に | completely | I entirely agree with you.
+virtually | adv | ほとんど、事実上 | almost | Virtually every home has a phone.
+approximately | adv | およそ | about | Approximately 40% of students are women.
+roughly | adv | おおよそ | about | Roughly half the cows were milked by robots.
+precisely | adv | 正確に、まさに | exactly | That is precisely the problem.
+particularly | adv | 特に | especially | Prices are high, particularly in cities.
+especially | adv | 特に | more than usual | Children especially enjoy the farm visits.
+notably | adv | 特に、目立って | especially | Some countries, notably Japan, have ageing populations.
+consequently | adv | その結果 | as a result | Consequently, many shops closed.
+therefore | adv | それゆえ | for that reason | The price is high; therefore, few people buy it.
+thus | adv | このように、したがって | in this way, as a result | Thus, the problem was solved.
+hence | adv | それゆえ | for this reason | The road was closed, hence the delay.
+nevertheless | adv | それにもかかわらず | despite that | It was raining. Nevertheless, we went out.
+nonetheless | adv | それでも | however, despite this | The task was hard; nonetheless, they finished it.
+moreover | adv | さらに | in addition | Moreover, the plan is cheap.
+furthermore | adv | さらに | also | Furthermore, the area is safe.
+meanwhile | adv | その間に、一方 | at the same time | Meanwhile, prices in Europe fell.
+subsequently | adv | その後 | later | He was subsequently promoted.
+previously | adv | 以前に | before | Previously, most farms were small.
+initially | adv | 最初は | at the beginning | Initially, the plan worked well.
+eventually | adv | 最終的に、やがて | in the end | Eventually, they reached an agreement.
+ultimately | adv | 結局、最終的に | finally, in the end | Ultimately, the decision is yours.
+currently | adv | 現在 | now | The project is currently under review.
+recently | adv | 最近 | not long ago | Prices have recently risen.
+presumably | adv | おそらく | probably | Presumably, the train is late.
+arguably | adv | 間違いなく〜と言える | it can be argued that | It is arguably the best book on the subject.
+undoubtedly | adv | 疑いなく | certainly | Technology has undoubtedly improved our lives.
+certainly | adv | 確かに | without doubt | It is certainly true that costs are rising.
+clearly | adv | 明らかに | obviously | Clearly, something must be done.
+obviously | adv | 明らかに | in a way that is easy to see | Obviously, prices vary.
+apparently | adv | どうやら〜らしい | it seems | Apparently, the meeting was cancelled.
+evidently | adv | 明らかに | clearly | Evidently, the plan had failed.
+inevitably | adv | 必然的に | as was certain to happen | Inevitably, some jobs will be lost.
+potentially | adv | 潜在的に、場合によっては | possibly | The disease is potentially fatal.
+possibly | adv | ひょっとすると | perhaps | It was possibly the worst year on record.
+probably | adv | おそらく | likely | It will probably rain tomorrow.
+generally | adv | 一般に | usually, in most cases | Generally, older people sleep less.
+typically | adv | 典型的に、ふつうは | usually | Students typically study for three years.
+frequently | adv | しばしば | often | The trains are frequently late.
+occasionally | adv | ときどき | sometimes | We occasionally eat out.
+rarely | adv | めったに〜ない | not often | He rarely complains.
+consistently | adv | 一貫して | always in the same way | She has consistently performed well.
+effectively | adv | 効果的に、事実上 | in a way that works, or in fact | The new rule effectively bans cars from the centre.
+efficiently | adv | 効率的に | without waste | The farm is run very efficiently.
+directly | adv | 直接 | without anything in between | Farmers sell directly to customers.
+indirectly | adv | 間接的に | not directly | Pollution indirectly affects the economy.
+globally | adv | 世界的に | all over the world | The brand is recognised globally.
+locally | adv | 地元で | in the local area | The vegetables are grown locally.
+financially | adv | 財政的に | in terms of money | The scheme is financially sustainable.
+economically | adv | 経済的に | in terms of the economy | The region is economically weak.
+socially | adv | 社会的に | in terms of society | It is not socially acceptable.
+environmentally | adv | 環境面で | in terms of the environment | Electric cars are more environmentally friendly.

@@ -1,0 +1,80 @@
+# 都市・住まい・交通 | Cities, housing and transport
+urbanisation | n | 都市化 | people moving into cities | Rapid urbanisation has led to housing shortages.
+urban sprawl | phr | 都市の無秩序な拡大 | cities spreading into the countryside | Urban sprawl destroys farmland.
+metropolis | n | 大都市 | a very large city | Tokyo is a huge metropolis.
+suburb | n | 郊外 | an area of homes outside a city centre | Many families move to the suburbs.
+suburban | adj | 郊外の | relating to the suburbs | Suburban life depends on cars.
+inner city | phr | 都心部（貧しい地区の意味も） | the central, often poorer, part of a city | Inner-city schools need more funding.
+outskirts | n | 町はずれ | the outer parts of a town | The factory is on the outskirts of town.
+city centre | phr | 都心、町の中心 | the main part of a city | Shops in the city centre are closing.
+high street | phr | 目抜き通り、商店街 | the main shopping street | The high street has many empty shops.
+residential | adj | 住宅の | used for homes | It is a quiet residential area.
+resident | n | 住民 | a person who lives in a place | Residents complained about the noise.
+inhabitant | n | 住民 | a person who lives in a place | The town has 5,000 inhabitants.
+housing | n | 住宅 | buildings for people to live in | Housing is expensive in big cities.
+housing shortage | phr | 住宅不足 | not enough homes | The housing shortage has pushed up rents.
+accommodation | n | 住まい、宿泊施設 | a place to live or stay | Student accommodation is expensive.
+rent | n | 家賃 | money paid to live in a home | Rents have risen by 20%.
+tenant | n | 借家人 | a person who rents a home | Tenants need more protection.
+landlord | n | 家主 | a person who rents out property | The landlord raised the rent.
+property | n | 不動産、財産 | buildings and land, or things owned | Property prices are rising.
+homeowner | n | 持ち家の人 | a person who owns their home | Fewer young people are homeowners.
+real estate | phr | 不動産 | property in buildings and land | Real estate is a common investment.
+apartment block | phr | 集合住宅 | a building with many flats | New apartment blocks are being built.
+skyscraper | n | 超高層ビル | a very tall building | The city is full of skyscrapers.
+high-rise | adj | 高層の | very tall | High-rise flats save space.
+overcrowded | adj | 過密の、混み合った | with too many people | Trains are overcrowded at rush hour.
+congestion | n | 混雑、渋滞 | too much traffic | Congestion costs the economy billions.
+traffic congestion | phr | 交通渋滞 | too much traffic | Traffic congestion costs the economy billions every year.
+traffic jam | phr | 交通渋滞 | a line of cars that cannot move | We were stuck in a traffic jam for an hour.
+rush hour | phr | ラッシュアワー | the busiest time for travel | Avoid travelling at rush hour.
+congestion charge | phr | 混雑課金 | a fee for driving in a city centre | London introduced a congestion charge in 2003.
+public transport | phr | 公共交通 | buses, trains and so on | Better public transport would reduce traffic congestion.
+mass transit | phr | 大量輸送機関 | public transport for many people | Mass transit systems reduce pollution.
+underground | n | 地下鉄 | an underground railway | The London Underground opened in 1863.
+pedestrian | n | 歩行者 | a person walking | The street is closed to cars and open to pedestrians.
+pedestrianise | v | 歩行者専用にする | close a street to cars | The council pedestrianised the main street.
+cycle lane | phr | 自転車専用道 | a part of the road for bicycles | More cycle lanes would encourage cycling.
+car-free | adj | 車のない | without cars | Some city centres are now car-free.
+private car | phr | 自家用車 | a car owned by a person | Private cars are the main source of traffic.
+car ownership | phr | 自動車の保有 | owning a car | Car ownership is falling among young people.
+vehicle | n | 乗り物、車両 | a machine for transport | Diesel vehicles are banned from the centre.
+infrastructure project | phr | 社会基盤の建設計画 | a project to build roads, railways and so on | The infrastructure project created 2,000 jobs.
+route | n | 道筋、路線 | a way from one place to another | The bus route was changed.
+destination | n | 目的地 | where someone is going | Paris is a popular destination.
+commuting | n | 通勤 | travelling to work | Commuting takes up a lot of time.
+fare | n | 運賃 | the price of a journey | Bus fares have gone up.
+parking | n | 駐車 | leaving a car somewhere | Parking is difficult in the city centre.
+road safety | phr | 交通安全 | preventing road accidents | Road safety campaigns target young drivers.
+speed limit | phr | 制限速度 | the fastest legal speed | The speed limit near schools is 20 mph.
+accident | n | 事故 | an unexpected event causing harm | Most road accidents are caused by speeding.
+amenities | n | 生活に便利な施設 | useful public facilities | The area lacks amenities such as shops.
+facilities | n | 施設、設備 | buildings or equipment for a purpose | The school has good sports facilities.
+green space | phr | 緑地 | parks and gardens in a town | Green spaces improve mental health.
+urban planning | phr | 都市計画 | designing how a city develops | Good urban planning reduces traffic.
+regeneration | n | 再生（地域の） | improving a run-down area | The regeneration of the docks created jobs.
+gentrification | n | 高級化（地区の） | richer people moving into a poorer area | Gentrification pushes up rents.
+run-down | adj | 荒れた、さびれた | in poor condition | The old town centre is run-down.
+derelict | adj | 荒れ果てた | empty and in bad condition | Derelict factories were turned into flats.
+slum | n | スラム | a very poor, crowded area | Millions live in slums.
+homelessness | n | 家のないこと | having nowhere to live | Homelessness has risen in many cities.
+rural depopulation | phr | 地方の人口減少 | people leaving the countryside | Rural depopulation threatens local schools and shops.
+countryside | n | 田舎、田園 | land outside towns | Many retirees move to the countryside.
+village | n | 村 | a small group of houses | The village has one shop.
+remote area | phr | へき地 | a place far from towns | Remote areas lack doctors.
+isolated | adj | 孤立した | far from others | Isolated communities depend on cars.
+commuter town | phr | ベッドタウン | a town where people live but work elsewhere | It became a commuter town for the capital.
+noise | n | 騒音 | unwanted sound | Traffic noise affects sleep.
+crowded | adj | 混雑した | full of people | The streets were crowded with tourists.
+liveable | adj | 住みやすい | pleasant to live in | Vienna is often ranked the most liveable city.
+cosmopolitan | adj | 国際色豊かな | with people from many countries | It is a cosmopolitan city.
+landmark | n | 名所、目印 | a famous building or place | The tower is the city's best-known landmark.
+architecture | n | 建築（様式） | the design of buildings | The city is famous for its modern architecture.
+heritage | n | 遺産 | buildings or traditions from the past | Old buildings are part of our heritage.
+historic | adj | 歴史的に重要な | important in history | The historic centre attracts tourists.
+renovate | v | 改修する | repair and improve a building | They renovated an old farmhouse.
+demolish | v | 取り壊す | knock down a building | The old factory was demolished.
+construction | n | 建設 | building | Construction of the new line will take five years.
+high-speed rail | phr | 高速鉄道 | very fast trains | High-speed rail is an alternative to flying.
+airport expansion | phr | 空港の拡張 | making an airport bigger | Residents oppose airport expansion.
+emission zone | phr | 排出規制区域 | an area where polluting vehicles must pay | Diesel cars pay to enter the emission zone.

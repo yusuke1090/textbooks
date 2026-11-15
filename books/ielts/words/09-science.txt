@@ -1,0 +1,70 @@
+# 科学と研究 | Science and research
+research | n | 研究 | careful study to find new facts | Research shows that sleep improves memory.
+researcher | n | 研究者 | a person who does research | Researchers interviewed 500 farmers.
+experiment | n | 実験 | a scientific test | The experiment was repeated three times.
+laboratory | n | 実験室、研究所 | a room for scientific work | Samples were sent to a laboratory.
+sample | n | 標本、サンプル | a small part used for testing | A sample of 1,000 people was surveyed.
+survey | n | 調査 | a set of questions asked to many people | The survey asked students about their sleep.
+questionnaire | n | アンケート用紙 | a written list of questions | Participants completed a questionnaire.
+participant | n | 参加者 | a person who takes part | Half of the participants received the drug.
+findings | n | 研究結果 | the results of research | The findings were published in a journal.
+data set | phr | データの集まり | a collection of data | The data set covers 20 years.
+statistics | n | 統計 | numbers that describe facts | Statistics show that crime has fallen.
+statistical | adj | 統計の | relating to statistics | There was no statistical difference.
+quantitative | adj | 量的な | measured in numbers | The study uses quantitative methods.
+qualitative | adj | 質的な | about qualities, not numbers | Qualitative research uses interviews.
+empirical | adj | 経験的な、実証的な | based on observation | There is little empirical evidence.
+observation | n | 観察 | watching carefully | The study is based on observation of cow behaviour.
+observe | v | 観察する | watch carefully | Researchers observed the animals for a year.
+clinical trial | phr | 臨床試験、治験 | a test of a new medicine on people | Clinical trials test new medicines on volunteers.
+control group | phr | 対照群 | a group that is not given the treatment | The control group received a placebo.
+peer review | phr | 査読 | review of research by other experts | All papers go through peer review.
+journal | n | 学術誌、専門誌 | a magazine of academic articles | The study appeared in a leading journal.
+publish | v | 発表する、出版する | make available to the public | The results were published last month.
+scientific | adj | 科学的な | relating to science | There is scientific evidence for this claim.
+scientist | n | 科学者 | a person who works in science | Scientists warn about rising temperatures.
+discovery | n | 発見 | finding something new | The discovery of penicillin saved millions of lives.
+discover | v | 発見する | find for the first time | Scientists discovered a new species of frog.
+genetic | adj | 遺伝の | relating to genes | The disease has a genetic cause.
+gene | n | 遺伝子 | a unit of heredity in cells | Genes affect height and eye colour.
+genetically modified | phr | 遺伝子組み換えの | with genes changed by scientists | Genetically modified crops resist pests.
+DNA | n | DNA | the material that carries genetic information | DNA tests can identify parents.
+cell | n | 細胞 | the smallest unit of a living thing | The body contains trillions of cells.
+organism | n | 生物 | a living thing | Bacteria are tiny organisms.
+bacteria | n | 細菌（複数形） | tiny organisms, some causing disease | Bacteria can enter the udder through the teat.
+virus | n | ウイルス | a tiny agent that causes disease | The virus spread quickly.
+evolution | n | 進化 | gradual change of species over time | Evolution explains the variety of life.
+evolve | v | 進化する、発展する | develop gradually | Language evolves over time.
+chemical | n | 化学物質 | a substance used in chemistry | The factory released harmful chemicals.
+substance | n | 物質 | a material | The substance is toxic to fish.
+compound | n | 化合物 | a substance made of two or more elements | Water is a compound of hydrogen and oxygen.
+molecule | n | 分子 | the smallest unit of a substance | A water molecule has three atoms.
+particle | n | 粒子 | a very small piece | Fine particles in the air damage the lungs.
+physics | n | 物理学 | the science of matter and energy | Physics explains how bridges stay up.
+chemistry | n | 化学 | the science of substances | Chemistry is useful for farmers who use fertiliser.
+biology | n | 生物学 | the science of living things | She studied biology at university.
+astronomy | n | 天文学 | the study of stars and planets | Astronomy has made huge progress with telescopes.
+space exploration | phr | 宇宙探査 | travelling into space to learn about it | Space exploration is very expensive.
+satellite | n | 人工衛星 | an object that orbits the earth | Satellites monitor crop growth.
+telescope | n | 望遠鏡 | a device for seeing distant objects | The telescope found a new planet.
+microscope | n | 顕微鏡 | a device for seeing tiny things | Bacteria can be seen under a microscope.
+specimen | n | 標本 | an example used for study | Specimens were collected from the river.
+classification | n | 分類 | arranging things in groups | The classification of plants is complex.
+formula | n | 公式、化学式 | a rule written in symbols | The formula for water is H₂O.
+equation | n | 方程式 | a mathematical statement | Solve the equation for x.
+calculation | n | 計算 | working out a number | The calculation took hours by hand.
+prove | v | 証明する | show something is true | It is hard to prove a link between the two.
+proof | n | 証拠、証明 | evidence that something is true | There is no proof that the drug works.
+test | v | 試す、検査する | check how something works | The vaccine was tested on thousands of people.
+replicate | v | 再現する | repeat with the same result | Other scientists could not replicate the results.
+reliability | n | 信頼性 | how dependable something is | The reliability of the data is in doubt.
+accuracy | n | 正確さ | being correct | The accuracy of the sensor is within 1%.
+margin of error | phr | 誤差の範囲 | how much a result might be wrong | The poll has a margin of error of 3%.
+sample size | phr | 標本の大きさ | the number of people or items studied | The sample size was too small.
+funding | n | 資金（提供） | money for a purpose | Research funding has been cut.
+grant | n | 助成金 | money given for research or study | She received a grant to study soil bacteria.
+breakthrough discovery | phr | 画期的な発見 | a very important new finding | It was a breakthrough discovery in medicine.
+cutting-edge research | phr | 最先端の研究 | the most advanced research | The university is known for cutting-edge research.
+ethics | n | 倫理 | moral principles | Animal research raises questions of ethics.
+animal testing | phr | 動物実験 | testing products on animals | Animal testing for cosmetics is banned in the EU.
+clone | v | クローンを作る | make an exact genetic copy | Scientists cloned a sheep in 1996.

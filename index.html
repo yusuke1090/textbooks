@@ -185,6 +185,31 @@ main { padding-bottom: 30px; }
 #body .ls-script p { margin: 4px 0; }
 .ls-script p.on { background: var(--accent-soft); border-radius: 4px; }
 .ls-script b { margin-right: 6px; }
+.wtool { position: sticky; top: var(--barh, 58px); z-index: 5; margin: 10px -4px 12px; padding: 8px 10px; background: var(--bg); border: 1px solid var(--border); border-radius: 10px; box-shadow: 0 4px 10px rgba(0,0,0,.06); }
+.wt-row { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
+.wt-row button { padding: 5px 11px; font: inherit; font-size: 13px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; white-space: nowrap; }
+.wt-row button[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); font-weight: bold; }
+.wt-row .wn { display: inline-block; min-width: 1.4em; margin-left: 2px; padding: 0 5px; border-radius: 999px; background: var(--accent); color: var(--panel); font-size: 12px; text-align: center; }
+.wt-q { flex: 1 1 140px; min-width: 0; padding: 5px 10px; font: inherit; font-size: 16px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; }
+.wt-msg { margin: 6px 2px 0; font-size: 13px; color: var(--muted); }
+.wl { margin: 6px 0 22px; border: 1px solid var(--border); border-radius: 10px; background: var(--panel); overflow: hidden; }
+.wr { display: flex; gap: 10px; padding: 9px 12px 10px 8px; border-top: 1px solid var(--border); }
+.wr:first-child { border-top: 0; }
+.wr.chk { background: var(--accent-soft); }
+.wc { flex: none; width: 30px; height: 30px; margin-top: 1px; border: 2px solid var(--border); border-radius: 50%; background: var(--panel); color: transparent; font-size: 16px; line-height: 1; cursor: pointer; }
+.wc:hover { border-color: var(--accent); }
+.wr.chk .wc { background: var(--accent); border-color: var(--accent); color: var(--panel); }
+.wb { flex: 1; min-width: 0; }
+.wh { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 8px; }
+.ww { font-size: 17px; }
+.wp { padding: 0 6px; border: 1px solid var(--border); border-radius: 4px; font-size: 11px; color: var(--muted); white-space: nowrap; }
+.ws { margin-left: auto; padding: 0 4px; border: 0; background: none; font-size: 15px; cursor: pointer; opacity: .7; }
+.ws:hover { opacity: 1; }
+#body .wm { margin-top: 2px; font-size: 15px; line-height: 1.6; }
+#body .we { margin-top: 2px; font-size: 13.5px; line-height: 1.6; color: var(--muted); }
+#body .we strong { color: var(--text); }
+#body.wl-hide .wr:not(.open) .wm, #body.wl-hide .wr:not(.open) .we { filter: blur(6px); opacity: .6; user-select: none; }
+#body.wl-hide .wr:not(.open) .wb { cursor: pointer; }
 .term { text-decoration: underline dotted var(--muted); text-underline-offset: 3px; cursor: help; }
 .pager { display: flex; justify-content: space-between; gap: 10px; margin: 36px 0 10px; }
 .pager button { font-size: 14px; padding: 10px 14px; border-radius: 10px; cursor: pointer; max-width: 48%;
@@ -323,13 +348,19 @@ li > .sticky-bar { margin-top: 4px; }
           fig: "図 ", load: "読み込み中…", loadErr: "読み込めませんでした",
           qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え",
           lsTitle: "🔊 音声", lsPlay: "▶ 再生", lsStop: "■ 止める", lsSlow: "ゆっくり", lsShow: "スクリプトを見る", lsHide: "スクリプトを隠す",
-          lsNone: "この端末では読み上げが使えません" },
+          lsNone: "この端末では読み上げが使えません",
+          wAll: "すべて", wChk: "✓ 見直す", wHide: "意味を隠す", wQ: "単語・意味で探す", wMark: "あとで見直す（チェック）",
+          wSay: "発音を聞く", wNone: "まだチェックした単語はありません。わからない単語の ○ を押すと、ここに集まります。",
+          wHit: "件", wNoHit: "見つかりません" },
     en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", close: "Close",
           copy: "Copy", copied: "Copied",
           fig: "Fig. ", load: "Loading…", loadErr: "Could not load",
           qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer",
           lsTitle: "🔊 Audio", lsPlay: "▶ Play", lsStop: "■ Stop", lsSlow: "Slower", lsShow: "Show script", lsHide: "Hide script",
-          lsNone: "Speech is not available on this device" },
+          lsNone: "Speech is not available on this device",
+          wAll: "All", wChk: "✓ Review", wHide: "Hide meanings", wQ: "Search words or meanings", wMark: "Mark to review",
+          wSay: "Hear it", wNone: "No words marked yet. Tap the ○ next to a word you don't know to collect it here.",
+          wHit: "found", wNoHit: "No matches" },
   };
 
   const params = new URLSearchParams(location.search);
@@ -643,9 +674,27 @@ li > .sticky-bar { margin-top: 4px; }
       + `<button type="button" class="ls-show">${t(show ? "lsHide" : "lsShow")}</button></div>`
       + `<div class="ls-script"${show ? "" : " hidden"}>${script}</div></div>`;
   }
+  // 単語帳（```words、1行に「単語 | 品詞 | 意味 | 例文」）。○ でチェック（あとで見直す）、上の欄で絞りこみ・意味を隠す・探す
+  function wordsTool() {
+    return `<div class="wtool"><div class="wt-row"><button type="button" data-wf="all" aria-pressed="true">${t("wAll")}</button>`
+      + `<button type="button" data-wf="chk" aria-pressed="false">${t("wChk")} <span class="wn">0</span></button>`
+      + `<button type="button" class="wt-hide" aria-pressed="false">${t("wHide")}</button>`
+      + `<input type="search" class="wt-q" placeholder="${t("wQ")}" autocomplete="off" autocapitalize="off" spellcheck="false" enterkeyhint="search"></div>`
+      + `<p class="wt-msg" hidden></p></div>`;
+  }
+  function wordsHtml(lines) {
+    const rows = lines.filter((l) => l.trim()).map((l) => l.split(/\s+\|\s+/));
+    // チェックの鍵は「単語＋例文」（例文は日本語版と英語版で同じ。同じつづりで品詞がちがう言葉を分けるため）
+    const key = (w, ex) => { let h = 5381; for (const c of ex) h = (h * 33 + c.charCodeAt(0)) >>> 0; return w.toLowerCase() + "#" + h.toString(36); };
+    return `<div class="wl">` + rows.map(([w = "", pos = "", mean = "", ex = ""]) => `<div class="wr" data-w="${esc(w.toLowerCase())}" data-k="${esc(key(w, ex))}">`
+      + `<button type="button" class="wc" aria-pressed="false" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
+      + `<div class="wb"><div class="wh"><b class="ww">${esc(w)}</b><span class="wp">${esc(pos)}</span>`
+      + `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button></div>`
+      + `<div class="wm">${inline(mean)}</div><div class="we">${inline(ex)}</div></div></div>`).join("") + `</div>`;
+  }
   function render(src, prefix) {
     const lines = src.replace(/\r\n/g, "\n").split("\n"), out = [], codes = [];
-    let i = 0, m, fig = 0, qn = 0, ln = 0;
+    let i = 0, m, fig = 0, qn = 0, ln = 0, wn = 0;
     const isSep = (l) => /^\s*\|?\s*:?-{3,}:?\s*(\|\s*:?-{3,}:?\s*)*\|?\s*$/.test(l);
     const cells = (l) => l.trim().replace(/^\|/, "").replace(/(?<!\\)\|$/, "").split(/(?<!\\)\|/).map((c) => c.trim().replace(/\\\|/g, "|"));
     while (i < lines.length) {
@@ -657,6 +706,11 @@ li > .sticky-bar { margin-top: 4px; }
         i++;
         if (cl === "quiz") { const q = quizHtml(code, qn); qn += q.n; out.push(q.html); continue; }
         if (cl === "listen") { ln++; out.push(listenHtml(code, ln, flags.includes("show"))); continue; }
+        if (cl === "words") {
+          if (!wn++) out.splice(/^<h[23]/.test(out[out.length - 1] || "") ? out.length - 1 : out.length, 0, wordsTool());   // 操作の欄は、最初の話題の見出しの前に
+          out.push(wordsHtml(code));
+          continue;
+        }
         codes.push(code.join("\n"));
         const run = flags.includes("run") && (cl === "python" || cl === "cpp");
         out.push(`<div class="codeblock${run ? " run" : ""}"><div class="cb-head"><span class="grow">${esc(codeLabel(cl, flags))}</span>`
@@ -873,6 +927,7 @@ li > .sticky-bar { margin-top: 4px; }
     const r = render(md, figPrefix(ch));
     body.innerHTML = r.html;
     codes = r.codes;
+    initWords();
     fillQuizLogs();
     await renderMath();
     if (seq !== showSeq) return;
@@ -1537,6 +1592,97 @@ li > .sticky-bar { margin-top: 4px; }
     });
   }
 
+  // ---------- 単語帳のチェック・絞りこみ ----------
+  const WORDS_KEY = () => "textbooks-words-" + book.id;   // チェックした単語（小文字）の一覧。日本語版と英語版で同じ
+  const wordSet = () => { try { return new Set(JSON.parse(store.get(WORDS_KEY(), "[]"))); } catch (e) { return new Set(); } };
+  function initWords() {
+    const tool = body.querySelector(".wtool");
+    if (!tool) return;
+    body.style.setProperty("--barh", bar.offsetHeight + "px");
+    const set = wordSet();
+    body.querySelectorAll(".wr").forEach((r) => {
+      const on = set.has(r.dataset.k);
+      r.classList.toggle("chk", on);
+      r.querySelector(".wc").setAttribute("aria-pressed", on);
+    });
+    const hide = store.get("textbooks-words-hide") === "1";
+    body.classList.toggle("wl-hide", hide);
+    tool.querySelector(".wt-hide").setAttribute("aria-pressed", hide);
+    filterWords();
+  }
+  function filterWords() {
+    const tool = body.querySelector(".wtool");
+    if (!tool) return;
+    const onlyChk = tool.querySelector('[data-wf="chk"]').getAttribute("aria-pressed") === "true";
+    const q = tool.querySelector(".wt-q").value.trim().toLowerCase();
+    let shown = 0, chk = 0;
+    body.querySelectorAll(".wl").forEach((wl) => {
+      let any = false;
+      wl.querySelectorAll(".wr").forEach((r) => {
+        const c = r.classList.contains("chk");
+        if (c) chk++;
+        const ok = (!onlyChk || c) && (!q || r.dataset.w.includes(q) || r.querySelector(".wm").textContent.toLowerCase().includes(q));
+        r.hidden = !ok;
+        if (ok) { any = true; shown++; }
+      });
+      wl.hidden = !any;
+      const h = wl.previousElementSibling;
+      if (h && /^H[23]$/.test(h.tagName)) h.hidden = !any;
+    });
+    tool.querySelector(".wn").textContent = chk;
+    const msg = tool.querySelector(".wt-msg");
+    msg.textContent = onlyChk && !chk ? t("wNone") : q ? (shown ? `${shown} ${t("wHit")}` : t("wNoHit")) : "";
+    msg.hidden = !msg.textContent;
+  }
+  function sayWord(word) {
+    if (!speech) { toast(t("lsNone")); return; }
+    stopSpeech();
+    speech.cancel();
+    const u = new SpeechSynthesisUtterance(word);
+    const v = englishVoices()[0];
+    u.lang = v ? v.lang : "en-GB";
+    if (v) u.voice = v;
+    u.rate = 0.9;
+    speech.speak(u);
+  }
+  function wordsClick(e) {
+    const c = e.target.closest(".wc");
+    if (c) {
+      const r = c.closest(".wr"), set = wordSet(), on = !r.classList.contains("chk");
+      if (on) set.add(r.dataset.k); else set.delete(r.dataset.k);
+      store.set(WORDS_KEY(), JSON.stringify([...set]));
+      r.classList.toggle("chk", on);
+      c.setAttribute("aria-pressed", on);
+      const tool = body.querySelector(".wtool");
+      if (tool) tool.querySelector(".wn").textContent = body.querySelectorAll(".wr.chk").length;
+      return true;
+    }
+    const s = e.target.closest(".ws");
+    if (s) { sayWord(s.closest(".wr").querySelector(".ww").textContent.replace(/\(.*?\)/g, "").replace(/\b(sth|sb)\b/g, "")); return true; }
+    const f = e.target.closest("[data-wf]");
+    if (f) {
+      body.querySelectorAll("[data-wf]").forEach((b) => b.setAttribute("aria-pressed", b === f));
+      filterWords();
+      return true;
+    }
+    const h = e.target.closest(".wt-hide");
+    if (h) {
+      const on = !body.classList.contains("wl-hide");
+      body.classList.toggle("wl-hide", on);
+      h.setAttribute("aria-pressed", on);
+      store.set("textbooks-words-hide", on ? "1" : "0");
+      body.querySelectorAll(".wr.open").forEach((r) => r.classList.remove("open"));
+      return true;
+    }
+    const b = e.target.closest(".wl-hide .wr .wb");
+    if (b && getSelection().isCollapsed) { b.closest(".wr").classList.toggle("open"); return true; }
+    return false;
+  }
+  let wqTimer = 0;
+  body.addEventListener("input", (e) => {
+    if (e.target.classList.contains("wt-q")) { clearTimeout(wqTimer); wqTimer = setTimeout(filterWords, 150); }
+  });
+
   // ---------- 練習問題の答え合わせ ----------
   // 全角・半角、大文字・小文字、カタカナ・ひらがな、空白や「」、などの記号、文の終わりの「です」のちがいは見ない。
   // 答えが数なら、入力の中の最初の数で比べる（「280日」「２８０」でもよい）
@@ -1638,6 +1784,7 @@ li > .sticky-bar { margin-top: 4px; }
     store.set(QUIZ_KEY(book.id), JSON.stringify(res));
   }
   body.addEventListener("click", (e) => {
+    if (wordsClick(e)) return;
     const b = e.target.closest(".qz-btn");
     if (b) checkQuiz(b.closest(".qz"));
     const ls = e.target.closest(".listen button");

@@ -1,0 +1,79 @@
+# 仕事と働き方 | Work and employment
+employment | n | 雇用 | having paid work | Tourism provides employment for local people.
+unemployment | n | 失業 | not having a job | Unemployment is high among young people.
+unemployment rate | phr | 失業率 | the share of people without work | The unemployment rate fell to 3% last year.
+employer | n | 雇い主 | a person or company that employs people | Employers want flexible workers.
+employee | n | 従業員 | a person who works for someone | The company has 200 employees.
+workforce | n | 労働力、働く人全体 | all the people who work | Women now make up nearly half of the workforce.
+labour | n | 労働、労働力 | work, or workers | Farms depend on seasonal labour.
+labour shortage | phr | 人手不足 | not enough workers | Dairy farms face a severe labour shortage.
+skilled | adj | 熟練した | having training or experience | There is a shortage of skilled workers.
+unskilled | adj | 未熟練の | without special training | Unskilled jobs are being automated.
+manual | adj | 手作業の、肉体労働の | done with the hands | Manual work is often poorly paid.
+white-collar | adj | 事務職の | working in an office | White-collar jobs require qualifications.
+blue-collar | adj | 肉体労働の | doing physical work | Blue-collar workers were hit hard by automation.
+full-time | adj | 常勤の | working all the normal hours | She has a full-time job.
+part-time | adj | パートタイムの | working fewer hours | Many students have part-time jobs.
+freelance | adj | フリーランスの | working for several clients, not one employer | He works as a freelance designer.
+self-employed | adj | 自営業の | working for yourself | Most farmers are self-employed.
+temporary contract | phr | 期間限定の契約 | an agreement for a fixed period | Young people often get only temporary contracts.
+job security | phr | 雇用の安定 | confidence that you will keep your job | Job security matters more than salary to many people.
+career | n | 職業、経歴 | a series of jobs in one field | She has had a long career in teaching.
+profession | n | 専門職 | a job needing special training | Medicine is a respected profession.
+occupation | n | 職業 | a job | Please state your occupation.
+vacancy | n | 欠員、求人 | a job that is available | There are many vacancies in nursing.
+recruit | v | 採用する | find new people to join | The company recruits graduates every year.
+recruitment | n | 採用 | finding new employees | Recruitment is difficult in rural areas.
+applicant | n | 応募者 | a person who applies | There were 300 applicants for the job.
+candidate | n | 候補者 | a person being considered | The best candidate was offered the job.
+interview | n | 面接 | a meeting to assess a job applicant | She has a job interview tomorrow.
+CV | n | 履歴書 | a summary of your education and work | Send your CV by email.
+salary | n | 給料（月給・年俸） | fixed pay for a job | Teachers' salaries are low.
+wage | n | 賃金（時給・週給） | pay for work, often by the hour | The minimum wage rose this year.
+minimum wage | phr | 最低賃金 | the lowest legal pay | Many farm workers earn the minimum wage.
+income | n | 収入 | money received | Farm incomes vary from year to year.
+promotion | n | 昇進 | moving to a higher job | He got a promotion after two years.
+colleague | n | 同僚 | a person you work with | My colleagues are very helpful.
+supervisor | n | 監督者、上司 | a person who manages workers | Ask your supervisor for permission.
+manager | n | 管理者 | a person in charge | The manager approved the plan.
+staff | n | 職員（全体） | the people who work for an organisation | The staff work in shifts.
+workplace | n | 職場 | the place where people work | Safety in the workplace is essential.
+working conditions | phr | 労働条件 | the hours, pay and environment of a job | Working conditions on farms have improved.
+work-life balance | phr | 仕事と生活のバランス | the balance of work and private life | Flexible hours can improve work-life balance.
+flexible working | phr | 柔軟な働き方 | work with flexible hours or place | Flexible working helps parents.
+overtime | n | 残業 | extra hours of work | Nurses often work unpaid overtime.
+shift | n | 交代勤務 | a set period of work | He works the night shift.
+commute | v | 通勤する | travel to work | I commute an hour each way.
+commuter | n | 通勤者 | a person who travels to work | Trains are full of commuters.
+retire | v | 退職する | stop working because of age | He retired at 65.
+retirement | n | 退職、引退 | stopping work in later life | People are delaying retirement.
+pension | n | 年金 | money paid after retirement | Pensions are a growing cost for governments.
+trade union | phr | 労働組合 | an organisation that protects workers | The trade union called a strike.
+strike | n | ストライキ | refusing to work as a protest | The strike closed the railways.
+dismiss | v | 解雇する | remove from a job | He was dismissed for being late.
+redundancy | n | 解雇（人員整理） | losing your job because it is no longer needed | The factory announced 500 redundancies.
+lay off | pv | 一時解雇する | stop employing because there is not enough work | The company laid off 200 workers.
+resign | v | 辞職する | leave a job by choice | She resigned to start her own business.
+job satisfaction | phr | 仕事の満足度 | how happy you are in your job | Job satisfaction is higher in small companies.
+productivity | n | 生産性 | the amount produced per worker | Robots increase productivity.
+efficiency | n | 効率 | working well without waste | The new system improved efficiency.
+workload | n | 仕事の量 | the amount of work to do | Teachers complain about their heavy workload.
+deadline | n | 締め切り | a time by which something must be done | We missed the deadline.
+teamwork | n | チームワーク | working well together | The project succeeded thanks to teamwork.
+leadership | n | 指導力 | the ability to lead | The job requires strong leadership skills.
+responsibility | n | 責任 | a duty to deal with something | She has responsibility for twenty staff.
+experience | n | 経験 | knowledge gained by doing | The job requires five years' experience.
+internship | n | インターンシップ | a short period of work for training | He did an internship at a bank.
+volunteer | n | ボランティア | a person who works without pay | Volunteers help at the food bank.
+gig economy | phr | 単発の仕事で成り立つ経済 | work made of short, flexible jobs | Delivery drivers are part of the gig economy.
+migrant worker | phr | 出稼ぎ労働者、移民労働者 | a person who moves for work | Migrant workers pick much of the fruit.
+seasonal | adj | 季節の | happening at certain times of year | Fruit picking is seasonal work.
+skills gap | phr | 技能の不足 | a difference between the skills needed and those available | There is a skills gap in engineering.
+retrain | v | 再訓練する | learn new skills for a new job | Older workers may need to retrain.
+upskill | v | 技能を高める | improve your skills | Companies must upskill their workers.
+gender pay gap | phr | 男女の賃金格差 | the difference in pay between men and women | The gender pay gap is narrowing slowly.
+equal opportunities | phr | 機会均等 | the same chances for everyone | The company supports equal opportunities.
+discrimination | n | 差別 | unfair treatment | Age discrimination is illegal.
+harassment | n | 嫌がらせ | unwanted, threatening behaviour | Workplace harassment must be reported.
+burnt out | adj | 燃え尽きた | exhausted from overwork | Many doctors feel burnt out.
+motivated | adj | やる気のある | keen to work hard | Motivated staff are more productive.

@@ -1,0 +1,51 @@
+# 人柄と気持ち（Speaking） | Personality and feelings (Speaking)
+easy-going | adj | のんびりした、おおらかな | relaxed and not easily upset | My father is very easy-going.
+outgoing | adj | 社交的な | friendly and liking to meet people | She is outgoing and makes friends easily.
+sociable | adj | 人付き合いのよい | enjoying being with others | He is sociable and loves parties.
+introverted | adj | 内向的な | quiet and preferring to be alone | I am a bit introverted, so I enjoy reading.
+extroverted | adj | 外向的な | confident and lively with people | Extroverted people often enjoy sales jobs.
+considerate | adj | 思いやりのある | thinking about others' feelings | My neighbour is very considerate.
+generous | adj | 気前のよい | happy to give | My grandmother was very generous.
+patient | adj | 忍耐強い | able to wait calmly | Teachers need to be patient.
+determined | adj | 決意の固い | wanting very much to succeed | She was determined to become a vet.
+curious | adj | 好奇心の強い | wanting to know things | Children are naturally curious.
+modest | adj | 謙虚な | not talking about your own success | Despite his success, he is very modest.
+stubborn | adj | 頑固な | refusing to change your mind | My brother can be quite stubborn.
+thoughtful | adj | 思慮深い、親切な | thinking carefully, or kind | It was a thoughtful gift.
+optimistic | adj | 楽観的な | expecting good things | I am optimistic about the future.
+pessimistic | adj | 悲観的な | expecting bad things | Many farmers are pessimistic about prices.
+cheerful | adj | 陽気な | happy and positive | She is always cheerful in the morning.
+confident | adj | 自信のある | sure of yourself | Practice makes you more confident.
+shy | adj | 恥ずかしがりの | nervous with other people | I was very shy as a child.
+enthusiastic | adj | 熱心な | showing great interest | He is enthusiastic about farming technology.
+passionate | adj | 情熱的な | having strong feelings about something | She is passionate about animal welfare.
+hard-working | adj | 勤勉な | working with effort | The staff are hard-working.
+punctual | adj | 時間を守る | arriving on time | Japanese trains are famously punctual.
+organised | adj | きちんとした | good at planning | You need to be organised to run a farm.
+inspiring | adj | 刺激を与える | making people want to do something | She was an inspiring teacher.
+supportive | adj | 支えになる | giving help and encouragement | My family has always been supportive.
+open-minded | adj | 偏見のない、心の広い | willing to consider new ideas | Travel makes people more open-minded.
+narrow-minded | adj | 心の狭い | not willing to accept new ideas | Some people are narrow-minded about change.
+mature | adj | 大人びた、成熟した | behaving like an adult | She is very mature for her age.
+independent | adj | 自立した | not relying on others | Studying abroad made me more independent.
+responsible | adj | 責任感のある | able to be trusted with duties | He is responsible and reliable.
+trustworthy | adj | 信頼できる | able to be trusted | A good friend is trustworthy.
+honest | adj | 正直な | telling the truth | I appreciate honest feedback.
+selfish | adj | 自分勝手な | thinking only of yourself | It is selfish to waste water.
+arrogant | adj | 傲慢な | thinking you are better than others | The manager was arrogant and rude.
+witty | adj | 機知に富んだ | clever and funny | He is witty and makes everyone laugh.
+down-to-earth | adj | 気取らない、現実的な | practical and friendly | Despite being famous, she is very down-to-earth.
+nostalgic | adj | 懐かしい気持ちの | feeling happy and sad about the past | That song makes me nostalgic.
+grateful | adj | 感謝している | thankful | I am grateful for your help.
+frustrated | adj | いらいらした | annoyed because you cannot do something | I get frustrated when the internet is slow.
+overwhelmed | adj | 圧倒された、手に負えない | feeling there is too much to deal with | New students often feel overwhelmed.
+relieved | adj | ほっとした | happy because a worry has ended | I was relieved when I passed the exam.
+delighted | adj | とても喜んで | very pleased | We were delighted with the result.
+thrilled | adj | わくわくした | very excited and happy | I was thrilled to get the job.
+disappointed | adj | がっかりした | sad because something was not as good as hoped | I was disappointed with the hotel.
+exhausted | adj | 疲れ切った | very tired | After milking at 4 a.m., I was exhausted.
+embarrassed | adj | 恥ずかしい（気まずい） | feeling awkward | I was embarrassed when I forgot her name.
+proud | adj | 誇りに思う | pleased with an achievement | My parents were proud of me.
+amazed | adj | 驚いた | very surprised | I was amazed by the size of the farm.
+calm | adj | 落ち着いた | not worried or excited | Stay calm during the exam.
+fond of | phr | 〜が好きな | liking | I am very fond of my hometown.

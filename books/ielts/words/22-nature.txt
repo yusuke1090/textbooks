@@ -1,0 +1,58 @@
+# 自然・地理・天気 | Nature, geography and weather
+landscape | n | 景色、風景 | the appearance of an area of land | The landscape is dotted with farms.
+terrain | n | 地形 | land of a particular type | The terrain is too steep for tractors.
+continent | n | 大陸 | one of the earth's large land masses | Africa is the second largest continent.
+coast | n | 海岸 | land next to the sea | They live on the coast.
+coastal | adj | 沿岸の | near the sea | Coastal towns are at risk from flooding.
+island | n | 島 | land surrounded by water | Japan is made up of many islands.
+peninsula | n | 半島 | land almost surrounded by water | The peninsula is popular with tourists.
+mountain range | phr | 山脈 | a line of mountains | The Alps are a mountain range.
+valley | n | 谷 | low land between hills | A river runs through the valley.
+plain | n | 平野 | a large area of flat land | Rice is grown on the plains.
+plateau | n | 高原、台地 | a flat area of high land | The farm is on a high plateau.
+desert | n | 砂漠 | a dry area with little rain | The Sahara is the largest hot desert.
+rainforest | n | 熱帯雨林 | a thick tropical forest | The Amazon rainforest is shrinking.
+wetland | n | 湿地 | land that is often wet | Wetlands store large amounts of carbon.
+river basin | phr | 流域 | the area drained by a river | The river basin supports millions of farmers.
+lake | n | 湖 | a large area of water surrounded by land | Lake Victoria is Africa's largest lake.
+ocean | n | 海洋 | a very large sea | Plastic is polluting the oceans.
+marine | adj | 海の | relating to the sea | Marine life is threatened by warming seas.
+volcano | n | 火山 | a mountain that erupts | The volcano erupted last year.
+earthquake | n | 地震 | a sudden shaking of the ground | Japan has frequent earthquakes.
+tsunami | n | 津波 | a huge wave caused by an earthquake | The tsunami destroyed coastal towns.
+landslide | n | 地すべり、土砂崩れ | a fall of earth down a slope | Heavy rain caused a landslide.
+typhoon | n | 台風 | a violent tropical storm in Asia | The typhoon damaged rice fields.
+hurricane | n | ハリケーン | a violent storm in the Atlantic | The hurricane hit Florida.
+storm | n | 嵐 | bad weather with strong wind and rain | The storm knocked down trees.
+climate | n | 気候 | the usual weather of a place | The climate is mild and wet.
+temperate | adj | 温帯の、穏やかな | neither very hot nor very cold | Britain has a temperate climate.
+tropical | adj | 熱帯の | from hot, wet parts of the world | Bananas are tropical fruit.
+arid | adj | 乾燥した | very dry | Arid regions need irrigation.
+humid | adj | 湿気の多い | hot and damp | Summers in Tokyo are hot and humid.
+humidity | n | 湿度 | the amount of water in the air | High humidity makes heat harder to bear.
+rainfall | n | 降水量 | the amount of rain | Annual rainfall is about 1,500 mm.
+precipitation | n | 降水（雨・雪など） | rain, snow or hail | Precipitation is highest in June.
+forecast | n | 予報 | a prediction of weather | The forecast says it will rain.
+season | n | 季節 | one of the four parts of the year | Spring is the busiest season on farms.
+rainy season | phr | 雨季、梅雨 | the time of year with most rain | The rainy season starts in June.
+dry season | phr | 乾季 | the time of year with little rain | Grass dies in the dry season.
+frost | n | 霜 | ice crystals formed on cold nights | A late frost damaged the fruit.
+mild | adj | 穏やかな | not severe | The winter was unusually mild.
+severe | adj | 厳しい、深刻な | very bad | Severe weather closed the roads.
+scenery | n | 景色 | the natural features of a place | The scenery in Hokkaido is beautiful.
+natural beauty | phr | 自然の美しさ | the attractive features of nature | The area is famous for its natural beauty.
+national park | phr | 国立公園 | a protected area of natural land | The national park attracts hikers.
+wilderness | n | 未開の地 | wild land not changed by people | Little true wilderness is left in Europe.
+vegetation | n | 植物（全体） | plants in an area | The vegetation is thin in dry areas.
+flora and fauna | phr | 動植物 | plants and animals | The island has unique flora and fauna.
+native | adj | 在来の | originally from a place | Native trees support more wildlife.
+invasive species | phr | 外来種（侵略的な） | a species that spreads and harms others | Invasive species threaten native plants.
+geography | n | 地理 | the study of the earth's surface | Geography affects what crops grow.
+latitude | n | 緯度 | distance north or south of the equator | Hokkaido is at a higher latitude.
+altitude | n | 高度 | height above sea level | Few crops grow at high altitude.
+equator | n | 赤道 | the line around the middle of the earth | It is hot near the equator.
+hemisphere | n | 半球 | half of the earth | Seasons are reversed in the southern hemisphere.
+natural phenomenon | phr | 自然現象 | something that happens in nature | A rainbow is a natural phenomenon.
+erosion | n | 浸食 | wearing away by wind or water | Coastal erosion threatens homes.
+sea ice | phr | 海氷 | frozen sea water | Arctic sea ice is shrinking.
+permafrost | n | 永久凍土 | ground that is always frozen | Thawing permafrost releases gases.

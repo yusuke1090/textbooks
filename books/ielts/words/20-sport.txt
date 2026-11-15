@@ -1,0 +1,39 @@
+# スポーツと余暇 | Sport and leisure
+athlete | n | 運動選手 | a person who is good at sport | Professional athletes train every day.
+athletic | adj | 運動の得意な | physically strong and fit | He is very athletic.
+professional | adj | プロの、専門的な | paid to do something | She became a professional footballer.
+tournament | n | トーナメント | a series of games to find a winner | The tournament lasts two weeks.
+championship | n | 選手権 | a competition to find the best | They won the national championship.
+spectator | n | 観客 | a person watching a sport | Thousands of spectators filled the stadium.
+stadium | n | 競技場 | a large sports ground | The stadium holds 70,000 people.
+team sport | phr | 団体競技 | a sport played in teams | Team sports teach cooperation.
+individual sport | phr | 個人競技 | a sport played alone | Tennis is mainly an individual sport.
+extreme sport | phr | エクストリームスポーツ | a dangerous sport | Extreme sports attract young people.
+coach | n | コーチ | a person who trains athletes | The coach made the team train harder.
+train | v | 練習する、訓練する | practise to improve | She trains for three hours a day.
+compete | v | 競う | try to win | Over 200 countries compete in the Olympics.
+host | v | 開催する | hold an event | Japan hosted the Olympics in 2021.
+sportsmanship | n | スポーツマン精神 | fair and generous behaviour in sport | Children learn sportsmanship through games.
+fair play | phr | 正々堂々とした態度 | playing by the rules | Fair play is more important than winning.
+doping | n | ドーピング | using drugs to improve performance | Doping scandals damage the sport.
+performance-enhancing drug | phr | 運動能力を高める薬物 | a drug that improves performance illegally | He tested positive for performance-enhancing drugs.
+injury-prone | adj | けがをしやすい | often getting injured | The player is injury-prone.
+stamina | n | 持久力 | the ability to keep going | Marathon runners need great stamina.
+endurance | n | 忍耐力、持久力 | the ability to continue a long time | Cycling builds endurance.
+recreational | adj | 娯楽の、レクリエーションの | done for enjoyment | Recreational sports are good for health.
+outdoor activities | phr | 野外活動 | activities done outside | Children need more outdoor activities.
+gym | n | ジム | a place for exercise | I go to the gym twice a week.
+membership | n | 会員（資格） | being a member | Gym membership is expensive.
+jog | v | ジョギングする | run slowly for exercise | She jogs before work.
+hiking | n | ハイキング | walking in the countryside | Hiking is popular in the mountains.
+leisure facilities | phr | 余暇の施設 | places for sport and fun | The town lacks leisure facilities.
+spare time | phr | 空き時間 | time free from work | What do you do in your spare time?
+unwind | v | くつろぐ | relax | I unwind by listening to music.
+pursue a hobby | phr | 趣味を楽しむ | spend time on a hobby | Retirees have time to pursue hobbies.
+record-breaking | adj | 記録的な | better than any before | It was a record-breaking performance.
+Olympic Games | phr | オリンピック | an international sports event every four years | The Olympic Games bring tourists to the host city.
+sponsorship | n | スポンサー契約、後援 | financial support in return for advertising | Sponsorship deals are worth millions.
+grassroots sport | phr | 地域のスポーツ | sport at local, amateur level | More funding should go to grassroots sport.
+physical education | phr | 体育 | sport and exercise taught at school | Physical education should be compulsory.
+competitive spirit | phr | 闘争心 | the desire to win | Sport develops a competitive spirit.
+team spirit | phr | 団結心 | loyalty to a team | The players showed great team spirit.

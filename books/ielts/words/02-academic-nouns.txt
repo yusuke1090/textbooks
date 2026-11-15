@@ -1,0 +1,114 @@
+# 学術の名詞（考え・理由・結果） | Academic nouns: ideas, reasons and results
+approach | n | 取り組み方、方法 | a way of dealing with something | We need a new approach to recycling.
+aspect | n | 側面 | one part or feature of something | Cost is an important aspect of the decision.
+assumption | n | 前提、思い込み | something believed true without proof | The plan is based on the assumption that prices will rise.
+basis | n | 基礎、根拠 | the main idea or reason behind something | There is no scientific basis for this claim.
+benefit | n | 利点、恩恵 | an advantage | The benefits of exercise are well known.
+drawback | n | 欠点 | a disadvantage | The main drawback is the high cost.
+capacity | n | 能力、収容力 | the amount something can hold or produce | The stadium has a capacity of 50,000.
+circumstance | n | 状況、事情 | a condition that affects a situation | Under no circumstances should you share your password.
+component | n | 構成要素、部品 | a part of a larger whole | Exercise is a key component of a healthy lifestyle.
+concept | n | 概念 | an idea | The concept of time varies between cultures.
+consequence | n | 結果、影響 | a result, often a bad one | Pollution has serious consequences for health.
+context | n | 文脈、背景 | the situation in which something happens | The quote was taken out of context.
+criterion | n | 基準（複数形 criteria） | a standard used to judge something | Price was the main criterion for choosing a supplier.
+dimension | n | 側面、次元 | an aspect, or a measurement | The problem has a political dimension.
+element | n | 要素 | a part of something | Trust is an essential element of any relationship.
+emphasis | n | 重点、強調 | special importance | The course places emphasis on practical skills.
+evidence | n | 証拠 | facts that show something is true | There is little evidence that the policy works.
+factor | n | 要因 | something that influences a result | Diet is a major factor in heart disease.
+feature | n | 特徴 | a typical quality | A key feature of the design is its low weight.
+framework | n | 枠組み | a basic structure of ideas or rules | The law provides a framework for protecting data.
+function | n | 機能、役割 | the purpose of something | The main function of the liver is to clean the blood.
+hypothesis | n | 仮説 | an idea to be tested | The experiment supported the hypothesis.
+implication | n | 影響、含み | a possible effect | The findings have implications for teachers.
+incentive | n | 動機づけ、奨励策 | something that encourages action | Tax cuts give companies an incentive to invest.
+indicator | n | 指標 | a sign that shows the state of something | GDP is a common indicator of economic health.
+initiative | n | 新しい取り組み、主体性 | a new plan, or the ability to act alone | The city launched an initiative to plant trees.
+insight | n | 洞察 | a deep understanding | The study gives insight into how children learn.
+issue | n | 問題、論点 | an important topic or problem | Housing is a key issue in the election.
+mechanism | n | しくみ | a way something works | Sweating is the body's cooling mechanism.
+method | n | 方法 | a way of doing something | Traditional teaching methods are changing.
+notion | n | 考え、観念 | an idea or belief | The notion of a job for life has disappeared.
+obstacle | n | 障害 | something that blocks progress | Lack of money is the main obstacle to growth.
+outcome | n | 結果 | a result | The outcome of the vote was unexpected.
+perspective | n | 観点、見方 | a way of thinking about something | From a business perspective, the plan makes sense.
+phenomenon | n | 現象（複数形 phenomena） | something that happens or exists | Climate migration is a growing phenomenon.
+principle | n | 原理、原則 | a basic rule or belief | The system is based on the principle of fairness.
+priority | n | 優先事項 | something more important than others | Safety is our top priority.
+procedure | n | 手順 | an official way of doing something | Follow the correct procedure in an emergency.
+process | n | 過程 | a series of actions | Learning a language is a slow process.
+proportion | n | 割合 | a part of a whole | A large proportion of students live at home.
+rationale | n | 根拠、理由づけ | the reasons for a decision | The rationale for the tax is to reduce sugar intake.
+scope | n | 範囲、余地 | the range covered, or the chance to do something | There is scope for improvement.
+sector | n | 部門、分野 | a part of the economy | The service sector employs most people.
+significance | n | 重要性、意義 | importance | Few realised the significance of the discovery.
+source | n | 源、出どころ | where something comes from | Tourism is the main source of income.
+strategy | n | 戦略 | a plan to achieve a goal | The company needs a long-term strategy.
+structure | n | 構造 | the way parts are arranged | The structure of the essay should be clear.
+tendency | n | 傾向 | a likelihood to behave in a certain way | There is a tendency to blame young people.
+theory | n | 理論 | a set of ideas to explain something | Darwin's theory of evolution changed science.
+trend | n | 傾向、流行 | a general direction of change | There is a trend towards smaller families.
+validity | n | 妥当性 | how true or reasonable something is | Critics questioned the validity of the survey.
+variable | n | 変数、変わる要素 | something that can change | Age and income were key variables in the study.
+contribution | n | 貢献 | something that helps achieve a result | Immigrants make a large contribution to the economy.
+correlation | n | 相関 | a connection between two things | There is a strong correlation between smoking and cancer.
+assessment | n | 評価 | a judgement of quality or value | The assessment includes an exam and a project.
+analysis | n | 分析（複数形 analyses） | a detailed examination | A careful analysis of the data is needed.
+interpretation | n | 解釈 | an explanation of meaning | The law is open to interpretation.
+justification | n | 正当な理由 | a good reason | There is no justification for violence.
+limitation | n | 限界、制約 | a weakness or limit | One limitation of the study is its small sample.
+alternative | n | 代わりのもの、選択肢 | another possibility | Public transport offers an alternative to driving.
+dilemma | n | 板挟み、ジレンマ | a difficult choice | Doctors often face ethical dilemmas.
+controversy | n | 論争 | public disagreement | The new law caused controversy.
+consensus | n | 合意、一致した意見 | general agreement | There is a scientific consensus on climate change.
+debate | n | 議論 | a discussion of different views | The debate over nuclear power continues.
+viewpoint | n | 観点 | a way of looking at something | Consider the issue from the farmer's viewpoint.
+standpoint | n | 立場 | a point of view | From an environmental standpoint, cycling is best.
+argument | n | 主張、論拠 | a reason for or against something | There is a strong argument for free education.
+counterargument | n | 反論 | an argument against another argument | A good essay considers the counterargument.
+objective | n | 目的、目標 | an aim | The main objective is to cut costs.
+purpose | n | 目的 | the reason for doing something | The purpose of the survey is to understand needs.
+means | n | 手段（単数・複数同形） | a way of achieving something | Education is a means of escaping poverty.
+measure | n | 対策、尺度 | an action taken to deal with something | The government introduced measures to reduce traffic.
+solution | n | 解決策 | a way to solve a problem | There is no simple solution to poverty.
+remedy | n | 解決策、治療 | a way to fix a problem | Training is a remedy for the skills shortage.
+challenge | n | 課題、難題 | something difficult to do | Climate change is the greatest challenge of our time.
+constraint | n | 制約 | a limit | Time constraints make it hard to study.
+burden | n | 負担 | a heavy duty or responsibility | Care for the elderly is a burden on families.
+threat | n | 脅威 | a danger | Plastic is a threat to marine life.
+risk | n | 危険、リスク | the chance of something bad happening | Smoking increases the risk of cancer.
+opportunity | n | 機会 | a chance to do something | The internet creates new opportunities for business.
+potential | n | 可能性、潜在力 | ability to develop in the future | Solar power has huge potential.
+advantage | n | 利点 | something that helps | One advantage of city life is convenience.
+merit | n | 長所、価値 | a good quality | Both plans have their merits.
+pros and cons | phr | 良い点と悪い点 | advantages and disadvantages | Let us consider the pros and cons of homeschooling.
+impact | n | 影響、衝撃 | a strong effect | Social media has a huge impact on young people.
+influence | n | 影響（力） | the power to affect someone | Parents have a strong influence on children.
+effect | n | 影響、効果 | a result or change | The medicine had no effect.
+cause | n | 原因 | something that makes something happen | Smoking is the main cause of lung cancer.
+origin | n | 起源 | where something begins | The origin of the custom is unclear.
+reason | n | 理由 | why something happens | There are several reasons for this trend.
+motive | n | 動機 | a reason for doing something | Profit is the main motive for the change.
+attitude | n | 態度、考え方 | a way of thinking or feeling | Attitudes towards marriage have changed.
+belief | n | 信念、考え | something you think is true | It is a common belief that money brings happiness.
+awareness | n | 意識、認識 | knowledge of a situation | Public awareness of plastic waste has grown.
+perception | n | 認識、受け止め方 | the way something is understood | There is a perception that cities are unsafe.
+prejudice | n | 偏見 | an unfair opinion formed without knowledge | Prejudice against older workers is common.
+stereotype | n | 固定観念 | a fixed, oversimplified idea | The film challenges gender stereotypes.
+bias | n | 偏り | an unfair preference | The survey shows a bias towards urban areas.
+norm | n | 標準、規範 | what is usual or expected | Working from home has become the norm.
+value | n | 価値（観） | importance, or principles | Family values are important in many cultures.
+priority area | phr | 重点分野 | an area given special importance | Health is a priority area for funding.
+consideration | n | 考慮、考慮すべき点 | careful thought, or a factor | Cost is an important consideration.
+distinction | n | 区別、違い | a difference | There is a clear distinction between the two groups.
+similarity | n | 類似点 | a way things are alike | There are similarities between the two languages.
+discrepancy | n | 食い違い | a difference that should not exist | There is a discrepancy between the two reports.
+exception | n | 例外 | something not following the rule | With few exceptions, the students passed.
+instance | n | 例、場合 | an example | In many instances, the cost is too high.
+scenario | n | 想定、筋書き | a possible situation | In the worst-case scenario, the company will close.
+sequence | n | 順序、連続 | an order of events | The events happened in a strange sequence.
+stage | n | 段階 | a step in a process | The project is at an early stage.
+phase | n | 段階、局面 | a period in a process | The first phase of the plan is complete.
+extent | n | 程度、範囲 | the degree or size of something | To what extent do you agree?
+degree | n | 程度、学位 | amount, or a university qualification | There is a high degree of risk.

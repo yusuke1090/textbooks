@@ -1,0 +1,49 @@
+# エネルギーと資源 | Energy and resources
+renewable energy | phr | 再生可能エネルギー | energy from sun, wind and so on | Renewable energy now supplies a third of the country's power.
+solar power | phr | 太陽光発電 | electricity from sunlight | Solar power is cheap in sunny regions.
+solar panel | phr | ソーラーパネル | a panel that turns sunlight into electricity | Many farms have solar panels on their barns.
+wind farm | phr | 風力発電所 | a group of wind turbines | An offshore wind farm was built in the North Sea.
+wind turbine | phr | 風車、風力タービン | a machine that makes electricity from wind | Some people dislike the look of wind turbines.
+hydroelectric | adj | 水力発電の | producing electricity from flowing water | Norway gets most of its power from hydroelectric plants.
+geothermal | adj | 地熱の | using heat from inside the earth | Iceland uses geothermal energy for heating.
+nuclear power | phr | 原子力 | energy from splitting atoms | Nuclear power produces little carbon but creates waste.
+nuclear waste | phr | 核廃棄物 | dangerous material left by nuclear power | Nuclear waste must be stored for thousands of years.
+biofuel | n | バイオ燃料 | fuel made from plants or waste | Biofuels compete with food crops for land.
+biogas | n | バイオガス | gas produced from manure or food waste | The dairy farm turns manure into biogas.
+coal | n | 石炭 | a black fossil fuel | Britain closed its last coal power station in 2024.
+crude oil | phr | 原油 | oil before it is refined | The price of crude oil rose sharply.
+natural gas | phr | 天然ガス | gas used as fuel | Many homes are heated by natural gas.
+power station | phr | 発電所 | a place that produces electricity | The power station supplies the whole city.
+power grid | phr | 送電網 | the network that carries electricity | The power grid must handle more solar energy.
+power cut | phr | 停電 | a time when electricity stops | Power cuts stop milk cooling tanks.
+energy efficiency | phr | エネルギー効率 | using less energy for the same result | Better insulation improves energy efficiency.
+insulation | n | 断熱 | material that keeps heat in | Good insulation reduces heating bills.
+energy-saving | adj | 省エネの | using less energy | Energy-saving bulbs last longer.
+consume | v | 消費する | use up | Data centres consume huge amounts of electricity.
+generate electricity | phr | 発電する | produce electricity | The dam generates electricity for two cities.
+supply | n | 供給 | an amount available for use | Demand for energy exceeds supply.
+demand | n | 需要 | the amount people want | Energy demand peaks in winter.
+shortage | n | 不足 | not enough of something | Fuel shortages caused long queues.
+reserves | n | 埋蔵量、蓄え | amounts kept or still in the ground | The country has large oil reserves.
+finite | adj | 有限の | limited, will run out | Fossil fuels are a finite resource.
+infinite | adj | 無限の | without limit | Sunlight is an almost infinite source of energy.
+non-renewable | adj | 再生できない | cannot be replaced once used | Coal is a non-renewable resource.
+raw material | phr | 原料 | basic material used to make products | Rising prices of raw materials hurt factories.
+natural resources | phr | 天然資源 | materials found in nature | The country is rich in natural resources.
+mineral | n | 鉱物 | a natural substance from the ground | Phones contain rare minerals.
+mining | n | 採掘、鉱業 | digging minerals from the ground | Mining causes serious environmental damage.
+extract | v | 採取する、抽出する | take out | Oil is extracted from under the sea.
+refine | v | 精製する | make pure | Crude oil is refined into petrol.
+battery storage | phr | 蓄電 | storing electricity in batteries | Battery storage helps balance solar power.
+electric vehicle | phr | 電気自動車 | a car that runs on electricity | Sales of electric vehicles are rising fast.
+charging point | phr | 充電スタンド | a place to charge an electric car | There are too few charging points in rural areas.
+energy bill | phr | 光熱費の請求 | the cost of energy used at home | Energy bills doubled in 2022.
+fuel poverty | phr | 燃料貧困 | being unable to afford to heat your home | Fuel poverty is common among older people.
+subsidy | n | 補助金 | money from the government to lower costs | Subsidies helped farmers install solar panels.
+phase out | pv | 段階的に廃止する | stop using gradually | The government will phase out petrol cars.
+switch to | phr | 〜に切り替える | change to | Many families have switched to green energy.
+harness | v | 利用する（自然の力を） | control and use natural energy | Dams harness the power of rivers.
+intermittent | adj | 断続的な | stopping and starting | Wind power is intermittent.
+self-sufficient | adj | 自給自足の | able to supply your own needs | The farm is self-sufficient in energy.
+carbon capture | phr | 炭素回収 | trapping CO₂ before it enters the air | Carbon capture is still expensive.
+emission-free | adj | 排出のない | producing no harmful gases | Electric buses are emission-free on the street.

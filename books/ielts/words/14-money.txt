@@ -1,0 +1,50 @@
+# お金と暮らし | Money and daily life
+afford | v | 買う余裕がある | have enough money for | Many young people cannot afford a house.
+affordable housing | phr | 手ごろな値段の住宅 | homes people can pay for | Young people struggle to find affordable housing.
+expense | n | 費用、出費 | money spent on something | Childcare is a major expense.
+expensive | adj | 高価な | costing a lot | Living in London is expensive.
+costly | adj | 費用のかかる、高くつく | expensive, or causing loss | Mistakes can be costly.
+inexpensive | adj | 安い | not costing much | Public transport is inexpensive here.
+bargain | n | お買い得品 | something bought cheaply | The jacket was a real bargain.
+discount | n | 割引 | a lower price | Students get a 10% discount.
+savings | n | 貯金 | money kept for the future | She spent her savings on a car.
+save up | pv | お金をためる | keep money for something | He is saving up for a trip.
+budgeting | n | 家計の管理 | planning how to spend money | Budgeting helps families avoid debt.
+loan | n | ローン、借りたお金 | money borrowed | She took out a loan to buy a car.
+mortgage | n | 住宅ローン | a loan to buy a home | They pay their mortgage every month.
+borrow | v | 借りる | take money that must be returned | Students borrow money for their fees.
+lend | v | 貸す | give money that must be returned | Banks are less willing to lend.
+credit card | phr | クレジットカード | a card for buying now and paying later | Credit card debt is rising.
+in debt | phr | 借金をしている | owing money | Many graduates are in debt.
+tax | n | 税金 | money paid to the government | Income tax pays for public services.
+taxpayer | n | 納税者 | a person who pays tax | Taxpayers fund the health service.
+taxation | n | 課税 | the system of taxes | Higher taxation could pay for better schools.
+welfare | n | 福祉、生活保護 | government help for people in need | The welfare system supports the unemployed.
+benefits | n | 給付金、手当 | money from the government | People who lose their jobs can claim benefits.
+allowance | n | 手当、小遣い | money given regularly | Parents give children a weekly allowance.
+charity | n | 慈善団体、寄付 | an organisation that helps people in need | She gives money to a children's charity.
+donation | n | 寄付 | money given to help | Donations paid for the new hospital wing.
+fund | v | 資金を出す | provide money for | The government funds research.
+fundraising | n | 資金集め | collecting money for a cause | The school organised a fundraising event.
+currency | n | 通貨 | the money of a country | The yen is Japan's currency.
+exchange rate | phr | 為替レート | the value of one currency in another | The weak exchange rate made imports expensive.
+cash | n | 現金 | money in notes and coins | Fewer people carry cash.
+transaction | n | 取引、決済 | a payment or transfer | Most transactions are now digital.
+online banking | phr | ネットバンキング | managing your bank account online | Online banking means we no longer have to queue at a bank.
+consumer goods | phr | 消費財 | products bought by people for personal use | Prices of consumer goods have risen.
+luxury | n | ぜいたく品 | something expensive but not necessary | A car is a luxury for many families.
+necessity | n | 必需品 | something you need | Heating is a necessity, not a luxury.
+materialistic | adj | 物質主義の | caring too much about possessions | Young people are often called materialistic.
+financial security | phr | 経済的な安定 | having enough money for the future | Many people want financial security more than adventure.
+low-income | adj | 低所得の | earning little money | Low-income families spend more of their income on food.
+high-income | adj | 高所得の | earning a lot | High-income countries produce more waste.
+the poor | phr | 貧しい人々 | poor people as a group | Rising prices hurt the poor most.
+the wealthy | phr | 裕福な人々 | rich people as a group | The wealthy should pay more tax.
+homeless | adj | 家のない | without a home | The number of homeless people has risen.
+pocket money | phr | お小遣い | money given to children | Children learn about money from pocket money.
+financial literacy | phr | お金の知識 | understanding how to manage money | Schools should teach financial literacy.
+insurance | n | 保険 | protection against financial loss | Crop insurance protects farmers from bad weather.
+invest | v | 投資する | put money in to make a profit | It is wise to invest for retirement.
+squander | v | 浪費する | waste money or chances | He squandered his savings on gambling.
+spending | n | 支出 | money spent | Public spending on transport has increased.
+price rise | phr | 値上がり | an increase in price | Price rises hit poorer families hardest.

@@ -1,0 +1,75 @@
+# 健康と医療 | Health and medicine
+healthcare | n | 医療、保健 | medical services | Healthcare is free in many European countries.
+healthcare system | phr | 医療制度 | the system of medical care | An ageing population puts pressure on the healthcare system.
+public health | phr | 公衆衛生 | the health of the population as a whole | Smoking is a major public health problem.
+life expectancy | phr | 平均寿命 | how long people live on average | Life expectancy in Japan is among the highest in the world.
+mortality rate | phr | 死亡率 | the number of deaths in a group | Infant mortality rates have fallen.
+illness | n | 病気 | being sick | He missed work due to illness.
+disease | n | 病気（特定の） | an illness with known symptoms | Heart disease is a leading cause of death.
+chronic | adj | 慢性の | lasting a long time | Diabetes is a chronic condition.
+acute | adj | 急性の | sudden and severe | She was taken to hospital with acute pain.
+infectious | adj | 感染性の | able to spread between people | Measles is highly infectious.
+contagious | adj | 伝染性の | spread by contact | The flu is very contagious.
+epidemic | n | 流行（病） | a disease spreading widely in one area | A cholera epidemic broke out.
+pandemic | n | 世界的な大流行 | a disease spreading worldwide | The pandemic changed how we work.
+outbreak | n | 発生、流行 | a sudden start of disease | An outbreak of food poisoning closed the school.
+symptom | n | 症状 | a sign of illness | Fever is a common symptom of flu.
+diagnose | v | 診断する | identify an illness | The doctor diagnosed diabetes.
+diagnosis | n | 診断 | identifying an illness | Early diagnosis saves lives.
+treatment | n | 治療 | medical care for an illness | The treatment lasts six weeks.
+cure | n | 治療法、治すこと | something that ends an illness | There is no cure for the common cold.
+therapy | n | 療法、治療 | treatment for illness | Physical therapy helped her walk again.
+medication | n | 薬、投薬 | medicine | He takes medication for high blood pressure.
+prescription | n | 処方箋 | a doctor's written order for medicine | Antibiotics are only available on prescription.
+antibiotic | n | 抗生物質 | a medicine that kills bacteria | Overuse of antibiotics creates resistant bacteria.
+vaccine | n | ワクチン | a substance that protects against disease | The vaccine is given to all children.
+vaccination | n | 予防接種 | giving a vaccine | Vaccination rates have fallen in some areas.
+immune system | phr | 免疫系 | the body's defence against disease | Sleep strengthens the immune system.
+immunity | n | 免疫 | protection from disease | Calves get immunity from colostrum.
+surgery | n | 手術 | an operation on the body | She needed surgery on her knee.
+patient | n | 患者 | a person receiving medical care | The patient recovered quickly.
+recover | v | 回復する | get better | It took weeks to recover from the illness.
+recovery | n | 回復 | getting better | He made a full recovery.
+preventive medicine | phr | 予防医療 | stopping illness before it starts | Investing in preventive medicine reduces long-term costs.
+prevention | n | 予防 | stopping something from happening | Prevention is better than cure.
+check-up | n | 健康診断 | a medical examination | Have a check-up once a year.
+obesity | n | 肥満 | being very overweight | Childhood obesity has risen in many countries.
+obese | adj | 肥満の | very overweight | Obese people are at greater risk of diabetes.
+overweight | adj | 太りすぎの | heavier than is healthy | A third of adults are overweight.
+diabetes | n | 糖尿病 | a disease with too much sugar in the blood | Type 2 diabetes is linked to diet.
+heart disease | phr | 心臓病 | illness of the heart | Exercise lowers the risk of heart disease.
+cancer | n | がん | a disease of uncontrolled cell growth | Smoking causes lung cancer.
+stroke | n | 脳卒中 | a sudden blockage of blood to the brain | High blood pressure can lead to a stroke.
+blood pressure | phr | 血圧 | the force of blood in the body | Salt raises blood pressure.
+sedentary lifestyle | phr | 座ってばかりの生活 | a life with a lot of sitting | A sedentary lifestyle increases the risk of heart disease.
+physical activity | phr | 運動 | moving the body | Adults need 150 minutes of physical activity a week.
+fitness | n | 体力、健康 | being physically fit | Swimming improves fitness.
+well-being | n | 健康、幸福 | being healthy and happy | Green spaces improve well-being.
+mental health | phr | 心の健康 | emotional and psychological health | Social media may harm young people's mental health.
+stress | n | ストレス | worry caused by pressure | Work stress can cause illness.
+anxiety | n | 不安 | a feeling of worry | Exams cause anxiety for many students.
+depression | n | うつ病、落ち込み | a mental illness of deep sadness | Depression affects millions of people.
+burnout | n | 燃え尽き | exhaustion from too much work | Many nurses suffer from burnout.
+addiction | n | 依存症 | being unable to stop using something | Gambling addiction ruins families.
+smoking | n | 喫煙 | using cigarettes | Smoking is banned in restaurants.
+alcohol consumption | phr | 飲酒量 | the amount of alcohol drunk | Alcohol consumption has fallen among young people.
+hygiene | n | 衛生 | keeping clean to prevent disease | Good hygiene stops the spread of germs.
+sanitation | n | 衛生設備（下水など） | systems for clean water and waste | Poor sanitation causes disease.
+nutrition | n | 栄養 | food needed for health | Good nutrition is vital for growing children.
+malnutrition | n | 栄養失調 | poor health from bad diet | Malnutrition stunts children's growth.
+balanced diet | phr | バランスのとれた食事 | eating the right mix of foods | A balanced diet includes plenty of fruit and vegetables.
+GP | n | かかりつけ医（一般開業医） | a general practitioner, a family doctor | See your GP if the pain continues.
+specialist | n | 専門医 | a doctor expert in one area | She was referred to a heart specialist.
+nurse | n | 看護師 | a person who cares for patients | There is a shortage of nurses.
+hospital | n | 病院 | a place for medical treatment | He was taken to hospital.
+clinic | n | 診療所 | a place for medical advice | The clinic offers free check-ups.
+emergency | n | 緊急事態 | a sudden dangerous situation | Call an ambulance in an emergency.
+waiting list | phr | 順番待ちの名簿 | a list of people waiting for treatment | Waiting lists for surgery are long.
+medical insurance | phr | 医療保険 | insurance that pays for medical care | Medical insurance is expensive in the USA.
+side effect | phr | 副作用 | an unwanted effect of a medicine | The drug has few side effects.
+dose | n | 服用量 | an amount of medicine | Take one dose every eight hours.
+pharmaceutical | adj | 製薬の | relating to medicines | Pharmaceutical companies earn huge profits.
+ageing | n | 老化、高齢化 | growing old | Exercise slows the effects of ageing.
+disability | n | 障害 | a condition that limits activity | Buildings must be accessible to people with disabilities.
+injury | n | けが | physical harm | Sports injuries are common among teenagers.
+epidemiology | n | 疫学 | the study of how diseases spread | Epidemiology helps us plan for pandemics.

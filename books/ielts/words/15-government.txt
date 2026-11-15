@@ -1,0 +1,87 @@
+# 政治・法律・犯罪 | Government, law and crime
+government | n | 政府 | the group that runs a country | The government announced new taxes.
+authority | n | 当局、権限 | an official organisation, or power | Local authorities run the schools.
+policy | n | 政策、方針 | a plan of action by a government or organisation | The policy aims to reduce waste.
+legislation | n | 法律（全体）、立法 | laws | New legislation protects workers' rights.
+law | n | 法律 | a rule made by government | The law bans smoking indoors.
+enforce | v | 施行する、取り締まる | make people obey | The police enforce speed limits.
+ban | v | 禁止する | officially forbid | Many cities have banned diesel cars.
+impose | v | 課す | force something on people | The government imposed a tax on sugar.
+introduce | v | 導入する | bring in for the first time | The city introduced a congestion charge.
+abolish | v | 廃止する | officially end | The death penalty was abolished in 1965.
+reform | n | 改革 | a change to improve a system | Education reform is long overdue.
+democracy | n | 民主主義 | government by the people | Free elections are the basis of democracy.
+democratic | adj | 民主的な | relating to democracy | Japan is a democratic country.
+election | n | 選挙 | a vote to choose leaders | The election will be held in July.
+vote | v | 投票する | choose in an election | Young people are less likely to vote.
+voter | n | 有権者、投票者 | a person who votes | Voters are worried about prices.
+politician | n | 政治家 | a person in politics | Politicians often make promises they cannot keep.
+parliament | n | 議会 | the group that makes laws | Parliament passed the new law.
+minister | n | 大臣 | a senior member of government | The health minister resigned.
+citizen | n | 市民、国民 | a member of a country | Citizens have the right to vote.
+citizenship | n | 市民権、国籍 | being a citizen | He applied for British citizenship.
+rights | n | 権利 | what people are allowed by law | Workers' rights must be protected.
+human rights | phr | 人権 | basic rights of every person | The UN protects human rights.
+freedom of speech | phr | 言論の自由 | the right to say what you think | Freedom of speech is a basic right.
+censorship | n | 検閲 | controlling what people can say or read | Internet censorship is strict in some countries.
+public service | phr | 公共サービス | a service provided by the government | Taxes pay for public services.
+public funding | phr | 公的資金 | money from the government | Museums rely on public funding.
+bureaucracy | n | 官僚制、お役所仕事 | complicated official rules | Farmers complain about bureaucracy.
+corruption | n | 汚職 | dishonest use of power | Corruption undermines trust in government.
+transparency | n | 透明性 | being open and honest | Voters demand greater transparency.
+accountable | adj | 責任がある、説明責任がある | responsible for explaining actions | Politicians must be accountable to voters.
+intervene | v | 介入する | become involved to change a situation | The government intervened to support farmers.
+intervention | n | 介入 | action to change a situation | Early intervention helps struggling pupils.
+subsidise | v | 補助金を出す | pay part of the cost | The state subsidises public transport.
+crime | n | 犯罪 | an illegal act | Crime has fallen in the city.
+crime rate | phr | 犯罪率 | the amount of crime | The crime rate is higher in cities.
+criminal | n | 犯罪者 | a person who commits a crime | Criminals use the internet to steal money.
+offence | n | 違反、犯罪 | an illegal act | Drink driving is a serious offence.
+offender | n | 違反者、犯罪者 | a person who breaks the law | Young offenders need education.
+commit | v | 犯す（罪を） | do something wrong or illegal | Most crimes are committed by young men.
+violent crime | phr | 暴力犯罪 | crime involving force | Violent crime has fallen.
+theft | n | 窃盗 | stealing | Bicycle theft is common in the city.
+burglary | n | 住居侵入、強盗 | breaking into a building to steal | Burglary rates are higher in winter.
+vandalism | n | 破壊行為 | damaging property on purpose | Vandalism costs the city a lot.
+fraud | n | 詐欺 | cheating to get money | Online fraud is increasing.
+punishment | n | 罰 | a penalty for doing wrong | The punishment should fit the crime.
+penalty | n | 罰、罰金 | a punishment | The penalty for littering is a fine.
+fine | n | 罰金 | money paid as a punishment | He received a fine for speeding.
+prison | n | 刑務所 | a place where criminals are kept | He was sent to prison for five years.
+sentence | n | 判決、刑 | a punishment given by a court | She received a two-year sentence.
+imprisonment | n | 投獄 | being kept in prison | The crime carries a penalty of life imprisonment.
+rehabilitation | n | 社会復帰、更生 | helping someone return to normal life | Prisons should focus on rehabilitation.
+reoffend | v | 再犯する | commit another crime | Many prisoners reoffend after release.
+deterrent | n | 抑止するもの | something that discourages action | Long sentences act as a deterrent.
+deter | v | 思いとどまらせる | discourage | Cameras deter crime.
+community service | phr | 社会奉仕（刑罰としての） | unpaid work as a punishment | He was given 100 hours of community service.
+court | n | 裁判所 | a place where legal cases are decided | The case went to court.
+trial | n | 裁判 | a legal examination of a case | The trial lasted three weeks.
+judge | n | 裁判官 | a person who decides legal cases | The judge sentenced him to prison.
+jury | n | 陪審員団 | citizens who decide guilt in a trial | The jury found him guilty.
+lawyer | n | 弁護士 | a person who practises law | You should speak to a lawyer.
+guilty | adj | 有罪の | having done wrong | He was found guilty of fraud.
+innocent | adj | 無罪の、罪のない | not guilty | She claimed she was innocent.
+legal | adj | 合法の、法律の | allowed by law | Is it legal to fly drones here?
+illegal | adj | 違法の | not allowed by law | It is illegal to sell alcohol to children.
+police | n | 警察 | the organisation that enforces the law | The police arrested two men.
+arrest | v | 逮捕する | take a person into police custody | The thief was arrested at the station.
+security | n | 安全、警備 | protection from danger | Airport security has been tightened.
+surveillance camera | phr | 監視カメラ | a camera that watches public places | Surveillance cameras reduce crime.
+terrorism | n | テロ | violence for political aims | Terrorism is a global threat.
+war | n | 戦争 | armed conflict between countries | The war destroyed the country's farms.
+conflict | n | 紛争、対立 | a serious disagreement or fighting | The conflict forced people to flee.
+peace | n | 平和 | no war | Both sides signed a peace agreement.
+refugee | n | 難民 | a person forced to leave their country | The country accepted thousands of refugees.
+asylum | n | 亡命、保護 | protection given to refugees | He applied for asylum.
+immigration | n | 移民（入ってくること） | people coming to live in a country | Immigration is a political issue.
+immigrant | n | 移民（人） | a person who moves to a country | Immigrants fill many jobs.
+emigrate | v | 移住する（国外へ） | leave your country to live elsewhere | Many young people emigrate for work.
+border | n | 国境 | the line between countries | Trucks waited at the border.
+foreign aid | phr | 対外援助 | help given to other countries | Foreign aid supports farming in Africa.
+international cooperation | phr | 国際協力 | countries working together | Climate change needs international cooperation.
+diplomacy | n | 外交 | managing relations between countries | The crisis was solved through diplomacy.
+sanction | n | 制裁 | a penalty against a country | Sanctions were placed on the regime.
+national security | phr | 国家の安全保障 | protecting a country | The law was passed for national security.
+legal system | phr | 法制度 | the system of laws and courts | The legal system is slow.
+law-abiding | adj | 法を守る | obeying the law | Most citizens are law-abiding.

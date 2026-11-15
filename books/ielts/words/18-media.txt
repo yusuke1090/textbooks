@@ -1,0 +1,51 @@
+# メディアと広告 | Media and advertising
+media | n | メディア、報道機関 | TV, newspapers, the internet and so on | The media has a strong influence on opinion.
+mass media | phr | マスメディア | media that reach many people | The mass media shapes public opinion.
+journalism | n | 報道、ジャーナリズム | the work of collecting and reporting news | Good journalism holds the powerful to account.
+journalist | n | 記者 | a person who writes news | Journalists must check their facts.
+press | n | 新聞、報道陣 | newspapers and journalists | The press reported the scandal.
+broadcast | v | 放送する | send out on TV or radio | The match was broadcast live.
+coverage | n | 報道（量） | reporting of an event | The election received wide coverage.
+headline | n | 見出し | the title of a news story | The headline was misleading.
+article | n | 記事 | a piece of writing in a newspaper | I read an article about farming.
+editor | n | 編集者 | a person who prepares content for publishing | The editor checked the story.
+publication | n | 出版物、発表 | a book or magazine, or making something public | The publication of the report was delayed.
+readership | n | 読者（数） | the people who read a newspaper | Newspaper readership is declining.
+audience | n | 聴衆、視聴者 | people who watch or listen | The show attracts a young audience.
+viewer | n | 視聴者 | a person who watches TV | The programme had ten million viewers.
+documentary | n | ドキュメンタリー | a factual film or TV programme | The documentary showed the effects of plastic.
+current affairs | phr | 時事問題 | important events happening now | Students should follow current affairs.
+tabloid | n | 大衆紙 | a newspaper with short, sensational stories | Tabloids focus on celebrities.
+sensational | adj | 扇情的な | exciting in a cheap way | The story was sensational and inaccurate.
+biased | adj | 偏った | unfair because of a preference | Some news channels are biased.
+objective | adj | 客観的な | not influenced by feelings | Reporters should be objective.
+impartial | adj | 公平な | not supporting one side | The BBC must be impartial.
+reliable source | phr | 信頼できる情報源 | a trustworthy origin of information | Check that the news comes from a reliable source.
+misleading | adj | 誤解を招く | giving the wrong idea | The advert was misleading.
+privacy | n | プライバシー | being free from public attention | Celebrities have little privacy.
+celebrity | n | 有名人 | a famous person | Celebrities endorse many products.
+influencer | n | インフルエンサー | a person who affects others' opinions online | Influencers promote products on social media.
+go viral | phr | 一気に広まる（ネットで） | spread very quickly online | The video went viral overnight.
+follower | n | フォロワー | a person who follows an account | She has a million followers.
+content | n | 内容、コンテンツ | material such as text or video | Users create most of the content.
+advertisement | n | 広告 | a notice promoting a product | The advertisement appeared on TV.
+advertising | n | 広告（業） | the business of promoting products | Advertising aimed at children should be banned.
+commercial | n | コマーシャル | an advertisement on TV or radio | The commercial was shown during the match.
+slogan | n | 標語 | a short memorable phrase | The company changed its slogan.
+target audience | phr | 対象とする客層 | the people a product is aimed at | Teenagers are the target audience.
+persuade | v | 説得する | make someone do or believe something | Adverts persuade us to buy things we do not need.
+manipulate | v | 操る | control unfairly | Some adverts manipulate children.
+endorse | v | 推薦する、宣伝する | publicly support a product | Athletes endorse sports drinks.
+sponsor | v | 後援する、スポンサーになる | pay for an event in return for advertising | A bank sponsors the football team.
+promotion campaign | phr | 販売促進活動 | organised advertising for a product | The promotion campaign increased sales.
+consumer culture | phr | 消費文化 | a society focused on buying | Advertising feeds consumer culture.
+press freedom | phr | 報道の自由 | the right of the media to report freely | Press freedom is essential in a democracy.
+propaganda | n | 宣伝（政治的） | information used to promote a political view | The regime uses propaganda.
+news outlet | phr | 報道機関 | an organisation that publishes news | Many news outlets are online only.
+subscription | n | 定期購読 | regular payment for a service | Many newspapers now charge for a subscription.
+podcast | n | ポッドキャスト | an audio programme online | I listen to a farming podcast.
+print media | phr | 印刷媒体 | newspapers and magazines | Print media is losing readers.
+digital media | phr | デジタルメディア | media on the internet | Digital media has overtaken TV.
+information overload | phr | 情報過多 | too much information to deal with | Social media causes information overload.
+echo chamber | phr | エコーチェンバー（同じ意見ばかりの環境） | a place where people only hear views they agree with | Social media can become an echo chamber.
+fact-check | v | 事実を確認する | check that information is true | Journalists fact-check claims made by politicians.

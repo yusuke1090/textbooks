@@ -1,0 +1,84 @@
+# 教育と学び | Education and learning
+curriculum | n | 教育課程、カリキュラム | the subjects taught at a school | Coding is now part of the school curriculum.
+syllabus | n | 授業の内容の計画、シラバス | the topics in a course | The syllabus covers modern history.
+tuition fees | phr | 授業料 | money paid for teaching | Rising tuition fees discourage some students from applying.
+scholarship | n | 奨学金 | money given to a student for study | She won a scholarship to study abroad.
+student loan | phr | 学生ローン | money borrowed to pay for study | Many graduates struggle to repay their student loans.
+undergraduate | n | 学部生 | a university student studying for a first degree | Undergraduates must complete a final project.
+postgraduate | n | 大学院生 | a student studying after a first degree | Postgraduates often work as teaching assistants.
+graduate | n | 卒業生 | a person who has finished a degree | Many graduates cannot find suitable jobs.
+qualification | n | 資格 | an official record of skills | Employers value practical qualifications.
+diploma | n | 修了証書 | a certificate for finishing a course | He received a diploma in nursing.
+vocational training | phr | 職業訓練 | training for a particular job | Vocational training prepares young people for skilled jobs.
+apprenticeship | n | 見習い制度、徒弟制度 | training on the job with a skilled worker | He did an apprenticeship as an electrician.
+academic | adj | 学業の、学問的な | relating to education and study | Sleep affects academic performance.
+academic performance | phr | 学業成績 | results at school or university | Sleep has a strong effect on academic performance.
+critical thinking | phr | 批判的に考える力 | judging ideas carefully | Group projects help students develop critical thinking.
+rote learning | phr | 丸暗記の学習 | learning by repetition | Rote learning rarely leads to deep understanding.
+memorise | v | 暗記する | learn by heart | Students memorise lists of vocabulary.
+literacy | n | 読み書きの力 | the ability to read and write | Adult literacy has improved in many developing countries.
+numeracy | n | 計算の力 | the ability to use numbers | Numeracy is essential for everyday life.
+illiterate | adj | 読み書きができない | unable to read or write | Millions of adults are still illiterate.
+lifelong learning | phr | 生涯学習 | learning throughout life | Online courses make lifelong learning easier.
+distance learning | phr | 通信教育、遠隔学習 | studying away from the school, often online | Distance learning suits people with jobs.
+e-learning | n | オンライン学習 | learning using the internet | E-learning grew rapidly during the pandemic.
+tutor | n | 個別指導の先生、チューター | a teacher of a small group or one student | Each student meets a tutor once a week.
+lecturer | n | 大学の講師 | a university teacher | The lecturer explained the theory clearly.
+mentor | n | 指導者、助言者 | an experienced person who advises | New teachers are given a mentor.
+pupil | n | 生徒（主に小中学生） | a child at school | The school has 500 pupils.
+enrol | v | 入学する、登録する | officially join a course | She enrolled in an evening class.
+enrolment | n | 入学、登録者数 | the number of people joining a course | Enrolment in science courses has fallen.
+attendance | n | 出席 | being present | Attendance at lectures is compulsory.
+truancy | n | 無断欠席、ずる休み | staying away from school without permission | Truancy is linked to poor results.
+drop out | pv | 中退する | leave a course before finishing | Some students drop out after the first year.
+dropout rate | phr | 中退率 | the share of students who leave early | The dropout rate is highest in the first year.
+assignment | n | 課題 | a piece of work given to a student | The assignment is due on Friday.
+coursework | n | 授業の課題（成績に入るもの） | work done during a course that is assessed | Coursework counts for 40% of the final mark.
+dissertation | n | 学位論文 | a long piece of writing for a degree | He is writing his dissertation on soil science.
+thesis | n | 論文、主張 | a long research paper, or a main argument | Her thesis examines rural migration.
+plagiarism | n | 盗用、剽窃 | copying someone else's work | Plagiarism can lead to expulsion.
+standardised test | phr | 統一テスト | a test given to all students in the same way | Standardised tests measure only some skills.
+grade | n | 成績、学年 | a mark, or a year at school | She got good grades in maths.
+discipline | n | しつけ、規律、学問分野 | control of behaviour, or a subject | Teachers struggle to maintain discipline.
+extracurricular | adj | 課外の | outside the normal timetable | Extracurricular activities build confidence.
+peer pressure | phr | 仲間からの圧力 | influence from people of your age | Peer pressure affects teenagers' choices.
+bullying | n | いじめ | repeatedly hurting or frightening someone | The school has a strict policy on bullying.
+gifted | adj | 才能に恵まれた | very intelligent or talented | Gifted children need extra challenges.
+special needs | phr | 特別な支援が必要なこと | needs of pupils with learning difficulties | Teachers need training in special needs.
+mixed-ability | adj | 能力の異なる生徒が一緒の | containing pupils of different levels | Mixed-ability classes are harder to teach.
+single-sex school | phr | 男子校・女子校 | a school for only boys or only girls | Some parents prefer single-sex schools.
+co-educational | adj | 共学の | for boys and girls together | Most state schools are co-educational.
+state school | phr | 公立学校 | a school paid for by the government | Most children attend state schools.
+boarding school | phr | 寄宿学校 | a school where students live | He went to boarding school at eleven.
+higher education | phr | 高等教育 | university-level education | Access to higher education has widened.
+tertiary education | phr | 高等教育（大学など） | education after secondary school | Tertiary education is expensive in many countries.
+primary education | phr | 初等教育 | education for young children | Primary education is free in most countries.
+secondary education | phr | 中等教育 | education for teenagers | Secondary education lasts six years.
+compulsory education | phr | 義務教育 | education required by law | Compulsory education ends at fifteen.
+early childhood education | phr | 幼児教育 | education before primary school | Early childhood education improves later results.
+homeschooling | n | 家庭での教育 | teaching children at home | Homeschooling has become more popular.
+literate | adj | 読み書きができる | able to read and write | A literate population supports economic growth.
+skill | n | 技能 | the ability to do something well | Employers want communication skills.
+competence | n | 能力、適性 | the ability to do something well | Teachers need digital competence.
+proficiency | n | 熟達 | a high level of skill | Proficiency in English is required.
+expertise | n | 専門知識 | special skill or knowledge | The project needs technical expertise.
+knowledge | n | 知識 | information and understanding | Practical knowledge is as valuable as theory.
+theoretical | adj | 理論的な | based on ideas, not practice | The course is too theoretical.
+hands-on | adj | 実地の、体験的な | involving doing things yourself | Hands-on learning keeps children interested.
+interactive | adj | 双方向の | involving communication between people or with a computer | Interactive lessons keep students engaged.
+motivate | v | やる気を起こさせる | make someone want to do something | Good teachers motivate their students.
+motivation | n | やる気、動機 | the desire to do something | Lack of motivation is a common problem.
+engage | v | 引きつける、参加させる | attract and keep interest | Games can engage reluctant learners.
+concentrate | v | 集中する | give all your attention to | It is hard to concentrate in a noisy room.
+revise | v | 復習する、見直す | study again before an exam | She is revising for her exams.
+cram | v | 詰め込み勉強をする | study a lot in a short time | Many students cram the night before an exam.
+fail | v | 不合格になる、失敗する | not pass | He failed his driving test twice.
+pass | v | 合格する | succeed in an exam | You need 50% to pass.
+excel | v | 秀でる | be very good at something | She excels at languages.
+gap year | phr | ギャップイヤー（入学前などの1年間の休み） | a year off between school and university | Many students travel during a gap year.
+study abroad | phr | 留学する | study in another country | Studying abroad helps students become independent.
+campus | n | キャンパス | the grounds of a university | The campus has a large library.
+faculty | n | 学部、教員全体 | a group of departments, or the teachers | She joined the Faculty of Agriculture.
+semester | n | 学期 | half of a school year | The semester starts in April.
+timetable | n | 時間割 | a list of class times | The timetable changes each term.
+term | n | 学期 | a period of the school year | The summer term ends in July.

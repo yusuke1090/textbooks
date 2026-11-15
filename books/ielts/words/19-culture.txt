@@ -1,0 +1,67 @@
+# 文化・芸術・旅行 | Culture, the arts and travel
+culture | n | 文化 | the customs and ideas of a society | Food is an important part of culture.
+the arts | phr | 芸術（全体） | painting, music, theatre and so on | Governments should fund the arts.
+artistic | adj | 芸術的な | relating to art | She has artistic talent.
+creativity | n | 創造性 | the ability to make new things | Art classes develop creativity.
+creative | adj | 創造的な | able to produce new ideas | Children are naturally creative.
+exhibition | n | 展示会 | a public show of art or objects | The museum has a new exhibition.
+gallery | n | 美術館、画廊 | a place to see art | The gallery is free to enter.
+museum | n | 博物館 | a place that keeps historical objects | Museums help us understand the past.
+masterpiece | n | 傑作 | an excellent work of art | The painting is a masterpiece.
+sculpture | n | 彫刻 | art made from stone, wood or metal | A bronze sculpture stands in the square.
+literature | n | 文学 | novels, poems and plays | Students study English literature.
+novel | n | 小説 | a long story in a book | She wrote her first novel at twenty.
+fiction | n | 小説、作り話 | stories about imaginary people | I prefer fiction to non-fiction.
+performance | n | 公演、成果 | a show, or how well something is done | The concert was a great performance.
+audience member | phr | 観客の一人 | a person watching a show | One audience member fainted.
+theatre | n | 劇場、演劇 | a place for plays, or drama | We went to the theatre last night.
+festival | n | 祭り | a public celebration | The village holds a summer festival.
+celebration | n | お祝い | a happy event | New Year celebrations last three days.
+ceremony | n | 式、儀式 | a formal event | The wedding ceremony was held outdoors.
+custom and tradition | phr | 慣習と伝統 | the established ways of a culture | Globalisation threatens local customs and traditions.
+cultural heritage | phr | 文化遺産 | traditions and buildings passed down | Festivals are part of our cultural heritage.
+preserve traditions | phr | 伝統を守る | keep customs alive | Communities try to preserve their traditions.
+folk | adj | 民間の、民族の | traditional to ordinary people | We heard traditional folk music.
+craft | n | 工芸 | making things by hand | Traditional crafts are disappearing.
+handmade | adj | 手作りの | made by hand | Handmade goods are more expensive.
+globalisation of culture | phr | 文化のグローバル化 | cultures becoming similar worldwide | The globalisation of culture threatens minority languages.
+cultural exchange | phr | 文化交流 | sharing culture between countries | Student exchanges encourage cultural exchange.
+tourism | n | 観光（業） | travel for pleasure, and its industry | Tourism is the island's main industry.
+tourist | n | 観光客 | a person travelling for pleasure | Tourists crowd the old town in summer.
+mass tourism | phr | 大衆観光 | tourism on a very large scale | Mass tourism damages fragile places.
+overtourism | n | 観光公害 | too many tourists in one place | Venice suffers from overtourism.
+ecotourism | n | エコツーリズム | tourism that protects nature | Ecotourism brings money to rural areas.
+tourist attraction | phr | 観光名所 | a place that attracts visitors | The castle is a popular tourist attraction.
+sightseeing | n | 観光、見物 | visiting interesting places | We spent the day sightseeing.
+itinerary | n | 旅程 | a plan of a journey | Our itinerary includes three cities.
+destination country | phr | 渡航先の国 | the country you travel to | Check the rules of your destination country.
+souvenir | n | 土産 | something bought to remember a place | I bought a souvenir for my mother.
+package holiday | phr | パック旅行 | a holiday with travel and hotel included | Package holidays are cheap.
+backpacker | n | バックパッカー | a person travelling cheaply with a backpack | Backpackers stay in hostels.
+hospitality | n | もてなし、接客業 | being welcoming, or the hotel industry | The hospitality industry employs many students.
+accommodation provider | phr | 宿泊施設の事業者 | a business offering places to stay | Accommodation providers raised prices.
+local economy | phr | 地域の経済 | the economy of an area | Tourism supports the local economy.
+authentic | adj | 本物の | real, not copied | Tourists want an authentic experience.
+exotic | adj | 異国風の | from a distant country | Exotic fruit is imported from Asia.
+broaden horizons | phr | 視野を広げる | learn about new things | Travel broadens your horizons.
+culture shock | phr | カルチャーショック | confusion in a new culture | She experienced culture shock in London.
+language barrier | phr | 言葉の壁 | difficulty communicating in another language | The language barrier made shopping hard.
+bilingual | adj | 2か国語を話す | speaking two languages | Many children here are bilingual.
+fluent | adj | 流暢な | speaking easily and well | He is fluent in English.
+mother tongue | phr | 母語 | the first language you learn | Her mother tongue is Swahili.
+dialect | n | 方言 | a local form of a language | The farmers speak a strong dialect.
+heritage site | phr | 遺産の地 | a place protected for its history | The town is a World Heritage Site.
+monument | n | 記念碑、遺跡 | a structure built to remember something | The monument honours soldiers.
+historical | adj | 歴史の | relating to history | The museum has many historical objects.
+ancient | adj | 古代の | very old | The ancient ruins attract tourists.
+archaeology | n | 考古学 | the study of ancient remains | Archaeology tells us how people lived.
+architect | n | 建築家 | a person who designs buildings | The architect designed a green building.
+classical music | phr | クラシック音楽 | serious music in a European tradition | She plays classical music on the piano.
+entertainment | n | 娯楽 | things that amuse people | TV is the main form of entertainment.
+leisure | n | 余暇 | free time | People have more leisure time than before.
+hobby | n | 趣味 | an activity done for pleasure | My hobby is gardening.
+pastime | n | 気晴らし、娯楽 | an activity done for fun | Fishing is a popular pastime.
+amateur | adj | アマチュアの | not paid, done for pleasure | He plays in an amateur band.
+cinema | n | 映画館、映画 | a place to watch films | Fewer people go to the cinema now.
+box office | phr | 興行成績、切符売り場 | ticket sales for films | The film was a box office hit.
+subtitles | n | 字幕 | text of what is said on screen | I watch films with subtitles.
