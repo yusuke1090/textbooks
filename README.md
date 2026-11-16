@@ -30,6 +30,25 @@
 - 目標に届くと、読む画面に 🎉 が出る（1日1回）
 - 記録は `textbooks-study`（日ごとの秒数・目標に届いた日・目標）と `textbooks-last`（最後に開いた本）。iPhone と PC では別々
 
+## スマホと PC で記録を合わせる（Google でログイン）
+
+本棚の右上の「☁ Google でログイン」でログインすると、勉強時間・連続日数・続きから・練習問題の結果・単語のチェック・付箋と線とメモ・今勉強中の並びを、スマホと PC で合わせる（Firebase の Authentication と Firestore。`sync.js`）。
+
+- 勉強時間は端末ごとに記録して足す（本棚の「今日の勉強」に「2台の合計」と出る）。ほかの記録は、あとで変えたほうを使う
+- ログインする前からその端末にあった記録は、最初のログインのときに、付箋・練習問題・単語のチェック・今勉強中の並びは足し合わせ、ほかはすでにあるほうを使う
+- 変えた記録は 8秒ごとと、ページを離れるときに送る。ほかの端末の変更は、すぐ届く（本棚は描き直す）
+- `firebase-config.js` が `null` のあいだは、ログインの欄を出さず、記録は今までどおり端末の中だけ
+
+### Firebase の設定（最初の1回、本人の Google アカウントで）
+
+1. https://console.firebase.google.com を開き、「プロジェクトを作成」。名前は `textbooks`、Google アナリティクスはオフでよい
+2. プロジェクトのトップで「ウェブ」（`</>`）のアイコンを押してアプリを追加。名前は `textbooks`、Firebase Hosting にはチェックしない。出てくる `firebaseConfig`（apiKey・authDomain・projectId・appId など）を写して Claude に渡す（公開してよい値。`firebase-config.js` に入れる）
+3. 左の「構築 → Authentication → 始める → Sign-in method」で **Google** を有効にする（サポート用のメールを選ぶ）
+4. Authentication の「設定 → 承認済みドメイン」に `yusuke1090.github.io` を足す
+5. 左の「構築 → Firestore Database → データベースを作成」。場所は `asia-northeast1`（東京）、本番環境モード。できたら「ルール」に `firestore.rules` の中身を貼って「公開」
+
+無料の範囲（1日に読み 5万回・書き 2万回）で足りる。記録は `users/{ログインした人}/kv/{キー}` に置き、ルールで本人だけが読み書きできる。
+
 ## 読む画面でできること
 
 - **目次**: 部ごとに章が並ぶ。章の ▶ で小見出しが開き、押すとその見出しの所へ移る

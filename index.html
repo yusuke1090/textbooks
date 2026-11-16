@@ -305,6 +305,17 @@ li > .sticky-bar { margin-top: 4px; }
 .notes .ap-del { border: 0; background: none; color: var(--muted); padding: 2px 10px; cursor: pointer; }
 .notes .ap-del:hover { color: var(--err); }
 .notes .empty { color: var(--muted); padding: 10px 14px; font-size: 13px; }
+/* ログイン（本棚の右上。sync.js が中身を作る） */
+.shelf-head .wrap { position: relative; }
+.acct { position: absolute; top: 18px; right: 16px; z-index: 20; }
+.acct-btn { display: inline-flex; align-items: center; gap: 6px; padding: 5px 12px; font: inherit; font-size: 13px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; }
+.acct-btn.on { color: var(--accent); border-color: var(--accent); }
+.acct-btn.err { color: var(--err); border-color: var(--err); }
+.acct-btn img { width: 22px; height: 22px; margin: -2px 0 -2px -6px; border-radius: 50%; }
+.acct-menu { position: absolute; right: 0; top: calc(100% + 6px); min-width: 220px; padding: 10px 12px; background: var(--panel); border: 1px solid var(--border); border-radius: 12px; box-shadow: 0 10px 30px rgba(0,0,0,.18); }
+.acct-menu p { margin: 0 0 4px; font-size: 13px; word-break: break-all; }
+.acct-menu p.m { color: var(--muted); font-size: 12px; }
+.acct-menu button { margin-top: 6px; padding: 5px 12px; font: inherit; font-size: 13px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 8px; cursor: pointer; }
 /* 今日の勉強（本棚の一番上）: 目標の輪・連続日数・カレンダー */
 .today { margin: 18px -12px 0; padding: 14px 14px 12px; border: 1px solid var(--border); border-radius: 18px; background: var(--panel); }
 .td-top { display: flex; align-items: center; gap: 16px; }
@@ -358,6 +369,7 @@ li > .sticky-bar { margin-top: 4px; }
 
 <div id="shelf" hidden>
   <div class="shelf-head"><div class="wrap">
+    <div class="acct" id="acct"></div>
     <h1>📚 教科書</h1>
     <p>興味あることを勉強するための教科書</p>
   </div></div>
@@ -404,7 +416,11 @@ li > .sticky-bar { margin-top: 4px; }
   const $ = (id) => document.getElementById(id);
   const store = {
     get(k, d = null) { try { const v = localStorage.getItem(k); return v === null ? d : v; } catch (e) { return d; } },
-    set(k, v) { try { localStorage.setItem(k, v); } catch (e) {} },
+    set(k, v) {
+      try { localStorage.setItem(k, v); } catch (e) {}
+      const q = window.tbChanged || (window.tbChanged = []);   // sync.js（ログインしていればスマホと PC で合わせる）が受け取る
+      if (!Array.isArray(q) || q.length < 2000) q.push([k, Date.now()]);
+    },
   };
   const esc = (s) => String(s == null ? "" : s).replace(/[&<>"']/g, (c) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c]));
   // ---------- 勉強した時間（毎日の目標・連続日数・カレンダー） ----------
@@ -419,6 +435,19 @@ li > .sticky-bar { margin-top: 4px; }
     return s;
   }
   const saveStudy = (s) => store.set(STUDY_LOG, JSON.stringify(s));
+  // この端末の記録に、ほかの端末（ログインして合わせたとき）の記録を足したもの。目標に届いた日も、足した時間で決める
+  function studyAll() {
+    const own = loadStudy();
+    let others = {};
+    try { others = JSON.parse(store.get("textbooks-study-others", "{}")) || {}; } catch (e) { others = {}; }
+    const days = { ...own.days }, met = { ...own.met }, goal = +store.get("textbooks-goal") || own.goal;
+    Object.values(others).forEach((o) => {
+      Object.entries((o && o.days) || {}).forEach(([k, v]) => { days[k] = (days[k] || 0) + v; });
+      Object.assign(met, (o && o.met) || {});
+    });
+    Object.keys(days).forEach((k) => { if (days[k] >= goal * 60) met[k] = 1; });
+    return { days, met, goal, own, devices: 1 + Object.keys(others).length };
+  }
   function streakOf(s) {   // 目標に届いた日が、今日（まだなら昨日）から何日続いているか。最長も
     const d = new Date();
     if (!s.met[dayKey(d)]) d.setDate(d.getDate() - 1);
@@ -515,9 +544,11 @@ li > .sticky-bar { margin-top: 4px; }
     renderToday();
   }
 
+  window.tbRefresh = () => { if (!$("shelf").hidden) showShelf(); };
+
   // 本棚の一番上の「今日の勉強」: 目標の輪、連続日数、続きから、カレンダー（17週）
   function renderToday() {
-    const el = $("today"), s = loadStudy(), today = dayKey(), sec = s.days[today] || 0, goal = s.goal * 60;
+    const el = $("today"), s = studyAll(), today = dayKey(), sec = s.days[today] || 0, goal = s.goal * 60;
     const st = streakOf(s), done = !!s.met[today], ratio = Math.min(1, sec / goal), C = 2 * Math.PI * 38;
     const msg = done ? "今日の目標を達成しました 🎉" : sec ? `あと ${Math.max(1, Math.ceil((goal - sec) / 60))}分で今日の目標` : st.cur ? "今日も続けて、連続記録をのばそう" : "教科書を開くと、読んでいる時間を数えます";
     // 続きから: 最後に開いた本の、読んでいた章
@@ -556,7 +587,7 @@ li > .sticky-bar { margin-top: 4px; }
       + `<label class="td-goal">1日の目標<select id="goalSel">${[5, 10, 15, 20, 30, 45, 60].map((m) => `<option value="${m}"${m === s.goal ? " selected" : ""}>${m}分</option>`).join("")}</select></label></div></div>`
       + cont
       + `<div class="td-cal"><div class="cal">${cal}</div></div>`
-      + `<div class="td-foot"><span id="calTip">今月 ${fmtMin(monthSec)}・これまで ${fmtMin(total)}</span>`
+      + `<div class="td-foot"><span id="calTip">今月 ${fmtMin(monthSec)}・これまで ${fmtMin(total)}${s.devices > 1 ? `（${s.devices}台の合計）` : ""}</span>`
       + `<span class="lg">少 <i></i><i class="l2"></i><i class="l4"></i> 多</span></div>`;
     el.hidden = false;
     const cw = el.querySelector(".td-cal");
@@ -564,15 +595,16 @@ li > .sticky-bar { margin-top: 4px; }
     $("goalSel").onchange = (e) => {
       const s2 = loadStudy();
       s2.goal = +e.target.value;
-      if ((s2.days[dayKey()] || 0) >= s2.goal * 60) s2.met[dayKey()] = 1;
       saveStudy(s2);
+      store.set("textbooks-goal", String(s2.goal));   // 目標はスマホと PC で同じにする
+      if ((studyAll().days[dayKey()] || 0) >= s2.goal * 60) { s2.met[dayKey()] = 1; saveStudy(s2); }
       renderToday();
     };
     el.querySelector(".cal").onclick = (e) => {
       const c = e.target.closest("i[data-d]");
       if (!c) return;
       const [y, m, dd] = c.dataset.d.split("-").map(Number), wd = "日月火水木金土"[new Date(y, m - 1, dd).getDay()];
-      $("calTip").textContent = `${m}月${dd}日（${wd}） ${fmtMin(+c.dataset.v)}${loadStudy().met[c.dataset.d] ? "　🎯 目標達成" : ""}`;
+      $("calTip").textContent = `${m}月${dd}日（${wd}） ${fmtMin(+c.dataset.v)}${studyAll().met[c.dataset.d] ? "　🎯 目標達成" : ""}`;
     };
   }
 
@@ -844,7 +876,7 @@ li > .sticky-bar { margin-top: 4px; }
   // 単語帳（```words）。「## まとまり」「# 話題」の行と、1行に「単語 | 品詞 | 意味 | 例文」。
   // 画面には話題の一覧（カード）を出し、話題を選ぶと 20語ずつのページで見せる（initWords・drawWords）
   let wordBook = null;
-  function wordsBox(lines) {
+  function wordsBox(lines, flags = []) {
     const groups = [], topics = [], all = [];
     const key = (w, ex) => { let h = 5381; for (const c of ex) h = (h * 33 + c.charCodeAt(0)) >>> 0; return w.toLowerCase() + "#" + h.toString(36); };
     for (const l of lines) {
@@ -864,7 +896,7 @@ li > .sticky-bar { margin-top: 4px; }
       all.push(r);
     }
     if (!groups.length) groups.push({ name: "", topics: topics.map((_, i) => i) });
-    wordBook = { groups, topics, all };
+    wordBook = { groups, topics, all, lang: flags.find((f) => /^[a-z]{2}$/.test(f)) || "en" };   // ```words sw ならスワヒリ語の声で読む
     return `<div class="wbk"><div class="wtool"><button type="button" data-wv="home">${t("wTopics")}</button>`
       + `<button type="button" data-wv="chk">${t("wChk")} <span class="wn">0</span></button>`
       + `<button type="button" class="wt-hide" aria-pressed="false">${t("wHide")}</button>`
@@ -885,7 +917,7 @@ li > .sticky-bar { margin-top: 4px; }
         i++;
         if (cl === "quiz") { const q = quizHtml(code, qn); qn += q.n; out.push(q.html); continue; }
         if (cl === "listen") { ln++; out.push(listenHtml(code, ln, flags.includes("show"))); continue; }
-        if (cl === "words") { out.push(wordsBox(code)); continue; }
+        if (cl === "words") { out.push(wordsBox(code, flags)); continue; }
         codes.push(code.join("\n"));
         const run = flags.includes("run") && (cl === "python" || cl === "cpp");
         out.push(`<div class="codeblock${run ? " run" : ""}"><div class="cb-head"><span class="grow">${esc(codeLabel(cl, flags))}</span>`
@@ -1794,8 +1826,15 @@ li > .sticky-bar { margin-top: 4px; }
     return `<div class="wr${on ? " chk" : ""}" data-k="${esc(r.k)}"><button type="button" class="wc" aria-pressed="${on}" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
       + `<div class="wb"><div class="wh"><b class="ww">${esc(r.w)}</b><span class="wp">${esc(r.pos)}</span>`
       + (tag ? `<span class="wtag">${esc(wordBook.topics[r.t].name.replace(/\s*[（(:：].*$/, ""))}</span>` : "")
-      + `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button></div>`
+      + (wordVoice() !== false ? `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button>` : "") + `</div>`
       + `<div class="wm">${inline(r.mean)}</div><div class="we">${inline(r.ex)}</div></div></div>`;
+  }
+  // 単語を読む声。英語はいつも読める（声がなければ端末の標準）。ほかの言葉は、その言葉の声があるときだけ（false なら 🔊 を出さない）
+  function wordVoice() {
+    if (!speech) return false;
+    const lang = wordBook ? wordBook.lang : "en";
+    if (lang === "en") return englishVoices()[0] || null;
+    return speech.getVoices().find((v) => v.lang.toLowerCase().startsWith(lang)) || false;
   }
   function pager(n) {
     const pages = Math.ceil(n / WPAGE);
@@ -1849,7 +1888,8 @@ li > .sticky-bar { margin-top: 4px; }
     stopSpeech();
     speech.cancel();
     const u = new SpeechSynthesisUtterance(word);
-    const v = englishVoices()[0];
+    const v = wordVoice();
+    if (v === false) return;
     u.lang = v ? v.lang : "en-GB";
     if (v) u.voice = v;
     u.rate = 0.9;
@@ -1868,7 +1908,7 @@ li > .sticky-bar { margin-top: 4px; }
       return true;
     }
     const s = e.target.closest(".ws");
-    if (s) { sayWord(s.closest(".wr").querySelector(".ww").textContent.replace(/\(.*?\)/g, "").replace(/\b(sth|sb)\b/g, "")); return true; }
+    if (s) { sayWord(s.closest(".wr").querySelector(".ww").textContent.replace(/[（(].*?[）)]/g, "").replace(/\b(sth|sb)\b/g, "")); return true; }
     const go = (v) => { Object.assign(wv, v); drawWords(); wordsTop(); return true; };
     const tp = e.target.closest("[data-wt]");
     if (tp) { body.querySelector(".wt-q").value = ""; return go({ v: "topic", t: +tp.dataset.wt, p: 0, q: "" }); }
@@ -1893,6 +1933,8 @@ li > .sticky-bar { margin-top: 4px; }
     if (b && getSelection().isCollapsed) { b.closest(".wr").classList.toggle("open"); return true; }
     return false;
   }
+  // 声の一覧はあとから届くことがある（Chrome）。英語以外の単語帳は、届いたら 🔊 を出し直す
+  if (speech && speech.addEventListener) speech.addEventListener("voiceschanged", () => { if (wordBook && wordBook.lang !== "en") drawWords(); });
   let wqTimer = 0;
   body.addEventListener("input", (e) => {
     if (!e.target.classList.contains("wt-q")) return;
@@ -2061,11 +2103,13 @@ li > .sticky-bar { margin-top: 4px; }
     if (Date.now() - lastAct > 120000 && !(window.speechSynthesis && speechSynthesis.speaking)) return;
     const s = loadStudy(), k = dayKey();
     s.days[k] = (s.days[k] || 0) + 10;
-    if (s.days[k] >= s.goal * 60 && !s.met[k]) s.met[k] = 1;
+    saveStudy(s);
+    const all = studyAll();                    // ほかの端末の時間も足して、目標に届いたかを見る
+    if ((all.days[k] || 0) >= all.goal * 60 && !s.met[k]) s.met[k] = 1;
     const cheerNow = s.met[k] && s.cheer !== k;
     if (cheerNow) s.cheer = k;
     saveStudy(s);
-    if (cheerNow) cheer(s);
+    if (cheerNow) cheer(studyAll());
   }, 10000);
   function cheer(s) {
     const st = streakOf(s), el = $("cheer"), en = state.lang === "en";
@@ -2108,5 +2152,6 @@ li > .sticky-bar { margin-top: 4px; }
 })();
 </script>
 <script src="https://yusuke1090.github.io/smart-agri-news/translate.js" defer></script>
+<script type="module" src="sync.js"></script>
 </body>
 </html>
