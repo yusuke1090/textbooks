@@ -1,7 +1,7 @@
 # 付録G. クリスマスのイルミネーションを作る
 
 ふつうの LED を10個ピコにつないで、チカチカ・順番に点灯・ふわっと・きらきらと光らせます。
-プログラムは MicroPython で書いてコマンド（mpremote）で書き込み、電池で動かします。
+プログラムは C++ で書き、VS Code で書き込んで（3章）、電池で動かします。
 
 ![LED のクリスマスツリー](images/xmas-tree.jpg)
 
@@ -57,100 +57,129 @@ Amazon でそろえて約3,000円です（2026年11月）。
 
 電池ボックスの線の先が細いより線なら、はんだで固めてから差すと抜けにくくなります。
 
+## VS Code でプロジェクトを作る
+
+1. VS Code の拡張機能「Raspberry Pi Pico」で **New C/C++ Project** を開く（3章）。名前は `xmas`、場所は `~/apps`、**Console over USB** と **Generate C++ code** に ☑ して作る
+2. 明るさを変える PWM を使うので、`CMakeLists.txt` の `target_link_libraries` に `hardware_pwm` を足す（4章）
+
+```cmake
+target_link_libraries(xmas
+        pico_stdlib
+        hardware_pwm)
+```
+
 ## 配線を確かめる
 
-USB で PC につなぎ（電池のスイッチは切ったまま）、LED が1つずつ光るか確かめます。次のプログラムを test.py という名前で保存します。
+USB で PC につなぎ（電池のスイッチは切ったまま）、LED が1つずつ光るか確かめます。`xmas.cpp` の中身を次のプログラムにして、**Compile → Run (USB)** で書き込みます。
 
-```python run
-from machine import Pin
-import time
+```cpp run
+#include <cstdio>
+#include "pico/stdlib.h"
 
-for n in range(10):
-    print("GP{} が光っているはず".format(n))
-    led = Pin(n, Pin.OUT)
-    led.on()
-    time.sleep(1)
-    led.off()
-
-print("おわり")
+int main() {
+    stdio_init_all();
+    sleep_ms(1500);                     // Serial Monitor がつながるのを待つ
+    for (uint n = 0; n < 10; n++) {     // GP0〜GP9 を出力にする
+        gpio_init(n);
+        gpio_set_dir(n, GPIO_OUT);
+    }
+    while (true) {
+        for (uint n = 0; n < 10; n++) {
+            printf("GP%u が光っているはず\n", n);
+            gpio_put(n, 1);
+            sleep_ms(1000);
+            gpio_put(n, 0);
+        }
+        printf("1周おわり\n");
+    }
+}
 ```
 
-```bash
-mpremote run test.py
-```
-
-光らない LED があれば、LED の向き（長い足が抵抗の側）と、ワイヤーを差した列を確かめてください。
+Serial Monitor に、いま光っているはずの GP の番号が出ます。光らない LED があれば、LED の向き（長い足が抵抗の側）と、ワイヤーを差した列を確かめてください。
 
 ## イルミネーションのプログラム
 
-次のプログラムを main.py という名前で保存します。
+`xmas.cpp` の中身を次のプログラムに入れかえて、**Compile → Run (USB)** で書き込みます。
 
-```python run
-from machine import Pin, PWM
-import time
-import random
+```cpp run
+#include <cstdlib>
+#include "pico/stdlib.h"
+#include "hardware/pwm.h"
 
-PINS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   # LED をつないだ GP の番号（光る順）
+constexpr uint PINS[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};   // LED をつないだ GP の番号（光る順）
+constexpr int N = sizeof(PINS) / sizeof(PINS[0]);
 
-leds = []
-for n in PINS:
-    p = PWM(Pin(n))
-    p.freq(1000)
-    leds.append(p)
+// i 番目の LED を、0〜100 の明るさにする
+void light(int i, int level) {
+    pwm_set_gpio_level(PINS[i], level * level / 10);   // 0〜1000。2乗すると、目に自然な明るさの変わり方になる
+}
 
-def light(i, level):
-    # i 番目の LED を、0〜100 の明るさにする
-    leds[i].duty_u16(level * level * 65535 // 10000)   # 2乗すると、目に自然な明るさの変わり方になる
+void all_light(int level) {
+    for (int i = 0; i < N; i++) light(i, level);
+}
 
-def all_light(level):
-    for i in range(len(leds)):
-        light(i, level)
+// 全部いっしょにチカチカ
+void blink(int times = 10) {
+    for (int k = 0; k < times; k++) {
+        all_light(100);
+        sleep_ms(400);
+        all_light(0);
+        sleep_ms(400);
+    }
+}
 
-def blink(times=10):
-    # 全部いっしょにチカチカ
-    for _ in range(times):
-        all_light(100)
-        time.sleep(0.4)
-        all_light(0)
-        time.sleep(0.4)
+// 1つずつ順番に点ける
+void chase(int rounds = 5) {
+    for (int r = 0; r < rounds; r++) {
+        for (int i = 0; i < N; i++) {
+            all_light(0);
+            light(i, 100);
+            sleep_ms(100);
+        }
+    }
+    all_light(0);
+}
 
-def chase(rounds=5):
-    # 1つずつ順番に点ける
-    for _ in range(rounds):
-        for i in range(len(leds)):
-            all_light(0)
-            light(i, 100)
-            time.sleep(0.1)
-    all_light(0)
+// ふわっと明るくして、ふわっと消す
+void fade(int times = 3) {
+    for (int k = 0; k < times; k++) {
+        for (int level = 0; level <= 100; level += 2) { all_light(level); sleep_ms(20); }
+        for (int level = 100; level >= 0; level -= 2) { all_light(level); sleep_ms(20); }
+    }
+}
 
-def fade(times=3):
-    # ふわっと明るくして、ふわっと消す
-    for _ in range(times):
-        for level in range(0, 101, 2):
-            all_light(level)
-            time.sleep(0.02)
-        for level in range(100, -1, -2):
-            all_light(level)
-            time.sleep(0.02)
+// ランダムにきらきら
+void twinkle(int seconds = 15) {
+    int levels[N] = {};
+    absolute_time_t end = make_timeout_time_ms(seconds * 1000);
+    while (!time_reached(end)) {
+        if (rand() % 100 < 20) levels[rand() % N] = 100;   // 5回に1回くらい
+        for (int i = 0; i < N; i++) {
+            levels[i] = levels[i] * 9 / 10;                // 少しずつ暗くする
+            light(i, levels[i]);
+        }
+        sleep_ms(30);
+    }
+    all_light(0);
+}
 
-def twinkle(seconds=15):
-    # ランダムにきらきら
-    levels = [0] * len(leds)
-    end = time.ticks_add(time.ticks_ms(), seconds * 1000)
-    while time.ticks_diff(end, time.ticks_ms()) > 0:
-        if random.randint(1, 100) <= 20:                  # 5回に1回くらい
-            levels[random.randint(0, len(leds) - 1)] = 100
-        for i in range(len(leds)):
-            levels[i] = levels[i] * 9 // 10              # 少しずつ暗くする
-            light(i, levels[i])
-        time.sleep(0.03)
-    all_light(0)
-
-while True:
-    blink()
-    chase()
-    fade()
-    twinkle()
+int main() {
+    stdio_init_all();
+    for (uint pin : PINS) {
+        gpio_set_function(pin, GPIO_FUNC_PWM);         // PWM 用にする（7章）
+        uint slice = pwm_gpio_to_slice_num(pin);
+        pwm_set_clkdiv(slice, 125.0f);                 // 125MHz ÷ 125 ÷ 1000 = 1kHz
+        pwm_set_wrap(slice, 999);
+        pwm_set_enabled(slice, true);
+    }
+    srand(time_us_32());                               // 乱数の種
+    while (true) {
+        blink();
+        chase();
+        fade();
+        twinkle();
+    }
+}
 ```
 
 | 関数 | 光り方 |
@@ -160,31 +189,26 @@ while True:
 | `fade()` | ふわっと明るくして、ふわっと消す |
 | `twinkle()` | ランダムにきらきら |
 
-- 明るさは **PWM**（7章）で変えます。`duty_u16()` に 0〜65535 を入れると、0 で消え、65535 でいちばん明るくなります
-- `light()` は、0〜100 の明るさを2乗してから `duty_u16()` の値にします。比例させると、暗いところで急に明るくなって見えるためです
-- 最後の `while True:` が、4つの光り方を順番にくり返します（1周35秒くらい）
+- 明るさは **PWM**（7章）で変えます。1秒に1000回、点けたり消したりして、点いている時間の割合を `pwm_set_gpio_level()` で決めます。`wrap` が 999 なので、0 で消え、1000 でいちばん明るくなります
+- `light()` は、0〜100 の明るさを2乗してから 0〜1000 にします。比例させると、暗いところで急に明るくなって見えるためです
+- 2本の GP で1つの PWM の回路（スライス）を使うので、GP0〜GP9 は5つの回路を使います。同じ回路を2回設定しても問題ありません
+- 最後の `while (true)` が、4つの光り方を順番にくり返します（1周35秒くらい）
 
 ### 光り方を変える
 
 | 変えたいこと | 直すところ |
 | --- | --- |
-| LED の光る順番 | `PINS` の並び（`[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]` で逆向き） |
-| 速さ | `time.sleep()` の秒数 |
+| LED の光る順番 | `PINS` の並び（`{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}` で逆向き） |
+| 速さ | `sleep_ms()` のミリ秒 |
 | くり返す回数 | `blink(20)` のように、かっこの中の数 |
-| 光り方の順番 | 最後の `while True:` の中の並び |
+| 光り方の順番 | 最後の `while (true)` の中の並び |
 
-## 書き込んで電池で動かす
+直したら、もう一度 Compile → Run (USB) で書き込みます。
 
-```bash
-mpremote run main.py           # 試す（止めるときは Ctrl + C）
-mpremote cp main.py :main.py   # ピコに保存する
-```
+## 電池で動かす
 
-1. `mpremote run main.py` で光り方を確かめる
-2. `mpremote cp main.py :main.py` でピコに保存する。main.py は、電源が入ると自動で動きます
-3. USB を抜いて、電池ボックスのスイッチを入れる
-
-Pico Studio の「▶ 実行」と「ピコに保存」でも同じことができます（付録E）。
+1. Run (USB) で書き込んだプログラムは、ピコに残ります。電源が入ると、自動で動きます
+2. USB を抜いて、電池ボックスのスイッチを入れる
 
 > USB をつなぐときは、電池のスイッチを切ってください。両方つなぐと、USB の電気が電池に流れこむことがあります。
 
@@ -194,9 +218,9 @@ Pico Studio の「▶ 実行」と「ピコに保存」でも同じことがで�
 
 - LED は1つずつ抵抗をはさんで GP0〜GP9 につなぎ、短い足は GND にまとめる
 - 抵抗は、赤・黄が 330Ω、緑・青・白が 100Ω
-- 明るさは PWM の `duty_u16()`（0〜65535）で変える
-- main.py として保存すると、電池のスイッチを入れるだけで光る
-- 電池は VSYS（1.8〜5.5V）へ。USB をつなぐときは電池のスイッチを切る
+- プログラムは C++。PWM を使うので `CMakeLists.txt` に `hardware_pwm` を足し、Compile → Run (USB) で書き込む
+- 明るさは `pwm_set_gpio_level()`（この付録では 0〜1000）で変える
+- 書き込んだプログラムは、電池のスイッチを入れるだけで動く。電池は VSYS（1.8〜5.5V）へ、USB をつなぐときは電池を切る
 
 ## 練習問題
 
@@ -213,11 +237,11 @@ Q: LED の長い足は、プラスとマイナスのどちらですか。
 A: プラス | ＋ | アノード
 E: 長い足（＋）を抵抗の側に、短い足（−）を GND の側にします。
 
-Q: `duty_u16()` に入れる値で、いちばん明るくなる数はいくつですか。
-A: 65535
-E: 0 で消え、65535 でいちばん明るくなります。
+Q: PWM を使うために、`CMakeLists.txt` の `target_link_libraries` に足すライブラリは何ですか。
+A: hardware_pwm
+E: ADC なら `hardware_adc`、I2C なら `hardware_i2c` のように、使う機能のライブラリを足します（4章）。
 
-Q: 単3のアルカリ電池を3本つなぐと、何 V になりますか。
-A: 4.5
-E: 1.5V × 3本 = 4.5V です。VSYS の 5.5V までに入っています。
+Q: この付録のプログラム（`wrap` が 999）で、`pwm_set_gpio_level()` に入れていちばん明るくなる数はいくつですか。
+A: 1000 | 999
+E: 0 で消え、1000（`wrap` + 1）でずっと点いた状態になります。
 ```

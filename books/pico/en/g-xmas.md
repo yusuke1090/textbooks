@@ -1,7 +1,7 @@
 # Appendix G. Making Christmas lights
 
 Connect ten ordinary LEDs to the Pico and make them blink, light up one by one, fade in and out, and twinkle.
-The program is written in MicroPython, copied to the Pico with a command (mpremote), and runs on batteries.
+The program is written in C++, written to the Pico from VS Code (Chapter 3), and runs on batteries.
 
 ![An LED Christmas tree](images/xmas-tree.jpg)
 
@@ -57,100 +57,129 @@ If in doubt, 330 Ω for all of them is fine too (green, blue and white just get 
 
 If the battery box wires end in thin stranded wire, tin them with solder first so they stay in.
 
+## Making the project in VS Code
+
+1. In VS Code, open **New C/C++ Project** from the Raspberry Pi Pico extension (Chapter 3). Name it `xmas`, put it in `~/apps`, and tick **Console over USB** and **Generate C++ code**
+2. The brightness uses PWM, so add `hardware_pwm` to `target_link_libraries` in `CMakeLists.txt` (Chapter 4)
+
+```cmake
+target_link_libraries(xmas
+        pico_stdlib
+        hardware_pwm)
+```
+
 ## Checking the wiring
 
-Connect the USB cable to your PC (leave the battery switched off) and check that each LED lights up in turn. Save this program as test.py.
+Connect the USB cable to your PC (leave the battery switched off) and check that each LED lights up in turn. Replace the contents of `xmas.cpp` with this program, then write it with **Compile → Run (USB)**.
 
-```python run
-from machine import Pin
-import time
+```cpp run
+#include <cstdio>
+#include "pico/stdlib.h"
 
-for n in range(10):
-    print("GP{} should be lit".format(n))
-    led = Pin(n, Pin.OUT)
-    led.on()
-    time.sleep(1)
-    led.off()
-
-print("done")
+int main() {
+    stdio_init_all();
+    sleep_ms(1500);                     // wait for Serial Monitor to connect
+    for (uint n = 0; n < 10; n++) {     // make GP0-GP9 outputs
+        gpio_init(n);
+        gpio_set_dir(n, GPIO_OUT);
+    }
+    while (true) {
+        for (uint n = 0; n < 10; n++) {
+            printf("GP%u should be lit\n", n);
+            gpio_put(n, 1);
+            sleep_ms(1000);
+            gpio_put(n, 0);
+        }
+        printf("round done\n");
+    }
+}
 ```
 
-```bash
-mpremote run test.py
-```
-
-If an LED does not light up, check which way round it is (long leg on the resistor side) and which column the wire is in.
+Serial Monitor shows the GP number that should be lit. If an LED does not light up, check which way round it is (long leg on the resistor side) and which column the wire is in.
 
 ## The lights program
 
-Save this program as main.py.
+Replace the contents of `xmas.cpp` with this program, then write it with **Compile → Run (USB)**.
 
-```python run
-from machine import Pin, PWM
-import time
-import random
+```cpp run
+#include <cstdlib>
+#include "pico/stdlib.h"
+#include "hardware/pwm.h"
 
-PINS = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]   # the GP numbers of the LEDs (in lighting order)
+constexpr uint PINS[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};   // the GP numbers the LEDs are on (in lighting order)
+constexpr int N = sizeof(PINS) / sizeof(PINS[0]);
 
-leds = []
-for n in PINS:
-    p = PWM(Pin(n))
-    p.freq(1000)
-    leds.append(p)
+// set LED number i to a brightness of 0-100
+void light(int i, int level) {
+    pwm_set_gpio_level(PINS[i], level * level / 10);   // 0-1000. Squaring looks more natural to the eye
+}
 
-def light(i, level):
-    # set LED number i to a brightness from 0 to 100
-    leds[i].duty_u16(level * level * 65535 // 10000)   # squaring makes the change in brightness look natural
+void all_light(int level) {
+    for (int i = 0; i < N; i++) light(i, level);
+}
 
-def all_light(level):
-    for i in range(len(leds)):
-        light(i, level)
+// all blink together
+void blink(int times = 10) {
+    for (int k = 0; k < times; k++) {
+        all_light(100);
+        sleep_ms(400);
+        all_light(0);
+        sleep_ms(400);
+    }
+}
 
-def blink(times=10):
-    # all blink together
-    for _ in range(times):
-        all_light(100)
-        time.sleep(0.4)
-        all_light(0)
-        time.sleep(0.4)
+// light one at a time in turn
+void chase(int rounds = 5) {
+    for (int r = 0; r < rounds; r++) {
+        for (int i = 0; i < N; i++) {
+            all_light(0);
+            light(i, 100);
+            sleep_ms(100);
+        }
+    }
+    all_light(0);
+}
 
-def chase(rounds=5):
-    # light them one by one
-    for _ in range(rounds):
-        for i in range(len(leds)):
-            all_light(0)
-            light(i, 100)
-            time.sleep(0.1)
-    all_light(0)
+// fade in, then fade out
+void fade(int times = 3) {
+    for (int k = 0; k < times; k++) {
+        for (int level = 0; level <= 100; level += 2) { all_light(level); sleep_ms(20); }
+        for (int level = 100; level >= 0; level -= 2) { all_light(level); sleep_ms(20); }
+    }
+}
 
-def fade(times=3):
-    # fade in, then fade out
-    for _ in range(times):
-        for level in range(0, 101, 2):
-            all_light(level)
-            time.sleep(0.02)
-        for level in range(100, -1, -2):
-            all_light(level)
-            time.sleep(0.02)
+// twinkle at random
+void twinkle(int seconds = 15) {
+    int levels[N] = {};
+    absolute_time_t end = make_timeout_time_ms(seconds * 1000);
+    while (!time_reached(end)) {
+        if (rand() % 100 < 20) levels[rand() % N] = 100;   // about one time in five
+        for (int i = 0; i < N; i++) {
+            levels[i] = levels[i] * 9 / 10;                // dim a little each time
+            light(i, levels[i]);
+        }
+        sleep_ms(30);
+    }
+    all_light(0);
+}
 
-def twinkle(seconds=15):
-    # twinkle at random
-    levels = [0] * len(leds)
-    end = time.ticks_add(time.ticks_ms(), seconds * 1000)
-    while time.ticks_diff(end, time.ticks_ms()) > 0:
-        if random.randint(1, 100) <= 20:                  # about one time in five
-            levels[random.randint(0, len(leds) - 1)] = 100
-        for i in range(len(leds)):
-            levels[i] = levels[i] * 9 // 10              # dim a little each time
-            light(i, levels[i])
-        time.sleep(0.03)
-    all_light(0)
-
-while True:
-    blink()
-    chase()
-    fade()
-    twinkle()
+int main() {
+    stdio_init_all();
+    for (uint pin : PINS) {
+        gpio_set_function(pin, GPIO_FUNC_PWM);         // use the pin for PWM (Chapter 7)
+        uint slice = pwm_gpio_to_slice_num(pin);
+        pwm_set_clkdiv(slice, 125.0f);                 // 125 MHz / 125 / 1000 = 1 kHz
+        pwm_set_wrap(slice, 999);
+        pwm_set_enabled(slice, true);
+    }
+    srand(time_us_32());                               // seed for the random numbers
+    while (true) {
+        blink();
+        chase();
+        fade();
+        twinkle();
+    }
+}
 ```
 
 | Function | How it lights |
@@ -160,31 +189,26 @@ while True:
 | `fade()` | Fade in, then fade out |
 | `twinkle()` | Twinkle at random |
 
-- The brightness is set with **PWM** (Chapter 7). Give `duty_u16()` a value from 0 to 65535: 0 is off and 65535 is brightest
-- `light()` squares the 0–100 brightness before turning it into the `duty_u16()` value. With a straight proportion, the LEDs seem to jump up suddenly at the dim end
-- The `while True:` at the end repeats the four patterns in turn (about 35 seconds per round)
+- The brightness is set with **PWM** (Chapter 7). The pin switches on and off 1000 times a second, and `pwm_set_gpio_level()` sets how much of the time it is on. With `wrap` at 999, 0 is off and 1000 is brightest
+- `light()` squares the 0–100 brightness before turning it into 0–1000. With a straight proportion, the LEDs seem to jump up suddenly at the dim end
+- Two GP pins share one PWM circuit (slice), so GP0–GP9 use five slices. Setting the same slice twice does no harm
+- The `while (true)` at the end repeats the four patterns in turn (about 35 seconds per round)
 
 ### Changing how it lights
 
 | What to change | Where |
 | --- | --- |
-| The order of the LEDs | The `PINS` list (`[9, 8, 7, 6, 5, 4, 3, 2, 1, 0]` runs backwards) |
-| The speed | The seconds in `time.sleep()` |
+| The order of the LEDs | The `PINS` list (`{9, 8, 7, 6, 5, 4, 3, 2, 1, 0}` runs backwards) |
+| The speed | The milliseconds in `sleep_ms()` |
 | How many times | The number in the brackets, as in `blink(20)` |
-| The order of the patterns | The lines inside the final `while True:` |
+| The order of the patterns | The lines inside the final `while (true)` |
 
-## Copying it over and running on batteries
+After a change, write it again with Compile → Run (USB).
 
-```bash
-mpremote run main.py           # try it (Ctrl + C to stop)
-mpremote cp main.py :main.py   # save it on the Pico
-```
+## Running on batteries
 
-1. Check the patterns with `mpremote run main.py`
-2. Save it on the Pico with `mpremote cp main.py :main.py`. main.py runs by itself when the power comes on
-3. Unplug the USB cable and switch on the battery box
-
-You can do the same with Pico Studio's "▶ 実行" (Run) and "ピコに保存" (Save to Pico) buttons (Appendix E).
+1. A program written with Run (USB) stays on the Pico and runs by itself when the power comes on
+2. Unplug the USB cable and switch on the battery box
 
 > Switch the battery off whenever the USB cable is connected. With both connected, current from USB can flow into the batteries.
 
@@ -194,9 +218,9 @@ Alkaline AA batteries last about 40–50 hours (around 10 days at 4 hours a nigh
 
 - Connect each LED through its own resistor to GP0–GP9, and bring all the short legs to GND
 - Resistors: 330 Ω for red and yellow, 100 Ω for green, blue and white
-- Set the brightness with PWM's `duty_u16()` (0–65535)
-- Saved as main.py, the lights come on just by switching on the battery
-- The battery goes to VSYS (1.8–5.5 V). Switch it off when the USB cable is connected
+- The program is C++. It uses PWM, so add `hardware_pwm` to `CMakeLists.txt`, then write it with Compile → Run (USB)
+- Set the brightness with `pwm_set_gpio_level()` (0–1000 in this appendix)
+- Once written, the lights come on just by switching on the battery. The battery goes to VSYS (1.8–5.5 V); switch it off when the USB cable is connected
 
 ## Exercises
 
@@ -213,11 +237,11 @@ Q: Is an LED's long leg plus or minus?
 A: plus | + | anode | positive
 E: The long leg (+) goes on the resistor side and the short leg (−) on the GND side.
 
-Q: What value given to `duty_u16()` makes an LED brightest?
-A: 65535
-E: 0 is off and 65535 is brightest.
+Q: Which library do you add to `target_link_libraries` in `CMakeLists.txt` to use PWM?
+A: hardware_pwm
+E: Add the library for each feature you use, such as `hardware_adc` for the ADC or `hardware_i2c` for I2C (Chapter 4).
 
-Q: How many volts do three alkaline AA batteries make when connected together?
-A: 4.5
-E: 1.5 V × 3 = 4.5 V, which is within VSYS's 5.5 V limit.
+Q: In this appendix's program (`wrap` at 999), what value given to `pwm_set_gpio_level()` makes an LED brightest?
+A: 1000 | 999
+E: 0 is off, and 1000 (`wrap` + 1) keeps it on all the time.
 ```
