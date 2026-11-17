@@ -27,6 +27,7 @@ from PIL import Image
 ROOT = Path(__file__).resolve().parent.parent
 UA = "textbooks-photo-fetch/1.0 (educational textbook; python-urllib)"
 WIDTH = 960
+STEPS = [120, 250, 330, 500, 960]   # Commons の決まった縮小サイズ（https://w.wiki/GHai）
 CREDITS = "c-photos.md"
 OK = re.compile(r"^(CC0|Public domain|PD|CC BY(-SA)? [0-9.]+)", re.I)
 TEXT = {
@@ -54,14 +55,19 @@ def strip(html):
     return re.sub(r"\s+", " ", s).strip()
 
 
-def info(src):
+def info(src, width=WIDTH):
     q = urllib.parse.urlencode({"action": "query", "titles": "File:" + src, "prop": "imageinfo", "format": "json",
-                                "iiprop": "url|extmetadata", "iiurlwidth": WIDTH,
+                                "iiprop": "url|size|extmetadata", "iiurlwidth": width,
                                 "iiextmetadatafilter": "LicenseShortName|LicenseUrl|Artist|Credit"})
     page = next(iter(json.loads(get("https://commons.wikimedia.org/w/api.php?" + q))["query"]["pages"].values()))
     if "imageinfo" not in page:
         raise SystemExit(f"見つからない: {src}")
     ii = page["imageinfo"][0]
+    # 元の画像が幅より小さいと元の画像の URL になるが、元の画像は 429 で断られるので、決まった縮小サイズで取り直す
+    if ii.get("width", width + 1) <= width:
+        smaller = max((s for s in STEPS if s < ii["width"]), default=None)
+        if smaller:
+            return info(src, smaller)
     m = {k: v.get("value", "") for k, v in ii.get("extmetadata", {}).items()}
     lic = strip(m.get("LicenseShortName"))
     if not OK.match(lic):
