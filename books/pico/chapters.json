@@ -22,5 +22,6 @@
   {"part": {"ja": "付録", "en": "Appendix"}, "file": "c-compare.md", "title": {"ja": "付録C. ラズパイとピコの比較", "en": "Appendix C. Comparing the Raspberry Pi and the Pico"}},
   {"part": {"ja": "付録", "en": "Appendix"}, "file": "d-links.md", "title": {"ja": "付録D. マイコンでできること・おすすめリンク", "en": "Appendix D. What microcontrollers can do, and recommended links"}},
   {"part": {"ja": "付録", "en": "Appendix"}, "file": "e-micropython.md", "title": {"ja": "付録E. MicroPython で手早く試す", "en": "Appendix E. Quick tests with MicroPython"}},
-  {"part": {"ja": "付録", "en": "Appendix"}, "file": "f-photos.md", "title": {"ja": "付録F. 写真の出典", "en": "Appendix F. Photo credits"}}
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "f-photos.md", "title": {"ja": "付録F. 写真の出典", "en": "Appendix F. Photo credits"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "g-xmas.md", "title": {"ja": "付録G. クリスマスのイルミネーションを作る", "en": "Appendix G. Making Christmas lights"}}
 ]

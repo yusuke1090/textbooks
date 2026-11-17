@@ -41,3 +41,11 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | Photo | Author | Licence |
 | --- | --- | --- |
 | [The Raspberry Pi family (Pi 400, Pi 1, Pi 5, Zero 2, Pico)](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_1,_Pi_5,_Pi_400,_Pico_and_Zero_2_(cropped).jpg) | SimonWaldherr | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+## Appendix G. Making Christmas lights
+
+| Photo | Author | Licence |
+| --- | --- | --- |
+| [An LED Christmas tree](https://commons.wikimedia.org/wiki/File:LED_Christmas_Lights_on_a_Tree.jpg) | HeatherMarieKosur | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [5 mm LEDs](https://commons.wikimedia.org/wiki/File:LED_Rainbow_Pack_-_5mm_PTH_12903-01.jpg) | SparkFun Electronics | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| [Resistors (the colour bands show the value)](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |

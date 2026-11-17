@@ -8,7 +8,7 @@
 | --- | --- | --- |
 | [🐄 牛の教科書](https://yusuke1090.github.io/textbooks/?b=cow) | 乳牛のからだ・繁殖と1年1産・エサ・乳房炎・血乳・スマート酪農（13章と付録、図24枚と写真38枚） | 日本語・English |
 | [🌾 畑作と米の教科書](https://yusuke1090.github.io/textbooks/?b=crops) | 稲の育ち方・苗・水と肥料・病害虫・収穫と流通、北海道の輪作・麦・大豆・じゃがいも・てんさい、土と肥料、スマート農業（12章と付録、写真51枚） | 日本語・English |
-| [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録、写真10枚） | 日本語・English |
+| [🍓 ラズパイピコ開発ガイド](https://yusuke1090.github.io/textbooks/?b=pico) | Raspberry Pi Pico を C++ と VS Code で開発して、製品にするまで（17章と付録、写真13枚）。付録にクリスマスのイルミネーションの作り方 | 日本語・English |
 | [🚁 ROS 2 と ArduPilot の教科書](https://yusuke1090.github.io/textbooks/?b=ros) | ROS 2 Jazzy の基本、ArduPilot の SITL・MAVLink、ROS 2 からドローンを飛ばす（AP_DDS）、Gazebo、Jetson・ラズパイ、安全と法律（12章と付録、図2枚と写真17枚） | 日本語・English |
 | [🐙 GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) | git と GitHub の使い方。設定・SSH キー・ふだんの記録・戻し方・ブランチ・ラズパイからのクローン・VS Code での操作（9章と付録） | 日本語・English |
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語・English |
@@ -140,6 +140,7 @@ tools/            図や用語の一覧を作るスクリプト
 - 2026-11-13 に Pico Studio の `guide/` から移した
 - ```` ```cpp run ```` のプログラムが本物の Pico SDK でビルドできるかは、Pico Studio の `python3 tests/build_guide_cpp.py pico pico2` で確かめる
 - コードの言葉の説明は `glossary.json`（キーの書き方は Pico Studio の README の「ガイドの書き方」）
+- 付録G（クリスマスのイルミネーション）の図2枚は `python3 tools/make_xmas_figures.py` で作る
 
 ### 🚁 ROS 2 と ArduPilot の教科書（books/ros）
 

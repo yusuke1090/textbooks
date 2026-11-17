@@ -532,5 +532,7 @@
   "$ journalctl -f": "Keeps showing new log lines as they come",
   "$ git --branch": "Chooses the branch (or tag) to fetch",
   "$ g++ -Wall": "Shows all warnings about common mistakes",
-  "$ g++ -o": "Sets the name of the executable to make"
+  "$ g++ -o": "Sets the name of the executable to make",
+  "random": "A module that makes random numbers. Used like random.randint(1, 6).",
+  "randint": "randint(a, b) returns a random whole number from a to b, inclusive. randint(1, 6) is like rolling a die."
 }

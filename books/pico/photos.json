@@ -78,5 +78,29 @@
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_1,_Pi_5,_Pi_400,_Pico_and_Zero_2_(cropped).jpg"
+  },
+  {
+    "file": "xmas-tree.jpg",
+    "src": "LED Christmas Lights on a Tree.jpg",
+    "author": "HeatherMarieKosur",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LED_Christmas_Lights_on_a_Tree.jpg"
+  },
+  {
+    "file": "leds.jpg",
+    "src": "LED Rainbow Pack - 5mm PTH 12903-01.jpg",
+    "author": "SparkFun Electronics",
+    "license": "CC BY 2.0",
+    "license_url": "https://creativecommons.org/licenses/by/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:LED_Rainbow_Pack_-_5mm_PTH_12903-01.jpg"
+  },
+  {
+    "file": "resistors.jpg",
+    "src": "Electronic-Axial-Lead-Resistors-Array.jpg",
+    "author": "Evan-Amos",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg"
   }
 ]

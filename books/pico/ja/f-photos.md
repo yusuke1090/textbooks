@@ -41,3 +41,11 @@
 | 写真 | 撮影者 | ライセンス |
 | --- | --- | --- |
 | [ラズパイのなかま（Pi 400・Pi 1・Pi 5・Zero 2・ピコ）](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_1,_Pi_5,_Pi_400,_Pico_and_Zero_2_(cropped).jpg) | SimonWaldherr | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+## 付録G. クリスマスのイルミネーションを作る
+
+| 写真 | 撮影者 | ライセンス |
+| --- | --- | --- |
+| [LED のクリスマスツリー](https://commons.wikimedia.org/wiki/File:LED_Christmas_Lights_on_a_Tree.jpg) | HeatherMarieKosur | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [5mm の LED](https://commons.wikimedia.org/wiki/File:LED_Rainbow_Pack_-_5mm_PTH_12903-01.jpg) | SparkFun Electronics | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
+| [抵抗（帯の色で値がわかる）](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |

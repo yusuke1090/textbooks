@@ -1,0 +1,175 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 540" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="540" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">The lights circuit (10 LEDs and a battery)</text>
+<rect x="30" y="46" width="170" height="430" rx="8" fill="#1f7a3d"/>
+<text x="64.0" y="266.0" font-size="18" text-anchor="middle" font-weight="700" fill="#ffffff">Pico</text>
+<text x="192.0" y="80.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP0 (pin 1)</text>
+<circle cx="200" cy="76" r="6" fill="#e0a800"/>
+<text x="192.0" y="112.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP1 (pin 2)</text>
+<circle cx="200" cy="108" r="6" fill="#e0a800"/>
+<text x="192.0" y="144.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP2 (pin 4)</text>
+<circle cx="200" cy="140" r="6" fill="#e0a800"/>
+<text x="192.0" y="176.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP3 (pin 5)</text>
+<circle cx="200" cy="172" r="6" fill="#e0a800"/>
+<text x="192.0" y="208.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP4 (pin 6)</text>
+<circle cx="200" cy="204" r="6" fill="#e0a800"/>
+<text x="192.0" y="240.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP5 (pin 7)</text>
+<circle cx="200" cy="236" r="6" fill="#e0a800"/>
+<text x="192.0" y="272.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP6 (pin 9)</text>
+<circle cx="200" cy="268" r="6" fill="#e0a800"/>
+<text x="192.0" y="304.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP7 (pin 10)</text>
+<circle cx="200" cy="300" r="6" fill="#e0a800"/>
+<text x="192.0" y="336.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP8 (pin 11)</text>
+<circle cx="200" cy="332" r="6" fill="#e0a800"/>
+<text x="192.0" y="368.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP9 (pin 12)</text>
+<circle cx="200" cy="364" r="6" fill="#e0a800"/>
+<text x="192.0" y="408.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GND (pin 38)</text>
+<circle cx="200" cy="404" r="6" fill="#e0a800"/>
+<text x="192.0" y="448.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">VSYS (pin 39)</text>
+<circle cx="200" cy="444" r="6" fill="#e0a800"/>
+<line x1="206.0" y1="76.0" x2="250.0" y2="76.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="68" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="68" width="5" height="16" fill="#f08c00"/>
+<rect x="267" y="68" width="5" height="16" fill="#f08c00"/>
+<rect x="276" y="68" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="68" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="64.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">330Ω</text>
+<line x1="300.0" y1="76.0" x2="370.0" y2="76.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 67 L370 85 L388 76 Z" stroke="#d93a3a" stroke-width="2" fill="#ffcdd2" stroke-linejoin="round"/>
+<line x1="388.0" y1="67.0" x2="388.0" y2="85.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="70.0" font-size="12" text-anchor="start" font-weight="700" fill="#d93a3a">Red</text>
+<line x1="392.0" y1="76.0" x2="560.0" y2="76.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="108.0" x2="250.0" y2="108.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="100" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="100" width="5" height="16" fill="#8b4513"/>
+<rect x="267" y="100" width="5" height="16" fill="#222222"/>
+<rect x="276" y="100" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="100" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="96.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">100Ω</text>
+<line x1="300.0" y1="108.0" x2="370.0" y2="108.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 99 L370 117 L388 108 Z" stroke="#2e7d32" stroke-width="2" fill="#c8e6c9" stroke-linejoin="round"/>
+<line x1="388.0" y1="99.0" x2="388.0" y2="117.0" stroke="#2e7d32" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="102.0" font-size="12" text-anchor="start" font-weight="700" fill="#2e7d32">Green</text>
+<line x1="392.0" y1="108.0" x2="560.0" y2="108.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="140.0" x2="250.0" y2="140.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="132" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="132" width="5" height="16" fill="#f08c00"/>
+<rect x="267" y="132" width="5" height="16" fill="#f08c00"/>
+<rect x="276" y="132" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="132" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="128.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">330Ω</text>
+<line x1="300.0" y1="140.0" x2="370.0" y2="140.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 131 L370 149 L388 140 Z" stroke="#c79100" stroke-width="2" fill="#fff59d" stroke-linejoin="round"/>
+<line x1="388.0" y1="131.0" x2="388.0" y2="149.0" stroke="#c79100" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="134.0" font-size="12" text-anchor="start" font-weight="700" fill="#c79100">Yellow</text>
+<line x1="392.0" y1="140.0" x2="560.0" y2="140.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="172.0" x2="250.0" y2="172.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="164" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="164" width="5" height="16" fill="#8b4513"/>
+<rect x="267" y="164" width="5" height="16" fill="#222222"/>
+<rect x="276" y="164" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="164" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="160.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">100Ω</text>
+<line x1="300.0" y1="172.0" x2="370.0" y2="172.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 163 L370 181 L388 172 Z" stroke="#1e63d6" stroke-width="2" fill="#bbdefb" stroke-linejoin="round"/>
+<line x1="388.0" y1="163.0" x2="388.0" y2="181.0" stroke="#1e63d6" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="166.0" font-size="12" text-anchor="start" font-weight="700" fill="#1e63d6">Blue</text>
+<line x1="392.0" y1="172.0" x2="560.0" y2="172.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="204.0" x2="250.0" y2="204.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="196" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="196" width="5" height="16" fill="#8b4513"/>
+<rect x="267" y="196" width="5" height="16" fill="#222222"/>
+<rect x="276" y="196" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="196" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="192.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">100Ω</text>
+<line x1="300.0" y1="204.0" x2="370.0" y2="204.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 195 L370 213 L388 204 Z" stroke="#8a8f98" stroke-width="2" fill="#ffffff" stroke-linejoin="round"/>
+<line x1="388.0" y1="195.0" x2="388.0" y2="213.0" stroke="#8a8f98" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="198.0" font-size="12" text-anchor="start" font-weight="700" fill="#8a8f98">White</text>
+<line x1="392.0" y1="204.0" x2="560.0" y2="204.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="236.0" x2="250.0" y2="236.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="228" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="228" width="5" height="16" fill="#f08c00"/>
+<rect x="267" y="228" width="5" height="16" fill="#f08c00"/>
+<rect x="276" y="228" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="228" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="224.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">330Ω</text>
+<line x1="300.0" y1="236.0" x2="370.0" y2="236.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 227 L370 245 L388 236 Z" stroke="#d93a3a" stroke-width="2" fill="#ffcdd2" stroke-linejoin="round"/>
+<line x1="388.0" y1="227.0" x2="388.0" y2="245.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="230.0" font-size="12" text-anchor="start" font-weight="700" fill="#d93a3a">Red</text>
+<line x1="392.0" y1="236.0" x2="560.0" y2="236.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="268.0" x2="250.0" y2="268.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="260" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="260" width="5" height="16" fill="#8b4513"/>
+<rect x="267" y="260" width="5" height="16" fill="#222222"/>
+<rect x="276" y="260" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="260" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="256.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">100Ω</text>
+<line x1="300.0" y1="268.0" x2="370.0" y2="268.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 259 L370 277 L388 268 Z" stroke="#2e7d32" stroke-width="2" fill="#c8e6c9" stroke-linejoin="round"/>
+<line x1="388.0" y1="259.0" x2="388.0" y2="277.0" stroke="#2e7d32" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="262.0" font-size="12" text-anchor="start" font-weight="700" fill="#2e7d32">Green</text>
+<line x1="392.0" y1="268.0" x2="560.0" y2="268.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="300.0" x2="250.0" y2="300.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="292" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="292" width="5" height="16" fill="#f08c00"/>
+<rect x="267" y="292" width="5" height="16" fill="#f08c00"/>
+<rect x="276" y="292" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="292" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="288.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">330Ω</text>
+<line x1="300.0" y1="300.0" x2="370.0" y2="300.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 291 L370 309 L388 300 Z" stroke="#c79100" stroke-width="2" fill="#fff59d" stroke-linejoin="round"/>
+<line x1="388.0" y1="291.0" x2="388.0" y2="309.0" stroke="#c79100" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="294.0" font-size="12" text-anchor="start" font-weight="700" fill="#c79100">Yellow</text>
+<line x1="392.0" y1="300.0" x2="560.0" y2="300.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="332.0" x2="250.0" y2="332.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="324" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="324" width="5" height="16" fill="#8b4513"/>
+<rect x="267" y="324" width="5" height="16" fill="#222222"/>
+<rect x="276" y="324" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="324" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="320.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">100Ω</text>
+<line x1="300.0" y1="332.0" x2="370.0" y2="332.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 323 L370 341 L388 332 Z" stroke="#1e63d6" stroke-width="2" fill="#bbdefb" stroke-linejoin="round"/>
+<line x1="388.0" y1="323.0" x2="388.0" y2="341.0" stroke="#1e63d6" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="326.0" font-size="12" text-anchor="start" font-weight="700" fill="#1e63d6">Blue</text>
+<line x1="392.0" y1="332.0" x2="560.0" y2="332.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="206.0" y1="364.0" x2="250.0" y2="364.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<rect x="250" y="356" width="50" height="16" rx="4" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>
+<rect x="258" y="356" width="5" height="16" fill="#8b4513"/>
+<rect x="267" y="356" width="5" height="16" fill="#222222"/>
+<rect x="276" y="356" width="5" height="16" fill="#8b4513"/>
+<rect x="285" y="356" width="5" height="16" fill="#c9a227"/>
+<text x="275.0" y="352.0" font-size="11" text-anchor="middle" font-weight="700" fill="#555c66">100Ω</text>
+<line x1="300.0" y1="364.0" x2="370.0" y2="364.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<path d="M370 355 L370 373 L388 364 Z" stroke="#8a8f98" stroke-width="2" fill="#ffffff" stroke-linejoin="round"/>
+<line x1="388.0" y1="355.0" x2="388.0" y2="373.0" stroke="#8a8f98" stroke-width="3" stroke-linecap="round"/>
+<text x="398.0" y="358.0" font-size="12" text-anchor="start" font-weight="700" fill="#8a8f98">White</text>
+<line x1="392.0" y1="364.0" x2="560.0" y2="364.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="560.0" y1="76.0" x2="560.0" y2="404.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="560.0" y1="404.0" x2="206.0" y2="404.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<rect x="400" y="424" width="150" height="46" rx="5" fill="#3a3f47"/>
+<rect x="408.0" y="433" width="36.7" height="28" rx="4" fill="#c9ced6"/>
+<rect x="444.7" y="443.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="448.7" y="433" width="36.7" height="28" rx="4" fill="#c9ced6"/>
+<rect x="485.3" y="443.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="489.3" y="433" width="36.7" height="28" rx="4" fill="#c9ced6"/>
+<rect x="526.0" y="443.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="532" y="438" width="10" height="18" rx="2" fill="#8a8f98"/>
+<rect x="534" y="440" width="6" height="7" rx="1" fill="#ffffff"/>
+<line x1="206.0" y1="444.0" x2="400.0" y2="444.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<text x="394.0" y="438.0" font-size="13" text-anchor="end" font-weight="700" fill="#d93a3a">+</text>
+<line x1="550.0" y1="452.0" x2="560.0" y2="452.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="560.0" y1="452.0" x2="560.0" y2="404.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<text x="555.0" y="447.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">−</text>
+<text x="475.0" y="488.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2b2f36">Battery box (3 × AA = 4.5 V)</text>
+<text x="574.0" y="80.0" font-size="12" text-anchor="start" font-weight="700" fill="#d93a3a">LED long leg (+)</text>
+<text x="574.0" y="96.0" font-size="12" text-anchor="start" font-weight="400" fill="#d93a3a">on the resistor side</text>
+<text x="574.0" y="126.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">Short leg (−)</text>
+<text x="574.0" y="142.0" font-size="12" text-anchor="start" font-weight="400" fill="#2b2f36">to the GND line</text>
+<text x="574.0" y="184.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">Resistor</text>
+<text x="574.0" y="200.0" font-size="12" text-anchor="start" font-weight="400" fill="#2b2f36">Red, yellow → 330 Ω</text>
+<text x="574.0" y="216.0" font-size="12" text-anchor="start" font-weight="400" fill="#2b2f36">Green, blue, white → 100 Ω</text>
+<text x="30.0" y="520.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">Switch the battery off whenever USB is connected.</text>
+</svg>
