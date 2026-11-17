@@ -49,6 +49,7 @@ async function start() {
   db = F.getFirestore(app);
   let unsub = null;
   ui.login = (id, pw, isNew) => (isNew ? A.createUserWithEmailAndPassword : A.signInWithEmailAndPassword)(auth, id + ID_DOMAIN, pw);
+  ui.google = () => A.signInWithPopup(auth, new A.GoogleAuthProvider());   // 押したその場でよぶ（iPhone でポップアップが止められないように）
   ui.logout = async () => { await flush(); await A.signOut(auth); };
   A.onAuthStateChanged(auth, async (u) => {
     if (unsub) { unsub(); unsub = null; }
@@ -150,7 +151,7 @@ async function flush() {
 
 // ---------- 本棚の右上のログインの欄 ----------
 const ID_DOMAIN = "@textbooks.example.com";
-const ui = { login: null, logout: null };
+const ui = { login: null, google: null, logout: null };
 let lastState = "", ready = false;   // ready: ログインの状態がわかってから欄を出す（それまで押しても何もできないので）
 const esc = (t) => String(t).replace(/[<>&"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]));
 const ERR = {
@@ -158,7 +159,8 @@ const ERR = {
   "auth/invalid-login-credentials": "ID かパスワードがちがいます", "auth/email-already-in-use": "その ID はもう使われています。ログインしてください",
   "auth/weak-password": "パスワードは6文字以上にしてください", "auth/too-many-requests": "何度もまちがえたので、しばらく待ってからためしてください",
   "auth/network-request-failed": "インターネットにつながっていません", "auth/invalid-email": "ID に使えない文字があります",
-  "auth/configuration-not-found": "ログインの設定（Firebase の Authentication）がまだです", "auth/operation-not-allowed": "ログインの設定（メール / パスワード）がまだです",
+  "auth/configuration-not-found": "ログインの設定（Firebase の Authentication）がまだです", "auth/operation-not-allowed": "このログインのしかたは、まだ Firebase でオンになっていません",
+  "auth/unauthorized-domain": "このサイトが Firebase の「承認済みドメイン」にまだ入っていません", "auth/popup-blocked": "ポップアップが止められました。もう一度押してください",
 };
 function status(s) { lastState = s; draw(); }
 function draw() {
@@ -172,7 +174,9 @@ function draw() {
       + `<label>ID<input name="loginid" autocomplete="username" autocapitalize="off" spellcheck="false" placeholder="半角の英数字（3文字以上）" required></label>`
       + `<label>パスワード<input name="loginpw" type="password" autocomplete="current-password" placeholder="6文字以上" required></label>`
       + `<p class="acct-err" hidden></p>`
-      + `<div class="acct-row"><button type="submit" class="pri">ログイン</button><button type="button" class="acct-new">はじめて使う（登録）</button></div></form>`;
+      + `<div class="acct-row"><button type="submit" class="pri">ログイン</button><button type="button" class="acct-new">はじめて使う（登録）</button></div>`
+      + `<p class="acct-or">または</p><button type="button" class="acct-google">Google でログイン</button>`
+      + `<p class="m">ID とパスワードと Google は、別の人として記録します。スマホと PC で同じ方法を使ってください</p></form>`;
     const btn = el.querySelector(".acct-btn"), form = el.querySelector("form"), err = el.querySelector(".acct-err");
     btn.onclick = () => { form.hidden = !form.hidden; btn.setAttribute("aria-expanded", !form.hidden); if (!form.hidden) form.elements.loginid.focus(); };
     const go = async (isNew) => {
@@ -187,9 +191,13 @@ function draw() {
     };
     form.onsubmit = (e) => { e.preventDefault(); go(false); };
     el.querySelector(".acct-new").onclick = () => { form.elements.loginpw.setAttribute("autocomplete", "new-password"); go(true); };
+    el.querySelector(".acct-google").onclick = () => {
+      err.hidden = true;
+      ui.google().catch((e) => { if (e.code === "auth/popup-closed-by-user" || e.code === "auth/cancelled-popup-request") return; err.textContent = ERR[e.code] || "ログインできませんでした（" + e.code + "）"; err.hidden = false; });
+    };
     return;
   }
-  const id = (user.email || "").replace(ID_DOMAIN, "");
+  const id = (user.email || "").endsWith(ID_DOMAIN) ? user.email.slice(0, -ID_DOMAIN.length) : user.email || user.displayName || "";
   const label = lastState === "err" ? "⚠ 同期できません" : lastState === "sync" ? "同期中…" : "同期 ✓";
   el.innerHTML = `<button type="button" class="acct-btn on${lastState === "err" ? " err" : ""}" aria-expanded="false">☁ <span>${label}</span></button>`
     + `<div class="acct-menu" hidden><p><b>${esc(id)}</b> でログイン中</p><p class="m">スマホと PC の記録を合わせています</p><button type="button" class="acct-out">ログアウト</button></div>`;
