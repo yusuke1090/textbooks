@@ -1,4 +1,5 @@
-// 教科書の記録を、Google でログインした Firebase（Firestore）に置いて、スマホと PC で合わせる。
+// 教科書の記録を、ID とパスワードでログインした Firebase（Firestore）に置いて、スマホと PC で合わせる。
+// ID とパスワードが同じなら同じ人。Firebase の中では ID を「ID@textbooks.example.com」の形のメールアドレスとして使う（メールは送らない）。
 // firebase-config.js が null のあいだは何もしない（記録は端末の中だけ）。
 //
 // しくみ
@@ -47,7 +48,7 @@ async function start() {
   const app = initializeApp(config), auth = A.getAuth(app);
   db = F.getFirestore(app);
   let unsub = null;
-  ui.login = () => A.signInWithPopup(auth, new A.GoogleAuthProvider()).catch((e) => { if (e.code !== "auth/popup-closed-by-user") alert("ログインできませんでした: " + e.code); });
+  ui.login = (id, pw, isNew) => (isNew ? A.createUserWithEmailAndPassword : A.signInWithEmailAndPassword)(auth, id + ID_DOMAIN, pw);
   ui.logout = async () => { await flush(); await A.signOut(auth); };
   A.onAuthStateChanged(auth, async (u) => {
     if (unsub) { unsub(); unsub = null; }
@@ -148,22 +149,49 @@ async function flush() {
 }
 
 // ---------- 本棚の右上のログインの欄 ----------
+const ID_DOMAIN = "@textbooks.example.com";
 const ui = { login: null, logout: null };
 let lastState = "", ready = false;   // ready: ログインの状態がわかってから欄を出す（それまで押しても何もできないので）
+const esc = (t) => String(t).replace(/[<>&"]/g, (c) => ({ "<": "&lt;", ">": "&gt;", "&": "&amp;", '"': "&quot;" }[c]));
+const ERR = {
+  "auth/invalid-credential": "ID かパスワードがちがいます", "auth/wrong-password": "ID かパスワードがちがいます", "auth/user-not-found": "ID かパスワードがちがいます",
+  "auth/invalid-login-credentials": "ID かパスワードがちがいます", "auth/email-already-in-use": "その ID はもう使われています。ログインしてください",
+  "auth/weak-password": "パスワードは6文字以上にしてください", "auth/too-many-requests": "何度もまちがえたので、しばらく待ってからためしてください",
+  "auth/network-request-failed": "インターネットにつながっていません", "auth/invalid-email": "ID に使えない文字があります",
+};
 function status(s) { lastState = s; draw(); }
 function draw() {
   const el = document.getElementById("acct");
   if (!el) return;
   if (!ready) { el.innerHTML = ""; return; }
   if (!user) {
-    el.innerHTML = `<button type="button" class="acct-btn" title="スマホと PC の記録を合わせる">☁ Google でログイン</button>`;
-    el.querySelector("button").onclick = () => ui.login && ui.login();
+    el.innerHTML = `<button type="button" class="acct-btn" aria-expanded="false" title="スマホと PC の記録を合わせる">☁ ログイン</button>`
+      + `<form class="acct-menu acct-form" hidden autocomplete="on">`
+      + `<p class="m">同じ ID とパスワードでログインすると、スマホと PC の記録（勉強時間・続き・練習問題・単語・付箋）がそろいます</p>`
+      + `<label>ID<input name="loginid" autocomplete="username" autocapitalize="off" spellcheck="false" placeholder="半角の英数字（3文字以上）" required></label>`
+      + `<label>パスワード<input name="loginpw" type="password" autocomplete="current-password" placeholder="6文字以上" required></label>`
+      + `<p class="acct-err" hidden></p>`
+      + `<div class="acct-row"><button type="submit" class="pri">ログイン</button><button type="button" class="acct-new">はじめて使う（登録）</button></div></form>`;
+    const btn = el.querySelector(".acct-btn"), form = el.querySelector("form"), err = el.querySelector(".acct-err");
+    btn.onclick = () => { form.hidden = !form.hidden; btn.setAttribute("aria-expanded", !form.hidden); if (!form.hidden) form.elements.loginid.focus(); };
+    const go = async (isNew) => {
+      const id = form.elements.loginid.value.trim().toLowerCase(), pw = form.elements.loginpw.value;
+      err.hidden = true;
+      if (!/^[a-z0-9][a-z0-9._-]{2,29}$/.test(id)) { err.textContent = "ID は半角の英数字（. _ - も可）で3〜30文字にしてください"; err.hidden = false; return; }
+      if (pw.length < 6) { err.textContent = ERR["auth/weak-password"]; err.hidden = false; return; }
+      form.querySelectorAll("button").forEach((b) => { b.disabled = true; });
+      try { await ui.login(id, pw, isNew); }
+      catch (e) { err.textContent = ERR[e.code] || "ログインできませんでした（" + e.code + "）"; err.hidden = false; }
+      form.querySelectorAll("button").forEach((b) => { b.disabled = false; });
+    };
+    form.onsubmit = (e) => { e.preventDefault(); go(false); };
+    el.querySelector(".acct-new").onclick = () => { form.elements.loginpw.setAttribute("autocomplete", "new-password"); go(true); };
     return;
   }
+  const id = (user.email || "").replace(ID_DOMAIN, "");
   const label = lastState === "err" ? "⚠ 同期できません" : lastState === "sync" ? "同期中…" : "同期 ✓";
-  const photo = user.photoURL ? `<img src="${user.photoURL}" alt="" referrerpolicy="no-referrer">` : "☁";
-  el.innerHTML = `<button type="button" class="acct-btn on${lastState === "err" ? " err" : ""}" aria-expanded="false">${photo}<span>${label}</span></button>`
-    + `<div class="acct-menu" hidden><p>${(user.email || "").replace(/[<>&"]/g, "")}</p><p class="m">スマホと PC の記録を合わせています</p><button type="button" class="acct-out">ログアウト</button></div>`;
+  el.innerHTML = `<button type="button" class="acct-btn on${lastState === "err" ? " err" : ""}" aria-expanded="false">☁ <span>${label}</span></button>`
+    + `<div class="acct-menu" hidden><p><b>${esc(id)}</b> でログイン中</p><p class="m">スマホと PC の記録を合わせています</p><button type="button" class="acct-out">ログアウト</button></div>`;
   const btn = el.querySelector(".acct-btn"), menu = el.querySelector(".acct-menu");
   btn.onclick = () => { menu.hidden = !menu.hidden; btn.setAttribute("aria-expanded", !menu.hidden); };
   el.querySelector(".acct-out").onclick = () => ui.logout && ui.logout();
