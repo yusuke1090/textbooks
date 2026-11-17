@@ -1,0 +1,86 @@
+# よく使う動詞（動き・ふだんのこと）
+kuwa | 動 | ～である、～になる | Nataka **kuwa** daktari.（医者になりたい）
+kuwa na | 句 | 持っている、～がある | **Nina** watoto watatu.（子どもが3人いる）
+kwenda | 動 | 行く | **Ninakwenda** sokoni.（市場へ行く）
+kuja | 動 | 来る | **Njoo** hapa.（ここに来て）
+kutoka | 動 | 出る、～から来る | **Ninatoka** Japani.（日本から来ました）
+kuingia | 動 | 入る | **Ingia**, karibu.（どうぞ入って）
+kutembea | 動 | 歩く、散歩する | **Tunatembea** kwenda shule.（歩いて学校へ行く）
+kusimama | 動 | 立つ、止まる | **Simama** hapa.（ここで止まって）
+kuanguka | 動 | 倒れる、落ちる | Mtoto **ameanguka**.（子どもが転んだ）
+kuruka | 動 | 跳ぶ、飛ぶ | Ndege **wanaruka** juu ya ziwa.（鳥が湖の上を飛んでいる）
+kuona | 動 | 見る、会う | **Nimekuona** jana sokoni.（昨日市場であなたを見かけた）
+kuangalia | 動 | 見る、気をつける | **Angalia** gari!（車に気をつけて）
+kutazama | 動 | 見つめる、ながめる | **Tunatazama** machweo.（夕日をながめている）
+kusikia | 動 | 聞く、感じる | **Nimesikia** habari.（知らせを聞いた）
+kusikiliza | 動 | 耳を傾ける | **Sikiliza** kwa makini.（よく聞いて）
+kusema | 動 | 言う | **Sema** tena.（もう一度言って）
+kuongea | 動 | 話す | **Tuongee** kesho.（明日話そう）
+kuzungumza | 動 | 話す、話し合う | **Tulizungumza** kuhusu mradi.（事業について話し合った）
+kuambia | 動 | （人に）言う、伝える | **Niambie** ukweli.（本当のことを言って）
+kuita | 動 | 呼ぶ | **Mwite** mama.（お母さんを呼んで）
+kutaka | 動 | 欲しい、～したい | **Nataka** chai.（紅茶が欲しい）
+kupenda | 動 | 好きだ、愛する | **Ninapenda** muziki.（音楽が好き）
+kuhitaji | 動 | 必要とする | **Tunahitaji** msaada.（助けが必要だ）
+kupata | 動 | 得る、手に入れる | **Nimepata** kazi!（仕事が見つかった）
+kutoa | 動 | 出す、与える | **Toa** pesa mfukoni.（ポケットからお金を出して）
+kupa | 動 | 与える | **Nipe** maji.（水をちょうだい）
+kuchukua | 動 | 取る、持っていく | **Chukua** hii.（これを持っていって）
+kuleta | 動 | 持ってくる | **Lete** chai.（紅茶を持ってきて）
+kupeleka | 動 | 持っていく、送る、連れていく | **Peleka** barua posta.（手紙を郵便局へ持っていって）
+kuweka | 動 | 置く、入れる | **Weka** hapa.（ここに置いて）
+kushika | 動 | つかむ、持つ | **Shika** mkono wangu.（手をつかんで）
+kuacha | 動 | やめる、置いていく | **Acha** kuvuta sigara.（たばこをやめて）
+kuanza | 動 | 始める、始まる | Mvua **imeanza**.（雨が降りだした）
+kumaliza | 動 | 終える | **Nimemaliza** kazi.（仕事を終えた）
+kwisha | 動 | 終わる、なくなる | Sukari **imekwisha**.（砂糖がなくなった）
+kufanya | 動 | する、作る | **Unafanya** nini?（何をしているの）
+kujaribu | 動 | 試す、やってみる | **Jaribu** tena.（もう一度やってみて）
+kuweza | 動 | できる | **Ninaweza** kusaidia.（手伝えます）
+kufikiri | 動 | 考える | **Nafikiri** atakuja.（彼は来ると思う）
+kudhani | 動 | 思う | **Nadhani** ni sawa.（大丈夫だと思う）
+kukumbuka | 動 | 覚えている、思い出す | **Unakumbuka** jina langu?（私の名前を覚えてる？）
+kusahau | 動 | 忘れる | **Nimesahau** simu.（スマホを忘れた）
+kungoja | 動 | 待つ | **Ngoja** kidogo.（少し待って）
+kusubiri | 動 | 待つ | **Subiri** hapa.（ここで待って）
+kutafuta | 動 | 探す | **Ninatafuta** kazi.（仕事を探している）
+kupoteza | 動 | なくす、失う | **Nimepoteza** pochi.（財布をなくした）
+kuonyesha | 動 | 見せる、示す | **Nionyeshe** njia.（道を教えて）
+kufuata | 動 | ついて行く、従う | **Nifuate**.（ついて来て）
+kurudisha | 動 | 返す、戻す | **Rudisha** kitabu kesho.（明日本を返して）
+kutuma | 動 | 送る、使いに出す | **Nitakutumia** picha.（写真を送るね）
+kubadilisha | 動 | 変える、取りかえる | **Nimebadilisha** mpango.（予定を変えた）
+kubadilika | 動 | 変わる | Hali ya hewa **imebadilika**.（天気が変わった）
+kuongeza | 動 | 増やす、加える | **Ongeza** sukari kidogo.（砂糖を少し足して）
+kuongezeka | 動 | 増える | Bei **imeongezeka**.（値段が上がった）
+kupungua | 動 | 減る | Maji **yamepungua**.（水が減った）
+kugawa | 動 | 分ける、配る | **Gawa** mikate kwa watoto.（パンを子どもに配って）
+kuhesabu | 動 | 数える | **Hesabu** ng'ombe wote.（牛を全部数えて）
+kujenga | 動 | 建てる | **Tunajenga** nyumba mpya.（新しい家を建てている）
+kuvunja | 動 | 壊す、割る | Nani **amevunja** kikombe?（だれがカップを割ったの）
+kufanikiwa | 動 | 成功する | **Amefanikiwa** katika biashara.（商売で成功した）
+kushiriki | 動 | 参加する | **Tutashiriki** mkutano.（会議に出る）
+kukutana | 動 | 会う | **Tukutane** saa tisa.（3時に会おう）
+kuchelewa | 動 | 遅れる | Basi **limechelewa**.（バスが遅れた）
+kuwahi | 動 | 間に合う；～したことがある | **Umewahi** kufika Japani?（日本に行ったことある？）
+kufaulu | 動 | 合格する、成功する | **Amefaulu** mtihani.（試験に合格した）
+kuamua | 動 | 決める | **Nimeamua** kubaki.（残ることにした）
+kuchagua | 動 | 選ぶ | **Chagua** moja.（1つ選んで）
+kukubali | 動 | 受け入れる、賛成する | **Nakubali**.（賛成です）
+kukataa | 動 | 断る、拒む | **Amekataa** kazi.（仕事を断った）
+kuomba | 動 | 頼む、祈る | **Naomba** maji.（水をください）
+kuahidi | 動 | 約束する | **Ninaahidi** kurudi.（戻ると約束する）
+kulia | 動 | 泣く；鳴く | Mtoto **analia**.（赤ちゃんが泣いている）
+kucheka | 動 | 笑う | **Tulicheka** sana.（たくさん笑った）
+kutumia | 動 | 使う | **Tumia** kalamu hii.（このペンを使って）
+kubaki | 動 | 残る | **Baki** hapa.（ここに残って）
+kupita | 動 | 通る、過ぎる | Basi **limepita**.（バスが通り過ぎた）
+kukua | 動 | 育つ、大きくなる | Mtoto **amekua** sana.（子どもがずいぶん大きくなった）
+kuvuta | 動 | 引く；（たばこを）吸う | **Vuta** mlango.（ドアを引いて）
+kusukuma | 動 | 押す | **Sukuma** gari.（車を押して）
+kufunika | 動 | おおう、ふたをする | **Funika** chakula.（食べ物にふたをして）
+kurusha | 動 | 投げる、飛ばす | **Rusha** mpira.（ボールを投げて）
+kuficha | 動 | 隠す | **Ameficha** pesa.（お金を隠した）
+kuchora | 動 | 描く | **Anachora** picha.（絵を描いている）
+kutafsiri | 動 | 訳す | **Tafsiri** neno hili.（この言葉を訳して）
+kukosa | 動 | 欠く、逃す、まちがう | **Nimekosa** basi.（バスに乗り遅れた）

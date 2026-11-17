@@ -1,0 +1,61 @@
+# 数・時間・暦
+moja | 数 | 1 | Nina mtoto **mmoja**.（子どもが1人います）
+mbili | 数 | 2 | Nataka chupa **mbili** za maji.（水を2本ください）
+tatu | 数 | 3 | Ng'ombe **watatu** ni wagonjwa.（牛が3頭病気だ）
+nne | 数 | 4 | Nina ng'ombe **wanne**.（牛を4頭持っています）
+tano | 数 | 5 | Nipe mayai **matano**.（卵を5つください）
+sita | 数 | 6 | Shamba lina ekari **sita**.（畑は6エーカーある）
+saba | 数 | 7 | Wiki ina siku **saba**.（1週間は7日）
+nane | 数 | 8 | Tulifika saa **nane**.（8時＝午後2時に着いた）
+tisa | 数 | 9 | Kuna wanafunzi **tisa**.（生徒が9人いる）
+kumi | 数 | 10 | Lita **kumi** za maziwa.（牛乳10リットル）
+ishirini | 数 | 20 | Ng'ombe **ishirini** wanakamuliwa.（20頭が搾乳されている）
+thelathini | 数 | 30 | Mwezi huu una siku **thelathini**.（今月は30日ある）
+arobaini | 数 | 40 | Bei ni shilingi **arobaini**.（値段は40シリング）
+hamsini | 数 | 50 | Lita **hamsini** kwa siku.（1日に50リットル）
+sitini | 数 | 60 | Ana umri wa miaka **sitini**.（彼は60歳です）
+sabini | 数 | 70 | Tulipanda miti **sabini**.（木を70本植えた）
+themanini | 数 | 80 | Kuna ng'ombe **themanini** kwenye ushirika.（組合に牛が80頭いる）
+tisini | 数 | 90 | Asilimia **tisini** walikubali.（90パーセントが賛成した）
+mia | 数 | 100（mia moja）、百 | Shilingi **mia** tano.（500シリング）
+elfu | 数 | 1000（elfu moja）、千 | Lita moja ni shilingi **elfu** moja.（1リットル1,000シリング）
+milioni | 数 | 100万 | Trekta inagharimu **milioni** thelathini.（トラクターは3,000万する）
+nusu | 名 N | 半分 | Nipe **nusu** kilo ya sukari.（砂糖を半キロください）
+robo | 名 N | 4分の1、15分 | Saa tatu na **robo**.（9時15分）
+asilimia | 名 N | パーセント | **Asilimia** kumi ya maziwa yanaharibika.（牛乳の10%が悪くなる）
+-a kwanza | 形 | 1番目の、最初の | Siku ya **kwanza** ilikuwa ngumu.（最初の日は大変だった）
+-a pili | 形 | 2番目の | Hii ni mara ya **pili**.（これは2回目です）
+mara | 名 N | 回、度 | Ng'ombe wanakamuliwa **mara** mbili kwa siku.（牛は1日2回搾乳される）
+saa | 名 N | 時、時計、時間 | Ni **saa** ngapi?（何時ですか）
+dakika | 名 N | 分 | Subiri **dakika** tano.（5分待って）
+sekunde | 名 N | 秒 | Ngoja **sekunde** moja.（1秒待って）
+siku | 名 N | 日 | **Siku** hizi mvua ni nyingi.（最近は雨が多い）
+wiki | 名 N | 週 | Tutakutana **wiki** ijayo.（来週会いましょう）
+mwezi（miezi） | 名 M-MI | 月（暦の）、月（空の） | **Mwezi** ujao nitasafiri.（来月旅行します）
+mwaka（miaka） | 名 M-MI | 年 | **Mwaka** jana mvua ilikuwa kidogo.（去年は雨が少なかった）
+leo | 副 | 今日 | **Leo** ni Jumamosi.（今日は土曜日です）
+kesho | 副 | 明日 | Nitarudi **kesho**.（明日戻ります）
+jana | 副 | 昨日 | **Jana** nilienda sokoni.（昨日市場へ行った）
+kesho kutwa | 副 | あさって | Tutaanza **kesho kutwa**.（あさって始めます）
+juzi | 副 | おととい | Alifika **juzi**.（彼はおととい着いた）
+sasa | 副 | 今 | Ninaondoka **sasa**.（今出かけます）
+asubuhi | 名 N | 朝 | Tunakamua **asubuhi** na jioni.（朝と夕方に搾る）
+mchana | 名 M-MI | 昼 | **Mchana** kuna joto sana.（昼はとても暑い）
+jioni | 名 N | 夕方 | Tutaonana **jioni**.（夕方に会いましょう）
+usiku | 名 U | 夜 | **Usiku** ni baridi.（夜は寒い）
+alfajiri | 名 N | 夜明け | Wanaamka **alfajiri**.（彼らは夜明けに起きる）
+Jumatatu | 名 N | 月曜 | Soko liko wazi **Jumatatu**.（市場は月曜に開いている）
+Jumanne | 名 N | 火曜 | Mkutano ni **Jumanne**.（会議は火曜です）
+Jumatano | 名 N | 水曜 | Daktari atakuja **Jumatano**.（獣医は水曜に来る）
+Alhamisi | 名 N | 木曜 | **Alhamisi** tutapanda mahindi.（木曜にトウモロコシをまく）
+Ijumaa | 名 N | 金曜 | Waislamu husali **Ijumaa**.（イスラム教徒は金曜に礼拝する）
+Jumamosi | 名 N | 土曜 | **Jumamosi** ni siku ya soko.（土曜は市の日）
+Jumapili | 名 N | 日曜 | **Jumapili** watu huenda kanisani.（日曜は人々が教会へ行く）
+Januari | 名 N | 1月 | Mvua fupi huisha **Januari**.（短い雨季は1月に終わる）
+Machi | 名 N | 3月 | Mvua ndefu huanza **Machi**.（長い雨季は3月に始まる）
+Desemba | 名 N | 12月 | Tutasafiri **Desemba**.（12月に旅行する）
+tarehe | 名 N | 日付 | Leo ni **tarehe** ngapi?（今日は何日ですか）
+wakati | 名 U | 時、時間、〜のとき | **Wakati** wa mvua, barabara ni mbaya.（雨のとき、道が悪い）
+muda | 名 M-MI | 時間、期間 | Sina **muda** leo.（今日は時間がない）
+mapema | 副 | 早く | Fika **mapema**, tafadhali.（早めに来てください）
+laki | 数 | 10万 | Bei ni shilingi **laki** mbili.（値段は20万シリング）

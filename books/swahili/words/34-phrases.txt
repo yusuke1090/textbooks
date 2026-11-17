@@ -1,0 +1,53 @@
+# 会話でよく使う言い方
+Hakuna matata | 句 | 問題ない、だいじょうぶ（観光客向けによく使う） | **Hakuna matata**, tutafika salama.（だいじょうぶ、無事に着くよ）
+Twende | 句 | 行こう | **Twende** sokoni.（市場へ行こう）
+Twende zetu | 句 | さあ行こう、帰ろう | **Twende zetu** nyumbani.（家に帰ろう）
+Haya | 句 | さあ、オーケー | **Haya**, tuanze.（さあ、始めよう）
+Sawa basi | 句 | じゃあ、それで | **Sawa basi**, tutaonana kesho.（じゃあ、また明日）
+Kumbe! | 句 | なんだ、そうだったのか | **Kumbe** wewe ni Mjapani!（なんだ、日本人だったんだ）
+Si ndiyo? | 句 | でしょう？ | Ni nzuri, **si ndiyo**?（いいでしょう？）
+Usijali | 句 | 気にしないで、心配しないで | **Usijali**, nitakusaidia.（心配しないで、手伝うから）
+Pole sana | 句 | 本当にお気の毒に、大変でしたね | Umeumia? **Pole sana**.（けがしたの？大変だったね）
+Nimeelewa | 句 | わかりました | **Nimeelewa**, asante.（わかりました、ありがとう）
+Sijui | 句 | 知りません、わかりません | **Sijui**, muulize yeye.（知らない、彼にきいて）
+Sina | 句 | 持っていません | **Sina** chenji.（おつりがありません）
+Nisaidie | 句 | 助けて、手伝って | **Nisaidie**, tafadhali!（助けてください）
+Bei gani? | 句 | いくら？ | Hii ni **bei gani**?（これはいくら？）
+Punguza kidogo | 句 | 少しまけて | **Punguza kidogo**, rafiki.（少しまけてよ）
+Nimeshiba | 句 | おなかいっぱいです | Asante, **nimeshiba**.（ありがとう、もうおなかいっぱい）
+Karibu chakula | 句 | （食事中に）いっしょにどうぞ | **Karibu chakula**!（いっしょにどうぞ）
+Nakupenda | 句 | 愛してる、大好き | **Nakupenda**, mama.（お母さん、大好き）
+Nimekukumbuka | 句 | 会いたかった、恋しかった | **Nimekukumbuka** sana!（すごく会いたかった）
+Lala salama | 句 | おやすみ、ぐっすり寝てね | **Lala salama**, mwanangu.（おやすみ、わが子よ）
+Siku njema | 句 | よい一日を | **Siku njema**!（よい一日を）
+Kazi njema | 句 | 仕事がんばって | **Kazi njema**!（お仕事がんばって）
+Ndiyo maana | 句 | だから～なんだ | **Ndiyo maana** amechelewa.（だから遅れたんだ）
+Haiwezekani | 句 | ありえない、無理だ | **Haiwezekani**!（ありえない）
+Inawezekana | 句 | できる、ありうる | **Inawezekana**, tujaribu.（できるよ、やってみよう）
+Inategemea | 句 | 場合による、～しだいだ | **Inategemea** na mvua.（雨しだいだ）
+Sina uhakika | 句 | よくわからない（確かでない） | **Sina uhakika**, ngoja niulize.（確かじゃない、ちょっときいてみる）
+Samahani kwa kuchelewa | 句 | 遅れてすみません | **Samahani kwa kuchelewa**.（遅れてすみません）
+Hakuna haja | 句 | 必要ない、いいですよ | **Hakuna haja** ya kulipa.（払わなくていいよ）
+Unaonaje? | 句 | どう思う？ | **Unaonaje** mpango huu?（この計画をどう思う？）
+Unafanya kazi gani? | 句 | お仕事は何ですか | **Unafanya kazi gani**? — Mimi ni mkulima.（お仕事は？ — 農家です）
+Una miaka mingapi? | 句 | 何歳ですか | **Una miaka mingapi**? — Nina miaka thelathini.（何歳？ — 30歳です）
+Saa ngapi? | 句 | 何時？ | Sasa ni **saa ngapi**? — Saa nne.（今何時？ — 10時です）
+Iko wapi? | 句 | どこにありますか | Benki **iko wapi**?（銀行はどこですか）
+Nataka kwenda… | 句 | ～へ行きたい | **Nataka kwenda** Arusha.（アルーシャへ行きたい）
+Nishushe hapa | 句 | ここで降ろして | **Nishushe hapa**, tafadhali.（ここで降ろしてください）
+Tuko pamoja | 句 | 私たちはいっしょだ、わかってるよ | **Tuko pamoja**!（いっしょだよ）
+Shwari | 句 | 平穏だ、いいよ（あいさつの答え） | Mambo? — **Shwari**.（元気？ — いいよ）
+Vipi? | 句 | どう？（くだけたあいさつ） | **Vipi**? — Poa.（どう？ — いいよ）
+Freshi | 句 | 元気（くだけた答え） | Vipi? — **Freshi**.（どう？ — 元気）
+Niaje? | 句 | よう（若者のあいさつ） | **Niaje**, mshkaji?（よう、相棒）
+Sema! | 句 | よう（くだけたあいさつ、「言って」） | **Sema**, rafiki!（よう、友よ）
+Nimechoka sana | 句 | とても疲れた | **Nimechoka sana** leo.（今日はとても疲れた）
+Ngoja kwanza | 句 | ちょっと待って | **Ngoja kwanza**, nakuja.（ちょっと待って、今行く）
+Haina shida | 句 | かまわない | Ukichelewa, **haina shida**.（遅れてもかまわないよ）
+Umeamkaje? | 句 | おはよう（どう起きた？） | **Umeamkaje**? — Salama.（おはよう — 元気だよ）
+Umeshindaje? | 句 | （夕方に）今日はどうだった？ | **Umeshindaje**? — Salama tu.（今日はどうだった？ — 何事もなく）
+Karibu tena | 句 | また来てね | Asante kwa kuja, **karibu tena**.（来てくれてありがとう、また来てね）
+Chukua hii | 句 | これをどうぞ、これを持って | **Chukua hii**, ni zawadi.（これをどうぞ、プレゼントです）
+Sawa kabisa | 句 | まったくそのとおり | **Sawa kabisa**!（そのとおり）
+Kwani? | 句 | だからどうしたの、なぜ？ | Nimechelewa. — **Kwani**?（遅れた — それが何か？）
+Mungu akipenda | 句 | 神のおぼしめしがあれば（うまくいけば） | Tutaonana kesho, **Mungu akipenda**.（うまくいけば明日会おう）

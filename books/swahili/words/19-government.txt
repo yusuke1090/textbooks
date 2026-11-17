@@ -1,0 +1,64 @@
+# 役所・政治・法律
+taifa（mataifa） | 名 JI-MA | 国家、国民 | **Taifa** letu lina makabila mengi.（わが国には多くの民族がいる）
+Jamhuri | 名 N | 共和国 | **Jamhuri** ya Muungano wa Tanzania.（タンザニア連合共和国）
+rais（marais） | 名 JI-MA | 大統領 | **Rais** amezungumza na wananchi.（大統領が国民に話した）
+waziri（mawaziri） | 名 JI-MA | 大臣 | **Waziri** wa Kilimo atatembelea mkoa wetu.（農業大臣が私たちの州を訪れる）
+Waziri Mkuu | 句 | 首相 | **Waziri Mkuu** atafungua mkutano.（首相が会議を開く）
+wizara | 名 N | 省 | **Wizara** ya Mifugo iko Dodoma.（畜産省はドドマにある）
+bunge | 名 JI-MA | 国会 | **Bunge** limepitisha sheria mpya.（国会が新しい法律を通した）
+mbunge（wabunge） | 名 M-WA | 国会議員 | **Mbunge** wetu anatoka kijiji hiki.（私たちの議員はこの村の出身だ）
+uchaguzi（chaguzi） | 名 U | 選挙 | **Uchaguzi** mkuu ni mwakani.（総選挙は来年だ）
+kupiga kura | 句 | 投票する | Kila mtu mzima ana haki ya **kupiga kura**.（大人はみな投票する権利がある）
+chama（vyama） | 名 KI-VI | 政党、会、団体 | **Vyama** vingi vimeshiriki uchaguzi.（多くの政党が選挙に出た）
+siasa | 名 N | 政治 | Sipendi kuongea **siasa**.（政治の話はしたくない）
+mwanasiasa（wanasiasa） | 名 M-WA | 政治家 | **Wanasiasa** wanaahidi mambo mengi.（政治家はいろいろ約束する）
+demokrasia | 名 N | 民主主義 | **Demokrasia** inahitaji uhuru wa kusema.（民主主義には言論の自由が要る）
+uhuru | 名 U | 自由、独立 | Tanganyika ilipata **uhuru** mwaka 1961.（タンガニーカは1961年に独立した）
+mapinduzi | 名 JI-MA | 革命 | **Mapinduzi** ya Zanzibar yalitokea mwaka 1964.（ザンジバル革命は1964年に起きた）
+muungano | 名 M-MI | 連合、合同 | **Muungano** wa Tanganyika na Zanzibar ulifanyika mwaka 1964.（タンガニーカとザンジバルの連合は1964年）
+katiba | 名 N | 憲法 | **Katiba** mpya inajadiliwa.（新しい憲法が議論されている）
+sheria | 名 N | 法律、規則 | Fuata **sheria** za barabarani.（交通ルールを守って）
+haki | 名 N | 権利、正義 | Kila mtoto ana **haki** ya elimu.（どの子にも教育を受ける権利がある）
+wajibu | 名 U | 義務、責任 | Ni **wajibu** wetu kulipa kodi.（税を払うのは私たちの義務だ）
+mahakama | 名 N | 裁判所 | Kesi iko **mahakamani**.（事件は裁判所にかかっている）
+kesi | 名 N | 裁判、訴訟、事件 | **Kesi** itasikilizwa kesho.（裁判は明日開かれる）
+hakimu（mahakimu） | 名 JI-MA | 裁判官 | **Hakimu** ametoa hukumu.（裁判官が判決を出した）
+hukumu | 名 N | 判決 | **Hukumu** itatolewa wiki ijayo.（判決は来週出る）
+wakili（mawakili） | 名 JI-MA | 弁護士 | Nahitaji **wakili**.（弁護士が必要だ）
+adhabu | 名 N | 罰 | **Adhabu** ni faini au kifungo.（罰は罰金か禁固だ）
+faini | 名 N | 罰金 | Alilipa **faini** ya shilingi elfu thelathini.（3万シリングの罰金を払った）
+gereza（magereza） | 名 JI-MA | 刑務所 | Alipelekwa **gerezani**.（刑務所に送られた）
+kukamata | 動 | 捕まえる | Polisi **wamemkamata** mwizi.（警察が泥棒を捕まえた）
+mwizi（wezi） | 名 M-WA | 泥棒 | **Mwizi** ameiba mbuzi.（泥棒がヤギを盗んだ）
+kuiba | 動 | 盗む | **Kuiba** ni kosa.（盗むのは罪だ）
+wizi | 名 U | 盗み | **Wizi** wa mifugo umeongezeka.（家畜の盗みが増えた）
+kosa（makosa） | 名 JI-MA | 罪、誤り、せい | Si **kosa** lako.（あなたのせいじゃない）
+uhalifu | 名 U | 犯罪 | **Uhalifu** umepungua mjini.（町の犯罪が減った）
+rushwa | 名 N | 賄賂 | Usitoe **rushwa**.（賄賂を出さないで）
+ufisadi | 名 U | 汚職 | **Ufisadi** unarudisha nyuma maendeleo.（汚職は発展を遅らせる）
+maendeleo | 名 JI-MA | 発展、進歩 | **Maendeleo** ya kijiji yanahitaji barabara.（村の発展には道路が要る）
+sera | 名 N | 政策 | **Sera** mpya ya kilimo imetangazwa.（新しい農業政策が発表された）
+marufuku | 名 N | 禁止 | Mifuko ya plastiki ni **marufuku** Tanzania.（タンザニアではレジ袋は禁止）
+kuruhusu | 動 | 許す、認める | Serikali **imeruhusu** kuuza mahindi nje.（政府はトウモロコシの輸出を認めた）
+ruhusa | 名 N | 許可 | Omba **ruhusa** kwanza.（まず許可をもらって）
+mtendaji wa kijiji | 句 | 村の行政官 | **Mtendaji wa kijiji** anatunza kumbukumbu.（村の行政官が記録を管理する）
+diwani（madiwani） | 名 JI-MA | 地方議員 | **Diwani** wa kata yetu ni mwanamke.（私たちの区の議員は女性だ）
+kata | 名 N | 区（行政の単位） | Shule iko katika **kata** yetu.（学校は私たちの区にある）
+mkuu wa mkoa | 句 | 州知事 | **Mkuu wa mkoa** atazindua mradi.（州知事が事業を始める）
+mwananchi（wananchi） | 名 M-WA | 国民、住民 | **Wananchi** wanataka maji safi.（住民はきれいな水を求めている）
+raia | 名 N | 国民（国籍のある人）、民間人 | Mimi ni **raia** wa Japani.（私は日本国民です）
+mkimbizi（wakimbizi） | 名 M-WA | 難民 | Kambi ya **wakimbizi** iko Kigoma.（難民キャンプはキゴマにある）
+vita | 名 KI-VI | 戦争 | **Vita** vimeleta njaa.（戦争で飢えが起きた）
+amani | 名 N | 平和 | Tanzania ni nchi ya **amani**.（タンザニアは平和な国だ）
+jeshi（majeshi） | 名 JI-MA | 軍 | **Jeshi** linasaidia wakati wa mafuriko.（洪水のときは軍が助ける）
+shujaa（mashujaa） | 名 JI-MA | 英雄 | Siku ya **Mashujaa** ni tarehe 25 Julai.（英雄の日は7月25日）
+bendera | 名 N | 旗 | **Bendera** ya Tanzania ina rangi nne.（タンザニアの旗は4色だ）
+wimbo wa taifa | 句 | 国歌 | Tuliimba **wimbo wa taifa**.（国歌を歌った）
+sensa | 名 N | 国勢調査 | **Sensa** ya watu ilifanyika mwaka 2022.（国勢調査は2022年に行われた）
+ubalozi | 名 U | 大使館 | **Ubalozi** wa Japani uko Dar es Salaam.（日本大使館はダルエスサラームにある）
+mamlaka | 名 N | 当局、権限 | **Mamlaka** ya Mapato Tanzania inakusanya kodi.（タンザニア歳入庁が税を集める）
+fomu | 名 N | 用紙 | Jaza **fomu** hii.（この用紙に記入して）
+kanuni | 名 N | 規則、決まり | Fuata **kanuni** za ofisi.（事務所の決まりに従って）
+ofisi ya kijiji | 句 | 村の事務所 | Mkutano utafanyika **ofisi ya kijiji**.（集会は村の事務所で開かれる）
+kuomba kazi | 句 | 仕事に応募する | **Ameomba kazi** serikalini.（役所の仕事に応募した）
+cheo（vyeo） | 名 KI-VI | 地位、役職 | Amepandishwa **cheo**.（昇進した）

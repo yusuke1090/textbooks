@@ -1,0 +1,47 @@
+# 牛の病気と獣医
+ndigana baridi | 句 | アナプラズマ病 | **Ndigana baridi** inaenezwa na kupe.（アナプラズマ病はダニがうつす）
+kukojoa damu | 句 | 血尿が出る（バベシア病） | Ng'ombe **anakojoa damu**.（牛が血尿をしている）
+homa ya mapafu | 句 | 肺の病気（牛肺疫など） | **Homa ya mapafu** ya ng'ombe inaambukiza.（牛肺疫はうつる）
+ugonjwa wa miguu na midomo | 句 | 口蹄疫 | **Ugonjwa wa miguu na midomo** umeingia wilayani.（口蹄疫が郡に入った）
+kimeta | 名 KI-VI | 炭疽 | Usile nyama ya mnyama aliyekufa kwa **kimeta**.（炭疽で死んだ動物の肉は食べないで）
+chambavu | 名 N | 気腫疽 | **Chambavu** inawapata ndama wanene.（気腫疽は太った子牛がかかりやすい）
+homa ya Bonde la Ufa | 句 | リフトバレー熱 | **Homa ya Bonde la Ufa** inaambukiza binadamu pia.（リフトバレー熱は人にもうつる）
+kichaa cha mbwa | 句 | 狂犬病 | Mbwa wapewe chanjo ya **kichaa cha mbwa**.（犬には狂犬病の予防接種を）
+kutupa mimba | 句 | 流産する | Ng'ombe **ametupa mimba**.（牛が流産した）
+minyoo | 名 M-MI | 寄生虫（回虫など） | Wape ndama dawa ya **minyoo**.（子牛に虫下しをやって）
+mbung'o | 名 N | ツェツェバエ | **Mbung'o** wanaleta ugonjwa wa nagana.（ツェツェバエがナガナ病をうつす）
+kuogesha | 動 | 洗う、薬浴させる | **Ogesha** ng'ombe kila wiki.（毎週牛を薬浴させて）
+usaha | 名 U | うみ | Maziwa yana **usaha**.（乳にうみが混じっている）
+joto la mwili | 句 | 体温 | Pima **joto la mwili** la ng'ombe.（牛の体温を測って）
+kukohoa | 動 | せきをする | Ndama **anakohoa**.（子牛がせきをしている）
+kudhoofika | 動 | 弱る | Ng'ombe **amedhoofika**.（牛が弱っている）
+kukataa kula | 句 | えさを食べない | Ng'ombe **amekataa kula**.（牛がえさを食べない）
+kuchechemea | 動 | 足を引きずる | Ng'ombe **anachechemea**.（牛が足を引きずっている）
+kukata kwato | 句 | 削蹄する | **Kata kwato** mara mbili kwa mwaka.（年に2回削蹄して）
+kuvimbiwa | 動 | （おなかが）張る、鼓脹症になる | Ng'ombe **amevimbiwa** baada ya kula majani mabichi.（青草を食べて牛のおなかが張った）
+kondo la nyuma | 句 | 後産（胎盤） | **Kondo la nyuma** halijatoka.（後産が出ていない）
+dang'a | 名 N | 初乳 | Ndama anywe **dang'a** ndani ya saa sita.（子牛には6時間以内に初乳を飲ませて）
+kunyonya | 動 | （乳を）吸う | Ndama **ananyonya**.（子牛が乳を吸っている）
+kuachisha kunyonya | 句 | 離乳させる | Ndama **huachishwa kunyonya** akiwa na miezi mitatu.（子牛は3か月で離乳させる）
+kuhasi | 動 | 去勢する | **Tunahasi** madume yasiyofaa.（種に向かない雄は去勢する）
+hereni ya sikio | 句 | 耳標 | Kila ng'ombe ana **hereni ya sikio**.（どの牛にも耳標がある）
+mhimilishaji（wahimilishaji） | 名 M-WA | 人工授精師 | **Mhimilishaji** atakuja leo.（人工授精師が今日来る）
+kushika mimba | 句 | 妊娠する | Ng'ombe **ameshika mimba**.（牛が妊娠した）
+kufa | 動 | 死ぬ | Ndama **amekufa**.（子牛が死んだ）
+kuzika | 動 | 埋める、葬る | **Zika** mzoga mbali na maji.（死体は水から離れたところに埋めて）
+karantini | 名 N | 検疫、隔離 | Wilaya iko chini ya **karantini**.（郡は検疫下にある）
+kutenga | 動 | 分ける、隔離する | **Tenga** ng'ombe mgonjwa.（病気の牛を分けて）
+antibiotiki | 名 N | 抗生物質 | Usiuze maziwa ya ng'ombe aliyepewa **antibiotiki**.（抗生物質を使った牛の乳は売らないで）
+muda wa kusubiri | 句 | 休薬期間 | Zingatia **muda wa kusubiri** wa dawa.（薬の休薬期間を守って）
+chumvi ya madini | 句 | ミネラル塩 | Weka **chumvi ya madini** bandani.（牛舎にミネラル塩を置いて）
+kutetemeka | 動 | 震える | Ndama **anatetemeka** kwa baridi.（子牛が寒さで震えている）
+kupoteza hamu ya kula | 句 | 食欲がなくなる | Ng'ombe **amepoteza hamu ya kula**.（牛が食欲をなくした）
+machozi | 名 JI-MA | 涙 | Macho ya ndama yanatoa **machozi**.（子牛の目から涙が出ている）
+mate | 名 JI-MA | よだれ、つば | Ng'ombe anatoa **mate** mengi.（牛がよだれをたくさん出している）
+kinyesi | 名 KI-VI | ふん | Angalia **kinyesi** cha ndama.（子牛のふんを見て）
+mkojo | 名 M-MI | 尿 | **Mkojo** wa ng'ombe ni mwekundu.（牛の尿が赤い）
+kupima mimba | 句 | 妊娠鑑定をする | Daktari atakuja **kupima mimba**.（獣医が妊娠鑑定に来る）
+kuzaa kwa shida | 句 | 難産 | Ng'ombe **anazaa kwa shida**, mwite daktari.（牛が難産だ、獣医を呼んで）
+ugonjwa wa ngozi | 句 | 皮膚病（ランピースキン病など） | **Ugonjwa wa ngozi** umewapata ng'ombe wengi.（多くの牛が皮膚病にかかった）
+chanjo ya kila mwaka | 句 | 毎年の予防接種 | Usisahau **chanjo ya kila mwaka**.（毎年の予防接種を忘れないで）
+huduma ya mifugo | 句 | 家畜の診療・サービス | **Huduma ya mifugo** inapatikana kila Alhamisi.（家畜の診療は毎週木曜に受けられる）

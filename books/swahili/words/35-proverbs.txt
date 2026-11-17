@@ -1,0 +1,31 @@
+# ことわざ
+Haraka haraka haina baraka | 句 | 急いては事をし損じる（急ぐと恵みがない） | Usikimbilie — **haraka haraka haina baraka**.（あわてないで、急いては事をし損じるよ）
+Pole pole ndio mwendo | 句 | ゆっくりこそが進み方（急がば回れ） | Tutafika tu, **pole pole ndio mwendo**.（必ず着くよ、ゆっくりが一番）
+Haba na haba hujaza kibaba | 句 | 少しずつでも升はいっぱいになる（ちりも積もれば山となる） | Weka akiba kila siku — **haba na haba hujaza kibaba**.（毎日ためよう、ちりも積もれば山となる）
+Penye nia pana njia | 句 | 意志あるところに道がある | Usikate tamaa, **penye nia pana njia**.（あきらめないで、意志あれば道あり）
+Umoja ni nguvu, utengano ni udhaifu | 句 | 団結は力、分裂は弱さ | Tujiunge na ushirika — **umoja ni nguvu, utengano ni udhaifu**.（組合に入ろう、団結は力だ）
+Kidole kimoja hakivunji chawa | 句 | 指1本ではシラミはつぶせない（ひとりでは何もできない） | Tushirikiane, **kidole kimoja hakivunji chawa**.（協力しよう、ひとりでは何もできない）
+Usipoziba ufa utajenga ukuta | 句 | ひびをふさがないと壁を建て直すことになる（早めに手を打て） | Tibu ng'ombe sasa — **usipoziba ufa utajenga ukuta**.（今すぐ牛を治療して、早めに手を打たないと）
+Mtaka cha mvunguni sharti ainame | 句 | ベッドの下の物が欲しければかがまなければならない（努力が必要） | Ukitaka kufaulu, soma — **mtaka cha mvunguni sharti ainame**.（合格したいなら勉強して、努力なしでは得られない）
+Akili ni nywele, kila mtu ana zake | 句 | 知恵は髪の毛、だれでも自分のを持っている（十人十色） | Msikilize naye — **akili ni nywele, kila mtu ana zake**.（彼の話も聞いて、人それぞれ考えがある）
+Asiyesikia la mkuu huvunjika guu | 句 | 年長者の言うことを聞かない者は足を折る | Ulikataa ushauri wa babu — **asiyesikia la mkuu huvunjika guu**.（祖父の助言を聞かなかったからだよ）
+Bandu bandu huisha gogo | 句 | 少しずつ削っても丸太はなくなる | Tunalipa deni kidogo kidogo — **bandu bandu huisha gogo**.（少しずつ借金を返している、いつかはなくなる）
+Mgeni njoo, mwenyeji apone | 句 | 客が来れば主人も助かる（客は恵みを運ぶ） | Karibu sana! **Mgeni njoo, mwenyeji apone**.（ようこそ、お客さんは恵みだ）
+Siku za mwizi ni arobaini | 句 | 泥棒の日は40日（悪事はいつかばれる） | Mwizi amekamatwa — **siku za mwizi ni arobaini**.（泥棒が捕まった、悪事はいつかばれる）
+Maji yakimwagika hayazoleki | 句 | こぼれた水はすくえない（覆水盆に返らず） | Usilie tena — **maji yakimwagika hayazoleki**.（もう泣かないで、覆水盆に返らずだ）
+Ukiona vyaelea, vimeundwa | 句 | 浮かぶものを見たら、それは作られたものだ（成功の陰に努力あり） | Shamba lake ni zuri — **ukiona vyaelea, vimeundwa**.（彼の畑はみごとだ、努力のたまものだ）
+Dalili ya mvua ni mawingu | 句 | 雨のきざしは雲（物事には前ぶれがある） | Ng'ombe anakataa kula — **dalili ya mvua ni mawingu**.（牛がえさを食べない、病気の前ぶれだ）
+Mtoto umleavyo ndivyo akuavyo | 句 | 子は育てたように育つ | Mfundishe adabu — **mtoto umleavyo ndivyo akuavyo**.（礼儀を教えて、子は育てたように育つ）
+Kawia ufike | 句 | 遅れてもいいから着け（急がず確実に） | Endesha polepole — **kawia ufike**.（ゆっくり運転して、遅れても無事に着くほうがいい）
+Chovya chovya humaliza buyu la asali | 句 | ちょっとずつなめてもはちみつのひょうたんは空になる | Usitumie akiba kidogo kidogo — **chovya chovya humaliza buyu la asali**.（ちょこちょこ貯金を使わないで、いつかなくなる）
+Hasira, hasara | 句 | 怒りは損（短気は損気） | Tulia — **hasira, hasara**.（落ち着いて、短気は損気だ）
+Mwenye macho haambiwi tazama | 句 | 目のある者に「見よ」と言う必要はない（見ればわかる） | Bei imepanda, **mwenye macho haambiwi tazama**.（値上がりは見ればわかる）
+Ng'ombe haelemewi na nundu yake | 句 | 牛は自分のこぶを重いと思わない（自分の責任は重荷ではない） | Nawatunza wazazi wangu — **ng'ombe haelemewi na nundu yake**.（両親の世話は苦じゃない）
+Mvumilivu hula mbivu | 句 | 辛抱強い者は熟れた実を食べる | Subiri bei ipande — **mvumilivu hula mbivu**.（値上がりを待とう、辛抱強い者が得をする）
+Jogoo la shamba haliwiki mjini | 句 | 田舎のおんどりは町では鳴かない（よそでは力を出せない） | Nyumbani ni hodari, mjini kimya — **jogoo la shamba haliwiki mjini**.（地元では元気でも町ではおとなしい）
+Kila ndege huruka na mbawa zake | 句 | 鳥はみな自分の翼で飛ぶ（人は自分の力で生きる） | Usimtegemee mtu — **kila ndege huruka na mbawa zake**.（人に頼らないで、自分の力で）
+Fimbo ya mbali haiui nyoka | 句 | 遠くの棒ではヘビは殺せない（身近なものこそ役に立つ） | Saidiana na majirani — **fimbo ya mbali haiui nyoka**.（近所と助け合おう、遠くの親類より近くの他人）
+Mchelea mwana kulia hulia yeye | 句 | 子が泣くのを恐れる者は自分が泣く（甘やかすと後で困る） | Mwambie "hapana" — **mchelea mwana kulia hulia yeye**.（「だめ」と言って、甘やかすと後で困るよ）
+Tamaa mbele, mauti nyuma | 句 | 欲が前にあれば死が後ろにある（欲は身を滅ぼす） | Usikope sana — **tamaa mbele, mauti nyuma**.（借りすぎないで、欲は身を滅ぼす）
+Asiyekubali kushindwa si mshindani | 句 | 負けを認めない者は競争者ではない | Tumeshindwa leo — **asiyekubali kushindwa si mshindani**.（今日は負けた、負けを認めてこそ）
+Subira huvuta heri | 句 | 忍耐は幸運を招く | Mvua itakuja tu — **subira huvuta heri**.（雨はきっと来る、待てば海路の日和あり）

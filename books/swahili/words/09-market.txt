@@ -1,0 +1,62 @@
+# 市場・買い物・お金
+soko（masoko） | 名 JI-MA | 市場 | Ninaenda **sokoni**.（市場へ行きます）
+duka（maduka） | 名 JI-MA | 店 | **Duka** limefungwa.（店は閉まっている）
+kioski | 名 N | 売店、キオスク | Nunua vocha **kioskini**.（売店でプリペイドを買って）
+bei | 名 N | 値段 | **Bei** gani?（いくらですか）
+pesa | 名 N | お金 | Sina **pesa** za kutosha.（お金が足りない）
+fedha | 名 N | お金、銀 | Benki inahifadhi **fedha**.（銀行はお金を預かる）
+shilingi | 名 N | シリング（お金の単位） | Ni **shilingi** elfu mbili.（2,000シリングです）
+chenji | 名 N | おつり、小銭 | Sina **chenji**.（おつりがありません）
+noti | 名 N | お札 | Una **noti** ndogo?（小さいお札はありますか）
+sarafu | 名 N | 硬貨 | **Sarafu** hizi ni za zamani.（この硬貨は古い）
+ghali | 形 | 高い（値段が。形は変わらない） | Ni **ghali** sana!（高すぎる）
+rahisi | 形 | 安い、簡単な（形は変わらない） | Matunda ni **rahisi** sokoni.（市場では果物が安い）
+punguzo | 名 JI-MA | 値引き | Naomba **punguzo** kidogo.（少し値引きしてください）
+kununua | 動 | 買う | **Ninanunua** mboga.（野菜を買っています）
+kuuza | 動 | 売る | Mama **anauza** maziwa.（母は牛乳を売っている）
+kulipa | 動 | 払う | **Nitalipa** kwa M-Pesa.（M-Pesa で払います）
+kupunguza | 動 | 減らす、値引きする | **Punguza** bei kidogo.（少しまけてください）
+kupanda bei | 句 | 値上がりする | Mafuta **yamepanda bei**.（燃料が値上がりした）
+kushuka bei | 句 | 値下がりする | Maziwa **yameshuka bei** msimu wa mvua.（雨季は牛乳が値下がりする）
+kupima | 動 | 量る、測る、検査する | **Pima** kilo moja.（1キロ量ってください）
+kilo | 名 N | キロ（グラム） | **Kilo** moja ya nyama ni bei gani?（肉1キロいくらですか）
+lita | 名 N | リットル | **Lita** mbili za maziwa.（牛乳2リットル）
+kipimo（vipimo） | 名 KI-VI | はかり、量、検査 | Tumia **kipimo** sahihi.（正しい量を使って）
+mteja（wateja） | 名 M-WA | 客、顧客 | **Wateja** wengi wanakuja asubuhi.（客の多くは朝来る）
+muuzaji（wauzaji） | 名 M-WA | 売り手 | **Muuzaji** alinipa punguzo.（売り手が値引きしてくれた）
+mnunuzi（wanunuzi） | 名 M-WA | 買い手 | **Wanunuzi** wa maziwa wanalipa kila wiki.（牛乳の買い手は毎週払う）
+risiti | 名 N | 領収書、レシート | Nipe **risiti**, tafadhali.（レシートをください）
+ankara | 名 N | 請求書 | Tuma **ankara** kwa barua pepe.（請求書をメールで送って）
+deni（madeni） | 名 JI-MA | 借金、つけ | Nina **deni** la shilingi elfu kumi.（1万シリングの借りがある）
+mkopo（mikopo） | 名 M-MI | ローン、貸し付け | Benki ilitupa **mkopo**.（銀行がローンを貸してくれた）
+akiba | 名 N | 貯金、蓄え | Weka **akiba** kwa ajili ya kesho.（明日のために貯金して）
+benki | 名 N | 銀行 | **Benki** iko wapi?（銀行はどこですか）
+M-Pesa | 名 N | エムペサ（携帯でお金を送るサービス） | Nitumie pesa kwa **M-Pesa**.（M-Pesa でお金を送って）
+kutuma pesa | 句 | 送金する | **Nimetuma pesa**.（お金を送りました）
+faida | 名 N | 利益、得 | Biashara hii ina **faida**.（この商売はもうかる）
+hasara | 名 N | 損 | Tulipata **hasara** mwaka huu.（今年は損をした）
+gharama | 名 N | 費用 | **Gharama** ya chakula cha ng'ombe imepanda.（牛のエサ代が上がった）
+kodi | 名 N | 税金、家賃 | Tunalipa **kodi** kila mwezi.（毎月家賃を払う）
+mfuko wa plastiki | 句 | ビニール袋 | **Mfuko wa plastiki** umepigwa marufuku.（ビニール袋は禁止された）
+kikapu（vikapu） | 名 KI-VI | かご | Weka matunda **kikapuni**.（果物をかごに入れて）
+bidhaa | 名 N | 商品、品物 | **Bidhaa** hizi zinatoka Kenya.（この品物はケニアから来る）
+jumla | 名 N | 合計、卸 | **Jumla** ni shilingi elfu tano.（合計5,000シリング）
+rejareja | 副 | 小売りで、ばらで | Tunauza maziwa **rejareja**.（牛乳をばら売りしている）
+kipande（vipande） | 名 KI-VI | 一切れ、かけら | Nipe **kipande** cha nyama.（肉を一切れください）
+fungu（mafungu） | 名 JI-MA | 山（ひと盛り）、分け前 | **Fungu** moja la nyanya ni shilingi mia tano.（トマト一山500シリング）
+kudai | 動 | （お金を）請求する、貸しがある | **Ananidai** shilingi elfu kumi.（彼に1万シリング借りている）
+kujadiliana bei | 句 | 値段の交渉をする | Ni kawaida **kujadiliana bei** sokoni.（市場では値段の交渉がふつうだ）
+bei ya jumla | 句 | 卸値 | **Bei ya jumla** ni nafuu.（卸値は安い）
+nafuu | 形 | 手ごろな、安い（形は変わらない） | Duka hili lina bei **nafuu**.（この店は値段が手ごろだ）
+bure | 副 | 無料で；むだに | Maji ni **bure** hapa.（ここは水が無料だ）
+mwenye duka | 句 | 店主 | **Mwenye duka** amefunga mapema.（店主は早く店を閉めた）
+genge（magenge） | 名 JI-MA | （野菜の）露店 | Nunua nyanya **gengeni**.（露店でトマトを買って）
+machinga | 名 JI-MA | 路上の物売り | **Machinga** wanauza nguo barabarani.（物売りが道で服を売っている）
+kufunga duka | 句 | 店を閉める | **Tunafunga duka** saa mbili usiku.（夜8時に店を閉める）
+duka kubwa | 句 | スーパー | **Duka kubwa** lina kila kitu.（スーパーには何でもある）
+kufungasha | 動 | 包む、梱包する | **Fungasha** vizuri, tafadhali.（ちゃんと包んでください）
+karatasi | 名 N | 紙 | Funga kwa **karatasi**.（紙で包んで）
+kiasi | 名 KI-VI | 量、程度 | Unataka **kiasi** gani?（どのくらい要る？）
+dazeni | 名 N | ダース | Nipe **dazeni** moja ya mayai.（卵を1ダースください）
+gramu | 名 N | グラム | Nipe **gramu** mia mbili.（200グラムください）
+malipo | 名 JI-MA | 支払い | **Malipo** ni kwa M-Pesa.（支払いは M-Pesa で）

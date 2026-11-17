@@ -1,0 +1,59 @@
+# 服と身の回り
+suruali | 名 N | ズボン | Nimenunua **suruali** mpya.（新しいズボンを買った）
+sketi | 名 N | スカート | **Sketi** hii ni ndefu.（このスカートは長い）
+gauni（magauni） | 名 JI-MA | ワンピース、ドレス | Amevaa **gauni** zuri.（すてきなワンピースを着ている）
+koti（makoti） | 名 JI-MA | 上着、コート | Vaa **koti**, kuna baridi.（上着を着て、寒いから）
+sweta | 名 N | セーター | Usiku vaa **sweta**.（夜はセーターを着て）
+fulana | 名 N | Tシャツ、肌着 | **Fulana** hii ni ya pamba.（このTシャツは綿だ）
+kaptura | 名 N | 半ズボン | Wavulana wanavaa **kaptura** shuleni.（男の子は学校で半ズボンをはく）
+chupi | 名 N | 下着（パンツ） | Nunua **chupi** tatu.（下着を3枚買って）
+soksi | 名 N | 靴下 | **Soksi** zangu zimelowa.（靴下がぬれた）
+ndala | 名 N | ビーチサンダル | Nimevaa **ndala**.（ビーチサンダルをはいている）
+buti | 名 N | 長靴、ブーツ | Vaa **buti** shambani.（畑では長靴をはいて）
+kanga | 名 N | カンガ（ことわざの入った女性の布） | Mama amejifunga **kanga**.（母はカンガを巻いている）
+kitenge（vitenge） | 名 KI-VI | キテンゲ（ろうけつ染めの布） | Ameshona gauni la **kitenge**.（キテンゲでワンピースを縫った）
+kikoi（vikoi） | 名 KI-VI | キコイ（男性の腰巻き） | Wavuvi wanavaa **vikoi**.（漁師はキコイを巻く）
+kanzu | 名 N | カンズ（男性の白い長衣） | Siku ya Ijumaa anavaa **kanzu**.（金曜にはカンズを着る）
+baibui | 名 N | バイブイ（女性の黒い外衣） | Wanawake wengi wa pwani huvaa **baibui**.（海岸の女性の多くはバイブイを着る）
+kilemba（vilemba） | 名 KI-VI | ターバン | Mzee amevaa **kilemba**.（老人はターバンを巻いている）
+shuka | 名 N | シーツ；（マサイの）布 | Wamasai wanavaa **shuka** nyekundu.（マサイは赤い布をまとう）
+sare | 名 N | 制服；引き分け | Wanafunzi wanavaa **sare** za shule.（生徒は学校の制服を着る）
+mkanda（mikanda） | 名 M-MI | ベルト、シートベルト | Funga **mkanda** wako.（シートベルトを締めて）
+mkoba（mikoba） | 名 M-MI | ハンドバッグ、かばん | **Mkoba** wangu uko wapi?（私のかばんはどこ）
+begi（mabegi） | 名 JI-MA | バッグ、リュック | Weka vitabu kwenye **begi**.（本をバッグに入れて）
+pochi | 名 N | 財布 | Nimesahau **pochi** nyumbani.（財布を家に忘れた）
+miwani | 名 N | めがね | Siwezi kusoma bila **miwani**.（めがねなしでは読めない）
+miwani ya jua | 句 | サングラス | Vaa **miwani ya jua** mchana.（昼はサングラスをかけて）
+pete | 名 N | 指輪 | Ana **pete** ya dhahabu.（金の指輪をしている）
+hereni | 名 N | イヤリング、ピアス | Amevaa **hereni** ndogo.（小さなイヤリングをしている）
+mkufu（mikufu） | 名 M-MI | ネックレス | **Mkufu** huu ni wa shanga.（このネックレスはビーズだ）
+shanga | 名 N | ビーズ | Wamasai wanatengeneza **shanga** nzuri.（マサイはきれいなビーズ細工を作る）
+mwavuli（miavuli） | 名 M-MI | 傘 | Chukua **mwavuli**, mvua inakuja.（傘を持っていって、雨が来る）
+kitana（vitana） | 名 KI-VI | くし | Nipe **kitana** changu.（私のくしを取って）
+kioo（vioo） | 名 KI-VI | 鏡；ガラス | Jiangalie kwenye **kioo**.（鏡で自分を見て）
+mswaki（miswaki） | 名 M-MI | 歯ブラシ | Nimesahau **mswaki** wangu.（歯ブラシを忘れた）
+dawa ya meno | 句 | 歯みがき粉 | Nunua **dawa ya meno**.（歯みがき粉を買って）
+kupiga mswaki | 句 | 歯をみがく | **Piga mswaki** kabla ya kulala.（寝る前に歯をみがいて）
+taulo | 名 N | タオル | **Taulo** iko bafuni.（タオルは浴室にある）
+bafu（mabafu） | 名 JI-MA | 浴室、シャワー室 | **Bafu** liko nje.（シャワー室は外にある）
+mafuta ya kujipaka | 句 | ローション、ぬり油 | Paka **mafuta ya kujipaka** baada ya kuoga.（シャワーのあとローションをぬって）
+kunyoa | 動 | そる、（髪を）刈る | **Ninanyoa** ndevu kila asubuhi.（毎朝ひげをそる）
+ndevu | 名 N | ひげ | Babu ana **ndevu** nyeupe.（祖父は白いひげをはやしている）
+kuchana | 動 | （髪を）とかす；裂く | **Chana** nywele zako.（髪をとかして）
+kusuka | 動 | （髪を）編む、編む | **Anasuka** nywele za binti yake.（娘の髪を編んでいる）
+kinyozi（vinyozi） | 名 KI-VI | 床屋（の人） | Nitaenda kwa **kinyozi** kesho.（明日床屋へ行く）
+saluni | 名 N | 美容院 | **Saluni** iko karibu na soko.（美容院は市場の近くにある）
+fundi cherehani | 句 | 仕立屋 | **Fundi cherehani** atashona suruali.（仕立屋がズボンを縫う）
+cherehani | 名 N | ミシン | Mama ana **cherehani** ya zamani.（母は古いミシンを持っている）
+kushona | 動 | 縫う | **Nimeshona** shati jipya.（新しいシャツを縫った）
+uzi（nyuzi） | 名 U | 糸 | Nunua **uzi** mweusi.（黒い糸を買って）
+kitufe（vitufe） | 名 KI-VI | ボタン | **Kitufe** kimekatika.（ボタンが取れた）
+zipu | 名 N | ファスナー | **Zipu** imeharibika.（ファスナーが壊れた）
+pasi | 名 N | アイロン | **Pasi** ya mkaa bado inatumika vijijini.（炭のアイロンは村でまだ使われている）
+kupiga pasi | 句 | アイロンをかける | **Piga pasi** shati hili.（このシャツにアイロンをかけて）
+kuanika | 動 | 干す | **Anika** nguo juani.（服を日なたに干して）
+kamba | 名 N | ひも、ロープ | Anika nguo kwenye **kamba**.（ひもに服を干して）
+kubadilisha nguo | 句 | 着替える | Nataka **kubadilisha nguo** kabla ya kwenda.（行く前に着替えたい）
+saizi | 名 N | サイズ | Una **saizi** kubwa?（大きいサイズはある？）
+kubana | 動 | きつい、しめつける | Viatu hivi **vinanibana**.（この靴はきつい）
+mtumba | 名 M-MI | 古着 | Nimenunua koti la **mtumba**.（古着の上着を買った）

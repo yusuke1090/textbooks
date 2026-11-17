@@ -1,0 +1,73 @@
+# よく使う動詞（考える・人とかかわる）
+kufahamu | 動 | 知る、理解する | **Unamfahamu** Juma?（ジュマを知ってる？）
+kutambua | 動 | 気づく、見分ける | **Nimetambua** tatizo.（問題に気づいた）
+kugundua | 動 | 発見する、見つける | **Waligundua** dhahabu.（金を発見した）
+kueleza | 動 | 説明する | **Nieleze** tena.（もう一度説明して）
+kuvumilia | 動 | 耐える、我慢する | **Vumilia** kidogo.（少し我慢して）
+kuzuia | 動 | 防ぐ、止める | Chandarua **kinazuia** mbu.（蚊帳は蚊を防ぐ）
+kulinda | 動 | 守る | Mbwa **analinda** nyumba.（犬が家を守る）
+kutunza | 動 | 世話をする、大事にする | **Tunza** ng'ombe vizuri.（牛をよく世話して）
+kuokoa | 動 | 救う、節約する | **Aliokoa** mtoto mtoni.（川で子どもを救った）
+kujali | 動 | 気にかける、大切にする | **Anajali** wateja wake.（お客を大切にしている）
+kusamehe | 動 | 許す | **Nisamehe**.（許して）
+kushukuru | 動 | 感謝する | **Nashukuru** sana.（とても感謝しています）
+kuomba msamaha | 句 | 謝る | **Naomba msamaha**.（おわびします）
+kukaribisha | 動 | 歓迎する、招き入れる | **Tunakukaribisha** kijijini.（村へようこそ）
+kusalimia | 動 | あいさつする | **Msalimie** mama yako.（お母さんによろしく）
+kupigana | 動 | けんかする、戦う | Watoto **wanapigana**.（子どもがけんかしている）
+kupiga | 動 | 打つ、たたく；（電話を）かける | **Usimpige** mbwa.（犬をたたかないで）
+kusaidiana | 動 | 助け合う | **Tusaidiane**.（助け合おう）
+kushirikiana | 動 | 協力する | **Tushirikiane** kazi hii.（この仕事は協力しよう）
+kuoana | 動 | 結婚する（お互いに） | **Walioana** mwaka jana.（2人は去年結婚した）
+kutegemea | 動 | 頼る、期待する | **Tunategemea** mvua.（雨に頼っている）
+kusema uongo | 句 | うそをつく | **Usiseme uongo**.（うそをつかないで）
+kukopa | 動 | （お金を）借りる | **Nilikopa** pesa benki.（銀行でお金を借りた）
+kukopesha | 動 | （お金を）貸す | Unaweza **kunikopesha** elfu tano?（5千貸してくれる？）
+kuazima | 動 | （物を）借りる | Naomba **kuazima** kalamu yako.（ペンを借りてもいい？）
+kurekebisha | 動 | 直す、調整する | **Rekebisha** baiskeli.（自転車を直して）
+kupanga | 動 | 並べる、計画する；（部屋を）借りる | **Tumepanga** safari.（旅行を計画した）
+kuhakikisha | 動 | 確かめる、確実にする | **Hakikisha** mlango umefungwa.（ドアが閉まっているか確かめて）
+kulinganisha | 動 | 比べる | **Linganisha** bei.（値段を比べて）
+kujiunga | 動 | 加わる、入会する | **Nimejiunga** na ushirika.（組合に入った）
+kuongoza | 動 | 導く、案内する、率いる | **Ataongoza** mkutano.（彼が会議の司会をする）
+kufuatilia | 動 | 追いかける、見守る | **Fuatilia** afya ya ng'ombe.（牛の健康を見守って）
+kusimamia | 動 | 管理する、監督する | **Anasimamia** shamba.（畑を管理している）
+kuendelea | 動 | 続ける、続く | **Endelea**.（続けて）
+kurudia | 動 | くり返す | **Rudia** zoezi hili.（この練習をくり返して）
+kuzoea | 動 | 慣れる | **Nimezoea** chakula cha hapa.（ここの食べ物に慣れた）
+kufaa | 動 | 合う、役に立つ | Viatu hivi **vinanifaa**.（この靴は私に合う）
+kutosha | 動 | 足りる | Pesa **zinatosha**.（お金は足りる）
+kuzidi | 動 | 超える、増す | Joto **limezidi**.（暑さが増した）
+kutokea | 動 | 起こる、現れる | Ajali **ilitokea** jana.（昨日事故が起きた）
+kusababisha | 動 | 引き起こす | Mvua **ilisababisha** mafuriko.（雨が洪水を引き起こした）
+kuathiri | 動 | 影響する | Ukame **unaathiri** mavuno.（干ばつが収穫に影響している）
+kuboresha | 動 | よくする、改善する | **Tuboreshe** ubora wa maziwa.（牛乳の質をよくしよう）
+kuharibu | 動 | だめにする、壊す | Mvua **imeharibu** barabara.（雨で道がだめになった）
+kutamani | 動 | あこがれる、強く願う | **Natamani** kwenda Zanzibar.（ザンジバルへ行きたいなあ）
+kulea | 動 | 育てる | **Analea** watoto peke yake.（ひとりで子どもを育てている）
+kuhudhuria | 動 | 出席する | **Alihudhuria** mkutano.（会議に出席した）
+kuzingatia | 動 | 注意を払う、守る | **Zingatia** maelekezo.（指示を守って）
+maelekezo | 名 JI-MA | 指示、説明書き | Soma **maelekezo** kabla ya kutumia.（使う前に説明書きを読んで）
+kupendekeza | 動 | 勧める、提案する | **Napendekeza** mbegu hizi.（この種をお勧めします）
+kushauri | 動 | 助言する | Daktari **alinishauri** kupumzika.（医者に休むよう勧められた）
+ushauri | 名 U | 助言 | Asante kwa **ushauri**.（助言ありがとう）
+kujadili | 動 | 話し合う、議論する | **Tujadili** bei.（値段を話し合おう）
+kukubaliana | 動 | 合意する | **Tumekubaliana** bei.（値段で合意した）
+kubishana | 動 | 言い争う | **Usibishane** na mteja.（お客と言い争わないで）
+kuelekeza | 動 | 道を教える、指導する | **Nielekeze** njia ya stendi.（バスターミナルへの道を教えて）
+kutembeza | 動 | 案内する；売り歩く | **Anatembeza** watalii mjini.（観光客に町を案内している）
+kujitolea | 動 | ボランティアをする、すすんで～する | **Najitolea** kufundisha watoto.（ボランティアで子どもに教えている）
+kujiandaa | 動 | 準備する（自分が） | **Jiandae**, tunaondoka.（準備して、出かけるよ）
+kujitahidi | 動 | 努力する | **Jitahidi** zaidi.（もっとがんばって）
+kuamka mapema | 句 | 早起きする | Wakulima **huamka mapema**.（農家は早起きする）
+kuchunguza | 動 | 調べる、診察する | Daktari **anamchunguza** ng'ombe.（獣医が牛を診ている）
+kuhoji | 動 | 問いただす、インタビューする | Mwandishi **alimhoji** waziri.（記者が大臣にインタビューした）
+kujibiwa | 動 | 答えをもらう | **Umejibiwa**?（返事は来た？）
+kutaja | 動 | 名前を挙げる、言及する | **Taja** majina ya watoto wako.（子どもの名前を言って）
+kuthibitisha | 動 | 証明する、確認する | **Thibitisha** oda yako.（注文を確認して）
+kuandikisha | 動 | 登録させる、書きとめる | **Andikisha** mtoto shule.（子どもを学校に登録して）
+kusimulia | 動 | 語る | Babu **alitusimulia** hadithi.（祖父が昔話をしてくれた）
+kukosoa | 動 | 批判する | **Usimkosoe** mbele ya watu.（人前で彼を批判しないで）
+kusifu | 動 | ほめる | Mwalimu **alimsifu** mwanafunzi.（先生が生徒をほめた）
+kuonya | 動 | 警告する | Polisi **wanaonya** madereva.（警察が運転手に警告している）
+kulalamika | 動 | 文句を言う | Wateja **wanalalamika** kuhusu bei.（お客が値段について文句を言っている）

@@ -1,0 +1,62 @@
+# 時・場所・ようすの言葉
+bado | 副 | まだ | **Bado** sijala.（まだ食べていない）
+tayari | 副 | もう、準備ができて | Chakula kiko **tayari**.（食事の用意ができた）
+sasa hivi | 副 | 今すぐ、たった今 | Njoo **sasa hivi**.（今すぐ来て）
+baadaye | 副 | あとで | Tutaonana **baadaye**.（またあとで）
+zamani | 副 | 昔 | **Zamani** hapakuwa na barabara.（昔はここに道がなかった）
+siku hizi | 副 | 最近、このごろ | **Siku hizi** mvua ni chache.（このごろ雨が少ない）
+kila siku | 副 | 毎日 | Ninakunywa chai **kila siku**.（毎日紅茶を飲む）
+mara nyingi | 副 | よく、たいてい | **Mara nyingi** mvua hunyesha jioni.（雨はたいてい夕方に降る）
+mara moja | 副 | 一度；すぐに | Njoo **mara moja**.（すぐ来て）
+mara kwa mara | 副 | ときどき | Ninamtembelea **mara kwa mara**.（ときどき彼を訪ねる）
+kamwe | 副 | 決して（～ない） | Sitasahau **kamwe**.（決して忘れない）
+milele | 副 | 永遠に | Nitakupenda **milele**.（永遠に愛する）
+daima | 副 | いつも | **Daima** sema ukweli.（いつも本当のことを言って）
+haraka | 副 | 急いで、速く | Njoo **haraka**!（急いで来て）
+vizuri | 副 | よく、上手に | Anaongea Kiswahili **vizuri**.（スワヒリ語を上手に話す）
+vibaya | 副 | 悪く、ひどく | Ameumia **vibaya**.（ひどくけがをした）
+sana | 副 | とても | Ni moto **sana**.（とても熱い）
+kidogo | 副 | 少し | Subiri **kidogo**.（少し待って）
+kabisa | 副 | まったく、完全に | Sijui **kabisa**.（まったく知らない）
+tu | 副 | ～だけ | Nina shilingi mia **tu**.（100シリングだけある）
+tena | 副 | また、もう一度 | Njoo **tena**.（また来てね）
+hasa | 副 | 特に | Napenda matunda, **hasa** embe.（果物、特にマンゴーが好き）
+kweli | 副 | 本当に；本当の | Ni **kweli**?（本当？）
+pengine | 副 | たぶん、ときには | **Pengine** atakuja kesho.（たぶん明日来る）
+hapa | 副 | ここ | Kaa **hapa**.（ここに座って）
+pale | 副 | あそこ | Weka **pale**.（あそこに置いて）
+huko | 副 | そこ、あちら | Usiende **huko**.（そっちに行かないで）
+hapo | 副 | そこ、その時 | Simama **hapo**.（そこに止まって）
+juu | 副 | 上 | Panda **juu**.（上に登って）
+chini | 副 | 下 | Kaa **chini**.（座って）
+ndani | 副 | 中 | Ingia **ndani**.（中に入って）
+nje | 副 | 外 | Watoto wako **nje**.（子どもは外にいる）
+mbele | 副 | 前、この先 | Nenda **mbele** kidogo.（少し前へ進んで）
+nyuma | 副 | 後ろ、あと | Kaa **nyuma**.（後ろに座って）
+katikati | 副 | 真ん中 | Weka meza **katikati**.（テーブルを真ん中に置いて）
+kila mahali | 副 | どこでも | Kuna vumbi **kila mahali**.（どこもほこりだらけ）
+mahali | 名 N | 場所 | **Mahali** hapa ni pazuri.（ここはいい場所だ）
+upande（pande） | 名 U | 側、方面 | Duka liko **upande** wa pili wa barabara.（店は道の反対側にある）
+pamoja | 副 | いっしょに | Tule **pamoja**.（いっしょに食べよう）
+peke yake | 句 | ひとりで | Anaishi **peke yake**.（ひとりで暮らしている）
+peke yangu | 句 | 私ひとりで | Nilisafiri **peke yangu**.（ひとりで旅行した）
+mwanzo（mianzo） | 名 M-MI | 始まり | **Mwanzo** wa mwaka ni mgumu.（年の初めは大変だ）
+mwisho | 名 M-MI | 終わり | Tunalipwa **mwisho** wa mwezi.（月末に給料が出る）
+kwanza | 副 | まず、はじめに | Nawa mikono **kwanza**.（まず手を洗って）
+hatimaye | 副 | ついに | **Hatimaye** mvua imenyesha.（ついに雨が降った）
+ghafla | 副 | 突然 | **Ghafla** umeme ulikatika.（突然停電した）
+usiku kucha | 句 | 一晩中 | Mvua ilinyesha **usiku kucha**.（一晩中雨が降った）
+mchana kutwa | 句 | 一日中（昼の間ずっと） | Tulifanya kazi **mchana kutwa**.（一日中働いた）
+mwaka jana | 句 | 去年 | **Mwaka jana** kulikuwa na ukame.（去年は干ばつがあった）
+mwakani | 副 | 来年 | Nitarudi **mwakani**.（来年また来る）
+wiki ijayo | 句 | 来週 | Tutaonana **wiki ijayo**.（来週会おう）
+wiki iliyopita | 句 | 先週 | Nilifika **wiki iliyopita**.（先週着いた）
+zamani za kale | 句 | 昔々 | **Zamani za kale** palikuwa na mfalme.（昔々、王様がいました）
+kwa sasa | 副 | 今のところ | **Kwa sasa** sina kazi.（今のところ仕事がない）
+mpaka sasa | 句 | 今まで、まだ | **Mpaka sasa** hajafika.（まだ着いていない）
+kwa haraka | 副 | 急いで | Ameondoka **kwa haraka**.（急いで出ていった）
+kwa makini | 副 | 注意深く | Endesha **kwa makini**.（気をつけて運転して）
+kwa pamoja | 副 | 共に、全体で | **Kwa pamoja** tutafanikiwa.（いっしょならうまくいく）
+kwa kweli | 句 | 本当に、実は | **Kwa kweli** sijui.（実は知らないんだ）
+kwa mfano | 句 | たとえば | Matunda, **kwa mfano** embe na ndizi.（果物、たとえばマンゴーとバナナ）
+takriban | 副 | およそ | Ni **takriban** kilomita kumi.（およそ10キロだ）

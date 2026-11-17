@@ -1,0 +1,48 @@
+# ヤギ・鶏・ほかの家畜
+jogoo（majogoo） | 名 JI-MA | おんどり | **Jogoo** anawika alfajiri.（おんどりは夜明けに鳴く）
+tetea | 名 N | （卵を産む若い）めんどり | **Tetea** anataga kila siku.（めんどりは毎日卵を産む）
+kifaranga（vifaranga） | 名 KI-VI | ひよこ | Tumenunua **vifaranga** mia moja.（ひよこを100羽買った）
+kuku wa kienyeji | 句 | 地鶏 | **Kuku wa kienyeji** ni watamu.（地鶏はおいしい）
+kuku wa nyama | 句 | ブロイラー（肉用鶏） | **Kuku wa nyama** wanakua haraka.（ブロイラーは速く育つ）
+kuku wa mayai | 句 | 採卵鶏 | **Kuku wa mayai** wanahitaji chakula bora.（採卵鶏にはよいえさが要る）
+kutaga | 動 | 卵を産む | Kuku **wametaga** mayai kumi.（鶏が卵を10個産んだ）
+kuatamia | 動 | 卵を抱く | Kuku **anaatamia** mayai.（鶏が卵を抱いている）
+kuangua | 動 | （ひなを）かえす | Kuku **ameangua** vifaranga kumi.（鶏が10羽のひなをかえした）
+mashine ya kutotolesha | 句 | ふ卵器 | Tunatumia **mashine ya kutotolesha** mayai.（ふ卵器で卵をかえしている）
+banda la kuku | 句 | 鶏小屋 | Safisha **banda la kuku**.（鶏小屋を掃除して）
+trei ya mayai | 句 | 卵のトレー（30個入り） | **Trei ya mayai** ni shilingi elfu kumi.（卵1トレー1万シリング）
+mdondo | 名 | ニューカッスル病（鶏の病気） | Chanja kuku dhidi ya **mdondo**.（鶏にニューカッスル病の予防接種を）
+bata | 名 N | アヒル | **Bata** wanapenda maji.（アヒルは水が好き）
+bata mzinga | 句 | 七面鳥 | **Bata mzinga** ni ghali sokoni.（七面鳥は市場で高い）
+beberu（mabeberu） | 名 JI-MA | 雄ヤギ | **Beberu** ana ndevu ndefu.（雄ヤギはひげが長い）
+mbuzi wa maziwa | 句 | 乳用ヤギ | **Mbuzi wa maziwa** wanafaa kwa shamba dogo.（乳用ヤギは小さな農場に向く）
+maziwa ya mbuzi | 句 | ヤギの乳 | **Maziwa ya mbuzi** yanauzwa bei nzuri.（ヤギの乳はいい値で売れる）
+sufu | 名 N | 羊毛 | **Sufu** ya kondoo inauzwa.（羊毛が売られる）
+farasi | 名 N | 馬 | **Farasi** ni wachache Tanzania.（タンザニアには馬は少ない）
+nyama ya nguruwe | 句 | 豚肉 | **Nyama ya nguruwe** inaitwa kitimoto.（豚肉は「キティモト」とよばれる）
+nyama ya mbuzi | 句 | ヤギ肉 | **Nyama ya mbuzi** ni maarufu kwa nyama choma.（ヤギ肉は焼き肉に人気だ）
+kuchinja | 動 | 屠る、（家畜を）つぶす | **Tutachinja** mbuzi kwa sherehe.（お祝いにヤギをつぶす）
+machinjio | 名 N | 屠畜場 | Peleka ng'ombe **machinjioni**.（牛を屠畜場へ連れていって）
+ufugaji wa nyuki | 句 | 養蜂 | **Ufugaji wa nyuki** unaongeza kipato.（養蜂は収入を増やす）
+mzinga（mizinga） | 名 M-MI | （ハチの）巣箱 | Weka **mzinga** juu ya mti.（巣箱を木の上に置いて）
+asali | 名 N | はちみつ | **Asali** ya Tabora ni maarufu.（タボラのはちみつは有名だ）
+ufugaji wa samaki | 句 | 魚の養殖 | **Ufugaji wa samaki** unakua.（魚の養殖が伸びている）
+sato | 名 N | ティラピア | **Sato** wa ziwa Victoria ni watamu.（ヴィクトリア湖のティラピアはおいしい）
+sangara | 名 N | ナイルパーチ | **Sangara** wanasafirishwa nje.（ナイルパーチは輸出される）
+dagaa | 名 N | 小魚（干して食べる） | **Dagaa** wanakaushwa juani.（小魚は日に干される）
+fimbo | 名 N | 杖、棒 | Mchungaji ana **fimbo** ndefu.（牧童は長い棒を持っている）
+wafugaji wa kuhamahama | 句 | 遊牧民 | Wamasai ni **wafugaji wa kuhamahama**.（マサイは遊牧民だ）
+boma（maboma） | 名 JI-MA | 囲い、（マサイの）屋敷 | Ng'ombe wanalala **bomani**.（牛は囲いの中で眠る）
+wanyama kazi | 句 | 役畜 | Punda ni **wanyama kazi**.（ロバは役畜だ）
+kukokota | 動 | （車を）引く | Punda **anakokota** mkokoteni.（ロバが荷車を引く）
+kipato | 名 KI-VI | 収入 | Kuku wanaongeza **kipato** cha familia.（鶏が家の収入を増やす）
+mbuzi dume | 句 | 雄ヤギ（種ヤギ） | Tunahitaji **mbuzi dume** mzuri.（よい種ヤギが必要だ）
+kondoo dume | 句 | 雄羊 | **Kondoo dume** ana pembe kubwa.（雄羊は大きな角がある）
+mwana mbuzi | 句 | 子ヤギ | **Mwana mbuzi** anafuata mama yake.（子ヤギが母親についていく）
+kuzaa mapacha | 句 | 双子を産む | Mbuzi **amezaa mapacha**.（ヤギが双子を産んだ）
+pacha（mapacha） | 名 JI-MA | 双子 | Wao ni **mapacha**.（あの2人は双子だ）
+ngozi ya ng'ombe | 句 | 牛の皮 | **Ngozi ya ng'ombe** inatengeneza viatu.（牛の皮で靴を作る）
+mbolea ya kuku | 句 | 鶏ふん | **Mbolea ya kuku** ni nzuri kwa mboga.（鶏ふんは野菜によい）
+mayai ya kienyeji | 句 | 地鶏の卵 | **Mayai ya kienyeji** yana kiini cha njano sana.（地鶏の卵は黄身が濃い）
+kiini cha yai | 句 | 黄身 | **Kiini cha yai** ni cha njano.（黄身は黄色い）
+ganda（maganda） | 名 JI-MA | から、皮 | Tupa **maganda** ya mayai kwenye mboji.（卵のからは堆肥に入れて）

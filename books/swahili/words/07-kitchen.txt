@@ -1,0 +1,66 @@
+# 料理と台所
+kukaanga | 動 | 油で揚げる、炒める | Mama **anakaanga** samaki.（母が魚を揚げている）
+kuoka | 動 | （パンなどを）焼く | **Tunaoka** mkate kila Jumamosi.（毎週土曜にパンを焼く）
+kuchoma | 動 | （火で直接）焼く；刺す | **Wanachoma** nyama nje.（外で肉を焼いている）
+kukata | 動 | 切る | **Kata** vitunguu vidogo vidogo.（玉ねぎを細かく切って）
+kumenya | 動 | 皮をむく | **Menya** viazi kwanza.（まずジャガイモの皮をむいて）
+kusonga | 動 | （ウガリを）練る | **Kusonga** ugali kunahitaji nguvu.（ウガリを練るのは力が要る）
+kukoroga | 動 | かき混ぜる | **Koroga** uji polepole.（粥をゆっくり混ぜて）
+kuchanganya | 動 | 混ぜる | **Changanya** unga na maji.（粉と水を混ぜて）
+kupasha moto | 句 | 温める | **Pasha moto** chakula cha jana.（昨日の食べ物を温めて）
+kuchemka | 動 | 沸く | Maji **yamechemka**.（お湯が沸いた）
+kuungua | 動 | 焦げる、やけどする | Wali **umeungua**!（ご飯が焦げた）
+kusaga | 動 | ひく、すりつぶす | **Tunasaga** mahindi kupata unga.（トウモロコシをひいて粉にする）
+kutwanga | 動 | （臼で）つく | **Anatwanga** mtama kwenye kinu.（臼でモロコシをついている）
+kinu（vinu） | 名 KI-VI | 臼；製粉機 | Peleka mahindi **kinuni**.（トウモロコシを製粉所へ持っていって）
+mwiko（miiko） | 名 M-MI | （ウガリを練る）木のへら | Songa ugali kwa **mwiko**.（へらでウガリを練って）
+kibao（vibao） | 名 KI-VI | まな板；板 | Kata nyanya juu ya **kibao**.（まな板の上でトマトを切って）
+bakuli（mabakuli） | 名 JI-MA | ボウル、鉢 | Weka supu kwenye **bakuli**.（スープを鉢に入れて）
+uma | 名 U | フォーク | Kula kwa **uma** na kisu.（フォークとナイフで食べる）
+birika（mabirika） | 名 JI-MA | やかん、ポット | Chemsha maji kwenye **birika**.（やかんでお湯を沸かして）
+chungu（vyungu） | 名 KI-VI | 土鍋 | Bibi anapika maharage kwenye **chungu**.（祖母は土鍋で豆を煮る）
+kikaango（vikaango） | 名 KI-VI | フライパン | Pasha mafuta kwenye **kikaango**.（フライパンで油を熱して）
+jiko la gesi | 句 | ガスこんろ | Tumenunua **jiko la gesi**.（ガスこんろを買った）
+jiko la mkaa | 句 | 炭のこんろ | **Jiko la mkaa** linatoa moshi.（炭のこんろは煙が出る）
+gesi | 名 N | ガス | **Gesi** imeisha.（ガスがなくなった）
+moshi | 名 M-MI | 煙 | Jikoni kuna **moshi** mwingi.（台所は煙がひどい）
+mapishi | 名 JI-MA | 料理（の作り方）、レシピ | Ninapenda **mapishi** ya pwani.（海岸の料理が好き）
+supu | 名 N | スープ | **Supu** ya kuku ni tamu.（鶏のスープはおいしい）
+kiungo（viungo） | 名 KI-VI | 香辛料、材料；（体の）関節 | Pilau inahitaji **viungo** vingi.（ピラウには香辛料がたくさん要る）
+tangawizi | 名 N | ショウガ | Chai ya **tangawizi**, tafadhali.（ショウガ入りの紅茶をください）
+mdalasini | 名 M-MI | シナモン | Weka **mdalasini** kidogo kwenye chai.（紅茶にシナモンを少し入れて）
+iliki | 名 N | カルダモン | Kahawa ya **iliki** ni maarufu Zanzibar.（カルダモン入りのコーヒーはザンジバルで有名）
+binzari | 名 N | ターメリック、カレー粉 | Weka **binzari** kwenye mchuzi.（シチューにカレー粉を入れて）
+ndimu | 名 N | ライム | Kamua **ndimu** juu ya samaki.（魚にライムをしぼって）
+limau（malimau） | 名 JI-MA | レモン | Juisi ya **limau** ni chachu.（レモン汁はすっぱい）
+tui la nazi | 句 | ココナッツミルク | Pika maharage kwa **tui la nazi**.（ココナッツミルクで豆を煮て）
+kachumbari | 名 N | カチュンバリ（トマトと玉ねぎのサラダ） | Nyama choma na **kachumbari**.（焼き肉とカチュンバリ）
+chipsi | 名 N | フライドポテト | **Chipsi** mayai ni chakula maarufu.（チプシ・マヤイ＝ポテト入り卵焼きは人気の料理）
+sambusa | 名 N | サモサ | Nunua **sambusa** tatu.（サモサを3つ買って）
+mshikaki（mishikaki） | 名 M-MI | 串焼き | **Mishikaki** inauzwa barabarani jioni.（夕方、道ばたで串焼きが売られる）
+uji | 名 U | 粥（穀物の粉を溶いたもの） | Watoto wanakunywa **uji** asubuhi.（子どもは朝、粥を飲む）
+kitumbua（vitumbua） | 名 KI-VI | 米粉の揚げ菓子 | **Vitumbua** ni vitamu na chai.（ヴィトゥンブアは紅茶に合う）
+mtori | 名 M-MI | 料理用バナナと肉のスープ | **Mtori** ni chakula cha Kilimanjaro.（ムトリはキリマンジャロの料理）
+kitoweo | 名 KI-VI | おかず（主食に添えるもの） | Leo **kitoweo** ni samaki.（今日のおかずは魚だ）
+kiporo（viporo） | 名 KI-VI | （前の日の）残り物 | Nimekula **kiporo** cha jana.（昨日の残り物を食べた）
+mabaki | 名 JI-MA | 残り | Weka **mabaki** kwenye friji.（残りを冷蔵庫に入れて）
+-bichi | 形 | 生の、熟していない | Usile nyama **mbichi**.（生の肉を食べないで）
+-bivu | 形 | 熟した | Ndizi hizi ni **mbivu**.（このバナナは熟している）
+-a moto | 形 | 熱い、温かい | Nipe chai **ya moto**.（熱い紅茶をください）
+-a baridi | 形 | 冷たい | Nipe maji **ya baridi**.（冷たい水をください）
+harufu | 名 N | におい | **Harufu** ya pilau ni nzuri.（ピラウのいいにおいがする）
+ladha | 名 N | 味 | Chakula hiki kina **ladha** nzuri.（この料理は味がいい）
+kunusa | 動 | においをかぐ | **Nusa** maziwa haya, yameharibika?（この牛乳をかいでみて、悪くなってる？）
+kuandaa | 動 | 用意する、準備する | **Ninaandaa** chakula cha jioni.（夕食を用意している）
+kufuta | 動 | ふく、消す | **Futa** meza baada ya kula.（食べたあとテーブルをふいて）
+kumimina | 動 | 注ぐ | **Mimina** chai kwenye vikombe.（カップに紅茶を注いで）
+kujaza | 動 | 満たす、（用紙に）記入する | **Jaza** ndoo maji.（バケツを水でいっぱいにして）
+kuloweka | 動 | 水にひたす | **Loweka** maharage usiku mzima.（豆を一晩水にひたして）
+kuchuja | 動 | こす | **Chuja** chai kabla ya kunywa.（飲む前にお茶をこして）
+chujio（machujio） | 名 JI-MA | こし器 | Tumia **chujio** kwa maziwa.（牛乳にはこし器を使って）
+kopo（makopo） | 名 JI-MA | 缶、（計量の）カップ | **Kopo** moja la mchele ni bei gani?（米1カップいくら）
+jagi（majagi） | 名 JI-MA | 水差し | Weka maji kwenye **jagi**.（水差しに水を入れて）
+glasi | 名 N | グラス、コップ | Nipe **glasi** ya maji.（水を1杯ください）
+sinia | 名 N | お盆 | Leta vikombe kwenye **sinia**.（お盆でカップを持ってきて）
+kitambaa（vitambaa） | 名 KI-VI | 布、ふきん | Futa kwa **kitambaa** safi.（きれいな布でふいて）
+kuosha vyombo | 句 | 皿を洗う | Leo ni zamu yako **kuosha vyombo**.（今日は君が皿を洗う番だ）

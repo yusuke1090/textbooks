@@ -1,0 +1,59 @@
+# 気持ちと性格
+upendo | 名 U | 愛 | **Upendo** wa mama hauna mwisho.（母の愛は終わりがない）
+furaha | 名 N | 喜び、幸せ | Nina **furaha** leo.（今日はうれしい）
+huzuni | 名 N | 悲しみ | Ana **huzuni** kwa sababu ya msiba.（不幸があって悲しんでいる）
+hasira | 名 N | 怒り | Usiongee kwa **hasira**.（怒って話さないで）
+hofu | 名 N | 恐れ、心配 | Usiwe na **hofu**.（心配しないで）
+wasiwasi | 名 N | 不安、心配 | Nina **wasiwasi** kuhusu mvua.（雨が心配だ）
+aibu | 名 N | 恥 | Ni **aibu**!（恥ずかしい！）
+wivu | 名 U | 嫉妬 | Usiwe na **wivu**.（やきもちを焼かないで）
+shida | 名 N | 困りごと、問題、苦労 | Kuna **shida** gani?（何か困ったことがある？）
+tatizo（matatizo） | 名 JI-MA | 問題 | **Tatizo** ni nini?（問題は何？）
+matumaini | 名 JI-MA | 希望 | Tuna **matumaini** mvua itanyesha.（雨が降ると期待している）
+ndoto | 名 N | 夢 | **Ndoto** yangu ni kuwa daktari.（私の夢は医者になることだ）
+-pweke | 形 | 孤独な、さびしい | Najisikia **mpweke**.（さびしい）
+kujisikia | 動 | 感じる、気分が～だ | **Najisikia** vizuri.（気分がいい）
+kuhisi | 動 | 感じる | **Nahisi** baridi.（寒い）
+kufurahi | 動 | 喜ぶ、うれしい | **Nimefurahi** sana.（とてもうれしい）
+kuhuzunika | 動 | 悲しむ | **Alihuzunika** sana.（とても悲しんだ）
+kukasirika | 動 | 怒る | **Usikasirike**, tafadhali.（怒らないでね）
+kuogopa | 動 | 怖がる | **Ninaogopa** mbwa.（犬が怖い）
+kushangaa | 動 | 驚く | **Nilishangaa** kuona bei.（値段を見て驚いた）
+kuridhika | 動 | 満足する | **Nimeridhika** na kazi yangu.（自分の仕事に満足している）
+kuchukia | 動 | 嫌う、憎む | **Ninachukia** uongo.（うそが嫌いだ）
+kuona aibu | 句 | 恥ずかしがる | **Usione aibu**, uliza tu.（恥ずかしがらずにきいて）
+kuvutiwa | 動 | 興味を持つ、ひかれる | **Ninavutiwa** na kilimo.（農業に興味がある）
+kupendeza | 動 | すてきだ、似合う | **Umependeza** leo!（今日すてきだね）
+kusikitika | 動 | 残念に思う | **Nasikitika** kusikia hivyo.（それを聞いて残念です）
+kujivunia | 動 | 誇りに思う | **Ninajivunia** wanangu.（子どもたちを誇りに思う）
+-pole | 形 | 穏やかな、やさしい | Mwalimu wetu ni **mpole**.（先生は穏やかだ）
+-karimu | 形 | 気前のよい、もてなし上手な | Ni mtu **mkarimu**.（気前のいい人だ）
+-vivu | 形 | 怠けた | Usiwe **mvivu**.（怠けないで）
+mchapakazi（wachapakazi） | 名 M-WA | 働き者 | Ni **mchapakazi** sana.（すごい働き者だ）
+-aminifu | 形 | 正直な、誠実な | Ni mfanyakazi **mwaminifu**.（誠実な働き手だ）
+-cheshi | 形 | おもしろい、陽気な | Kaka yangu ni **mcheshi**.（兄はおもしろい）
+-tulivu | 形 | 落ち着いた、静かな | Kijiji chetu ni **kitulivu**.（私たちの村は静かだ）
+-kaidi | 形 | 頑固な、言うことを聞かない | Mtoto huyu ni **mkaidi**.（この子は言うことを聞かない）
+-jinga | 形 | ばかな | Usiwe **mjinga**!（ばかなことをしないで）
+-a kuchosha | 形 | 退屈な、疲れる | Mkutano ulikuwa **wa kuchosha**.（会議は退屈だった）
+busara | 名 N | 知恵、分別 | Mzee ana **busara**.（長老には知恵がある）
+subira | 名 N | 忍耐 | **Subira** huvuta heri.（忍耐は幸運を招く）
+tabia | 名 N | 性格、ふるまい、くせ | Ana **tabia** nzuri.（行いがよい）
+raha | 名 N | 楽しさ、気楽さ | Maisha ya kijijini ni **raha**.（村の暮らしは気楽だ）
+maisha | 名 JI-MA | 人生、生活、暮らし | **Maisha** ni mafupi.（人生は短い）
+uhusiano | 名 U | 関係 | Tuna **uhusiano** mzuri.（私たちはいい関係だ）
+urafiki | 名 U | 友情 | **Urafiki** wetu ni wa miaka mingi.（私たちの友情は長い）
+usingizi | 名 U | 眠り、眠気 | Nina **usingizi**.（眠い）
+uchungu | 名 U | 痛み、つらさ、苦しみ | Alilia kwa **uchungu**.（つらくて泣いた）
+bahati | 名 N | 運 | **Bahati** nzuri!（幸運を！）
+bahati mbaya | 句 | 運悪く、残念ながら | **Bahati mbaya**, basi limeondoka.（残念ながら、バスは出てしまった）
+ukweli | 名 U | 真実、本当のこと | Sema **ukweli**.（本当のことを言って）
+uongo | 名 U | うそ | Hiyo ni **uongo**!（それはうそだ）
+moyo mkunjufu | 句 | 明るい心、気さくさ | Anapokea wageni kwa **moyo mkunjufu**.（気さくに客を迎える）
+kuvunjika moyo | 句 | がっかりする、くじける | **Usivunjike moyo**!（くじけないで）
+hamu | 名 N | 欲求、願い | Nina **hamu** ya kujifunza.（学びたい気持ちがある）
+kukata tamaa | 句 | あきらめる、絶望する | **Usikate tamaa**.（あきらめないで）
+tamaa | 名 N | 欲、望み | **Tamaa** mbaya inaleta matatizo.（悪い欲はもめごとを生む）
+-enye furaha | 句 | 楽しい、うれしそうな | Watoto ni **wenye furaha** leo.（今日は子どもたちがうれしそうだ）
+kujiamini | 動 | 自信を持つ | **Jiamini**!（自信を持って）
+upole | 名 U | やさしさ、穏やかさ | Ongea na wateja kwa **upole**.（お客にはやさしく話して）

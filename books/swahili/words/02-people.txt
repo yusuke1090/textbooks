@@ -1,0 +1,53 @@
+# 人と家族
+mtu（watu） | 名 M-WA | 人 | **Watu** wengi wanafanya kazi shambani.（多くの人が畑で働いている）
+mtoto（watoto） | 名 M-WA | 子ども | **Mtoto** analala.（子どもが寝ている）
+mwanamke（wanawake） | 名 M-WA | 女性 | **Wanawake** wanakamua ng'ombe.（女性たちが牛の乳を搾っている）
+mwanamume（wanaume） | 名 M-WA | 男性 | **Mwanamume** yule ni dereva.（あの男性は運転手です）
+mvulana（wavulana） | 名 M-WA | 少年、男の子 | **Mvulana** anachunga mbuzi.（男の子がヤギの番をしている）
+msichana（wasichana） | 名 M-WA | 少女、女の子 | **Msichana** anaenda shule.（女の子が学校へ行く）
+mtoto mchanga | 句 | 赤ちゃん | **Mtoto mchanga** analia.（赤ちゃんが泣いている）
+mzee（wazee） | 名 M-WA | お年寄り、年上の男性（敬意をこめて） | **Mzee**, karibu kiti.（おじいさん、いすへどうぞ）
+kijana（vijana） | 名 KI-VI | 若者 | **Vijana** wengi wanahamia mjini.（多くの若者が町へ移る）
+familia | 名 N | 家族 | **Familia** yangu ni kubwa.（私の家族は大家族です）
+baba | 名 N | 父、年上の男性へのよびかけ | **Baba** yangu ni mkulima.（私の父は農家です）
+mama | 名 N | 母、年上の女性へのよびかけ | **Mama**, chai iko tayari.（お母さん、お茶ができたよ）
+mzazi（wazazi） | 名 M-WA | 親 | **Wazazi** wangu wanaishi Arusha.（両親はアルーシャに住んでいる）
+kaka | 名 N | 兄、弟（男のきょうだい） | **Kaka** yangu anafanya kazi Dar.（兄はダルで働いている）
+dada | 名 N | 姉、妹（女のきょうだい） | **Dada** yangu ni mwalimu.（姉は先生です）
+ndugu | 名 N | 兄弟姉妹、親せき、仲間 | Tuko **ndugu** watano.（私たちは5人きょうだいです）
+mume（waume） | 名 M-WA | 夫 | **Mume** wangu yuko safarini.（夫は旅行中です）
+mke（wake） | 名 M-WA | 妻 | **Mke** wake ni daktari.（彼の妻は医者です）
+mwana（wana） | 名 M-WA | 息子・娘（子） | Ana **wana** watatu.（彼には子が3人いる）
+binti | 名 N | 娘 | **Binti** yangu anasoma chuo.（娘は大学で勉強している）
+babu | 名 N | 祖父 | **Babu** ana ng'ombe kumi.（祖父は牛を10頭持っている）
+bibi | 名 N | 祖母、（敬称）〜さん（女性） | **Bibi** anapika ugali.（おばあさんがウガリを作る）
+mjukuu（wajukuu） | 名 M-WA | 孫 | Ana **wajukuu** wengi.（彼女には孫がたくさんいる）
+shangazi | 名 N | おば（父の姉妹） | **Shangazi** yangu anaishi kijijini.（おばは村に住んでいる）
+mjomba | 名 N | おじ（母の兄弟） | **Mjomba** alinipa zawadi.（おじがプレゼントをくれた）
+binamu | 名 N | いとこ | **Binamu** yangu anasoma Nairobi.（いとこはナイロビで勉強している）
+rafiki（marafiki） | 名 JI-MA | 友だち | **Rafiki** yangu anaitwa Neema.（友だちはネエマという名前です）
+jirani（majirani） | 名 JI-MA | 隣人、近所の人 | **Majirani** walitusaidia.（近所の人たちが助けてくれた）
+mgeni（wageni） | 名 M-WA | 客、外から来た人 | Tuna **wageni** leo.（今日はお客さんがいる）
+mwenyeji（wenyeji） | 名 M-WA | 地元の人、主人役 | **Wenyeji** ni wakarimu.（地元の人は親切だ）
+mzungu（wazungu） | 名 M-WA | 白人、外国人（主に欧米の人） | Watoto walimwita "**mzungu**!".（子どもたちが「ムズング」とよんだ）
+Mjapani（Wajapani） | 名 M-WA | 日本人 | Mimi ni **Mjapani**.（私は日本人です）
+Mtanzania（Watanzania） | 名 M-WA | タンザニア人 | **Watanzania** wanapenda chai.（タンザニア人はお茶が好きだ）
+Mkenya（Wakenya） | 名 M-WA | ケニア人 | Yeye ni **Mkenya**.（彼はケニア人です）
+mwalimu（walimu） | 名 M-WA | 先生 | **Mwalimu** anafundisha hesabu.（先生が算数を教えている）
+mwanafunzi（wanafunzi） | 名 M-WA | 生徒、学生 | **Wanafunzi** wako darasani.（生徒たちは教室にいる）
+daktari（madaktari） | 名 JI-MA | 医者 | **Daktari** yuko hospitalini.（医者は病院にいる）
+muuguzi（wauguzi） | 名 M-WA | 看護師 | **Muuguzi** alinipima.（看護師が私を診た）
+dereva（madereva） | 名 JI-MA | 運転手 | **Dereva** anaendesha polepole.（運転手はゆっくり運転する）
+mpishi（wapishi） | 名 M-WA | 料理人 | **Mpishi** anapika wali.（料理人がご飯を炊いている）
+fundi（mafundi） | 名 JI-MA | 職人、修理工 | **Fundi** atakuja kutengeneza pampu.（修理工がポンプを直しに来る）
+askari（maaskari） | 名 JI-MA | 警官、警備員 | **Askari** analinda lango.（警備員が門を守っている）
+mfanyabiashara（wafanyabiashara） | 名 M-WA | 商売人 | **Mfanyabiashara** ananunua maziwa.（商売人が牛乳を買う）
+kiongozi（viongozi） | 名 KI-VI | 指導者、リーダー | **Kiongozi** wa kijiji ni mwanamke.（村のリーダーは女性だ）
+mwenyekiti（wenyeviti） | 名 M-WA | 議長、会長 | **Mwenyekiti** alifungua mkutano.（議長が会議を開いた）
+jina la ukoo | 句 | 名字 | **Jina la ukoo** ni Tanaka.（名字は田中です）
+umri | 名 U | 年齢 | Una **umri** gani?（何歳ですか）
+mpenzi（wapenzi） | 名 M-WA | 恋人、愛する人 | **Mpenzi** wangu yuko Mombasa.（恋人はモンバサにいる）
+kuoa | 動 | （男性が）結婚する | **Alioa** mwaka jana.（彼は去年結婚した）
+kuolewa | 動 | （女性が）結婚する | Dada yangu **aliolewa** Desemba.（姉は12月に結婚した）
+Bwana | 名 N | ～さん（男性）、だんな | **Bwana** Juma yuko?（ジュマさんはいますか）
+Bi | 名 | ～さん（女性） | **Bi** Amina ni mwalimu.（アミナさんは先生です）

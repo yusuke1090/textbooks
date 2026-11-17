@@ -1,0 +1,56 @@
+# 宗教・行事・文化
+Mungu | 名 N | 神 | **Mungu** ni mwema.（神はよい方だ）
+Mkristo（Wakristo） | 名 M-WA | キリスト教徒 | **Wakristo** wanaenda kanisani Jumapili.（キリスト教徒は日曜に教会へ行く）
+Mwislamu（Waislamu） | 名 M-WA | イスラム教徒 | **Waislamu** wanaswali mara tano kwa siku.（イスラム教徒は1日5回礼拝する）
+Uislamu | 名 U | イスラム教 | **Uislamu** ulifika pwani zamani.（イスラム教は昔、海岸に伝わった）
+Ukristo | 名 U | キリスト教 | **Ukristo** ulienea bara karne ya kumi na tisa.（キリスト教は19世紀に内陸へ広まった）
+kusali | 動 | 祈る | **Tunasali** kabla ya kula.（食事の前に祈る）
+kuswali | 動 | （イスラム教の）礼拝をする | Anaenda **kuswali** msikitini.（モスクへ礼拝に行く）
+Biblia | 名 N | 聖書 | Anasoma **Biblia** kila usiku.（毎晩聖書を読む）
+Kurani | 名 N | コーラン | Watoto wanajifunza **Kurani** madrasa.（子どもはマドラサでコーランを学ぶ）
+padri（mapadri） | 名 JI-MA | 神父 | **Padri** ataongoza misa.（神父がミサをする）
+mchungaji（wachungaji） | 名 M-WA | 牧師；牧童 | **Mchungaji** anahubiri kanisani.（牧師が教会で説教している）
+shehe（mashehe） | 名 JI-MA | シェイク（イスラムの指導者） | **Shehe** anaongoza dua.（シェイクが祈りを導く）
+Ramadhani | 名 N | ラマダン（断食月） | Mwezi wa **Ramadhani** Waislamu wanafunga.（ラマダン月にイスラム教徒は断食する）
+Idi | 名 N | イード（断食明けなどの祭り） | Heri ya **Idi**!（イードおめでとう）
+Krismasi | 名 N | クリスマス | **Krismasi** njema!（メリークリスマス）
+Pasaka | 名 N | 復活祭 | Tutasafiri wakati wa **Pasaka**.（復活祭のときに旅行する）
+Mwaka Mpya | 句 | 新年 | Heri ya **Mwaka Mpya**!（新年おめでとう）
+siku ya kuzaliwa | 句 | 誕生日 | Heri ya **siku ya kuzaliwa**!（誕生日おめでとう）
+sherehe | 名 N | 祝い、パーティー | Kuna **sherehe** kesho.（明日パーティーがある）
+kusherehekea | 動 | 祝う | **Tunasherehekea** Uhuru tarehe 9 Desemba.（12月9日に独立を祝う）
+mila | 名 N | 習わし、慣習 | **Mila** za Wamasai zinavutia.（マサイの習わしは興味深い）
+desturi | 名 N | 習慣 | Ni **desturi** kuwasalimia wazee kwanza.（年長者に先にあいさつするのが習慣だ）
+utamaduni | 名 U | 文化 | **Utamaduni** wa Waswahili ni wa pwani.（スワヒリの文化は海岸の文化だ）
+kabila（makabila） | 名 JI-MA | 民族、部族 | Tanzania ina **makabila** zaidi ya mia moja.（タンザニアには100以上の民族がいる）
+lugha | 名 N | 言葉、言語 | Unazungumza **lugha** ngapi?（いくつの言葉を話せる？）
+hadithi | 名 N | 物語、話 | Bibi anatusimulia **hadithi**.（祖母が物語を話してくれる）
+methali | 名 N | ことわざ | Bibi anapenda kutumia **methali**.（祖母はことわざをよく使う）
+kitendawili（vitendawili） | 名 KI-VI | なぞなぞ | **Kitendawili**! — Tega!（なぞなぞ！ — さあどうぞ！）
+shairi（mashairi） | 名 JI-MA | 詩 | Anaandika **mashairi** kwa Kiswahili.（スワヒリ語で詩を書く）
+ngoma | 名 N | 太鼓、踊り | Tulicheza **ngoma** usiku kucha.（一晩中踊った）
+taarab | 名 N | ターラブ（ザンジバルの音楽） | **Taarab** ni muziki wa pwani.（ターラブは海岸の音楽だ）
+mahari | 名 N | 婚資（花嫁の家に渡す財） | Alitoa ng'ombe kumi kama **mahari**.（婚資として牛を10頭出した）
+ndoa | 名 N | 結婚 | **Ndoa** yao ina miaka kumi.（2人は結婚して10年になる）
+bwana harusi | 句 | 花婿 | **Bwana harusi** amefika.（花婿が着いた）
+bibi harusi | 句 | 花嫁 | **Bibi harusi** amependeza.（花嫁はきれいだ）
+msiba（misiba） | 名 M-MI | 不幸（人の死）、弔い | Kuna **msiba** kijijini.（村で不幸があった）
+kufariki | 動 | 亡くなる | Babu **alifariki** mwaka jana.（祖父は去年亡くなった）
+kuzaliwa | 動 | 生まれる | **Nilizaliwa** Osaka.（大阪で生まれた）
+kaburi（makaburi） | 名 JI-MA | 墓 | Tulitembelea **kaburi** la babu.（祖父の墓を訪ねた）
+imani | 名 N | 信仰、信頼 | Ana **imani** kubwa.（信仰があつい）
+kuamini | 動 | 信じる | **Ninaamini** utafaulu.（あなたは合格すると信じている）
+roho | 名 N | 魂、心 | Ana **roho** nzuri.（心がやさしい）
+tamasha（matamasha） | 名 JI-MA | 祭り、フェスティバル、コンサート | **Tamasha** la muziki litafanyika Jumamosi.（音楽祭は土曜にある）
+sanaa | 名 N | 芸術 | **Sanaa** ya Tingatinga ni maarufu.（ティンガティンガの絵は有名だ）
+msanii（wasanii） | 名 M-WA | 芸術家、アーティスト | **Msanii** huyu anaimba Bongo Flava.（このアーティストはボンゴフレーバを歌う）
+kuchonga | 動 | 彫る | Wamakonde **wanachonga** vinyago.（マコンデの人々は彫刻を彫る）
+mkeka（mikeka） | 名 M-MI | ござ、マット | Kaa juu ya **mkeka**.（ござの上に座って）
+heshima | 名 N | 敬意、礼儀 | Onyesha **heshima** kwa wazee.（年長者に敬意を示して）
+ukarimu | 名 U | もてなしの心 | Watanzania wanajulikana kwa **ukarimu**.（タンザニア人はもてなしの心で知られる）
+kualika | 動 | 招く | **Nimekualika** kwenye harusi yangu.（私の結婚式に招待するよ）
+mwaliko（mialiko） | 名 M-MI | 招待（状） | Asante kwa **mwaliko**.（招待ありがとう）
+mgeni rasmi | 句 | 主賓 | **Mgeni rasmi** atahutubia.（主賓がスピーチをする）
+kuhutubia | 動 | 演説する | Rais **atahutubia** taifa leo.（大統領が今日、国民に向けて演説する）
+Kiswahili sanifu | 句 | 標準スワヒリ語 | Gazeti hili linatumia **Kiswahili sanifu**.（この新聞は標準スワヒリ語を使う）
+lahaja | 名 N | 方言 | Kiunguja ni **lahaja** ya Zanzibar.（キウングジャはザンジバルの方言だ）

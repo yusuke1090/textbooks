@@ -1,0 +1,65 @@
+# 形容詞・色・形
+-zuri | 形 | よい、美しい | Hali ya hewa ni **nzuri** leo.（今日は天気がいい）
+-baya | 形 | 悪い | Barabara ni **mbaya**.（道が悪い）
+-kubwa | 形 | 大きい | Ana shamba **kubwa**.（大きな畑を持っている）
+-dogo | 形 | 小さい | Tunaishi katika nyumba **ndogo**.（小さな家に住んでいる）
+-refu | 形 | 長い、（背が）高い | Ana nywele **ndefu**.（髪が長い）
+-fupi | 形 | 短い、（背が）低い | Njia hii ni **fupi**.（この道は近い）
+-pana | 形 | 幅が広い | Mto huu ni **mpana**.（この川は幅が広い）
+-embamba | 形 | 細い、狭い | Tulipita njia **nyembamba**.（細い道を通った）
+-nene | 形 | 太い、厚い、太った | Ng'ombe huyu ni **mnene**.（この牛は太っている）
+-zito | 形 | 重い | Gunia hili ni **zito**.（この袋は重い）
+-epesi | 形 | 軽い、簡単な | Kazi hii ni **nyepesi**.（この仕事は簡単だ）
+-gumu | 形 | 硬い、難しい | Swali hili ni **gumu**.（この質問は難しい）
+laini | 形 | 柔らかい、なめらかな（形は変わらない） | Mkate huu ni **laini**.（このパンは柔らかい）
+-pya | 形 | 新しい | Nimenunua simu **mpya**.（新しいスマホを買った）
+-a zamani | 形 | 古い、昔の | Hii ni nyumba **ya zamani**.（これは古い家だ）
+-ingi | 形 | 多い | Kuna watu **wengi** sokoni.（市場は人が多い）
+-chache | 形 | 少ない | Wanafunzi ni **wachache** leo.（今日は生徒が少ない）
+-ote | 形 | すべての | Watoto **wote** wamefika.（子どもはみんな来た）
+-ingine | 形 | ほかの、別の | Nipe **nyingine**.（別のをください）
+-enye | 形 | ～のある、～を持った | Nataka chumba **chenye** dirisha.（窓のある部屋がいい）
+-kali | 形 | 鋭い、厳しい、（味が）辛い | Mbwa huyu ni **mkali**.（この犬は狂暴だ）
+-bovu | 形 | 腐った、壊れた | Embe hili ni **bovu**.（このマンゴーは腐っている）
+-kavu | 形 | 乾いた | Nguo ni **kavu** sasa.（服はもう乾いている）
+-tupu | 形 | 空の、何もない | Chupa ni **tupu**.（瓶は空だ）
+-zima | 形 | まるごとの、全体の、元気な | Amekula mkate **mzima**.（パンをまるごと食べた）
+-geni | 形 | 初めての、見知らぬ | Neno hili ni **geni** kwangu.（この言葉は初めて聞く）
+-erevu | 形 | 賢い、ずる賢い | Sungura ni **mwerevu**.（ウサギは賢い）
+-ema | 形 | よい（人柄が）、親切な | Ni mtu **mwema**.（よい人だ）
+-eupe | 形 | 白い | Amevaa shati **jeupe**.（白いシャツを着ている）
+-eusi | 形 | 黒い | Ana ng'ombe **mweusi**.（黒い牛を飼っている）
+-ekundu | 形 | 赤い | Maua **mekundu** ni mazuri.（赤い花はきれいだ）
+njano | 形 | 黄色の（形は変わらない） | Ndizi za **njano** zimeiva.（黄色いバナナは熟している）
+kijani | 形 | 緑の（形は変わらない） | Majani ya **kijani** ni chakula kizuri.（緑の草はよいえさだ）
+bluu | 形 | 青い（形は変わらない） | Gari la **bluu** ni la nani?（青い車はだれの？）
+kahawia | 形 | 茶色の（形は変わらない） | Udongo wa **kahawia** ni mzuri.（茶色の土はいい）
+kijivu | 形 | 灰色の（形は変わらない） | Anga ni **kijivu** leo.（今日は空が灰色だ）
+zambarau | 形 | 紫の（形は変わらない） | Amevaa gauni la **zambarau**.（紫のワンピースを着ている）
+rangi | 名 N | 色、ペンキ | Unapenda **rangi** gani?（何色が好き？）
+duara | 名 N | 円、丸 | Kaeni kwa **duara**.（輪になって座って）
+mraba（miraba） | 名 M-MI | 四角 | Chora **mraba**.（四角を描いて）
+ukubwa | 名 U | 大きさ、広さ | **Ukubwa** wa shamba ni ekari tano.（畑の広さは5エーカー）
+-a kawaida | 形 | ふつうの | Leo ni siku **ya kawaida**.（今日はふつうの日だ）
+muhimu | 形 | 大切な（形は変わらない） | Elimu ni **muhimu**.（教育は大切だ）
+maalum | 形 | 特別な、専用の（形は変わらない） | Hii ni siku **maalum**.（今日は特別な日だ）
+tofauti | 形 | ちがう（形は変わらない） | Bei ni **tofauti** kila duka.（値段は店ごとにちがう）
+hodari | 形 | 上手な、勇敢な（形は変わらない） | Ni **hodari** wa kupika.（料理が上手だ）
+dhaifu | 形 | 弱い（形は変わらない） | Ndama ni **dhaifu**.（子牛は弱っている）
+imara | 形 | 丈夫な、しっかりした（形は変わらない） | Nyumba hii ni **imara**.（この家は丈夫だ）
+-nono | 形 | （家畜が）よく太った | Mbuzi huyu ni **mnono**.（このヤギはよく太っている）
+huru | 形 | 自由な、ひまな（形は変わらない） | Niko **huru** leo.（今日はひまだ）
+-a mwisho | 形 | 最後の | Hii ni nafasi **ya mwisho**.（これが最後のチャンスだ）
+-oga | 形 | 臆病な | Paka huyu ni **mwoga**.（この猫はこわがりだ）
+-wazi | 形 | 開いた、はっきりした | Mlango uko **wazi**.（ドアが開いている）
+sahihi | 形 | 正しい（形は変わらない） | Jibu lako ni **sahihi**.（あなたの答えは正しい）
+-tamu sana | 句 | とてもおいしい | Chakula hiki ni **kitamu sana**!（この料理はとてもおいしい）
+safi sana | 句 | とてもいい、最高 | Kazi yako ni **safi sana**.（君の仕事は最高だ）
+-kubwa kuliko | 句 | ～より大きい | Tembo ni **mkubwa kuliko** kiboko.（ゾウはカバより大きい）
+-chafu sana | 句 | とても汚い | Viatu vyako ni **vichafu sana**.（君の靴はとても汚い）
+-a kisasa | 形 | 現代の、新式の | Wanatumia mashine **za kisasa**.（新式の機械を使っている）
+-a asili | 形 | 自然の、在来の、もとの | Hii ni dawa **ya asili**.（これは自然の薬だ）
+-a bandia | 形 | 人工の、にせの | Ni nywele **za bandia**.（それはつけ毛だ）
+-a juu | 形 | 上の、高い（質・地位が） | Ni elimu **ya juu**.（高等教育だ）
+-a chini | 形 | 下の、低い | Bei **ya chini** ni elfu tano.（最低価格は5千）
+bora | 形 | すぐれた、よりよい（形は変わらない） | Hii ni mbegu **bora**.（これはすぐれた種だ）

@@ -1,0 +1,51 @@
+# からだと健康
+mwili（miili） | 名 M-MI | からだ | **Mwili** wangu unauma.（体が痛い）
+kichwa（vichwa） | 名 KI-VI | 頭 | **Kichwa** kinaniuma.（頭が痛い）
+uso（nyuso） | 名 U | 顔 | Nawa **uso** asubuhi.（朝、顔を洗う）
+jicho（macho） | 名 JI-MA | 目 | **Macho** yangu yamechoka.（目が疲れた）
+sikio（masikio） | 名 JI-MA | 耳 | **Sikio** linaniuma.（耳が痛い）
+pua | 名 N | 鼻 | **Pua** yangu imeziba.（鼻がつまっている）
+mdomo（midomo） | 名 M-MI | 口、くちびる | Funga **mdomo** unapotafuna.（かむときは口を閉じなさい）
+jino（meno） | 名 JI-MA | 歯 | **Jino** linaniuma.（歯が痛い）
+ulimi（ndimi） | 名 U | 舌 | Usiunguze **ulimi** wako; chai ni moto.（舌をやけどしないで。お茶は熱い）
+shingo | 名 N | 首 | Ng'ombe ana kola **shingoni**.（牛は首に首輪をしている）
+mkono（mikono） | 名 M-MI | 手、腕 | Nawa **mikono** kabla ya kula.（食べる前に手を洗いなさい）
+kidole（vidole） | 名 KI-VI | 指 | Nimekata **kidole**.（指を切った）
+mguu（miguu） | 名 M-MI | 足、脚 | **Mguu** wa ng'ombe umevimba.（牛の脚が腫れている）
+goti（magoti） | 名 JI-MA | ひざ | **Goti** langu linaniuma.（ひざが痛い）
+mgongo（migongo） | 名 M-MI | 背中、腰 | Nina maumivu ya **mgongo**.（腰が痛い）
+tumbo（matumbo） | 名 JI-MA | おなか、胃 | **Tumbo** linaniuma.（おなかが痛い）
+kifua（vifua） | 名 KI-VI | 胸 | Nina kikohozi na maumivu ya **kifua**.（せきと胸の痛みがある）
+moyo（mioyo） | 名 M-MI | 心臓、心 | **Moyo** wake ni mzuri.（彼は心の優しい人だ）
+damu | 名 N | 血 | Kuna **damu** kwenye maziwa.（牛乳に血がまじっている）
+ngozi | 名 N | 皮膚、皮 | **Ngozi** ya ng'ombe inauzwa.（牛の皮は売られる）
+nywele | 名 N | 髪 | **Nywele** zake ni ndefu.（彼女の髪は長い）
+afya | 名 N | 健康 | **Afya** ni utajiri.（健康は財産）
+mgonjwa（wagonjwa） | 名 M-WA | 病人、患者；病気の | Ng'ombe huyu ni **mgonjwa**.（この牛は病気だ）
+ugonjwa（magonjwa） | 名 U | 病気 | Kupe huleta **magonjwa**.（ダニは病気を運ぶ）
+homa | 名 N | 熱、熱病 | Nina **homa**.（熱がある）
+malaria | 名 N | マラリア | Lala chini ya chandarua ili kuzuia **malaria**.（マラリアを防ぐため蚊帳の中で寝なさい）
+mafua | 名 JI-MA | かぜ、鼻かぜ | Nina **mafua**.（かぜをひいている）
+kikohozi | 名 KI-VI | せき | Mtoto ana **kikohozi**.（子どもがせきをしている）
+maumivu | 名 JI-MA | 痛み | Una **maumivu** wapi?（どこが痛いですか）
+kuumwa | 動 | 具合が悪い、痛む | **Ninaumwa** leo.（今日は具合が悪い）
+kuuma | 動 | 痛む、かむ | Mguu **unauma**.（脚が痛い）
+kuhara | 動 | 下痢をする | Ndama **anaharisha**.（子牛が下痢をしている）
+kutapika | 動 | 吐く | Mtoto **alitapika** usiku.（子どもが夜に吐いた）
+kupona | 動 | 治る | Ng'ombe **amepona**.（牛は治った）
+kupumzika | 動 | 休む | **Pumzika** kidogo.（少し休みなさい）
+dawa | 名 N | 薬 | Mpe ng'ombe **dawa** mara mbili kwa siku.（牛に1日2回薬をあげて）
+sindano | 名 N | 注射、針 | Daktari alimpa **sindano**.（獣医が注射をした）
+chanjo | 名 N | ワクチン、予防接種 | **Chanjo** inazuia magonjwa.（ワクチンは病気を防ぐ）
+hospitali | 名 N | 病院 | Alipelekwa **hospitali**.（彼は病院に運ばれた）
+zahanati | 名 N | 診療所 | **Zahanati** iko karibu na soko.（診療所は市場の近くにある）
+duka la dawa | 句 | 薬局 | Nenda **duka la dawa** ununue vidonge.（薬局へ行って錠剤を買いなさい）
+choo（vyoo） | 名 KI-VI | トイレ | **Choo** kiko wapi?（トイレはどこですか）
+usafi | 名 U | 清潔 | **Usafi** wa banda ni muhimu.（牛舎を清潔にすることは大切）
+-safi | 形 | きれいな、清潔な | Maji haya ni **safi**.（この水はきれいだ）
+-chafu | 形 | 汚い | Mikono yako ni **michafu**.（手が汚れている）
+kuoga | 動 | 体を洗う、水浴びする | **Ninaoga** jioni.（夕方に体を洗う）
+kunawa | 動 | （手や顔を）洗う | **Nawa** mikono kwa sabuni.（せっけんで手を洗いなさい）
+kuchoka | 動 | 疲れる | **Nimechoka** sana.（とても疲れた）
+njaa | 名 N | 空腹、飢え | Nina **njaa**.（おなかがすいた）
+kiu | 名 N | のどの渇き | Nina **kiu**; nipe maji.（のどが渇いた。水をください）

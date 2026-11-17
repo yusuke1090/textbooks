@@ -1,0 +1,58 @@
+# 旅行とサファリ
+mtalii（watalii） | 名 M-WA | 観光客 | **Watalii** wengi wanatembelea Zanzibar.（多くの観光客がザンジバルを訪れる）
+utalii | 名 U | 観光（業） | **Utalii** unaleta fedha nyingi.（観光は多くのお金をもたらす）
+kutalii | 動 | 観光する | Tunataka **kutalii** Serengeti.（セレンゲティを観光したい）
+kutembelea | 動 | 訪ねる | **Nitakutembelea** kesho.（明日あなたを訪ねます）
+mwongozaji（waongozaji） | 名 M-WA | ガイド | **Mwongozaji** anajua wanyama wote.（ガイドは動物を全部知っている）
+hifadhi | 名 N | 保護区、国立公園；保管 | **Hifadhi** ya Taifa ya Serengeti ni kubwa.（セレンゲティ国立公園は広い）
+kambi | 名 N | キャンプ（場） | Tutalala **kambini** usiku huu.（今夜はキャンプ場で寝る）
+hema（mahema） | 名 JI-MA | テント | **Hema** letu liko karibu na mto.（私たちのテントは川の近く）
+gari la safari | 句 | サファリカー | **Gari la safari** lina paa la kufungua.（サファリカーは屋根が開く）
+darubini | 名 N | 双眼鏡、望遠鏡 | Tazama simba kwa **darubini**.（双眼鏡でライオンを見て）
+kamera | 名 N | カメラ | Usisahau **kamera** yako.（カメラを忘れないで）
+picha | 名 N | 写真、絵 | Hii ni **picha** ya familia yangu.（これは家族の写真です）
+kupiga picha | 句 | 写真をとる | Naomba **kupiga picha**?（写真をとってもいいですか）
+mandhari | 名 N | 景色 | **Mandhari** ya Ngorongoro ni mazuri sana.（ンゴロンゴロの景色はとても美しい）
+kreta | 名 N | クレーター | Simba wengi wanaishi ndani ya **kreta**.（クレーターの中に多くのライオンがすむ）
+maporomoko ya maji | 句 | 滝 | **Maporomoko ya maji** ya Victoria ni maarufu.（ヴィクトリアの滝は有名だ）
+maarufu | 形 | 有名な、人気の（形は変わらない） | Mwimbaji huyu ni **maarufu** sana.（この歌手はとても有名だ）
+kupanda mlima | 句 | 山に登る | Tunataka **kupanda mlima** Kilimanjaro.（キリマンジャロに登りたい）
+kilele（vilele） | 名 KI-VI | 頂上 | Tulifika **kileleni** alfajiri.（夜明けに頂上に着いた）
+mpagazi（wapagazi） | 名 M-WA | （登山の）ポーター | **Wapagazi** wanabeba mizigo mlimani.（ポーターが山で荷物を運ぶ）
+mzigo（mizigo） | 名 M-MI | 荷物 | **Mizigo** yangu imepotea.（荷物がなくなった）
+sanduku（masanduku） | 名 JI-MA | 箱、スーツケース | **Sanduku** hili ni zito.（この箱は重い）
+kubeba | 動 | 運ぶ、持つ、背負う | Nisaidie **kubeba** mizigo.（荷物を運ぶのを手伝って）
+ufukwe（fukwe） | 名 U | 浜辺、ビーチ | Twende **ufukweni** jioni.（夕方ビーチに行こう）
+kuogelea | 動 | 泳ぐ | Watoto **wanaogelea** baharini.（子どもが海で泳いでいる）
+mashua | 名 N | 小舟、ボート | Tulienda kisiwani kwa **mashua**.（小舟で島へ行った）
+jahazi（majahazi） | 名 JI-MA | ダウ船（帆船） | **Jahazi** linasafiri kwa upepo.（ダウ船は風で進む）
+meli | 名 N | 船 | **Meli** ya Zanzibar inaondoka saa tatu.（ザンジバル行きの船は9時に出る）
+bandari | 名 N | 港 | **Bandari** ya Dar es Salaam ina shughuli nyingi.（ダルエスサラーム港はにぎわっている）
+kivuko（vivuko） | 名 KI-VI | 渡し船；横断歩道 | Tulivuka mto kwa **kivuko**.（渡し船で川を渡った）
+kuvuka | 動 | 渡る | **Vuka** barabara kwa uangalifu.（気をつけて道を渡って）
+kuweka nafasi | 句 | 予約する | Nataka **kuweka nafasi** ya chumba.（部屋を予約したい）
+nafasi | 名 N | 空き、場所、機会 | Kuna **nafasi** kwenye basi?（バスに空きはある？）
+kulipia | 動 | （～の）代金を払う | **Nimelipia** chumba tayari.（部屋代はもう払った）
+kubadilisha fedha | 句 | 両替する | Ninaweza **kubadilisha fedha** wapi?（どこで両替できますか）
+dola | 名 N | ドル | Bei ni **dola** hamsini.（値段は50ドル）
+historia | 名 N | 歴史 | **Historia** ya Kilwa ni ndefu.（キルワの歴史は長い）
+magofu | 名 JI-MA | 遺跡、廃墟 | Tulitembelea **magofu** ya Kilwa.（キルワの遺跡を訪ねた）
+jumba la makumbusho | 句 | 博物館 | **Jumba la makumbusho** liko katikati ya mji.（博物館は町の中心にある）
+ngome | 名 N | 砦 | **Ngome** ya Kale iko Zanzibar.（古い砦はザンジバルにある）
+Mji Mkongwe | 句 | （ザンジバルの）ストーンタウン | **Mji Mkongwe** una milango ya kuchonga.（ストーンタウンには彫刻のある扉が多い）
+zawadi | 名 N | おみやげ、贈り物 | Nimenunua **zawadi** kwa familia.（家族におみやげを買った）
+kinyago（vinyago） | 名 KI-VI | 彫刻、仮面 | **Vinyago** vya Makonde ni maarufu.（マコンデの彫刻は有名だ）
+barabara kuu | 句 | 幹線道路 | **Barabara kuu** ya Arusha ina magari mengi.（アルーシャの幹線道路は車が多い）
+lami | 名 N | アスファルト（の舗装） | Barabara hii ni ya **lami**.（この道は舗装されている）
+vumbi | 名 JI-MA | ほこり、土ぼこり | Barabara ya changarawe ina **vumbi** jingi.（砂利道は土ぼこりがひどい）
+kibali（vibali） | 名 KI-VI | 許可証 | Unahitaji **kibali** kuingia hifadhini.（保護区に入るには許可証が要る）
+ada | 名 N | 料金、手数料 | **Ada** ya kuingia ni dola sabini.（入場料は70ドル）
+mlinzi（walinzi） | 名 M-WA | 警備員、番人 | **Mlinzi** yuko getini usiku.（夜は門に警備員がいる）
+geti | 名 N | 門、ゲート | Fungua **geti**, tafadhali.（門を開けてください）
+usalama | 名 U | 安全 | **Usalama** wa watalii ni muhimu.（観光客の安全は大切だ）
+hatari | 名 N | 危険；危ない | **Hatari**! Usishuke garini.（危ない。車から降りないで）
+kuwinda | 動 | 狩る | Simba **wanawinda** usiku.（ライオンは夜に狩りをする）
+ujangili | 名 U | 密猟 | **Ujangili** wa tembo ni tatizo kubwa.（ゾウの密猟は大きな問題だ）
+uhamaji wa nyumbu | 句 | ヌーの大移動 | **Uhamaji wa nyumbu** unaonekana Julai.（ヌーの大移動は7月に見られる）
+machweo | 名 JI-MA | 日の入り、夕日 | Tazama **machweo** ufukweni.（浜辺で夕日を見て）
+macheo | 名 JI-MA | 日の出 | Tuliamka mapema kuona **macheo**.（日の出を見に早く起きた）

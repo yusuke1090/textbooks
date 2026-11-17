@@ -1,0 +1,69 @@
+# 学校・仕事・社会
+shule | 名 N | 学校 | Watoto wanaenda **shule** saa moja.（子どもは7時に学校へ行く）
+darasa（madarasa） | 名 JI-MA | 教室、学年 | **Darasa** letu lina wanafunzi arobaini.（私たちの教室には生徒が40人いる）
+chuo（vyuo） | 名 KI-VI | 学校（高等の）、大学 | Anasoma **chuo** cha kilimo.（彼は農業の学校で学んでいる）
+chuo kikuu | 句 | 大学 | Dada yangu yuko **chuo kikuu**.（姉は大学にいる）
+kitabu（vitabu） | 名 KI-VI | 本 | Ninasoma **kitabu**.（本を読んでいる）
+daftari（madaftari） | 名 JI-MA | ノート | Andika kwenye **daftari**.（ノートに書いて）
+kalamu | 名 N | ペン | Nipe **kalamu**.（ペンを貸して）
+somo（masomo） | 名 JI-MA | 授業、科目、教訓 | **Somo** la leo ni hesabu.（今日の授業は算数）
+mtihani（mitihani） | 名 M-MI | 試験 | Nimefaulu **mtihani**.（試験に受かった）
+elimu | 名 N | 教育、知識 | **Elimu** ni ufunguo wa maisha.（教育は人生の鍵）
+kusoma | 動 | 読む、勉強する | **Ninasoma** Kiswahili.（スワヒリ語を勉強している）
+kuandika | 動 | 書く | **Andika** jina lako hapa.（ここに名前を書いて）
+kujifunza | 動 | 学ぶ | **Ninajifunza** kuendesha trekta.（トラクターの運転を習っている）
+kufundisha | 動 | 教える | Mwalimu **anafundisha** Kiingereza.（先生は英語を教えている）
+kuelewa | 動 | わかる、理解する | **Unaelewa**?（わかりますか）
+kujua | 動 | 知る、できる | **Najua** kuogelea.（泳げます）
+kuuliza | 動 | たずねる | **Uliza** mwalimu.（先生に聞いて）
+kujibu | 動 | 答える | **Jibu** swali hili.（この質問に答えて）
+swali（maswali） | 名 JI-MA | 質問 | Nina **swali** moja.（質問が1つあります）
+jibu（majibu） | 名 JI-MA | 答え | **Jibu** ni sahihi.（答えは正しい）
+kazi | 名 N | 仕事 | Ninafanya **kazi** shambani.（畑で働いている）
+kufanya kazi | 句 | 働く | **Anafanya kazi** benki.（彼は銀行で働いている）
+ajira | 名 N | 雇用、仕事 | Vijana wanatafuta **ajira**.（若者が仕事をさがしている）
+mfanyakazi（wafanyakazi） | 名 M-WA | 働く人、従業員 | Tuna **wafanyakazi** watano.（従業員が5人いる）
+mshahara（mishahara） | 名 M-MI | 給料 | **Mshahara** unalipwa mwisho wa mwezi.（給料は月末に払われる）
+ofisi | 名 N | 事務所、役所 | **Ofisi** inafunguliwa saa mbili.（事務所は8時に開く）
+serikali | 名 N | 政府 | **Serikali** inasaidia wakulima.（政府は農家を支援している）
+afisa ugani | 句 | 農業普及員 | **Afisa ugani** atatembelea shamba letu.（普及員が畑に来る）
+kiwanda（viwanda） | 名 KI-VI | 工場 | **Kiwanda** cha maziwa kiko Tanga.（乳業工場はタンガにある）
+mradi（miradi） | 名 M-MI | 事業、プロジェクト | **Mradi** huu unasaidia wafugaji.（この事業は畜産農家を助ける）
+shirika（mashirika） | 名 JI-MA | 団体、機関 | **Shirika** lisilo la kiserikali linatoa msaada.（NGO が支援している）
+msaada（misaada） | 名 M-MI | 助け、援助 | Asante kwa **msaada** wako.（助けてくれてありがとう）
+kusaidia | 動 | 助ける、手伝う | Unaweza **kunisaidia**?（手伝ってくれますか）
+jamii | 名 N | 地域社会、社会 | **Jamii** nzima ilishiriki.（地域のみんなが参加した）
+dini | 名 N | 宗教 | Kuna **dini** nyingi Tanzania.（タンザニアには多くの宗教がある）
+kanisa（makanisa） | 名 JI-MA | 教会 | Wanaenda **kanisani** Jumapili.（日曜に教会へ行く）
+msikiti（misikiti） | 名 M-MI | モスク | **Msikiti** uko karibu na soko.（モスクは市場の近くにある）
+sikukuu | 名 N | 祝日、お祭り | Leo ni **sikukuu**.（今日は祝日だ）
+harusi | 名 N | 結婚式 | Tumealikwa **harusini**.（結婚式に招かれた）
+mazishi | 名 JI-MA | 葬式 | Watu wengi walihudhuria **mazishi**.（多くの人が葬式に出た）
+mkutano wa kijiji | 句 | 村の集会 | **Mkutano wa kijiji** ni kesho.（村の集会は明日）
+habari | 名 N | ニュース、知らせ | Umesikia **habari**?（ニュースを聞いた？）
+gazeti（magazeti） | 名 JI-MA | 新聞 | Babu anasoma **gazeti**.（祖父は新聞を読んでいる）
+barua | 名 N | 手紙 | Nimepokea **barua**.（手紙を受け取った）
+barua pepe | 句 | 電子メール | Nitumie **barua pepe**.（メールを送って）
+mtandao（mitandao） | 名 M-MI | ネット、ネットワーク | **Mtandao** ni wa polepole hapa.（ここはネットが遅い）
+mwalimu mkuu | 句 | 校長 | **Mwalimu mkuu** ameita wazazi.（校長が保護者を呼んだ）
+ubao（mbao） | 名 U | 黒板；板、木材 | Mwalimu anaandika **ubaoni**.（先生が黒板に書いている）
+penseli | 名 N | 鉛筆 | Nina **penseli** mbili.（鉛筆を2本持っている）
+kifutio（vifutio） | 名 KI-VI | 消しゴム | Naomba **kifutio**.（消しゴムを貸して）
+kazi ya nyumbani | 句 | 宿題 | Umemaliza **kazi ya nyumbani**?（宿題は終わった？）
+muhula（mihula） | 名 M-MI | 学期 | **Muhula** wa kwanza unaanza Januari.（1学期は1月に始まる）
+ada ya shule | 句 | 学費 | **Ada ya shule** imepanda.（学費が上がった）
+chekechea | 名 N | 幼稚園 | Mtoto anaenda **chekechea**.（子どもは幼稚園に行く）
+shule ya msingi | 句 | 小学校 | Anasoma **shule ya msingi**.（小学校に通っている）
+shule ya sekondari | 句 | 中等学校 | **Shule ya sekondari** iko mjini.（中等学校は町にある）
+kidato（vidato） | 名 KI-VI | （中等学校の）学年 | Yuko **kidato** cha nne.（中等学校の4年生だ）
+matokeo | 名 JI-MA | 結果、成績 | **Matokeo** ya mtihani yametoka.（試験の結果が出た）
+kufeli | 動 | （試験に）落ちる | **Amefeli** hesabu.（数学を落とした）
+alama | 名 N | 点数、しるし | Amepata **alama** nzuri.（いい点を取った）
+shahada | 名 N | 学位 | Ana **shahada** ya kilimo.（農学の学位を持っている）
+utafiti | 名 U | 研究、調査 | Anafanya **utafiti** kuhusu maziwa.（牛乳について研究している）
+maktaba | 名 N | 図書館 | Tusome **maktaba**.（図書館で勉強しよう）
+kamusi | 名 N | 辞書 | Tafuta neno kwenye **kamusi**.（辞書で言葉を引いて）
+neno（maneno） | 名 JI-MA | 言葉、単語 | **Neno** hili lina maana gani?（この言葉の意味は？）
+maana | 名 N | 意味 | **Maana** yake ni nini?（どういう意味？）
+sentensi | 名 N | 文 | Andika **sentensi** tano.（文を5つ書いて）
+sarufi | 名 N | 文法 | **Sarufi** ya Kiswahili ina kanuni nyingi.（スワヒリ語の文法は決まりが多い）

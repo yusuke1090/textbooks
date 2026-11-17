@@ -1,0 +1,68 @@
+# 牛と酪農
+ng'ombe | 名 N | 牛 | Una **ng'ombe** wangapi?（牛を何頭飼っていますか）
+ng'ombe wa maziwa | 句 | 乳牛 | **Ng'ombe wa maziwa** wanahitaji maji mengi.（乳牛は水がたくさん要る）
+ng'ombe wa nyama | 句 | 肉牛 | **Ng'ombe wa nyama** wanauzwa mnadani.（肉牛は家畜市で売られる）
+ng'ombe wa kienyeji | 句 | 在来の牛（ゼブ牛） | **Ng'ombe wa kienyeji** wanastahimili joto.（在来の牛は暑さに強い）
+ng'ombe wa kisasa | 句 | 改良種の牛（ホルスタインなど） | **Ng'ombe wa kisasa** wanatoa maziwa mengi.（改良種の牛は乳をたくさん出す）
+chotara | 名 N | 交雑種 | Ng'ombe huyu ni **chotara**.（この牛は交雑種だ）
+fahali（mafahali） | 名 JI-MA | 雄牛（種牛） | **Fahali** yuko zizini.（雄牛は囲いにいる）
+ndama | 名 N | 子牛 | **Ndama** amezaliwa leo.（今日、子牛が生まれた）
+mtamba（mitamba） | 名 M-MI | 若い雌牛（まだ子を産んでいない） | **Mtamba** atazaa mwezi ujao.（若い雌牛は来月お産する）
+maksai | 名 N | 去勢牛（役牛） | **Maksai** wanalima shamba.（去勢牛が畑を耕す）
+mfugo（mifugo） | 名 M-MI | 家畜 | **Mifugo** inahitaji maji.（家畜には水が要る）
+kufuga | 動 | （家畜を）飼う | **Tunafuga** ng'ombe na mbuzi.（牛とヤギを飼っている）
+mfugaji（wafugaji） | 名 M-WA | 畜産農家、牧畜民 | **Wafugaji** wanauza maziwa kwa ushirika.（畜産農家は組合に牛乳を売る）
+ufugaji | 名 U | 畜産、飼育 | **Ufugaji** wa ng'ombe wa maziwa unalipa.（酪農はもうかる）
+kuchunga | 動 | 放牧する、（家畜の）番をする | Kijana **anachunga** ng'ombe.（若者が牛の番をしている）
+zizi（mazizi） | 名 JI-MA | 家畜の囲い | Ng'ombe wanalala **zizini**.（牛は囲いで寝る）
+banda（mabanda） | 名 JI-MA | 牛舎、小屋 | Safisha **banda** kila asubuhi.（毎朝牛舎を掃除して）
+zero grazing | 句 | 舎飼い（放牧しない飼い方） | Wanatumia **zero grazing** kwa sababu ardhi ni ndogo.（土地が狭いので舎飼いにしている）
+kiwele（viwele） | 名 KI-VI | 乳房 | **Kiwele** kimevimba.（乳房が腫れている）
+chuchu | 名 N | 乳頭 | Safisha **chuchu** kabla ya kukamua.（搾る前に乳頭をきれいにして）
+pembe | 名 N | 角 | Ng'ombe huyu ana **pembe** ndefu.（この牛は長い角がある）
+mkia（mikia） | 名 M-MI | しっぽ | Ng'ombe anatikisa **mkia**.（牛がしっぽを振っている）
+kwato | 名 N | ひづめ | **Kwato** zinahitaji kukatwa.（ひづめを切る必要がある）
+kukamua | 動 | 乳を搾る | **Tunakamua** mara mbili kwa siku.（1日2回搾る）
+kukamua kwa mkono | 句 | 手で搾る | Wakulima wengi **wanakamua kwa mkono**.（多くの農家は手で搾る）
+mashine ya kukamua | 句 | 搾乳機 | **Mashine ya kukamua** inaokoa muda.（搾乳機は時間を節約する）
+kutoa maziwa | 句 | 乳を出す | Ng'ombe huyu **anatoa** lita kumi kwa siku.（この牛は1日に10リットル出す）
+maziwa mabichi | 句 | 生乳 | **Maziwa mabichi** lazima yachemshwe.（生乳は必ず沸かすこと）
+kuchemsha | 動 | 沸かす、ゆでる | **Chemsha** maziwa kabla ya kunywa.（飲む前に牛乳を沸かして）
+kupoza | 動 | 冷やす | **Poza** maziwa haraka.（牛乳をすぐ冷やして）
+kituo cha kukusanya maziwa | 句 | 集乳所 | Peleka maziwa **kituo cha kukusanya maziwa**.（牛乳を集乳所へ持って行って）
+kukusanya | 動 | 集める | **Tunakusanya** maziwa asubuhi.（朝に牛乳を集める）
+ushirika | 名 U | 協同組合 | Tunauza maziwa kwa **ushirika**.（組合に牛乳を売る）
+chama cha ushirika | 句 | 協同組合 | **Chama cha ushirika** kina wanachama mia mbili.（組合には組合員が200人いる）
+mwanachama（wanachama） | 名 M-WA | 会員、組合員 | Mimi ni **mwanachama** wa ushirika.（私は組合員です）
+mtindi | 名 M-MI | 発酵乳、ヨーグルト | **Mtindi** unauzwa sokoni.（発酵乳は市場で売られている）
+samli | 名 N | ギー（バターオイル） | **Samli** inatumika kupikia.（ギーは料理に使う）
+kiwanda cha maziwa | 句 | 乳業工場 | **Kiwanda cha maziwa** kinanunua maziwa yetu.（乳業工場が私たちの牛乳を買う）
+ubora | 名 U | 品質 | **Ubora** wa maziwa umeboreka.（牛乳の品質がよくなった）
+chakula cha mifugo | 句 | 家畜のエサ | **Chakula cha mifugo** ni ghali.（家畜のエサは高い）
+malisho | 名 JI-MA | 放牧地、牧草 | **Malisho** yamekauka.（牧草が枯れた）
+majani ya tembo | 句 | ネピアグラス（象の草） | Kata **majani ya tembo** kwa ajili ya ng'ombe.（牛のためにネピアグラスを刈って）
+nyasi kavu | 句 | 干し草 | Hifadhi **nyasi kavu** kwa kiangazi.（乾季のために干し草をたくわえて）
+pumba | 名 N | ぬか | Changanya **pumba** za mahindi na maji.（トウモロコシぬかを水とまぜて）
+kulisha | 動 | エサをやる、食べさせる | **Unawalisha** nini?（何を食べさせていますか）
+kunywesha | 動 | 水を飲ませる | **Wanyweshe** ng'ombe maji safi.（牛にきれいな水を飲ませなさい）
+daktari wa mifugo | 句 | 獣医 | Mwite **daktari wa mifugo**.（獣医をよんで）
+kuchanja | 動 | ワクチンを打つ | **Tumewachanja** ndama wote.（子牛全部にワクチンを打った）
+kupe | 名 N | ダニ | **Kupe** wanaleta ugonjwa.（ダニは病気を運ぶ）
+josho（majosho） | 名 JI-MA | 薬浴場（ダニ落とし） | Peleka ng'ombe **joshoni**.（牛を薬浴場へ連れて行って）
+ugonjwa wa kiwele | 句 | 乳房炎 | **Ugonjwa wa kiwele** unapunguza maziwa.（乳房炎は乳量を減らす）
+ndigana kali | 句 | 東海岸熱（ダニがうつす病気） | **Ndigana kali** inaua ndama wengi.（東海岸熱で多くの子牛が死ぬ）
+kuzaa | 動 | 子を産む | Ng'ombe **amezaa** ndama dume.（牛が雄の子牛を産んだ）
+mimba | 名 N | 妊娠 | Ng'ombe huyu ana **mimba**.（この牛は妊娠している）
+kuwa kwenye joto | 句 | 発情している（joto は「暑さ」） | Ng'ombe **yuko kwenye joto**.（牛が発情している）
+uhimilishaji | 名 U | 人工授精 | **Uhimilishaji** unaboresha mifugo.（人工授精は家畜をよくする）
+kupandisha | 動 | 交配させる | **Tutampandisha** ng'ombe kesho.（明日、牛を交配させる）
+dume | 名 JI-MA | 雄（の） | Ndama **dume** atauzwa.（雄の子牛は売られる）
+jike | 名 JI-MA | 雌（の） | Tunataka ndama **jike**.（雌の子牛がほしい）
+mbuzi | 名 N | ヤギ | **Mbuzi** wanakula majani.（ヤギが草を食べている）
+kondoo | 名 N | 羊 | **Kondoo** wanatoa sufu.（羊は毛を出す）
+nguruwe | 名 N | 豚 | Tunafuga **nguruwe** wawili.（豚を2頭飼っている）
+punda | 名 N | ロバ | **Punda** anabeba maji.（ロバが水を運ぶ）
+mnada（minada） | 名 M-MI | 家畜市、競り | Tuliuza ng'ombe **mnadani**.（家畜市で牛を売った）
+mbwa | 名 N | 犬 | **Mbwa** analinda zizi.（犬が囲いを守っている）
+paka | 名 N | 猫 | **Paka** anakamata panya.（猫がネズミを捕る）
+panya | 名 N | ネズミ | **Panya** wanakula mahindi ghalani.（倉庫でネズミがトウモロコシを食べる）

@@ -1,0 +1,51 @@
+# 土・肥料・農業の技術
+ardhi | 名 N | 土地、大地 | Bei ya **ardhi** imepanda.（土地の値段が上がった）
+hekta | 名 N | ヘクタール | Shamba lina **hekta** tano.（畑は5ヘクタールある）
+mfinyanzi | 名 M-MI | 粘土 | Udongo wa **mfinyanzi** unashika maji.（粘土の土は水をためる）
+kipimo cha udongo | 句 | 土の検査 | Fanya **kipimo cha udongo** kabla ya kuweka mbolea.（肥料の前に土を調べて）
+tindikali | 名 N | 酸、酸性 | Udongo huu una **tindikali** nyingi.（この土は酸性が強い）
+chokaa | 名 N | 石灰 | Weka **chokaa** kupunguza tindikali.（酸性を弱めるため石灰をまいて）
+mbolea ya viwandani | 句 | 化学肥料 | **Mbolea ya viwandani** ni ghali.（化学肥料は高い）
+mboji | 名 N | 堆肥 | Tengeneza **mboji** kwa majani na samadi.（草とふんで堆肥を作って）
+matandazo | 名 JI-MA | マルチ（土にかぶせるわらなど） | **Matandazo** yanatunza unyevu.（マルチで土の湿りが保たれる）
+unyevu | 名 U | 湿り気、湿度 | Udongo una **unyevu** wa kutosha.（土は十分しめっている）
+mmomonyoko wa udongo | 句 | 土の流出（浸食） | Matuta yanazuia **mmomonyoko wa udongo**.（うねが土の流出を防ぐ）
+tuta（matuta） | 名 JI-MA | うね | Panda viazi kwenye **matuta**.（ジャガイモはうねに植えて）
+mstari（mistari） | 名 M-MI | 列、線 | Panda mahindi kwa **mistari**.（トウモロコシは列に植えて）
+shimo（mashimo） | 名 JI-MA | 穴 | Chimba **shimo** la sentimita kumi.（10センチの穴を掘って）
+kuchimba | 動 | 掘る | **Tunachimba** kisima.（井戸を掘っている）
+mche（miche） | 名 M-MI | 苗 | Nunua **miche** ya parachichi.（アボカドの苗を買って）
+kitalu（vitalu） | 名 KI-VI | 苗床 | Andaa **kitalu** cha nyanya.（トマトの苗床を作って）
+kupandikiza | 動 | 移植する、接ぎ木する | **Pandikiza** miche baada ya wiki tatu.（3週間後に苗を植えかえて）
+mbegu bora | 句 | 改良種子、よい種 | Tumia **mbegu bora** zilizothibitishwa.（認定された良い種を使って）
+kupogoa | 動 | 剪定する | **Pogoa** miti ya kahawa.（コーヒーの木を剪定して）
+kuweka mbolea | 句 | 肥料をやる | **Weka mbolea** wiki mbili baada ya kupanda.（植えて2週間後に肥料をやって）
+kiuatilifu（viuatilifu） | 名 KI-VI | 農薬 | Tumia **viuatilifu** kwa uangalifu.（農薬は気をつけて使って）
+wadudu waharibifu | 句 | 害虫 | **Wadudu waharibifu** wameshambulia mahindi.（害虫がトウモロコシを襲った）
+kuvu | 名 N | カビ、菌 | **Kuvu** imeharibu nyanya.（カビでトマトがだめになった）
+mzunguko wa mazao | 句 | 輪作 | **Mzunguko wa mazao** unaongeza rutuba.（輪作で土が肥える）
+kilimo mseto | 句 | 混作 | Tunafanya **kilimo mseto** cha mahindi na maharage.（トウモロコシと豆を混作している）
+kilimo biashara | 句 | 商業農業（売るための農業） | **Kilimo biashara** kinawavutia vijana.（売るための農業は若者をひきつけている）
+kumwagilia kwa matone | 句 | 点滴灌漑 | **Kumwagilia kwa matone** kunaokoa maji.（点滴灌漑で水が節約できる）
+shamba darasa | 句 | 農民の野外学校（実演の畑） | Tulijifunza kwenye **shamba darasa**.（実演の畑で学んだ）
+kukausha | 動 | 乾かす | **Kausha** mahindi vizuri kabla ya kuhifadhi.（しまう前にトウモロコシをよく乾かして）
+kupukuchua | 動 | （トウモロコシの）粒をはずす | **Tunapukuchua** mahindi.（トウモロコシの粒をはずしている）
+kupura | 動 | 脱穀する | **Pura** mtama kwa fimbo.（棒でモロコシを脱穀して）
+kupepeta | 動 | （ふるって）もみがらを飛ばす | **Pepeta** mchele kabla ya kupika.（炊く前に米のもみがらを飛ばして）
+sumukuvu | 名 N | カビ毒（アフラトキシン） | Karanga zenye **sumukuvu** ni hatari.（カビ毒のある落花生は危険だ）
+sumu | 名 N | 毒 | Dawa hii ni **sumu**, iweke mbali na watoto.（この薬は毒だ、子どもから離して置いて）
+bei ya mazao | 句 | 作物の値段 | **Bei ya mazao** imeshuka.（作物の値段が下がった）
+pembejeo | 名 N | 農業資材（種・肥料など） | **Pembejeo** zimefika kwa wakati.（資材が時期どおりに届いた）
+ruzuku | 名 N | 補助金 | Serikali inatoa **ruzuku** ya mbolea.（政府は肥料の補助金を出している）
+plau | 名 N | 犂（すき） | Maksai wanavuta **plau**.（去勢牛が犂を引く）
+mkokoteni（mikokoteni） | 名 M-MI | 荷車 | Beba mahindi kwa **mkokoteni**.（荷車でトウモロコシを運んで）
+kwelea | 名 N | コウヨウチョウ（穀物を食べる小鳥） | **Kwelea** wanakula mtama.（コウヨウチョウがモロコシを食べる）
+uzio | 名 U | 柵、垣根 | Jenga **uzio** kuzuia mifugo.（家畜が入らないよう柵を作って）
+msimu wa kupanda | 句 | 植えつけの時期 | **Msimu wa kupanda** unaanza Novemba.（植えつけの時期は11月に始まる）
+mvua za vuli | 句 | 短い雨季の雨 | **Mvua za vuli** zimechelewa mwaka huu.（今年は短い雨季の雨が遅れている）
+hifadhi ya chakula | 句 | 食料の備え | Kila familia iwe na **hifadhi ya chakula**.（どの家も食料を備えておこう）
+kuotesha | 動 | 芽を出させる、育てる | **Tunaotesha** miche ya miti.（木の苗を育てている）
+kuchipuka | 動 | 芽吹く、伸びる | Mahindi **yamechipuka** vizuri.（トウモロコシがよく芽吹いた）
+afya ya udongo | 句 | 土の健康 | Mboji inaboresha **afya ya udongo**.（堆肥で土が健康になる）
+mavuno ya chini | 句 | 低い収量 | **Mavuno ya chini** yanasababishwa na udongo duni.（収量が低いのはやせた土のせい）
+duni | 形 | 質の悪い、やせた（形は変わらない） | Udongo huu ni **duni**.（この土はやせている）

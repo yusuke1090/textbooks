@@ -1,0 +1,51 @@
+# 電話・スマホ・送金
+kupiga simu | 句 | 電話をかける | **Nitakupigia simu** jioni.（夕方電話するね）
+kupokea simu | 句 | 電話に出る | Mbona **hupokei simu**?（どうして電話に出ないの）
+kukata simu | 句 | 電話を切る | **Usikate simu**, nakuja.（切らないで、今行くから）
+namba ya simu | 句 | 電話番号 | Nipe **namba ya simu** yako.（電話番号を教えて）
+salio | 名 JI-MA | 残高 | Angalia **salio** lako.（残高を確かめて）
+muda wa maongezi | 句 | 通話時間（プリペイドの） | Nimeishiwa **muda wa maongezi**.（通話時間を使い切った）
+vocha | 名 N | プリペイドカード | Nunua **vocha** ya shilingi elfu moja.（1,000シリングのプリペイドカードを買って）
+kifurushi（vifurushi） | 名 KI-VI | （通信の）パック；小包 | Nimejiunga na **kifurushi** cha intaneti.（ネットのパックに入った）
+intaneti | 名 N | インターネット | **Intaneti** ni ya polepole hapa.（ここはネットが遅い）
+wifi | 名 N | Wi-Fi | Kuna **wifi** hapa?（ここに Wi-Fi はある？）
+chaji | 名 N | 充電（の残り） | Simu yangu haina **chaji**.（スマホの電池が切れた）
+chaja | 名 N | 充電器 | Umeona **chaja** yangu?（私の充電器を見た？）
+laini | 名 N | SIM（回線） | Nimenunua **laini** mpya.（新しい SIM を買った）
+kusajili | 動 | 登録する | **Sajili** laini yako kwa kitambulisho.（身分証で SIM を登録して）
+kitambulisho（vitambulisho） | 名 KI-VI | 身分証 | Lete **kitambulisho** chako.（身分証を持ってきて）
+neno la siri | 句 | パスワード | Usimwambie mtu **neno la siri**.（パスワードを人に言わないで）
+namba ya siri | 句 | 暗証番号 | Weka **namba ya siri**.（暗証番号を入れて）
+kutoa pesa | 句 | （お金を）引き出す | Nataka **kutoa pesa** kwa wakala.（代理店でお金をおろしたい）
+kuweka pesa | 句 | （お金を）預ける、入金する | **Weka pesa** kwenye akaunti.（口座にお金を入れて）
+wakala（mawakala） | 名 JI-MA | （送金の）代理店、代理人 | **Wakala** wa M-Pesa yuko karibu.（M-Pesa の代理店は近くにある）
+akaunti | 名 N | 口座、アカウント | Fungua **akaunti** ya benki.（銀行口座を開いて）
+muamala（miamala） | 名 M-MI | 取引 | **Muamala** umekamilika.（取引が完了した）
+makato | 名 JI-MA | 手数料（差し引かれる額） | **Makato** ni shilingi mia tano.（手数料は500シリング）
+kupokea | 動 | 受け取る | **Nimepokea** pesa, asante.（お金を受け取ったよ、ありがとう）
+bili | 名 N | 請求、料金 | **Bili** ya maji imekuja.（水道料金の請求が来た）
+kulipa kwa simu | 句 | 携帯で払う | Unaweza **kulipa kwa simu**?（携帯で払える？）
+ujumbe（jumbe） | 名 U | メッセージ | Nimekutumia **ujumbe**.（メッセージを送ったよ）
+ujumbe wa sauti | 句 | ボイスメッセージ | Nimekutumia **ujumbe wa sauti**.（ボイスメッセージを送った）
+mitandao ya kijamii | 句 | SNS | Vijana wanatumia **mitandao ya kijamii** sana.（若者は SNS をよく使う）
+kupakua programu | 句 | アプリを入れる | **Pakua programu** ya benki.（銀行のアプリを入れて）
+kusasisha | 動 | 更新する | **Sasisha** programu yako.（アプリを更新して）
+skrini | 名 N | 画面 | **Skrini** ya simu imepasuka.（スマホの画面が割れた）
+kubonyeza | 動 | （ボタンを）押す | **Bonyeza** hapa.（ここを押して）
+video | 名 N | 動画 | Ametuma **video** ya harusi.（結婚式の動画を送ってきた）
+sauti | 名 N | 声、音 | Sisikii **sauti** yako vizuri.（声がよく聞こえない）
+kukatika | 動 | 切れる、途切れる | Mtandao **umekatika**.（電波が切れた）
+simu ya mezani | 句 | 固定電話 | Ofisi ina **simu ya mezani**.（事務所には固定電話がある）
+tarakimu | 名 N | 桁、数字 | Namba ya simu ina **tarakimu** kumi.（電話番号は10けた）
+tovuti | 名 N | ウェブサイト | Angalia **tovuti** ya kampuni.（会社のウェブサイトを見て）
+kengele | 名 N | ベル、アラーム、着信音 | Weka **kengele** ya saa kumi na mbili.（6時にアラームをかけて）
+utapeli | 名 U | 詐欺 | Jihadhari na **utapeli** wa simu.（電話詐欺に気をつけて）
+tapeli（matapeli） | 名 JI-MA | 詐欺師 | **Tapeli** aliniomba namba ya siri.（詐欺師が暗証番号をきいてきた）
+kuibiwa | 動 | 盗まれる | Simu yangu **imeibiwa**.（スマホを盗まれた）
+kuhamisha | 動 | 移す、送金する | **Hamisha** pesa kwenda benki.（銀行へお金を移して）
+posta | 名 N | 郵便局 | Nenda **posta** kuchukua kifurushi.（郵便局へ小包を取りに行って）
+barua ya kawaida | 句 | 普通郵便 | Tuma kwa **barua ya kawaida**.（普通郵便で送って）
+kadi ya benki | 句 | キャッシュカード、銀行のカード | Nimesahau **kadi ya benki**.（銀行のカードを忘れた）
+ATM | 名 N | ATM | **ATM** haina pesa leo.（今日は ATM にお金がない）
+kubadilisha namba | 句 | 番号を変える | **Nimebadilisha namba** ya simu.（電話番号を変えた）
+kuchapisha | 動 | 印刷する、出版する | **Chapisha** tiketi yako.（チケットを印刷して）

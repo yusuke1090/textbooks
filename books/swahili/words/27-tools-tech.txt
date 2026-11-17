@@ -1,0 +1,55 @@
+# 道具・機械・技術
+chombo（vyombo） | 名 KI-VI | 道具、器、乗り物 | Osha **vyombo** vya kukamulia.（搾乳の道具を洗って）
+kifaa（vifaa） | 名 KI-VI | 機器、道具 | Tunahitaji **vifaa** vipya.（新しい機器が必要だ）
+mashine | 名 N | 機械 | **Mashine** hii inatumia umeme.（この機械は電気を使う）
+injini | 名 N | エンジン | **Injini** haiwaki.（エンジンがかからない）
+betri | 名 N | 電池、バッテリー | **Betri** imeisha.（電池が切れた）
+sola | 名 N | 太陽光パネル | Tunatumia **sola** kupata umeme.（太陽光で電気をとる）
+jenereta | 名 N | 発電機 | Washa **jenereta**, umeme umekatika.（発電機をつけて。停電した）
+tangi la kupoza | 句 | 冷却タンク | **Tangi la kupoza** maziwa limeharibika.（牛乳の冷却タンクが壊れた）
+friji | 名 N | 冷蔵庫 | Weka maziwa kwenye **friji**.（牛乳を冷蔵庫に入れて）
+kipimajoto（vipimajoto） | 名 KI-VI | 温度計 | **Kipimajoto** kinaonyesha nyuzi nne.（温度計は4度を示している）
+nyuzi joto | 句 | 温度（〜度） | Maziwa yanapozwa hadi **nyuzi joto** nne.（牛乳は4度まで冷やされる）
+kompyuta | 名 N | コンピューター | Tunatumia **kompyuta** kuweka kumbukumbu.（記録をつけるのにコンピューターを使う）
+simu janja | 句 | スマートフォン | Wakulima wengi wana **simu janja** sasa.（今は多くの農家がスマホを持っている）
+programu | 名 N | アプリ、プログラム | Pakua **programu** hii.（このアプリをダウンロードして）
+mtandao wa simu | 句 | 携帯の電波、通信網 | Hakuna **mtandao wa simu** kijijini.（村には電波がない）
+ujumbe mfupi | 句 | ショートメッセージ（SMS） | Nimekutumia **ujumbe mfupi**.（ショートメッセージを送った）
+kuchaji | 動 | 充電する | **Nachaji** simu yangu.（電話を充電している）
+kipima | 名 KI-VI | 計る器具、センサー | **Kipima** hiki kinapima maziwa.（この器具は牛乳を計る）
+kitambuzi（vitambuzi） | 名 KI-VI | センサー | **Kitambuzi** kinapima joto la maziwa.（センサーが牛乳の温度を計る）
+data | 名 N | データ | Tunakusanya **data** kila siku.（毎日データを集める）
+kumbukumbu | 名 N | 記録、思い出 | Weka **kumbukumbu** za ng'ombe wote.（全部の牛の記録をつけて）
+teknolojia | 名 N | 技術 | **Teknolojia** mpya inasaidia wakulima.（新しい技術は農家を助ける）
+kutengeneza | 動 | 作る、直す | Fundi **anatengeneza** pampu.（修理工がポンプを直している）
+kuharibika | 動 | 壊れる、だめになる | Gari **limeharibika**.（車が壊れた）
+kuwaka | 動 | （火・明かりが）つく、燃える | Taa **haiwaki**.（明かりがつかない）
+kuzimika | 動 | 消える、止まる | Mashine **imezimika** ghafla.（機械が急に止まった）
+kufanya kazi（mashine） | 句 | （機械が）動く | Pampu **inafanya kazi** vizuri.（ポンプはちゃんと動いている）
+kuunganisha | 動 | つなぐ | **Unganisha** waya hizi.（この線をつないで）
+waya | 名 N | 電線、ワイヤー | **Waya** imekatika.（線が切れた）
+spea | 名 N | 予備の部品 | Hakuna **spea** za mashine hii hapa.（ここにはこの機械の部品がない）
+kifaa cha kukamulia | 句 | 搾乳の道具 | Safisha **kifaa cha kukamulia** kila baada ya kazi.（作業のたびに搾乳の道具を洗って）
+mzani（mizani） | 名 M-MI | はかり（重さの） | Pima mahindi kwa **mzani**.（はかりでトウモロコシを量って）
+ndoo ya chuma | 句 | 金属のバケツ（搾乳用） | Tumia **ndoo ya chuma**, si ya plastiki.（プラスチックではなく金属のバケツを使って）
+chuma | 名 KI-VI | 鉄、金属 | Ndoo ya **chuma** ni rahisi kusafisha.（金属のバケツは洗いやすい）
+plastiki | 名 N | プラスチック | Ndoo za **plastiki** ni ngumu kusafisha.（プラスチックのバケツは洗いにくい）
+mafunzo | 名 JI-MA | 研修、訓練 | Tulipata **mafunzo** ya ufugaji.（畜産の研修を受けた）
+majaribio | 名 JI-MA | 試験、試し | Tunafanya **majaribio** ya mashine mpya.（新しい機械を試している）
+ubunifu | 名 U | 工夫、新しい発想 | **Ubunifu** ni muhimu katika biashara.（商売には工夫が大切）
+nyundo | 名 N | ハンマー | Nipe **nyundo**.（ハンマーを取って）
+msumari（misumari） | 名 M-MI | 釘 | Nunua **misumari** kilo moja.（釘を1キロ買って）
+msumeno（misumeno） | 名 M-MI | のこぎり | Kata ubao kwa **msumeno**.（のこぎりで板を切って）
+shoka（mashoka） | 名 JI-MA | 斧 | Pasua kuni kwa **shoka**.（斧で薪を割って）
+sepetu | 名 N | シャベル | Chimba kwa **sepetu**.（シャベルで掘って）
+spana | 名 N | スパナ | Leta **spana**.（スパナを持ってきて）
+bisibisi | 名 N | ドライバー（ねじ回し） | Fungua kwa **bisibisi**.（ドライバーで開けて）
+gundi | 名 N | 接着剤 | Bandika kwa **gundi**.（接着剤で貼って）
+tochi | 名 N | 懐中電灯 | Washa **tochi**, ni giza.（懐中電灯をつけて、暗いから）
+swichi | 名 N | スイッチ | Bonyeza **swichi**.（スイッチを押して）
+mafuta ya dizeli | 句 | 軽油 | Jenereta inatumia **mafuta ya dizeli**.（発電機は軽油を使う）
+petroli | 名 N | ガソリン | **Petroli** imepanda bei.（ガソリンが値上がりした）
+kituo cha mafuta | 句 | ガソリンスタンド | Simama **kituo cha mafuta**.（ガソリンスタンドで止まって）
+tairi | 名 JI-MA | タイヤ | **Tairi** limepasuka.（タイヤがパンクした）
+gereji | 名 N | 修理工場 | Peleka gari **gereji**.（車を修理工場へ持っていって）
+kipuri（vipuri） | 名 KI-VI | 部品 | Tunahitaji **vipuri** vya pampu.（ポンプの部品が要る）

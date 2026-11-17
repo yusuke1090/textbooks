@@ -1,0 +1,61 @@
+# 食べ物と飲み物
+chakula（vyakula） | 名 KI-VI | 食べ物、食事 | **Chakula** kiko tayari.（食事ができた）
+ugali | 名 U | ウガリ（トウモロコシの粉を練った主食） | Tunakula **ugali** na maharage.（ウガリと豆を食べる）
+wali | 名 U | ご飯（炊いた米） | **Wali** na samaki ni mtamu.（ご飯と魚はおいしい）
+mchele | 名 M-MI | 米（炊く前） | Nunua kilo mbili za **mchele**.（米を2キロ買って）
+mpunga | 名 M-MI | 稲、もみ | **Mpunga** unalimwa bondeni.（稲は低地で作られる）
+unga | 名 U | 粉 | **Unga** wa mahindi umepanda bei.（トウモロコシ粉が値上がりした）
+mkate（mikate） | 名 M-MI | パン | Nipe **mkate** mmoja.（パンを1つください）
+chapati | 名 N | チャパティ | **Chapati** ni chakula cha sikukuu.（チャパティはお祝いの食べ物）
+maandazi | 名 JI-MA | 揚げパン（andazi の複数） | **Maandazi** na chai asubuhi.（朝は揚げパンとお茶）
+pilau | 名 N | ピラウ（スパイスで炊いたご飯） | Tutapika **pilau** Jumapili.（日曜にピラウを作る）
+nyama | 名 N | 肉 | **Nyama** ya ng'ombe ni ghali.（牛肉は高い）
+nyama choma | 句 | 焼いた肉 | Tule **nyama choma** leo.（今日は焼き肉を食べよう）
+kuku | 名 N | 鶏、鶏肉 | **Kuku** wanataga mayai.（鶏が卵を産む）
+samaki | 名 N | 魚 | **Samaki** wa ziwani ni wazuri.（湖の魚はおいしい）
+yai（mayai） | 名 JI-MA | 卵 | **Mayai** mawili, tafadhali.（卵を2つください）
+maharage | 名 JI-MA | 豆（インゲンなど） | **Maharage** yana protini nyingi.（豆はたんぱく質が多い）
+mboga | 名 N | 野菜、おかず | Tunakula **mboga** kila siku.（毎日野菜を食べる）
+sukuma wiki | 句 | ケール（青菜） | **Sukuma wiki** ni rahisi.（ケールは安い）
+mchicha | 名 M-MI | ヒユ菜（青菜） | Pika **mchicha** na nyanya.（ヒユ菜をトマトと煮て）
+nyanya | 名 N | トマト | Bei ya **nyanya** imeshuka.（トマトの値段が下がった）
+kitunguu（vitunguu） | 名 KI-VI | 玉ねぎ | Kata **vitunguu**.（玉ねぎを切って）
+kitunguu saumu | 句 | にんにく | Weka **kitunguu saumu** kidogo.（にんにくを少し入れて）
+viazi | 名 KI-VI | じゃがいも（kiazi の複数） | **Viazi** vinalimwa milimani.（じゃがいもは山地で作られる）
+muhogo（mihogo） | 名 M-MI | キャッサバ | **Muhogo** unastahimili ukame.（キャッサバは干ばつに強い）
+ndizi | 名 N | バナナ | Nipe **ndizi** tatu.（バナナを3本ください）
+tunda（matunda） | 名 JI-MA | 果物 | **Matunda** ni mengi msimu huu.（この季節は果物が多い）
+embe（maembe） | 名 JI-MA | マンゴー | **Maembe** yameiva.（マンゴーが熟した）
+nanasi（mananasi） | 名 JI-MA | パイナップル | **Nanasi** hili ni tamu.（このパイナップルは甘い）
+chungwa（machungwa） | 名 JI-MA | オレンジ | Juisi ya **machungwa**.（オレンジジュース）
+parachichi（maparachichi） | 名 JI-MA | アボカド | **Maparachichi** yanauzwa nje ya nchi.（アボカドは国外へ売られる）
+nazi | 名 N | ココナッツ | Wali wa **nazi** ni mtamu.（ココナッツご飯はおいしい）
+chumvi | 名 N | 塩 | Ongeza **chumvi** kidogo.（塩を少し足して）
+sukari | 名 N | 砂糖 | Chai bila **sukari**, tafadhali.（砂糖なしのお茶をください）
+mafuta | 名 JI-MA | 油 | **Mafuta** ya kupikia yamepanda bei.（料理油が値上がりした）
+pilipili | 名 N | とうがらし、こしょう | Usiweke **pilipili** nyingi.（とうがらしを入れすぎないで）
+chai | 名 N | お茶、紅茶 | Karibu **chai**!（お茶をどうぞ）
+kahawa | 名 N | コーヒー | **Kahawa** ya Kilimanjaro ni maarufu.（キリマンジャロのコーヒーは有名だ）
+maziwa | 名 JI-MA | 牛乳、乳 | Nataka chai ya **maziwa**.（ミルクティーがほしい）
+maziwa lala | 句 | 発酵乳（ヨーグルトのような） | **Maziwa lala** ni mazuri kwa afya.（発酵乳は体によい）
+siagi | 名 N | バター | Paka **siagi** kwenye mkate.（パンにバターを塗って）
+jibini | 名 N | チーズ | **Jibini** si chakula cha kawaida hapa.（チーズはここではふつうの食べ物ではない）
+juisi | 名 N | ジュース | **Juisi** ya embe, tafadhali.（マンゴージュースをください）
+soda | 名 N | 炭酸飲料 | Watoto wanapenda **soda**.（子どもはジュースが好き）
+pombe | 名 N | 酒 | Sinywi **pombe**.（お酒は飲みません）
+bia | 名 N | ビール | **Bia** baridi, tafadhali.（冷たいビールをください）
+mlo（milo） | 名 M-MI | 食事（1回の） | Tunakula **milo** mitatu kwa siku.（1日3食食べる）
+kifungua kinywa | 句 | 朝食 | **Kifungua kinywa** ni saa moja.（朝食は7時）
+chakula cha mchana | 句 | 昼食 | **Chakula cha mchana** ni saa saba.（昼食は1時）
+chakula cha jioni | 句 | 夕食 | **Chakula cha jioni** kiko tayari.（夕食ができた）
+mgahawa（migahawa） | 名 M-MI | 食堂、レストラン | Tule kwenye **mgahawa** huu.（この食堂で食べよう）
+hoteli | 名 N | 食堂、ホテル | Tunakula **hotelini**.（食堂で食べます）
+-tamu | 形 | 甘い、おいしい | Chakula hiki ni **kitamu**.（この料理はおいしい）
+-chungu | 形 | 苦い | Dawa hii ni **chungu**.（この薬は苦い）
+-chachu | 形 | 酸っぱい | Maziwa yamekuwa **machachu**.（牛乳が酸っぱくなった）
+kula | 動 | 食べる | **Unakula** nini?（何を食べているの）
+kunywa | 動 | 飲む | **Ninakunywa** chai.（お茶を飲んでいる）
+kushiba | 動 | 満腹になる | **Nimeshiba**, asante.（おなかいっぱいです、ありがとう）
+kuonja | 動 | 味見する | **Onja** mchuzi huu.（このスープを味見して）
+mchuzi（michuzi） | 名 M-MI | 汁、スープ、煮込み | **Mchuzi** wa nyama ni mtamu.（肉の煮込みはおいしい）
+kupakua | 動 | （料理を）よそう | **Pakua** chakula, tafadhali.（料理をよそってください）

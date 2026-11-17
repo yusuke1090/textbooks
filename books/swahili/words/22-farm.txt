@@ -1,0 +1,60 @@
+# 畑と作物
+shamba（mashamba） | 名 JI-MA | 畑 | **Shamba** langu lina ekari tano.（私の畑は5エーカーある）
+shambani | 副 | 畑で、畑に | Baba yuko **shambani**.（父は畑にいる）
+kilimo | 名 KI-VI | 農業 | **Kilimo** ni kazi kubwa hapa.（ここでは農業が大きな仕事だ）
+mkulima（wakulima） | 名 M-WA | 農家、農民 | **Wakulima** wanasubiri mvua.（農家は雨を待っている）
+kulima | 動 | 耕す、作物を作る | **Unalima** nini?（何を作っていますか）
+kupanda | 動 | 植える、まく | **Tutapanda** mahindi wiki ijayo.（来週トウモロコシをまく）
+kupalilia | 動 | 草取りをする | Watoto **wanapalilia** shamba.（子どもたちが畑の草取りをしている）
+kumwagilia | 動 | 水をやる | **Mwagilia** mboga jioni.（夕方に野菜に水をやって）
+kuvuna | 動 | 収穫する | **Tulivuna** magunia ishirini.（20袋収穫した）
+mavuno | 名 JI-MA | 収穫（物） | **Mavuno** yalikuwa mazuri mwaka huu.（今年は収穫がよかった）
+zao（mazao） | 名 JI-MA | 作物、農産物 | **Mazao** yanauzwa sokoni.（作物は市場で売られる）
+mbegu | 名 N | 種 | Nunua **mbegu** bora.（よい種を買って）
+mbolea | 名 N | 肥料 | Weka **mbolea** kabla ya kupanda.（まく前に肥料を入れて）
+samadi | 名 N | 堆肥（ふん） | **Samadi** ya ng'ombe ni mbolea nzuri.（牛ふんはよい肥料だ）
+rutuba | 名 N | 地力、肥えていること | Udongo huu umepoteza **rutuba**.（この土は地力を失った）
+jembe（majembe） | 名 JI-MA | くわ | Analima kwa **jembe**.（くわで耕している）
+panga（mapanga） | 名 JI-MA | なた | Kata majani kwa **panga**.（なたで草を刈って）
+trekta | 名 N | トラクター | **Trekta** inalima haraka.（トラクターは速く耕す）
+mdudu（wadudu） | 名 M-WA | 虫、害虫 | **Wadudu** wameharibu mahindi.（虫がトウモロコシをだめにした）
+viwavijeshi vamizi | 句 | ツマジロクサヨトウ（ヨトウムシ） | **Viwavijeshi vamizi** wanashambulia mahindi.（ヨトウムシがトウモロコシを襲う）
+gugu（magugu） | 名 JI-MA | 雑草 | **Magugu** yanaota haraka.（雑草はすぐ生える）
+dawa ya kuua wadudu | 句 | 殺虫剤、農薬 | Nyunyiza **dawa ya kuua wadudu**.（殺虫剤をまいて）
+kunyunyiza | 動 | （薬・水を）まく、吹きかける | **Tunanyunyiza** dawa mara moja kwa wiki.（週に1回薬をまく）
+umwagiliaji | 名 U | かんがい | **Umwagiliaji** unasaidia wakati wa kiangazi.（乾季にはかんがいが役立つ）
+ghala（maghala） | 名 JI-MA | 倉庫 | Weka mahindi **ghalani**.（トウモロコシを倉庫に入れて）
+gunia（magunia） | 名 JI-MA | 麻袋（1袋はトウモロコシ約100キロ） | Ulivuna **magunia** mangapi?（何袋とれましたか）
+ekari | 名 N | エーカー（約0.4ヘクタール） | Ana **ekari** kumi za mahindi.（トウモロコシ畑が10エーカーある）
+mahindi | 名 JI-MA | トウモロコシ | **Mahindi** yameiva.（トウモロコシが実った）
+mtama | 名 M-MI | モロコシ（ソルガム） | **Mtama** unastahimili ukame.（モロコシは干ばつに強い）
+ulezi | 名 U | シコクビエ | Uji wa **ulezi** ni mzuri kwa watoto.（シコクビエのおかゆは子どもによい）
+karanga | 名 N | 落花生 | **Karanga** zinalimwa kwenye udongo wa mchanga.（落花生は砂の土で作られる）
+alizeti | 名 N | ひまわり | Mafuta ya **alizeti** ni maarufu.（ひまわり油はよく使われる）
+pamba | 名 N | 綿 | **Pamba** inalimwa Shinyanga.（綿はシニャンガで作られる）
+mashamba ya chai | 句 | 茶畑 | Kericho ina **mashamba ya chai** mengi.（ケリチョには茶畑が多い）
+mbuni（mibuni） | 名 M-MI | コーヒーの木 | Wakulima wa Kilimanjaro hupanda **mibuni**.（キリマンジャロの農家はコーヒーの木を植える）
+miwa | 名 M-MI | サトウキビ | **Miwa** inalimwa karibu na mto.（サトウキビは川の近くで作られる）
+mkonge | 名 M-MI | サイザル麻 | Tanga ina mashamba ya **mkonge**.（タンガにはサイザル麻の畑がある）
+korosho | 名 N | カシューナッツ | **Korosho** zinauzwa nje ya nchi.（カシューナッツは国外へ売られる）
+kupanda mbegu | 句 | 種をまく | Mvua ikianza **tunapanda mbegu**.（雨が始まったら種をまく）
+kuchipua | 動 | 芽を出す | Mbegu **zimechipua**.（種が芽を出した）
+kuota | 動 | 生える、育つ | Majani **yameota**.（草が生えた）
+kuiva | 動 | 熟す | Nyanya **zimeiva**.（トマトが熟した）
+kukauka | 動 | 乾く、枯れる | Mahindi **yamekauka** kwa jua.（トウモロコシが日照りで枯れた）
+kuoza | 動 | 腐る | Mahindi **yameoza** ghalani.（倉庫でトウモロコシが腐った）
+kuhifadhi | 動 | 保存する、たくわえる | **Hifadhi** mahindi mahali pakavu.（トウモロコシを乾いた所に保存して）
+ukulima | 名 U | 耕作、農業 | **Ukulima** wa kisasa unatumia mashine.（今の農業は機械を使う）
+bustani | 名 N | 菜園、庭 | Mama ana **bustani** ya mboga.（母は野菜の菜園を持っている）
+mti wa matunda | 句 | 果樹 | Tulipanda **miti ya matunda**.（果樹を植えた）
+mmea（mimea） | 名 M-MI | 植物、作物の株 | **Mimea** inahitaji maji.（植物には水が要る）
+mzizi（mizizi） | 名 M-MI | 根 | **Mizizi** imeoza.（根が腐った）
+tawi（matawi） | 名 JI-MA | 枝 | Kata **matawi** makavu.（枯れ枝を切って）
+shina（mashina） | 名 JI-MA | 幹、茎 | **Shina** la mti ni nene.（木の幹は太い）
+kisima（visima） | 名 KI-VI | 井戸 | Tunachota maji **kisimani**.（井戸で水をくむ）
+pampu | 名 N | ポンプ | **Pampu** ya maji imeharibika.（水のポンプが壊れた）
+tangi（matangi） | 名 JI-MA | タンク | **Tangi** la maji limejaa.（水のタンクがいっぱいだ）
+kilimo hai | 句 | 有機農業 | **Kilimo hai** hakitumii dawa za kemikali.（有機農業は化学薬品を使わない）
+mabadiliko ya tabianchi | 句 | 気候変動 | **Mabadiliko ya tabianchi** yanaathiri mvua.（気候変動が雨に影響している）
+tija | 名 N | 生産性 | Tunataka kuongeza **tija** shambani.（畑の生産性を上げたい）
+mavuno kwa ekari | 句 | エーカーあたりの収量 | **Mavuno kwa ekari** yameongezeka.（エーカーあたりの収量が増えた）

@@ -1,0 +1,51 @@
+# あいさつと決まった言い方
+Habari? | 句 | 元気？（ようす・ニュースは？） | **Habari** za asubuhi?（おはようございます）
+Habari gani? | 句 | 調子はどう？ | **Habari gani**, rafiki?（調子はどう、友よ）
+nzuri | 句 | 元気です、いいです（あいさつの答え） | Habari yako? — **Nzuri**.（元気？ — 元気です）
+salama | 句 | 無事です、問題ない | Habari za nyumbani? — **Salama**.（ご家族は？ — 元気です）
+Mambo? | 句 | よう、元気？（若い人のくだけた言い方） | **Mambo?** — Poa!（元気？ — いいよ）
+poa | 句 | いいよ、元気（くだけた答え） | Mambo? — **Poa**.（元気？ — いいよ）
+Shikamoo | 句 | （目上の人に）こんにちは | **Shikamoo**, bibi.（おばあさん、こんにちは）
+Marahaba | 句 | （Shikamoo への答え）ありがとう | Shikamoo. — **Marahaba**.（こんにちは — はい、こんにちは）
+Jambo | 句 | こんにちは（旅行者向け） | **Jambo**! Karibu Kenya.（こんにちは。ケニアへようこそ）
+Hujambo? | 句 | お元気ですか（あなたは） | **Hujambo**, mama? — Sijambo.（お元気ですか — 元気です）
+Sijambo | 句 | 元気です（私は） | Hujambo? — **Sijambo**, asante.（お元気？ — 元気です、ありがとう）
+Karibu | 句 | ようこそ、どうぞ | **Karibu** nyumbani kwetu.（わが家へようこそ）
+Karibuni | 句 | ようこそ（2人以上に） | **Karibuni** wote!（みなさん、ようこそ）
+asante | 句 | ありがとう | **Asante** kwa chai.（お茶をありがとう）
+asante sana | 句 | どうもありがとう | **Asante sana** kwa msaada wako.（助けてくれて本当にありがとう）
+asanteni | 句 | ありがとう（2人以上に） | **Asanteni** kwa kuja.（来てくれてありがとう、みなさん）
+hakuna shida | 句 | どういたしまして、問題ない | Asante! — **Hakuna shida**.（ありがとう — いいえ）
+samahani | 句 | すみません、ごめんなさい | **Samahani**, choo kiko wapi?（すみません、トイレはどこですか）
+pole | 句 | お気の毒に、大変でしたね | Nimechoka. — **Pole**.（疲れた — 大変だったね）
+pole pole | 句 | ゆっくり | Sema **pole pole**, tafadhali.（ゆっくり言ってください）
+tafadhali | 句 | どうぞ、お願いします | Nipe maji, **tafadhali**.（水をください）
+hodi | 句 | ごめんください（家に入る前） | **Hodi**! — Karibu!（ごめんください — どうぞ）
+kwaheri | 句 | さようなら | **Kwaheri**, tutaonana kesho.（さようなら、また明日）
+kwaherini | 句 | さようなら（2人以上に） | **Kwaherini**, ndugu zangu.（みなさん、さようなら）
+tutaonana | 句 | また会いましょう | **Tutaonana** wiki ijayo.（来週また会いましょう）
+usiku mwema | 句 | おやすみなさい | **Usiku mwema**, watoto.（子どもたち、おやすみ）
+safari njema | 句 | よい旅を | **Safari njema**! Rudi salama.（よい旅を。無事に帰ってね）
+hongera | 句 | おめでとう | **Hongera** kwa kazi mpya!（新しい仕事おめでとう）
+ndiyo | 句 | はい | **Ndiyo**, ninaelewa.（はい、わかります）
+hapana | 句 | いいえ | **Hapana**, sitaki.（いいえ、いりません）
+sawa | 句 | わかった、いいよ、同じ | **Sawa**, tuonane saa nne.（わかった、10時に会おう）
+sawa sawa | 句 | オーケー、了解 | **Sawa sawa**, nitakuja.（了解、行きます）
+bila shaka | 句 | もちろん | **Bila shaka**, nitakusaidia.（もちろん手伝います）
+labda | 副 | たぶん、もしかすると | **Labda** mvua itanyesha leo.（たぶん今日は雨が降る）
+Jina lako nani? | 句 | あなたの名前は？ | **Jina lako nani**? — Jina langu ni Yusuke.（名前は？ — ユウスケです）
+jina（majina） | 名 JI-MA | 名前 | **Jina** langu ni Amina.（私の名前はアミナです）
+Unatoka wapi? | 句 | どこから来ましたか | **Unatoka wapi**? — Ninatoka Japani.（どこから？ — 日本からです）
+Unaitwa nani? | 句 | 何という名前ですか | **Unaitwa nani**? — Ninaitwa Juma.（お名前は？ — ジュマです）
+Ninafurahi kukutana nawe | 句 | お会いできてうれしいです | **Ninafurahi kukutana nawe**.（お会いできてうれしいです）
+Sielewi | 句 | わかりません | Samahani, **sielewi**.（すみません、わかりません）
+Unaelewa? | 句 | わかりますか | **Unaelewa** Kiingereza?（英語はわかりますか）
+Unasema Kiingereza? | 句 | 英語を話しますか | **Unasema Kiingereza**? — Kidogo.（英語を話しますか — 少し）
+Rudia tafadhali | 句 | もう一度言ってください | Sijasikia. **Rudia tafadhali**.（聞こえませんでした。もう一度お願いします）
+Inaitwaje? | 句 | これは何といいますか | Hii **inaitwaje** kwa Kiswahili?（これはスワヒリ語で何といいますか）
+Kiswahili | 名 KI-VI | スワヒリ語 | Ninajifunza **Kiswahili**.（スワヒリ語を勉強しています）
+Kiingereza | 名 KI-VI | 英語 | Biashara nyingi hutumia **Kiingereza**.（多くの商売は英語を使う）
+Kijapani | 名 KI-VI | 日本語 | Unajua **Kijapani**?（日本語を知っていますか）
+Mungu akubariki | 句 | 神の恵みがありますように（感謝・別れのことば） | Asante sana. **Mungu akubariki**.（本当にありがとう。お元気で）
+Inshallah | 句 | 神が望めば、うまくいけば | Tutaonana kesho, **Inshallah**.（うまくいけば明日会いましょう）
+Pole na kazi | 句 | お仕事お疲れさまです | **Pole na kazi**, mzee.（お仕事お疲れさまです）

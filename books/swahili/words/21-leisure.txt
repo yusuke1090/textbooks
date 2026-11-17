@@ -1,0 +1,52 @@
+# スポーツ・遊び・音楽
+mpira（mipira） | 名 M-MI | ボール；サッカー | Watoto wanacheza **mpira**.（子どもがサッカーをしている）
+mpira wa miguu | 句 | サッカー | **Mpira wa miguu** ni mchezo maarufu.（サッカーは人気のスポーツだ）
+mpira wa kikapu | 句 | バスケットボール | **Mpira wa kikapu** unachezwa shuleni.（学校でバスケットボールをする）
+mpira wa wavu | 句 | バレーボール | Wasichana wanacheza **mpira wa wavu**.（女の子たちがバレーボールをしている）
+mchezo（michezo） | 名 M-MI | 遊び、試合、スポーツ | **Mchezo** utaanza saa kumi.（試合は4時に始まる）
+kucheza | 動 | 遊ぶ、（スポーツを）する、踊る | Twende **kucheza**.（遊びに行こう）
+mchezaji（wachezaji） | 名 M-WA | 選手 | **Mchezaji** huyu anafunga magoli mengi.（この選手はたくさん点を取る）
+timu | 名 N | チーム | Unashabikia **timu** gani?（どのチームのファン？）
+shabiki（mashabiki） | 名 JI-MA | ファン | **Mashabiki** wa Simba na Yanga wamejaa uwanjani.（シンバとヤンガのファンで競技場がいっぱいだ）
+jezi | 名 N | （サッカーの）ユニフォーム | Nimenunua **jezi** ya timu yangu.（応援するチームのユニフォームを買った）
+goli（magoli） | 名 JI-MA | ゴール、得点 | Ni **goli**!（ゴール！）
+kufunga goli | 句 | 点を入れる | Nani **alifunga goli**?（だれが点を入れた？）
+kushinda | 動 | 勝つ | Timu yetu **imeshinda**!（うちのチームが勝った）
+kushindwa | 動 | 負ける、できない | **Tumeshindwa** mbili kwa moja.（2対1で負けた）
+kutoka sare | 句 | 引き分ける | Timu hizo **zimetoka sare**.（その2チームは引き分けた）
+bingwa（mabingwa） | 名 JI-MA | チャンピオン、名人 | Yanga ni **bingwa** wa ligi.（ヤンガがリーグ優勝チームだ）
+kombe（makombe） | 名 JI-MA | 優勝杯、カップ | Wamechukua **kombe**.（優勝杯を取った）
+ligi | 名 N | リーグ | **Ligi** Kuu inaanza Agosti.（プレミアリーグは8月に始まる）
+uwanja（viwanja） | 名 U | 競技場、広場、敷地 | **Uwanja** wa Taifa umejaa.（国立競技場は満員だ）
+mwamuzi（waamuzi） | 名 M-WA | 審判 | **Mwamuzi** amepuliza filimbi.（審判が笛を吹いた）
+filimbi | 名 N | 笛 | Piga **filimbi** mchezo ukiisha.（試合が終わったら笛を吹いて）
+kocha（makocha） | 名 JI-MA | 監督、コーチ | **Kocha** mpya ametoka Afrika Kusini.（新しい監督は南アフリカから来た）
+mazoezi | 名 JI-MA | 練習、運動 | Ninafanya **mazoezi** kila asubuhi.（毎朝運動している）
+kukimbia | 動 | 走る、逃げる | **Ninakimbia** kilomita tano.（5キロ走る）
+mbio | 名 N | 競走、ランニング | Wakenya ni hodari katika **mbio** ndefu.（ケニア人は長距離走が得意だ）
+shindano（mashindano） | 名 JI-MA | 競争、大会、コンテスト | **Mashindano** ya mbio yatafanyika kesho.（明日、競走大会がある）
+medali | 名 N | メダル | Alishinda **medali** ya dhahabu.（金メダルを取った）
+bao | 名 JI-MA | バオ（東アフリカの盤ゲーム） | Wazee wanacheza **bao**.（年寄りがバオで遊んでいる）
+karata | 名 N | トランプ | Tucheze **karata**.（トランプをしよう）
+kamari | 名 N | 賭け事 | **Kamari** imeharibu familia nyingi.（賭け事で多くの家庭が壊れた）
+kubeti | 動 | （スポーツに）賭ける | Vijana wengi **wanabeti** mpira.（多くの若者がサッカーに賭けている）
+muziki | 名 N | 音楽 | Napenda **muziki** wa rock.（ロックが好き）
+wimbo（nyimbo） | 名 U | 歌 | **Wimbo** huu unanikumbusha nyumbani.（この歌を聞くと故郷を思い出す）
+kuimba | 動 | 歌う | **Anaimba** kwaya kanisani.（教会の聖歌隊で歌っている）
+mwimbaji（waimbaji） | 名 M-WA | 歌手 | **Mwimbaji** huyu ni maarufu Afrika Mashariki.（この歌手は東アフリカで有名だ）
+bendi | 名 N | バンド | **Bendi** ninayoipenda ni Oasis.（好きなバンドは Oasis だ）
+gitaa | 名 N | ギター | Ninajifunza kupiga **gitaa**.（ギターを習っている）
+kupiga gitaa | 句 | ギターを弾く | Anajua **kupiga gitaa** vizuri.（ギターが上手に弾ける）
+ngoma ya kisasa | 句 | 今の流行の歌・踊り | Vijana wanapenda **ngoma ya kisasa**.（若者は今の流行の曲が好きだ）
+Bongo Flava | 句 | ボンゴフレーバ（タンザニアのポップス） | **Bongo Flava** inasikika kila mahali.（ボンゴフレーバはどこでも流れている）
+filamu | 名 N | 映画 | Twende kuangalia **filamu**.（映画を見に行こう）
+riwaya | 名 N | 小説 | Anasoma **riwaya** ya Shaaban Robert.（シャーバン・ロバートの小説を読んでいる）
+burudani | 名 N | 娯楽、楽しみ | Redio ni **burudani** kubwa kijijini.（村ではラジオが大きな楽しみだ）
+mapumziko | 名 JI-MA | 休み、休憩 | Tutakuwa na **mapumziko** ya dakika kumi.（10分休憩をとります）
+uvuvi | 名 U | 漁、釣り | **Uvuvi** ni kazi kubwa ziwa Victoria.（ヴィクトリア湖では漁が大きな仕事だ）
+kuvua samaki | 句 | 魚をとる、釣りをする | Wanaenda **kuvua samaki** usiku.（夜に漁に出る）
+mvuvi（wavuvi） | 名 M-WA | 漁師 | **Wavuvi** wanarudi alfajiri.（漁師は夜明けに戻る）
+mchezo wa kuigiza | 句 | 劇、ドラマ | Tunaangalia **mchezo wa kuigiza** redioni.（ラジオドラマを聞いている）
+kuigiza | 動 | 演じる、まねる | **Anaigiza** sauti ya mzee.（老人の声をまねている）
+kupumzika mwisho wa wiki | 句 | 週末に休む | Napenda **kupumzika mwisho wa wiki**.（週末は休むのが好き）
+kuendesha baiskeli | 句 | 自転車に乗る | Ninajifunza **kuendesha baiskeli**.（自転車の乗り方を習っている）

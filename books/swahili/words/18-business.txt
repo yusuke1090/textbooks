@@ -1,0 +1,66 @@
+# 仕事と商売
+biashara | 名 N | 商売、ビジネス | **Biashara** yangu inakua.（私の商売は伸びている）
+kufanya biashara | 句 | 商売をする | **Anafanya biashara** ya mboga.（野菜の商売をしている）
+kampuni | 名 N | 会社 | **Kampuni** yetu inauza maziwa.（うちの会社は牛乳を売っている）
+mkurugenzi（wakurugenzi） | 名 M-WA | 社長、取締役、局長 | **Mkurugenzi** yuko kwenye mkutano.（社長は会議中です）
+meneja（mameneja） | 名 JI-MA | マネージャー | Ongea na **meneja**.（マネージャーと話して）
+bosi（mabosi） | 名 JI-MA | 上司、ボス | **Bosi** wangu ni mkali.（上司は厳しい）
+mwajiri（waajiri） | 名 M-WA | 雇い主 | **Mwajiri** analipa mshahara kila mwezi.（雇い主は毎月給料を払う）
+kuajiri | 動 | 雇う | Tunataka **kuajiri** madereva wawili.（運転手を2人雇いたい）
+kuajiriwa | 動 | 雇われる、勤める | **Ameajiriwa** benki.（銀行に勤めている）
+kuacha kazi | 句 | 仕事をやめる | **Ameacha kazi** wiki iliyopita.（先週仕事をやめた）
+kufukuzwa kazi | 句 | クビになる | **Alifukuzwa kazi** kwa kuchelewa kila siku.（毎日遅刻してクビになった）
+mkutano（mikutano） | 名 M-MI | 会議 | **Mkutano** utaanza saa nne.（会議は10時に始まる）
+mkataba（mikataba） | 名 M-MI | 契約（書） | Tumesaini **mkataba**.（契約書にサインした）
+kusaini | 動 | 署名する | **Saini** hapa, tafadhali.（ここに署名してください）
+mtaji（mitaji） | 名 M-MI | 資本、元手 | Nahitaji **mtaji** kuanzisha biashara.（商売を始めるのに元手がいる）
+kuwekeza | 動 | 投資する | **Wekeza** kwenye ng'ombe wa maziwa.（乳牛に投資して）
+uwekezaji | 名 U | 投資 | **Uwekezaji** katika kilimo unaongezeka.（農業への投資が増えている）
+mwekezaji（wawekezaji） | 名 M-WA | 投資家 | **Wawekezaji** wa nje wanakuja.（外国の投資家が来ている）
+mapato | 名 JI-MA | 収入、売上 | **Mapato** ya mwezi huu ni mazuri.（今月の収入はいい）
+matumizi | 名 JI-MA | 支出、使い方 | Punguza **matumizi**.（支出を減らして）
+mauzo | 名 JI-MA | 販売、売上 | **Mauzo** yameongezeka.（売上が増えた）
+bajeti | 名 N | 予算 | **Bajeti** ya mwaka huu ni ndogo.（今年の予算は少ない）
+hesabu | 名 N | 計算、帳簿、算数 | Andika **hesabu** kila siku.（毎日帳簿をつけて）
+mhasibu（wahasibu） | 名 M-WA | 会計係 | **Mhasibu** anaandaa ripoti.（会計係が報告書を作っている）
+ripoti | 名 N | 報告（書） | Tuma **ripoti** kesho.（明日報告書を送って）
+soko la nje | 句 | 海外市場 | Kahawa yetu inauzwa **soko la nje**.（うちのコーヒーは海外市場で売られている）
+kuagiza | 動 | 注文する、取り寄せる、指示する | **Tumeagiza** mbegu kutoka Kenya.（ケニアから種を取り寄せた）
+oda | 名 N | 注文 | Tumepokea **oda** kubwa.（大きな注文を受けた）
+kusafirisha | 動 | 輸送する、輸出する | **Tunasafirisha** maziwa kwa gari.（車で牛乳を運んでいる）
+usafirishaji | 名 U | 輸送 | Gharama za **usafirishaji** ni kubwa.（輸送費が高い）
+kusambaza | 動 | 配る、流通させる | **Tunasambaza** maziwa mjini.（町に牛乳を配っている）
+msambazaji（wasambazaji） | 名 M-WA | 卸売業者、配送業者 | **Msambazaji** anakuja kila Jumatatu.（卸の人は毎週月曜に来る）
+mshindani（washindani） | 名 M-WA | 競争相手 | **Washindani** wetu wanauza kwa bei ya chini.（競合は安く売っている）
+ushindani | 名 U | 競争 | **Ushindani** ni mkubwa sokoni.（市場の競争は激しい）
+tangazo（matangazo） | 名 JI-MA | 広告、お知らせ | Weka **tangazo** redioni.（ラジオに広告を出して）
+kutangaza | 動 | 宣伝する、発表する | **Tunatangaza** bidhaa mpya.（新しい商品を宣伝している）
+chapa | 名 N | ブランド、銘柄、印 | **Chapa** yetu inajulikana.（うちのブランドは知られている）
+kiwango（viwango） | 名 KI-VI | 基準、水準、量 | Maziwa yetu yanafikia **viwango**.（うちの牛乳は基準を満たしている）
+leseni | 名 N | 免許、営業許可 | Unahitaji **leseni** ya biashara.（営業許可が必要だ）
+mjasiriamali（wajasiriamali） | 名 M-WA | 起業家 | **Wajasiriamali** vijana wanaongezeka.（若い起業家が増えている）
+kuanzisha | 動 | 始める、設立する | **Tulianzisha** kampuni mwaka 2020.（2020年に会社を作った）
+kufilisika | 動 | 倒産する、破産する | Kampuni **imefilisika**.（会社がつぶれた）
+kupata faida | 句 | もうける | **Tulipata faida** kubwa mwaka huu.（今年は大きくもうかった）
+riba | 名 N | 利子 | **Riba** ya mkopo ni asilimia kumi.（ローンの利子は10%）
+dhamana | 名 N | 担保、保証 | Benki inataka **dhamana**.（銀行は担保を求めている）
+bima | 名 N | 保険 | Weka **bima** ya ng'ombe.（牛に保険をかけて）
+hisa | 名 N | 株 | Ana **hisa** katika kampuni hiyo.（その会社の株を持っている）
+ushirikiano | 名 U | 協力 | Asante kwa **ushirikiano** wenu.（ご協力ありがとうございます）
+mshirika（washirika） | 名 M-WA | パートナー、仲間 | **Washirika** wetu wako Nairobi.（パートナーはナイロビにいる）
+mzalishaji（wazalishaji） | 名 M-WA | 生産者 | **Wazalishaji** wa maziwa wanapata bei ndogo.（牛乳の生産者は安い値しかもらえない）
+uzalishaji | 名 U | 生産 | **Uzalishaji** umeongezeka.（生産が増えた）
+kuzalisha | 動 | 生産する | Shamba hili **linazalisha** mahindi mengi.（この畑はトウモロコシをたくさん作る）
+mtaalamu（wataalamu） | 名 M-WA | 専門家 | Tumwite **mtaalamu**.（専門家をよぼう）
+uzoefu | 名 U | 経験 | Una **uzoefu** wa kazi hii?（この仕事の経験はある？）
+ujuzi | 名 U | 技能、知識 | Kazi hii inahitaji **ujuzi**.（この仕事には技能が要る）
+likizo | 名 N | 休暇 | Niko **likizo** wiki hii.（今週は休暇中です）
+zamu | 名 N | 番、当番、交代勤務 | Leo ni **zamu** yangu.（今日は私の番だ）
+saa za kazi | 句 | 勤務時間 | **Saa za kazi** ni saa mbili hadi saa kumi.（勤務時間は8時から4時まで）
+kibarua（vibarua） | 名 KI-VI | 日雇い（の人・仕事） | Ameajiriwa kama **kibarua**.（日雇いで雇われた）
+posho | 名 N | 手当 | Tunapata **posho** ya safari.（出張手当が出る）
+kustaafu | 動 | 退職する | Baba **amestaafu** mwaka huu.（父は今年退職した）
+pensheni | 名 N | 年金 | Wazee wanapokea **pensheni** kila mwezi.（お年寄りは毎月年金を受け取る）
+mgomo（migomo） | 名 M-MI | ストライキ | Madereva wako kwenye **mgomo**.（運転手たちはストライキ中だ）
+chama cha wafanyakazi | 句 | 労働組合 | Amejiunga na **chama cha wafanyakazi**.（労働組合に入った）
+ofisi kuu | 句 | 本社、本部 | **Ofisi kuu** iko Dar es Salaam.（本社はダルエスサラームにある）

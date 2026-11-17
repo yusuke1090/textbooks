@@ -1,0 +1,54 @@
+# 町・移動・宿
+mji（miji） | 名 M-MI | 町 | **Mji** huu una watu wengi.（この町は人が多い）
+mjini | 副 | 町で、町に | Ninafanya kazi **mjini**.（町で働いています）
+jiji（majiji） | 名 JI-MA | 大都市 | Dar es Salaam ni **jiji** kubwa.（ダルエスサラームは大都市だ）
+kijiji（vijiji） | 名 KI-VI | 村 | **Kijiji** chetu kiko mbali.（私たちの村は遠い）
+mkoa（mikoa） | 名 M-MI | 州（タンザニアの行政区分） | **Mkoa** wa Arusha una ng'ombe wengi.（アルーシャ州は牛が多い）
+wilaya | 名 N | 郡、県 | Ofisi ya **wilaya** iko hapa.（郡の役所はここにある）
+nchi | 名 N | 国 | Tanzania ni **nchi** nzuri.（タンザニアはよい国だ）
+barabara | 名 N | 道路 | **Barabara** imeharibika.（道路が壊れている）
+njia | 名 N | 道、方法 | Hii ndiyo **njia** ya kwenda sokoni.（これが市場へ行く道です）
+gari（magari） | 名 JI-MA | 車 | **Gari** limeharibika.（車が壊れた）
+basi（mabasi） | 名 JI-MA | バス | **Basi** linaondoka saa mbili.（バスは8時に出る）
+daladala | 名 N | 乗り合いバス（ミニバス） | Panda **daladala** hadi mjini.（町までダラダラに乗って）
+pikipiki | 名 N | オートバイ | Alikuja kwa **pikipiki**.（彼はバイクで来た）
+bodaboda | 名 N | バイクタクシー | **Bodaboda** ni ya haraka.（バイクタクシーは速い）
+bajaji | 名 N | 三輪タクシー | Tuchukue **bajaji**.（三輪タクシーに乗ろう）
+baiskeli | 名 N | 自転車 | Anapeleka maziwa kwa **baiskeli**.（自転車で牛乳を運ぶ）
+treni | 名 N | 列車 | **Treni** ya SGR ni ya haraka.（SGR の列車は速い）
+ndege | 名 N | 飛行機、鳥 | **Ndege** itatua saa tisa.（飛行機は9時＝午後3時に着く）
+uwanja wa ndege | 句 | 空港 | Nipeleke **uwanja wa ndege**.（空港へ連れて行って）
+stendi | 名 N | バスターミナル | **Stendi** ya mabasi iko wapi?（バスターミナルはどこ）
+kituo（vituo） | 名 KI-VI | 停留所、駅、施設 | Shuka **kituo** kijacho.（次の停留所で降りて）
+tiketi | 名 N | 切符 | Nimekata **tiketi**.（切符を買った）
+nauli | 名 N | 運賃 | **Nauli** ni shilingi ngapi?（運賃はいくら）
+safari | 名 N | 旅、旅行 | **Safari** ilikuwa ndefu.（旅は長かった）
+abiria | 名 N | 乗客 | **Abiria** wameshuka.（乗客は降りた）
+kusafiri | 動 | 旅行する | **Tutasafiri** kesho.（明日出発します）
+kuondoka | 動 | 出発する、去る | Basi **limeondoka**.（バスは出てしまった）
+kufika | 動 | 着く | **Tulifika** Dodoma jana.（昨日ドドマに着いた）
+kurudi | 動 | 帰る、戻る | **Nitarudi** saa sita.（12時に戻ります）
+kupanda | 動 | 乗る、登る、植える | **Panda** gari.（車に乗って）
+kushuka | 動 | 降りる、下がる | **Nishushe** hapa.（ここで降ろして）
+kuendesha | 動 | 運転する | Unajua **kuendesha** gari?（車を運転できますか）
+kugeuka | 動 | 曲がる、向きを変える | **Geuka** kushoto.（左に曲がって）
+kulia | 名 | 右 | Zahanati iko upande wa **kulia**.（診療所は右側にある）
+kushoto | 名 | 左 | Pinda **kushoto** kwenye kona.（角で左へ曲がって）
+moja kwa moja | 句 | まっすぐ | Nenda **moja kwa moja**.（まっすぐ行って）
+karibu | 副 | 近く、もうすぐ | Shule iko **karibu**.（学校は近い）
+mbali | 副 | 遠く | Shamba liko **mbali**.（畑は遠い）
+kona | 名 N | 角 | Duka liko **konani**.（店は角にある）
+daraja（madaraja） | 名 JI-MA | 橋 | **Daraja** limevunjika.（橋がこわれた）
+ramani | 名 N | 地図 | Nionyeshe kwenye **ramani**.（地図で見せて）
+anwani | 名 N | 住所 | Andika **anwani** yako.（住所を書いて）
+hoteli ya kulala | 句 | 宿、泊まるホテル | Tunatafuta **hoteli ya kulala**.（泊まる宿をさがしている）
+nyumba ya wageni | 句 | ゲストハウス | **Nyumba ya wageni** ni rahisi.（ゲストハウスは安い）
+chumba kimoja | 句 | 1部屋 | Nataka **chumba kimoja** kwa siku mbili.（2日間、1部屋ほしい）
+mapokezi | 名 JI-MA | 受付、フロント | Uliza **mapokezini**.（フロントで聞いて）
+foleni | 名 N | 渋滞、列 | Kuna **foleni** kubwa mjini.（町はひどい渋滞だ）
+ajali | 名 N | 事故 | Kulikuwa na **ajali** barabarani.（道路で事故があった）
+polisi | 名 N | 警察 | Piga simu **polisi**.（警察に電話して）
+mpaka（mipaka） | 名 M-MI | 国境、境 | Tulivuka **mpaka** Namanga.（ナマンガで国境を越えた）
+pasipoti | 名 N | パスポート | Onyesha **pasipoti** yako.（パスポートを見せて）
+viza | 名 N | ビザ | Unahitaji **viza** kuingia.（入国にはビザが要る）
+kupotea | 動 | 迷う、なくなる | **Nimepotea**; nisaidie.（道に迷いました。助けてください）

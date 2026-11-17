@@ -1,0 +1,86 @@
+# 代名詞・つなぐ言葉・たずねる言葉
+mimi | 代 | 私 | **Mimi** ni mwalimu.（私は先生です）
+wewe | 代 | あなた | **Wewe** unatoka wapi?（あなたはどこから来たの）
+yeye | 代 | 彼、彼女 | **Yeye** ni dada yangu.（彼女は私の姉です）
+sisi | 代 | 私たち | **Sisi** ni wakulima.（私たちは農家です）
+ninyi | 代 | あなたたち | **Ninyi** mnatoka wapi?（あなたたちはどこから来たの）
+wao | 代 | 彼ら | **Wao** wameondoka.（彼らは出発した）
+-angu | 形 | 私の | Hii ni nyumba **yangu**.（これは私の家です）
+-ako | 形 | あなたの | Jina **lako** nani?（あなたの名前は？）
+-ake | 形 | 彼の、彼女の | Gari **lake** ni jipya.（彼の車は新しい）
+-etu | 形 | 私たちの | Kijiji **chetu** ni kidogo.（私たちの村は小さい）
+-enu | 形 | あなたたちの | Shamba **lenu** liko wapi?（あなたたちの畑はどこ）
+-ao | 形 | 彼らの | Watoto **wao** wanasoma.（彼らの子どもは学校に行っている）
+huyu | 代 | この人 | **Huyu** ni rafiki yangu.（この人は私の友だちです）
+hawa | 代 | この人たち | **Hawa** ni wanafunzi wangu.（この人たちは私の生徒です）
+yule | 代 | あの人 | **Yule** ni nani?（あの人はだれ？）
+hii | 代 | これ、この（N クラスの1つなど） | **Hii** ni bei gani?（これはいくら？）
+hizi | 代 | これら（N クラスの2つ以上） | Ndizi **hizi** ni tamu.（このバナナはおいしい）
+hiyo | 代 | それ、その | **Hiyo** si kweli.（それは本当じゃない）
+ile | 代 | あれ、あの | Nyumba **ile** ni ya nani?（あの家はだれの？）
+-enyewe | 形 | ～自身、まさに | Nitafanya **mwenyewe**.（自分でやる）
+kila | 形 | 毎～、どの～も（形は変わらない） | **Kila** mtu anajua.（みんな知っている）
+nani | 疑 | だれ | **Nani** amekuja?（だれが来たの）
+nini | 疑 | 何 | Unataka **nini**?（何が欲しいの）
+wapi | 疑 | どこ | Unakwenda **wapi**?（どこへ行くの）
+lini | 疑 | いつ | Utarudi **lini**?（いつ帰るの）
+gani | 疑 | どんな、どの | Unataka rangi **gani**?（どの色がいい？）
+-ngapi | 疑 | いくつ | Una ng'ombe **wangapi**?（牛を何頭飼っている？）
+kwa nini | 疑 | なぜ | **Kwa nini** umechelewa?（なぜ遅れたの）
+vipi | 疑 | どのように、どう | Unaenda **vipi** mjini?（町へはどうやって行くの）
+je | 疑 | （文の頭で）～ですか | **Je**, umekula?（ごはん食べた？）
+-pi | 疑 | どれ | Unataka kitabu **kipi**?（どの本が欲しいの）
+mbona | 疑 | どうして（驚き・不満） | **Mbona** hukuja jana?（どうして昨日来なかったの）
+na | 接 | ～と、そして | Chai **na** mkate.（紅茶とパン）
+au | 接 | または | Chai **au** kahawa?（紅茶かコーヒーか）
+lakini | 接 | しかし | Nataka kununua, **lakini** sina pesa.（買いたいけど、お金がない）
+kwa sababu | 接 | なぜなら、～だから | Sikuja **kwa sababu** nilikuwa mgonjwa.（病気だったので来なかった）
+kwa hiyo | 接 | だから | Mvua imenyesha, **kwa hiyo** tutapanda kesho.（雨が降ったので、明日植える）
+ili | 接 | ～するために | Ninasoma **ili** nifaulu.（合格するために勉強している）
+kama | 接 | もし；～のように | **Kama** mvua ikinyesha, sitakuja.（もし雨が降ったら来ない）
+kwamba | 接 | ～ということ | Nadhani **kwamba** atakuja.（彼は来ると思う）
+ingawa | 接 | ～だけれども | **Ingawa** ni ghali, nitanunua.（高いけど買う）
+halafu | 接 | それから | Tulikula, **halafu** tukalala.（食べて、それから寝た）
+kisha | 接 | そのあと | Nawa mikono, **kisha** ule.（手を洗って、それから食べて）
+basi | 接 | では、それなら | **Basi**, tuanze.（では、始めよう）
+pia | 副 | ～も | Mimi **pia** nataka.（私も欲しい）
+hata | 接 | ～さえ、～でも | Sina **hata** shilingi moja.（1シリングさえない）
+wala | 接 | ～も（～ない） | Sina chai **wala** sukari.（紅茶も砂糖もない）
+bali | 接 | そうではなく | Si mimi, **bali** yeye.（私じゃなくて彼だ）
+yaani | 接 | つまり | Kesho kutwa, **yaani** Jumamosi.（あさって、つまり土曜日）
+hata hivyo | 接 | それでも | Ni mbali, **hata hivyo** nitaenda.（遠いけど、それでも行く）
+kwa | 前 | ～で、～へ、～のために | Nimekuja **kwa** basi.（バスで来た）
+katika | 前 | ～の中で、～において | Anaishi **katika** kijiji kidogo.（小さな村に住んでいる）
+kuhusu | 前 | ～について | Tuongee **kuhusu** bei.（値段について話そう）
+kutoka | 前 | ～から | Barua **kutoka** kwa mama.（母からの手紙）
+hadi | 前 | ～まで | Kazi ni **hadi** saa kumi.（仕事は4時まで）
+mpaka | 前 | ～まで | Subiri **mpaka** kesho.（明日まで待って）
+kabla ya | 前 | ～の前に | Nawa mikono **kabla ya** kula.（食べる前に手を洗って）
+baada ya | 前 | ～のあとで | Tutaonana **baada ya** kazi.（仕事のあとで会おう）
+juu ya | 前 | ～の上に | Kitabu kiko **juu ya** meza.（本はテーブルの上にある）
+chini ya | 前 | ～の下に | Paka yuko **chini ya** kitanda.（猫はベッドの下にいる）
+ndani ya | 前 | ～の中に | Pesa ziko **ndani ya** pochi.（お金は財布の中にある）
+nje ya | 前 | ～の外に | Gari liko **nje ya** nyumba.（車は家の外にある）
+mbele ya | 前 | ～の前に | Ninakusubiri **mbele ya** benki.（銀行の前で待っている）
+nyuma ya | 前 | ～の後ろに | Choo kiko **nyuma ya** nyumba.（トイレは家の後ろにある）
+karibu na | 前 | ～の近くに | Shule iko **karibu na** kanisa.（学校は教会の近くにある）
+mbali na | 前 | ～から遠くに | Kisima kiko **mbali na** nyumba.（井戸は家から遠い）
+kati ya | 前 | ～の間に | Kijiji kiko **kati ya** milima miwili.（村は2つの山の間にある）
+pamoja na | 前 | ～といっしょに | Nilikuja **pamoja na** mke wangu.（妻といっしょに来た）
+bila | 前 | ～なしで | Chai **bila** sukari, tafadhali.（砂糖なしの紅茶をください）
+kuliko | 前 | ～より | Basi ni rahisi **kuliko** teksi.（バスはタクシーより安い）
+zaidi ya | 前 | ～以上、～より多く | Kuna watu **zaidi ya** mia.（100人以上いる）
+badala ya | 前 | ～の代わりに | Tumia asali **badala ya** sukari.（砂糖の代わりにはちみつを使って）
+tangu | 前 | ～以来 | Nimekuwa hapa **tangu** Jumatatu.（月曜からここにいる）
+dhidi ya | 前 | ～に対して | Chanjo **dhidi ya** surua.（はしかに対するワクチン）
+kwa ajili ya | 前 | ～のために | Nimenunua zawadi **kwa ajili ya** mama.（母のためにおみやげを買った）
+kufuatana na | 前 | ～によると、～に従って | **Kufuatana na** habari, mvua itanyesha.（ニュースによると雨が降る）
+ni | 句 | ～だ、～である | Mimi **ni** Mjapani.（私は日本人です）
+si | 句 | ～ではない | Mimi **si** Mkenya.（私はケニア人ではない）
+ndiye | 代 | まさにその人だ | Yeye **ndiye** mkulima bora.（彼こそいちばんの農家だ）
+chochote | 代 | 何でも | Nipe **chochote**.（何でもいいからちょうだい）
+mtu yeyote | 句 | だれでも | **Mtu yeyote** anaweza kujiunga.（だれでも入れる）
+kitu | 名 KI-VI | 物、こと | Nataka kununua **kitu**.（ちょっと買いたいものがある）
+jambo（mambo） | 名 JI-MA | 事、事柄 | Nina **jambo** la kukuambia.（話したいことがある）
+kuna | 句 | ある、いる | **Kuna** maji?（水はある？）
+hakuna | 句 | ない、いない | **Hakuna** umeme leo.（今日は電気がない）

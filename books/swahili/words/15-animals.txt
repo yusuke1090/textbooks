@@ -1,0 +1,59 @@
+# 動物・鳥・虫
+chui | 名 N | ヒョウ | **Chui** amepanda mti.（ヒョウが木に登った）
+duma | 名 N | チーター | **Duma** ni mnyama mwenye kasi kuliko wote.（チーターはいちばん速い動物だ）
+fisi | 名 N | ハイエナ | **Fisi** wanakula mizoga.（ハイエナは動物の死体を食べる）
+mbweha | 名 N | ジャッカル、キツネ | **Mbweha** analia usiku.（ジャッカルが夜に鳴く）
+kiboko（viboko） | 名 KI-VI | カバ | **Viboko** wanakaa majini mchana.（カバは昼、水の中にいる）
+kifaru（vifaru） | 名 KI-VI | サイ | **Vifaru** weusi wako hatarini kutoweka.（クロサイは絶滅の危機にある）
+nyati | 名 N | アフリカスイギュウ | **Nyati** ni hatari sana.（スイギュウはとても危険だ）
+pundamilia | 名 N | シマウマ | **Pundamilia** wana milia nyeusi na nyeupe.（シマウマには黒と白のしまがある）
+nyumbu | 名 N | ヌー | Maelfu ya **nyumbu** wanavuka mto.（何千頭ものヌーが川を渡る）
+swala | 名 N | ガゼル、レイヨウ | **Swala** wanakimbia haraka.（ガゼルは速く走る）
+ngiri | 名 N | イボイノシシ | **Ngiri** wanakimbia na mkia juu.（イボイノシシはしっぽを立てて走る）
+tumbili | 名 N | サル（ベルベットモンキー） | **Tumbili** wameiba ndizi.（サルがバナナを盗んだ）
+nyani | 名 N | ヒヒ | **Nyani** wanaishi kwa makundi.（ヒヒは群れで暮らす）
+sokwe | 名 N | チンパンジー、ゴリラ | **Sokwe** wanapatikana Gombe.（チンパンジーはゴンベにいる）
+mamba | 名 N | ワニ | Usiogelee, kuna **mamba**!（泳がないで、ワニがいる）
+kobe | 名 N | 陸ガメ | **Kobe** anaishi miaka mingi.（カメは長生きする）
+kasa | 名 N | ウミガメ | **Kasa** wanataga mayai ufukweni.（ウミガメは浜に卵を産む）
+mjusi（mijusi） | 名 M-MI | トカゲ | **Mjusi** yuko ukutani.（壁にトカゲがいる）
+kinyonga（vinyonga） | 名 KI-VI | カメレオン | **Kinyonga** anabadilisha rangi.（カメレオンは色を変える）
+chura（vyura） | 名 KI-VI | カエル | **Vyura** wanalia baada ya mvua.（雨のあとカエルが鳴く）
+sungura | 名 N | ウサギ | **Sungura** ni mjanja katika hadithi.（物語ではウサギはずる賢い）
+kindi（vindi） | 名 KI-VI | リス | **Kindi** anakula karanga.（リスがピーナッツを食べている）
+popo | 名 N | コウモリ | **Popo** wanatoka jioni.（コウモリは夕方出てくる）
+ngamia | 名 N | ラクダ | **Ngamia** wanafugwa kaskazini mwa Kenya.（ケニア北部ではラクダが飼われている）
+tai | 名 N | ワシ | **Tai** anaruka juu sana.（ワシがとても高く飛んでいる）
+kunguru | 名 N | カラス | **Kunguru** ni wengi Zanzibar.（ザンジバルにはカラスが多い）
+mbuni | 名 N | ダチョウ | **Mbuni** hawezi kuruka.（ダチョウは飛べない）
+njiwa | 名 N | ハト | **Njiwa** wanakula mtama.（ハトがモロコシを食べている）
+bundi | 名 N | フクロウ | Watu wengine wanaogopa **bundi**.（フクロウをこわがる人もいる）
+heroe | 名 N | フラミンゴ | **Heroe** wengi wako ziwa Natron.（ナトロン湖にはフラミンゴが多い）
+kasuku | 名 N | オウム | **Kasuku** anaweza kuiga sauti.（オウムは声をまねできる）
+kipepeo（vipepeo） | 名 KI-VI | チョウ | **Vipepeo** wako bustanini.（庭にチョウがいる）
+siafu | 名 N | サスライアリ（かむアリ） | **Siafu** wanauma sana.（サスライアリはかむと痛い）
+sisimizi | 名 N | 小さなアリ | **Sisimizi** wameingia kwenye sukari.（アリが砂糖に入った）
+mchwa | 名 M-MI | シロアリ | **Mchwa** wamekula mbao.（シロアリが木材を食べた）
+kichuguu（vichuguu） | 名 KI-VI | アリ塚 | **Kichuguu** ni kirefu kuliko mtu.（アリ塚は人より高い）
+buibui | 名 N | クモ | **Buibui** ametengeneza utando.（クモが巣を作った）
+nge | 名 N | サソリ | Angalia viatu, kuna **nge**!（靴を見て、サソリがいる）
+mende | 名 N | ゴキブリ | Jikoni kuna **mende**.（台所にゴキブリがいる）
+kunguni | 名 N | ナンキンムシ | Kitanda kina **kunguni**.（ベッドにナンキンムシがいる）
+nzige | 名 N | イナゴ（サバクトビバッタ） | **Nzige** wameharibu mazao.（イナゴが作物を荒らした）
+panzi | 名 N | バッタ | **Panzi** wanaruka nyasini.（バッタが草の中で跳ねている）
+konokono | 名 N | カタツムリ | **Konokono** wanatembea polepole.（カタツムリはゆっくり進む）
+papa | 名 N | サメ | **Papa** wanapatikana baharini.（サメは海にいる）
+pweza | 名 N | タコ | **Pweza** wa kuchoma ni mtamu.（焼きダコはおいしい）
+kaa | 名 N | カニ | **Kaa** wanatembea kwa ubavu.（カニは横に歩く）
+nyangumi | 名 N | クジラ | **Nyangumi** wanaonekana Mafia.（マフィア島でクジラが見られる）
+pomboo | 名 N | イルカ | Tuliona **pomboo** Kizimkazi.（キジムカジでイルカを見た）
+bawa（mabawa） | 名 JI-MA | 翼 | Ndege ana **mabawa** mawili.（鳥には翼が2つある）
+unyoya（manyoya） | 名 U | 羽、毛 | **Manyoya** ya mbuni ni marefu.（ダチョウの羽は長い）
+kiota（viota） | 名 KI-VI | 巣 | Ndege amejenga **kiota**.（鳥が巣を作った）
+kundi（makundi） | 名 JI-MA | 群れ、グループ | **Kundi** la tembo linakunywa maji.（ゾウの群れが水を飲んでいる）
+wanyamapori | 名 M-WA | 野生動物 | **Wanyamapori** ni utajiri wa Tanzania.（野生動物はタンザニアの財産だ）
+mzoga（mizoga） | 名 M-MI | 動物の死体 | Tai wanakula **mzoga**.（ワシが死体を食べている）
+mwindaji（wawindaji） | 名 M-WA | 狩人、狩りをする動物 | Simba ni **mwindaji** hodari.（ライオンは狩りがうまい）
+kufugwa | 動 | 飼われる | Mbwa **wanafugwa** kulinda nyumba.（犬は家を守るために飼われる）
+mkonga（mikonga） | 名 M-MI | ゾウの鼻 | Tembo anachota maji kwa **mkonga**.（ゾウは鼻で水をすくう）
+pembe za ndovu | 句 | 象牙 | Biashara ya **pembe za ndovu** ni marufuku.（象牙の取引は禁止されている）

@@ -1,0 +1,59 @@
+# 病院と病気
+kituo cha afya | 句 | 保健センター | **Kituo cha afya** kiko kijijini.（保健センターは村にある）
+mkunga（wakunga） | 名 M-WA | 助産師 | **Mkunga** alimsaidia kujifungua.（助産師がお産を手伝った）
+kujifungua | 動 | 出産する | **Amejifungua** mtoto wa kike.（女の子を産んだ）
+mjamzito（wajawazito） | 名 M-WA | 妊婦 | **Wajawazito** wanapimwa kila mwezi.（妊婦は毎月健診を受ける）
+kipimo cha damu | 句 | 血液検査 | Daktari ameagiza **kipimo cha damu**.（医者が血液検査を指示した）
+maabara | 名 N | 検査室、実験室 | Peleka sampuli **maabara**.（検体を検査室へ持っていって）
+sampuli | 名 N | 見本、検体 | Chukua **sampuli** ya maziwa.（牛乳の検体を取って）
+kidonge（vidonge） | 名 KI-VI | 錠剤 | Meza **vidonge** viwili mara tatu kwa siku.（1日3回、2錠ずつ飲んで）
+kumeza | 動 | 飲み込む | **Meza** dawa kwa maji.（水で薬を飲んで）
+dozi | 名 N | 服用量、1回分 | Maliza **dozi** yote.（薬を最後まで飲みきって）
+cheti（vyeti） | 名 KI-VI | 証明書、診断書 | Nipe **cheti** cha daktari.（医者の診断書をください）
+kliniki | 名 N | クリニック、健診 | Mama anaenda **kliniki** kila mwezi.（母親は毎月健診へ行く）
+kadi ya kliniki | 句 | 健診カード（母子手帳のようなもの） | Lete **kadi ya kliniki** ya mtoto.（子どもの健診カードを持ってきて）
+wodi | 名 N | 病棟 | Amelazwa **wodi** namba tatu.（3番病棟に入院している）
+kulazwa | 動 | 入院する | Bibi **amelazwa** hospitalini.（祖母は入院している）
+kuruhusiwa | 動 | 許される、退院する | **Ameruhusiwa** kurudi nyumbani.（家に帰ってよいことになった）
+dharura | 名 N | 緊急 | Hii ni **dharura**!（緊急です）
+gari la wagonjwa | 句 | 救急車 | Ita **gari la wagonjwa**.（救急車を呼んで）
+upasuaji | 名 U | 手術 | Alifanyiwa **upasuaji** jana.（昨日手術を受けた）
+kidonda（vidonda） | 名 KI-VI | 傷、ただれ | Safisha **kidonda** kila siku.（毎日傷を洗って）
+jeraha（majeraha） | 名 JI-MA | けが | **Jeraha** lake si kubwa.（彼のけがは大きくない）
+kuumia | 動 | けがをする | **Ameumia** mguu.（足をけがした）
+kuvunjika | 動 | 折れる、割れる | Mkono **umevunjika**.（腕が折れた）
+kuvimba | 動 | 腫れる | Goti **limevimba**.（ひざが腫れた）
+kizunguzungu | 名 KI-VI | めまい | Nina **kizunguzungu**.（めまいがする）
+kichefuchefu | 名 KI-VI | 吐き気 | Nasikia **kichefuchefu**.（吐き気がする）
+shinikizo la damu | 句 | 血圧 | **Shinikizo la damu** liko juu.（血圧が高い）
+kisukari | 名 KI-VI | 糖尿病 | **Kisukari** kinaongezeka mijini.（町で糖尿病が増えている）
+saratani | 名 N | がん | **Saratani** inatibika ikigunduliwa mapema.（がんは早く見つかれば治せる）
+UKIMWI | 名 U | エイズ | Elimu kuhusu **UKIMWI** inatolewa shuleni.（学校でエイズについて教えている）
+VVU | 名 | HIV（エイズのウイルス） | Kipimo cha **VVU** ni bure.（HIV の検査は無料）
+kifua kikuu | 句 | 結核 | **Kifua kikuu** kinatibika.（結核は治せる）
+kipindupindu | 名 KI-VI | コレラ | Chemsha maji kuzuia **kipindupindu**.（コレラを防ぐため水を沸かして）
+surua | 名 N | はしか | Watoto wapate chanjo ya **surua**.（子どもにははしかのワクチンを）
+virusi | 名 | ウイルス | **Virusi** vinaenea haraka.（ウイルスは速く広がる）
+kuambukiza | 動 | （病気を）うつす | Mafua **yanaambukiza** haraka.（かぜはすぐうつる）
+lishe | 名 N | 栄養、食事 | **Lishe** bora ni muhimu kwa watoto.（子どもにはよい栄養が大切）
+utapiamlo | 名 U | 栄養失調 | **Utapiamlo** ni tatizo vijijini.（村では栄養失調が問題だ）
+uzito | 名 U | 体重、重さ | Pima **uzito** wa mtoto.（子どもの体重を量って）
+urefu | 名 U | 身長、長さ、高さ | **Urefu** wako ni sentimita ngapi?（身長は何センチ？）
+kuzimia | 動 | 気を失う | **Alizimia** kwa sababu ya joto.（暑さで気を失った）
+kupumua | 動 | 息をする | **Pumua** polepole.（ゆっくり息をして）
+pumu | 名 N | ぜんそく | Ana **pumu** tangu utotoni.（子どものころからぜんそくがある）
+mzio | 名 M-MI | アレルギー | Nina **mzio** wa karanga.（ピーナッツのアレルギーがある）
+daktari wa meno | 句 | 歯医者 | Nenda kwa **daktari wa meno**.（歯医者に行って）
+tiba | 名 N | 治療 | **Tiba** ya malaria ni bure kwa watoto.（子どものマラリアの治療は無料）
+kutibu | 動 | 治療する | Daktari **anamtibu** mgonjwa.（医者が患者を治療している）
+mganga（waganga） | 名 M-WA | 伝統医、まじない師 | Wengine bado wanaenda kwa **mganga**.（今も伝統医に行く人がいる）
+dawa za kienyeji | 句 | 伝統薬 | **Dawa za kienyeji** zinatumika vijijini.（村では伝統薬が使われる）
+bima ya afya | 句 | 健康保険 | Una **bima ya afya**?（健康保険に入っている？）
+barakoa | 名 N | マスク | Vaa **barakoa** hospitalini.（病院ではマスクをして）
+dalili | 名 N | 症状、きざし | **Dalili** za malaria ni homa na kuumwa kichwa.（マラリアの症状は熱と頭痛だ）
+kinga | 名 N | 予防、免疫 | **Kinga** ni bora kuliko tiba.（予防は治療にまさる）
+kuchoma sindano | 句 | 注射をする | Muuguzi **atakuchoma sindano**.（看護師が注射をします）
+kuhara damu | 句 | 血便が出る（赤痢など） | Mtoto **anahara damu**, mpeleke hospitali.（子どもに血便が出ている、病院へ連れていって）
+ganzi | 名 N | しびれ、麻酔 | Mguu wangu una **ganzi**.（足がしびれている）
+kuwashwa | 動 | かゆい | **Ninawashwa** mgongoni.（背中がかゆい）
+mafua makali | 句 | インフルエンザ（ひどいかぜ） | **Mafua makali** yameenea shuleni.（学校でインフルエンザがはやっている）

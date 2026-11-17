@@ -1,0 +1,52 @@
+# 天気と自然
+hali ya hewa | 句 | 天気 | **Hali ya hewa** ni nzuri leo.（今日は天気がいい）
+mvua | 名 N | 雨 | **Mvua** inanyesha.（雨が降っている）
+kunyesha | 動 | （雨が）降る | Mvua **ilinyesha** usiku kucha.（一晩じゅう雨が降った）
+masika | 名 JI-MA | 大雨季（3〜5月） | Tunapanda mahindi **masika**.（大雨季にトウモロコシをまく）
+vuli | 名 N | 小雨季（10〜12月） | Mvua za **vuli** zimechelewa.（小雨季の雨が遅れている）
+kiangazi | 名 KI-VI | 乾季 | Wakati wa **kiangazi** majani yanakauka.（乾季は草が枯れる）
+msimu（misimu） | 名 M-MI | 季節、時期 | **Msimu** wa mvua umeanza.（雨季が始まった）
+jua | 名 JI-MA | 太陽、日差し | **Jua** ni kali leo.（今日は日差しが強い）
+joto | 名 JI-MA | 暑さ、熱 | Kuna **joto** sana.（とても暑い）
+baridi | 名 N | 寒さ、寒い、冷たい | Asubuhi kuna **baridi**.（朝は寒い）
+upepo（pepo） | 名 U | 風 | **Upepo** ni mkali.（風が強い）
+wingu（mawingu） | 名 JI-MA | 雲 | **Mawingu** meusi yanaonyesha mvua.（黒い雲は雨のしるし）
+ukungu | 名 U | 霧 | Kuna **ukungu** milimani.（山には霧がある）
+radi | 名 N | 雷 | **Radi** ilipiga mti.（雷が木に落ちた）
+ukame | 名 U | 干ばつ | **Ukame** umeua mifugo mingi.（干ばつで多くの家畜が死んだ）
+mafuriko | 名 JI-MA | 洪水 | **Mafuriko** yaliharibu mashamba.（洪水が畑をだめにした）
+hewa | 名 N | 空気 | **Hewa** ya kijijini ni safi.（村の空気はきれいだ）
+anga | 名 N | 空 | **Anga** ni safi leo.（今日は空が晴れている）
+nyota | 名 N | 星 | Usiku tunaona **nyota** nyingi.（夜は星がたくさん見える）
+mlima（milima） | 名 M-MI | 山 | **Mlima** Kilimanjaro ni mrefu.（キリマンジャロ山は高い）
+kilima（vilima） | 名 KI-VI | 丘 | Ng'ombe wanachunga **kilimani**.（牛は丘で草を食べている）
+bonde（mabonde） | 名 JI-MA | 谷、盆地、低地 | **Bonde** la Ufa ni refu sana.（大地溝帯はとても長い）
+mto（mito） | 名 M-MI | 川 | **Mto** umejaa maji.（川の水が増えている）
+ziwa（maziwa） | 名 JI-MA | 湖 | **Ziwa** Victoria ni kubwa.（ビクトリア湖は大きい）
+bahari | 名 N | 海 | Tulienda **baharini**.（海へ行った）
+pwani | 名 N | 海岸、沿岸 | Mombasa iko **pwani**.（モンバサは海岸にある）
+kisiwa（visiwa） | 名 KI-VI | 島 | Zanzibar ni **kisiwa**.（ザンジバルは島だ）
+msitu（misitu） | 名 M-MI | 森 | **Msitu** unakatwa.（森が切られている）
+mti（miti） | 名 M-MI | 木 | Tulipanda **miti** mia moja.（木を100本植えた）
+jani（majani） | 名 JI-MA | 葉、草 | Ng'ombe wanakula **majani**.（牛は草を食べる）
+ua（maua） | 名 JI-MA | 花 | **Maua** ni mazuri.（花がきれいだ）
+nyasi | 名 N | 草（芝） | **Nyasi** zimeota baada ya mvua.（雨のあと草が生えた）
+udongo | 名 U | 土 | **Udongo** huu una rutuba.（この土は肥えている）
+jiwe（mawe） | 名 JI-MA | 石 | Ondoa **mawe** shambani.（畑の石を取り除いて）
+mchanga | 名 M-MI | 砂 | Udongo wa **mchanga** hukauka haraka.（砂の土はすぐ乾く）
+tope | 名 JI-MA | 泥 | Barabara imejaa **matope**.（道は泥だらけだ）
+mazingira | 名 JI-MA | 環境 | Tutunze **mazingira**.（環境を守ろう）
+mnyama（wanyama） | 名 M-WA | 動物 | **Wanyama** wa porini wanaishi hapa.（ここには野生動物がいる）
+mbu | 名 N | 蚊 | **Mbu** wanaleta malaria.（蚊はマラリアを運ぶ）
+nzi | 名 N | ハエ | **Nzi** wengi wako bandani.（牛舎にハエがたくさんいる）
+nyoka | 名 N | ヘビ | Kuwa makini, kuna **nyoka**.（気をつけて、ヘビがいる）
+tembo | 名 N | ゾウ | **Tembo** waliharibu mahindi.（ゾウがトウモロコシを荒らした）
+simba | 名 N | ライオン | **Simba** ni hatari kwa mifugo.（ライオンは家畜にとって危険だ）
+twiga | 名 N | キリン | Tuliona **twiga** Serengeti.（セレンゲティでキリンを見た）
+nyuki | 名 N | ミツバチ | **Nyuki** wanasaidia maua.（ミツバチは花を助ける）
+mbuga ya wanyama | 句 | 国立公園、動物保護区 | Serengeti ni **mbuga ya wanyama** maarufu.（セレンゲティは有名な国立公園だ）
+porini | 副 | 野生で、やぶの中で | Wanyama wa **porini** si wa kufuga.（野生の動物は飼うものではない）
+kaskazini | 名 N | 北 | Arusha iko **kaskazini**.（アルーシャは北にある）
+kusini | 名 N | 南 | Mbeya iko **kusini**.（ムベヤは南にある）
+mashariki | 名 N | 東 | Afrika **Mashariki**（東アフリカ）
+magharibi | 名 N | 西 | Jua linazama **magharibi**.（太陽は西に沈む）

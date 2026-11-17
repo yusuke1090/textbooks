@@ -1,0 +1,57 @@
+# 家と暮らし
+nyumba | 名 N | 家 | **Nyumba** yetu iko karibu na shule.（私たちの家は学校の近くにある）
+nyumbani | 副 | 家で、家に | Niko **nyumbani**.（家にいます）
+chumba（vyumba） | 名 KI-VI | 部屋 | **Chumba** hiki ni kikubwa.（この部屋は広い）
+chumba cha kulala | 句 | 寝室 | **Chumba cha kulala** kina vitanda viwili.（寝室にはベッドが2つある）
+jiko（majiko） | 名 JI-MA | 台所、こんろ | Mama yuko **jikoni**.（母は台所にいる）
+mlango（milango） | 名 M-MI | 戸、ドア | Funga **mlango**.（戸を閉めて）
+dirisha（madirisha） | 名 JI-MA | 窓 | Fungua **dirisha**, kuna joto.（窓を開けて。暑い）
+ukuta（kuta） | 名 U | 壁 | **Ukuta** umepakwa rangi nyeupe.（壁は白く塗ってある）
+paa（mapaa） | 名 JI-MA | 屋根 | **Paa** linavuja mvua inaponyesha.（雨が降ると屋根が漏る）
+sakafu | 名 N | 床 | Safisha **sakafu**.（床を掃除して）
+kiti（viti） | 名 KI-VI | いす | Kaa kwenye **kiti**.（いすに座って）
+meza | 名 N | 机、テーブル | Weka kikombe **mezani**.（カップをテーブルに置いて）
+kitanda（vitanda） | 名 KI-VI | ベッド | **Kitanda** ni kidogo.（ベッドは小さい）
+chandarua（vyandarua） | 名 KI-VI | 蚊帳 | Lala ndani ya **chandarua**.（蚊帳の中で寝なさい）
+blanketi（mablanketi） | 名 JI-MA | 毛布 | Usiku nahitaji **blanketi**.（夜は毛布がいる）
+taa | 名 N | 明かり、ランプ | Washa **taa**, tafadhali.（明かりをつけてください）
+umeme | 名 U | 電気 | **Umeme** umekatika.（停電した）
+maji | 名 JI-MA | 水 | **Maji** ya bomba si salama kwa kunywa.（水道の水は飲むのに安全ではない）
+bomba（mabomba） | 名 JI-MA | 水道管、蛇口 | **Bomba** linavuja.（水道管が漏れている）
+ndoo | 名 N | バケツ | Jaza **ndoo** maji.（バケツに水を入れて）
+sabuni | 名 N | せっけん | Osha nguo kwa **sabuni**.（せっけんで服を洗いなさい）
+nguo | 名 N | 服、布 | Nimefua **nguo**.（服を洗った）
+shati（mashati） | 名 JI-MA | シャツ | **Shati** hili ni safi.（このシャツはきれいだ）
+viatu | 名 KI-VI | 靴（kiatu の複数） | Vua **viatu** mlangoni.（入口で靴を脱いで）
+kofia | 名 N | 帽子 | Vaa **kofia**, jua ni kali.（帽子をかぶって。日差しが強い）
+mfuko（mifuko） | 名 M-MI | 袋、ポケット | Weka simu **mfukoni**.（電話をポケットに入れて）
+ufunguo（funguo） | 名 U | 鍵 | Nimepoteza **ufunguo**.（鍵をなくした）
+simu | 名 N | 電話、携帯電話 | Nipigie **simu** jioni.（夕方に電話して）
+redio | 名 N | ラジオ | Babu anasikiliza **redio**.（祖父はラジオを聞いている）
+televisheni | 名 N | テレビ | Watoto wanatazama **televisheni**.（子どもたちがテレビを見ている）
+sufuria | 名 N | なべ | Weka **sufuria** jikoni.（なべをこんろにかけて）
+kikombe（vikombe） | 名 KI-VI | カップ、湯のみ | Nipe **kikombe** cha chai.（お茶を1杯ください）
+sahani | 名 N | 皿 | Osha **sahani**.（皿を洗って）
+kijiko（vijiko） | 名 KI-VI | スプーン | Nipe **kijiko**.（スプーンをください）
+kisu（visu） | 名 KI-VI | ナイフ、包丁 | **Kisu** hiki ni kikali.（この包丁はよく切れる）
+chupa | 名 N | びん | Nunua **chupa** mbili za maji.（水を2本買って）
+moto（mioto） | 名 M-MI | 火；熱い | Washa **moto**.（火をつけて）
+kuni | 名 N | まき | Tunapikia **kuni**.（まきで料理する）
+mkaa | 名 M-MI | 炭 | Bei ya **mkaa** imepanda.（炭の値段が上がった）
+kazi za nyumbani | 句 | 家事 | Watoto husaidia **kazi za nyumbani**.（子どもは家事を手伝う）
+kupika | 動 | 料理する | **Ninapika** wali.（ご飯を炊いています）
+kufua | 動 | （服を）洗濯する | Jumamosi **tunafua** nguo.（土曜に洗濯する）
+kuosha | 動 | 洗う | **Osha** vyombo.（食器を洗って）
+kufagia | 動 | 掃く | **Fagia** uwanja.（庭を掃いて）
+kusafisha | 動 | 掃除する、きれいにする | **Tunasafisha** banda kila siku.（毎日牛舎を掃除する）
+kulala | 動 | 寝る | **Ninalala** saa nne usiku.（夜10時に寝る）
+kuamka | 動 | 起きる | **Ninaamka** saa kumi na moja.（11時＝朝5時に起きる）
+kukaa | 動 | 座る、住む、いる | **Kaa** hapa.（ここに座って）
+kuishi | 動 | 住む、生きる | **Ninaishi** Dodoma.（ドドマに住んでいる）
+kuhamia | 動 | 引っ越す | **Tulihamia** Arusha mwaka jana.（去年アルーシャに引っ越した）
+kuvaa | 動 | 着る、身に着ける | **Vaa** koti, ni baridi.（上着を着なさい。寒い）
+kuvua | 動 | 脱ぐ | **Vua** viatu.（靴を脱いで）
+kuwasha | 動 | （火・明かりを）つける | **Washa** redio.（ラジオをつけて）
+kuzima | 動 | 消す | **Zima** taa ukitoka.（出るときは明かりを消して）
+kufunga | 動 | 閉める、結ぶ | **Funga** dirisha.（窓を閉めて）
+kufungua | 動 | 開ける | **Fungua** mlango.（戸を開けて）

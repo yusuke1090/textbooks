@@ -14,7 +14,7 @@
 | [🌍 アフリカの教科書](https://yusuke1090.github.io/textbooks/?b=africa) | アフリカの歴史・食べ物・文化・トレンドと、タンザニア・ケニア・マラウイの農業・酪農・IoT の会社・参入するなら（9章と付録、写真60枚） | 日本語・English |
 | [🇬🇧 イギリスの教科書](https://yusuke1090.github.io/textbooks/?b=uk) | イギリスの歴史・食べ物・文化・トレンドと、農業・酪農・アグリテックの会社・参入するなら（9章と付録、写真55枚） | 日本語・English |
 | [🛐 宗教の教科書](https://yusuke1090.github.io/textbooks/?b=religion) | 国ごとに多い宗教と、ユダヤ教・キリスト教・イスラム教・ヒンドゥー教・仏教・シク教・ジャイナ教・儒教・道教・神道の考え方・歴史・行事・暮らしの決まり（12章と付録、写真74枚） | 日本語・English |
-| [🗣️ スワヒリ語の教科書](https://yusuke1090.github.io/textbooks/?b=swahili) | 発音・あいさつ・数、名詞のクラスと動詞の形、市場・移動・畑・牛と酪農・仕事の場面の言葉と会話（17章と付録、写真37枚、練習と答えつき） | 日本語 |
+| [🗣️ スワヒリ語の教科書](https://yusuke1090.github.io/textbooks/?b=swahili) | 発音・あいさつ・数、名詞のクラスと動詞の形、市場・移動・畑・牛と酪農・仕事の場面の言葉と会話（17章と2,020語の単語帳と付録、写真37枚、練習と答えつき） | 日本語 |
 | [🎓 IELTS の教科書（バンド7）](https://yusuke1090.github.io/textbooks/?b=ielts) | IELTS アカデミックのバンド7 のための単語帳（2,017語、わからない単語にチェックして見直せる）と、Writing・Reading・Speaking・Listening の解き方・模範解答（5章、図1枚、🔊 の読み上げつき） | 日本語・English |
 | [🐍 Python の教科書](https://yusuke1090.github.io/textbooks/?b=python) | Ubuntu と VS Code で始めて、値・入れ物・関数・クラス・ファイル・例外から NumPy・pandas・matplotlib まで（10章） | 日本語・English |
 | [📊 統計の教科書](https://yusuke1090.github.io/textbooks/?b=stats) | 分散・相関・確率分布・期待値から、中心極限定理・回帰分析（OLS）とその注意点まで（8章、図5枚） | 日本語・English |
@@ -173,13 +173,14 @@ tools/            図や用語の一覧を作るスクリプト
 - 2026-11-15 に作った。タンザニアの標準のスワヒリ語で、ケニアでのちがいはそのつど書く。第1部 はじめの一歩（1〜5章）、第2部 文法（6〜12章）、第3部 市場・移動・畑・牛と酪農・仕事（13〜17章）。各章に練習と答え
 - 1章の話す人の数と国ごとの立場は、そのときにウェブで調べたもの。出典は付録C（`c-sources.md`）
 - 写真は `photos.json` と `python3 tools/fetch_photos.py swahili`（付録D `d-photos.md` も作り直す）。本棚の分野は「言葉」
+- 第4部の18章は話題別の単語帳（2,020語、35の話題、IELTS と同じ見せ方）。`books/swahili/words/*.txt`（1行に `単語 | 品詞とクラス | 日本語の意味 | 例文（訳つき）`、太字は `**…**` で自分で書く）に書き、`python3 tools/make_words.py swahili` で作り直す。🔊 は端末にスワヒリ語の声があるときだけ。付録A は ABC順の単語帳
 
 ### 🎓 IELTS の教科書（books/ielts）
 
 - 2026-11-15 に作った。1. 単語帳 2. Writing 3. Reading 4. Speaking 5. Listening の5章（本人が選んだ章立て）。説明は日本語、例文・模範解答・長文・音声は英語。English に切り替えると説明も英語になる
 - 模範解答・長文・音声のスクリプトは、この本のために書いたもの。Task 1 のグラフ（`images/task1-milk.svg`、架空のデータ）は matplotlib で作った。英語だけの図なので、日本語版と英語版で同じものを使う
 - Speaking の模範解答と Listening の練習は ```` ```listen ```` で、ブラウザの読み上げで聞ける。本棚の分野は「言葉」
-- 1章の単語帳（2,017語、28の話題）は `books/ielts/words/*.txt`（1行に `単語 | 品詞 | 日本語の意味 | English meaning | 例文`）に書き、`python3 tools/make_ielts_words.py` で ja・en の1章の「## 単語帳」から「練習問題」の前までを作り直す（まとまりの分け方はスクリプトの `GROUPS`）。例文の見出しの言葉は自動で太字になる。同じ言葉・同じ品詞が2回あると知らせる
+- 1章の単語帳（2,017語、28の話題）は `books/ielts/words/*.txt`（1行に `単語 | 品詞 | 日本語の意味 | English meaning | 例文`）に書き、`python3 tools/make_words.py ielts` で ja・en の1章の「## 単語帳」から「練習問題」の前までを作り直す（まとまりの分け方はスクリプトの `BOOKS` の `groups`）。例文の見出しの言葉は自動で太字になる。同じ言葉・同じ品詞が2回あると知らせる
 
 ### 🐍 Python の教科書（books/python）
 

@@ -1,0 +1,50 @@
+# 水・衛生・環境
+maji safi na salama | 句 | 安全な飲み水 | Kijiji kinahitaji **maji safi na salama**.（村には安全な水が必要だ）
+chanzo cha maji | 句 | 水源 | **Chanzo cha maji** kiko mbali.（水源は遠い）
+bwawa（mabwawa） | 名 JI-MA | ため池、ダム | Ng'ombe wanakunywa maji **bwawani**.（牛はため池で水を飲む）
+chemchemi | 名 N | 泉 | Maji ya **chemchemi** ni safi.（泉の水はきれいだ）
+mfereji（mifereji） | 名 M-MI | 水路、溝 | Safisha **mfereji** kabla ya mvua.（雨の前に水路を掃除して）
+kuchota maji | 句 | 水をくむ | Watoto wanaenda **kuchota maji**.（子どもが水くみに行く）
+kutibu maji | 句 | 水を消毒する | **Tibu maji** kwa klorini.（塩素で水を消毒して）
+kuvuja | 動 | 漏れる | Bomba **linavuja**.（水道管が漏れている）
+kuhifadhi maji | 句 | 水をためる | **Hifadhi maji** ya mvua kwenye tangi.（雨水をタンクにためて）
+kutiririka | 動 | 流れる | Maji **yanatiririka** kutoka mlimani.（水が山から流れてくる）
+kiwango cha maji | 句 | 水位 | **Kiwango cha maji** ziwani kimeshuka.（湖の水位が下がった）
+taka | 名 N | ごみ | Usitupe **taka** barabarani.（道にごみを捨てないで）
+jalala（majalala） | 名 JI-MA | ごみ捨て場 | Peleka taka **jalalani**.（ごみをごみ捨て場へ持っていって）
+pipa la taka | 句 | ごみ箱 | Tupa chupa kwenye **pipa la taka**.（瓶はごみ箱に捨てて）
+kutupa | 動 | 捨てる、投げる | **Usitupe** plastiki mtoni.（川にプラスチックを捨てないで）
+kuchakata | 動 | リサイクルする | **Tunachakata** chupa za plastiki.（ペットボトルをリサイクルしている）
+uchafuzi | 名 U | 汚染 | **Uchafuzi** wa maji unaleta magonjwa.（水の汚染は病気をもたらす）
+kuchafua | 動 | 汚す | Viwanda **vinachafua** mto.（工場が川を汚している）
+kelele | 名 N | 騒音、さわぎ | **Kelele** za magari ni nyingi mjini.（町は車の騒音がひどい）
+maji taka | 句 | 下水 | **Maji taka** yanatiririka barabarani.（下水が道に流れている）
+choo cha shimo | 句 | くみ取り式トイレ | Jenga **choo cha shimo** mbali na kisima.（くみ取りトイレは井戸から離して作って）
+vijidudu | 名 KI-VI | ばい菌、病原菌 | **Vijidudu** viko kwenye maji machafu.（汚れた水にばい菌がいる）
+ukataji miti | 句 | 森林伐採 | **Ukataji miti** unaleta ukame.（森の伐採は干ばつをまねく）
+kupanda miti | 句 | 植林する | **Tulipanda miti** mia moja.（木を100本植えた）
+nishati | 名 N | エネルギー | **Nishati** ya jua inatumika vijijini.（村では太陽エネルギーが使われる）
+nishati mbadala | 句 | 代替エネルギー | Serikali inahimiza **nishati mbadala**.（政府は代替エネルギーを勧めている）
+umeme wa jua | 句 | 太陽光の電気 | Tunatumia **umeme wa jua** usiku.（夜は太陽光の電気を使っている）
+mafuta ya taa | 句 | 灯油 | Taa hii inatumia **mafuta ya taa**.（このランプは灯油を使う）
+tabianchi | 名 N | 気候 | **Tabianchi** inabadilika.（気候が変わってきている）
+joto la dunia | 句 | 地球温暖化 | **Joto la dunia** linaongezeka.（地球の気温が上がっている）
+dunia | 名 N | 世界、地球 | **Dunia** ni yetu sote.（世界はみんなのもの）
+barafu | 名 N | 氷、雪 | **Barafu** ya Kilimanjaro inapungua.（キリマンジャロの氷が減っている）
+kuyeyuka | 動 | とける | Barafu **inayeyuka** kwa sababu ya joto.（暑さで氷がとける）
+kimbunga（vimbunga） | 名 KI-VI | 台風、ハリケーン、竜巻 | **Kimbunga** kimepiga pwani.（台風が海岸を襲った）
+tetemeko la ardhi | 句 | 地震 | **Tetemeko la ardhi** lilitokea usiku.（夜に地震があった）
+maporomoko ya ardhi | 句 | 地すべり、土砂崩れ | Mvua kubwa ilisababisha **maporomoko ya ardhi**.（大雨で土砂崩れが起きた）
+janga（majanga） | 名 JI-MA | 災害 | **Janga** la mafuriko liliua watu wengi.（洪水の災害で多くの人が亡くなった）
+volkano | 名 N | 火山 | Ol Doinyo Lengai ni **volkano** hai.（オルドイニョ・レンガイは活火山だ）
+kuhifadhi mazingira | 句 | 環境を守る | Tuna wajibu wa **kuhifadhi mazingira**.（私たちには環境を守る責任がある）
+uhifadhi | 名 U | 保護、保全 | **Uhifadhi** wa misitu ni muhimu.（森林の保全は大切だ）
+viumbe hai | 句 | 生き物 | Ziwa hili lina **viumbe hai** wengi.（この湖には多くの生き物がいる）
+kutoweka | 動 | 消える、絶滅する | Wanyama wengine **wanatoweka**.（消えつつある動物もいる）
+usafi wa mazingira | 句 | 環境衛生、清掃 | Jumamosi ni siku ya **usafi wa mazingira**.（土曜日は清掃の日）
+hewa safi | 句 | きれいな空気 | Kijijini kuna **hewa safi**.（村は空気がきれいだ）
+ukingo（kingo） | 名 U | 岸、ふち | Usijenge karibu na **ukingo** wa mto.（川岸の近くに家を建てないで）
+madini | 名 JI-MA | 鉱物、ミネラル | Tanzania ina **madini** mengi.（タンザニアには鉱物が多い）
+mgodi（migodi） | 名 M-MI | 鉱山 | Anafanya kazi **mgodini**.（鉱山で働いている）
+dhahabu | 名 N | 金 | Geita ina migodi ya **dhahabu**.（ゲイタには金鉱山がある）
+tanzanite | 名 N | タンザナイト（宝石） | **Tanzanite** inapatikana Mererani tu.（タンザナイトはメレラニでしか採れない）
