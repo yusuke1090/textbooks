@@ -158,6 +158,7 @@ const ERR = {
   "auth/invalid-login-credentials": "ID かパスワードがちがいます", "auth/email-already-in-use": "その ID はもう使われています。ログインしてください",
   "auth/weak-password": "パスワードは6文字以上にしてください", "auth/too-many-requests": "何度もまちがえたので、しばらく待ってからためしてください",
   "auth/network-request-failed": "インターネットにつながっていません", "auth/invalid-email": "ID に使えない文字があります",
+  "auth/configuration-not-found": "ログインの設定（Firebase の Authentication）がまだです", "auth/operation-not-allowed": "ログインの設定（メール / パスワード）がまだです",
 };
 function status(s) { lastState = s; draw(); }
 function draw() {
