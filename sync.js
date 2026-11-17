@@ -200,7 +200,7 @@ function draw() {
   const id = (user.email || "").endsWith(ID_DOMAIN) ? user.email.slice(0, -ID_DOMAIN.length) : user.email || user.displayName || "";
   const label = lastState === "err" ? "⚠ 同期できません" : lastState === "sync" ? "同期中…" : "同期 ✓";
   el.innerHTML = `<button type="button" class="acct-btn on${lastState === "err" ? " err" : ""}" aria-expanded="false">☁ <span>${label}</span></button>`
-    + `<div class="acct-menu" hidden><p><b>${esc(id)}</b> でログイン中</p><p class="m">スマホと PC の記録を合わせています</p><button type="button" class="acct-out">ログアウト</button></div>`;
+    + `<div class="acct-menu" hidden><p><b>${esc(id)}</b> でログイン中</p><button type="button" class="acct-out">ログアウト</button></div>`;
   const btn = el.querySelector(".acct-btn"), menu = el.querySelector(".acct-menu");
   btn.onclick = () => { menu.hidden = !menu.hidden; btn.setAttribute("aria-expanded", !menu.hidden); };
   el.querySelector(".acct-out").onclick = () => ui.logout && ui.logout();
