@@ -204,18 +204,21 @@ main { padding-bottom: 30px; }
 .wgrp { margin: 18px 2px 8px; font-size: 13px; font-weight: bold; color: var(--accent); }
 .wgrp:first-child { margin-top: 4px; }
 .wtopics { display: grid; grid-template-columns: repeat(auto-fill, minmax(150px, 1fr)); gap: 8px; }
-.wtp { display: flex; flex-direction: column; gap: 6px; min-height: 76px; padding: 10px 12px; font: inherit; text-align: left; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; }
+.wtp { position: relative; overflow: hidden; display: flex; flex-direction: column; gap: 6px; min-height: 76px; padding: 10px 12px; font: inherit; text-align: left; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 10px; cursor: pointer; }
 .wtp:hover { border-color: var(--accent); }
 .wtp.last { border-color: var(--accent); box-shadow: inset 3px 0 0 var(--accent); }
 .wtp b { font-size: 14px; line-height: 1.45; }
 .wtp small { display: flex; gap: 8px; margin-top: auto; font-size: 12px; color: var(--muted); }
 .wtp small .c { color: var(--accent); font-weight: bold; }
+.wtp small .r { color: var(--text); }
+.wrbar { position: absolute; left: 0; bottom: 0; height: 3px; background: var(--accent); }
+.wrd { flex: none; width: 22px; height: 22px; margin: 5px 0 0; accent-color: var(--accent); cursor: pointer; }
 .whd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 2px 2px 10px; }
 .whd h3 { margin: 0 !important; font-size: 17px; }
 .whd span { font-size: 13px; color: var(--muted); }
 .wmsg { padding: 18px 14px; font-size: 14px; color: var(--muted); text-align: center; background: var(--panel); border: 1px dashed var(--border); border-radius: 10px; }
 .wl { border: 1px solid var(--border); border-radius: 10px; background: var(--panel); overflow: hidden; }
-.wr { display: flex; gap: 10px; padding: 9px 12px 10px 8px; border-top: 1px solid var(--border); }
+.wr { display: flex; gap: 8px; padding: 9px 12px 10px 8px; border-top: 1px solid var(--border); }
 .wr:first-child { border-top: 0; }
 .wr.chk { background: var(--accent-soft); }
 .wc { flex: none; width: 30px; height: 30px; margin-top: 1px; border: 2px solid var(--border); border-radius: 50%; background: var(--panel); color: transparent; font-size: 16px; line-height: 1; cursor: pointer; }
@@ -488,7 +491,7 @@ li > .sticky-bar { margin-top: 4px; }
           qz: "問", qzBtn: "回答", qzPh: "答えを入力", qzOk: "⭕ 正解", qzNg: "❌ ちがいます", qzAns: "答え",
           lsTitle: "🔊 音声", lsPlay: "▶ 再生", lsStop: "■ 止める", lsSlow: "ゆっくり", lsShow: "スクリプトを見る", lsHide: "スクリプトを隠す",
           lsNone: "この端末では読み上げが使えません",
-          wTopics: "☰ 話題", wChk: "✓ 見直す", wHide: "意味を隠す", wQ: "単語・意味で探す", wMark: "あとで見直す（チェック）",
+          wTopics: "☰ 話題", wChk: "✓ 見直す", wHide: "意味を隠す", wQ: "単語・意味で探す", wMark: "あとで見直す（チェック）", wRead: "既読", wReadN: "既読 {n}",
           wSay: "発音を聞く", wNone: "まだチェックした単語はありません。わからない単語の ○ を押すと、ここに集まります。",
           wNoHit: "見つかりません", wWords: "語", wBack: "← 話題の一覧", wPrev: "◀ 前", wNextP: "次 ▶", wNextT: "次の話題へ",
           wChkTitle: "✓ チェックした単語", wFound: "の検索結果",
@@ -499,7 +502,7 @@ li > .sticky-bar { margin-top: 4px; }
           qz: "Q", qzBtn: "Check", qzPh: "Type your answer", qzOk: "⭕ Correct", qzNg: "❌ Not quite", qzAns: "Answer",
           lsTitle: "🔊 Audio", lsPlay: "▶ Play", lsStop: "■ Stop", lsSlow: "Slower", lsShow: "Show script", lsHide: "Hide script",
           lsNone: "Speech is not available on this device",
-          wTopics: "☰ Topics", wChk: "✓ Review", wHide: "Hide meanings", wQ: "Search words or meanings", wMark: "Mark to review",
+          wTopics: "☰ Topics", wChk: "✓ Review", wHide: "Hide meanings", wQ: "Search words or meanings", wMark: "Mark to review", wRead: "Read", wReadN: "{n} read",
           wSay: "Hear it", wNone: "No words marked yet. Tap the ○ next to a word you don't know to collect it here.",
           wNoHit: "No matches", wWords: "words", wBack: "← All topics", wPrev: "◀ Prev", wNextP: "Next ▶", wNextT: "Next topic",
           wChkTitle: "✓ Marked words", wFound: ": search results",
@@ -905,7 +908,8 @@ li > .sticky-bar { margin-top: 4px; }
       all.push(r);
     }
     if (!groups.length) groups.push({ name: "", topics: topics.map((_, i) => i) });
-    wordBook = { groups, topics, all, lang: flags.find((f) => /^[a-z]{2}$/.test(f)) || "en" };   // ```words sw ならスワヒリ語の声で読む
+    // ```words sw ならスワヒリ語の声で読む。audio があれば、端末の声ではなく audio/ の mp3 を鳴らす（tools/make_word_audio.py）
+    wordBook = { groups, topics, all, lang: flags.find((f) => /^[a-z]{2}$/.test(f)) || "en", audio: flags.includes("audio") };
     return `<div class="wbk"><div class="wtool"><button type="button" data-wv="home">${t("wTopics")}</button>`
       + `<button type="button" data-wv="chk">${t("wChk")} <span class="wn">0</span></button>`
       + `<button type="button" class="wt-hide" aria-pressed="false">${t("wHide")}</button>`
@@ -1764,10 +1768,17 @@ li > .sticky-bar { margin-top: 4px; }
   // ---------- 英文の読み上げ ----------
   const speech = window.speechSynthesis;
   let speaking = null;
+  // 英語の声は、ふつうの女性の声を先に（イギリス → オーストラリアなど → アメリカ）。名前で男女のわからない声は次、男性の声はその後。
+  // iPhone のおもしろ声や Eloquence の声（Grandpa・Rocko など、低い声や変わった声）は使わない
+  const FEMALE = /\b(kate|serena|martha|stephanie|fiona|moira|karen|catherine|tessa|samantha|allison|ava|susan|victoria|zoe|nicky|veena|isha|hazel|libby|sonia|maisie|zira|aria|jenny|emma|michelle|natasha|female)\b/i;
+  const MALE = /\b(daniel|arthur|oliver|george|ryan|thomas|rishi|gordon|aaron|alex|tom|lee|evan|nathan|david|mark|james|william|guy|christopher|eric|male)\b/i;
+  const ODD = /eloquence|novelty|\b(albert|bad news|bahh|bells|boing|bubbles|cellos|good news|jester|organ|superstar|trinoids|whisper|wobble|zarvox|fred|junior|ralph|kathy|eddy|flo|grandma|grandpa|reed|rocko|sandy|shelley|hysterical|deranged)\b/i;
   function englishVoices() {
-    const vs = speech ? speech.getVoices().filter((v) => /^en[-_]/i.test(v.lang)) : [];
-    const rank = (v) => (/GB/i.test(v.lang) ? 0 : /AU|IE|NZ/i.test(v.lang) ? 1 : /US/i.test(v.lang) ? 2 : 3);
-    return vs.sort((a, b) => rank(a) - rank(b) || (b.localService - a.localService));
+    const vs = speech ? speech.getVoices().filter((v) => /^en[-_]/i.test(v.lang) && !ODD.test(v.name + " " + v.voiceURI)) : [];
+    const who = (v) => (FEMALE.test(v.name) ? 0 : MALE.test(v.name) ? 2 : 1);
+    const where = (v) => (/GB/i.test(v.lang) ? 0 : /AU|IE|NZ/i.test(v.lang) ? 1 : /US/i.test(v.lang) ? 2 : 3);
+    const good = (v) => (/premium|enhanced/i.test(v.name + " " + v.voiceURI) ? 0 : 1);
+    return vs.sort((a, b) => who(a) - who(b) || where(a) - where(b) || good(a) - good(b) || (b.localService - a.localService));
   }
   if (speech) speech.getVoices();   // 声の一覧の読み込みを先に始めておく（Chrome は後から届く）
   function stopSpeech() {
@@ -1782,6 +1793,7 @@ li > .sticky-bar { margin-top: 4px; }
     if (!speech) { toast(t("lsNone")); return; }
     if (speaking === box) { stopSpeech(); return; }
     stopSpeech();
+    if (wordAu) wordAu.pause();
     let rows = [];
     try { rows = JSON.parse(box.dataset.rows); } catch (e) { rows = []; }
     const voices = englishVoices(), who = [];
@@ -1814,8 +1826,11 @@ li > .sticky-bar { margin-top: 4px; }
   // ---------- 単語帳: 話題の一覧・20語ずつのページ・チェック・見直す・探す ----------
   const WORDS_KEY = () => "textbooks-words-" + book.id;          // チェックした単語の鍵（単語＋例文）。日本語版と英語版で同じ
   const WVIEW_KEY = () => "textbooks-words-view-" + book.id;     // 最後に見ていた話題とページ
+  const WREAD_KEY = () => "textbooks-words-read-" + book.id;     // 既読のチェックを付けた単語（鍵は WORDS_KEY と同じ）
   const WPAGE = 20;
-  const wordSet = () => { try { return new Set(JSON.parse(store.get(WORDS_KEY(), "[]"))); } catch (e) { return new Set(); } };
+  const keySet = (k) => { try { return new Set(JSON.parse(store.get(k, "[]"))); } catch (e) { return new Set(); } };
+  const wordSet = () => keySet(WORDS_KEY());
+  const readSet = () => keySet(WREAD_KEY());
   let wv = { v: "home", t: 0, p: 0, q: "" };
   function initWords() {
     const box = body.querySelector(".wbk");
@@ -1830,12 +1845,14 @@ li > .sticky-bar { margin-top: 4px; }
     box.querySelector(".wt-hide").setAttribute("aria-pressed", hide);
     drawWords();
   }
-  function wordRow(r, set, tag) {
-    const on = set.has(r.k);
-    return `<div class="wr${on ? " chk" : ""}" data-k="${esc(r.k)}"><button type="button" class="wc" aria-pressed="${on}" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
+  function wordRow(r, set, tag, read) {
+    const on = set.has(r.k), rd = read.has(r.k);
+    return `<div class="wr${on ? " chk" : ""}${rd ? " read" : ""}" data-k="${esc(r.k)}">`
+      + `<input type="checkbox" class="wrd"${rd ? " checked" : ""} title="${t("wRead")}" aria-label="${t("wRead")}">`
+      + `<button type="button" class="wc" aria-pressed="${on}" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
       + `<div class="wb"><div class="wh"><b class="ww">${esc(r.w)}</b><span class="wp">${esc(r.pos)}</span>`
       + (tag ? `<span class="wtag">${esc(wordBook.topics[r.t].name.replace(/\s*[（(:：].*$/, ""))}</span>` : "")
-      + (wordVoice() !== false ? `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button>` : "") + `</div>`
+      + (wordBook.audio || wordVoice() !== false ? `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button>` : "") + `</div>`
       + `<div class="wm">${inline(r.mean)}</div><div class="we">${inline(r.ex)}</div></div></div>`;
   }
   // 単語を読む声。英語はいつも読める（声がなければ端末の標準）。ほかの言葉は、その言葉の声があるときだけ（false なら 🔊 を出さない）
@@ -1855,16 +1872,18 @@ li > .sticky-bar { margin-top: 4px; }
   function drawWords() {
     const box = body.querySelector(".wbk");
     if (!box || !wordBook) return;
-    const set = wordSet(), main = box.querySelector(".wmain"), W = wordBook;
+    const set = wordSet(), read = readSet(), main = box.querySelector(".wmain"), W = wordBook;
     box.querySelector('[data-wv="home"]').setAttribute("aria-pressed", wv.v === "home" || wv.v === "topic");
     box.querySelector('[data-wv="chk"]').setAttribute("aria-pressed", wv.v === "chk");
     box.querySelector(".wn").textContent = W.all.filter((r) => set.has(r.k)).length;
     if (wv.v === "home") {
       main.innerHTML = W.groups.map((g) => (g.name ? `<p class="wgrp">${esc(g.name)}</p>` : "") + `<div class="wtopics">`
         + g.topics.map((i) => {
-          const tp = W.topics[i], c = tp.rows.filter((r) => set.has(r.k)).length;
+          const tp = W.topics[i], c = tp.rows.filter((r) => set.has(r.k)).length, n = tp.rows.filter((r) => read.has(r.k)).length;
           return `<button type="button" class="wtp${wv.last === i ? " last" : ""}" data-wt="${i}"><b>${esc(tp.name)}</b>`
-            + `<small><span>${tp.rows.length} ${t("wWords")}</span>${c ? `<span class="c">✓ ${c}</span>` : ""}</small></button>`;
+            + `<small><span>${tp.rows.length} ${t("wWords")}</span>${n ? `<span class="r">${t("wReadN").replace("{n}", n)}</span>` : ""}`
+            + `${c ? `<span class="c">✓ ${c}</span>` : ""}</small>`
+            + (n ? `<i class="wrbar" style="width:${(100 * n / tp.rows.length).toFixed(1)}%"></i>` : "") + `</button>`;
         }).join("") + `</div>`).join("");
     } else {
       let rows, title, tag = true;
@@ -1877,7 +1896,7 @@ li > .sticky-bar { margin-top: 4px; }
       const range = rows.length ? `${from + 1}–${from + part.length} / ${rows.length} ${t("wWords")}` : "";
       let h = `<div class="whd"><h3>${title}</h3><span>${range}</span></div>`;
       if (!rows.length) h += `<p class="wmsg">${wv.v === "chk" ? t("wNone") : t("wNoHit")}</p>`;
-      else h += `<div class="wl">${part.map((r) => wordRow(r, set, tag)).join("")}</div>` + pager(rows.length);
+      else h += `<div class="wl">${part.map((r) => wordRow(r, set, tag, read)).join("")}</div>` + pager(rows.length);
       if (wv.v === "topic" && wv.p === pages - 1) {
         const nt = (wv.t + 1) % W.topics.length;
         h += `<button type="button" class="wnext" data-wt="${nt}">${nt ? `${t("wNextT")}: ${esc(W.topics[nt].name)} ▶` : t("wFirst") + " ▶"}</button>`;
@@ -1904,8 +1923,26 @@ li > .sticky-bar { margin-top: 4px; }
     u.rate = 0.9;
     speech.speak(u);
   }
+  // audio/ の mp3 を鳴らす（ファイルの名前は、単語を小文字にして a-z・0-9 以外を「-」にしたもの。make_word_audio.py の slug と同じ）
+  let wordAu = null;
+  function playWordAudio(w) {
+    stopSpeech();
+    if (speech) speech.cancel();
+    const name = w.normalize("NFKD").toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/^-+|-+$/g, "");
+    if (!wordAu) wordAu = new Audio();
+    wordAu.src = base() + "audio/" + name + ".mp3";
+    wordAu.play().catch(() => {});
+  }
   function wordsClick(e) {
     if (!e.target.closest(".wbk")) return false;
+    const rd = e.target.closest(".wrd");
+    if (rd) {   // 既読のチェック（押した時点で checked はもう変わっている）
+      const r = rd.closest(".wr"), read = readSet();
+      if (rd.checked) read.add(r.dataset.k); else read.delete(r.dataset.k);
+      store.set(WREAD_KEY(), JSON.stringify([...read]));
+      r.classList.toggle("read", rd.checked);
+      return true;
+    }
     const c = e.target.closest(".wc");
     if (c) {   // チェックを付ける・外す（見直すの画面でも、ページを変えるまでは行を残す）
       const r = c.closest(".wr"), set = wordSet(), on = !r.classList.contains("chk");
@@ -1917,7 +1954,12 @@ li > .sticky-bar { margin-top: 4px; }
       return true;
     }
     const s = e.target.closest(".ws");
-    if (s) { sayWord(s.closest(".wr").querySelector(".ww").textContent.replace(/[（(].*?[）)]/g, "").replace(/\b(sth|sb)\b/g, "")); return true; }
+    if (s) {
+      const w = s.closest(".wr").querySelector(".ww").textContent;
+      if (wordBook.audio) playWordAudio(w);
+      else sayWord(w.replace(/[（(].*?[）)]/g, "").replace(/\b(sth|sb)\b/g, ""));
+      return true;
+    }
     const go = (v) => { Object.assign(wv, v); drawWords(); wordsTop(); return true; };
     const tp = e.target.closest("[data-wt]");
     if (tp) { body.querySelector(".wt-q").value = ""; return go({ v: "topic", t: +tp.dataset.wt, p: 0, q: "" }); }
@@ -1943,7 +1985,7 @@ li > .sticky-bar { margin-top: 4px; }
     return false;
   }
   // 声の一覧はあとから届くことがある（Chrome）。英語以外の単語帳は、届いたら 🔊 を出し直す
-  if (speech && speech.addEventListener) speech.addEventListener("voiceschanged", () => { if (wordBook && wordBook.lang !== "en") drawWords(); });
+  if (speech && speech.addEventListener) speech.addEventListener("voiceschanged", () => { if (wordBook && wordBook.lang !== "en" && !wordBook.audio) drawWords(); });
   let wqTimer = 0;
   body.addEventListener("input", (e) => {
     if (!e.target.classList.contains("wt-q")) return;

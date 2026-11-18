@@ -127,6 +127,7 @@ Reading and Listening questions **paraphrase** the text. In Writing, paraphrase 
 - **2,017 words** that help with IELTS Band 7, in 28 topics, each with its part of speech, meaning and an example
 - Choose a topic below to see it **20 words per page**. Use the numbers at the bottom to turn pages, and "Next topic" on the last page to carry on. Next time, you start where you left off
 - Tap the **○** next to a word you don't know to mark it. "**✓ Review**" at the top collects your marked words from every topic (tap ○ again to unmark once you know it)
+- Tick the **box** at the far left once you've read a word. The topic list shows how many you've read
 - "**Hide meanings**" blurs meanings and examples. Try to recall the meaning, then tap to check. Tap 🔊 to hear a word, and search all topics with the search box
 - Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**. The word is in bold in its example; `sth` means something and `sb` means somebody
 

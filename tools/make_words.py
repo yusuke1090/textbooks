@@ -13,7 +13,8 @@ ielts の品詞の記号: n 名詞, v 動詞, adj 形容詞, adv 副詞, phr 句
 その本の単語帳の章の「## 単語帳」（英語は Word list）から「## 練習問題」（Exercises）の前までを作り直す。
 そこより前と後ろは手で書いた本文なので、そのまま残す。
 「## 単語帳」の説明と、1つの ```words のブロック（「## まとまり」「# 話題」の行と、1行に「単語 | 品詞 | 意味 | 例文」）を書く。
-読む画面（index.html）が、話題の一覧と 20語ずつのページ、○ のチェック・見直す・意味を隠す・探す・発音の付いた単語帳にする。
+読む画面（index.html）が、話題の一覧と 20語ずつのページ、既読の □・○ のチェック・見直す・意味を隠す・探す・発音の付いた単語帳にする。
+スワヒリ語の発音の mp3 は tools/make_word_audio.py で作る（```words sw audio）。
 例文の中の見出しの言葉（-s・-ed・-ing などの形も）を太字にする。同じ言葉が2回出てきたら知らせる。
 """
 import re
@@ -29,11 +30,13 @@ INTRO_IELTS = {
     "ja": """- IELTS のバンド7 に役立つ言葉 **{n:,} 語**を、{t} の話題に分けました。品詞・意味・例文つきです
 - 下の一覧で話題を選ぶと、**20語ずつ**のページで出ます。下の番号で次のページへ、最後のページの「次の話題へ」で続けられます。次に開いたときは、前に見ていた所から始まります
 - わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを全部の話題から集めて出します（覚えたら、もう一度押して外す）
+- 読んだ単語は、左はしの **□** にチェックを入れます（既読）。話題の一覧に、既読の数が出ます
 - 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。🔊 で発音、「単語・意味で探す」で全部の話題から探せます
 - 品詞の記号: **名** 名詞、**動** 動詞、**形** 形容詞、**副** 副詞、**句** いくつかの語のまとまり、**句動** 句動詞、**接** 接続詞、**前** 前置詞、**慣** 慣用句。例文の太字がその言葉で、`sth` は something、`sb` は somebody の略です""",
     "en": """- **{n:,} words** that help with IELTS Band 7, in {t} topics, each with its part of speech, meaning and an example
 - Choose a topic below to see it **20 words per page**. Use the numbers at the bottom to turn pages, and "Next topic" on the last page to carry on. Next time, you start where you left off
 - Tap the **○** next to a word you don't know to mark it. "**✓ Review**" at the top collects your marked words from every topic (tap ○ again to unmark once you know it)
+- Tick the **box** at the far left once you've read a word. The topic list shows how many you've read
 - "**Hide meanings**" blurs meanings and examples. Try to recall the meaning, then tap to check. Tap 🔊 to hear a word, and search all topics with the search box
 - Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**. The word is in bold in its example; `sth` means something and `sb` means somebody""",
 }
@@ -42,7 +45,8 @@ INTRO_SW = {
     "ja": """- この本の言葉と、東アフリカの暮らし・畑・牛と酪農でよく使う言葉 **{n:,} 語**を、{t} の話題に分けました。品詞・意味・例文（日本語の訳つき）があります
 - 下の一覧で話題を選ぶと、**20語ずつ**のページで出ます。下の番号で次のページへ、最後のページの「次の話題へ」で続けられます。次に開いたときは、前に見ていた所から始まります
 - わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを全部の話題から集めて出します（覚えたら、もう一度押して外す）
-- 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。「単語・意味で探す」は、スワヒリ語でも日本語でも探せます。🔊 は、端末にスワヒリ語の声があるときだけ出ます
+- 読んだ単語は、左はしの **□** にチェックを入れます（既読）。話題の一覧に、既読の数が出ます
+- 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。「単語・意味で探す」は、スワヒリ語でも日本語でも探せます。🔊 で発音を聞けます（機械で作った声です）
 - 名詞は（ ）に複数の形を、品詞にクラス（M-WA・KI-VI など、6章）を書きました。動詞は辞書の形（ku-）、形容詞は頭のない形（-zuri）です。例文の太字が、その言葉です""",
 }
 # 本ごとの設定: 単語帳の章のファイル、言葉、品詞の扱い、まとまり（ファイルの番号の、はじめの番号）、説明、```words の印
@@ -50,7 +54,7 @@ BOOKS = {
     "ielts": dict(chapter="01-vocabulary.md", langs=["ja", "en"], fields=5, pos=POS, intro=INTRO_IELTS, flag="",
                   groups=[(1, "学術の言葉", "Academic words"), (5, "話題ごとの言葉", "Words by topic"),
                           (23, "Writing と Speaking で使う言葉", "Words for Writing and Speaking")]),
-    "swahili": dict(chapter="18-words.md", langs=[None], fields=4, pos=None, intro=INTRO_SW, flag=" sw",
+    "swahili": dict(chapter="18-words.md", langs=[None], fields=4, pos=None, intro=INTRO_SW, flag=" sw audio",
                     groups=[(1, "はじめの言葉", ""), (5, "暮らしの言葉", ""), (14, "自然と社会の言葉", ""),
                             (22, "畑と牛の言葉", ""), (28, "文を作る言葉", "")]),
 }

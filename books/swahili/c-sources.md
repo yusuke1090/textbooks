@@ -17,3 +17,7 @@
 ## 酪農の言葉
 
 - 人工授精（uhimilishaji）: タンザニア畜産水産省「[2024/25年度 予算演説](https://www.parliament.go.tz/uploads/documents/sw-1738927106-1715697161-Hotuba_ya_Bajeti_ya_Wizara_ya_Mifugo_na_Uvuvi_kwa_Mwaka_wa_Fedha_2024_2025.pdf)」（Hali ya Uhimilishaji Nchini）
+
+## 単語帳の発音（🔊）
+
+- 声は [Piper](https://github.com/OHF-Voice/piper1-gpl) の「[sw_CD-lanfrica-medium](https://huggingface.co/rhasspy/piper-voices/tree/main/sw/sw_CD/lanfrica/medium)」（コンゴのスワヒリ語の男性の声。学習に使った録音は [Lanfrica の Kiswahili TTS Dataset](https://lanfrica.com/record/kiswahili-tts-dataset)）で作り、[Praat](https://www.fon.hum.uva.nl/praat/) で女性の声の高さに変えました。機械の声なので、本当の発音とちがうところがあります
