@@ -3,7 +3,7 @@
 
   python3 tools/make_trip.py <Natural Earth の geojson のフォルダ>
 
-- trip/trip.json: 町（名前・経度緯度・その町に着くまでの時間・写真）と、地図の陸と湖（メルカトルの SVG パス）
+- trip/trip.json: 町（名前・経度緯度・その町に着くまでの時間・写真・おみやげ）と、地図の陸と湖（メルカトルの SVG パス）
 - trip/<slug>.jpg: 町の写真の小さい版（教科書の写真から 160px の正方形に切る）
 地図は Natural Earth の 1:50m（パブリックドメイン）の ne_50m_land.geojson と ne_50m_lakes.geojson を使う。
 https://github.com/nvkelso/natural-earth-vector/tree/master/geojson からダウンロードしておく。
@@ -18,35 +18,35 @@ from PIL import Image, ImageOps
 ROOT = Path(__file__).resolve().parent.parent
 OUT = ROOT / "trip"
 
-# (slug, 日本語, English, 経度, 緯度, 前の町からの時間, 写真 = 教科書/画像)
+# (slug, 日本語, English, 経度, 緯度, 前の町からの時間, 写真 = 教科書/画像, おみやげ = (絵文字, 日本語, English))
 STOPS = [
-    ("tokyo", "東京", "Tokyo", 139.69, 35.69, 0, "religion/hatsumode"),
-    ("kyoto", "京都", "Kyoto", 135.77, 34.97, 0.5, "religion/fushimi-inari"),
-    ("beijing", "北京", "Beijing", 116.41, 39.88, 1, "religion/temple-of-heaven"),
-    ("lhasa", "ラサ", "Lhasa", 91.12, 29.66, 1.5, "religion/potala"),
-    ("lumbini", "ルンビニ", "Lumbini", 83.28, 27.47, 2, "religion/lumbini"),
-    ("varanasi", "バラナシ", "Varanasi", 83.01, 25.32, 2, "religion/varanasi"),
-    ("amritsar", "アムリトサル", "Amritsar", 74.88, 31.62, 2.5, "religion/golden-temple"),
-    ("yazd", "ヤズド", "Yazd", 54.37, 31.90, 3, "religion/yazd"),
-    ("istanbul", "イスタンブール", "Istanbul", 28.98, 41.01, 3, "religion/hagia-sophia"),
-    ("jerusalem", "エルサレム", "Jerusalem", 35.23, 31.78, 3, "religion/dome-of-the-rock"),
-    ("cairo", "カイロ", "Cairo", 31.26, 30.05, 3, "religion/al-azhar"),
-    ("lalibela", "ラリベラ", "Lalibela", 39.04, 12.03, 3.5, "religion/lalibela"),
-    ("nairobi", "ナイロビ", "Nairobi", 36.82, -1.29, 3.5, "africa/nairobi"),
-    ("serengeti", "セレンゲティ", "Serengeti", 34.83, -2.33, 3.5, "africa/serengeti"),
-    ("arusha", "アルーシャ", "Arusha", 36.68, -3.37, 3.5, "swahili/arusha-clock"),
-    ("kilimanjaro", "キリマンジャロ", "Kilimanjaro", 37.36, -3.07, 4, "africa/kilimanjaro"),
-    ("zanzibar", "ザンジバル", "Zanzibar", 39.19, -6.16, 4, "africa/dhow"),
-    ("dar", "ダルエスサラーム", "Dar es Salaam", 39.28, -6.82, 4, "swahili/dar-waterfront"),
-    ("malawi", "マラウイ湖", "Lake Malawi", 34.84, -14.02, 4, "africa/lake-malawi"),
-    ("rome", "ローマ", "Rome", 12.45, 41.90, 4.5, "religion/st-peters"),
-    ("wittenberg", "ヴィッテンベルク", "Wittenberg", 12.64, 51.87, 4.5, "religion/wittenberg"),
-    ("london", "ロンドン", "London", -0.12, 51.50, 4.5, "uk/westminster"),
-    ("stonehenge", "ストーンヘンジ", "Stonehenge", -1.83, 51.18, 4.5, "uk/stonehenge"),
-    ("cotswolds", "コッツウォルズ", "Cotswolds", -1.76, 51.88, 4.5, "uk/cotswolds"),
-    ("lakedistrict", "湖水地方", "Lake District", -3.08, 54.46, 5, "uk/herdwick"),
-    ("edinburgh", "エディンバラ", "Edinburgh", -3.20, 55.95, 5, "uk/edinburgh-castle"),
-    ("home", "東京", "Tokyo", 139.69, 35.69, 6, "religion/hatsumode"),
+    ("tokyo", "東京", "Tokyo", 139.69, 35.69, 0, "religion/hatsumode", ("🍘", "せんべい", "rice crackers")),
+    ("kyoto", "京都", "Kyoto", 135.77, 34.97, 0.5, "religion/fushimi-inari", ("🍵", "抹茶", "matcha")),
+    ("beijing", "北京", "Beijing", 116.41, 39.88, 1, "religion/temple-of-heaven", ("🥟", "餃子", "dumplings")),
+    ("lhasa", "ラサ", "Lhasa", 91.12, 29.66, 1.5, "religion/potala", ("🧣", "ヤクの毛のマフラー", "yak-wool scarf")),
+    ("lumbini", "ルンビニ", "Lumbini", 83.28, 27.47, 2, "religion/lumbini", ("📿", "数珠", "prayer beads")),
+    ("varanasi", "バラナシ", "Varanasi", 83.01, 25.32, 2, "religion/varanasi", ("🪔", "ディヤ（灯明）", "diya lamp")),
+    ("amritsar", "アムリトサル", "Amritsar", 74.88, 31.62, 2.5, "religion/golden-temple", ("🍛", "カレー", "curry")),
+    ("yazd", "ヤズド", "Yazd", 54.37, 31.90, 3, "religion/yazd", ("🍬", "ペルシャのお菓子", "Persian sweets")),
+    ("istanbul", "イスタンブール", "Istanbul", 28.98, 41.01, 3, "religion/hagia-sophia", ("🧿", "ナザール・ボンジュウ", "nazar charm")),
+    ("jerusalem", "エルサレム", "Jerusalem", 35.23, 31.78, 3, "religion/dome-of-the-rock", ("🫒", "オリーブ", "olives")),
+    ("cairo", "カイロ", "Cairo", 31.26, 30.05, 3, "religion/al-azhar", ("🏺", "つぼ", "clay jar")),
+    ("lalibela", "ラリベラ", "Lalibela", 39.04, 12.03, 3.5, "religion/lalibela", ("✝️", "エチオピアの十字架", "Ethiopian cross")),
+    ("nairobi", "ナイロビ", "Nairobi", 36.82, -1.29, 3.5, "africa/nairobi", ("🧺", "キオンド（かご）", "kiondo basket")),
+    ("serengeti", "セレンゲティ", "Serengeti", 34.83, -2.33, 3.5, "africa/serengeti", ("🦓", "シマウマの置き物", "zebra carving")),
+    ("arusha", "アルーシャ", "Arusha", 36.68, -3.37, 3.5, "swahili/arusha-clock", ("💎", "タンザナイト", "tanzanite")),
+    ("kilimanjaro", "キリマンジャロ", "Kilimanjaro", 37.36, -3.07, 4, "africa/kilimanjaro", ("☕", "キリマンジャロ・コーヒー", "Kilimanjaro coffee")),
+    ("zanzibar", "ザンジバル", "Zanzibar", 39.19, -6.16, 4, "africa/dhow", ("🌶️", "スパイス", "spices")),
+    ("dar", "ダルエスサラーム", "Dar es Salaam", 39.28, -6.82, 4, "swahili/dar-waterfront", ("🎨", "ティンガティンガの絵", "Tingatinga painting")),
+    ("malawi", "マラウイ湖", "Lake Malawi", 34.84, -14.02, 4, "africa/lake-malawi", ("🐟", "チャンボ（湖の魚）", "chambo fish")),
+    ("rome", "ローマ", "Rome", 12.45, 41.90, 4.5, "religion/st-peters", ("🍝", "パスタ", "pasta")),
+    ("wittenberg", "ヴィッテンベルク", "Wittenberg", 12.64, 51.87, 4.5, "religion/wittenberg", ("🥨", "プレッツェル", "pretzel")),
+    ("london", "ロンドン", "London", -0.12, 51.50, 4.5, "uk/westminster", ("🫖", "紅茶", "tea")),
+    ("stonehenge", "ストーンヘンジ", "Stonehenge", -1.83, 51.18, 4.5, "uk/stonehenge", ("🪨", "石の置き物", "stone ornament")),
+    ("cotswolds", "コッツウォルズ", "Cotswolds", -1.76, 51.88, 4.5, "uk/cotswolds", ("🧀", "チーズ", "cheese")),
+    ("lakedistrict", "湖水地方", "Lake District", -3.08, 54.46, 5, "uk/herdwick", ("🐑", "ひつじのぬいぐるみ", "toy sheep")),
+    ("edinburgh", "エディンバラ", "Edinburgh", -3.20, 55.95, 5, "uk/edinburgh-castle", ("🥃", "ウイスキー", "whisky")),
+    ("home", "東京", "Tokyo", 139.69, 35.69, 6, "religion/hatsumode", ("🍘", "せんべい", "rice crackers")),
 ]
 
 BOX = (-30, 165, -40, 68)   # 経度・緯度の範囲（この中にかかる陸だけを入れる）
@@ -114,7 +114,7 @@ def main():
     src_dir = Path(sys.argv[1] if len(sys.argv) > 1 else ".")
     OUT.mkdir(exist_ok=True)
     stops = []
-    for slug, ja, en, lon, lat, h, photo in STOPS:
+    for slug, ja, en, lon, lat, h, photo, gift in STOPS:
         book, name = photo.split("/")
         img = ROOT / "books" / book / "images" / f"{name}.jpg"
         src = next((p["src"] for p in json.loads((ROOT / "books" / book / "photos.json").read_text()) if p["file"] == f"{name}.jpg"), None)
@@ -126,7 +126,7 @@ def main():
                 ImageOps.fit(im.convert("RGB"), (160, 160), Image.LANCZOS).save(thumb, quality=82, optimize=True)
         x, y = merc(lon, lat)
         stops.append({"ja": ja, "en": en, "x": round(x, 2), "y": round(y, 2), "h": h,
-                      "img": f"books/{book}/images/{name}.jpg", "thumb": f"trip/{'tokyo' if slug == 'home' else slug}.jpg", "src": src})
+                      "gift": dict(zip(("e", "ja", "en"), gift)), "img": f"books/{book}/images/{name}.jpg", "thumb": f"trip/{'tokyo' if slug == 'home' else slug}.jpg", "src": src})
     data = {"stops": stops,
             "land": path_of(src_dir / "ne_50m_land.geojson", MIN_AREA),
             "lakes": path_of(src_dir / "ne_50m_lakes.geojson", 0.15)}
