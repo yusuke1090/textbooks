@@ -348,23 +348,33 @@ li > .sticky-bar { margin-top: 4px; }
 .td-goal select { margin-left: 4px; padding: 2px 6px; font: inherit; font-size: 13px; color: var(--text); background: var(--bg); border: 1px solid var(--border); border-radius: 6px; }
 .td-cont { display: block; margin-top: 12px; padding: 9px 12px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 14px; font-weight: 700; text-decoration: none;
   color: var(--accent); background: var(--accent-soft); border: 1px solid var(--accent); border-radius: 10px; }
-.td-cal { --c: 13px; margin-top: 14px; padding: 10px 2px 3px; border-top: 1px solid var(--border); overflow-x: auto; overflow-y: hidden; }
-@media (min-width: 700px) { .td-cal { --c: 15px; } }
-.cal { display: grid; grid-auto-flow: column; grid-template-rows: 14px repeat(7, var(--c)); gap: 3px; width: max-content; margin: 0 auto; }
-.cal .mo, .cal .wd { font-size: 10px; line-height: 14px; color: var(--muted); white-space: nowrap; }
-.cal .wd { line-height: var(--c); padding-right: 4px; }
-.cal i { width: var(--c); height: var(--c); border-radius: 3px; background: var(--border); cursor: pointer; }
-.cal i.l1 { background: color-mix(in srgb, var(--accent) 30%, var(--panel)); }
-.cal i.l2 { background: color-mix(in srgb, var(--accent) 55%, var(--panel)); }
-.cal i.l3 { background: color-mix(in srgb, var(--accent) 80%, var(--panel)); }
-.cal i.l4 { background: var(--accent); }
-.cal i.now { outline: 2px solid var(--text); outline-offset: 0; }
-.cal i.fut { visibility: hidden; }
-.td-foot { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 4px 12px; margin-top: 8px; font-size: 12px; color: var(--muted); }
-.td-foot .lg { display: inline-flex; align-items: center; gap: 3px; }
-.td-foot .lg i { display: inline-block; width: 10px; height: 10px; border-radius: 2px; background: var(--border); }
-.td-foot .lg i.l2 { background: color-mix(in srgb, var(--accent) 55%, var(--panel)); }
-.td-foot .lg i.l4 { background: var(--accent); }
+/* 旅（教科書をめぐる世界一周）: 地図と、着いた町の写真 */
+.td-trip { margin-top: 14px; padding-top: 12px; border-top: 1px solid var(--border); }
+.td-map { position: relative; overflow: hidden; border-radius: 12px; background: color-mix(in srgb, #4a90c8 16%, var(--panel)); }
+.td-map svg { display: block; width: 100%; }
+.td-map .land { fill: color-mix(in srgb, var(--accent) 20%, var(--panel)); }
+.td-map .lake { fill: color-mix(in srgb, #4a90c8 16%, var(--panel)); }
+.td-map .rt { fill: none; stroke: var(--muted); stroke-width: 1.5; stroke-dasharray: 3 4; opacity: .7; }
+.td-map .went { fill: none; stroke: #e8a317; stroke-width: 3; stroke-linecap: round; stroke-linejoin: round; }
+.td-map .st { fill: var(--muted); }
+.td-map .st.v { fill: #e8a317; }
+.td-map .st.n { fill: var(--panel); stroke: #e8a317; stroke-width: 2; }
+.td-map .me { fill: #e8a317; stroke: #fff; stroke-width: 2; }
+.td-map .ring { fill: #e8a317; transform-box: fill-box; transform-origin: center; animation: tdPulse 2s ease-out infinite; }
+@keyframes tdPulse { from { transform: scale(1); opacity: .5; } to { transform: scale(3); opacity: 0; } }
+@media (prefers-reduced-motion: reduce) { .td-map .ring { animation: none; opacity: 0; } }
+.td-map text { fill: var(--text); stroke: var(--panel); stroke-width: 3; paint-order: stroke; font-weight: 700; }
+.td-next { position: absolute; left: 8px; top: 8px; max-width: calc(100% - 16px); padding: 3px 10px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap;
+  font-size: 12.5px; font-weight: 700; background: color-mix(in srgb, var(--panel) 88%, transparent); border-radius: 999px; }
+.td-towns { display: flex; gap: 8px; margin-top: 10px; padding-bottom: 2px; overflow-x: auto; }
+.td-towns button { flex: none; width: 54px; padding: 0; font: inherit; color: var(--text); background: none; border: 0; cursor: pointer; }
+.td-towns img { display: block; width: 46px; height: 46px; margin: 0 auto; border-radius: 50%; object-fit: cover; border: 2px solid #e8a317; }
+.td-towns span { display: block; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; font-size: 10.5px; }
+.td-towns .next img { filter: grayscale(1) blur(2px); opacity: .55; border: 2px dashed var(--muted); }
+.td-towns .next span { color: var(--muted); }
+.zoom.fit img { width: min(960px, 94vw); }
+.zoom p a { color: #9cc9ff; }
+.td-foot { margin-top: 8px; font-size: 12px; color: var(--muted); }
 /* 目標に届いたときのお祝い */
 #cheer { position: fixed; left: 50%; top: 50%; z-index: 60; transform: translate(-50%, -50%) scale(.8); opacity: 0; pointer-events: none; transition: transform .25s, opacity .25s;
   width: min(86vw, 340px); padding: 22px 20px 18px; text-align: center; background: var(--panel); border: 2px solid var(--accent); border-radius: 20px; box-shadow: 0 16px 50px rgba(0,0,0,.3); }
@@ -372,6 +382,7 @@ li > .sticky-bar { margin-top: 4px; }
 #cheer .big { font-size: 44px; line-height: 1.1; }
 #cheer b { display: block; margin-top: 8px; font-size: 18px; }
 #cheer p { margin: 6px 0 0; font-size: 14px; color: var(--muted); }
+#cheer img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; border-radius: 12px; }
 #toast { position: fixed; left: 50%; bottom: 84px; transform: translateX(-50%); z-index: 40; padding: 8px 16px; border-radius: 10px;
   background: #333; color: #fff; font-size: 13.5px; display: none; max-width: calc(100vw - 32px); }
 @media (max-width: 480px) { body { font-size: 15px; } #body h1 { font-size: 21px; } #body h2 { font-size: 17.5px; } #body table { font-size: 13px; } #body th, #body td { padding: 5px 7px; } }
@@ -474,6 +485,33 @@ li > .sticky-bar { margin-top: 4px; }
     return { cur, best: Math.max(best, cur) };
   }
   const fmtMin = (sec) => { const m = Math.floor(sec / 60); return m >= 60 ? `${Math.floor(m / 60)}時間${m % 60 ? m % 60 + "分" : ""}` : `${m}分`; };
+  const fmtLeft = (sec, en) => {   // 残りの時間（分は切り上げ）
+    const m = Math.max(1, Math.ceil(sec / 60)), h = Math.floor(m / 60), r = m % 60;
+    return en ? (h ? `${h}h${r ? ` ${r}m` : ""}` : `${m} min`) : fmtMin(m * 60);
+  };
+  const studyTotal = (s) => Object.values(s.days).reduce((a, b) => a + b, 0);
+
+  // ---------- 旅（教科書をめぐる世界一周）: これまでに勉強した時間の合計で、町から町へ進む ----------
+  // trip/trip.json は tools/make_trip.py で作る（町の h = 前の町からの時間）。最後の町（東京）に着くと、次の周へ
+  let trip = null, tripLoad = null;
+  const loadTrip = () => tripLoad || (tripLoad = getJSON("trip/trip.json").then((x) => {
+    let c = 0;
+    x.cum = x.stops.map((s) => (c += s.h * 3600));
+    x.total = c;
+    return (trip = x);
+  }).catch(() => null));
+  function tripAt(sec) {   // 何周目（0から）、最後に着いた町 i、次の町まで進んだ割合 f、次の町までの残り秒
+    const lap = Math.floor(sec / trip.total), r = sec - lap * trip.total;
+    let i = 0;
+    while (trip.cum[i + 1] <= r) i++;
+    const len = trip.cum[i + 1] - trip.cum[i];
+    return { lap, i, f: (r - trip.cum[i]) / len, left: trip.cum[i + 1] - r, n: lap * (trip.stops.length - 1) + i };
+  }
+  function arrivedOn(days, sec) {   // 合計が sec 秒になった日
+    let c = 0;
+    for (const k of Object.keys(days).sort()) { c += days[k]; if (c >= sec) return k; }
+    return null;
+  }
   let toastTimer = 0;
   function toast(msg) {
     const t = $("toast");
@@ -572,38 +610,19 @@ li > .sticky-bar { margin-top: 4px; }
       const ch = pos && (chsOf[lb.id] || [])[pos.idx];
       cont = `<a class="td-cont" href="?b=${encodeURIComponent(lb.id)}">▶ 続きから: ${esc(lb.icon || "📘")} ${esc(L(lb.title, "ja"))}${ch ? "　" + esc(L(ch.title, pos.lang || lb.langs[0])) : ""}</a>`;
     }
-    // カレンダー: 日曜はじまりで、今週をふくむ 17週（広い画面は 26週）
-    const W = innerWidth >= 700 ? 26 : 17, start = new Date(); start.setHours(12, 0, 0, 0); start.setDate(start.getDate() - start.getDay() - (W - 1) * 7);
-    let cal = `<span></span>` + ["日", "", "火", "", "木", "", "土"].map((w) => `<span class="wd">${w}</span>`).join("");
-    let lastMonth = -1, monthSec = 0, total = 0;
-    const now = new Date(), d = new Date(start);
-    Object.values(s.days).forEach((v) => { total += v; });
+    let monthSec = 0;
+    const total = studyTotal(s);
     Object.keys(s.days).forEach((k) => { if (k.slice(0, 7) === today.slice(0, 7)) monthSec += s.days[k]; });
-    for (let w = 0; w < W; w++) {
-      const mo = d.getMonth();
-      const nd = new Date(d); nd.setDate(nd.getDate() + 7);
-      const label = mo !== lastMonth && (w > 0 || nd.getMonth() === mo);   // 左はしの週だけの月は、次の月と重なるので書かない
-      cal += `<span class="mo">${label ? mo + 1 + "月" : ""}</span>`;
-      lastMonth = mo;
-      for (let k = 0; k < 7; k++) {
-        const key = dayKey(d), v = s.days[key] || 0, fut = d > now;
-        const lv = !v ? 0 : s.met[key] ? (v >= goal * 2 ? 4 : 3) : v >= goal / 2 ? 2 : 1;
-        cal += `<i class="${lv ? "l" + lv : ""}${key === today ? " now" : ""}${fut ? " fut" : ""}" data-d="${key}" data-v="${v}" title="${d.getMonth() + 1}月${d.getDate()}日 ${fmtMin(v)}"></i>`;
-        d.setDate(d.getDate() + 1);
-      }
-    }
     el.innerHTML = `<div class="td-top"><div class="td-ring${done ? " done" : ""}"><svg viewBox="0 0 92 92"><circle class="bg" cx="46" cy="46" r="38"/>`
       + `<circle class="fg" cx="46" cy="46" r="38" stroke-dasharray="${C.toFixed(1)}" stroke-dashoffset="${(C * (1 - ratio)).toFixed(1)}"/></svg>`
       + `<div class="in"><b>${Math.floor(sec / 60)}</b><small>/ ${s.goal}分</small></div></div>`
       + `<div class="td-info"><div class="td-streak">🔥 ${st.cur ? `${st.cur}日連続` : "今日から連続記録"}${st.best ? `<small>最長 ${st.best}日</small>` : ""}</div><div class="td-msg">${msg}</div>`
       + `<label class="td-goal">1日の目標<select id="goalSel">${[5, 10, 15, 20, 30, 45, 60].map((m) => `<option value="${m}"${m === s.goal ? " selected" : ""}>${m}分</option>`).join("")}</select></label></div></div>`
       + cont
-      + `<div class="td-cal"><div class="cal">${cal}</div></div>`
-      + `<div class="td-foot"><span id="calTip">今月 ${fmtMin(monthSec)}・これまで ${fmtMin(total)}${s.devices > 1 ? `（${s.devices}台の合計）` : ""}</span>`
-      + `<span class="lg">少 <i></i><i class="l2"></i><i class="l4"></i> 多</span></div>`;
+      + `<div class="td-trip" id="trip"></div>`
+      + `<div class="td-foot">今月 ${fmtMin(monthSec)}・これまで ${fmtMin(total)}${s.devices > 1 ? `（${s.devices}台の合計）` : ""}</div>`;
     el.hidden = false;
-    const cw = el.querySelector(".td-cal");
-    cw.scrollLeft = cw.scrollWidth;   // 狭い画面では、今週が見えるように右はしへ
+    loadTrip().then((x) => { if (x) renderTrip(); });
     $("goalSel").onchange = (e) => {
       const s2 = loadStudy();
       s2.goal = +e.target.value;
@@ -612,13 +631,57 @@ li > .sticky-bar { margin-top: 4px; }
       if ((studyAll().days[dayKey()] || 0) >= s2.goal * 60) { s2.met[dayKey()] = 1; saveStudy(s2); }
       renderToday();
     };
-    el.querySelector(".cal").onclick = (e) => {
-      const c = e.target.closest("i[data-d]");
-      if (!c) return;
-      const [y, m, dd] = c.dataset.d.split("-").map(Number), wd = "日月火水木金土"[new Date(y, m - 1, dd).getDay()];
-      $("calTip").textContent = `${m}月${dd}日（${wd}） ${fmtMin(+c.dataset.v)}${studyAll().met[c.dataset.d] ? "　🎯 目標達成" : ""}`;
+  }
+
+  // 旅の地図: 最後に着いた町と次の町が入るように寄る（近い町どうしは大きく、遠い町は引いて）。下に着いた町の写真
+  function renderTrip() {
+    const box = $("trip");
+    if (!box || !trip) return;
+    const s = studyAll(), total = studyTotal(s), p = tripAt(total), S = trip.stops, A = S[p.i], B = S[p.i + 1];
+    const px = A.x + (B.x - A.x) * p.f, py = A.y + (B.y - A.y) * p.f;
+    const W = box.clientWidth || 340, H = Math.round(Math.min(W / 1.9, 230));
+    const w = Math.min(180, Math.max(12, Math.abs(B.x - A.x) * 1.5, Math.abs(B.y - A.y) * 1.6 * W / H)), h = w * H / W, k = W / w;
+    const cx = (A.x + B.x) / 2, cy = (A.y + B.y) / 2;
+    const pts = (a) => a.map((q) => `${q.x},${q.y}`).join(" ");
+    const went = S.slice(0, p.i + 1).concat([{ x: px, y: py }]);
+    const last = p.i + 1 === S.length - 1;   // 東京へ帰る最後の道のりは、そこを進むときだけ描く（はじめの東京と重なるので）
+    const dots = S.map((q, j) => j === S.length - 1 && !last ? "" : `<circle class="st${j <= p.i ? " v" : j === p.i + 1 ? " n" : ""}" cx="${q.x}" cy="${q.y}" r="${(j === p.i + 1 ? 4.5 : 3.5) / k}"${j === p.i + 1 ? ` style="stroke-width:${2 / k}"` : ""}/>`).join("");
+    // 町の名前: 2つの町が横に並ぶときは外側の横、縦に並ぶときは外側の上下に
+    const side = Math.abs(B.x - A.x) >= Math.abs(B.y - A.y);
+    const label = (q, away) => {   // 地図のはしで切れるときは、反対側に出す
+      const g = 9 / k, tw = q.ja.length * 13 / k, L = cx - w / 2, R = cx + w / 2, at = `font-size="${12.5 / k}" style="stroke-width:${3 / k}"`;
+      if (side) {
+        const right = away ? q.x + g + tw <= R : q.x - g - tw < L;
+        return `<text x="${q.x + (right ? g : -g)}" y="${q.y}" dy=".35em" text-anchor="${right ? "start" : "end"}" ${at}>${esc(q.ja)}</text>`;
+      }
+      return `<text x="${Math.min(Math.max(q.x, L + tw / 2), R - tw / 2)}" y="${q.y + (away ? 15 / k : -g)}" text-anchor="middle" ${at}>${esc(q.ja)}</text>`;
+    };
+    const aw = side ? B.x > A.x : B.y > A.y;   // B が右（下）なら、B の名前を右（下）へ
+    const lapTxt = p.lap ? `${p.lap + 1}周目・` : "";
+    const svg = `<svg viewBox="${cx - w / 2} ${cy - h / 2} ${w} ${h}" height="${H}" role="img" aria-label="${esc(A.ja)}から${esc(B.ja)}へ">`
+      + `<path class="land" d="${trip.land}"/><path class="lake" d="${trip.lakes}"/>`
+      + `<polyline class="rt" points="${pts(last ? S : S.slice(0, -1))}" vector-effect="non-scaling-stroke"/>`
+      + `<polyline class="went" points="${pts(went)}" vector-effect="non-scaling-stroke"/>`
+      + dots + label(A, !aw) + label(B, aw)
+      + `<circle class="ring" cx="${px}" cy="${py}" r="${6 / k}"/><circle class="me" cx="${px}" cy="${py}" r="${6 / k}" style="stroke-width:${2 / k}"/></svg>`;
+    // 着いた町（この周）と、次の町（ぼかして）
+    const towns = S.slice(0, p.i + 1).map((q, j) => `<button type="button" data-j="${j}"><img src="${q.thumb}" alt="" loading="lazy"><span>${esc(q.ja)}</span></button>`).join("")
+      + `<button type="button" class="next" data-j="next"><img src="${B.thumb}" alt="" loading="lazy"><span>${esc(B.ja)}</span></button>`;
+    box.innerHTML = `<div class="td-map">${svg}<div class="td-next">✈ ${lapTxt}${esc(B.ja)}まで あと ${fmtLeft(p.left)}</div></div><div class="td-towns">${towns}</div>`;
+    const tw = box.querySelector(".td-towns");
+    tw.scrollLeft = tw.scrollWidth;   // 新しい町が見えるように右はしへ
+    tw.onclick = (e) => {
+      const b = e.target.closest("button[data-j]");
+      if (!b) return;
+      if (b.dataset.j === "next") return toast(`あと ${fmtLeft(p.left)}で ${B.ja}`);
+      const j = +b.dataset.j, q = S[j], at = p.lap * trip.total + trip.cum[j];
+      const day = j || p.lap ? arrivedOn(s.days, at) : null, md = day ? `${+day.slice(5, 7)}月${+day.slice(8)}日` : "";
+      const when = !j && !p.lap ? "出発" : day ? (j ? `${md}に着いた` : `${md}に世界一周`) : "";
+      showZoom(q.img, `<b>${esc(q.ja)}</b>${when ? `　${when}` : ""}　<a href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(q.src.replace(/ /g, "_"))}" target="_blank" rel="noopener">写真の出典</a>`, true);
     };
   }
+  let tripResize = 0;
+  addEventListener("resize", () => { clearTimeout(tripResize); tripResize = setTimeout(renderTrip, 200); });
 
   // 今勉強中の本は、章ごとの練習問題の数を数えて、問題ごとの結果を ● × ○ で並べる
   const chsOf = {}, qzCount = {};
@@ -1246,10 +1309,13 @@ li > .sticky-bar { margin-top: 4px; }
   function closeZoom() { if (zoomEl) { zoomEl.remove(); zoomEl = null; document.body.style.overflow = ""; } }
   function openZoom(img) {
     const cap = img.parentNode.querySelector("figcaption"), lab = cap ? cap.querySelector("b").textContent : "";
+    showZoom(img.getAttribute("src"), cap ? `<b>${esc(lab)}</b>　${esc(cap.textContent.slice(lab.length))}` : "", false, img.alt);
+  }
+  function showZoom(src, capHtml, fit, alt = "") {   // fit: 画面の幅に合わせる（写真）。図は 820px のまま広げて読む
+    closeZoom();
     zoomEl = document.createElement("div");
-    zoomEl.className = "zoom";
-    zoomEl.innerHTML = `<button type="button" class="x">✕ ${t("close")}</button><img src="${esc(img.getAttribute("src"))}" alt="${esc(img.alt)}">`
-      + `<p>${cap ? `<b>${esc(lab)}</b>　${esc(cap.textContent.slice(lab.length))}` : ""}</p>`;
+    zoomEl.className = "zoom" + (fit ? " fit" : "");
+    zoomEl.innerHTML = `<button type="button" class="x">✕ ${t("close")}</button><img src="${esc(src)}" alt="${esc(alt)}"><p>${capHtml}</p>`;
     zoomEl.addEventListener("click", (ev) => { if (ev.target === zoomEl || ev.target.closest(".x")) closeZoom(); });
     document.body.appendChild(zoomEl);
     document.body.style.overflow = "hidden";
@@ -2161,20 +2227,42 @@ li > .sticky-bar { margin-top: 4px; }
     if (cheerNow) s.cheer = k;
     saveStudy(s);
     if (cheerNow) cheer(studyAll());
+    if (trip) {                                // 旅: この10秒で次の町に着いたら、その町の写真を出す
+      const now = studyTotal(all), p = tripAt(now);
+      if (p.n > tripAt(now - 10).n) arrive(p);
+    }
   }, 10000);
-  function cheer(s) {
-    const st = streakOf(s), el = $("cheer"), en = state.lang === "en";
-    el.innerHTML = `<div class="big">🎉</div><b>${en ? `Today's goal reached: ${s.goal} min` : `今日の目標 ${s.goal}分 達成！`}</b>`
-      + `<p>🔥 ${en ? `${st.cur}-day streak` : `${st.cur}日連続`}${st.cur > 1 && st.cur >= st.best ? (en ? " — your best!" : "（最長記録）") : ""}</p>`;
+  // お祝いは1つずつ順に出す（押すか、時間がたつと消える）
+  const pops = [];
+  let popOn = false;
+  function popup(html, ms) { pops.push([html, ms]); if (!popOn) nextPop(); }
+  function nextPop() {
+    const el = $("cheer"), q = pops.shift();
+    if (!q) { popOn = false; return; }
+    popOn = true;
+    el.innerHTML = q[0];
     el.classList.add("on");
-    const off = () => el.classList.remove("on");
+    let done = false;
+    const off = () => { if (done) return; done = true; el.classList.remove("on"); setTimeout(nextPop, 400); };
     el.onclick = off;
-    setTimeout(off, 5000);
+    setTimeout(off, q[1]);
+  }
+  function cheer(s) {
+    const st = streakOf(s), en = state.lang === "en";
+    popup(`<div class="big">🎉</div><b>${en ? `Today's goal reached: ${s.goal} min` : `今日の目標 ${s.goal}分 達成！`}</b>`
+      + `<p>🔥 ${en ? `${st.cur}-day streak` : `${st.cur}日連続`}${st.cur > 1 && st.cur >= st.best ? (en ? " — your best!" : "（最長記録）") : ""}</p>`, 5000);
+  }
+  function arrive(p) {
+    const en = state.lang === "en", S = trip.stops, home = p.i === 0, q = home ? S[S.length - 1] : S[p.i], nx = S[p.i + 1], nm = (x) => esc(en ? x.en : x.ja);
+    const head = home ? (en ? "🌏 You've gone around the world!" : "🌏 世界一周しました！") : en ? `🎉 You've arrived in ${nm(q)}` : `🎉 ${nm(q)}に着きました`;
+    const next = en ? `Next: ${nm(nx)} (${fmtLeft(p.left, true)} to go)` : `次は ${nm(nx)}（あと ${fmtLeft(p.left)}）`;
+    popup(`<img src="${q.img}" alt=""><b>${head}</b><p>${home ? (en ? `Lap ${p.lap + 1} starts. ` : `${p.lap + 1}周目へ。`) : ""}${next}</p>`, 7000);
   }
 
   async function openBook() {
     book = books.find((b) => b.id === bookId);
     if (book) store.set("textbooks-last", book.id);
+    loadTrip();   // 町に着いたことを知らせるため
     $("reader").hidden = false;
     if (!book) { body.innerHTML = `<p class="msg err">「${esc(bookId)}」という教科書はありません。<a href="./">一覧へ</a></p>`; return; }
     $("bookIcon").textContent = book.icon || "📘";
