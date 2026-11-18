@@ -49,6 +49,14 @@ STOPS = [
     ("home", "東京", "Tokyo", 139.69, 35.69, 6, "religion/hatsumode", ("🍘", "せんべい", "rice crackers")),
 ]
 
+# 地図に出す地域の名前（日本語, English, 経度, 緯度）。旅の全体を見るときだけ出す
+REGIONS = [
+    ("アジア", "Asia", 100, 47),
+    ("中東", "Middle East", 46, 23),
+    ("アフリカ", "Africa", 19, 3),
+    ("ヨーロッパ", "Europe", 32, 50),
+]
+
 BOX = (-30, 165, -40, 68)   # 経度・緯度の範囲（この中にかかる陸だけを入れる）
 TOL = 0.04                  # 間引き（度）
 MIN_AREA = 0.02             # これより小さい島は入れない（度²）
@@ -127,7 +135,8 @@ def main():
         x, y = merc(lon, lat)
         stops.append({"ja": ja, "en": en, "x": round(x, 2), "y": round(y, 2), "h": h,
                       "gift": dict(zip(("e", "ja", "en"), gift)), "img": f"books/{book}/images/{name}.jpg", "thumb": f"trip/{'tokyo' if slug == 'home' else slug}.jpg", "src": src})
-    data = {"stops": stops,
+    regions = [{"ja": ja, "en": en, "x": round(merc(lon, lat)[0], 2), "y": round(merc(lon, lat)[1], 2)} for ja, en, lon, lat in REGIONS]
+    data = {"stops": stops, "regions": regions,
             "land": path_of(src_dir / "ne_50m_land.geojson", MIN_AREA),
             "lakes": path_of(src_dir / "ne_50m_lakes.geojson", 0.15)}
     (OUT / "trip.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
