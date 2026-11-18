@@ -373,7 +373,7 @@ li > .sticky-bar { margin-top: 4px; }
 .td-towns .next img { filter: grayscale(1) blur(2px); opacity: .55; border: 2px dashed var(--muted); }
 .td-towns .next span { color: var(--muted); }
 .td-map .ft { fill: var(--panel); stroke: #e8a317; }
-/* 旅日記: 勉強した日ごとに、おみやげ・日付・分の棒（15分に届いた日は金色）・着いた町 */
+/* 旅日記: 勉強した日ごとに、おみやげ（目標に届いた日だけ）・日付・分の棒（目標に届いた日は金色）・着いた町 */
 .td-log { margin-top: 12px; }
 .td-log-h { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
 .td-log-h span { font-size: 12px; color: var(--muted); }
@@ -381,7 +381,6 @@ li > .sticky-bar { margin-top: 4px; }
 .td-log li { display: grid; grid-template-columns: 26px 2.9em 64px 3em minmax(0, 1fr); align-items: center; gap: 8px; padding: 2px 0; font-size: 12.5px; cursor: pointer; }
 @media (min-width: 600px) { .td-log li { grid-template-columns: 26px 2.9em 140px 3em minmax(0, 1fr); } }
 .td-log .g { display: grid; place-items: center; width: 26px; height: 26px; font-size: 15px; border-radius: 8px; }
-.td-log .met .g { background: color-mix(in srgb, #e8a317 22%, var(--panel)); box-shadow: inset 0 0 0 2px #e8a317; }
 .td-log .d { color: var(--muted); white-space: nowrap; }
 .td-log .bar { height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; }
 .td-log .bar i { display: block; height: 100%; border-radius: 4px; background: var(--accent); }
@@ -533,7 +532,7 @@ li > .sticky-bar { margin-top: 4px; }
     const p = tripAt(sec), A = trip.stops[p.i], B = trip.stops[p.i + 1];
     return { x: A.x + (B.x - A.x) * p.f, y: A.y + (B.y - A.y) * p.f };
   }
-  function tripLog(s) {   // 旅日記: 勉強した日ごとに、時間・その日の前と後の合計・着いた町・おみやげ（その日の終わりにいた町の）
+  function tripLog(s) {   // 旅日記: 勉強した日ごとに、時間・その日の前と後の合計・着いた町・その日の終わりにいた町（目標に届いた日は、そこのおみやげをもらう）
     const S = trip.stops, N = S.length - 1;
     let c = 0;
     return Object.keys(s.days).sort().filter((k) => s.days[k] > 0).map((k) => {
@@ -548,6 +547,8 @@ li > .sticky-bar { margin-top: 4px; }
     t.textContent = msg; t.style.display = "block";
     clearTimeout(toastTimer); toastTimer = setTimeout(() => (t.style.display = "none"), 2600);
   }
+  // どこかを押したら消す（押したものが新しく出すときは、そのあとの click で出る）
+  addEventListener("pointerdown", () => { if ($("toast").style.display === "block") { clearTimeout(toastTimer); $("toast").style.display = "none"; } }, true);
   const getJSON = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status + " " + u); return r.json(); });
   const getText = (u) => fetch(u, { cache: "no-cache" }).then((r) => { if (!r.ok) throw new Error(r.status + " " + u); return r.text(); });
   const L = (x, lang) => (x == null ? "" : typeof x === "string" ? x : x[lang] || x.ja || Object.values(x)[0]);
@@ -703,10 +704,10 @@ li > .sticky-bar { margin-top: 4px; }
     // 旅日記: 新しい日が上。はじめは3日分。言葉は町に着いた日だけ
     const today = dayKey(), N = S.length - 1, maxV = Math.max(s.goal * 60, ...log.map((d) => d.v));
     const what = (d) => d.got.includes(N) ? "世界一周 🌏" : d.got.length ? d.got.map((j) => S[j].ja).join("・") + "に着いた 🎉" : "";
-    const rows = log.slice(diaryOpen ? 0 : -3).reverse().map((d) => `<li data-k="${d.k}"${d.met ? ` class="met"` : ""}><span class="g">${d.at.gift.e}</span>`
+    const rows = log.slice(diaryOpen ? 0 : -3).reverse().map((d) => `<li data-k="${d.k}"${d.met ? ` class="met"` : ""}><span class="g">${d.met ? d.at.gift.e : ""}</span>`
       + `<span class="d">${d.k === today ? "今日" : `${+d.k.slice(5, 7)}/${+d.k.slice(8)}`}</span><span class="bar"><i style="width:${(d.v / maxV * 100).toFixed(1)}%"></i></span>`
       + `<span class="m">${Math.max(1, Math.floor(d.v / 60))}分</span><span class="w">${esc(what(d))}</span></li>`).join("");
-    const diary = log.length ? `<div class="td-log"><div class="td-log-h"><b>旅日記</b><span>おみやげ ${log.length}個</span></div><ol>${rows}</ol>`
+    const diary = log.length ? `<div class="td-log"><div class="td-log-h"><b>旅日記</b><span>おみやげ ${log.filter((d) => d.met).length}個</span></div><ol>${rows}</ol>`
       + (log.length > 3 ? `<button type="button" class="td-more">${diaryOpen ? "閉じる" : "もっと見る"}</button>` : "") + `</div>` : "";
     box.innerHTML = `<div class="td-map">${svg}<div class="td-next">✈ ${lapTxt}${esc(B.ja)}まで あと ${fmtLeft(p.left)}</div></div><div class="td-towns">${towns}</div>${diary}`;
     const lg = box.querySelector(".td-log");
@@ -715,7 +716,7 @@ li > .sticky-bar { margin-top: 4px; }
       const li = e.target.closest("li[data-k]");
       if (!li) return;
       const d = log.find((x) => x.k === li.dataset.k), [y, m, dd] = d.k.split("-").map(Number), wd = "日月火水木金土"[new Date(y, m - 1, dd).getDay()];
-      toast(`${m}月${dd}日（${wd}） ${fmtMin(d.v)}・おみやげ ${d.at.gift.e} ${d.at.gift.ja}（${d.at.ja}）`);
+      toast(`${m}月${dd}日（${wd}） ${fmtMin(d.v)}${d.met ? `・おみやげ ${d.at.gift.e} ${d.at.gift.ja}（${d.at.ja}）` : ""}`);
     };
     const tw = box.querySelector(".td-towns");
     tw.scrollLeft = tw.scrollWidth;   // 新しい町が見えるように右はしへ
