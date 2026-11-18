@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 355" font-family="system-ui, sans-serif" font-size="12">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52514e"/></marker></defs>
+<rect width="820" height="355" rx="10" fill="#ffffff"/>
+<rect x="10" y="20" width="440" height="290" rx="10" fill="none" stroke="#1baf7a" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="22.0" y="38.0" font-size="12" text-anchor="start" fill="#52514e" font-weight="700">Farm</text>
+<rect x="470" y="20" width="200" height="290" rx="10" fill="none" stroke="#2a78d6" stroke-width="1.2" stroke-dasharray="6 4"/>
+<text x="482.0" y="38.0" font-size="12" text-anchor="start" fill="#52514e" font-weight="700">Cloud</text>
+<rect x="24" y="48" width="130" height="56" rx="7" fill="#eda100" opacity="0.16"/>
+<rect x="24" y="48" width="130" height="56" rx="7" fill="none" stroke="#eda100" stroke-width="1.3"/>
+<text x="89.0" y="73.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Temp. &amp; humidity</text>
+<text x="89.0" y="90.0" font-size="11.5" text-anchor="middle" fill="#52514e">Sensor</text>
+<rect x="24" y="128" width="130" height="56" rx="7" fill="#eda100" opacity="0.16"/>
+<rect x="24" y="128" width="130" height="56" rx="7" fill="none" stroke="#eda100" stroke-width="1.3"/>
+<text x="89.0" y="153.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Cow collar</text>
+<text x="89.0" y="170.0" font-size="11.5" text-anchor="middle" fill="#52514e">Activity</text>
+<rect x="24" y="208" width="130" height="56" rx="7" fill="#eda100" opacity="0.16"/>
+<rect x="24" y="208" width="130" height="56" rx="7" fill="none" stroke="#eda100" stroke-width="1.3"/>
+<text x="89.0" y="233.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Camera</text>
+<text x="89.0" y="250.0" font-size="11.5" text-anchor="middle" fill="#52514e">Video</text>
+<rect x="184" y="70" width="150" height="60" rx="7" fill="#1baf7a" opacity="0.16"/>
+<rect x="184" y="70" width="150" height="60" rx="7" fill="none" stroke="#1baf7a" stroke-width="1.3"/>
+<text x="259.0" y="97.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Gateway</text>
+<text x="259.0" y="114.0" font-size="11.5" text-anchor="middle" fill="#52514e">LoRaWAN, BLE</text>
+<rect x="184" y="200" width="150" height="60" rx="7" fill="#1baf7a" opacity="0.16"/>
+<rect x="184" y="200" width="150" height="60" rx="7" fill="none" stroke="#1baf7a" stroke-width="1.3"/>
+<text x="259.0" y="227.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Jetson (edge)</text>
+<text x="259.0" y="244.0" font-size="11.5" text-anchor="middle" fill="#52514e">Analyzes video</text>
+<rect x="356" y="135" width="84" height="60" rx="7" fill="#eb6834" opacity="0.16"/>
+<rect x="356" y="135" width="84" height="60" rx="7" fill="none" stroke="#eb6834" stroke-width="1.3"/>
+<text x="398.0" y="162.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Router</text>
+<text x="398.0" y="179.0" font-size="11.5" text-anchor="middle" fill="#52514e">LTE, fiber</text>
+<line x1="156" y1="76" x2="180" y2="94" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="156" y1="156" x2="180" y2="112" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="156" y1="236" x2="180" y2="232" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="336" y1="100" x2="352" y2="150" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="336" y1="230" x2="352" y2="182" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="490" y="50" width="160" height="60" rx="7" fill="#2a78d6" opacity="0.16"/>
+<rect x="490" y="50" width="160" height="60" rx="7" fill="none" stroke="#2a78d6" stroke-width="1.3"/>
+<text x="570.0" y="77.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">MQTT broker</text>
+<text x="570.0" y="94.0" font-size="11.5" text-anchor="middle" fill="#52514e">8883 (TLS)</text>
+<rect x="490" y="140" width="160" height="60" rx="7" fill="#2a78d6" opacity="0.16"/>
+<rect x="490" y="140" width="160" height="60" rx="7" fill="none" stroke="#2a78d6" stroke-width="1.3"/>
+<text x="570.0" y="167.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Database</text>
+<text x="570.0" y="184.0" font-size="11.5" text-anchor="middle" fill="#52514e">Time series</text>
+<rect x="490" y="230" width="160" height="60" rx="7" fill="#2a78d6" opacity="0.16"/>
+<rect x="490" y="230" width="160" height="60" rx="7" fill="none" stroke="#2a78d6" stroke-width="1.3"/>
+<text x="570.0" y="264.5" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Graphs, alerts</text>
+<line x1="442" y1="160" x2="486" y2="86" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="456.0" y="100.0" font-size="11" text-anchor="end" fill="#1f1f1d" font-weight="700" font-family="ui-monospace, monospace">MQTT</text>
+<line x1="570" y1="112" x2="570" y2="136" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="570" y1="202" x2="570" y2="226" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<rect x="696" y="230" width="114" height="60" rx="7" fill="#e87ba4" opacity="0.16"/>
+<rect x="696" y="230" width="114" height="60" rx="7" fill="none" stroke="#e87ba4" stroke-width="1.3"/>
+<text x="753.0" y="257.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Phone</text>
+<text x="753.0" y="274.0" font-size="11.5" text-anchor="middle" fill="#52514e">View, command</text>
+<line x1="652" y1="260" x2="692" y2="260" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<line x1="724" y1="228" x2="652" y2="86" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)" stroke-dasharray="5 4"/>
+<text x="704.0" y="130.0" font-size="11.5" text-anchor="start" fill="#52514e">Commands go</text>
+<text x="704.0" y="146.0" font-size="11.5" text-anchor="start" fill="#52514e">via the broker</text>
+<text x="410.0" y="340.0" font-size="12.5" text-anchor="middle" fill="#1f1f1d" font-weight="700">Devices connect out to the cloud and keep the connection open (works even behind NAT)</text>
+</svg>

@@ -14,7 +14,8 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parent.parent
 # 本文によく出る、ほかの意味でも使う言葉には付けない（付けると、ちがう意味の所にも説明が出てしまう）
-SKIP_EN = {"cow", "feed", "milking", "grains", "grass / forage crop", "dry cow", "fiber (ndf)"}
+SKIP_EN = {"cow", "feed", "milking", "grains", "grass / forage crop", "dry cow", "fiber (ndf)",
+           "as", "switch"}   # network: AS は英語の as、switch は「切り替える」にも当たる
 SKIP_JA = {"飼料", "搾乳", "牧草", "繊維"}
 
 

@@ -23,6 +23,7 @@ BOOKS = {
     "ros": ["ros", "docker", "shell", "python"],
     "cpp": ["cpp", "shell"],
     "docker": ["docker", "shell", "python"],
+    "network": ["network", "shell", "python"],
 }
 FILL = {"pico": ["cpp", "python", "shell"], "github": ["shell"]}
 NOTE = ("コードの単語をクリックしたときに出す説明。tools/make_glossaries.py が tools/glossary/ の辞書から作る（直すときは辞書のほうを直す）。"

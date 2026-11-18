@@ -1,0 +1,17 @@
+[
+  {"part": {"ja": "第1部 全体をつかむ", "en": "Part 1: The big picture"}, "file": "01-overview.md", "title": {"ja": "1. ネットワークとは（URL を開いてからページが出るまで）", "en": "1. What is a network? (from URL to page)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "02-http.md", "title": {"ja": "2. ブラウザと HTTP", "en": "2. The browser and HTTP"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "03-dns.md", "title": {"ja": "3. DNS（名前から IP アドレスへ）", "en": "3. DNS (from names to IP addresses)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "04-tcp.md", "title": {"ja": "4. TCP と UDP（ポートと、確実に届けるしくみ）", "en": "4. TCP and UDP (ports and reliable delivery)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "05-ip.md", "title": {"ja": "5. IP（アドレスとルーター）", "en": "5. IP (addresses and routers)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "06-lan.md", "title": {"ja": "6. LAN（イーサネットと Wi-Fi）", "en": "6. The LAN (Ethernet and Wi-Fi)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "07-internet.md", "title": {"ja": "7. 家からインターネットへ（NAT・プロバイダ・海底ケーブル）", "en": "7. From home to the internet (NAT, ISPs, undersea cables)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "08-server.md", "title": {"ja": "8. サーバーの側（ファイアウォール・ロードバランサー・CDN）", "en": "8. The server side (firewalls, load balancers, CDNs)"}},
+  {"part": {"ja": "第2部 ネットワークはなぜつながるのか", "en": "Part 2: Why the network connects"}, "file": "09-security.md", "title": {"ja": "9. 安全につなぐ（HTTPS・SSH・VPN）", "en": "9. Connecting safely (HTTPS, SSH, VPN)"}},
+  {"part": {"ja": "第3部 クラウド", "en": "Part 3: The cloud"}, "file": "10-cloud.md", "title": {"ja": "10. クラウドとは", "en": "10. What is the cloud?"}},
+  {"part": {"ja": "第3部 クラウド", "en": "Part 3: The cloud"}, "file": "11-cloud-net.md", "title": {"ja": "11. クラウドのネットワーク（VPC・サーバーレス）", "en": "11. Cloud networking (VPCs and serverless)"}},
+  {"part": {"ja": "第3部 クラウド", "en": "Part 3: The cloud"}, "file": "12-iot.md", "title": {"ja": "12. IoT とクラウド（センサーからクラウドまで）", "en": "12. IoT and the cloud (from sensor to cloud)"}},
+  {"part": {"ja": "第4部 手を動かす", "en": "Part 4: Hands-on"}, "file": "13-trouble.md", "title": {"ja": "13. つながらないときに調べる", "en": "13. When it won't connect"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "a-words.md", "title": {"ja": "付録A. 用語集（日本語・英語）", "en": "Appendix A. Glossary (English and Japanese)"}},
+  {"part": {"ja": "付録", "en": "Appendix"}, "file": "b-photos.md", "title": {"ja": "付録B. 写真の出典", "en": "Appendix B. Photo credits"}}
+]

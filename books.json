@@ -178,6 +178,26 @@
     "glossary_en": "glossary-en.json"
   },
   {
+    "id": "network",
+    "icon": "🌐",
+    "group": "道具",
+    "langs": [
+      "ja",
+      "en"
+    ],
+    "title": {
+      "ja": "ネットワークの教科書",
+      "en": "Networking Textbook"
+    },
+    "desc": {
+      "ja": "ネットワークはなぜつながるのか。URL を開いてからページが出るまでを、HTTP・DNS・TCP/IP・LAN と Wi-Fi・NAT・海底ケーブル・CDN・HTTPS とたどる。クラウド（VPC・サーバーレス）、IoT と MQTT、つながらないときの調べ方も。",
+      "en": "Why the network connects: from opening a URL to seeing the page, through HTTP, DNS, TCP/IP, LAN and Wi-Fi, NAT, undersea cables, CDNs and HTTPS. Also the cloud (VPCs, serverless), IoT and MQTT, and what to check when it won't connect."
+    },
+    "glossary": "glossary.json",
+    "glossary_en": "glossary-en.json",
+    "terms": "terms.json"
+  },
+  {
     "id": "cow",
     "icon": "🐄",
     "group": "農業・地域",

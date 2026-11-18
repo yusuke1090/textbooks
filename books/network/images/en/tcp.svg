@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 820 410" font-family="system-ui, sans-serif" font-size="12">
+<defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0 L10 5 L0 10 z" fill="#52514e"/></marker></defs>
+<rect width="820" height="410" rx="10" fill="#ffffff"/>
+<text x="230.0" y="26.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Browser</text>
+<text x="610.0" y="26.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Server</text>
+<line x1="230" y1="36" x2="230" y2="400" stroke="#8a8984" stroke-width="1.6"/>
+<line x1="610" y1="36" x2="610" y2="400" stroke="#8a8984" stroke-width="1.6"/>
+<line x1="230" y1="52" x2="610" y2="80" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="60.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">SYN (my numbers start at 1000)</text>
+<line x1="610" y1="98" x2="230" y2="126" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="106.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">SYN + ACK (got 1000; mine start at 5000)</text>
+<line x1="230" y1="144" x2="610" y2="172" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="152.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">ACK (got 5000 too)</text>
+<line x1="230" y1="200" x2="610" y2="228" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="208.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">Data (HTTP request)</text>
+<line x1="610" y1="246" x2="230" y2="274" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="254.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">ACK + data (response)</text>
+<line x1="230" y1="302" x2="610" y2="330" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="310.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">FIN (I'm done)</text>
+<line x1="610" y1="348" x2="230" y2="376" stroke="#52514e" stroke-width="1.6" marker-end="url(#ah)"/>
+<text x="420.0" y="356.0" font-size="11.5" text-anchor="middle" fill="#1f1f1d" font-weight="700" stroke="#ffffff" stroke-width="5" stroke-linejoin="round" paint-order="stroke">ACK, FIN</text>
+<rect x="20" y="48" width="150" height="128" rx="7" fill="#2a78d6" opacity="0.12"/>
+<text x="95.0" y="116.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Connect</text>
+<rect x="20" y="196" width="150" height="82" rx="7" fill="#1baf7a" opacity="0.12"/>
+<text x="95.0" y="241.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Send</text>
+<rect x="20" y="298" width="150" height="82" rx="7" fill="#eb6834" opacity="0.12"/>
+<text x="95.0" y="343.0" font-size="13" text-anchor="middle" fill="#1f1f1d" font-weight="700">Close</text>
+<text x="95.0" y="128.0" font-size="11" text-anchor="middle" fill="#52514e">Three-way handshake</text>
+<text x="622.0" y="116.0" font-size="11.5" text-anchor="start" fill="#52514e">One round trip (RTT) so far</text>
+</svg>

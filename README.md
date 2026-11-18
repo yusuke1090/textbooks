@@ -22,6 +22,7 @@
 | [🤖 機械学習の教科書](https://yusuke1090.github.io/textbooks/?b=ml) | scikit-learn で回帰・分類・前処理・クラスタリング・特徴量・モデルの評価（7章、図4枚） | 日本語・English |
 | [⚙️ C++ の教科書](https://yusuke1090.github.io/textbooks/?b=cpp) | g++ と VS Code で、変数・関数・ポインタからクラス・継承・テンプレート・例外まで（15章と付録） | 日本語・English |
 | [🐳 Docker の教科書](https://yusuke1090.github.io/textbooks/?b=docker) | VS Code で Docker。コンテナ・Dockerfile・ボリューム・Compose・Dev Containers・ラズパイと Jetson（8章、図2枚） | 日本語・English |
+| [🌐 ネットワークの教科書](https://yusuke1090.github.io/textbooks/?b=network) | ネットワークはなぜつながるのか（HTTP・DNS・TCP/IP・LAN と Wi-Fi・NAT・海底ケーブル・CDN・HTTPS）、クラウド（VPC・サーバーレス）、IoT と MQTT、つながらないときの調べ方（13章と付録、図15枚と写真24枚） | 日本語・English |
 
 ## 本棚の「今日の勉強」
 
@@ -218,3 +219,10 @@ tools/            図や用語の一覧を作るスクリプト
 
 - 2026-11-14 に作った。VS Code（Container Tools・Dev Containers の拡張機能）で触る前提
 - 図2枚（仮想マシンとの比較、Dockerfile からコンテナまで）は `python3 tools/make_study_figures.py` で作る
+
+### 🌐 ネットワークの教科書（books/network）
+
+- 2026-11-18 に作った。第1部 全体（1章）、第2部 URL を開いてからページが出るまでを順にたどる（2〜9章）、第3部 クラウドと IoT（10〜12章）、第4部 つながらないときの調べ方（13章）
+- コマンドの出力は、この PC で実際に動かしたもの。家の回線のグローバル IP アドレスとプロバイダのルーターは、説明用のアドレス（`203.0.113.x`）に置きかえてある。12章の MQTT の Python は paho-mqtt 2.2 と手元のブローカーで確かめた
+- 図15枚は `python3 tools/make_network_figures.py`（英語の図は `python3 tools/translate_figures.py network`）、写真は `python3 tools/fetch_photos.py network`（付録B も作り直す）
+- 本文の用語の説明は付録A から `python3 tools/make_terms.py network`、コードの言葉の説明は `tools/glossary/network.json` から `python3 tools/make_glossaries.py`

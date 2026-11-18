@@ -1,0 +1,1406 @@
+[
+ {
+  "ja": "ネットワーク",
+  "yomi": "",
+  "en": "network",
+  "mean_ja": "コンピューターどうしをつないで、データをやりとりできるようにしたもの（1章）",
+  "mean_en": "Computers joined so they can exchange data (Ch. 1)",
+  "match_ja": [
+   "ネットワーク"
+  ],
+  "match_en": [
+   "network"
+  ]
+ },
+ {
+  "ja": "インターネット",
+  "yomi": "",
+  "en": "internet",
+  "mean_ja": "世界中のネットワークを、同じプロトコルでつないだもの（1章）",
+  "mean_en": "The world's networks joined with the same protocols (Ch. 1)",
+  "match_ja": [
+   "インターネット"
+  ],
+  "match_en": [
+   "internet"
+  ]
+ },
+ {
+  "ja": "プロトコル",
+  "yomi": "",
+  "en": "protocol",
+  "mean_ja": "つなぐための約束ごと（1章）",
+  "mean_en": "The agreed rules for connecting (Ch. 1)",
+  "match_ja": [
+   "プロトコル"
+  ],
+  "match_en": [
+   "protocol"
+  ]
+ },
+ {
+  "ja": "パケット",
+  "yomi": "",
+  "en": "packet",
+  "mean_ja": "データを小分けにして、ヘッダーを付けたもの（1章）",
+  "mean_en": "A small piece of data with a header (Ch. 1)",
+  "match_ja": [
+   "パケット"
+  ],
+  "match_en": [
+   "packet"
+  ]
+ },
+ {
+  "ja": "ヘッダー",
+  "yomi": "",
+  "en": "header",
+  "mean_ja": "データの前に付ける、あて先などを書いた部分（1章）",
+  "mean_en": "The part in front of the data holding the destination and so on (Ch. 1)",
+  "match_ja": [
+   "ヘッダー"
+  ],
+  "match_en": [
+   "header"
+  ]
+ },
+ {
+  "ja": "階層",
+  "yomi": "かいそう",
+  "en": "layer",
+  "mean_ja": "ネットワークの仕事を役割ごとに分けたもの。レイヤー（1章）",
+  "mean_en": "The work of a network divided by role (Ch. 1)",
+  "match_ja": [
+   "階層"
+  ],
+  "match_en": [
+   "layer"
+  ]
+ },
+ {
+  "ja": "カプセル化",
+  "yomi": "かぷせるか",
+  "en": "encapsulation",
+  "mean_ja": "上の階層から順にヘッダーを付けて包むこと（1章）",
+  "mean_en": "Wrapping data in headers from the top layer down (Ch. 1)",
+  "match_ja": [
+   "カプセル化"
+  ],
+  "match_en": [
+   "encapsulation"
+  ]
+ },
+ {
+  "ja": "OSI 参照モデル",
+  "yomi": "おーえすあいさんしょうもでる",
+  "en": "OSI reference model",
+  "mean_ja": "ネットワークの仕事を7つの階層に分けた見方（1章）",
+  "mean_en": "A way of dividing the work of a network into seven layers (Ch. 1)",
+  "match_ja": [
+   "OSI 参照モデル"
+  ],
+  "match_en": [
+   "OSI reference model"
+  ]
+ },
+ {
+  "ja": "リクエスト",
+  "yomi": "",
+  "en": "request",
+  "mean_ja": "ブラウザなどがサーバーに送るお願い（2章）",
+  "mean_en": "The message a browser or app sends to a server (Ch. 2)",
+  "match_ja": [
+   "リクエスト"
+  ],
+  "match_en": [
+   "request"
+  ]
+ },
+ {
+  "ja": "レスポンス",
+  "yomi": "",
+  "en": "response",
+  "mean_ja": "サーバーが返す答え（2章）",
+  "mean_en": "The answer a server sends back (Ch. 2)",
+  "match_ja": [
+   "レスポンス"
+  ],
+  "match_en": [
+   "response"
+  ]
+ },
+ {
+  "ja": "メソッド",
+  "yomi": "",
+  "en": "method",
+  "mean_ja": "リクエストの種類。GET・POST など（2章）",
+  "mean_en": "The kind of request, such as GET or POST (Ch. 2)",
+  "match_ja": [
+   "メソッド"
+  ],
+  "match_en": [
+   "method"
+  ]
+ },
+ {
+  "ja": "ステータスコード",
+  "yomi": "",
+  "en": "status code",
+  "mean_ja": "レスポンスの結果を表す3けたの数。200・404 など（2章）",
+  "mean_en": "A three-digit number showing the result of a response, such as 200 or 404 (Ch. 2)",
+  "match_ja": [
+   "ステータスコード"
+  ],
+  "match_en": [
+   "status code"
+  ]
+ },
+ {
+  "ja": "Cookie",
+  "yomi": "くっきー",
+  "en": "cookie",
+  "mean_ja": "サーバーがブラウザに覚えさせ、毎回返してもらう値（2章）",
+  "mean_en": "A value the server has the browser remember and send back every time (Ch. 2)",
+  "match_ja": [
+   "Cookie"
+  ],
+  "match_en": [
+   "cookie"
+  ]
+ },
+ {
+  "ja": "Web API",
+  "yomi": "うぇぶえーぴーあい",
+  "en": "web API",
+  "mean_ja": "アプリどうしが HTTP で機能を使い合うための入り口（2章）",
+  "mean_en": "An entrance through which apps use each other's features over HTTP (Ch. 2)",
+  "match_ja": [
+   "Web API"
+  ],
+  "match_en": [
+   "web API"
+  ]
+ },
+ {
+  "ja": "ドメイン名",
+  "yomi": "どめいんめい",
+  "en": "domain name",
+  "mean_ja": "`example.com` のような、IP アドレスの代わりの名前（3章）",
+  "mean_en": "A name such as `example.com` used instead of an IP address (Ch. 3)",
+  "match_ja": [
+   "ドメイン名"
+  ],
+  "match_en": [
+   "domain name"
+  ]
+ },
+ {
+  "ja": "リゾルバー",
+  "yomi": "",
+  "en": "resolver",
+  "mean_ja": "名前をたどって調べてくれる DNS サーバー（3章）",
+  "mean_en": "A DNS server that looks up names for you (Ch. 3)",
+  "match_ja": [
+   "リゾルバー"
+  ],
+  "match_en": [
+   "resolver"
+  ]
+ },
+ {
+  "ja": "権威 DNS サーバー",
+  "yomi": "けんいでぃーえぬえすさーばー",
+  "en": "authoritative DNS server",
+  "mean_ja": "その名前の本当の答えを持っている DNS サーバー（3章）",
+  "mean_en": "The DNS server that holds the real answer for a name (Ch. 3)",
+  "match_ja": [
+   "権威 DNS サーバー"
+  ],
+  "match_en": [
+   "authoritative DNS server"
+  ]
+ },
+ {
+  "ja": "ルートサーバー",
+  "yomi": "",
+  "en": "root server",
+  "mean_ja": "DNS の木の一番上を受け持つサーバー（3章）",
+  "mean_en": "A server at the top of the DNS tree (Ch. 3)",
+  "match_ja": [
+   "ルートサーバー"
+  ],
+  "match_en": [
+   "root server"
+  ]
+ },
+ {
+  "ja": "キャッシュ",
+  "yomi": "",
+  "en": "cache",
+  "mean_ja": "一度もらった答えを、しばらく手元に取っておくこと（3章）",
+  "mean_en": "Keeping an answer you got once for a while (Ch. 3)",
+  "match_ja": [
+   "キャッシュ"
+  ],
+  "match_en": [
+   "cache"
+  ]
+ },
+ {
+  "ja": "レコード",
+  "yomi": "",
+  "en": "record",
+  "mean_ja": "DNS に置く情報。A・AAAA・CNAME・MX など（3章）",
+  "mean_en": "Information held in DNS, such as A, AAAA, CNAME and MX (Ch. 3)",
+  "match_ja": [
+   "レコード"
+  ],
+  "match_en": [
+   "record"
+  ]
+ },
+ {
+  "ja": "ポート番号",
+  "yomi": "ぽーとばんごう",
+  "en": "port number",
+  "mean_ja": "1台の中のアプリを区別する番号（4章）",
+  "mean_en": "A number that tells the applications on a machine apart (Ch. 4)",
+  "match_ja": [
+   "ポート番号"
+  ],
+  "match_en": [
+   "port number"
+  ]
+ },
+ {
+  "ja": "ウェルノウンポート",
+  "yomi": "",
+  "en": "well-known port",
+  "mean_ja": "サーバーが待つ、決まった番号。0〜1023（4章）",
+  "mean_en": "A fixed number that servers wait on, 0–1023 (Ch. 4)",
+  "match_ja": [
+   "ウェルノウンポート"
+  ],
+  "match_en": [
+   "well-known port"
+  ]
+ },
+ {
+  "ja": "コネクション",
+  "yomi": "",
+  "en": "connection",
+  "mean_ja": "TCP で作る、2台の間のつながり（4章）",
+  "mean_en": "The link between two machines set up by TCP (Ch. 4)",
+  "match_ja": [
+   "コネクション"
+  ],
+  "match_en": [
+   "connection"
+  ]
+ },
+ {
+  "ja": "3ウェイハンドシェイク",
+  "yomi": "すりーうぇいはんどしぇいく",
+  "en": "three-way handshake",
+  "mean_ja": "TCP の、SYN・SYN+ACK・ACK の3回のあいさつ（4章）",
+  "mean_en": "TCP's three greetings: SYN, SYN+ACK, ACK (Ch. 4)",
+  "match_ja": [],
+  "match_en": [
+   "three-way handshake"
+  ]
+ },
+ {
+  "ja": "再送",
+  "yomi": "さいそう",
+  "en": "retransmission",
+  "mean_ja": "なくなったデータを送り直すこと（4章）",
+  "mean_en": "Sending lost data again (Ch. 4)",
+  "match_ja": [
+   "再送"
+  ],
+  "match_en": [
+   "retransmission"
+  ]
+ },
+ {
+  "ja": "輻輳制御",
+  "yomi": "ふくそうせいぎょ",
+  "en": "congestion control",
+  "mean_ja": "ネットワークの混み具合に合わせて、送る速さを落とすこと（4章）",
+  "mean_en": "Slowing down to match how busy the network is (Ch. 4)",
+  "match_ja": [
+   "輻輳制御"
+  ],
+  "match_en": [
+   "congestion control"
+  ]
+ },
+ {
+  "ja": "IP アドレス",
+  "yomi": "あいぴーあどれす",
+  "en": "IP address",
+  "mean_ja": "ネットワークの中の住所（5章）",
+  "mean_en": "An address on the network (Ch. 5)",
+  "match_ja": [
+   "IP アドレス"
+  ],
+  "match_en": [
+   "IP address"
+  ]
+ },
+ {
+  "ja": "サブネット",
+  "yomi": "",
+  "en": "subnet",
+  "mean_ja": "ネットワーク部が同じ IP アドレスのまとまり（5章）",
+  "mean_en": "A group of IP addresses with the same network part (Ch. 5)",
+  "match_ja": [
+   "サブネット"
+  ],
+  "match_en": [
+   "subnet"
+  ]
+ },
+ {
+  "ja": "サブネットマスク",
+  "yomi": "",
+  "en": "subnet mask",
+  "mean_ja": "ネットワーク部とホスト部の分け目を表す数（5章）",
+  "mean_en": "A number showing where the network part and host part divide (Ch. 5)",
+  "match_ja": [
+   "サブネットマスク"
+  ],
+  "match_en": [
+   "subnet mask"
+  ]
+ },
+ {
+  "ja": "プライベート IP アドレス",
+  "yomi": "ぷらいべーとあいぴーあどれす",
+  "en": "private IP address",
+  "mean_ja": "家や会社の中で自由に使えるアドレス（5章）",
+  "mean_en": "An address free to use inside homes and companies (Ch. 5)",
+  "match_ja": [
+   "プライベート IP アドレス"
+  ],
+  "match_en": [
+   "private IP address"
+  ]
+ },
+ {
+  "ja": "グローバル IP アドレス",
+  "yomi": "ぐろーばるあいぴーあどれす",
+  "en": "global IP address / public IP address",
+  "mean_ja": "世界で1つだけの、インターネットで使うアドレス（5章）",
+  "mean_en": "An address unique in the world, used on the internet (Ch. 5)",
+  "match_ja": [
+   "グローバル IP アドレス"
+  ],
+  "match_en": [
+   "global IP address",
+   "public IP address"
+  ]
+ },
+ {
+  "ja": "ルーター",
+  "yomi": "",
+  "en": "router",
+  "mean_ja": "パケットのあて先を見て、次へ渡す機械（5章）",
+  "mean_en": "A machine that reads a packet's destination and passes it on (Ch. 5)",
+  "match_ja": [
+   "ルーター"
+  ],
+  "match_en": [
+   "router"
+  ]
+ },
+ {
+  "ja": "ルーティングテーブル",
+  "yomi": "",
+  "en": "routing table",
+  "mean_ja": "ルーターが持つ、あて先ごとの行き先の表（5章）",
+  "mean_en": "A router's table of where to send each destination (Ch. 5)",
+  "match_ja": [
+   "ルーティングテーブル"
+  ],
+  "match_en": [
+   "routing table"
+  ]
+ },
+ {
+  "ja": "デフォルトゲートウェイ",
+  "yomi": "",
+  "en": "default gateway",
+  "mean_ja": "自分のネットワークの外へ出るとき、まず渡すルーター（5章）",
+  "mean_en": "The router you hand packets to first when leaving your own network (Ch. 5)",
+  "match_ja": [
+   "デフォルトゲートウェイ"
+  ],
+  "match_en": [
+   "default gateway"
+  ]
+ },
+ {
+  "ja": "ループバック",
+  "yomi": "",
+  "en": "loopback",
+  "mean_ja": "自分自身を表すアドレス。127.0.0.1（5章）",
+  "mean_en": "The address meaning the machine itself, 127.0.0.1 (Ch. 5)",
+  "match_ja": [
+   "ループバック"
+  ],
+  "match_en": [
+   "loopback"
+  ]
+ },
+ {
+  "ja": "イーサネット",
+  "yomi": "",
+  "en": "Ethernet",
+  "mean_ja": "LAN ケーブルでつなぐ有線の LAN（6章）",
+  "mean_en": "Wired LAN using LAN cables (Ch. 6)",
+  "match_ja": [
+   "イーサネット"
+  ],
+  "match_en": [
+   "Ethernet"
+  ]
+ },
+ {
+  "ja": "MAC アドレス",
+  "yomi": "まっくあどれす",
+  "en": "MAC address",
+  "mean_ja": "LAN の中で機械を見分ける 48ビットのアドレス（6章）",
+  "mean_en": "A 48-bit address that tells machines apart on a LAN (Ch. 6)",
+  "match_ja": [
+   "MAC アドレス"
+  ],
+  "match_en": [
+   "MAC address"
+  ]
+ },
+ {
+  "ja": "フレーム",
+  "yomi": "",
+  "en": "frame",
+  "mean_ja": "イーサネットで送る1つのまとまり（6章）",
+  "mean_en": "One unit sent over Ethernet (Ch. 6)",
+  "match_ja": [
+   "フレーム"
+  ],
+  "match_en": [
+   "frame"
+  ]
+ },
+ {
+  "ja": "スイッチ",
+  "yomi": "",
+  "en": "switch",
+  "mean_ja": "MAC アドレスを覚えて、必要な口にだけ送る機械（6章）",
+  "mean_en": "A machine that learns MAC addresses and sends only to the port needed (Ch. 6)",
+  "match_ja": [
+   "スイッチ"
+  ],
+  "match_en": []
+ },
+ {
+  "ja": "ブロードキャスト",
+  "yomi": "",
+  "en": "broadcast",
+  "mean_ja": "同じネットワークの全員に送ること（6章）",
+  "mean_en": "Sending to everyone on the same network (Ch. 6)",
+  "match_ja": [
+   "ブロードキャスト"
+  ],
+  "match_en": [
+   "broadcast"
+  ]
+ },
+ {
+  "ja": "アクセスポイント",
+  "yomi": "",
+  "en": "access point",
+  "mean_ja": "Wi-Fi の電波を出す親機（6章）",
+  "mean_en": "The base unit that sends out the Wi-Fi signal (Ch. 6)",
+  "match_ja": [
+   "アクセスポイント"
+  ],
+  "match_en": [
+   "access point"
+  ]
+ },
+ {
+  "ja": "光回線",
+  "yomi": "ひかりかいせん",
+  "en": "fiber-optic line / FTTH",
+  "mean_ja": "家まで光ファイバーを引いた回線（7章）",
+  "mean_en": "A line with optical fiber all the way to the house (Ch. 7)",
+  "match_ja": [
+   "光回線"
+  ],
+  "match_en": [
+   "fiber-optic line",
+   "FTTH"
+  ]
+ },
+ {
+  "ja": "光ファイバー",
+  "yomi": "ひかりふぁいばー",
+  "en": "optical fiber",
+  "mean_ja": "中を光が進む、細いガラスの線（7章）",
+  "mean_en": "A thin glass thread that light travels through (Ch. 7)",
+  "match_ja": [
+   "光ファイバー"
+  ],
+  "match_en": [
+   "optical fiber"
+  ]
+ },
+ {
+  "ja": "プロバイダ",
+  "yomi": "",
+  "en": "internet service provider / ISP",
+  "mean_ja": "インターネットにつなぐサービスを売る会社（7章）",
+  "mean_en": "A company that sells internet connections (Ch. 7)",
+  "match_ja": [
+   "プロバイダ"
+  ],
+  "match_en": [
+   "internet service provider",
+   "ISP"
+  ]
+ },
+ {
+  "ja": "基地局",
+  "yomi": "きちきょく",
+  "en": "base station / cell tower",
+  "mean_ja": "携帯電話の電波を出すアンテナと機械（7章）",
+  "mean_en": "The antennas and equipment that send out mobile signals (Ch. 7)",
+  "match_ja": [
+   "基地局"
+  ],
+  "match_en": [
+   "base station",
+   "cell tower"
+  ]
+ },
+ {
+  "ja": "海底ケーブル",
+  "yomi": "かいていけーぶる",
+  "en": "submarine cable / undersea cable",
+  "mean_ja": "海の底に敷いた、国と国を結ぶ光ファイバー（7章）",
+  "mean_en": "Optical fiber laid on the sea floor to link countries (Ch. 7)",
+  "match_ja": [
+   "海底ケーブル"
+  ],
+  "match_en": [
+   "submarine cable",
+   "undersea cable"
+  ]
+ },
+ {
+  "ja": "陸揚げ局",
+  "yomi": "りくあげきょく",
+  "en": "cable landing station",
+  "mean_ja": "海底ケーブルが陸に上がる所（7章）",
+  "mean_en": "Where an undersea cable comes ashore (Ch. 7)",
+  "match_ja": [
+   "陸揚げ局"
+  ],
+  "match_en": [
+   "cable landing station"
+  ]
+ },
+ {
+  "ja": "帯域",
+  "yomi": "たいいき",
+  "en": "bandwidth",
+  "mean_ja": "1秒に運べるデータの量（7章）",
+  "mean_en": "How much data can be carried per second (Ch. 7)",
+  "match_ja": [
+   "帯域"
+  ],
+  "match_en": [
+   "bandwidth"
+  ]
+ },
+ {
+  "ja": "遅延",
+  "yomi": "ちえん",
+  "en": "latency",
+  "mean_ja": "行って帰るまでの時間（7章）",
+  "mean_en": "The time to go and come back (Ch. 7)",
+  "match_ja": [
+   "遅延"
+  ],
+  "match_en": [
+   "latency"
+  ]
+ },
+ {
+  "ja": "ポートフォワーディング",
+  "yomi": "",
+  "en": "port forwarding",
+  "mean_ja": "外のポートに来た通信を、中の機械へ渡す設定（7章）",
+  "mean_en": "A setting that passes traffic arriving at an outside port to a machine inside (Ch. 7)",
+  "match_ja": [
+   "ポートフォワーディング"
+  ],
+  "match_en": [
+   "port forwarding"
+  ]
+ },
+ {
+  "ja": "データセンター",
+  "yomi": "",
+  "en": "data center",
+  "mean_ja": "サーバーを何千台も置く建物（8章）",
+  "mean_en": "A building holding thousands of servers (Ch. 8)",
+  "match_ja": [
+   "データセンター"
+  ],
+  "match_en": [
+   "data center"
+  ]
+ },
+ {
+  "ja": "ファイアウォール",
+  "yomi": "",
+  "en": "firewall",
+  "mean_ja": "決まりに合う通信だけを通す関所（8章）",
+  "mean_en": "A checkpoint that lets through only traffic matching its rules (Ch. 8)",
+  "match_ja": [
+   "ファイアウォール"
+  ],
+  "match_en": [
+   "firewall"
+  ]
+ },
+ {
+  "ja": "ロードバランサー",
+  "yomi": "",
+  "en": "load balancer",
+  "mean_ja": "何台ものサーバーに仕事を分ける機械（8章）",
+  "mean_en": "A machine that shares work among many servers (Ch. 8)",
+  "match_ja": [
+   "ロードバランサー"
+  ],
+  "match_en": [
+   "load balancer"
+  ]
+ },
+ {
+  "ja": "ヘルスチェック",
+  "yomi": "",
+  "en": "health check",
+  "mean_ja": "サーバーが動いているかを、定期的に確かめること（8章）",
+  "mean_en": "Regularly checking that a server is working (Ch. 8)",
+  "match_ja": [
+   "ヘルスチェック"
+  ],
+  "match_en": [
+   "health check"
+  ]
+ },
+ {
+  "ja": "エッジ",
+  "yomi": "",
+  "en": "edge",
+  "mean_ja": "CDN の、利用者の近くに置いたサーバー（8章）",
+  "mean_en": "A CDN server placed near users (Ch. 8)",
+  "match_ja": [
+   "エッジ"
+  ],
+  "match_en": [
+   "edge"
+  ]
+ },
+ {
+  "ja": "オリジン",
+  "yomi": "",
+  "en": "origin",
+  "mean_ja": "CDN の後ろにある、元のサーバー（8章）",
+  "mean_en": "The original server behind a CDN (Ch. 8)",
+  "match_ja": [
+   "オリジン"
+  ],
+  "match_en": [
+   "origin"
+  ]
+ },
+ {
+  "ja": "エニーキャスト",
+  "yomi": "",
+  "en": "anycast",
+  "mean_ja": "同じ IP アドレスを何か所でも使い、近い所に届けるやり方（8章）",
+  "mean_en": "Using the same IP address in many places so the nearest is reached (Ch. 8)",
+  "match_ja": [
+   "エニーキャスト"
+  ],
+  "match_en": [
+   "anycast"
+  ]
+ },
+ {
+  "ja": "暗号",
+  "yomi": "あんごう",
+  "en": "encryption",
+  "mean_ja": "中身を、鍵がないと読めないようにすること（9章）",
+  "mean_en": "Making contents unreadable without the key (Ch. 9)",
+  "match_ja": [
+   "暗号"
+  ],
+  "match_en": [
+   "encryption"
+  ]
+ },
+ {
+  "ja": "公開鍵",
+  "yomi": "こうかいかぎ",
+  "en": "public key",
+  "mean_ja": "だれに見せてもよい鍵（9章）",
+  "mean_en": "A key that can be shown to anyone (Ch. 9)",
+  "match_ja": [
+   "公開鍵"
+  ],
+  "match_en": [
+   "public key"
+  ]
+ },
+ {
+  "ja": "秘密鍵",
+  "yomi": "ひみつかぎ",
+  "en": "private key",
+  "mean_ja": "自分だけが持つ鍵（9章）",
+  "mean_en": "A key only you hold (Ch. 9)",
+  "match_ja": [
+   "秘密鍵"
+  ],
+  "match_en": [
+   "private key"
+  ]
+ },
+ {
+  "ja": "電子署名",
+  "yomi": "でんししょめい",
+  "en": "digital signature",
+  "mean_ja": "本物で、書きかえられていないことを示す印（9章）",
+  "mean_en": "A mark showing something is genuine and unchanged (Ch. 9)",
+  "match_ja": [
+   "電子署名"
+  ],
+  "match_en": [
+   "digital signature"
+  ]
+ },
+ {
+  "ja": "証明書",
+  "yomi": "しょうめいしょ",
+  "en": "certificate",
+  "mean_ja": "サイトの公開鍵が本物だと、認証局が保証したもの（9章）",
+  "mean_en": "A certificate authority's guarantee that a site's public key is genuine (Ch. 9)",
+  "match_ja": [
+   "証明書"
+  ],
+  "match_en": [
+   "certificate"
+  ]
+ },
+ {
+  "ja": "認証局",
+  "yomi": "にんしょうきょく",
+  "en": "certificate authority / CA",
+  "mean_ja": "証明書を出す機関（9章）",
+  "mean_en": "An organization that issues certificates (Ch. 9)",
+  "match_ja": [
+   "認証局"
+  ],
+  "match_en": [
+   "certificate authority",
+   "CA"
+  ]
+ },
+ {
+  "ja": "鍵交換",
+  "yomi": "かぎこうかん",
+  "en": "key exchange",
+  "mean_ja": "2人だけが知る共通鍵を、安全に作ること（9章）",
+  "mean_en": "Safely making a shared key that only the two sides know (Ch. 9)",
+  "match_ja": [
+   "鍵交換"
+  ],
+  "match_en": [
+   "key exchange"
+  ]
+ },
+ {
+  "ja": "二要素認証",
+  "yomi": "にようそにんしょう",
+  "en": "two-factor authentication",
+  "mean_ja": "パスワードに加えて、別の方法でも本人か確かめること（9章）",
+  "mean_en": "Checking identity with something besides the password (Ch. 9)",
+  "match_ja": [
+   "二要素認証"
+  ],
+  "match_en": [
+   "two-factor authentication"
+  ]
+ },
+ {
+  "ja": "クラウド",
+  "yomi": "",
+  "en": "cloud",
+  "mean_ja": "データセンターのコンピューターを、インターネット越しに借りるしくみ（10章）",
+  "mean_en": "Renting computers in data centers over the internet (Ch. 10)",
+  "match_ja": [
+   "クラウド"
+  ],
+  "match_en": [
+   "cloud"
+  ]
+ },
+ {
+  "ja": "オンプレミス",
+  "yomi": "",
+  "en": "on-premises",
+  "mean_ja": "サーバーを自分で持って、自分の所に置くこと（10章）",
+  "mean_en": "Owning servers and keeping them at your own site (Ch. 10)",
+  "match_ja": [
+   "オンプレミス"
+  ],
+  "match_en": [
+   "on-premises"
+  ]
+ },
+ {
+  "ja": "リージョン",
+  "yomi": "",
+  "en": "region",
+  "mean_ja": "クラウドの会社のデータセンターがある地域（10章）",
+  "mean_en": "An area where a cloud company has data centers (Ch. 10)",
+  "match_ja": [
+   "リージョン"
+  ],
+  "match_en": [
+   "region"
+  ]
+ },
+ {
+  "ja": "アベイラビリティゾーン",
+  "yomi": "",
+  "en": "availability zone",
+  "mean_ja": "リージョンの中の、電気や回線が別々のデータセンターのまとまり（10章）",
+  "mean_en": "A group of data centers inside a region with separate power and lines (Ch. 10)",
+  "match_ja": [
+   "アベイラビリティゾーン"
+  ],
+  "match_en": [
+   "availability zone"
+  ]
+ },
+ {
+  "ja": "エグレス",
+  "yomi": "",
+  "en": "egress",
+  "mean_ja": "クラウドから外へ出すデータの転送（10章）",
+  "mean_en": "Data transferred out of the cloud (Ch. 10)",
+  "match_ja": [
+   "エグレス"
+  ],
+  "match_en": [
+   "egress"
+  ]
+ },
+ {
+  "ja": "責任共有モデル",
+  "yomi": "せきにんきょうゆうもでる",
+  "en": "shared responsibility model",
+  "mean_ja": "クラウドの会社と借りる人で、守る範囲を分ける考え方（10章）",
+  "mean_en": "Dividing what the cloud company and the renter each protect (Ch. 10)",
+  "match_ja": [
+   "責任共有モデル"
+  ],
+  "match_en": [
+   "shared responsibility model"
+  ]
+ },
+ {
+  "ja": "セキュリティグループ",
+  "yomi": "",
+  "en": "security group",
+  "mean_ja": "クラウドの、サーバーごとのファイアウォール（11章）",
+  "mean_en": "A per-server firewall in the cloud (Ch. 11)",
+  "match_ja": [
+   "セキュリティグループ"
+  ],
+  "match_en": [
+   "security group"
+  ]
+ },
+ {
+  "ja": "サーバーレス",
+  "yomi": "",
+  "en": "serverless",
+  "mean_ja": "サーバーを用意せず、仕事の単位で頼む使い方（11章）",
+  "mean_en": "Asking for work in units without preparing servers (Ch. 11)",
+  "match_ja": [
+   "サーバーレス"
+  ],
+  "match_en": [
+   "serverless"
+  ]
+ },
+ {
+  "ja": "コールドスタート",
+  "yomi": "",
+  "en": "cold start",
+  "mean_ja": "しばらく使われていない関数の、最初の起動の遅れ（11章）",
+  "mean_en": "The slow first start of a function that has not been used for a while (Ch. 11)",
+  "match_ja": [
+   "コールドスタート"
+  ],
+  "match_en": [
+   "cold start"
+  ]
+ },
+ {
+  "ja": "ゲートウェイ",
+  "yomi": "",
+  "en": "gateway",
+  "mean_ja": "ネットワークの出入り口になる機械。IoT では、センサーのデータをインターネットへ取り次ぐ機械（12章）",
+  "mean_en": "A machine at the entrance between networks. In IoT, it passes sensor data on to the internet (Ch. 12)",
+  "match_ja": [
+   "ゲートウェイ"
+  ],
+  "match_en": [
+   "gateway"
+  ]
+ },
+ {
+  "ja": "ブローカー",
+  "yomi": "",
+  "en": "broker",
+  "mean_ja": "MQTT のメッセージを配る、真ん中のサーバー（12章）",
+  "mean_en": "The server in the middle that delivers MQTT messages (Ch. 12)",
+  "match_ja": [
+   "ブローカー"
+  ],
+  "match_en": [
+   "broker"
+  ]
+ },
+ {
+  "ja": "トピック",
+  "yomi": "",
+  "en": "topic",
+  "mean_ja": "MQTT のメッセージに付ける、`/` で区切った名前（12章）",
+  "mean_en": "A name split by `/` attached to MQTT messages (Ch. 12)",
+  "match_ja": [
+   "トピック"
+  ],
+  "match_en": [
+   "topic"
+  ]
+ },
+ {
+  "ja": "パブリッシュ",
+  "yomi": "",
+  "en": "publish",
+  "mean_ja": "MQTT でトピックにメッセージを送ること（12章）",
+  "mean_en": "Sending a message to a topic in MQTT (Ch. 12)",
+  "match_ja": [
+   "パブリッシュ"
+  ],
+  "match_en": [
+   "publish"
+  ]
+ },
+ {
+  "ja": "サブスクライブ",
+  "yomi": "",
+  "en": "subscribe",
+  "mean_ja": "MQTT で、トピックのメッセージを受け取ると申しこむこと（12章）",
+  "mean_en": "Signing up to receive a topic's messages in MQTT (Ch. 12)",
+  "match_ja": [
+   "サブスクライブ"
+  ],
+  "match_en": [
+   "subscribe"
+  ]
+ },
+ {
+  "ja": "エッジコンピューティング",
+  "yomi": "",
+  "en": "edge computing",
+  "mean_ja": "データをクラウドに送る前に、その場で処理すること（12章）",
+  "mean_en": "Processing data on the spot before sending it to the cloud (Ch. 12)",
+  "match_ja": [
+   "エッジコンピューティング"
+  ],
+  "match_en": [
+   "edge computing"
+  ]
+ },
+ {
+  "ja": "LAN",
+  "yomi": "らん",
+  "en": "LAN (local area network)",
+  "mean_ja": "家や会社の中のネットワーク",
+  "mean_en": "A network inside a home or company",
+  "match_ja": [
+   "LAN"
+  ],
+  "match_en": [
+   "LAN"
+  ]
+ },
+ {
+  "ja": "WAN",
+  "yomi": "わん",
+  "en": "WAN (wide area network)",
+  "mean_ja": "遠くの場所どうしをつなぐネットワーク",
+  "mean_en": "A network linking distant places",
+  "match_ja": [
+   "WAN"
+  ],
+  "match_en": [
+   "WAN"
+  ]
+ },
+ {
+  "ja": "HTTP",
+  "yomi": "えいちてぃーてぃーぴー",
+  "en": "HTTP (HyperText Transfer Protocol)",
+  "mean_ja": "Web のやりとりの決まり（2章）",
+  "mean_en": "The rules for exchanges on the web (Ch. 2)",
+  "match_ja": [
+   "HTTP"
+  ],
+  "match_en": [
+   "HTTP"
+  ]
+ },
+ {
+  "ja": "URL",
+  "yomi": "ゆーあーるえる",
+  "en": "URL (Uniform Resource Locator)",
+  "mean_ja": "データのある場所を表す文字（2章）",
+  "mean_en": "Text showing where data is (Ch. 2)",
+  "match_ja": [
+   "URL"
+  ],
+  "match_en": [
+   "URL"
+  ]
+ },
+ {
+  "ja": "DNS",
+  "yomi": "でぃーえぬえす",
+  "en": "DNS (Domain Name System)",
+  "mean_ja": "名前を IP アドレスに変えるしくみ（3章）",
+  "mean_en": "The system that turns names into IP addresses (Ch. 3)",
+  "match_ja": [
+   "DNS"
+  ],
+  "match_en": [
+   "DNS"
+  ]
+ },
+ {
+  "ja": "TTL",
+  "yomi": "てぃーてぃーえる",
+  "en": "TTL (time to live)",
+  "mean_ja": "DNS では覚えてよい時間、IP では通れるルーターの数（3・5章）",
+  "mean_en": "In DNS, how long an answer may be kept; in IP, how many routers a packet may pass (Ch. 3, 5)",
+  "match_ja": [
+   "TTL"
+  ],
+  "match_en": [
+   "TTL"
+  ]
+ },
+ {
+  "ja": "TCP",
+  "yomi": "てぃーしーぴー",
+  "en": "TCP (Transmission Control Protocol)",
+  "mean_ja": "確実に順番どおりに届けるプロトコル（4章）",
+  "mean_en": "A protocol that delivers reliably and in order (Ch. 4)",
+  "match_ja": [
+   "TCP"
+  ],
+  "match_en": [
+   "TCP"
+  ]
+ },
+ {
+  "ja": "UDP",
+  "yomi": "ゆーでぃーぴー",
+  "en": "UDP (User Datagram Protocol)",
+  "mean_ja": "送りっぱなしの軽いプロトコル（4章）",
+  "mean_en": "A light protocol that just sends (Ch. 4)",
+  "match_ja": [
+   "UDP"
+  ],
+  "match_en": [
+   "UDP"
+  ]
+ },
+ {
+  "ja": "QUIC",
+  "yomi": "くいっく",
+  "en": "QUIC",
+  "mean_ja": "UDP の上で動く、HTTP/3 のプロトコル（4章）",
+  "mean_en": "The protocol of HTTP/3, running on UDP (Ch. 4)",
+  "match_ja": [
+   "QUIC"
+  ],
+  "match_en": [
+   "QUIC"
+  ]
+ },
+ {
+  "ja": "ICMP",
+  "yomi": "あいしーえむぴー",
+  "en": "ICMP (Internet Control Message Protocol)",
+  "mean_ja": "ping などで使う、IP の連絡用のプロトコル（5章）",
+  "mean_en": "IP's messaging protocol, used by ping (Ch. 5)",
+  "match_ja": [
+   "ICMP"
+  ],
+  "match_en": [
+   "ICMP"
+  ]
+ },
+ {
+  "ja": "ARP",
+  "yomi": "あーぷ",
+  "en": "ARP (Address Resolution Protocol)",
+  "mean_ja": "IP アドレスから MAC アドレスを調べるプロトコル（6章）",
+  "mean_en": "A protocol that finds the MAC address for an IP address (Ch. 6)",
+  "match_ja": [
+   "ARP"
+  ],
+  "match_en": [
+   "ARP"
+  ]
+ },
+ {
+  "ja": "MTU",
+  "yomi": "えむてぃーゆー",
+  "en": "MTU (maximum transmission unit)",
+  "mean_ja": "1回に送れるデータの大きさ（6章）",
+  "mean_en": "The most data that can be sent in one go (Ch. 6)",
+  "match_ja": [
+   "MTU"
+  ],
+  "match_en": [
+   "MTU"
+  ]
+ },
+ {
+  "ja": "DHCP",
+  "yomi": "でぃーえいちしーぴー",
+  "en": "DHCP (Dynamic Host Configuration Protocol)",
+  "mean_ja": "IP アドレスなどを自動で配るしくみ（7章）",
+  "mean_en": "Automatically hands out IP addresses and more (Ch. 7)",
+  "match_ja": [
+   "DHCP"
+  ],
+  "match_en": [
+   "DHCP"
+  ]
+ },
+ {
+  "ja": "NAT",
+  "yomi": "なっと",
+  "en": "NAT (network address translation)",
+  "mean_ja": "アドレスとポートを付けかえて、1つのアドレスを分け合うしくみ（7章）",
+  "mean_en": "Rewriting addresses and ports so many machines share one address (Ch. 7)",
+  "match_ja": [
+   "NAT"
+  ],
+  "match_en": [
+   "NAT"
+  ]
+ },
+ {
+  "ja": "CGNAT",
+  "yomi": "しーじーなっと",
+  "en": "CGNAT (carrier-grade NAT)",
+  "mean_ja": "回線の会社が、たくさんの家で1つのアドレスを分ける NAT（7章）",
+  "mean_en": "NAT used by carriers to share one address among many homes (Ch. 7)",
+  "match_ja": [
+   "CGNAT"
+  ],
+  "match_en": [
+   "CGNAT"
+  ]
+ },
+ {
+  "ja": "AS",
+  "yomi": "えーえす",
+  "en": "AS (autonomous system)",
+  "mean_ja": "1つの組織が持つ、ネットワークのまとまり（7章）",
+  "mean_en": "A block of networks run by one organization (Ch. 7)",
+  "match_ja": [
+   "AS"
+  ],
+  "match_en": []
+ },
+ {
+  "ja": "BGP",
+  "yomi": "びーじーぴー",
+  "en": "BGP (Border Gateway Protocol)",
+  "mean_ja": "AS どうしが道を教え合うプロトコル（7章）",
+  "mean_en": "The protocol ASes use to share routes (Ch. 7)",
+  "match_ja": [
+   "BGP"
+  ],
+  "match_en": [
+   "BGP"
+  ]
+ },
+ {
+  "ja": "IX",
+  "yomi": "あいえっくす",
+  "en": "IX (internet exchange)",
+  "mean_ja": "たくさんの AS が集まってつながる所（7章）",
+  "mean_en": "A place where many ASes meet and connect (Ch. 7)",
+  "match_ja": [
+   "IX"
+  ],
+  "match_en": [
+   "IX"
+  ]
+ },
+ {
+  "ja": "CDN",
+  "yomi": "しーでぃーえぬ",
+  "en": "CDN (content delivery network)",
+  "mean_ja": "利用者の近くから写しを返すしくみ（8章）",
+  "mean_en": "A system that returns copies from near the user (Ch. 8)",
+  "match_ja": [
+   "CDN"
+  ],
+  "match_en": [
+   "CDN"
+  ]
+ },
+ {
+  "ja": "TLS",
+  "yomi": "てぃーえるえす",
+  "en": "TLS (Transport Layer Security)",
+  "mean_ja": "通信を暗号にするプロトコル（9章）",
+  "mean_en": "A protocol that encrypts communication (Ch. 9)",
+  "match_ja": [
+   "TLS"
+  ],
+  "match_en": [
+   "TLS"
+  ]
+ },
+ {
+  "ja": "SSH",
+  "yomi": "えすえすえいち",
+  "en": "SSH (Secure Shell)",
+  "mean_ja": "ほかのコンピューターを安全に操作するプロトコル（9章）",
+  "mean_en": "A protocol for controlling another computer safely (Ch. 9)",
+  "match_ja": [
+   "SSH"
+  ],
+  "match_en": [
+   "SSH"
+  ]
+ },
+ {
+  "ja": "VPN",
+  "yomi": "ぶいぴーえぬ",
+  "en": "VPN (virtual private network)",
+  "mean_ja": "インターネットの上に作る、自分だけのネットワーク（9章）",
+  "mean_en": "Your own network built on top of the internet (Ch. 9)",
+  "match_ja": [
+   "VPN"
+  ],
+  "match_en": [
+   "VPN"
+  ]
+ },
+ {
+  "ja": "IaaS",
+  "yomi": "いあーす",
+  "en": "IaaS (infrastructure as a service)",
+  "mean_ja": "仮想のサーバーなどを借りる形（10章）",
+  "mean_en": "Renting virtual servers and the like (Ch. 10)",
+  "match_ja": [
+   "IaaS"
+  ],
+  "match_en": [
+   "IaaS"
+  ]
+ },
+ {
+  "ja": "PaaS",
+  "yomi": "ぱーす",
+  "en": "PaaS (platform as a service)",
+  "mean_ja": "アプリを動かす場所を借りる形（10章）",
+  "mean_en": "Renting a place to run applications (Ch. 10)",
+  "match_ja": [
+   "PaaS"
+  ],
+  "match_en": [
+   "PaaS"
+  ]
+ },
+ {
+  "ja": "SaaS",
+  "yomi": "さーす",
+  "en": "SaaS (software as a service)",
+  "mean_ja": "できあがったアプリを使う形（10章）",
+  "mean_en": "Using finished applications (Ch. 10)",
+  "match_ja": [
+   "SaaS"
+  ],
+  "match_en": [
+   "SaaS"
+  ]
+ },
+ {
+  "ja": "VPC",
+  "yomi": "ぶいぴーしー",
+  "en": "VPC (virtual private cloud)",
+  "mean_ja": "クラウドの中の、自分だけのネットワーク（11章）",
+  "mean_en": "Your own network inside the cloud (Ch. 11)",
+  "match_ja": [
+   "VPC"
+  ],
+  "match_en": [
+   "VPC"
+  ]
+ },
+ {
+  "ja": "IoT",
+  "yomi": "あいおーてぃー",
+  "en": "IoT (Internet of Things)",
+  "mean_ja": "センサーや機械をインターネットにつなぐこと（12章）",
+  "mean_en": "Connecting sensors and machines to the internet (Ch. 12)",
+  "match_ja": [
+   "IoT"
+  ],
+  "match_en": [
+   "IoT"
+  ]
+ },
+ {
+  "ja": "MQTT",
+  "yomi": "えむきゅーてぃーてぃー",
+  "en": "MQTT",
+  "mean_ja": "IoT のための、パブリッシュとサブスクライブのプロトコル（12章）",
+  "mean_en": "A publish/subscribe protocol for IoT (Ch. 12)",
+  "match_ja": [
+   "MQTT"
+  ],
+  "match_en": [
+   "MQTT"
+  ]
+ }
+]
