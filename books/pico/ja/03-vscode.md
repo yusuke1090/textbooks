@@ -73,12 +73,12 @@
 │   ├── c_cpp_properties.json   補完の設定
 │   ├── cmake-kits.json         CMake Tools で使うコンパイラ
 │   └── extensions.json         おすすめの拡張機能の一覧
-└── build/                      ビルドしてできたもの（Compile のあと 名前.uf2 など）
+└── build/                      ビルドの途中のファイルとできあがり（④）
 ```
 
 - `名前.cpp` は、⑦の **Use project name as entry point file name** を ☐ にすると `main.cpp` に、**Generate C++ code** を ☐ にすると `.c` になります
 - `CMakeLists.txt` の中のプログラムの名前と、できる `.uf2` の名前も、①の Name になります
-- `build/` はプロジェクトを作ったときにでき、`.uf2` は Compile したあとにできます
+- `build/` は、拡張機能がプロジェクトを開いたときにでき、`.uf2` などは Compile したあとにできます。中身は④
 
 **選んだときだけできるもの**
 
@@ -153,7 +153,7 @@ VS Code でフォルダを開き、Compile と Run を押せば、続きから�
 
 ## ③ 書く（Lチカ）
 
-`名前.cpp`（Name が `blink` なら `blink.cpp`）を開いて、中身を全部消し、次のプログラムを貼り付けます。ボードの LED（GP25）を点滅させ、そのたびに `printf` で知らせます。
+作ったばかりの `名前.cpp`（Name が `blink` なら `blink.cpp`）は、`Hello, world!` を出すだけで、**LED を動かすコードはありません**。中身を全部消して、次のプログラムを貼り付けます。ボードの LED（GP25）を0.5秒ごとに点けたり消したりし、そのたびに `printf` で `LED ON` / `LED OFF` と知らせます。
 
 ```cpp run
 #include <cstdio>
@@ -181,15 +181,52 @@ int main() {
 - 関数名を打ち始めると、候補が出ます（補完）。`gpio_` まで打つと、GPIO の関数の一覧が出ます
 - まちがいがあると、**ビルドする前に**赤い波線が出ます
 
-> Pico W のときは、LED の点け方が違います（6章）。
+> ②の Board type が Pico W のときは、LED の点け方が違います（6章）。ふつうの Pico（RP2040）と Pico 2 は、このままで動きます。
 
 ## ④ ビルドする
 
 Quick Access の **Compile Project** を押します（下のバーの **Compile** でも同じ）。
 下の「ターミナル」に進み具合が出て、最後に `build/名前.uf2`（例: `build/blink.uf2`）ができます。
 
+- **成功**: 最後に `[54/54] Linking CXX executable blink.elf` のような行が出る（変えたところがないときは `ninja: no work to do.`）
+- **失敗**: `FAILED:` と `ninja: build stopped: subcommand failed.` が出る。その上の `error:` の行が原因
+
 - 1回目は SDK 全体をビルドするので、1〜2分かかります。2回目からは変えたところだけなので、数秒です
 - エラーは「問題」の欄（Ctrl + Shift + M）にも一覧で出て、クリックするとその行に飛びます。エラーの読み方は付録B
+
+### build フォルダの中身
+
+`build/` のファイルは、**2つのタイミング**でできます。どれも自分で書き換えるものではありません。
+
+**Compile のたびにできるもの（できあがり）**
+
+| ファイル | 何のファイルか |
+| --- | --- |
+| `名前.uf2` | ピコに書き込むファイル。BOOT を押してつなぐと出る `RPI-RP2` ドライブにドラッグしても書き込める |
+| `名前.elf` | プログラムの本体（デバッグ用の情報つき）。Run はこれを書き込む（⑤のターミナルの `picotool load … .elf`）。デバッガもこれを使う |
+| `名前.bin` | 書き込む中身だけを、そのまま並べたもの |
+| `名前.hex` | `.bin` と同じ中身を、文字（Intel HEX の形）で書いたもの |
+| `名前.dis` | 機械語を人が読める形（アセンブリ）にしたもの。C++ がどんな命令になったかを見る |
+| `名前.elf.map` | 関数や変数が、メモリのどこに何バイト置かれたか。容量が足りないときに見る |
+| `.ninja_log`・`.ninja_deps` | どのファイルを作り直すかの記録。2回目の Compile が速いのはこのため |
+
+ふだん使うのは `.uf2` と `.elf` だけです。`.bin`・`.hex` は、ほかの書き込みの道具を使うとき用です。
+
+**CMake の準備でできるもの（途中のファイル）**
+
+拡張機能がプロジェクトを開いたときと、`CMakeLists.txt` を変えたときに、CMake が作ります。
+
+| ファイル | 何のファイルか |
+| --- | --- |
+| `CMakeCache.txt` | CMake が決めた設定（ボードの種類、SDK とコンパイラの場所など）のメモ |
+| `build.ninja` | ビルドの手順書。Compile を押すと、ninja がこれにそってビルドする |
+| `compile_commands.json` | ファイルごとのコンパイルのしかた。VS Code の補完や赤い波線（③）が使う |
+| `CMakeFiles/` | 途中のファイル（`.cpp` を機械語にした `.o` など） |
+| `pico-sdk/` | SDK の部品をビルドするときの途中のファイル |
+| `generated/` | SDK が作ったヘッダー（SDK のバージョンなど） |
+| `cmake_install.cmake` | インストール用。ピコでは使わない |
+
+`build/` は、まるごと消してもかまいません（GitHub にも上げません）。ビルドの調子がおかしいときは、Quick Access の **Clean CMake** を押すと、`build/` を消して準備からやり直します。
 
 ## ⑤ 書き込む
 
@@ -205,9 +242,50 @@ picotool がピコを書き込みモードにして書き込み、ピコが再�
 | MicroPython（買ったときや、付録E で使ったあと） | 自動で書き込みモードにできない。**BOOT を押しながら USB をつないでから** Run を押す |
 | USB を使わない C++ のプログラム | 同じく、BOOT を押しながらつないでから Run を押す |
 
-何が動いているかは、Pico Studio の「接続の確認」（5章）でわかります。
+何が動いているかは、⑥の Serial Monitor の **Port の名前**でわかります（`/dev/ttyACM0 - ` のあと）。`Raspberry Pi` なら C++ のプログラム、`MicroPython` なら MicroPython です。Pico Studio の「接続の確認」（5章）でもわかります。
 
-> 「デバイスが見つからない」「権限がない（LIBUSB_ERROR_ACCESS）」と出たら、2章の手順3の udev ルールを入れて、ピコを抜き差しします。
+### 下のターミナルの読み方
+
+Run を押すと、下の「ターミナル」に次のように出ます。**`The device was rebooted to start the application.` が出れば成功**です。
+
+```text
+ *  Executing task: /home/ユーザー名/.pico-sdk/picotool/2.3.1/picotool/picotool load /home/ユーザー名/apps/blink/build/blink.elf -fx
+
+Tracking device serial number 334E39323614DA8B for reboot
+The device was asked to reboot into BOOTSEL mode so the command can be executed.
+
+Loading into Flash:   [==============================]  100%
+
+The device was rebooted to start the application.
+ *  Terminal will be reused by tasks, press any key to close it.
+```
+
+| 出た行 | 意味 |
+| --- | --- |
+| `Executing task: … picotool load … -fx` | picotool で書き込みを始めた |
+| `Tracking device serial number …` | 再起動しても同じピコを見失わないように、ピコの番号を覚えた |
+| `The device was asked to reboot into BOOTSEL mode …` | ピコを書き込みモードに切り替えた（BOOT ボタンの代わり。BOOT を押してつないだときは出ない） |
+| `Loading into Flash: … 100%` | 書き込み中。100% で書き終わり |
+| `The device was rebooted to start the application.` | **成功**。ピコが再起動して、プログラムが動き出した |
+| `Terminal will be reused by tasks …` | 終わりの合図（失敗でも出る）。何かキーを押すと閉じる |
+
+**失敗**のときは、`rebooted to start the application` が出ずに、`The terminal process … terminated with exit code: 1.` で終わります。その上のメッセージで原因がわかります。
+
+| 出たメッセージ | 原因と直し方 |
+| --- | --- |
+| `… appears to be an RP-series MicroPython device not in BOOTSEL mode.` | MicroPython が動いている。下の「実際にあった例」 |
+| `No accessible RP-series devices in BOOTSEL mode were found.` だけ | ピコがつながっていない（充電専用のケーブルなど）か、USB を使わないプログラムが動いている。BOOT を押しながらつなぎ直して Run |
+| `… picotool was unable to connect. Maybe try 'sudo' or check your permissions.` | 権限がない。2章の手順3の udev ルールを入れて、ピコを抜き差しする |
+
+### 実際にあった例: LED が点滅しない
+
+| わかったこと | 直したこと |
+| --- | --- |
+| `.cpp` が作ったときのままで、`Hello, world!` を出すだけだった | ③のプログラムに置き換えた |
+| ピコに MicroPython が入っていて、Run の書き込みが失敗した（Serial Monitor の Port が `MicroPython`） | ターミナルで `mpremote bootloader` を打ってピコを書き込みモードにし（付録A）、Run を押した。BOOT を押しながらつなぎ直してもよい |
+
+ボードはふつうの Pico（RP2040、W ではない）だったので、②の Board type は Pico で合っていました。
+一度 C++ のプログラムを書き込めば、次からは BOOT もコマンドも要らず、Run だけで書き込めます。
 
 ## ⑥ 出力を見る
 
@@ -215,19 +293,42 @@ picotool がピコを書き込みモードにして書き込み、ピコが再�
 
 **VS Code の Serial Monitor**（拡張機能 Serial Monitor が必要。2章）
 
-1. 下の欄の **SERIAL MONITOR** タブを開く（なければ、表示 → ターミナルを開いてから探す）
-2. Port で `/dev/ttyACM0`、Baud rate で `115200` を選ぶ
-3. **Start Monitoring** を押す → `LED ON` / `LED OFF` が流れる
+![Serial Monitor（番号は下の手順。この写真では Port が MicroPython になっている）](images/serial-monitor.png)
+
+1. 下の欄の **Serial Monitor** タブを開く（なければ、表示 → ターミナルを開いてから探す）
+2. **Port** で `/dev/ttyACM0` を選ぶ。書き込んだあとは右の ↻ を押して、名前が `Raspberry Pi` になっているか確かめる（`MicroPython` のままなら、まだ書き込めていない。⑤）
+3. **Baud rate** は `115200` のまま
+4. **Start Monitoring** を押す → 下の黒いところに、次のように流れる。ボタンは **Stop Monitoring** に変わる
+
+```text
+---- Opened the serial port /dev/ttyACM0 ----
+LED ON
+LED OFF
+LED ON
+```
+
+Monitor Mode・View Mode・Line ending は、そのままでかまいません。
 
 **Pico Studio**（5章）
 
 1. ポートを選んで「接続」を押す → 出力欄に `LED ON` / `LED OFF` が流れる
 
-> **ポートは1つのソフトでしか使えません。** 書き込む前に、Serial Monitor は **Stop Monitoring**、Pico Studio は「切断」を押します。開いたままだと、書き込みのあとにつながらないことがあります。
+> **ポートは1つのソフトでしか使えません。** 書き込む前に、Serial Monitor は **Stop Monitoring**、Pico Studio は「切断」を押します。開いたままだと、書き込みのあとにつながらないことがあります。書き込んだら、手順2〜4 をもう一度します。
 
 ## プログラムを直して、もう一度
 
-`sleep_ms(500)` を `sleep_ms(100)` に変えて、保存（Ctrl + S）→ Compile → Run と進めると、LED が速く点滅します。
+③で貼り付けた `名前.cpp`（例: `blink.cpp`）の、`while` の中の最後の行 `sleep_ms(500);` を `sleep_ms(100);` に変えます。`sleep_ms(500)` は「500ミリ秒（0.5秒）待つ」なので、100 にすると0.1秒ごとに点いたり消えたりします。
+
+```cpp
+    while (true) {
+        on = !on;
+        gpio_put(LED_PIN, on);
+        printf("LED %s\n", on ? "ON" : "OFF");
+        sleep_ms(100);            // 500 → 100 に変える
+    }
+```
+
+保存（Ctrl + S）→ Compile → Run と進めると、LED が速く点滅し、Serial Monitor の `LED ON` / `LED OFF` も速く流れます。
 これが、ふだんの開発のくり返しです。
 
 ### 6章から先のコードを試すとき
@@ -246,7 +347,8 @@ cp ~/apps/pico-studio/cpp/include/*.h ~/apps/blink/
 - 1つの製品が1つのプロジェクト。`~/apps/名前` に作り、製品のものは GitHub に置く（VS Code で作る → Publish to GitHub の順）
 - **New C/C++ Project** で、場所を `~/apps`、Console over USB と Generate C++ code に ☑ して作る
 - ふだんは「書く → Compile → Run (USB) → Serial Monitor」のくり返し
-- MicroPython が動いているピコや、USB を使わないプログラムのときは、BOOT を押しながらつないでから Run
+- 書き込みは、ターミナルに `The device was rebooted to start the application.` が出れば成功
+- MicroPython が動いているピコや、USB を使わないプログラムのときは、BOOT を押しながらつないでから Run（MicroPython なら `mpremote bootloader` でもよい）
 - ポートは1つのソフトでしか使えない。書き込む前に Serial Monitor や Pico Studio を止める
 
 ## 練習問題
