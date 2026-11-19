@@ -2301,12 +2301,13 @@ li > .sticky-bar { margin-top: 4px; }
   });
 
   // ---------- はじめに ----------
-  // 読んでいる時間を数える（画面が見えていて、2分以内に操作があったときか、読み上げ中だけ。10秒ごと）
+  // 読んでいる時間を数える（画面が見えていて、5分以内に教科書を操作したときか、読み上げ中だけ。10秒ごと）
+  // ほかの窓（VS Code やターミナル）を触っていても、教科書が画面に出ていれば数える
   let lastAct = Date.now();
-  ["scroll", "pointerdown", "keydown", "touchstart", "wheel", "input"].forEach((ev) => addEventListener(ev, () => { lastAct = Date.now(); }, { passive: true, capture: true }));
+  ["scroll", "pointerdown", "pointermove", "keydown", "touchstart", "wheel", "input"].forEach((ev) => addEventListener(ev, () => { lastAct = Date.now(); }, { passive: true, capture: true }));
   setInterval(() => {
-    if (!book || document.hidden || !document.hasFocus()) return;
-    if (Date.now() - lastAct > 120000 && !(window.speechSynthesis && speechSynthesis.speaking)) return;
+    if (!book || document.hidden) return;
+    if (Date.now() - lastAct > 300000 && !(window.speechSynthesis && speechSynthesis.speaking)) return;
     const s = loadStudy(), k = dayKey();
     s.days[k] = (s.days[k] || 0) + 10;
     saveStudy(s);
