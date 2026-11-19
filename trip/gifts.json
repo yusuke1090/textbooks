@@ -1,0 +1,2214 @@
+{
+ "tokyo": [
+  {
+   "src": "Mount Fuji at sunset, March 2025.jpg",
+   "ja": "富士山の夕暮れ",
+   "en": "Mount Fuji at sunset",
+   "author": "Romain Guy from San Francisco, USA",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Mount_Fuji_at_sunset,_March_2025.jpg"
+  },
+  {
+   "src": "Kopfstudie eines Japanmakaken (Macaca fuscata) im Jigokudani Yaen Kōen, Japan.jpg",
+   "ja": "ニホンザル",
+   "en": "Japanese macaque",
+   "author": "Frank Schulenburg",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kopfstudie_eines_Japanmakaken_(Macaca_fuscata)_im_Jigokudani_Yaen_K%C5%8Den,_Japan.jpg"
+  },
+  {
+   "src": "140829 Ichiko of Shiretoko Goko Lakes Hokkaido Japan04s3.jpg",
+   "ja": "知床五湖（北海道）",
+   "en": "Shiretoko Five Lakes, Hokkaido",
+   "author": "663highland",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:140829_Ichiko_of_Shiretoko_Goko_Lakes_Hokkaido_Japan04s3.jpg"
+  }
+ ],
+ "kyoto": [
+  {
+   "src": "Kiyomizu-dera, Kyoto, November 2016 -03.jpg",
+   "ja": "清水寺の紅葉",
+   "en": "Autumn at Kiyomizu-dera",
+   "author": "Martin Falbisoner",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kiyomizu-dera,_Kyoto,_November_2016_-03.jpg"
+  },
+  {
+   "src": "Sika Deer, Nara, Japan, 20240819 1541 4775.jpg",
+   "ja": "奈良のシカ",
+   "en": "Sika deer in Nara",
+   "author": "Jakub Hałun",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sika_Deer,_Nara,_Japan,_20240819_1541_4775.jpg"
+  },
+  {
+   "src": "NanzenjiMomiji.jpg",
+   "ja": "南禅寺のもみじ",
+   "en": "Maple leaves at Nanzen-ji",
+   "author": "不明",
+   "license": "Public domain",
+   "license_url": "",
+   "page": "https://commons.wikimedia.org/wiki/File:NanzenjiMomiji.jpg"
+  },
+  {
+   "src": "Mimurotoji Uji Kyoto Pref07s3s4592.jpg",
+   "ja": "三室戸寺の紅葉（宇治）",
+   "en": "Autumn at Mimuroto-ji, Uji",
+   "author": "663highland",
+   "license": "CC BY 2.5",
+   "license_url": "https://creativecommons.org/licenses/by/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Mimurotoji_Uji_Kyoto_Pref07s3s4592.jpg"
+  }
+ ],
+ "beijing": [
+  {
+   "src": "Great Wall of China July 2006.JPG",
+   "ja": "万里の長城（慕田峪）",
+   "en": "The Great Wall at Mutianyu",
+   "author": "Velatrix",
+   "license": "CC0",
+   "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Great_Wall_of_China_July_2006.JPG"
+  },
+  {
+   "src": "Chengdu Sichuan China Panda-breeding-and-research-center-02.jpg",
+   "ja": "ジャイアントパンダ（成都）",
+   "en": "Giant panda, Chengdu",
+   "author": "CEphoto, Uwe Aranas",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Chengdu_Sichuan_China_Panda-breeding-and-research-center-02.jpg"
+  },
+  {
+   "src": "1 li jiang guilin yangshuo 2011.jpg",
+   "ja": "桂林の漓江",
+   "en": "The Li River, Guilin",
+   "author": "chensiyuan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1_li_jiang_guilin_yangshuo_2011.jpg"
+  },
+  {
+   "src": "Jiuzhaigou Sichuan China Pearl-Shoals-Waterfalls-01.jpg",
+   "ja": "九寨溝の滝",
+   "en": "Waterfall in Jiuzhaigou",
+   "author": "CEphoto, Uwe Aranas",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Jiuzhaigou_Sichuan_China_Pearl-Shoals-Waterfalls-01.jpg"
+  },
+  {
+   "src": "1 tianzishan wulingyuan zhangjiajie 2012.jpg",
+   "ja": "張家界の岩山",
+   "en": "Rock pillars of Zhangjiajie",
+   "author": "chensiyuan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1_tianzishan_wulingyuan_zhangjiajie_2012.jpg"
+  },
+  {
+   "src": "1 jiuzhaigou valley wu hua hai 2011b.jpg",
+   "ja": "九寨溝の五花海",
+   "en": "Five Flower Lake, Jiuzhaigou",
+   "author": "Chensiyuan",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:1_jiuzhaigou_valley_wu_hua_hai_2011b.jpg"
+  }
+ ],
+ "lhasa": [
+  {
+   "src": "Bos grunniens at Yundrok Yumtso Lake.jpg",
+   "ja": "ヤムドク湖のヤク",
+   "en": "Yak by Yamdrok Lake",
+   "author": "Dennis G. Jarvis",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bos_grunniens_at_Yundrok_Yumtso_Lake.jpg"
+  },
+  {
+   "src": "Everest North Face toward Base Camp Tibet Luca Galuzzi 2006.jpg",
+   "ja": "チベットから見たエベレスト",
+   "en": "Everest seen from Tibet",
+   "author": "Luca Galuzzi (Lucag)",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Everest_North_Face_toward_Base_Camp_Tibet_Luca_Galuzzi_2006.jpg"
+  },
+  {
+   "src": "Yarlong Tsangpo.jpg",
+   "ja": "ヤルンツァンポ川",
+   "en": "The Yarlung Tsangpo River",
+   "author": "Luca Galuzzi (Lucag)",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Yarlong_Tsangpo.jpg"
+  },
+  {
+   "src": "Sunset view of Everest.jpg",
+   "ja": "エベレストの夕焼け",
+   "en": "Sunset on Everest",
+   "author": "Nir B. Gurung",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunset_view_of_Everest.jpg"
+  },
+  {
+   "src": "Himalayas, Ama Dablam, Nepal.jpg",
+   "ja": "アマダブラム",
+   "en": "Ama Dablam",
+   "author": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Himalayas,_Ama_Dablam,_Nepal.jpg"
+  },
+  {
+   "src": "Gokyo Ri summit, Gokyo Lake, Nepal, Himalayas.jpg",
+   "ja": "ゴーキョ湖と氷河",
+   "en": "Gokyo Lake and glacier",
+   "author": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gokyo_Ri_summit,_Gokyo_Lake,_Nepal,_Himalayas.jpg"
+  }
+ ],
+ "lumbini": [
+  {
+   "src": "Himalayan Monal at Sagarmatha National Park, Nepal.jpg",
+   "ja": "ニジキジ（ネパールの国の鳥）",
+   "en": "Himalayan monal, Nepal's national bird",
+   "author": "Pratap Gurung",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Himalayan_Monal_at_Sagarmatha_National_Park,_Nepal.jpg"
+  },
+  {
+   "src": "Curious Red Panda in Langtang National Park.jpg",
+   "ja": "野生のレッサーパンダ（ランタン）",
+   "en": "Wild red panda, Langtang",
+   "author": "Sunuwargr",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Curious_Red_Panda_in_Langtang_National_Park.jpg"
+  },
+  {
+   "src": "Greater one-horned rhinoceros at Chitwan.jpg",
+   "ja": "インドサイの親子（チトワン）",
+   "en": "Rhino mother and calf, Chitwan",
+   "author": "Aditya Pal",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Greater_one-horned_rhinoceros_at_Chitwan.jpg"
+  },
+  {
+   "src": "The Annapurna range from Pokhara.jpg",
+   "ja": "ポカラの湖とアンナプルナ",
+   "en": "Pokhara and the Annapurnas",
+   "author": "Jmhullot",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:The_Annapurna_range_from_Pokhara.jpg"
+  },
+  {
+   "src": "Machhapuchhre or Fishtail Mountain 6,993 m (22,943 ft)- IMG 5246.jpg",
+   "ja": "マチャプチャレ",
+   "en": "Machapuchare",
+   "author": "Bijay Chaurasia",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Machhapuchhre_or_Fishtail_Mountain_6,993_m_(22,943_ft)-_IMG_5246.jpg"
+  },
+  {
+   "src": "Good morning Kasara, Chitwan, Nepal.jpg",
+   "ja": "チトワンの朝",
+   "en": "Morning in Chitwan",
+   "author": "Mohan K. Duwal",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Good_morning_Kasara,_Chitwan,_Nepal.jpg"
+  }
+ ],
+ "varanasi": [
+  {
+   "src": "Bengal tiger (Panthera tigris tigris) female 3.jpg",
+   "ja": "ベンガルトラ（カーナ国立公園）",
+   "en": "Bengal tiger, Kanha",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_(Panthera_tigris_tigris)_female_3.jpg"
+  },
+  {
+   "src": "023 Indian peafowl in Jim Corbett National Park Photo by Giles Laurent.jpg",
+   "ja": "インドクジャク（ジム・コーベット）",
+   "en": "Indian peafowl, Jim Corbett",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:023_Indian_peafowl_in_Jim_Corbett_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "Indian elephant in Kaziranga National Park March 2025 by Tisha Mukherjee 06.jpg",
+   "ja": "子どものゾウ（カジランガ）",
+   "en": "Young elephants, Kaziranga",
+   "author": "Tisha Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Indian_elephant_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_06.jpg"
+  },
+  {
+   "src": "067 Chital in Ranthambore National Park Photo by Giles Laurent.jpg",
+   "ja": "アクシスジカ（ランタンボール）",
+   "en": "Chital, Ranthambore",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:067_Chital_in_Ranthambore_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "Varanasi Munshi Ghat3.jpg",
+   "ja": "ガンジス川とバラナシのガート",
+   "en": "Ghats of Varanasi on the Ganges",
+   "author": "Marcin Białek",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Varanasi_Munshi_Ghat3.jpg"
+  },
+  {
+   "src": "Taj Mahal, Agra, India edit2.jpg",
+   "ja": "タージ・マハル",
+   "en": "The Taj Mahal",
+   "author": "Yann; edited by King of Hearts",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Taj_Mahal,_Agra,_India_edit2.jpg"
+  },
+  {
+   "src": "Darjeeling, India, Tea plantations on hills.jpg",
+   "ja": "ダージリンの茶畑",
+   "en": "Tea gardens of Darjeeling",
+   "author": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Darjeeling,_India,_Tea_plantations_on_hills.jpg"
+  },
+  {
+   "src": "Gurudongmar Lake Sikkim, India (edit).jpg",
+   "ja": "グルドンマル湖（シッキム）",
+   "en": "Gurudongmar Lake, Sikkim",
+   "author": "Original: Yoghya Derivative work: UnpetitproleX",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gurudongmar_Lake_Sikkim,_India_(edit).jpg"
+  }
+ ],
+ "amritsar": [
+  {
+   "src": "Blackbuck in Tal Chhapar Sanctuary November 2025 by Tisha Mukherjee 06.jpg",
+   "ja": "ブラックバック（ラージャスターン）",
+   "en": "Blackbuck, Rajasthan",
+   "author": "Tisha Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Blackbuck_in_Tal_Chhapar_Sanctuary_November_2025_by_Tisha_Mukherjee_06.jpg"
+  },
+  {
+   "src": "Pangong Tso 2.jpg",
+   "ja": "パンゴン湖（ラダック）",
+   "en": "Pangong Lake, Ladakh",
+   "author": "KennyOMG",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pangong_Tso_2.jpg"
+  },
+  {
+   "src": "Mustard Growing in a Terraced Field in Ladakh, India (edit).jpg",
+   "ja": "ザンスカールの菜の花畑",
+   "en": "Mustard fields in Zanskar",
+   "author": "Chris Hunkeler from Carlsbad, California, USA Derivative work: UnpetitproleX",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mustard_Growing_in_a_Terraced_Field_in_Ladakh,_India_(edit).jpg"
+  },
+  {
+   "src": "Bengal tiger in Sanjay Dubri Tiger Reserve December 2024 by Tisha Mukherjee 15.jpg",
+   "ja": "ベンガルトラ（サンジャイ・ドゥブリ）",
+   "en": "Bengal tiger, Sanjay-Dubri",
+   "author": "Tisha Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bengal_tiger_in_Sanjay_Dubri_Tiger_Reserve_December_2024_by_Tisha_Mukherjee_15.jpg"
+  },
+  {
+   "src": "Female Baby Elephant Nagarhole Apr22 D72 23751.jpg",
+   "ja": "ゾウの親子（ナガルホール）",
+   "en": "Elephant mother and calf, Nagarhole",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Female_Baby_Elephant_Nagarhole_Apr22_D72_23751.jpg"
+  },
+  {
+   "src": "Nilgiri tahr (Nilgiritragus hylocrius) female head.jpg",
+   "ja": "ニルギリタール",
+   "en": "Nilgiri tahr",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Nilgiri_tahr_(Nilgiritragus_hylocrius)_female_head.jpg"
+  },
+  {
+   "src": "Hampi, India, Rocky landscape of Hampi, Granite rocks of Matanga Hill.jpg",
+   "ja": "ハンピの岩山の夕暮れ",
+   "en": "Sunset over the boulders of Hampi",
+   "author": "Vyacheslav Argenberg",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hampi,_India,_Rocky_landscape_of_Hampi,_Granite_rocks_of_Matanga_Hill.jpg"
+  },
+  {
+   "src": "Barasingha in Kaziranga National Park March 2025 by Tisha Mukherjee 04.jpg",
+   "ja": "バラシンガジカ（カジランガ）",
+   "en": "Barasingha, Kaziranga",
+   "author": "Tisha Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Barasingha_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_04.jpg"
+  },
+  {
+   "src": "Black-necked Stork in Kaziranga National Park March 2025 by Tisha Mukherjee 04.jpg",
+   "ja": "セイタカコウ（カジランガ）",
+   "en": "Black-necked stork, Kaziranga",
+   "author": "Tisha Mukherjee",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Black-necked_Stork_in_Kaziranga_National_Park_March_2025_by_Tisha_Mukherjee_04.jpg"
+  }
+ ],
+ "yazd": [
+  {
+   "src": "2020-01-02 Iran, Kerman, Dasht-e Lut DSC 9973 DxO.jpg",
+   "ja": "ルート砂漠の夕暮れ",
+   "en": "Dusk in the Lut Desert",
+   "author": "Lrkrol",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2020-01-02_Iran,_Kerman,_Dasht-e_Lut_DSC_9973_DxO.jpg"
+  },
+  {
+   "src": "2020-01-02 Iran, Kerman, Dasht-e Lut DSC 9872 DxO PS.jpg",
+   "ja": "ルート砂漠のカルート（奇岩）",
+   "en": "The kaluts of the Lut Desert",
+   "author": "Lrkrol",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2020-01-02_Iran,_Kerman,_Dasht-e_Lut_DSC_9872_DxO_PS.jpg"
+  },
+  {
+   "src": "2020-01-02 Iran, Kerman, Dasht-e Lut DSC 9676 DxO.jpg",
+   "ja": "ルート砂漠の谷",
+   "en": "A ravine in the Lut Desert",
+   "author": "Lrkrol",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2020-01-02_Iran,_Kerman,_Dasht-e_Lut_DSC_9676_DxO.jpg"
+  },
+  {
+   "src": "2020-01-02 Iran, Kerman, Dasht-e Lut DSC 9505 DxO.jpg",
+   "ja": "ルート砂漠の塩と木",
+   "en": "Salt and a tree in the Lut Desert",
+   "author": "Lrkrol",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2020-01-02_Iran,_Kerman,_Dasht-e_Lut_DSC_9505_DxO.jpg"
+  },
+  {
+   "src": "Ciudadela de Meybod, Irán, 2016-09-20, DD 02.jpg",
+   "ja": "メイボドの城（ヤズドの近く）",
+   "en": "Meybod citadel near Yazd",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ciudadela_de_Meybod,_Ir%C3%A1n,_2016-09-20,_DD_02.jpg"
+  },
+  {
+   "src": "غار ایوب 2.jpg",
+   "ja": "アイユーブ洞窟からの眺め",
+   "en": "View from Ayyoob Cave",
+   "author": "Morteza salehi70",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%D8%BA%D8%A7%D8%B1_%D8%A7%DB%8C%D9%88%D8%A8_2.jpg"
+  },
+  {
+   "src": "Ekbatan dam.jpg",
+   "ja": "エクバタン湖の夕日（ハマダーン）",
+   "en": "Sunset at Ekbatan Lake, Hamadan",
+   "author": "Amir Pashaei",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ekbatan_dam.jpg"
+  },
+  {
+   "src": "Taleqan, iran.jpg",
+   "ja": "タレガーンの谷",
+   "en": "The Taleqan valley",
+   "author": "Amir Pashaei",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Taleqan,_iran.jpg"
+  },
+  {
+   "src": "Holy SURP Hovhannes Church.jpg",
+   "ja": "雪の丘と古い教会（ソフロル）",
+   "en": "Snowy hills and an old church, Sohrol",
+   "author": "Farzin Izaddoust dar",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Holy_SURP_Hovhannes_Church.jpg"
+  }
+ ],
+ "istanbul": [
+  {
+   "src": "Uçhisar, Cappadocia 07.jpg",
+   "ja": "カッパドキアの気球",
+   "en": "Balloons over Cappadocia",
+   "author": "Bernard Gagnon",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:U%C3%A7hisar,_Cappadocia_07.jpg"
+  },
+  {
+   "src": "Flamingos in Hörmetci reeds.jpg",
+   "ja": "湿地のフラミンゴ（カイセリ）",
+   "en": "Flamingos in the Hürmetçi wetlands",
+   "author": "Ramazancirakoglu",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Flamingos_in_H%C3%B6rmetci_reeds.jpg"
+  },
+  {
+   "src": "Pamukkale 02.jpg",
+   "ja": "パムッカレの石灰棚",
+   "en": "Travertine terraces of Pamukkale",
+   "author": "Bernard Gagnon",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pamukkale_02.jpg"
+  },
+  {
+   "src": "Cappadocia Chimneys Wikimedia Commons.jpg",
+   "ja": "カッパドキアの妖精の煙突",
+   "en": "Fairy chimneys of Cappadocia",
+   "author": "Benh LIEU SONG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cappadocia_Chimneys_Wikimedia_Commons.jpg"
+  },
+  {
+   "src": "Mount Ararat and the Araratian plain (cropped).jpg",
+   "ja": "アララト山",
+   "en": "Mount Ararat",
+   "author": "Սէրուժ Ուրիշեան (Serouj Ourishian)",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mount_Ararat_and_the_Araratian_plain_(cropped).jpg"
+  },
+  {
+   "src": "Cappadocia Aerial View Landscape.jpg",
+   "ja": "空から見たカッパドキア",
+   "en": "Cappadocia from the air",
+   "author": "Benh LIEU SONG (Flickr)",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cappadocia_Aerial_View_Landscape.jpg"
+  },
+  {
+   "src": "20100524 Kardamos beach Imbros Gökçeada Turkey.jpg",
+   "ja": "ギョクチェアダ島の浜",
+   "en": "A beach on Gökçeada",
+   "author": "User:Ggia",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:20100524_Kardamos_beach_Imbros_G%C3%B6k%C3%A7eada_Turkey.jpg"
+  },
+  {
+   "src": "Zelve, Cappadocia 06.jpg",
+   "ja": "ゼルベの谷（カッパドキア）",
+   "en": "Zelve valley, Cappadocia",
+   "author": "Bernard Gagnon",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zelve,_Cappadocia_06.jpg"
+  },
+  {
+   "src": "Man turns drying chili peppers, Turkey.jpg",
+   "ja": "干したトウガラシの模様",
+   "en": "Drying chili peppers",
+   "author": "Rotadefterim",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Man_turns_drying_chili_peppers,_Turkey.jpg"
+  }
+ ],
+ "jerusalem": [
+  {
+   "src": "זריחה באגמון חולה בזמן נדידת העגורים.jpg",
+   "ja": "朝焼けのフラ湖とツルの群れ",
+   "en": "Sunrise and migrating cranes, Hula Valley",
+   "author": "Tomere",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%D7%96%D7%A8%D7%99%D7%97%D7%94_%D7%91%D7%90%D7%92%D7%9E%D7%95%D7%9F_%D7%97%D7%95%D7%9C%D7%94_%D7%91%D7%96%D7%9E%D7%9F_%D7%A0%D7%93%D7%99%D7%93%D7%AA_%D7%94%D7%A2%D7%92%D7%95%D7%A8%D7%99%D7%9D.jpg"
+  },
+  {
+   "src": "Young female Nubian ibex in Mitzpe Ramon (40409).jpg",
+   "ja": "ヌビアアイベックス（ミツペ・ラモン）",
+   "en": "Nubian ibex, Mitzpe Ramon",
+   "author": "Rhododendrites",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Young_female_Nubian_ibex_in_Mitzpe_Ramon_(40409).jpg"
+  },
+  {
+   "src": "Juvenile Nubian ibex (50832).jpg",
+   "ja": "アイベックスの子ども",
+   "en": "Nubian ibex kids",
+   "author": "Rhododendrites",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Juvenile_Nubian_ibex_(50832).jpg"
+  },
+  {
+   "src": "Onagers Negev Mountains 1.jpg",
+   "ja": "ネゲブ砂漠のノロバ",
+   "en": "Onagers in the Negev",
+   "author": "Gideon Pisanty (Gidip) גדעון פיזנטי",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Onagers_Negev_Mountains_1.jpg"
+  },
+  {
+   "src": "Makhtesh Ramon (50785).jpg",
+   "ja": "ラモン・クレーター",
+   "en": "Makhtesh Ramon",
+   "author": "Rhododendrites",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Makhtesh_Ramon_(50785).jpg"
+  },
+  {
+   "src": "Ein Bokek. Dead Sea. Israel. 05.jpg",
+   "ja": "死海の朝",
+   "en": "Morning over the Dead Sea",
+   "author": "Staselnik",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ein_Bokek._Dead_Sea._Israel._05.jpg"
+  },
+  {
+   "src": "Eilat Dolphin Reef (3).jpg",
+   "ja": "エイラートのイルカ（紅海）",
+   "en": "Dolphin at Eilat, Red Sea",
+   "author": "טל שמע",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Eilat_Dolphin_Reef_(3).jpg"
+  },
+  {
+   "src": "Iris mariae 1.jpg",
+   "ja": "砂漠のアヤメ（ネゲブ）",
+   "en": "Desert iris in the Negev",
+   "author": "Gideon Pisanty (Gidip) גדעון פיזנטי",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Iris_mariae_1.jpg"
+  },
+  {
+   "src": "Mourning Wheatear, Negev Desert, Israel.jpg",
+   "ja": "ネゲブのサバクヒタキ",
+   "en": "Mourning wheatear, Negev",
+   "author": "Artemy Voikhansky",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mourning_Wheatear,_Negev_Desert,_Israel.jpg"
+  }
+ ],
+ "cairo": [
+  {
+   "src": "All Gizah Pyramids.jpg",
+   "ja": "ギザのピラミッド",
+   "en": "The pyramids of Giza",
+   "author": "Ricardo Liberato",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:All_Gizah_Pyramids.jpg"
+  },
+  {
+   "src": "Balloon over Luxor - Egypt denoised.jpg",
+   "ja": "ルクソールの朝日と気球",
+   "en": "Balloon at sunrise over Luxor",
+   "author": "Balloon_over_Luxor_-_Egypt.jpg: Marcosleal derivative work: Pro2 (talk)",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Balloon_over_Luxor_-_Egypt_denoised.jpg"
+  },
+  {
+   "src": "Pez estandarte del mar Rojo (Heniochus intermedius), mar Rojo, Egipto, 2023-04-15, DD 36.jpg",
+   "ja": "紅海のハタタテダイ",
+   "en": "Red Sea bannerfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_estandarte_del_mar_Rojo_(Heniochus_intermedius),_mar_Rojo,_Egipto,_2023-04-15,_DD_36.jpg"
+  },
+  {
+   "src": "Pez murciélago orbicular (Platax orbicularis), mar Rojo, Egipto, 2023-04-19, DD 01.jpg",
+   "ja": "ツバメウオ（紅海）",
+   "en": "Orbicular batfish, Red Sea",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_murci%C3%A9lago_orbicular_(Platax_orbicularis),_mar_Rojo,_Egipto,_2023-04-19,_DD_01.jpg"
+  },
+  {
+   "src": "Pez ballesta picasso arábigo (Rhinecanthus assasi), mar Rojo, Egipto, 2023-04-18, DD 22.jpg",
+   "ja": "紅海のモンガラカワハギ",
+   "en": "Assasi triggerfish, Red Sea",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_ballesta_picasso_ar%C3%A1bigo_(Rhinecanthus_assasi),_mar_Rojo,_Egipto,_2023-04-18,_DD_22.jpg"
+  },
+  {
+   "src": "Mount Sinai BW 3.jpg",
+   "ja": "シナイ山からの眺め",
+   "en": "View from Mount Sinai",
+   "author": "Berthold Werner",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mount_Sinai_BW_3.jpg"
+  },
+  {
+   "src": "Acacia in Ein Khadra Desert Oasis 00 (137).jpg",
+   "ja": "シナイのオアシスのアカシア",
+   "en": "Acacia in a Sinai oasis",
+   "author": "لا روسا",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Acacia_in_Ein_Khadra_Desert_Oasis_00_(137).jpg"
+  },
+  {
+   "src": "Camel Nuweibaa 00 (13).JPG",
+   "ja": "シナイのラクダ",
+   "en": "Camel in the Sinai",
+   "author": "لا روسا",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Camel_Nuweibaa_00_(13).JPG"
+  },
+  {
+   "src": "Templo funerario de Hatshepsut, Luxor, Egipto, 2022-04-03, DD 13.jpg",
+   "ja": "ハトシェプスト女王葬祭殿の朝",
+   "en": "Sunrise at the Temple of Hatshepsut",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Templo_funerario_de_Hatshepsut,_Luxor,_Egipto,_2022-04-03,_DD_13.jpg"
+  },
+  {
+   "src": "Aswan Nile R24.jpg",
+   "ja": "アスワンのナイル川",
+   "en": "The Nile at Aswan",
+   "author": "Marc Ryckaert (MJJR)",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Aswan_Nile_R24.jpg"
+  },
+  {
+   "src": "Dorudon atrox fossil at Wadi El-Hitan, Egypt, March 2008.jpg",
+   "ja": "クジラの谷の化石（ワディ・ヒタン）",
+   "en": "Whale fossil, Wadi Al-Hitan",
+   "author": "Clr202 (Christoph Rohner) at de.wikipedia",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Dorudon_atrox_fossil_at_Wadi_El-Hitan,_Egypt,_March_2008.jpg"
+  }
+ ],
+ "lalibela": [
+  {
+   "src": "Ethiopian wolf (Canis simensis citernii) 2.jpg",
+   "ja": "エチオピアオオカミ",
+   "en": "Ethiopian wolf",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii)_2.jpg"
+  },
+  {
+   "src": "Gelada (Theropithecus gelada gelada) male yawning.jpg",
+   "ja": "ゲラダヒヒ",
+   "en": "Gelada",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gelada_(Theropithecus_gelada_gelada)_male_yawning.jpg"
+  },
+  {
+   "src": "Sunrise at Ethiopia´s salt flats.jpg",
+   "ja": "ダナキル砂漠の塩原の朝日",
+   "en": "Sunrise on the Danakil salt flats",
+   "author": "Thomas Fuhrmann",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunrise_at_Ethiopia%C2%B4s_salt_flats.jpg"
+  },
+  {
+   "src": "Ethiopia - Lake Assale.jpg",
+   "ja": "アサレ湖（塩の湖）",
+   "en": "Lake Assale, a salt lake",
+   "author": "Thomas Fuhrmann",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_Lake_Assale.jpg"
+  },
+  {
+   "src": "Gelada (Theropithecus gelada gelada) female with baby on her back.jpg",
+   "ja": "赤ちゃんを背負ったゲラダ",
+   "en": "Gelada with her baby",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gelada_(Theropithecus_gelada_gelada)_female_with_baby_on_her_back.jpg"
+  },
+  {
+   "src": "Ethiopia - Dallol.jpg",
+   "ja": "ダロル火山の色の大地",
+   "en": "Dallol, the colourful volcano",
+   "author": "Thomas Fuhrmann",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopia_-_Dallol.jpg"
+  },
+  {
+   "src": "Geladas near Chennek.jpg",
+   "ja": "シミエン山地のゲラダ",
+   "en": "Geladas in the Simien Mountains",
+   "author": "Bernard Gagnon",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Geladas_near_Chennek.jpg"
+  },
+  {
+   "src": "Ethiopian wolf (Canis simensis citernii).jpg",
+   "ja": "高原を歩くエチオピアオオカミ",
+   "en": "Ethiopian wolf on the highlands",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ethiopian_wolf_(Canis_simensis_citernii).jpg"
+  },
+  {
+   "src": "Southern gelada (Theropithecus gelada obscurus) male.jpg",
+   "ja": "ゲラダのオス",
+   "en": "Male gelada",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Southern_gelada_(Theropithecus_gelada_obscurus)_male.jpg"
+  }
+ ],
+ "nairobi": [
+  {
+   "src": "Buffalo Nairobi Skyline Savannah Kenya May19 R1600769.jpg",
+   "ja": "ナイロビの街とバッファロー",
+   "en": "Buffalo with the Nairobi skyline",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Buffalo_Nairobi_Skyline_Savannah_Kenya_May19_R1600769.jpg"
+  },
+  {
+   "src": "Gyps rueppellii -Nairobi National Park, Kenya-8-4c.jpg",
+   "ja": "ナイロビ国立公園のハゲワシ",
+   "en": "Rüppell's vulture, Nairobi National Park",
+   "author": "Gyps_rueppellii_-Nairobi_National_Park,_Kenya-8.jpg: Jorge Láscar from Bogotá,…",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gyps_rueppellii_-Nairobi_National_Park,_Kenya-8-4c.jpg"
+  },
+  {
+   "src": "Lions Family Portrait Masai Mara.jpg",
+   "ja": "ライオンの家族（マサイマラ）",
+   "en": "Lion family, Masai Mara",
+   "author": "Benh LIEU SONG",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lions_Family_Portrait_Masai_Mara.jpg"
+  },
+  {
+   "src": "Three zebras in Masai Mara National Park, Kenya.jpg",
+   "ja": "シマウマ（マサイマラ）",
+   "en": "Zebras in the Masai Mara",
+   "author": "Volodymyr Burdiak",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Three_zebras_in_Masai_Mara_National_Park,_Kenya.jpg"
+  },
+  {
+   "src": "Three giraffes 01.jpg",
+   "ja": "キリン（マサイマラ）",
+   "en": "Giraffes in the Masai Mara",
+   "author": "Byrdyak",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Three_giraffes_01.jpg"
+  },
+  {
+   "src": "Masai Mara National Reserve 20 - Mara river crossing.jpg",
+   "ja": "川を渡るシマウマの群れ",
+   "en": "Zebras crossing the Mara River",
+   "author": "Thomas Fuhrmann",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Masai_Mara_National_Reserve_20_-_Mara_river_crossing.jpg"
+  },
+  {
+   "src": "Masai Mara National Reserve 07 - cheetah (Acinonyx jubatus).jpg",
+   "ja": "チーター（マサイマラ）",
+   "en": "Cheetah, Masai Mara",
+   "author": "Thomas Fuhrmann",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Masai_Mara_National_Reserve_07_-_cheetah_(Acinonyx_jubatus).jpg"
+  },
+  {
+   "src": "Datilero del desierto (Balanites aegyptiaca), reserva natural Masái Mara, Kenia, 2024-05-20, DD 14.jpg",
+   "ja": "マサイマラのアカシアの木",
+   "en": "A lone tree in the Masai Mara",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Datilero_del_desierto_(Balanites_aegyptiaca),_reserva_natural_Mas%C3%A1i_Mara,_Kenia,_2024-05-20,_DD_14.jpg"
+  },
+  {
+   "src": "Red elephant in dirt.jpg",
+   "ja": "赤い土のゾウ（ツァボ）",
+   "en": "Red elephant, Tsavo",
+   "author": "Byrdyak",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Red_elephant_in_dirt.jpg"
+  },
+  {
+   "src": "Leopard on mount in Tsavo East National Park.jpg",
+   "ja": "岩の上のヒョウ（ツァボ）",
+   "en": "Leopard on a rock, Tsavo",
+   "author": "Byrdyak",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Leopard_on_mount_in_Tsavo_East_National_Park.jpg"
+  },
+  {
+   "src": "Lago Nakuru, Kenia, 2024-05-19, DD 04.jpg",
+   "ja": "ナクル湖",
+   "en": "Lake Nakuru",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lago_Nakuru,_Kenia,_2024-05-19,_DD_04.jpg"
+  }
+ ],
+ "serengeti": [
+  {
+   "src": "004 Sunrise at Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "セレンゲティの朝",
+   "en": "Sunrise in the Serengeti",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:004_Sunrise_at_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "042 Masai giraffe in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "マサイキリン",
+   "en": "Masai giraffe",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:042_Masai_giraffe_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "002 Male Lion prowling in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "歩くライオン",
+   "en": "Male lion prowling",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:002_Male_Lion_prowling_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "018 Lilac-breasted roller in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "ライラックニシブッポウソウ",
+   "en": "Lilac-breasted roller",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:018_Lilac-breasted_roller_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "037 Cheetah close-up in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "チーターの顔",
+   "en": "Cheetah close-up",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:037_Cheetah_close-up_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "048 Hippopotamus fight in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "カバのけんか",
+   "en": "Hippos fighting",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:048_Hippopotamus_fight_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "046 Fischer's lovebird in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "ボタンインコ",
+   "en": "Fischer's lovebird",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:046_Fischer%27s_lovebird_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "047 Kirk's dik-dik in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "ディクディク（小さなアンテロープ）",
+   "en": "Kirk's dik-dik",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:047_Kirk%27s_dik-dik_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "043 Little bee-eater in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "ミドリハチクイ",
+   "en": "Little bee-eater",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:043_Little_bee-eater_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "001 Juvenile leopard in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "木の上のヒョウの子ども",
+   "en": "Young leopard in a tree",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:001_Juvenile_leopard_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "031 Saddle-billed stork in flight in the Serengeti National Park Photo by Giles Laurent.jpg",
+   "ja": "クラハシコウ",
+   "en": "Saddle-billed stork",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:031_Saddle-billed_stork_in_flight_in_the_Serengeti_National_Park_Photo_by_Giles_Laurent.jpg"
+  }
+ ],
+ "arusha": [
+  {
+   "src": "Paisaje en la zona de conservación de Ngorongoro, Tanzania, 2024-05-27, DD 56.jpg",
+   "ja": "ンゴロンゴロの景色",
+   "en": "Ngorongoro landscape",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Paisaje_en_la_zona_de_conservaci%C3%B3n_de_Ngorongoro,_Tanzania,_2024-05-27,_DD_56.jpg"
+  },
+  {
+   "src": "Anochecer en la zona de conservación de Ngorongoro, Tanzania, 2024-05-27, DD 66-68 HDR.jpg",
+   "ja": "ンゴロンゴロの夕暮れ",
+   "en": "Dusk at Ngorongoro",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Anochecer_en_la_zona_de_conservaci%C3%B3n_de_Ngorongoro,_Tanzania,_2024-05-27,_DD_66-68_HDR.jpg"
+  },
+  {
+   "src": "Flamencos enanos (Phoeniconaias minor), zona de conservación de Ngorongoro, Tanzania, 2024-05-27, DD 25.jpg",
+   "ja": "コフラミンゴ（ンゴロンゴロ）",
+   "en": "Lesser flamingos, Ngorongoro",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Flamencos_enanos_(Phoeniconaias_minor),_zona_de_conservaci%C3%B3n_de_Ngorongoro,_Tanzania,_2024-05-27,_DD_25.jpg"
+  },
+  {
+   "src": "013 Black-backed jackal in the Ngorongoro Crater Photo by Giles Laurent.jpg",
+   "ja": "セグロジャッカル",
+   "en": "Black-backed jackal",
+   "author": "Giles Laurent",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:013_Black-backed_jackal_in_the_Ngorongoro_Crater_Photo_by_Giles_Laurent.jpg"
+  },
+  {
+   "src": "Tarangire scenery with baobabs.jpg",
+   "ja": "タランギーレのバオバブ",
+   "en": "Baobabs of Tarangire",
+   "author": "Leyo",
+   "license": "CC BY-SA 2.5 ch",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5/ch/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Tarangire_scenery_with_baobabs.jpg"
+  },
+  {
+   "src": "Serval (Leptailurus serval), parque nacional de Tarangire, Tanzania, 2024-05-25, DD 54.jpg",
+   "ja": "サーバル",
+   "en": "Serval",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Serval_(Leptailurus_serval),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-25,_DD_54.jpg"
+  },
+  {
+   "src": "Guepardos (Acinonyx jubatus), parque nacional de Tarangire, Tanzania, 2024-05-24, DD 55.jpg",
+   "ja": "チーターの親子（タランギーレ）",
+   "en": "Cheetahs, Tarangire",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Guepardos_(Acinonyx_jubatus),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-24,_DD_55.jpg"
+  },
+  {
+   "src": "León (Panthera leo), parque nacional de Tarangire, Tanzania, 2024-05-24, DD 99.jpg",
+   "ja": "木の上で休むライオン",
+   "en": "Lion resting in a tree",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Le%C3%B3n_(Panthera_leo),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-24,_DD_99.jpg"
+  },
+  {
+   "src": "Cebras comunes (Equus quagga), parque nacional de Tarangire, Tanzania, 2024-05-25, DD 90.jpg",
+   "ja": "シマウマ（タランギーレ）",
+   "en": "Zebras, Tarangire",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cebras_comunes_(Equus_quagga),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-25,_DD_90.jpg"
+  },
+  {
+   "src": "Lake Manyara Wildlife.jpg",
+   "ja": "マニャラ湖の動物たち",
+   "en": "Wildlife at Lake Manyara",
+   "author": "Gaurav Pandit",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lake_Manyara_Wildlife.jpg"
+  },
+  {
+   "src": "Hiena manchada (Crocuta crocuta), parque nacional de Tarangire, Tanzania, 2024-05-25, DD 26.jpg",
+   "ja": "ブチハイエナ",
+   "en": "Spotted hyena",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Hiena_manchada_(Crocuta_crocuta),_parque_nacional_de_Tarangire,_Tanzania,_2024-05-25,_DD_26.jpg"
+  },
+  {
+   "src": "Cráter volcánico, zona de conservación de Ngorongoro, Tanzania, 2024-05-27, DD 11.jpg",
+   "ja": "火口の湖",
+   "en": "A volcanic crater lake",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cr%C3%A1ter_volc%C3%A1nico,_zona_de_conservaci%C3%B3n_de_Ngorongoro,_Tanzania,_2024-05-27,_DD_11.jpg"
+  }
+ ],
+ "kilimanjaro": [
+  {
+   "src": "Kilimanjaro from Amboseli.jpg",
+   "ja": "アンボセリから見たキリマンジャロ",
+   "en": "Kilimanjaro from Amboseli",
+   "author": "Sergey Pesterev",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kilimanjaro_from_Amboseli.jpg"
+  },
+  {
+   "src": "Kilimanjaro, Tanzania, 2024-05-22, DD 110.jpg",
+   "ja": "雲の上のキリマンジャロ",
+   "en": "Kilimanjaro above the clouds",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kilimanjaro,_Tanzania,_2024-05-22,_DD_110.jpg"
+  },
+  {
+   "src": "Kilimanjaro, Tanzania, 2024-05-22, DD 109.jpg",
+   "ja": "キリマンジャロと森",
+   "en": "Kilimanjaro over the forest",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kilimanjaro,_Tanzania,_2024-05-22,_DD_109.jpg"
+  },
+  {
+   "src": "African Elephant at Amboseli National Park-070A5584.jpg",
+   "ja": "アンボセリのゾウ",
+   "en": "Elephant, Amboseli",
+   "author": "Bijay Chaurasia",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:African_Elephant_at_Amboseli_National_Park-070A5584.jpg"
+  },
+  {
+   "src": "Flamencos enanos (Phoeniconaias minor), parque nacional de Amboseli, Kenia, 2024-05-22, DD 28.jpg",
+   "ja": "コフラミンゴ（アンボセリ）",
+   "en": "Lesser flamingos, Amboseli",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Flamencos_enanos_(Phoeniconaias_minor),_parque_nacional_de_Amboseli,_Kenia,_2024-05-22,_DD_28.jpg"
+  },
+  {
+   "src": "Secretario (Sagittarius serpentarius), parque nacional de Amboseli, Kenia, 2024-05-23, DD 13.jpg",
+   "ja": "ヘビクイワシ",
+   "en": "Secretarybird",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Secretario_(Sagittarius_serpentarius),_parque_nacional_de_Amboseli,_Kenia,_2024-05-23,_DD_13.jpg"
+  },
+  {
+   "src": "Pigargo vocinglero (Haliaeetus vocifer), parque nacional de Amboseli, Kenia, 2024-05-22, DD 65.jpg",
+   "ja": "サンショクウミワシ",
+   "en": "African fish eagle",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pigargo_vocinglero_(Haliaeetus_vocifer),_parque_nacional_de_Amboseli,_Kenia,_2024-05-22,_DD_65.jpg"
+  },
+  {
+   "src": "Avestruz (Struthio camelus), parque nacional de Amboseli, Kenia, 2024-05-22, DD 62.jpg",
+   "ja": "ダチョウ",
+   "en": "Ostrich",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Avestruz_(Struthio_camelus),_parque_nacional_de_Amboseli,_Kenia,_2024-05-22,_DD_62.jpg"
+  },
+  {
+   "src": "Gacela de Thomson (Eudorcas thomsonii), parque nacional de Amboseli, Kenia, 2024-05-23, DD 11.jpg",
+   "ja": "トムソンガゼル",
+   "en": "Thomson's gazelle",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gacela_de_Thomson_(Eudorcas_thomsonii),_parque_nacional_de_Amboseli,_Kenia,_2024-05-23,_DD_11.jpg"
+  },
+  {
+   "src": "Ñu común (Connochaetes taurinus), parque nacional de Amboseli, Kenia, 2024-05-23, DD 16.jpg",
+   "ja": "ヌー",
+   "en": "Wildebeest",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:%C3%91u_com%C3%BAn_(Connochaetes_taurinus),_parque_nacional_de_Amboseli,_Kenia,_2024-05-23,_DD_16.jpg"
+  },
+  {
+   "src": "Gansos egipcios (Alopochen aegyptiaca), parque nacional de Amboseli, Kenia, 2024-05-22, DD 45.jpg",
+   "ja": "エジプトガン",
+   "en": "Egyptian geese",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gansos_egipcios_(Alopochen_aegyptiaca),_parque_nacional_de_Amboseli,_Kenia,_2024-05-22,_DD_45.jpg"
+  },
+  {
+   "src": "Two white-necked raven.JPG",
+   "ja": "キリマンジャロのシロエリオオガラス",
+   "en": "White-necked ravens on Kilimanjaro",
+   "author": "Jjgodox",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Two_white-necked_raven.JPG"
+  }
+ ],
+ "zanzibar": [
+  {
+   "src": "Colobo rojo de Zanzíbar (Piliocolobus kirkii), parque nacional de la Bahía Jozani Chwaka, Zanzíbar, Tanzania, 2024-06-02, DD 26.jpg",
+   "ja": "ザンジバルアカコロブス",
+   "en": "Zanzibar red colobus",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Colobo_rojo_de_Zanz%C3%ADbar_(Piliocolobus_kirkii),_parque_nacional_de_la_Bah%C3%ADa_Jozani_Chwaka,_Zanz%C3%ADbar,_Tanzania,_2024-06-02,_DD_26.jpg"
+  },
+  {
+   "src": "Sail Boat Sunset Stone Town Zanzibar Oct26 OM3 1123.jpg",
+   "ja": "夕日とダウ船",
+   "en": "Dhow at sunset",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sail_Boat_Sunset_Stone_Town_Zanzibar_Oct26_OM3_1123.jpg"
+  },
+  {
+   "src": "Dhow boat Zanzibar.jpg",
+   "ja": "浜のダウ船",
+   "en": "Dhow on the beach",
+   "author": "This photo was taken by Anton Zelenov. Please credit this with : Photo : Anton…",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Dhow_boat_Zanzibar.jpg"
+  },
+  {
+   "src": "Pez payaso zorrillo (Amphiprion akallopisos) en una anémona magnífica (Heteractis magnifica), Zanzíbar, Tanzania, 2024-05-29, DD 02.jpg",
+   "ja": "クマノミ",
+   "en": "Clownfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_payaso_zorrillo_(Amphiprion_akallopisos)_en_una_an%C3%A9mona_magn%C3%ADfica_(Heteractis_magnifica),_Zanz%C3%ADbar,_Tanzania,_2024-05-29,_DD_02.jpg"
+  },
+  {
+   "src": "Pez ángel (Apolemichthys trimaculatus), Zanzíbar, Tanzania, 2024-05-30, DD 74.jpg",
+   "ja": "キンチャクダイ",
+   "en": "Threespot angelfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_%C3%A1ngel_(Apolemichthys_trimaculatus),_Zanz%C3%ADbar,_Tanzania,_2024-05-30,_DD_74.jpg"
+  },
+  {
+   "src": "Ranisapo de Commerson (Antennarius commerson), Zanzíbar, Tanzania, 2024-05-31, DD 10.jpg",
+   "ja": "カエルアンコウ",
+   "en": "Giant frogfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ranisapo_de_Commerson_(Antennarius_commerson),_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_10.jpg"
+  },
+  {
+   "src": "Pez mariposa salpicado (Chaetodon guttatissimus), Zanzíbar, Tanzania, 2024-05-29, DD 46.jpg",
+   "ja": "チョウチョウウオ",
+   "en": "Peppered butterflyfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_mariposa_salpicado_(Chaetodon_guttatissimus),_Zanz%C3%ADbar,_Tanzania,_2024-05-29,_DD_46.jpg"
+  },
+  {
+   "src": "Estrella de mar de espinas rojas (Protoreaster linckii), Zanzíbar, Tanzania, 2024-06-01, DD 06.jpg",
+   "ja": "ヒトデ",
+   "en": "Red knob sea star",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Estrella_de_mar_de_espinas_rojas_(Protoreaster_linckii),_Zanz%C3%ADbar,_Tanzania,_2024-06-01,_DD_06.jpg"
+  },
+  {
+   "src": "Almeja gigante (Tridacna maxima), Zanzíbar, Tanzania, 2024-05-30, DD 68.jpg",
+   "ja": "シャコガイ",
+   "en": "Giant clam",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Almeja_gigante_(Tridacna_maxima),_Zanz%C3%ADbar,_Tanzania,_2024-05-30,_DD_68.jpg"
+  },
+  {
+   "src": "Babosa de mar (Chromodoris gleniei), Zanzíbar, Tanzania, 2024-06-01, DD 30.jpg",
+   "ja": "ウミウシ",
+   "en": "Sea slug",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Babosa_de_mar_(Chromodoris_gleniei),_Zanz%C3%ADbar,_Tanzania,_2024-06-01,_DD_30.jpg"
+  },
+  {
+   "src": "Estrella de mar granulada (Choriaster granulatus), Zanzíbar, Tanzania, 2024-05-31, DD 67.jpg",
+   "ja": "マンジュウヒトデ",
+   "en": "Granulated sea star",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Estrella_de_mar_granulada_(Choriaster_granulatus),_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_67.jpg"
+  },
+  {
+   "src": "Colobo rojo de Zanzíbar (Piliocolobus kirkii), parque nacional de la Bahía Jozani Chwaka, Zanzíbar, Tanzania, 2024-06-02, DD 05.jpg",
+   "ja": "森のコロブス（ジョザニ）",
+   "en": "Red colobus in Jozani forest",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Colobo_rojo_de_Zanz%C3%ADbar_(Piliocolobus_kirkii),_parque_nacional_de_la_Bah%C3%ADa_Jozani_Chwaka,_Zanz%C3%ADbar,_Tanzania,_2024-06-02,_DD_05.jpg"
+  }
+ ],
+ "dar": [
+  {
+   "src": "Boat Sailing South Zanzibar Oct26 A7CR 14833.jpg",
+   "ja": "帆を張る漁船",
+   "en": "Fishing boat under sail",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Boat_Sailing_South_Zanzibar_Oct26_A7CR_14833.jpg"
+  },
+  {
+   "src": "Poling Outrigger Boar Fumba Zanzibar Oct26 A7CR 14357.jpg",
+   "ja": "アウトリガーの舟",
+   "en": "Poling an outrigger boat",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Poling_Outrigger_Boar_Fumba_Zanzibar_Oct26_A7CR_14357.jpg"
+  },
+  {
+   "src": "Poling Outrigger Boar Fumba Zanzibar Oct26 A7CR 14386.jpg",
+   "ja": "漁に出る人たち",
+   "en": "Fishermen heading out",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Poling_Outrigger_Boar_Fumba_Zanzibar_Oct26_A7CR_14386.jpg"
+  },
+  {
+   "src": "Mangoes Stall Unguja South Zanzibar Oct26 A7R 06982.jpg",
+   "ja": "マンゴーの店",
+   "en": "Mango stall",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mangoes_Stall_Unguja_South_Zanzibar_Oct26_A7R_06982.jpg"
+  },
+  {
+   "src": "Anémona magnífica (Radianthus magnifica), Zanzíbar, Tanzania, 2024-05-29, DD 51.jpg",
+   "ja": "イソギンチャク",
+   "en": "Magnificent sea anemone",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:An%C3%A9mona_magn%C3%ADfica_(Radianthus_magnifica),_Zanz%C3%ADbar,_Tanzania,_2024-05-29,_DD_51.jpg"
+  },
+  {
+   "src": "Labiudo africano (Plectorhinchus gaterinus), Zanzíbar, Tanzania, 2024-05-31, DD 03.jpg",
+   "ja": "コショウダイ",
+   "en": "Blackspotted rubberlip",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Labiudo_africano_(Plectorhinchus_gaterinus),_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_03.jpg"
+  },
+  {
+   "src": "Pez halcón (Paracirrhites arcatus), Zanzíbar, Tanzania, 2024-05-29, DD 65.jpg",
+   "ja": "ホシゴンベ",
+   "en": "Arc-eye hawkfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pez_halc%C3%B3n_(Paracirrhites_arcatus),_Zanz%C3%ADbar,_Tanzania,_2024-05-29,_DD_65.jpg"
+  },
+  {
+   "src": "Catalufa espejuelo (Priacanthus hamrur), Zanzíbar, Tanzania, 2024-05-31, DD 48.jpg",
+   "ja": "キントキダイ",
+   "en": "Lunar-tailed bigeye",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Catalufa_espejuelo_(Priacanthus_hamrur),_Zanz%C3%ADbar,_Tanzania,_2024-05-31,_DD_48.jpg"
+  },
+  {
+   "src": "Corona de espinas (Acanthaster mauritiensis), Zanzíbar, Tanzania, 2024-05-29, DD 50.jpg",
+   "ja": "オニヒトデ",
+   "en": "Crown-of-thorns starfish",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Corona_de_espinas_(Acanthaster_mauritiensis),_Zanz%C3%ADbar,_Tanzania,_2024-05-29,_DD_50.jpg"
+  },
+  {
+   "src": "Coral (Sclerophytum densa), Zanzíbar, Tanzania, 2024-05-29, DD 89.jpg",
+   "ja": "サンゴ",
+   "en": "Coral",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Coral_(Sclerophytum_densa),_Zanz%C3%ADbar,_Tanzania,_2024-05-29,_DD_89.jpg"
+  },
+  {
+   "src": "Erizo de flor (Toxopneustes pileolus), Zanzíbar, Tanzania, 2024-06-01, DD 134.jpg",
+   "ja": "ラッパウニ",
+   "en": "Flower urchin",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Erizo_de_flor_(Toxopneustes_pileolus),_Zanz%C3%ADbar,_Tanzania,_2024-06-01,_DD_134.jpg"
+  },
+  {
+   "src": "Fishing Boat Sailing Fumba Zanzibar Oct26 A7CR 14324.jpg",
+   "ja": "海をゆく帆舟",
+   "en": "Sailing in the channel",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fishing_Boat_Sailing_Fumba_Zanzibar_Oct26_A7CR_14324.jpg"
+  }
+ ],
+ "malawi": [
+  {
+   "src": "Loxodonta africana South Luangwa National Park (1).jpg",
+   "ja": "川を渡るゾウの群れ（ルアングワ）",
+   "en": "Elephants crossing the Luangwa River",
+   "author": "Geoff Gallice",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Loxodonta_africana_South_Luangwa_National_Park_(1).jpg"
+  },
+  {
+   "src": "Sunset Luangwa River Zambia Jul23 A7C 05789.jpg",
+   "ja": "ルアングワ川の夕日",
+   "en": "Sunset over the Luangwa River",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunset_Luangwa_River_Zambia_Jul23_A7C_05789.jpg"
+  },
+  {
+   "src": "Hippo pod edit.jpg",
+   "ja": "カバの群れ",
+   "en": "A pod of hippos",
+   "author": "Paul Maritz",
+   "license": "CC BY-SA 3.0",
+   "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+   "page": "https://commons.wikimedia.org/wiki/File:Hippo_pod_edit.jpg"
+  },
+  {
+   "src": "Zebra Family Luangwa Zambia Jul23 A7C 05903.jpg",
+   "ja": "シマウマの親子",
+   "en": "Zebra family",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Zebra_Family_Luangwa_Zambia_Jul23_A7C_05903.jpg"
+  },
+  {
+   "src": "Lionesses Scratching Tree Cubs Luangwa Jul23 A7C 06340.jpg",
+   "ja": "木で爪をとぐライオン",
+   "en": "Lionesses scratching a tree",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lionesses_Scratching_Tree_Cubs_Luangwa_Jul23_A7C_06340.jpg"
+  },
+  {
+   "src": "Lion Cub Scratching Tree Luangwa Zambia Jul23 A7C 06354.jpg",
+   "ja": "ライオンの子ども",
+   "en": "Lion cub",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lion_Cub_Scratching_Tree_Luangwa_Zambia_Jul23_A7C_06354.jpg"
+  },
+  {
+   "src": "Giraffe Oxpeckers Lupande Zambia Jul23 A7R 06194.jpg",
+   "ja": "キリンとウシツツキ",
+   "en": "Giraffe with oxpeckers",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Giraffe_Oxpeckers_Lupande_Zambia_Jul23_A7R_06194.jpg"
+  },
+  {
+   "src": "Yellow-billed Stork Breeding Juvenile Lupande Jul23 A7R 06393.jpg",
+   "ja": "アフリカトキコウの親子",
+   "en": "Yellow-billed storks",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Yellow-billed_Stork_Breeding_Juvenile_Lupande_Jul23_A7R_06393.jpg"
+  },
+  {
+   "src": "Sitting Spotted Hyena Luangwa Jul23 A7C 06239.jpg",
+   "ja": "ブチハイエナ",
+   "en": "Spotted hyena",
+   "author": "This Photo was taken by Timothy A. Gonsalves. Feel free to use my photos, but …",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sitting_Spotted_Hyena_Luangwa_Jul23_A7C_06239.jpg"
+  },
+  {
+   "src": "Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 30-34 PAN.jpg",
+   "ja": "ビクトリアの滝と虹",
+   "en": "Victoria Falls with a rainbow",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_30-34_PAN.jpg"
+  },
+  {
+   "src": "Cataratas Victoria, Zambia-Zimbabue, 2018-07-27, DD 29.jpg",
+   "ja": "ビクトリアの滝",
+   "en": "Victoria Falls",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cataratas_Victoria,_Zambia-Zimbabue,_2018-07-27,_DD_29.jpg"
+  },
+  {
+   "src": "African fish eagle (Haliaeetus vocifer) Zimbabwe.jpg",
+   "ja": "サンショクウミワシ",
+   "en": "African fish eagle",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:African_fish_eagle_(Haliaeetus_vocifer)_Zimbabwe.jpg"
+  },
+  {
+   "src": "Plains zebras (Equus quagga) Maputo.jpg",
+   "ja": "水辺のシマウマ（モザンビーク）",
+   "en": "Zebras at a waterhole, Mozambique",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Plains_zebras_(Equus_quagga)_Maputo.jpg"
+  }
+ ],
+ "rome": [
+  {
+   "src": "StAngelo Bridge Rome.jpg",
+   "ja": "サンタンジェロ橋（ローマ）",
+   "en": "Ponte Sant'Angelo, Rome",
+   "author": "AngMoKio",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:StAngelo_Bridge_Rome.jpg"
+  },
+  {
+   "src": "Drei Zinnen Tre Cime di Lavaredo Dolomites.jpg",
+   "ja": "トレ・チーメ（ドロミテ）",
+   "en": "Tre Cime di Lavaredo, Dolomites",
+   "author": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but plea…",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Drei_Zinnen_Tre_Cime_di_Lavaredo_Dolomites.jpg"
+  },
+  {
+   "src": "Saslonch y Sela da Mont Sëuc.jpg",
+   "ja": "サッソルンゴとセイザーアルム",
+   "en": "Sassolungo and the Seiser Alm",
+   "author": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but plea…",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Saslonch_y_Sela_da_Mont_S%C3%ABuc.jpg"
+  },
+  {
+   "src": "Cypress tree alley at sunset in Asciano, Tuscany.jpg",
+   "ja": "トスカーナの糸杉の並木と夕日",
+   "en": "Cypress avenue at sunset, Tuscany",
+   "author": "Eric Kilby",
+   "license": "CC BY-SA 2.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cypress_tree_alley_at_sunset_in_Asciano,_Tuscany.jpg"
+  },
+  {
+   "src": "Atrani (Costiera Amalfitana, 23-8-2011).jpg",
+   "ja": "アマルフィ海岸のアトラーニ",
+   "en": "Atrani on the Amalfi Coast",
+   "author": "Paolo Costa Baldi",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Atrani_(Costiera_Amalfitana,_23-8-2011).jpg"
+  },
+  {
+   "src": "Lago de Como, Italia, 2016-06-25, DD 02-06 PAN.jpg",
+   "ja": "コモ湖",
+   "en": "Lake Como",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lago_de_Como,_Italia,_2016-06-25,_DD_02-06_PAN.jpg"
+  },
+  {
+   "src": "Stambecchi nel Parco Nazionale del Gran Paradiso.jpg",
+   "ja": "アルプスアイベックス（グラン・パラディーゾ）",
+   "en": "Alpine ibex, Gran Paradiso",
+   "author": "Luca Casale",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stambecchi_nel_Parco_Nazionale_del_Gran_Paradiso.jpg"
+  },
+  {
+   "src": "Lo sbadiglio.jpg",
+   "ja": "雪の中のアカギツネ",
+   "en": "Red fox in the snow, Gran Paradiso",
+   "author": "Alberto Peracchio",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lo_sbadiglio.jpg"
+  },
+  {
+   "src": "Lophophanes cristatus Gran Paradiso 20190908.jpg",
+   "ja": "カンムリガラ",
+   "en": "Crested tit, Gran Paradiso",
+   "author": "Marie-Lan Taÿ Pamart",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lophophanes_cristatus_Gran_Paradiso_20190908.jpg"
+  },
+  {
+   "src": "Camoscio geo localizzatore.jpg",
+   "ja": "シャモア",
+   "en": "Alpine chamois",
+   "author": "Francesca Lo Manto",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Camoscio_geo_localizzatore.jpg"
+  },
+  {
+   "src": "Etna Southeast Crater eruption 2022-05-17.jpg",
+   "ja": "エトナ山の噴火",
+   "en": "Etna erupting",
+   "author": "The Cosmonaut",
+   "license": "CC BY-SA 2.5 ca",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5/ca/deed.en",
+   "page": "https://commons.wikimedia.org/wiki/File:Etna_Southeast_Crater_eruption_2022-05-17.jpg"
+  },
+  {
+   "src": "Cefalu BW 2012-10-11 10-50-11.JPG",
+   "ja": "チェファルーの町と海（シチリア）",
+   "en": "Cefalù, Sicily",
+   "author": "Berthold Werner",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Cefalu_BW_2012-10-11_10-50-11.JPG"
+  },
+  {
+   "src": "La basilica al tramonto.jpg",
+   "ja": "スペルガ聖堂とモンテローザ",
+   "en": "Superga and Monte Rosa",
+   "author": "Domeian",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:La_basilica_al_tramonto.jpg"
+  },
+  {
+   "src": "Tschapit Rosszähne Seiseralm.jpg",
+   "ja": "セイザーアルムの牧草地",
+   "en": "Pastures of the Seiser Alm",
+   "author": "This Photo was taken by Wolfgang Moroder. Feel free to use my photos, but plea…",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tschapit_Rossz%C3%A4hne_Seiseralm.jpg"
+  }
+ ],
+ "wittenberg": [
+  {
+   "src": "Elbe in Saxon Switzerland.jpg",
+   "ja": "エルベ川（ザクセン・スイス）",
+   "en": "The Elbe in Saxon Switzerland",
+   "author": "Pudelek",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Elbe_in_Saxon_Switzerland.jpg"
+  },
+  {
+   "src": "Sunset in Saxon Switzerland.jpg",
+   "ja": "ザクセン・スイスの夕暮れ",
+   "en": "Sunset in Saxon Switzerland",
+   "author": "Michael Gäbler",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sunset_in_Saxon_Switzerland.jpg"
+  },
+  {
+   "src": "Lilienstein Saxon Switzerland.jpg",
+   "ja": "リーリエンシュタインの朝",
+   "en": "Lilienstein at dawn",
+   "author": "Merops",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Lilienstein_Saxon_Switzerland.jpg"
+  },
+  {
+   "src": "SächsischeSchweiz KleinerWinterberg 2.jpg",
+   "ja": "クライナー・ヴィンターベルクの夕焼け",
+   "en": "Dusk from the Kleiner Winterberg",
+   "author": "Philipp Konetschni",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:S%C3%A4chsischeSchweiz_KleinerWinterberg_2.jpg"
+  },
+  {
+   "src": "Asiatische Keiljungfer.jpg",
+   "ja": "エルベ川のトンボ",
+   "en": "River clubtail on the Elbe",
+   "author": "Sven Damerow",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Asiatische_Keiljungfer.jpg"
+  },
+  {
+   "src": "Gemeiner Bläuling.jpg",
+   "ja": "エルベ川の草原のシジミチョウ",
+   "en": "Common blue butterfly by the Elbe",
+   "author": "Sven Damerow",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Gemeiner_Bl%C3%A4uling.jpg"
+  },
+  {
+   "src": "Ramsau Kirche mit Wagendrischelhorn 2.jpg",
+   "ja": "ラムサウの教会とアルプス",
+   "en": "Ramsau church and the Alps",
+   "author": "Jörg Braukmann",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Ramsau_Kirche_mit_Wagendrischelhorn_2.jpg"
+  },
+  {
+   "src": "Berchtesgaden 02.jpg",
+   "ja": "ベルヒテスガーデンの山",
+   "en": "Berchtesgaden mountains",
+   "author": "Dmytro Balkhovitin",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Berchtesgaden_02.jpg"
+  },
+  {
+   "src": "13-09-29-nordfriesisches-wattenmeer-RalfR-15.jpg",
+   "ja": "ワッデン海の干潟",
+   "en": "The Wadden Sea from the air",
+   "author": "Ralf Roletschek",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:13-09-29-nordfriesisches-wattenmeer-RalfR-15.jpg"
+  }
+ ],
+ "london": [
+  {
+   "src": "Red Deer Cervus Elaphus in Richmond Park 2024 02.jpg",
+   "ja": "リッチモンド・パークのアカシカ",
+   "en": "Red deer in Richmond Park",
+   "author": "Julian Herzog (Website)",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Red_Deer_Cervus_Elaphus_in_Richmond_Park_2024_02.jpg"
+  },
+  {
+   "src": "Fallow Deer Dama Dama in Richmond Park 2023 02.jpg",
+   "ja": "リッチモンド・パークのダマジカ",
+   "en": "Fallow deer in Richmond Park",
+   "author": "Julian Herzog (Website)",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fallow_Deer_Dama_Dama_in_Richmond_Park_2023_02.jpg"
+  },
+  {
+   "src": "Fallow Deer Dama Dama in Richmond Park 2023 03.jpg",
+   "ja": "ダマジカのオスとメス",
+   "en": "Fallow deer pair",
+   "author": "Julian Herzog (Website)",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Fallow_Deer_Dama_Dama_in_Richmond_Park_2023_03.jpg"
+  },
+  {
+   "src": "London Thames Sunset panorama - Feb 2008.jpg",
+   "ja": "テムズ川の夕暮れ",
+   "en": "Sunset over the Thames",
+   "author": "Diliff",
+   "license": "CC BY 3.0",
+   "license_url": "https://creativecommons.org/licenses/by/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:London_Thames_Sunset_panorama_-_Feb_2008.jpg"
+  },
+  {
+   "src": "Tower Bridge London Dusk Feb 2006.jpg",
+   "ja": "夕方のタワーブリッジ",
+   "en": "Tower Bridge at dusk",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tower_Bridge_London_Dusk_Feb_2006.jpg"
+  },
+  {
+   "src": "Palace of Westminster, London - Feb 2007.jpg",
+   "ja": "夜のウェストミンスター宮殿",
+   "en": "Westminster at night",
+   "author": "Diliff",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:Palace_of_Westminster,_London_-_Feb_2007.jpg"
+  },
+  {
+   "src": "Kew Gardens Palm House, London - July 2009.jpg",
+   "ja": "キューガーデンのパームハウス",
+   "en": "Palm House, Kew Gardens",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kew_Gardens_Palm_House,_London_-_July_2009.jpg"
+  },
+  {
+   "src": "Kew Gardens Waterlily House - Sept 2008.jpg",
+   "ja": "キューガーデンのスイレンの温室",
+   "en": "Waterlily House, Kew",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Kew_Gardens_Waterlily_House_-_Sept_2008.jpg"
+  },
+  {
+   "src": "Black-headed gull (05593).jpg",
+   "ja": "ハイド・パークのユリカモメ",
+   "en": "Black-headed gull in Hyde Park",
+   "author": "Rhododendrites",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Black-headed_gull_(05593).jpg"
+  }
+ ],
+ "stonehenge": [
+  {
+   "src": "Stonehenge from the north.jpg",
+   "ja": "ストーンヘンジ",
+   "en": "Stonehenge",
+   "author": "Sumit Surai",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stonehenge_from_the_north.jpg"
+  },
+  {
+   "src": "Stonehenge, Condado de Wiltshire, Inglaterra, 2014-08-12, DD 18.JPG",
+   "ja": "ストーンヘンジの石",
+   "en": "The stones of Stonehenge",
+   "author": "Diego Delso",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Stonehenge,_Condado_de_Wiltshire,_Inglaterra,_2014-08-12,_DD_18.JPG"
+  },
+  {
+   "src": "Durdle Door Overview.jpg",
+   "ja": "ダードル・ドア",
+   "en": "Durdle Door",
+   "author": "Saffron Blaze",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Durdle_Door_Overview.jpg"
+  },
+  {
+   "src": "Durdle Door Dorset Sunset.jpg",
+   "ja": "夕日のダードル・ドア",
+   "en": "Durdle Door at sunset",
+   "author": "Saffron Blaze",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Durdle_Door_Dorset_Sunset.jpg"
+  },
+  {
+   "src": "Seven Sisters Panorama, East Sussex, England - May 2009.jpg",
+   "ja": "セブン・シスターズの白い崖",
+   "en": "The Seven Sisters cliffs",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_Panorama,_East_Sussex,_England_-_May_2009.jpg"
+  },
+  {
+   "src": "Seven Sisters 3.jpg",
+   "ja": "セブン・シスターズ",
+   "en": "Seven Sisters",
+   "author": "kallerna",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Seven_Sisters_3.jpg"
+  },
+  {
+   "src": "NewForestPonies sunrise.jpg",
+   "ja": "朝日とニューフォレストのポニー",
+   "en": "New Forest ponies at sunrise",
+   "author": "Joana Kruse joanaimages.com",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:NewForestPonies_sunrise.jpg"
+  },
+  {
+   "src": "New Forest pony – mare and nursing foal.jpg",
+   "ja": "ポニーの親子",
+   "en": "New Forest pony and foal",
+   "author": "OleNeitzel",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:New_Forest_pony_%E2%80%93_mare_and_nursing_foal.jpg"
+  },
+  {
+   "src": "West Bay Cliffs1.jpg",
+   "ja": "ジュラシック・コーストの崖",
+   "en": "Cliffs of the Jurassic Coast",
+   "author": "Jorge Franganillo",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:West_Bay_Cliffs1.jpg"
+  }
+ ],
+ "cotswolds": [
+  {
+   "src": "Bibury 2015 06.jpg",
+   "ja": "バイブリーの家並み",
+   "en": "Cottages of Bibury",
+   "author": "Photograph by Mike Peel (www.mikepeel.net).",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Bibury_2015_06.jpg"
+  },
+  {
+   "src": "Arlington Row Bibury.jpg",
+   "ja": "アーリントン・ロウ",
+   "en": "Arlington Row, Bibury",
+   "author": "Saffron Blaze",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Arlington_Row_Bibury.jpg"
+  },
+  {
+   "src": "Broadway Tower 2012.jpg",
+   "ja": "ブロードウェイ・タワー",
+   "en": "Broadway Tower",
+   "author": "Saffron Blaze",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Broadway_Tower_2012.jpg"
+  },
+  {
+   "src": "Pryor's Wood Bluebells 2017-04-26-4.jpg",
+   "ja": "ブルーベルの森",
+   "en": "A bluebell wood",
+   "author": "Colin",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Pryor%27s_Wood_Bluebells_2017-04-26-4.jpg"
+  },
+  {
+   "src": "Tyto alba 1 Luc Viatour.jpg",
+   "ja": "飛ぶメンフクロウ",
+   "en": "Barn owl in flight",
+   "author": "Luc Viatour",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Tyto_alba_1_Luc_Viatour.jpg"
+  },
+  {
+   "src": "Erinaceus europaeus (Linnaeus, 1758).jpg",
+   "ja": "ハリネズミ",
+   "en": "Hedgehog",
+   "author": "Michael Gäbler",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Erinaceus_europaeus_(Linnaeus,_1758).jpg"
+  },
+  {
+   "src": "Mute swans (Cygnus olor) and cygnets.jpg",
+   "ja": "コブハクチョウの親子（オックスフォード）",
+   "en": "Mute swans and cygnets, Oxford",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Mute_swans_(Cygnus_olor)_and_cygnets.jpg"
+  },
+  {
+   "src": "Sedge warbler (Acrocephalus schoenobaenus) 3.jpg",
+   "ja": "スゲヨシキリ（オックスフォードシャー）",
+   "en": "Sedge warbler, Oxfordshire",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Sedge_warbler_(Acrocephalus_schoenobaenus)_3.jpg"
+  }
+ ],
+ "lakedistrict": [
+  {
+   "src": "Keswick Panorama - Oct 2009.jpg",
+   "ja": "ケズィックと湖水地方の山",
+   "en": "Keswick and the fells",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Keswick_Panorama_-_Oct_2009.jpg"
+  },
+  {
+   "src": "Friars' Crag Derwentwater Lake District 2022 01.jpg",
+   "ja": "ダーウェント湖の朝",
+   "en": "Morning on Derwentwater",
+   "author": "Julian Herzog (Website)",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Friars%27_Crag_Derwentwater_Lake_District_2022_01.jpg"
+  },
+  {
+   "src": "Derwent Water, Keswick - June 2009.jpg",
+   "ja": "ダーウェント湖",
+   "en": "Derwentwater",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Derwent_Water,_Keswick_-_June_2009.jpg"
+  },
+  {
+   "src": "Herdwick Sheep Kirk Fell Lake District 2025 01.jpg",
+   "ja": "ハードウィック種のヒツジ",
+   "en": "Herdwick sheep",
+   "author": "Julian Herzog (Website)",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Herdwick_Sheep_Kirk_Fell_Lake_District_2025_01.jpg"
+  },
+  {
+   "src": "Herdwick Sheep below Great Gable Lake District 2022 01.jpg",
+   "ja": "グレート・ゲーブルの下のヒツジ",
+   "en": "Herdwick below Great Gable",
+   "author": "Julian Herzog (Website)",
+   "license": "CC BY 4.0",
+   "license_url": "https://creativecommons.org/licenses/by/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Herdwick_Sheep_below_Great_Gable_Lake_District_2022_01.jpg"
+  },
+  {
+   "src": "Swaledale Sheep, Lake District, England - June 2009.jpg",
+   "ja": "スウェールデール種のヒツジ",
+   "en": "Swaledale ewe",
+   "author": "User:Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Swaledale_Sheep,_Lake_District,_England_-_June_2009.jpg"
+  },
+  {
+   "src": "Squirrel posing.jpg",
+   "ja": "キタリス",
+   "en": "Red squirrel",
+   "author": "Peter Trimming",
+   "license": "CC BY 2.0",
+   "license_url": "https://creativecommons.org/licenses/by/2.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Squirrel_posing.jpg"
+  },
+  {
+   "src": "2014 Fields Swaledale Gunnerside.jpg",
+   "ja": "石垣の牧草地（ヨークシャー・デールズ）",
+   "en": "Drystone walls in Swaledale",
+   "author": "Kreuzschnabel",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:2014_Fields_Swaledale_Gunnerside.jpg"
+  },
+  {
+   "src": "Puffin (Fratercula arctica).jpg",
+   "ja": "ニシツノメドリ（ウェールズ）",
+   "en": "Atlantic puffin, Wales",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Puffin_(Fratercula_arctica).jpg"
+  }
+ ],
+ "edinburgh": [
+  {
+   "src": "Quiraing Isle of Skye Pano.jpg",
+   "ja": "スカイ島のキラング",
+   "en": "The Quiraing, Isle of Skye",
+   "author": "Stefan Krause, Germany",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Quiraing_Isle_of_Skye_Pano.jpg"
+  },
+  {
+   "src": "South over the Quiraing, Isle of Skye - 2.jpg",
+   "ja": "キラングを見下ろす",
+   "en": "Over the Quiraing",
+   "author": "Colin",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:South_over_the_Quiraing,_Isle_of_Skye_-_2.jpg"
+  },
+  {
+   "src": "Loch Leathan Waterfall, Isle of Skye, Scotland - Diliff.jpg",
+   "ja": "スカイ島の滝",
+   "en": "Waterfall on the Isle of Skye",
+   "author": "Diliff",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Loch_Leathan_Waterfall,_Isle_of_Skye,_Scotland_-_Diliff.jpg"
+  },
+  {
+   "src": "Glencoe Lochan reflections 3 20211022.jpg",
+   "ja": "グレンコーの湖の映りこみ",
+   "en": "Reflections at Glencoe Lochan",
+   "author": "Daniel Kraft",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Glencoe_Lochan_reflections_3_20211022.jpg"
+  },
+  {
+   "src": "Glen Coe Rainbow.jpg",
+   "ja": "グレンコーの虹",
+   "en": "Rainbow in Glen Coe",
+   "author": "Colin",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Glen_Coe_Rainbow.jpg"
+  },
+  {
+   "src": "RedDeerStag.jpg",
+   "ja": "アカシカのオス（トリドン）",
+   "en": "Red deer stag, Glen Torridon",
+   "author": "derivative work: Massimo Catarinella (talk) Red_deer_stag.jpg: Mehmet Karatay",
+   "license": "CC BY-SA 3.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+   "page": "https://commons.wikimedia.org/wiki/File:RedDeerStag.jpg"
+  },
+  {
+   "src": "Red deer (Cervus elaphus) hind with juvenile.jpg",
+   "ja": "アカシカの親子",
+   "en": "Red deer hind and calf",
+   "author": "Charles J. Sharp",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Red_deer_(Cervus_elaphus)_hind_with_juvenile.jpg"
+  },
+  {
+   "src": "A small loch in the saddle between Beinn an Dothaidh and Beinn Dorain, Scotland 01.jpg",
+   "ja": "朝日と山の小さな湖",
+   "en": "Sunrise over a Highland loch",
+   "author": "Michal Klajban",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:A_small_loch_in_the_saddle_between_Beinn_an_Dothaidh_and_Beinn_Dorain,_Scotland_01.jpg"
+  },
+  {
+   "src": "View of loch lomond.JPG",
+   "ja": "ローモンド湖",
+   "en": "Loch Lomond",
+   "author": "Abubakr Hussain, Mohammed-Hayat Ashrafi, Maaz Farooq, Farmaan Akhtar, Mohammed…",
+   "license": "CC BY-SA 2.5",
+   "license_url": "https://creativecommons.org/licenses/by-sa/2.5",
+   "page": "https://commons.wikimedia.org/wiki/File:View_of_loch_lomond.JPG"
+  },
+  {
+   "src": "Edinburgh Arthur's Seat-20110904-RM-124927.jpg",
+   "ja": "アーサーズ・シートからのエディンバラ",
+   "en": "Edinburgh from Arthur's Seat",
+   "author": "Ermell",
+   "license": "CC BY-SA 4.0",
+   "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+   "page": "https://commons.wikimedia.org/wiki/File:Edinburgh_Arthur%27s_Seat-20110904-RM-124927.jpg"
+  }
+ ]
+}

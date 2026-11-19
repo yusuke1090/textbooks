@@ -251,11 +251,11 @@ footer { border-top: 1px solid var(--border); background: var(--panel); font-siz
 footer .wrap { padding-top: 14px; }
 
 /* 図を大きく */
-.zoom { position: fixed; inset: 0; z-index: 30; background: rgba(0, 0, 0, .93); overflow: auto; -webkit-overflow-scrolling: touch; }
+.zoom { position: fixed; inset: 0; z-index: 32; background: rgba(0, 0, 0, .93); overflow: auto; -webkit-overflow-scrolling: touch; }
 .zoom img { display: block; width: 820px; max-width: none; margin: 60px auto 14px; border-radius: 10px; background: #fff; }
 @media (min-width: 900px) { .zoom img { width: min(1200px, 94vw); } }
 .zoom p { margin: 0 16px 28px; color: #eee; font-size: 13px; text-align: center; }
-.zoom .x { position: fixed; top: 10px; right: 12px; z-index: 31; font-size: 14px; font-weight: 700; padding: 7px 16px; border: 0; border-radius: 999px; background: #fff; color: #111; cursor: pointer; }
+.zoom .x { position: fixed; top: 10px; right: 12px; z-index: 33; font-size: 14px; font-weight: 700; padding: 7px 16px; border: 0; border-radius: 999px; background: #fff; color: #111; cursor: pointer; }
 
 /* 言葉の説明 */
 #tip { position: fixed; z-index: 25; display: none; max-width: min(380px, calc(100vw - 24px)); padding: 10px 12px;
@@ -378,14 +378,24 @@ li > .sticky-bar { margin-top: 4px; }
 .td-towns .next img { filter: grayscale(1) blur(2px); opacity: .55; border: 2px dashed var(--muted); }
 .td-towns .next span { color: var(--muted); }
 .td-map .ft { fill: var(--panel); stroke: #e8a317; }
-/* 旅日記: 勉強した日ごとに、おみやげ（目標に届いた日だけ）・日付・分の棒（目標に届いた日は金色）・着いた町 */
+/* 旅日記: 勉強した日ごとに、もらった写真（目標に届いた日だけ）・日付・分の棒（目標に届いた日は金色）・着いた町 */
 .td-log { margin-top: 12px; }
 .td-log-h { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
 .td-log-h span { font-size: 12px; color: var(--muted); }
 .td-log ol { list-style: none; margin: 4px 0 0; padding: 0; }
 .td-log li { display: grid; grid-template-columns: 26px 2.9em 64px 3em minmax(0, 1fr); align-items: center; gap: 8px; padding: 2px 0; font-size: 12.5px; cursor: pointer; }
 @media (min-width: 600px) { .td-log li { grid-template-columns: 26px 2.9em 140px 3em minmax(0, 1fr); } }
-.td-log .g { display: grid; place-items: center; width: 26px; height: 26px; font-size: 15px; border-radius: 8px; }
+.td-log .g { width: 26px; height: 26px; }
+.td-log .g img { display: block; width: 26px; height: 26px; border-radius: 6px; object-fit: cover; }
+.td-album { padding: 0; font: inherit; font-size: 12px; font-weight: 700; color: var(--accent); background: none; border: 0; cursor: pointer; }
+.album { position: fixed; inset: 0; z-index: 30; padding: 58px 12px 24px; overflow: auto; background: rgba(0, 0, 0, .93); color: #eee; }
+.album-h { position: fixed; top: 0; left: 0; right: 0; z-index: 1; display: flex; justify-content: space-between; align-items: center; gap: 10px; padding: 10px 12px; background: rgba(0, 0, 0, .85); font-size: 14px; }
+.album-h .x { padding: 7px 16px; font: inherit; font-size: 14px; font-weight: 700; color: #111; background: #fff; border: 0; border-radius: 999px; cursor: pointer; }
+.album-g { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px 8px; max-width: 900px; margin: 0 auto; }
+.album-g button { min-width: 0; padding: 0; font: inherit; font-size: 11.5px; color: #ddd; background: none; border: 0; cursor: pointer; }
+.album-g img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
+.album-g span { display: block; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.album p { max-width: 900px; margin: 30px auto; text-align: center; font-size: 14px; }
 .td-log .d { color: var(--muted); white-space: nowrap; }
 .td-log .bar { height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; }
 .td-log .bar i { display: block; height: 100%; border-radius: 4px; background: var(--accent); }
@@ -537,13 +547,16 @@ li > .sticky-bar { margin-top: 4px; }
     const p = tripAt(sec), A = trip.stops[p.i], B = trip.stops[p.i + 1];
     return { x: A.x + (B.x - A.x) * p.f, y: A.y + (B.y - A.y) * p.f };
   }
-  function tripLog(s) {   // 旅日記: 勉強した日ごとに、時間・その日の前と後の合計・着いた町・その日の終わりにいた町（目標に届いた日は、そこのおみやげをもらう）
-    const S = trip.stops, N = S.length - 1;
+  function tripLog(s) {   // 旅日記: 勉強した日ごとに、時間・その日の前と後の合計・着いた町・その日の終わりにいた町と、目標に届いた日はそこの写真
+    const S = trip.stops, N = S.length - 1, seen = {};   // 写真は町ごとに順にもらう（全部もらったら、はじめから）
     let c = 0;
     return Object.keys(s.days).sort().filter((k) => s.days[k] > 0).map((k) => {
       const v = s.days[k], a = c, b = (c += v), pa = tripAt(a), pb = tripAt(b), got = [];
       for (let n = pa.n + 1; n <= pb.n; n++) got.push(n % N || N);   // N は東京に帰った（世界一周）
-      return { k, v, a, b, got, at: S[pb.i], met: !!s.met[k] };
+      const at = S[pb.i], met = !!s.met[k], g = at.gifts || [];
+      let photo = null;
+      if (met && g.length) { seen[pb.i] = (seen[pb.i] || 0) + 1; photo = g[(seen[pb.i] - 1) % g.length]; }
+      return { k, v, a, b, got, at, met, photo };
     });
   }
   let toastTimer = 0;
@@ -636,7 +649,7 @@ li > .sticky-bar { margin-top: 4px; }
   function renderToday() {
     const el = $("today"), s = studyAll(), today = dayKey(), sec = s.days[today] || 0, goal = s.goal * 60;
     const st = streakOf(s), done = !!s.met[today], ratio = Math.min(1, sec / goal), C = 2 * Math.PI * 38;
-    const msg = done ? "今日の目標を達成しました 🎉" : sec ? `あと ${Math.max(1, Math.ceil((goal - sec) / 60))}分で今日の目標` : st.cur ? "今日も続けて、連続記録をのばそう" : "教科書を開くと、読んでいる時間を数えます";
+    const msg = done ? "今日の目標を達成しました 🎉" : sec ? `あと ${Math.max(1, Math.ceil((goal - sec) / 60))}分で今日の写真がもらえます` : st.cur ? "今日も続けて、連続記録をのばそう" : "教科書を開くと、読んでいる時間を数えます";
     // 続きから: 最後に開いた本の、読んでいた章
     const last = store.get("textbooks-last"), lb = books.find((b) => b.id === last);
     let cont = "";
@@ -727,10 +740,10 @@ li > .sticky-bar { margin-top: 4px; }
     // 旅日記: 新しい日が上。はじめは3日分。言葉は町に着いた日だけ
     const today = dayKey(), maxV = Math.max(s.goal * 60, ...log.map((d) => d.v));
     const what = (d) => d.got.includes(N) ? "世界一周 🌏" : d.got.length ? d.got.map((j) => S[j].ja).join("・") + "に着いた 🎉" : "";
-    const rows = log.slice(diaryOpen ? 0 : -3).reverse().map((d) => `<li data-k="${d.k}"${d.met ? ` class="met"` : ""}><span class="g">${d.met ? d.at.gift.e : ""}</span>`
+    const rows = log.slice(diaryOpen ? 0 : -3).reverse().map((d) => `<li data-k="${d.k}"${d.met ? ` class="met"` : ""}><span class="g">${d.photo ? `<img src="${d.photo.thumb}" alt="" loading="lazy">` : ""}</span>`
       + `<span class="d">${d.k === today ? "今日" : `${+d.k.slice(5, 7)}/${+d.k.slice(8)}`}</span><span class="bar"><i style="width:${(d.v / maxV * 100).toFixed(1)}%"></i></span>`
       + `<span class="m">${Math.max(1, Math.floor(d.v / 60))}分</span><span class="w">${esc(what(d))}</span></li>`).join("");
-    const diary = log.length ? `<div class="td-log"><div class="td-log-h"><b>旅日記</b><span>おみやげ ${log.filter((d) => d.met).length}個</span></div><ol>${rows}</ol>`
+    const diary = log.length ? `<div class="td-log"><div class="td-log-h"><b>旅日記</b><button type="button" class="td-album">📷 写真 ${log.filter((d) => d.photo).length}枚</button></div><ol>${rows}</ol>`
       + (log.length > 3 ? `<button type="button" class="td-more">${diaryOpen ? "閉じる" : "もっと見る"}</button>` : "") + `</div>` : "";
     box.innerHTML = `<div class="td-trip-h"><b>🌏 教科書をめぐる世界一周${p.lap ? `（${p.lap + 1}周目）` : ""}</b><span>${p.i} / ${N}町</span></div>`
       + `<div class="td-map">${svg}<button type="button" class="td-zoom">${tripZoom ? "🌏 全体" : "🔍 大きく"}</button></div>`
@@ -740,10 +753,12 @@ li > .sticky-bar { margin-top: 4px; }
     const lg = box.querySelector(".td-log");
     if (lg) lg.onclick = (e) => {
       if (e.target.closest(".td-more")) { diaryOpen = !diaryOpen; return renderTrip(); }
+      if (e.target.closest(".td-album")) return openAlbum(log);
       const li = e.target.closest("li[data-k]");
       if (!li) return;
       const d = log.find((x) => x.k === li.dataset.k), [y, m, dd] = d.k.split("-").map(Number), wd = "日月火水木金土"[new Date(y, m - 1, dd).getDay()];
-      toast(`${m}月${dd}日（${wd}） ${fmtMin(d.v)}${d.met ? `・おみやげ ${d.at.gift.e} ${d.at.gift.ja}（${d.at.ja}）` : ""}`);
+      if (d.photo) return photoZoom(d);
+      toast(`${m}月${dd}日（${wd}） ${fmtMin(d.v)}`);
     };
     const tw = box.querySelector(".td-towns");
     tw.scrollLeft = tw.scrollWidth;   // 新しい町が見えるように右はしへ
@@ -758,6 +773,30 @@ li > .sticky-bar { margin-top: 4px; }
     };
   }
   let tripResize = 0, diaryOpen = false, tripZoom = false;
+  // 目標に届いた日にもらった写真を大きく（名前・もらった日と町・撮影者とライセンス・出典）
+  function photoZoom(d) {
+    const q = d.photo, md = `${+d.k.slice(5, 7)}月${+d.k.slice(8)}日`;
+    showZoom(q.img, `<b>${esc(q.ja)}</b>　${md}・${esc(d.at.ja)}で<br><small>写真: ${esc(q.author)}（${esc(q.license)}）</small>　`
+      + `<a href="https://commons.wikimedia.org/wiki/File:${encodeURIComponent(q.src.replace(/ /g, "_"))}" target="_blank" rel="noopener">出典</a>`, true);
+  }
+  // アルバム: もらった写真を新しい順に
+  function openAlbum(log) {
+    const got = log.filter((d) => d.photo).reverse(), el = document.createElement("div");
+    el.className = "album";
+    el.innerHTML = `<div class="album-h"><b>📷 旅でもらった写真 ${got.length}枚</b><button type="button" class="x">✕ 閉じる</button></div>`
+      + `<div class="album-g">${got.map((d, i) => `<button type="button" data-i="${i}"><img src="${d.photo.thumb}" alt="" loading="lazy"><span>${esc(d.photo.ja)}</span></button>`).join("")}</div>`
+      + (got.length ? "" : `<p>1日の目標に届いた日に、その日にいた土地の写真がもらえます</p>`);
+    const close = () => { el.remove(); document.body.style.overflow = ""; removeEventListener("keydown", esc1); };
+    const esc1 = (e) => { if (e.key === "Escape" && !zoomEl) close(); };
+    el.onclick = (e) => {
+      if (e.target === el || e.target.closest(".album-h .x")) return close();
+      const b = e.target.closest("button[data-i]");
+      if (b) photoZoom(got[+b.dataset.i]);
+    };
+    addEventListener("keydown", esc1);
+    document.body.appendChild(el);
+    document.body.style.overflow = "hidden";
+  }
   addEventListener("resize", () => { clearTimeout(tripResize); tripResize = setTimeout(renderTrip, 200); });
 
   // 今勉強中の本は、章ごとの練習問題の数を数えて、問題ごとの結果を ● × ○ で並べる
@@ -1383,7 +1422,7 @@ li > .sticky-bar { margin-top: 4px; }
 
   // ---------- コピー・図を大きく ----------
   let zoomEl = null;
-  function closeZoom() { if (zoomEl) { zoomEl.remove(); zoomEl = null; document.body.style.overflow = ""; } }
+  function closeZoom() { if (zoomEl) { zoomEl.remove(); zoomEl = null; document.body.style.overflow = document.querySelector(".album") ? "hidden" : ""; } }
   function openZoom(img) {
     const cap = img.parentNode.querySelector("figcaption"), lab = cap ? cap.querySelector("b").textContent : "";
     showZoom(img.getAttribute("src"), cap ? `<b>${esc(lab)}</b>　${esc(cap.textContent.slice(lab.length))}` : "", false, img.alt);
