@@ -297,8 +297,6 @@ li > .sticky-bar { margin-top: 4px; }
 #annoPop .kbd { font-size: 11px; color: var(--muted); }
 #annoPop button.sw { width: 26px; height: 26px; padding: 0; border-radius: 50%; background: var(--st); border: 2px solid transparent; }
 #annoPop button.sw.on { border-color: var(--text); }
-.notes .ap-top { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; padding: 4px 14px; }
-.notes .ap-top button { font-size: 13px; padding: 5px 12px; border-radius: 8px; border: 0; background: var(--accent); color: #fff; cursor: pointer; }
 .notes .ap-ch { margin: 12px 14px 2px; font-size: 12px; font-weight: 700; color: var(--muted); }
 .notes .ap-item { display: flex; align-items: stretch; gap: 2px; border-left: 4px solid var(--st); border-radius: 4px; margin: 2px 10px; }
 .notes .ap-item:hover { background: var(--bg); }
@@ -1866,22 +1864,6 @@ li > .sticky-bar { margin-top: 4px; }
     placePop(el.getBoundingClientRect(), true);
     if (fresh) label.focus();
   }
-  // 画面の上の端に見えている、最初の文字
-  function topAnchorText() {
-    const line = topLine(), idx = textIndex(body);
-    for (let k = 0; k < idx.nodes.length; k++) {
-      const n = idx.nodes[k];
-      if (!n.data.trim()) continue;
-      const r = document.createRange();
-      r.selectNodeContents(n);
-      const rect = r.getBoundingClientRect();
-      if (rect.height > 0 && rect.bottom > line + 4) {
-        const s = idx.starts[k] + (n.data.length - n.data.trimStart().length);
-        return makeAnchor(idx.text, s, Math.min(idx.text.length, s + 40));
-      }
-    }
-    return null;
-  }
   function scrollToEl(el, center) {
     const r = el.getBoundingClientRect();
     window.scrollTo(0, r.top + scrollY - topLine() - (center ? innerHeight / 4 : 0));
@@ -1898,8 +1880,7 @@ li > .sticky-bar { margin-top: 4px; }
     const items = anno.items.filter((x) => x.book === book.id).sort((a, b) =>
       (order.get(a.file) ?? 1e9) - (order.get(b.file) ?? 1e9) || (a.pos || 0) - (b.pos || 0));
     const cut = (s, len) => (s.length > len ? s.slice(0, len) + "…" : s).replace(/\s+/g, " ");
-    let html = `<div class="ap-top"><button type="button" id="annoAdd">📌 今見ている所に付箋を貼る</button>
-</div>`;
+    let html = "";
     let last = null;
     for (const it of items) {
       if (it.file !== last) {
@@ -1926,14 +1907,6 @@ li > .sticky-bar { margin-top: 4px; }
   $("notesIn").addEventListener("click", async (e) => {
     const b = e.target.closest("button");
     if (!b) return;
-    if (b.id === "annoAdd") {
-      const a = topAnchorText();
-      if (!a) return toast("付箋を貼る場所が見つかりません");
-      closeDrops();
-      const it = addItem("sticky", a);
-      refreshAnno(); editSticky(it.id, true);
-      return;
-    }
     if (b.dataset.del) { removeItem(b.dataset.del); refreshAnno(); renderNotes(); return; }
     const it = findItem(b.dataset.go);
     if (!it) return;
