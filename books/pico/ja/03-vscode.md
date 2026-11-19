@@ -198,6 +198,8 @@ Quick Access の **Compile Project** を押します（下のバーの **Compile
 
 `build/` のファイルは、**2つのタイミング**でできます。どれも自分で書き換えるものではありません。
 
+![Compile したあとの build フォルダ（Name が check_how_to_use のとき。囲みは、ふだん使う .elf と .uf2）](images/build-folder.png)
+
 **Compile のたびにできるもの（できあがり）**
 
 | ファイル | 何のファイルか |
@@ -248,17 +250,7 @@ picotool がピコを書き込みモードにして書き込み、ピコが再�
 
 Run を押すと、下の「ターミナル」に次のように出ます。**`The device was rebooted to start the application.` が出れば成功**です。
 
-```text
- *  Executing task: /home/ユーザー名/.pico-sdk/picotool/2.3.1/picotool/picotool load /home/ユーザー名/apps/blink/build/blink.elf -fx
-
-Tracking device serial number 334E39323614DA8B for reboot
-The device was asked to reboot into BOOTSEL mode so the command can be executed.
-
-Loading into Flash:   [==============================]  100%
-
-The device was rebooted to start the application.
- *  Terminal will be reused by tasks, press any key to close it.
-```
+![Run が成功したときのターミナル（囲みが成功のしるし）](images/run-terminal.png)
 
 | 出た行 | 意味 |
 | --- | --- |

@@ -198,6 +198,8 @@ Progress appears in the "Terminal" below, and finally `build/name.uf2` (for exam
 
 The files in `build/` are made at **two different times**. You never edit any of them yourself.
 
+![The build folder after Compile (when Name is check_how_to_use; the boxes mark .elf and .uf2, the ones you normally use)](images/build-folder.png)
+
 **Made on every Compile (the finished program)**
 
 | File | What it is |
@@ -248,17 +250,7 @@ You can tell what is running from the **Port name** in the Serial Monitor in ⑥
 
 When you press Run, the "Terminal" below shows something like this. **If `The device was rebooted to start the application.` appears, it worked.**
 
-```text
- *  Executing task: /home/username/.pico-sdk/picotool/2.3.1/picotool/picotool load /home/username/apps/blink/build/blink.elf -fx
-
-Tracking device serial number 334E39323614DA8B for reboot
-The device was asked to reboot into BOOTSEL mode so the command can be executed.
-
-Loading into Flash:   [==============================]  100%
-
-The device was rebooted to start the application.
- *  Terminal will be reused by tasks, press any key to close it.
-```
+![The terminal after a successful Run (the box marks the sign of success)](images/run-terminal.png)
 
 | Line | Meaning |
 | --- | --- |
