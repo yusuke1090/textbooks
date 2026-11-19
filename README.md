@@ -148,6 +148,7 @@ tools/            図や用語の一覧を作るスクリプト
 - ```` ```cpp run ```` のプログラムが本物の Pico SDK でビルドできるかは、Pico Studio の `python3 tests/build_guide_cpp.py pico pico2` で確かめる
 - コードの言葉の説明は `glossary.json`（キーの書き方は Pico Studio の README の「ガイドの書き方」）
 - 付録G（クリスマスのイルミネーション）の図2枚は `python3 tools/make_xmas_figures.py` で作る
+- 付録H（伝言板のアイデアをピコで作る）は、スマート農業News の伝言板（#1〜#6）ごとの作り方と買う物。`wifi_udp.h` は ```` ```cpp ````（Pico 2 W 用）なので `build_guide_cpp.py` の対象外。直したら board を pico2_w にした別のプロジェクトでビルドを確かめる。伝言板に新しいアイデアが増えたら、ここに節を足す
 
 ### 🚁 ROS 2 と ArduPilot の教科書（books/ros）
 

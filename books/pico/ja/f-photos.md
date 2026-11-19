@@ -49,3 +49,16 @@
 | [LED のクリスマスツリー](https://commons.wikimedia.org/wiki/File:LED_Christmas_Lights_on_a_Tree.jpg) | HeatherMarieKosur | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [5mm の LED](https://commons.wikimedia.org/wiki/File:LED_Rainbow_Pack_-_5mm_PTH_12903-01.jpg) | SparkFun Electronics | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 | [抵抗（帯の色で値がわかる）](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |
+
+## 付録H. 伝言板のアイデアをピコで作る
+
+| 写真 | 撮影者 | ライセンス |
+| --- | --- | --- |
+| [ラズパイ 5（牛舎の受信機にする）](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_5.jpg) | SimonWaldherr | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [首輪を付けた牛（ニュージーランド）](https://commons.wikimedia.org/wiki/File:Cow_with_Halter_Collar.jpg) | Halter | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [水を飲む牛](https://commons.wikimedia.org/wiki/File:Cows_drinking_from_a_water_pond.jpg) | Kawtey | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [扇風機のある牛舎（フリーストール）](https://commons.wikimedia.org/wiki/File:Animals_(20110419-RD-LSC-0653).jpg) | USDAgov | Public domain |
+| [Raspberry Pi AI カメラ](https://commons.wikimedia.org/wiki/File:Raspberry_PI_AI_Camera_(1).jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [バルククーラー（生乳を冷やして貯めるタンク）](https://commons.wikimedia.org/wiki/File:New_milking_parlour,_a_bulk_tank_and_a_Friesian_herd_(1554595).jpg) | Geoff Charles | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [ハシブトガラス（大阪）](https://commons.wikimedia.org/wiki/File:Large-billed_crow_at_Tenn%C5%8Dji_Park,_Osaka,_Japan,_December_2023_-_4408.jpg) | Laitche | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [サーボモーター（SG90）](https://commons.wikimedia.org/wiki/File:Tower_Pro_SG90_micro_servo_motor.jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |

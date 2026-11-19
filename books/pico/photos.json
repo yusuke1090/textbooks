@@ -102,5 +102,69 @@
     "license": "Public domain",
     "license_url": "",
     "page": "https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg"
+  },
+  {
+    "file": "h-rpi5.jpg",
+    "src": "Raspberry Pi 5.jpg",
+    "author": "SimonWaldherr",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberry_Pi_5.jpg"
+  },
+  {
+    "file": "h-collar.jpg",
+    "src": "Cow with Halter Collar.jpg",
+    "author": "Halter",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cow_with_Halter_Collar.jpg"
+  },
+  {
+    "file": "h-drink.jpg",
+    "src": "Cows drinking from a water pond.jpg",
+    "author": "Kawtey",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Cows_drinking_from_a_water_pond.jpg"
+  },
+  {
+    "file": "h-barn.jpg",
+    "src": "Animals (20110419-RD-LSC-0653).jpg",
+    "author": "USDAgov",
+    "license": "Public domain",
+    "license_url": "",
+    "page": "https://commons.wikimedia.org/wiki/File:Animals_(20110419-RD-LSC-0653).jpg"
+  },
+  {
+    "file": "h-ai-camera.jpg",
+    "src": "Raspberry PI AI Camera (1).jpg",
+    "author": "Suyash Dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Raspberry_PI_AI_Camera_(1).jpg"
+  },
+  {
+    "file": "h-bulk-tank.jpg",
+    "src": "New milking parlour, a bulk tank and a Friesian herd (1554595).jpg",
+    "author": "Geoff Charles",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:New_milking_parlour,_a_bulk_tank_and_a_Friesian_herd_(1554595).jpg"
+  },
+  {
+    "file": "h-crow.jpg",
+    "src": "Large-billed crow at Tennōji Park, Osaka, Japan, December 2023 - 4408.jpg",
+    "author": "Laitche",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Large-billed_crow_at_Tenn%C5%8Dji_Park,_Osaka,_Japan,_December_2023_-_4408.jpg"
+  },
+  {
+    "file": "h-servo.jpg",
+    "src": "Tower Pro SG90 micro servo motor.jpg",
+    "author": "Suyash Dwivedi",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Tower_Pro_SG90_micro_servo_motor.jpg"
   }
 ]

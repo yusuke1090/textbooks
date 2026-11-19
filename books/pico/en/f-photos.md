@@ -49,3 +49,16 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | [An LED Christmas tree](https://commons.wikimedia.org/wiki/File:LED_Christmas_Lights_on_a_Tree.jpg) | HeatherMarieKosur | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [5 mm LEDs](https://commons.wikimedia.org/wiki/File:LED_Rainbow_Pack_-_5mm_PTH_12903-01.jpg) | SparkFun Electronics | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
 | [Resistors (the colour bands show the value)](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |
+
+## Appendix H. Building the message-board ideas with the Pico
+
+| Photo | Author | Licence |
+| --- | --- | --- |
+| [Raspberry Pi 5 (used as the barn receiver)](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_5.jpg) | SimonWaldherr | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [A cow wearing a collar (New Zealand)](https://commons.wikimedia.org/wiki/File:Cow_with_Halter_Collar.jpg) | Halter | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [Cows drinking](https://commons.wikimedia.org/wiki/File:Cows_drinking_from_a_water_pond.jpg) | Kawtey | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [A free-stall barn with fans](https://commons.wikimedia.org/wiki/File:Animals_(20110419-RD-LSC-0653).jpg) | USDAgov | Public domain |
+| [Raspberry Pi AI Camera](https://commons.wikimedia.org/wiki/File:Raspberry_PI_AI_Camera_(1).jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [A bulk tank (a tank that cools and stores raw milk)](https://commons.wikimedia.org/wiki/File:New_milking_parlour,_a_bulk_tank_and_a_Friesian_herd_(1554595).jpg) | Geoff Charles | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [A large-billed crow (Osaka)](https://commons.wikimedia.org/wiki/File:Large-billed_crow_at_Tenn%C5%8Dji_Park,_Osaka,_Japan,_December_2023_-_4408.jpg) | Laitche | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [A servo motor (SG90)](https://commons.wikimedia.org/wiki/File:Tower_Pro_SG90_micro_servo_motor.jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
