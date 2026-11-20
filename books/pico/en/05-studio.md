@@ -1,10 +1,10 @@
-# 5. Checking the connection with Pico Studio
+# 6. Checking the connection with Pico Studio
 
 Pico Studio's screen is in Japanese, so this chapter gives each button's Japanese label followed by its meaning in English.
 
 ## What is Pico Studio?
 
-A tool that runs on your own PC to check that the Pico is properly connected. **Program development is done in VS Code (Chapter 3); Pico Studio is used for checking.**
+A tool that runs on your own PC to check that the Pico is properly connected. **Program development is done in VS Code (Chapter 4); Pico Studio is used for checking.**
 
 | What it can do | When to use it |
 | --- | --- |
@@ -18,7 +18,7 @@ A tool that runs on your own PC to check that the Pico is properly connected. **
 
 Pico Studio is made of a small server running on your PC (`server.py`) and a browser that shows its screen. It does not connect to the internet and runs only inside your PC (it uses the internet only when downloading MicroPython).
 
-Before using it, finish Step 3 of Chapter 2 (pyserial and the udev rules).
+Before using it, finish Step 3 of Chapter 3 (pyserial and the udev rules).
 
 ## Starting it
 
@@ -76,7 +76,7 @@ Drag the divider between the code box and the output box up or down to change th
 | USB で認識 (Detected over USB) | The PC has found the Pico. What is running is shown too | Check the cable and USB port ("Not found" below) |
 | シリアル接続 (Serial connection) | Ready to communicate with the Pico | Press "接続" (Connect). For a permission error, see below |
 | 動いているプログラム (Running program) | For a C++ program, "C++ のプログラムが動いています" (a C++ program is running). For MicroPython, its version and free space | Is another program (such as VS Code's Serial Monitor) using the port? |
-| C++ の開発環境 (C++ development environment) | The VS Code extension, Pico SDK, compiler and picotool each show ✓ or ✗ | Install the ✗ items as in Chapter 2. The SDK and compiler are installed when you create your first project in VS Code |
+| C++ の開発環境 (C++ development environment) | The VS Code extension, Pico SDK, compiler and picotool each show ✓ or ✗ | Install the ✗ items as in Chapter 3. The SDK and compiler are installed when you create your first project in VS Code |
 
 The colors of the dots mean the following.
 

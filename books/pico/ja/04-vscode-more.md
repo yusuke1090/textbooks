@@ -1,6 +1,6 @@
-# 4. VS Code の便利な使い方
+# 5. VS Code の便利な使い方
 
-3章で、プロジェクトを作って Lチカを動かせている前提です。
+4章で、プロジェクトを作って Lチカを動かせている前提です。
 
 ## Quick Access のメニュー
 
@@ -10,7 +10,7 @@
 
 | メニュー | すること |
 | --- | --- |
-| New C/C++ Project | C / C++ の新しいプロジェクトを作る（3章） |
+| New C/C++ Project | C / C++ の新しいプロジェクトを作る（4章） |
 | New MicroPython Project | MicroPython のプロジェクトを作る。このガイドでは MicroPython は Pico Studio で試すので（付録E）、使わなくてよい |
 | New Rust Project | Rust（別の言語）のプロジェクトを作る |
 | New Zephyr Project | Zephyr（マイコン用の OS）のプロジェクトを作る |
@@ -25,8 +25,8 @@
 | メニュー | すること | ふだん使うか |
 | --- | --- | --- |
 | Debug Project | Debug Probe で書き込んで、デバッグを始める（下の「デバッグ」） | Debug Probe があれば使う |
-| Compile Project | ビルドする（3章） | **よく使う** |
-| Run Project (USB) | USB で書き込んで、動かす（3章） | **よく使う** |
+| Compile Project | ビルドする（4章） | **よく使う** |
+| Run Project (USB) | USB で書き込んで、動かす（4章） | **よく使う** |
 | Flash Project (SWD) | Debug Probe で書き込む（デバッグはしない） | Debug Probe があれば |
 | Configure CMake | `CMakeLists.txt` を読み直す。ファイルを足したときなど | ときどき |
 | Clean CMake | `build` を消して、ビルドをやり直す。おかしなエラーが続くとき | ときどき |
@@ -74,31 +74,31 @@ target_link_libraries(collar
 
 | 使うもの | 足すライブラリ | 使う章 |
 | --- | --- | --- |
-| GPIO・時間・`printf` | `pico_stdlib`（最初から入っている） | 6章 |
-| ADC（アナログ入力、内蔵温度センサー） | `hardware_adc` | 7章 |
-| PWM | `hardware_pwm` | 7章 |
-| I2C / SPI / UART | `hardware_i2c` / `hardware_spi` / `hardware_uart` | 8・9章 |
-| PIO（`ws2812.h` の RGB LED） | `hardware_pio`（と `hardware_clocks`） | 6章 |
-| フラッシュに書く | `hardware_flash` | 13・15章 |
-| 2つ目のコア | `pico_multicore` | 12章 |
-| ウォッチドッグ | `hardware_watchdog` | 15章 |
-| CPU のクロックを変える | `hardware_clocks` | 15章 |
-| 1台ずつの番号（ユニーク ID） | `pico_unique_id` | 17章 |
-| Pico W の LED | `pico_cyw43_arch_none` | 6章 |
+| GPIO・時間・`printf` | `pico_stdlib`（最初から入っている） | 7章 |
+| ADC（アナログ入力、内蔵温度センサー） | `hardware_adc` | 8章 |
+| PWM | `hardware_pwm` | 8章 |
+| I2C / SPI / UART | `hardware_i2c` / `hardware_spi` / `hardware_uart` | 9・10章 |
+| PIO（`ws2812.h` の RGB LED） | `hardware_pio`（と `hardware_clocks`） | 7章 |
+| フラッシュに書く | `hardware_flash` | 14・16章 |
+| 2つ目のコア | `pico_multicore` | 13章 |
+| ウォッチドッグ | `hardware_watchdog` | 16章 |
+| CPU のクロックを変える | `hardware_clocks` | 16章 |
+| 1台ずつの番号（ユニーク ID） | `pico_unique_id` | 18章 |
+| Pico W の LED | `pico_cyw43_arch_none` | 7章 |
 
 足し忘れると、ビルドのときに `fatal error: hardware/i2c.h: No such file or directory` や `undefined reference to ...` が出ます。
 保存すると CMake の設定が自動で読み直されます。うまくいかなければ Quick Access の **Configure CMake** を押します。
 
 ## ファイルを分ける
 
-プログラムが長くなったら、ファイルを分けます（分け方の考え方は11章）。
+プログラムが長くなったら、ファイルを分けます（分け方の考え方は12章）。
 
 ```text
 ~/apps/collar/
 ├── collar.cpp       main。全体の流れだけ
-├── mpu6050.h        センサーのクラス（9章）
-├── features.h       特徴量の計算（14・17章）
-├── model.h          判定（14章の train.py で作る）
+├── mpu6050.h        センサーのクラス（10章）
+├── features.h       特徴量の計算（15・18章）
+├── model.h          判定（15章の train.py で作る）
 ├── radio.h          送信
 └── radio.cpp        送信の中身
 ```
@@ -153,7 +153,7 @@ Quick Access の **Switch Build Type** で、ビルドの種類を切り替え�
 
 ## git でバージョンを管理する
 
-プロジェクトを GitHub に置く手順は、3章の「GitHub に置く」にあります。置いたあとは、VS Code の左の **ソース管理**（枝分かれのアイコン）で、ふだんの記録をします。
+プロジェクトを GitHub に置く手順は、4章の「GitHub に置く」にあります。置いたあとは、VS Code の左の **ソース管理**（枝分かれのアイコン）で、ふだんの記録をします。
 
 | やること | ソース管理での操作 | コマンド |
 | --- | --- | --- |
@@ -165,7 +165,7 @@ Quick Access の **Switch Build Type** で、ビルドの種類を切り替え�
 
 - **動くところまでできたら、こまめにコミット**します。動かなくなったときに、どこで壊したかがわかります
 - コミットの説明は「I2C の読み取りを足した」「ウォッチドッグを入れた」のように、何をしたかを短く書きます
-- 出荷するバージョンには、`git tag v1.0.0` → `git push --tags` で印を付けます（17章）
+- 出荷するバージョンには、`git tag v1.0.0` → `git push --tags` で印を付けます（18章）
 - `build/` は `.gitignore` で除かれているので、上がりません
 - VS Code でのくわしい使い方（ブランチ・コンフリクト・便利な拡張機能）、コマンドでの使い方、よくあるエラーは [GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) にあります
 
@@ -179,7 +179,7 @@ Quick Access の **Switch Build Type** で、ビルドの種類を切り替え�
 | --- | --- |
 | Cortex-Debug（marus25） | Debug Probe でのデバッグ。行で止める、変数を見る。mcu-debug の4つ（メモリやレジスタを見る道具）も一緒に入る |
 | MicroPico（paulober） | VS Code で MicroPython を開発するためのもの。このガイドでは使わない（MicroPython のプロジェクトを開いたときだけ動き、MicroPython のピコに自動でつなぐ。そのときは Pico Studio とポートを取り合うので、片方だけ使う） |
-| Python（Microsoft） | Python のプログラムを書く。14章の `train.py` などにも使える |
+| Python（Microsoft） | Python のプログラムを書く。15章の `train.py` などにも使える |
 
 ### プロジェクトを開くとおすすめされるもの（入れる）
 
@@ -189,7 +189,7 @@ Quick Access の **Switch Build Type** で、ビルドの種類を切り替え�
 | --- | --- |
 | **C/C++**（Microsoft） | 補完、書いている途中のエラーの赤線、F12 での移動 |
 | **C/C++ Extension Pack**（Microsoft） | C/C++ と CMake Tools などのまとめ |
-| **Serial Monitor**（Microsoft） | `printf` の出力を VS Code の中で見る（3章の⑥） |
+| **Serial Monitor**（Microsoft） | `printf` の出力を VS Code の中で見る（4章の⑥） |
 
 ターミナルから入れることもできます。
 
@@ -204,7 +204,7 @@ code --install-extension ms-vscode.vscode-serial-monitor
 | --- | --- | --- |
 | Error Lens（Alexander） | エラーや警告を、その行の右に文字で出す。問題の欄を開かなくても気付ける | `code --install-extension usernamehw.errorlens` |
 | Git Graph（mhutchie） | コミットの歴史を、枝分かれの図で見る | `code --install-extension mhutchie.git-graph` |
-| Rainbow CSV（mechatroner） | CSV を列ごとに色分けして見る。13・14章の記録や `features.csv` に便利 | `code --install-extension mechatroner.rainbow-csv` |
+| Rainbow CSV（mechatroner） | CSV を列ごとに色分けして見る。14・15章の記録や `features.csv` に便利 | `code --install-extension mechatroner.rainbow-csv` |
 | GitHub Actions（GitHub） | GitHub での自動ビルドの結果を VS Code で見る（製品のリポジトリで自動ビルドを入れたとき） | `code --install-extension github.vscode-github-actions` |
 | Japanese Language Pack（Microsoft） | VS Code のメニューを日本語にする（好みで） | `code --install-extension ms-ceintl.vscode-language-pack-ja` |
 
@@ -217,8 +217,8 @@ code --install-extension ms-vscode.vscode-serial-monitor
 | C++ を書く・ビルドする・書き込む | **VS Code** |
 | 行で止めて調べる | **VS Code**（Debug Probe） |
 | `printf` の出力を見る | VS Code の Serial Monitor か Pico Studio |
-| ピコがつながっているか、何が動いているかを確かめる | **Pico Studio**（5章） |
-| 開発環境がそろっているかを確かめる | **Pico Studio**（5章） |
+| ピコがつながっているか、何が動いているかを確かめる | **Pico Studio**（6章） |
+| 開発環境がそろっているかを確かめる | **Pico Studio**（6章） |
 | 配線やセンサーを、C++ を書く前に手早く試す | Pico Studio の MicroPython（付録E） |
 
 同じピコを両方から同時には使えません。片方で書き込む前に、もう片方の「切断」や Stop Monitoring をします。
@@ -230,7 +230,7 @@ code --install-extension ms-vscode.vscode-serial-monitor
 | Quick Access の Project のメニューが灰色 | プロジェクトのフォルダ（`CMakeLists.txt` と `.vscode` があるフォルダ）を開いているか。「ファイル」→「フォルダーを開く」 |
 | 初めてのプロジェクトがなかなかできない | `~/.pico-sdk` へのダウンロード中。右下の進み具合を見る。インターネットが必要 |
 | Run で「デバイスが見つからない」 | MicroPython が動いていないか（BOOT を押しながらつなぐ）。Pico Studio や Serial Monitor がポートを使っていないか |
-| Run で「権限がない」 | 2章の手順3の udev ルールを入れて、ピコを抜き差しする |
+| Run で「権限がない」 | 3章の手順3の udev ルールを入れて、ピコを抜き差しする |
 | 赤い波線が消えない | 一度 Compile する。それでも出るなら、Clean CMake → Compile |
 | `printf` が出ない | プロジェクトを作るときに Console over USB に ☑ したか。`CMakeLists.txt` が `pico_enable_stdio_usb(名前 1)` になっているか |
 | 機能を足したら `No such file` のエラー | `target_link_libraries` にライブラリ（`hardware_i2c` など）を足したか |

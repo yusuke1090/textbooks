@@ -9,7 +9,7 @@ The product's program is written in **C++** and developed in **VS Code**.
 
 | Part | Contents |
 | --- | --- |
-| Part 1: Getting ready | About the Pico, the development environment, how to develop in VS Code, checking with Pico Studio |
+| Part 1: Getting ready | About the Pico, development tools, the development environment, how to develop in VS Code, checking with Pico Studio |
 | Part 2: Basics | Wiring and reading LEDs, buttons, pins and sensors |
 | Part 3: Going deeper with C++ | C++ for microcontrollers, interrupts, recording data, machine learning, power saving |
 | Part 4: Making a product | The real development flow, testing, debugging, preparing for mass production |
@@ -19,8 +19,8 @@ The product's program is written in **C++** and developed in **VS Code**.
 
 | Tool | Role | Chapters |
 | --- | --- | --- |
-| **VS Code** (the "Raspberry Pi Pico" extension) | **The center of development.** Write, build, flash to the Pico and debug C++ | Chapters 3–4, and everything from Chapter 6 on |
-| **Pico Studio** | **A tool for checking.** See whether the Pico is connected, what is running on it and whether the development environment is complete. See `printf` output. Open this guide with "📚 ガイド" in the upper right | Chapter 5 |
+| **VS Code** (the "Raspberry Pi Pico" extension) | **The center of development.** Write, build, flash to the Pico and debug C++ | Chapters 4–5, and everything from Chapter 7 on |
+| **Pico Studio** | **A tool for checking.** See whether the Pico is connected, what is running on it and whether the development environment is complete. See `printf` output. Open this guide with "📚 ガイド" in the upper right | Chapter 6 |
 | Terminal | When doing the same things with commands, or putting them into scripts | Appendix A |
 
 Normally you **write and flash in VS Code, and check the connection in Pico Studio when something does not work**.
@@ -30,9 +30,9 @@ Pico Studio also lets you quickly try MicroPython code (Appendix E). It is handy
 
 | Who | Order |
 | --- | --- |
-| Beginners | Chapters 0 → 1 → 2 → 3 → 5 → 6 in order. Then 7 → 8 → 9 to be able to read sensors |
-| People with C++ or embedded experience | Set up the environment with Chapters 2–3, then only the chapters you need |
-| People at the product stage | Chapters 11, 12, 15, 16, 17 |
+| Beginners | Chapters 0 → 1 → 2 → 3 → 4 → 6 → 7 in order. Then 8 → 9 → 10 to be able to read sensors |
+| People with C++ or embedded experience | Set up the environment with Chapters 3–4, then only the chapters you need |
+| People at the product stage | Chapters 12, 13, 16, 17, 18 |
 | When something does not work | Appendix B "Troubleshooting" |
 
 ## How to read the guide
@@ -43,10 +43,10 @@ The label above each piece of code tells you where it is used.
 
 | Label | Meaning | How to use it |
 | --- | --- | --- |
-| C++ program (paste into the .cpp of your VS Code project) | One complete program that runs on the Pico | "Copy" it, paste it into the `.cpp` of your VS Code project, then Compile → Run (Chapter 3) |
+| C++ program (paste into the .cpp of your VS Code project) | One complete program that runs on the Pico | "Copy" it, paste it into the `.cpp` of your VS Code project, then Compile → Run (Chapter 4) |
 | C++ code (excerpt) | Part of a program, for explanation | It cannot be built as is. Read it to learn how to use things |
 | CMakeLists.txt | Build settings | Write it in your project's `CMakeLists.txt` |
-| Python on the PC | Python run in the PC's terminal (Chapters 13–14) | Save it to a file and run `python3 filename` |
+| Python on the PC | Python run in the PC's terminal (Chapters 14–15) | Save it to a file and run `python3 filename` |
 | MicroPython (try it in Pico Studio) | MicroPython you can try right away in Pico Studio (Appendix E) | "Copy" it, paste it into Pico Studio's code box → "▶ 実行" (Run) |
 | No label | Commands or example output | Read it. Type commands in the terminal |
 
@@ -95,6 +95,6 @@ Like a paper book or a PDF, you can mark how far you have read and what is impor
 
 - The product's program is written in C++ and developed in VS Code
 - Pico Studio is a tool for checking the connection and the development environment. You can also try MicroPython quickly
-- Beginners should read Chapters 0–6 in order. If you get stuck, see Appendix B
+- Beginners should read Chapters 0–7 in order. If you get stuck, see Appendix B
 - Code labels tell you how to use the code. Click a word to see its meaning
 - Select text to add highlights, notes and sticky notes. Open the list with 🔖

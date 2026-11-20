@@ -1,4 +1,4 @@
-# 2. Setting up the development environment
+# 3. Setting up the development environment
 
 These steps are for Ubuntu. You only do them once.
 
@@ -10,7 +10,7 @@ These steps are for Ubuntu. You only do them once.
 | **The "Raspberry Pi Pico" extension** | Lets you build, flash and debug with buttons. It also installs the compiler and Pico SDK automatically | Step 2 in this chapter |
 | **The "Serial Monitor" extension** | Shows `printf` output inside VS Code | Step 2 in this chapter |
 | udev rules | Use the Pico without sudo (flashing, viewing output) | Step 3 in this chapter |
-| Pico Studio | Check whether the Pico is connected (Chapter 5) | Step 3 in this chapter |
+| Pico Studio | Check whether the Pico is connected (Chapter 6) | Step 3 in this chapter |
 | (If needed) tools for the command line | Build and flash in the terminal without VS Code | Appendix A |
 
 To make Pico programs, you also need an **ARM compiler** (software that makes machine code for the Pico) and the **Pico SDK** (the official Raspberry Pi collection of C/C++ parts). The extension installs both automatically, so you do not need to install them yourself.
@@ -43,18 +43,18 @@ sudo apt install git tar python3 build-essential
 
 ### Install Serial Monitor too
 
-To see `printf` output inside VS Code, also install the **Serial Monitor** extension (author: Microsoft) (used in Chapter 3).
+To see `printf` output inside VS Code, also install the **Serial Monitor** extension (author: Microsoft) (used in Chapter 4).
 Type `Serial Monitor` in the Extensions search box and install the one by Microsoft. From the terminal, this command also installs it.
 
 ```bash
 code --install-extension ms-vscode.vscode-serial-monitor
 ```
 
-Other recommended extensions are in "Recommended extensions" in Chapter 4.
+Other recommended extensions are in "Recommended extensions" in Chapter 5.
 
 ## What the extension installs
 
-**The first time you create a project** (Chapter 3), the extension downloads the following into **`~/.pico-sdk`**. It takes a few minutes and needs the internet.
+**The first time you create a project** (Chapter 4), the extension downloads the following into **`~/.pico-sdk`**. It takes a few minutes and needs the internet.
 
 | What | Where | Role |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ Other recommended extensions are in "Recommended extensions" in Chapter 4.
 | ARM compiler | `~/.pico-sdk/toolchain/…` | Turns C++ into the Pico's machine code |
 | CMake, Ninja | `~/.pico-sdk/cmake`, `~/.pico-sdk/ninja` | Create and run the build steps |
 | picotool | `~/.pico-sdk/picotool/…` | Puts the Pico into flashing mode over USB and flashes it |
-| OpenOCD | `~/.pico-sdk/openocd/…` | Debugging with a Debug Probe (Chapter 4) |
+| OpenOCD | `~/.pico-sdk/openocd/…` | Debugging with a Debug Probe (Chapter 5) |
 
 - Each version gets its own folder, so different projects can use different versions without conflict
 - You can see, add or remove installed versions with **Manage Components** in Quick Access
@@ -70,7 +70,7 @@ Other recommended extensions are in "Recommended extensions" in Chapter 4.
 
 ## Step 3: Make the Pico usable without sudo
 
-Make it possible to flash the Pico from VS Code, and to talk to the Pico from Pico Studio (Chapter 5), without sudo.
+Make it possible to flash the Pico from VS Code, and to talk to the Pico from Pico Studio (Chapter 6), without sudo.
 
 ```bash
 sudo apt install python3-serial
@@ -85,13 +85,13 @@ sudo udevadm control --reload-rules
 | `sudo cp 70-pico-studio.rules …` | Installs the setting (a udev rule) that lets you use the Pico without sudo. It covers both the serial port (viewing output) and flashing over USB (VS Code's Run Project (USB)) |
 | `sudo udevadm control --reload-rules` | Reloads the settings |
 
-After installing, **unplug the Pico once and plug it back in**. How to start Pico Studio is in Chapter 5.
+After installing, **unplug the Pico once and plug it back in**. How to start Pico Studio is in Chapter 6.
 
 > Even if you installed `70-pico-studio.rules` before, copy it again. Settings for flashing over USB have been added.
 
 ## Checking that everything is in place
 
-When you start Pico Studio (Chapter 5), the fourth item of its connection check is **the C++ development environment**.
+When you start Pico Studio (Chapter 6), the fourth item of its connection check is **the C++ development environment**.
 
 | Display | Meaning |
 | --- | --- |
@@ -106,7 +106,7 @@ A green dot means you are ready. You can also check in the terminal.
 python3 ~/apps/pico-studio/devenv.py check
 ```
 
-> Just installing the extension still leaves the SDK and compiler as ✗. They are installed automatically and become ✓ when you create your first project in Chapter 3.
+> Just installing the extension still leaves the SDK and compiler as ✗. They are installed automatically and become ✓ when you create your first project in Chapter 4.
 
 ## Summary
 

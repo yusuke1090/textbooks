@@ -72,26 +72,26 @@ This is an example of a compatible board with USB Type-C. On the official Pico, 
 | **LED** | A small lamp you can turn on and off from your program |
 | **RGB LED** | An LED that mixes red, green and blue to light in many colors |
 | **RP2040** | The brain of the board (the microcontroller chip) |
-| **Pins** | 20 on each side, 40 in total. Connect sensors and other parts (explained in Chapter 7) |
+| **Pins** | 20 on each side, 40 in total. Connect sensors and other parts (explained in Chapter 8) |
 
 ## The three buttons (BOOT, USR, RST)
 
 | Button | Name | Role |
 | --- | --- | --- |
 | **BOOT** | Boot button (BOOTSEL) | Starting up while holding it enters flashing mode, and the PC sees the board as a USB drive called "RPI-RP2". Copying a .uf2 file to it flashes the program |
-| **USR** | User button | A button you can use freely in your own program. On many boards it is connected to **GP24** (0 when pressed, 1 when released). Chapter 6 explains how to read it |
+| **USR** | User button | A button you can use freely in your own program. On many boards it is connected to **GP24** (0 when pressed, 1 when released). Chapter 7 explains how to read it |
 | **RST** | Reset button | Press it to restart the Pico. The same as unplugging and replugging USB. The flashed program starts again from the beginning |
 
 ### Entering flashing mode (BOOTSEL)
 
-You use this when flashing a program. VS Code's Run Project (USB) normally puts the board into flashing mode automatically, but when it cannot (when the board is brand new, when MicroPython is on it and so on), enter it by hand (Chapter 3). There are two ways.
+You use this when flashing a program. VS Code's Run Project (USB) normally puts the board into flashing mode automatically, but when it cannot (when the board is brand new, when MicroPython is on it and so on), enter it by hand (Chapter 4). There are two ways.
 
 ![Two ways to enter flashing mode](images/en/bootsel-steps.svg)
 
 - **Method A (works on any board)**: hold BOOT while plugging in USB, and let go once it is connected
 - **Method B (boards with RST)**: with USB connected, hold BOOT, press and release RST, then release BOOT
 
-If it worked, Pico Studio's connection check shows **BOOTSEL mode** (the figure in Chapter 5).
+If it worked, Pico Studio's connection check shows **BOOTSEL mode** (the figure in Chapter 6).
 
 ### Common operations
 
@@ -114,7 +114,7 @@ Write in C/C++ using the official Raspberry Pi **Pico SDK**.
 
 - 10–100 times faster than MicroPython
 - You decide how memory is used, so it is easier to make it run stably for a long time
-- After writing, you build it (convert it to machine code) and flash the `.uf2` file to the Pico. With the VS Code extension, this is done with buttons (Chapter 3)
+- After writing, you build it (convert it to machine code) and flash the `.uf2` file to the Pico. With the VS Code extension, this is done with buttons (Chapter 4)
 - The flashed program runs automatically when the power is turned on
 
 ### MicroPython
@@ -133,7 +133,7 @@ In this guide, Appendix E explains how to use it as a tool for quickly checking 
 | --- | --- | --- |
 | Making a product | **Suited** | Not suited |
 | Speed | Fast | Slow |
-| Battery life | Can be long (fine control of power-saving features; Chapter 15) | Shorter |
+| Battery life | Can be long (fine control of power-saving features; Chapter 16) | Shorter |
 | Reliability | You can plan memory use, so it is easier to run stably for a long time | Can stop because of things like running out of memory |
 | Flashing | Just flash one `.uf2` (easy for mass production) | Install MicroPython, then put `.py` files on it |
 | Trying things | Building and flashing take about 10 seconds | Runs immediately. One line at a time in the REPL |

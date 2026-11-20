@@ -1,6 +1,6 @@
-# 17. Getting ready to make a product
+# 18. Getting ready to make a product
 
-This uses the content of Chapters 11–16, with the collar (Chapter 16) as the example.
+This uses the content of Chapters 12–17, with the collar (Chapter 17) as the example.
 
 ## Differences between a prototype and a product
 
@@ -8,12 +8,12 @@ This uses the content of Chapters 11–16, with the collar (Chapter 16) as the e
 | --- | --- | --- |
 | Language | C++ (MicroPython is fine for early experiments; Appendix E) | C++ |
 | Where it runs | On a desk, connected to a PC | In the field, for months, without a PC |
-| When it hangs | Reset by hand | Restarts automatically (the watchdog in Chapter 15) and records the reason |
+| When it hangs | Reset by hand | Restarts automatically (the watchdog in Chapter 16) and records the reason |
 | Errors | Seen in the output box | Recorded. Reported with LED blinking and the like |
 | How to check | Run it and look | Write tests and check every time you change something |
 | Which program it is | You remember | The version is in the program, so you can look it up later |
 | Flashing | One at a time by hand | With a defined procedure, by script |
-| Settings | Written directly in the code | Saved in flash, so each unit can be changed (Chapter 15) |
+| Settings | Written directly in the code | Saved in flash, so each unit can be changed (Chapter 16) |
 
 ## Testing the logic on a PC
 
@@ -21,16 +21,16 @@ This uses the content of Chapters 11–16, with the collar (Chapter 16) as the e
 To do that, **put the parts that do not depend on the Pico (calculations) and the parts that do (sensors, pins) in separate files**.
 
 ```text
-~/apps/collar/          (a project made in VS Code; Chapter 3)
+~/apps/collar/          (a project made in VS Code; Chapter 4)
 ├── features.h          calculation only (uses no Pico functions) <- usable on both the PC and the Pico
-├── model.h             classification (made by train.py in Chapter 14) <- usable on both the PC and the Pico
+├── model.h             classification (made by train.py in Chapter 15) <- usable on both the PC and the Pico
 ├── collar.cpp          for the Pico (reads the sensor and uses features.h and model.h)
 └── test_features.cpp   tests for the PC
 ```
 
 ### features.h
 
-Rewrite the feature calculation from Chapter 14 so it uses no Pico functions.
+Rewrite the feature calculation from Chapter 15 so it uses no Pico functions.
 
 ```cpp
 #pragma once
@@ -97,7 +97,7 @@ g++ -std=c++17 -Wall test_features.cpp -o test_features && ./test_features
 
 - `assert(condition)` stops there if the condition is not true, and shows the line number
 - The classification results (`rest` and so on) depend on the data you trained on. Rewrite the tests to match your own `model.h`
-- It is also worth writing a test that **reads the CSV collected on the PC (features.csv from Chapter 14) and checks that the PC's Python and the C++ give the same results**; it catches mistakes in the `features()` calculation
+- It is also worth writing a test that **reads the CSV collected on the PC (features.csv from Chapter 15) and checks that the PC's Python and the C++ give the same results**; it catches mistakes in the `features()` calculation
 
 ### collar.cpp (for the Pico)
 
@@ -197,7 +197,7 @@ Inside gdb, type the following.
 | `print variable` | Shows a variable's value |
 | `backtrace` | Which function it is in now (to find where it stopped) |
 
-With the "Raspberry Pi Pico" VS Code extension, you can do the same with on-screen buttons ("Debugging" in Chapter 4). That is normally easier.
+With the "Raspberry Pi Pico" VS Code extension, you can do the same with on-screen buttons ("Debugging" in Chapter 5). That is normally easier.
 For details, see the debugging chapter of [Getting started with Raspberry Pi Pico-series](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf).
 
 > Without a Debug Probe, you can also use a second Pico as a Debug Probe ([debugprobe](https://github.com/raspberrypi/debugprobe)).
@@ -251,19 +251,19 @@ int main() {
 }
 ```
 
-Numbers that people decide, like the cow's ID, are saved in flash with the method in Chapter 15. Making a table that maps unique IDs to cow IDs when flashing at the factory makes them easier to manage.
+Numbers that people decide, like the cow's ID, are saved in flash with the method in Chapter 16. Making a table that maps unique IDs to cow IDs when flashing at the factory makes them easier to manage.
 
 ## Ways to avoid trouble in the field
 
 | Measure | How |
 | --- | --- |
-| Restart automatically on a hang | The watchdog (Chapter 15) |
-| Be able to find out later what happened | Keep the number and reasons of restarts, and the number of sensor errors, in flash (Chapter 15) |
-| Keep running even if a sensor breaks | Check return values; when it cannot read, use the previous value or send it as an error (Chapter 11) |
-| Do not panic when the battery runs low | Measure VSYS; when it gets low, send less often and report it (Chapter 15) |
+| Restart automatically on a hang | The watchdog (Chapter 16) |
+| Be able to find out later what happened | Keep the number and reasons of restarts, and the number of sensor errors, in flash (Chapter 16) |
+| Keep running even if a sensor breaks | Check return values; when it cannot read, use the previous value or send it as an error (Chapter 12) |
+| Do not panic when the battery runs low | Measure VSYS; when it gets low, send less often and report it (Chapter 16) |
 | Show the state from outside | Show the state with LED blink patterns (for example 1 = normal, 2 = sensor error, 3 = battery low) |
 | Be able to replace the program | Make the USB connector usable from outside the case. A button for entering flashing mode too |
-| Be able to change settings per unit | Do not write settings in the code; save them in flash (Chapter 15). Make them changeable over USB |
+| Be able to change settings per unit | Do not write settings in the code; save them in flash (Chapter 16). Make them changeable over USB |
 
 ## Things to know
 
@@ -288,7 +288,7 @@ When you put a radio module on a board you made yourself, check with the seller'
 - [ ] The source code has a marker for that version (a git tag)
 - [ ] The watchdog is in place, and you have checked that it restarts when you deliberately make it hang
 - [ ] You have checked that when a sensor is removed or broken, it reports an error without stopping
-- [ ] You have measured the current and calculated that it runs on batteries for the intended period (Chapters 16 and 15)
+- [ ] You have measured the current and calculated that it runs on batteries for the intended period (Chapters 17 and 16)
 - [ ] You have run it continuously for days and checked that it does not stop
 - [ ] You have checked that settings are saved in flash and survive a power cut
 - [ ] You have written down the flashing procedure, and someone else has flashed with it

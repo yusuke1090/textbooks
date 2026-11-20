@@ -8,7 +8,7 @@
 | --- | --- |
 | You want to check right away whether the wiring is right and the sensor replies | **MicroPython** (this appendix) |
 | You want to read register values one at a time (line by line in the REPL) | **MicroPython** |
-| A product's program, where speed, power saving and long running matter | **C++** (from Chapter 3) |
+| A product's program, where speed, power saving and long running matter | **C++** (from Chapter 4) |
 
 Product programs are written in C++. MicroPython is handy for **early experiments before writing C++**.
 
@@ -188,7 +188,7 @@ Type the following in the send box to look up the list of files and their sizes.
 
 "Copy" it, paste it into Pico Studio's code box and try it with "▶ 実行" (Run). Detailed explanations are in the chapters that write the same thing in C++.
 
-### Blinking an LED (Chapter 6)
+### Blinking an LED (Chapter 7)
 
 ```python run
 from machine import Pin
@@ -205,7 +205,7 @@ for i in range(10):
 print("done")
 ```
 
-### Reading a button (Chapter 6)
+### Reading a button (Chapter 7)
 
 ```python run
 from machine import Pin
@@ -218,7 +218,7 @@ for i in range(50):
     time.sleep(0.2)
 ```
 
-### Analog input (Chapter 7)
+### Analog input (Chapter 8)
 
 ```python run
 from machine import ADC
@@ -232,7 +232,7 @@ for i in range(20):
     time.sleep(0.5)
 ```
 
-### I2C scan (Chapter 8)
+### I2C scan (Chapter 9)
 
 ```python run
 from machine import Pin, I2C
@@ -249,7 +249,7 @@ for addr in found:
     print("found: 0x{:02X}  {}".format(addr, name))
 ```
 
-### Reading the MPU-6050 (Chapter 9)
+### Reading the MPU-6050 (Chapter 10)
 
 ```python run
 from machine import Pin, I2C
@@ -282,7 +282,7 @@ for i in range(20):
 ## How MicroPython and C++ code correspond
 
 This is the correspondence for rewriting code tried in MicroPython in C++.
-The `CMakeLists.txt` column shows the library to add to `target_link_libraries` (Chapter 4).
+The `CMakeLists.txt` column shows the library to add to `target_link_libraries` (Chapter 5).
 
 | Task | MicroPython | C++ (Pico SDK) | CMakeLists.txt |
 | --- | --- | --- | --- |
@@ -346,7 +346,7 @@ Go from the top. From the second time on, start at step 2, and skip step 3 if Mi
 | `NameError: name 'xxx' isn't defined` | No variable or function with that name. Is it misspelled, or did you forget an `import`? |
 | `ImportError: no module named 'xxx'` | That library is not in MicroPython. Libraries for the PC (numpy and so on) cannot be used as is. If it is a file you made, is it saved on the Pico? |
 | `TypeError` | A wrong combination of types (numbers, text and so on). For example, joining text and a number with `+` → use `str(number)` |
-| `OSError: [Errno 5] EIO` | I2C communication failed. Check the wiring, address and power, and run the I2C scan from Chapter 8 |
+| `OSError: [Errno 5] EIO` | I2C communication failed. Check the wiring, address and power, and run the I2C scan from Chapter 9 |
 | `OSError: [Errno 110] ETIMEDOUT` | The sensor does not respond. Check the wiring and lower it to `freq=100000` |
 | `OSError: [Errno 2] ENOENT` | That file does not exist. Check the spelling of the file name and the "Files on the Pico" list |
 | `MemoryError` | Out of memory. Make lists smaller, use `array`, save often |
@@ -355,7 +355,7 @@ Go from the top. From the second time on, start at step 2, and skip step 3 if Mi
 ## Going back to a C++ program
 
 1. Hold the Pico's **BOOT** while connecting USB (while MicroPython is running, VS Code cannot put it into flashing mode automatically)
-2. Press **Run Project (USB)** in VS Code (Chapter 3)
+2. Press **Run Project (USB)** in VS Code (Chapter 4)
 
 From then on, a C++ program is running, so you can flash without pressing BOOT.
 

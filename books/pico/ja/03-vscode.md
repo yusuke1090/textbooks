@@ -1,6 +1,6 @@
-# 3. VS Code でプロジェクトを作って動かす
+# 4. VS Code でプロジェクトを作って動かす
 
-2章の開発環境ができている前提です。この章のとおりに進めると、ボードの LED が点滅し、VS Code に `printf` の出力が出ます。
+3章の開発環境ができている前提です。この章のとおりに進めると、ボードの LED が点滅し、VS Code に `printf` の出力が出ます。
 
 ## しくみ
 
@@ -8,7 +8,7 @@
 
 - **プロジェクト**は1つのフォルダで、1つのプログラムになります（例: `~/apps/collar` → `collar.uf2`）
 - 拡張機能は、`~/.pico-sdk` の SDK・コンパイラ・CMake を使ってビルドし、picotool で USB からピコに書き込みます
-- Debug Probe があれば、SWD という線から書き込んだり、行で止めて調べたりできます（4章）
+- Debug Probe があれば、SWD という線から書き込んだり、行で止めて調べたりできます（5章）
 
 
 
@@ -16,7 +16,7 @@
 
 ![VS Code での開発の流れ](images/vscode-flow.svg)
 
-①（2章）と②は最初だけです。ふだんは「③書く → ④ビルド → ⑤書き込む → ⑥出力を見る」をくり返します。
+①（3章）と②は最初だけです。ふだんは「③書く → ④ビルド → ⑤書き込む → ⑥出力を見る」をくり返します。
 
 ## 開発するフォルダ
 
@@ -25,7 +25,7 @@
 - **1つの製品（プログラム）が、1つのプロジェクト**です。プロジェクトは1つのフォルダで、GitHub では1つのリポジトリにします
 - 場所は **`~/apps/名前`**（例: `~/apps/collar`）にそろえます。New C/C++ Project の Location で `~/apps` を選ぶと、その中に名前のフォルダができます
 - **順番は「VS Code で作る → GitHub に置く」** です。拡張機能がフォルダとファイル（`.gitignore` も）を作るので、先に作ってから GitHub に置くほうが簡単です
-- このガイドの6〜15章を試す**練習用**は、`~/apps/pico-practice` のようなプロジェクトを1つ作り、章ごとに `.cpp` の中身を置き換えて試すのが手軽です（GitHub に置かなくてもかまいません）
+- このガイドの7〜16章を試す**練習用**は、`~/apps/pico-practice` のようなプロジェクトを1つ作り、章ごとに `.cpp` の中身を置き換えて試すのが手軽です（GitHub に置かなくてもかまいません）
 - 製品のプログラムは、練習用とは別にプロジェクトを作って、GitHub に置きます
 
 ターミナルで作業するときも、このフォルダにいます。VS Code の中のターミナル（表示 → ターミナル）は、最初からプロジェクトのフォルダで開きます。
@@ -44,7 +44,7 @@
 | ④ | Pico SDK version | SDK のバージョン。いちばん新しいものでよい |
 | ⑤ | Features | 使う機能（SPI、I2C、UART、PIO、DMA、HW watchdog、HW timer、HW clocks など）。選ぶと `CMakeLists.txt` にライブラリが足され、使い方の例のコードも入る。あとから足すこともできる |
 | ⑥ | Stdio support | **Console over USB に ☑**。`printf` が USB で PC に届く。Console over UART の ☑ は外してよい |
-| ⑦ | Code generation options | **Generate C++ code に ☑**（`.cpp` ができる）。**Use project name as entry point file name も ☑ のまま**（`blink.cpp` ができる。☐ だと `main.cpp` になる）。Run the program from RAM rather than flash、Enable C++ exceptions と RTTI は ☐ のまま（11章） |
+| ⑦ | Code generation options | **Generate C++ code に ☑**（`.cpp` ができる）。**Use project name as entry point file name も ☑ のまま**（`blink.cpp` ができる。☐ だと `main.cpp` になる）。Run the program from RAM rather than flash、Enable C++ exceptions と RTTI は ☐ のまま（12章） |
 | ⑧ | Debugger | Debug Probe を使うなら **DebugProbe (CMSIS-DAP)**（そのままでよい） |
 
 最後に **Create** を押します。VS Code が、できたプロジェクトのフォルダを開き直します。
@@ -109,7 +109,7 @@ target_link_libraries(blink
 | `DO NOT EDIT` の部分 | 拡張機能が SDK・コンパイラの場所を決める。触らない |
 | `add_executable(blink blink.cpp)` | `blink.cpp` から `blink` というプログラムを作る |
 | `pico_enable_stdio_usb(blink 1)` | `printf` を USB で PC に送る |
-| `target_link_libraries(blink pico_stdlib)` | 使うライブラリ。I2C を使うなら `hardware_i2c` を足す（4章の表） |
+| `target_link_libraries(blink pico_stdlib)` | 使うライブラリ。I2C を使うなら `hardware_i2c` を足す（5章の表） |
 
 ## GitHub に置く
 
@@ -136,7 +136,7 @@ gh repo create collar --private --source=. --push
 
 - 拡張機能が作った `.gitignore` で、`build` フォルダ（ビルドしてできたもの）は上がりません
 - `.vscode/` と `CMakeLists.txt` は上げます。別の PC でも同じ設定で開けます
-- ふだんのコミットとプッシュは4章の「git でバージョンを管理する」
+- ふだんのコミットとプッシュは5章の「git でバージョンを管理する」
 - 最初の設定（名前とメールアドレス）、SSH キーの作り方、GitHub の画面で作ったリポジトリとのつなぎ方は [GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github)
 
 ### 別の PC で続きを開発する
@@ -147,7 +147,7 @@ git clone https://github.com/ユーザー名/collar.git
 code collar
 ```
 
-VS Code でフォルダを開き、Compile と Run を押せば、続きから開発できます（その PC に拡張機能がまだなければ、2章の手順で入れます。必要な SDK などは、拡張機能がダウンロードします）。
+VS Code でフォルダを開き、Compile と Run を押せば、続きから開発できます（その PC に拡張機能がまだなければ、3章の手順で入れます。必要な SDK などは、拡張機能がダウンロードします）。
 
 非公開のリポジトリをクローンするには、その PC でも GitHub にログインしておく必要があります（`gh auth login` か、SSH キーの登録）。SSH キーを登録したら、URL は `git@github.com:ユーザー名/collar.git` にします。ラズパイや Jetson で取ってくるだけのときは、読むだけの鍵（デプロイキー）にできます。くわしくは [GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) の8章です。
 
@@ -176,12 +176,12 @@ int main() {
 }
 ```
 
-中身の意味は6章で説明します。
+中身の意味は7章で説明します。
 
 - 関数名を打ち始めると、候補が出ます（補完）。`gpio_` まで打つと、GPIO の関数の一覧が出ます
 - まちがいがあると、**ビルドする前に**赤い波線が出ます
 
-> ②の Board type が Pico W のときは、LED の点け方が違います（6章）。ふつうの Pico（RP2040）と Pico 2 は、このままで動きます。
+> ②の Board type が Pico W のときは、LED の点け方が違います（7章）。ふつうの Pico（RP2040）と Pico 2 は、このままで動きます。
 
 ## ④ ビルドする
 
@@ -244,7 +244,7 @@ picotool がピコを書き込みモードにして書き込み、ピコが再�
 | MicroPython（買ったときや、付録E で使ったあと） | 自動で書き込みモードにできない。**BOOT を押しながら USB をつないでから** Run を押す |
 | USB を使わない C++ のプログラム | 同じく、BOOT を押しながらつないでから Run を押す |
 
-何が動いているかは、⑥の Serial Monitor の **Port の名前**でわかります（`/dev/ttyACM0 - ` のあと）。`Raspberry Pi` なら C++ のプログラム、`MicroPython` なら MicroPython です。Pico Studio の「接続の確認」（5章）でもわかります。
+何が動いているかは、⑥の Serial Monitor の **Port の名前**でわかります（`/dev/ttyACM0 - ` のあと）。`Raspberry Pi` なら C++ のプログラム、`MicroPython` なら MicroPython です。Pico Studio の「接続の確認」（6章）でもわかります。
 
 ### 下のターミナルの読み方
 
@@ -267,7 +267,7 @@ Run を押すと、下の「ターミナル」に次のように出ます。**`T
 | --- | --- |
 | `… appears to be an RP-series MicroPython device not in BOOTSEL mode.` | MicroPython が動いている。下の「実際にあった例」 |
 | `No accessible RP-series devices in BOOTSEL mode were found.` だけ | ピコがつながっていない（充電専用のケーブルなど）か、USB を使わないプログラムが動いている。BOOT を押しながらつなぎ直して Run |
-| `… picotool was unable to connect. Maybe try 'sudo' or check your permissions.` | 権限がない。2章の手順3の udev ルールを入れて、ピコを抜き差しする |
+| `… picotool was unable to connect. Maybe try 'sudo' or check your permissions.` | 権限がない。3章の手順3の udev ルールを入れて、ピコを抜き差しする |
 
 ### 実際にあった例: LED が点滅しない
 
@@ -283,7 +283,7 @@ Run を押すと、下の「ターミナル」に次のように出ます。**`T
 
 `printf` の出力は、次のどちらかで見ます。
 
-**VS Code の Serial Monitor**（拡張機能 Serial Monitor が必要。2章）
+**VS Code の Serial Monitor**（拡張機能 Serial Monitor が必要。3章）
 
 ![Serial Monitor（番号は下の手順。この写真では Port が MicroPython になっている）](images/serial-monitor.png)
 
@@ -301,7 +301,7 @@ LED ON
 
 Monitor Mode・View Mode・Line ending は、そのままでかまいません。
 
-**Pico Studio**（5章）
+**Pico Studio**（6章）
 
 1. ポートを選んで「接続」を押す → 出力欄に `LED ON` / `LED OFF` が流れる
 
@@ -323,11 +323,11 @@ Monitor Mode・View Mode・Line ending は、そのままでかまいません�
 保存（Ctrl + S）→ Compile → Run と進めると、LED が速く点滅し、Serial Monitor の `LED ON` / `LED OFF` も速く流れます。
 これが、ふだんの開発のくり返しです。
 
-### 6章から先のコードを試すとき
+### 7章から先のコードを試すとき
 
 - 練習用のプロジェクト（`~/apps/pico-practice` など）の `.cpp` の中身を置き換えて試します
-- I2C などを使うコードは、`target_link_libraries` にライブラリを足します（4章の表）
-- 9章の `mpu6050.h` など、Pico Studio に入っているヘッダーを使うときは、プロジェクトのフォルダにコピーします
+- I2C などを使うコードは、`target_link_libraries` にライブラリを足します（5章の表）
+- 10章の `mpu6050.h` など、Pico Studio に入っているヘッダーを使うときは、プロジェクトのフォルダにコピーします
 
 ```bash
 # blink のところは、自分のプロジェクトの名前にする

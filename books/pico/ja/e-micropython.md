@@ -8,7 +8,7 @@
 | --- | --- |
 | 配線が正しいか、センサーが返事をするかを、すぐ確かめたい | **MicroPython**（この付録） |
 | レジスタの値を1つずつ読んでみたい（REPL で1行ずつ） | **MicroPython** |
-| 製品のプログラム、速さ・省電力・長く動かすことが大事なもの | **C++**（3章から） |
+| 製品のプログラム、速さ・省電力・長く動かすことが大事なもの | **C++**（4章から） |
 
 製品のプログラムは C++ で書きます。MicroPython は、**C++ を書く前の下調べ**に使うと便利です。
 
@@ -188,7 +188,7 @@ PC につながなくても、USB の充電器やモバイルバッテリーに�
 
 「コピー」して Pico Studio のコード欄に貼り付け、「▶ 実行」で試せます。くわしい説明は、同じことを C++ で書いた章にあります。
 
-### LED を点滅させる（6章）
+### LED を点滅させる（7章）
 
 ```python run
 from machine import Pin
@@ -205,7 +205,7 @@ for i in range(10):
 print("おわり")
 ```
 
-### ボタンを読む（6章）
+### ボタンを読む（7章）
 
 ```python run
 from machine import Pin
@@ -218,7 +218,7 @@ for i in range(50):
     time.sleep(0.2)
 ```
 
-### アナログ入力（7章）
+### アナログ入力（8章）
 
 ```python run
 from machine import ADC
@@ -232,7 +232,7 @@ for i in range(20):
     time.sleep(0.5)
 ```
 
-### I2C スキャン（8章）
+### I2C スキャン（9章）
 
 ```python run
 from machine import Pin, I2C
@@ -249,7 +249,7 @@ for addr in found:
     print("見つかった: 0x{:02X}  {}".format(addr, name))
 ```
 
-### MPU-6050 を読む（9章）
+### MPU-6050 を読む（10章）
 
 ```python run
 from machine import Pin, I2C
@@ -282,7 +282,7 @@ for i in range(20):
 ## MicroPython と C++ の書き方の対応
 
 MicroPython で試したコードを C++ に書き直すときの対応です。
-`CMakeLists.txt` の列は、`target_link_libraries` に足すライブラリです（4章）。
+`CMakeLists.txt` の列は、`target_link_libraries` に足すライブラリです（5章）。
 
 | やること | MicroPython | C++（Pico SDK） | CMakeLists.txt |
 | --- | --- | --- | --- |
@@ -346,7 +346,7 @@ pipx ensurepath
 | `NameError: name 'xxx' isn't defined` | その名前の変数や関数がない。つづりのまちがいか、`import` を忘れていないか |
 | `ImportError: no module named 'xxx'` | そのライブラリが MicroPython に入っていない。PC 用のライブラリ（numpy など）はそのままでは使えない。自分で作ったファイルなら、ピコに保存されているか |
 | `TypeError` | 型（数・文字など）の組み合わせがおかしい。例: 文字と数を `+` でつないだ → `str(数)` にする |
-| `OSError: [Errno 5] EIO` | I2C の通信に失敗した。配線・アドレス・電源を確認し、8章の I2C スキャンをする |
+| `OSError: [Errno 5] EIO` | I2C の通信に失敗した。配線・アドレス・電源を確認し、9章の I2C スキャンをする |
 | `OSError: [Errno 110] ETIMEDOUT` | センサーが応答しない。配線を確認、`freq=100000` に下げる |
 | `OSError: [Errno 2] ENOENT` | そのファイルがない。ファイル名のつづりと、「ピコのファイル」の一覧を確かめる |
 | `MemoryError` | メモリ不足。リストを小さくする、`array` を使う、こまめに保存する |
@@ -355,7 +355,7 @@ pipx ensurepath
 ## C++ のプログラムに戻す
 
 1. ピコの **BOOT** を押したまま USB をつなぐ（MicroPython が動いていると、VS Code から自動で書き込みモードにできないため）
-2. VS Code で **Run Project (USB)** を押す（3章）
+2. VS Code で **Run Project (USB)** を押す（4章）
 
 次からは、C++ のプログラムが動いているので、BOOT を押さずに書き込めます。
 

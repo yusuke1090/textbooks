@@ -1,7 +1,7 @@
-# 6. Your first programs
+# 7. Your first programs
 
-This assumes you have created a VS Code project and flashed the blinking LED in Chapter 3.
-For every program in this chapter, "Copy" it, replace the contents of the `.cpp` in your VS Code project, and try it with **Compile Project → Run Project (USB)**. View the output in Serial Monitor or Pico Studio (Chapter 3).
+This assumes you have created a VS Code project and flashed the blinking LED in Chapter 4.
+For every program in this chapter, "Copy" it, replace the contents of the `.cpp` in your VS Code project, and try it with **Compile Project → Run Project (USB)**. View the output in Serial Monitor or Pico Studio (Chapter 4).
 
 ## How to work in C++
 
@@ -157,7 +157,7 @@ int main() {
 `!` means "the opposite". It reads the current state with `gpio_get` and outputs the opposite value.
 
 If it does not light, check the LED's direction (the long leg on the GP15 side) and the pin number (physical pin 20 = GP15).
-How to read pin numbers is explained in Chapter 7, and how to use a breadboard in Chapter 8.
+How to read pin numbers is explained in Chapter 8, and how to use a breadboard in Chapter 9.
 
 ### RGB LED (only on boards that have one)
 
@@ -166,7 +166,7 @@ On a compatible board with an RGB LED, you can make it light in different colors
 Use `ws2812.h`, which comes with Pico Studio. Inside, it uses PIO (the Pico's freely programmable input/output circuits) to make the signal for the RGB LED.
 
 1. Copy `ws2812.h` into your project folder (`cp ~/apps/pico-studio/cpp/include/ws2812.h ~/apps/blink/`)
-2. Add `hardware_pio` and `hardware_clocks` to `target_link_libraries` in `CMakeLists.txt` (Chapter 4)
+2. Add `hardware_pio` and `hardware_clocks` to `target_link_libraries` in `CMakeLists.txt` (Chapter 5)
 3. Paste the following program and Compile → Run
 
 ```cpp run
@@ -241,7 +241,7 @@ int main() {
 }
 ```
 
-`gpio_pull_up` is a setting that uses a resistor inside the Pico to fix the value at 1 when nothing is connected (explained with a figure in Chapter 7).
+`gpio_pull_up` is a setting that uses a resistor inside the Pico to fix the value at 1 when nothing is connected (explained with a figure in Chapter 8).
 `condition ? A : B` is a way of writing "A if the condition is true, otherwise B".
 
 ### Lighting the LED with the button

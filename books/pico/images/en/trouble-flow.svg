@@ -7,7 +7,7 @@
 <path d="M410 104 L410 128" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
 <rect x="230" y="130" width="360" height="66" rx="8" fill="#f3f4f6" stroke="#555c66" stroke-width="2"/>
 <text x="410.0" y="152" font-size="14" text-anchor="middle" font-weight="700" fill="#555c66">What does Pico Studio's "USB で認識" say?</text>
-<text x="410.0" y="174" font-size="12" text-anchor="middle" fill="#555c66">(press "更新" first; Ch. 5)</text>
+<text x="410.0" y="174" font-size="12" text-anchor="middle" fill="#555c66">(press "更新" first; Ch. 6)</text>
 <path d="M300 196 L120 250" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
 <text x="180" y="218" font-size="11" text-anchor="middle" fill="#2f6fde">Not found</text>
 <path d="M410 196 L410 250" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
@@ -20,7 +20,7 @@
 <rect x="300" y="252" width="220" height="92" rx="8" fill="#e7f4ec" stroke="#1f7a3d" stroke-width="2"/>
 <text x="410.0" y="274" font-size="14" text-anchor="middle" font-weight="700" fill="#1f7a3d">Hold BOOT and</text>
 <text x="410.0" y="296" font-size="12" text-anchor="middle" fill="#555c66">reconnect, then</text>
-<text x="410.0" y="314" font-size="12" text-anchor="middle" fill="#555c66">press Run (Ch. 3)</text>
+<text x="410.0" y="314" font-size="12" text-anchor="middle" fill="#555c66">press Run (Ch. 4)</text>
 <rect x="570" y="252" width="230" height="92" rx="8" fill="#fff6e0" stroke="#c28a00" stroke-width="2"/>
 <text x="685.0" y="274" font-size="14" text-anchor="middle" font-weight="700" fill="#c28a00">What is the error?</text>
 <text x="685.0" y="296" font-size="12" text-anchor="middle" fill="#555c66">In VS Code's terminal</text>
@@ -45,7 +45,7 @@
 <text x="770" y="372" font-size="11" text-anchor="middle" fill="#2f6fde">in use, busy</text>
 <rect x="470" y="402" width="170" height="96" rx="8" fill="#f1ebf8" stroke="#6b3fa0" stroke-width="2"/>
 <text x="555.0" y="424" font-size="13" text-anchor="middle" font-weight="700" fill="#6b3fa0">udev rules</text>
-<text x="555.0" y="446" font-size="11" text-anchor="middle" fill="#555c66">Do Ch. 2 Step 3,</text>
+<text x="555.0" y="446" font-size="11" text-anchor="middle" fill="#555c66">Do Ch. 3 Step 3,</text>
 <text x="555.0" y="463" font-size="11" text-anchor="middle" fill="#555c66">replug the Pico</text>
 <rect x="650" y="402" width="150" height="96" rx="8" fill="#f1ebf8" stroke="#6b3fa0" stroke-width="2"/>
 <text x="725.0" y="424" font-size="13" text-anchor="middle" font-weight="700" fill="#6b3fa0">Free the port</text>

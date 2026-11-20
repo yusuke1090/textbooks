@@ -5,7 +5,7 @@ Here, "Raspberry Pi" means a board that runs Linux, such as the Raspberry Pi 4 o
 ## The biggest difference
 
 **The Pico has no Linux.** There is nothing to log in to, and no system for managing services.
-When the power comes on, only the one program you flashed runs. Within that one program, you can move several tasks forward (Chapters 11 and 12).
+When the power comes on, only the one program you flashed runs. Within that one program, you can move several tasks forward (Chapters 12 and 13).
 
 | Item | Raspberry Pi | Pico |
 | --- | --- | --- |
@@ -33,10 +33,10 @@ The numbers are rough guides.
 | Run automatically at start-up | A systemd service | The flashed program always runs |
 | Stop | Ctrl + C, `systemctl stop` | There is no stop operation. Flash a different program |
 | Restart | `sudo systemctl restart` | The RST button, unplugging and replugging USB |
-| View logs | `journalctl -u logger` | View `printf` in Serial Monitor. To keep them, write to flash (Chapter 13) |
-| Restart automatically after a crash | `Restart=always` in the service | The watchdog (`watchdog_enable`, Chapter 15) |
-| Install libraries | `apt install`, `pip install` | Add Pico SDK components to `CMakeLists.txt` (Chapter 4). Put other libraries' source into the project |
-| Debug | `gdb` | A Debug Probe (SWD) and gdb (Chapters 4 and 17) |
+| View logs | `journalctl -u logger` | View `printf` in Serial Monitor. To keep them, write to flash (Chapter 14) |
+| Restart automatically after a crash | `Restart=always` in the service | The watchdog (`watchdog_enable`, Chapter 16) |
+| Install libraries | `apt install`, `pip install` | Add Pico SDK components to `CMakeLists.txt` (Chapter 5). Put other libraries' source into the project |
+| Debug | `gdb` | A Debug Probe (SWD) and gdb (Chapters 5 and 18) |
 | Update the OS | `sudo apt upgrade` | None (raise the SDK version and rebuild) |
 | Shell scripts | Kept on the Raspberry Pi | Kept on the PC (Appendix A) |
 
@@ -46,13 +46,13 @@ If you have written C++ on a Raspberry Pi, watch out for the following differenc
 
 | Item | Raspberry Pi (C++ on Linux) | Pico (Pico SDK) |
 | --- | --- | --- |
-| What you can use | The whole standard library, exceptions, `std::thread`, files | Part of the standard library. No exceptions, `std::thread` or files (Chapter 11) |
-| Memory | Use `new` and `std::vector` without worrying | Fix sizes and place things outside functions (Chapters 11 and 13) |
-| Several tasks | Threads, processes | Move forward in turn by looking at the time (Chapter 11), interrupts, the two cores (Chapter 12) |
-| Driving pins | Operated like files, with `libgpiod` and the like | Drive the hardware directly with `gpio_put` and the like (Chapter 6) |
-| I2C | Open `/dev/i2c-1` and use `ioctl` | `i2c_write_blocking` / `i2c_read_blocking` (Chapter 9) |
-| Time | `std::chrono`, `sleep` | `sleep_ms`, `get_absolute_time` (Chapter 9) |
-| When it stops with an error | The OS reports it, and the service restarts | It stops without saying anything. Restart with the watchdog (Chapter 15) |
+| What you can use | The whole standard library, exceptions, `std::thread`, files | Part of the standard library. No exceptions, `std::thread` or files (Chapter 12) |
+| Memory | Use `new` and `std::vector` without worrying | Fix sizes and place things outside functions (Chapters 12 and 14) |
+| Several tasks | Threads, processes | Move forward in turn by looking at the time (Chapter 12), interrupts, the two cores (Chapter 13) |
+| Driving pins | Operated like files, with `libgpiod` and the like | Drive the hardware directly with `gpio_put` and the like (Chapter 7) |
+| I2C | Open `/dev/i2c-1` and use `ioctl` | `i2c_write_blocking` / `i2c_read_blocking` (Chapter 10) |
+| Time | `std::chrono`, `sleep` | `sleep_ms`, `get_absolute_time` (Chapter 10) |
+| When it stops with an error | The OS reports it, and the service restarts | It stops without saying anything. Restart with the watchdog (Chapter 16) |
 
 Comparing a blinking LED gives the following.
 
@@ -68,7 +68,7 @@ while (true) {
 }
 ```
 
-Pico (the same as Chapter 6):
+Pico (the same as Chapter 7):
 
 ```cpp
 gpio_init(25);
@@ -81,12 +81,12 @@ while (true) {
 
 ## Where Linux habits trip you up
 
-- **When `main` ends, it does nothing.** Repeat with `while (true)` (Chapter 6)
-- **`printf` output is not kept.** You only see it while connected by USB and watching. To keep it, write to flash (Chapter 13)
-- **When it stops with an error, nothing appears.** Add a watchdog and error records (Chapters 15 and 17)
-- **Write to flash sparingly.** The number of write cycles is limited (Chapter 13)
+- **When `main` ends, it does nothing.** Repeat with `while (true)` (Chapter 7)
+- **`printf` output is not kept.** You only see it while connected by USB and watching. To keep it, write to flash (Chapter 14)
+- **When it stops with an error, nothing appears.** Add a watchdog and error records (Chapters 16 and 18)
+- **Write to flash sparingly.** The number of write cycles is limited (Chapter 14)
 - **A port can only be used by one program at a time.** Unlike ssh, you cannot have several connections at once
-- **Making a large array inside a function breaks things.** The stack is only a few KB (Chapter 11)
+- **Making a large array inside a function breaks things.** The stack is only a few KB (Chapter 12)
 
 ## Which to use
 
@@ -99,7 +99,7 @@ while (true) {
 | Running large machine learning models | Raspberry Pi, Jetson |
 | Running a web server or database | Raspberry Pi |
 
-You can also combine the two: the Pico reads sensors in the field, and the Raspberry Pi receives the data and stores and analyzes it (Chapter 16). Passing data over USB is in Chapter 13.
+You can also combine the two: the Pico reads sensors in the field, and the Raspberry Pi receives the data and stores and analyzes it (Chapter 17). Passing data over USB is in Chapter 14.
 
 ## Summary
 

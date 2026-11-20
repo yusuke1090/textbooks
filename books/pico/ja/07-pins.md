@@ -1,6 +1,6 @@
-# 7. ピンと電源の基本
+# 8. ピンと電源の基本
 
-> この章のプログラムは、ADC は `hardware_adc`、PWM は `hardware_pwm` を、`CMakeLists.txt` の `target_link_libraries` に足してからビルドします（4章の「ライブラリを足す」）。
+> この章のプログラムは、ADC は `hardware_adc`、PWM は `hardware_pwm` を、`CMakeLists.txt` の `target_link_libraries` に足してからビルドします（5章の「ライブラリを足す」）。
 
 ## 2種類の番号
 
@@ -170,7 +170,7 @@ int main() {
 GPIO は 0V か 3.3V しか出せませんが、**とても速く点けたり消したりする** と、LED が中間の明るさに見えます。これを **PWM** といいます。
 「点いている時間の割合」（デューティ比）を変えると、明るさが変わります。
 
-6章の外付け LED（GP15）を使って試します。
+7章の外付け LED（GP15）を使って試します。
 
 ```cpp run
 #include "pico/stdlib.h"
@@ -228,7 +228,7 @@ I2C・SPI・UART は、上の表以外のピンにも割り当てられます。
 
 どのピンが使えるかは [Pico のデータシート](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf) のピン配置図を見てください。
 
-C++ では、ピンを通信用に切り替えてから使います。I2C の例です（くわしくは9章）。
+C++ では、ピンを通信用に切り替えてから使います。I2C の例です（くわしくは10章）。
 
 ```cpp
 #include "hardware/i2c.h"
@@ -246,7 +246,7 @@ gpio_pull_up(5);
 | SPI | `spi_init(spi0, 速さ)` | `GPIO_FUNC_SPI` |
 | UART | `uart_init(uart0, 115200)` | `GPIO_FUNC_UART` |
 
-このガイドでは、8章からの I2C センサーで GP4・GP5 を使います。
+このガイドでは、9章からの I2C センサーで GP4・GP5 を使います。
 
 ## 壊さないための注意
 

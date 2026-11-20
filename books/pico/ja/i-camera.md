@@ -58,7 +58,7 @@ PC                窓に映す・保存する
 | 線 | 役目 |
 | --- | --- |
 | 3.3V・GND | 電源 |
-| SIOC・SIOD | カメラの設定を書き込む。I2C と同じしくみ（8章） |
+| SIOC・SIOD | カメラの設定を書き込む。I2C と同じしくみ（9章） |
 | XCLK | ピコからカメラに送る時計（1秒に1000万回）。これがないとカメラは動かない |
 | VSYNC・HREF・PCLK | 「写真の始まり」「行の始まり」「次の1バイト」の合図 |
 | D0〜D7 | 写真のデータ。8本で1回に1バイト送る |
@@ -96,7 +96,7 @@ PC                窓に映す・保存する
 
 ## プロジェクトを作る
 
-1. VS Code の拡張機能「Raspberry Pi Pico」で **New C/C++ Project** を開く（3章）。名前は `camera`、場所は `~/apps`、**Console over USB** と **Generate C++ code** に ☑ して作る
+1. VS Code の拡張機能「Raspberry Pi Pico」で **New C/C++ Project** を開く（4章）。名前は `camera`、場所は `~/apps`、**Console over USB** と **Generate C++ code** に ☑ して作る
 2. VS Code のターミナルで、カメラのライブラリ [PicoCamera](https://github.com/umeiko/PicoCamera) をプロジェクトの中にダウンロードする
 
 ```bash
@@ -268,7 +268,7 @@ JPG 18234          ← 1行目: これから送るバイト数
 
 ### PC のプログラム
 
-OpenCV（写真を扱う Python のライブラリ）を入れます。pyserial は2章で入れています。
+OpenCV（写真を扱う Python のライブラリ）を入れます。pyserial は3章で入れています。
 
 ```bash
 sudo apt install python3-opencv
@@ -386,7 +386,7 @@ s で保存、q で終了
 | ファイル | できるとき・中身 |
 | --- | --- |
 | `PicoCamera/` | `git clone` したとき。カメラを動かすライブラリ（C++ のソース） |
-| `build/camera.uf2` | Compile したとき。ピコに書き込むプログラム（3章） |
+| `build/camera.uf2` | Compile したとき。ピコに書き込むプログラム（4章） |
 | `camera_view.py` | 自分で保存したとき。PC で動かすプログラム |
 | `photos/20261121_093015.jpg` | **s** を押したとき（`AUTO_SAVE` を決めたら、その秒ごと）。撮った写真。名前は日付と時刻 |
 
@@ -410,7 +410,7 @@ s で保存、q で終了
 
 ![カラス](images/h-crow.jpg)
 
-- 窓ぎわなど、カラスの来る所にカメラを向けて `AUTO_SAVE = 10` で動かすと、写真がたまります。カラスが写った写真と、写っていない写真をフォルダに分けると、学習のラベルになります（14章）
+- 窓ぎわなど、カラスの来る所にカメラを向けて `AUTO_SAVE = 10` で動かすと、写真がたまります。カラスが写った写真と、写っていない写真をフォルダに分けると、学習のラベルになります（15章）
 - 見分けるプログラムは、`get_photo()` で受け取った `img` を学習したモデルに渡す形になります。ピコの側は、このまま変えません
 - 牛舎で使うときは、PC の代わりに付録H のラズパイに USB でつなぎます。`camera_view.py` はラズパイでもそのまま動きます
 

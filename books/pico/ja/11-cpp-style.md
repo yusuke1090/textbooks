@@ -1,6 +1,6 @@
-# 11. マイコン向けの C++ の書き方
+# 12. マイコン向けの C++ の書き方
 
-3章で VS Code のプロジェクトを作れている前提です。この章の完成したプログラムは、プロジェクトの `.cpp` に貼り付けて Compile → Run で試せます。
+4章で VS Code のプロジェクトを作れている前提です。この章の完成したプログラムは、プロジェクトの `.cpp` に貼り付けて Compile → Run で試せます。
 
 ## パソコンの C++ との違い
 
@@ -11,7 +11,7 @@
 | 例外（`try` / `throw`） | 使う | Pico SDK では使わない設定になっている |
 | 標準ライブラリ | 全部使える | 一部だけ。`std::cout` や `std::thread` は使わない |
 | プログラムの終わり | `main` が終わると終わる | `main` は終わらない。ずっとくり返す |
-| エラーで止まったとき | OS が知らせてくれる | 何も出ずに止まる。自分で気付けるようにする（15章のウォッチドッグ） |
+| エラーで止まったとき | OS が知らせてくれる | 何も出ずに止まる。自分で気付けるようにする（16章のウォッチドッグ） |
 
 ## 整数の型
 
@@ -29,7 +29,7 @@
 
 ```cpp
 uint8_t hi = 200, lo = 100;
-int16_t raw = static_cast<int16_t>((hi << 8) | lo);   // 2バイトをつなげる（9章）
+int16_t raw = static_cast<int16_t>((hi << 8) | lo);   // 2バイトをつなげる（10章）
 uint32_t ms = to_ms_since_boot(get_absolute_time());  // 起動してからのミリ秒。約49日で一周する
 ```
 
@@ -74,7 +74,7 @@ Mode mode = Mode::Idle;
 
 ## メモリの置き場所
 
-13章のおさらいです。製品では、**メモリの使い方をビルドのときに決めておく**のが基本です。
+14章のおさらいです。製品では、**メモリの使い方をビルドのときに決めておく**のが基本です。
 
 | 置き場所 | 書き方 | 決まるとき | 注意 |
 | --- | --- | --- | --- |
@@ -122,7 +122,7 @@ arm-none-eabi-size build/blink.elf
 | `<iostream>`（`std::cout`） | プログラムが数百KB 大きくなる。`printf` を使う |
 | `std::vector`、`std::string`、`std::map` | ヒープを使う。使うなら最初に `reserve` して増やさない |
 | `try` / `throw` | Pico SDK では例外を使わない設定（`PICO_CXX_ENABLE_EXCEPTIONS=0`） |
-| `std::thread`、`std::mutex` | OS がないので使えない。2つのコアは12章 |
+| `std::thread`、`std::mutex` | OS がないので使えない。2つのコアは13章 |
 | `new` / `delete` | ヒープを使う。最初に1回だけならよい |
 
 ## エラーの扱い
@@ -158,14 +158,14 @@ SensorError read_sht31(float& temp, float& hum);
 
 ## クラスでセンサーを扱う
 
-センサーごとにクラスを作ると、使う側のコードが短くなり、センサーを替えるときも直すところが少なくなります。9章の `Mpu6050` がこの形です。
+センサーごとにクラスを作ると、使う側のコードが短くなり、センサーを替えるときも直すところが少なくなります。10章の `Mpu6050` がこの形です。
 
 ```cpp
 class Sht31 {
 public:
     explicit Sht31(i2c_inst_t* i2c, uint8_t addr = 0x44) : i2c_(i2c), addr_(addr) {}
 
-    bool read(float& temp, float& hum);   // 中身は10章のコード
+    bool read(float& temp, float& hum);   // 中身は11章のコード
 
 private:
     i2c_inst_t* i2c_;                     // どの I2C か
@@ -212,7 +212,7 @@ private:
 };
 ```
 
-`.cpp` に分けたときは、`CMakeLists.txt` の `add_executable` に書き足します（4章の「ファイルを分ける」）。
+`.cpp` に分けたときは、`CMakeLists.txt` の `add_executable` に書き足します（5章の「ファイルを分ける」）。
 
 ```cmake
 add_executable(collar collar.cpp sht31.cpp)
@@ -296,7 +296,7 @@ USR ボタンを押すたびに、LED の点滅が「ゆっくり → 速く →
 | 押した瞬間を見つける | 前回の値（`last_pressed`）と比べて、離した状態から押した状態に変わったときだけ動く |
 | 20ms ごとに見る | ボタンの接点が震えて、1回押しても何回も押したように見える（チャタリング）のを防ぐ |
 
-この形は、MicroPython の `asyncio` や、パソコンのイベントループと同じ考え方です。もっと正確な時刻で動かしたいときは、12章の割り込みを使います。
+この形は、MicroPython の `asyncio` や、パソコンのイベントループと同じ考え方です。もっと正確な時刻で動かしたいときは、13章の割り込みを使います。
 
 ## まとめ
 

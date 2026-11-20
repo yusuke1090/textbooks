@@ -158,7 +158,7 @@ tools/            図や用語の一覧を作るスクリプト
 
 ### 🐙 GitHub の教科書（books/github）
 
-- 2026-11-14 に、ラズパイピコ開発ガイドの「付録F. git と GitHub の使い方」を分けて作った。ピコのガイドの3章・4章は、ここへのリンクになっている
+- 2026-11-14 に、ラズパイピコ開発ガイドの「付録F. git と GitHub の使い方」を分けて作った。ピコのガイドの4章・5章は、ここへのリンクになっている
 - コマンドの言葉の説明は `glossary.json`（ピコのガイドの `glossary.json` から、git・ssh・gh などを写したもの）
 - 9章の VS Code の画面の図（`images/vscode-*.svg`、6枚）は `python3 tools/make_github_figures.py` で作る
 

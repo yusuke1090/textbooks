@@ -13,16 +13,16 @@
 
 ### Example: IoT for monitoring cow behavior
 
-Suppose you put a Pico and an accelerometer on a collar to measure a cow's movement. Chapters 6–14 of this guide follow this flow.
+Suppose you put a Pico and an accelerometer on a collar to measure a cow's movement. Chapters 7–15 of this guide follow this flow.
 
 ![The flow of IoT for monitoring cow behavior](images/en/iot-system.svg)
 
-1. **Measure**: measure neck movement with an accelerometer, and changes in head height with a pressure sensor (Chapters 8 and 9)
-2. **Record and classify**: summarize and save the data at regular intervals (Chapter 13), and classify "walking", "eating", "ruminating", "resting" and so on with machine learning (Chapter 14)
+1. **Measure**: measure neck movement with an accelerometer, and changes in head height with a pressure sensor (Chapters 9 and 10)
+2. **Record and classify**: summarize and save the data at regular intervals (Chapter 14), and classify "walking", "eating", "ruminating", "resting" and so on with machine learning (Chapter 15)
 3. **Send**: send the results with a WiFi board (Pico W and others) or LoRa
 4. **Collect and view**: collect them in the cloud or on a PC, make graphs, and report anything unusual
 
-The order for actually building it is summarized in Chapter 16.
+The order for actually building it is summarized in Chapter 17.
 
 If classification is done on the microcontroller, the data sent changes from "raw acceleration" to "the kind of behavior", saving a lot of data and battery.
 
@@ -82,7 +82,7 @@ These are the parts used to work through the whole guide. Search online shops fo
 - [Getting started with Raspberry Pi Pico-series (PDF)](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf)
   — The official introduction. The VS Code extension, how to debug
 - [The Raspberry Pi Pico VS Code extension](https://marketplace.visualstudio.com/items?itemName=raspberry-pi.raspberry-pi-pico)
-  — The extension's page (Chapters 3 and 4)
+  — The extension's page (Chapters 4 and 5)
 - [Raspberry Pi Pico-series C/C++ SDK (PDF)](https://datasheets.raspberrypi.com/pico/raspberry-pi-pico-c-sdk.pdf)
   — The ideas behind the SDK and an overall explanation
 - [Pico SDK](https://github.com/raspberrypi/pico-sdk) — The SDK's source
@@ -91,10 +91,10 @@ These are the parts used to work through the whole guide. Search online shops fo
 ### Hardware documents
 
 - [Raspberry Pi Pico datasheet (PDF)](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
-  — The pinout and power specifications (Chapter 7)
+  — The pinout and power specifications (Chapter 8)
 - [RP2040 datasheet (PDF)](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
   — Detailed specifications of the chip. For looking up details such as the ADC, PWM, PIO and low power
-- [Debug Probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) — The official debugging tool (Chapter 4)
+- [Debug Probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) — The official debugging tool (Chapter 5)
 
 ### Tutorials and projects
 
@@ -102,7 +102,7 @@ These are the parts used to work through the whole guide. Search online shops fo
   — Wiring and usage for each sensor. Search by model number
 - [Wokwi](https://wokwi.com/) — A simulator for trying a Pico and sensors in the browser
 
-### Machine learning (used in Chapter 14)
+### Machine learning (used in Chapter 15)
 
 - [emlearn](https://github.com/emlearn/emlearn)
   — Converts scikit-learn models into C code

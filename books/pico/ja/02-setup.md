@@ -1,4 +1,4 @@
-# 2. 開発環境を用意する
+# 3. 開発環境を用意する
 
 Ubuntu の場合です。最初の1回だけ行います。
 
@@ -10,7 +10,7 @@ Ubuntu の場合です。最初の1回だけ行います。
 | **拡張機能「Raspberry Pi Pico」** | ビルド・書き込み・デバッグをボタンでできるようにする。コンパイラや Pico SDK も自動で入れてくれる | この章の手順2 |
 | **拡張機能「Serial Monitor」** | `printf` の出力を VS Code の中で見る | この章の手順2 |
 | udev ルール | ピコを sudo なしで使う（書き込み・出力を見る） | この章の手順3 |
-| Pico Studio | ピコがつながっているかを確かめる（5章） | この章の手順3 |
+| Pico Studio | ピコがつながっているかを確かめる（6章） | この章の手順3 |
 | （必要なら）コマンド用の道具 | VS Code を使わず、ターミナルでビルド・書き込みする | 付録A |
 
 ピコのプログラムを作るには、ほかに **ARM 用のコンパイラ**（ピコ用の機械語を作るソフト）と **Pico SDK**（Raspberry Pi 公式の C/C++ の部品集）が必要です。どちらも拡張機能が自動で入れるので、自分で入れる必要はありません。
@@ -43,18 +43,18 @@ sudo apt install git tar python3 build-essential
 
 ### Serial Monitor も入れる
 
-`printf` の出力を VS Code の中で見るために、拡張機能 **Serial Monitor**（作者: Microsoft）も入れます（3章で使います）。
+`printf` の出力を VS Code の中で見るために、拡張機能 **Serial Monitor**（作者: Microsoft）も入れます（4章で使います）。
 拡張機能の検索欄に `Serial Monitor` と入れて、作者が Microsoft のものをインストールします。ターミナルからなら、次のコマンドでも入ります。
 
 ```bash
 code --install-extension ms-vscode.vscode-serial-monitor
 ```
 
-ほかのおすすめの拡張機能は、4章の「おすすめの拡張機能」にあります。
+ほかのおすすめの拡張機能は、5章の「おすすめの拡張機能」にあります。
 
 ## 拡張機能が入れるもの
 
-**初めてプロジェクトを作ったとき**（3章）に、拡張機能が次のものを **`~/.pico-sdk`** にダウンロードします。数分かかり、インターネットが必要です。
+**初めてプロジェクトを作ったとき**（4章）に、拡張機能が次のものを **`~/.pico-sdk`** にダウンロードします。数分かかり、インターネットが必要です。
 
 | 入るもの | 場所 | 役割 |
 | --- | --- | --- |
@@ -62,7 +62,7 @@ code --install-extension ms-vscode.vscode-serial-monitor
 | ARM 用のコンパイラ | `~/.pico-sdk/toolchain/…` | C++ をピコの機械語にする |
 | CMake・Ninja | `~/.pico-sdk/cmake`、`~/.pico-sdk/ninja` | ビルドの手順を作って、実行する |
 | picotool | `~/.pico-sdk/picotool/…` | USB でピコを書き込みモードにして、書き込む |
-| OpenOCD | `~/.pico-sdk/openocd/…` | Debug Probe でデバッグする（4章） |
+| OpenOCD | `~/.pico-sdk/openocd/…` | Debug Probe でデバッグする（5章） |
 
 - バージョンごとにフォルダが分かれるので、プロジェクトごとに違うバージョンを使っても、ぶつかりません
 - 入っているバージョンは、Quick Access の **Manage Components** で見たり、足したり消したりできます
@@ -70,7 +70,7 @@ code --install-extension ms-vscode.vscode-serial-monitor
 
 ## 手順3: ピコを sudo なしで使えるようにする
 
-VS Code からピコに書き込むときと、Pico Studio（5章）でピコとやり取りするときに、sudo なしで使えるようにします。
+VS Code からピコに書き込むときと、Pico Studio（6章）でピコとやり取りするときに、sudo なしで使えるようにします。
 
 ```bash
 sudo apt install python3-serial
@@ -85,13 +85,13 @@ sudo udevadm control --reload-rules
 | `sudo cp 70-pico-studio.rules …` | ピコを sudo なしで使えるようにする設定（udev ルール）を入れる。シリアルポート（出力を見る）と、USB での書き込み（VS Code の Run Project (USB)）の両方に効く |
 | `sudo udevadm control --reload-rules` | 設定を読み直す |
 
-入れたあとは、**ピコを一度抜いて、つなぎ直します**。Pico Studio の起動のしかたは5章にあります。
+入れたあとは、**ピコを一度抜いて、つなぎ直します**。Pico Studio の起動のしかたは6章にあります。
 
 > 以前に `70-pico-studio.rules` を入れていても、もう一度コピーしてください。USB での書き込みの設定が足されています。
 
 ## そろったか確かめる
 
-Pico Studio を起動すると（5章）、「接続の確認」の4つ目に **C++ の開発環境** が出ます。
+Pico Studio を起動すると（6章）、「接続の確認」の4つ目に **C++ の開発環境** が出ます。
 
 | 表示 | 意味 |
 | --- | --- |
@@ -106,7 +106,7 @@ Pico Studio を起動すると（5章）、「接続の確認」の4つ目に **
 python3 ~/apps/pico-studio/devenv.py check
 ```
 
-> 拡張機能を入れただけでは、SDK とコンパイラはまだ ✗ です。3章で最初のプロジェクトを作ると、自動で入って ✓ になります。
+> 拡張機能を入れただけでは、SDK とコンパイラはまだ ✗ です。4章で最初のプロジェクトを作ると、自動で入って ✓ になります。
 
 ## まとめ
 

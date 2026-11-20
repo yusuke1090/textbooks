@@ -10,31 +10,33 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | [Pico 2](https://commons.wikimedia.org/wiki/File:Raspberry_PI_Pico_2-01.jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [Pico WH (left: front, right: back; with pin headers)](https://commons.wikimedia.org/wiki/File:Raspberry_Pi_Pico_WH_top_and_bottom_with_soldered_pins.jpg) | Spageektti | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
-## 7. Pin and power basics
+## 2. Development tools
+
+| Photo | Author | Licence |
+| --- | --- | --- |
+| [USB cable (left: the micro-USB end for the Pico; right: the USB-A end for the PC)](https://commons.wikimedia.org/wiki/File:USB_2.0_A_MACHO_-_MICRO_USB_B_MACHO.jpg) | Electronicgrup | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| [Breadboard](https://commons.wikimedia.org/wiki/File:400_points_breadboard.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [Jumper wires (male-male)](https://commons.wikimedia.org/wiki/File:A_few_Jumper_Wires.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [Pin headers](https://commons.wikimedia.org/wiki/File:16_Pin_Header.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [Soldering iron, stand and solder](https://commons.wikimedia.org/wiki/File:Soldering_iron_and_accessories.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [Desoldering braid](https://commons.wikimedia.org/wiki/File:Circa_2000_Weller_De_Sold_desoldering_braid_2_mm_1_6_m_made_in_Germany.jpg) | R. Henrik Nilsson | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [Wire cutters](https://commons.wikimedia.org/wiki/File:Red_flush_cutters.jpg) | 4300streetcar | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [Wire strippers](https://commons.wikimedia.org/wiki/File:Wire_stripper_HOZAN_JAPAN_01.jpg) | ja:User:Shampoorobot aka ja:User:A16504601 | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
+| [Needle-nose pliers](https://commons.wikimedia.org/wiki/File:Long-nosePliers.jpg) | Raysonho @ Open Grid Scheduler / Grid Engine | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) |
+| [Heat-shrink tubing](https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [Multimeter](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+## 8. Pin and power basics
 
 | Photo | Author | Licence |
 | --- | --- | --- |
 | [A potentiometer (variable resistor)](https://commons.wikimedia.org/wiki/File:Potentiometer.jpg) | Iainf | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) |
 
-## 8. Connecting sensors
-
-| Photo | Author | Licence |
-| --- | --- | --- |
-| [A breadboard (half size)](https://commons.wikimedia.org/wiki/File:400_points_breadboard.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
-| [Male–male jumper wires](https://commons.wikimedia.org/wiki/File:A_few_Jumper_Wires.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
-| [A soldering iron, iron stand and solder](https://commons.wikimedia.org/wiki/File:Soldering_iron_and_accessories.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
-
-## 9. Reading sensors
+## 10. Reading sensors
 
 | Photo | Author | Licence |
 | --- | --- | --- |
 | [An MPU-6050 module (GY-521)](https://commons.wikimedia.org/wiki/File:GY-521_MPU-6050_Module_3_Axis_Gyroscope_%2B_Accelerometer_0487.jpg) | Nevit Dilmen (talk) | [CC BY-SA 3.0](https://creativecommons.org/licenses/by-sa/3.0) |
-
-## 15. Saving power and running for a long time
-
-| Photo | Author | Licence |
-| --- | --- | --- |
-| [A multimeter (digital multimeter)](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
 ## Appendix C. Comparing the Raspberry Pi and the Pico
 

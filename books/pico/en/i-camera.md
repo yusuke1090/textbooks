@@ -58,7 +58,7 @@ Male–female wires are also on AliExpress (**dupont wire male female 10cm**, ab
 | Wire | Job |
 | --- | --- |
 | 3.3V, GND | Power |
-| SIOC, SIOD | Write the camera's settings. Works the same way as I2C (Chapter 8) |
+| SIOC, SIOD | Write the camera's settings. Works the same way as I2C (Chapter 9) |
 | XCLK | The clock the Pico sends to the camera (10 million ticks a second). The camera does not work without it |
 | VSYNC, HREF, PCLK | Signals for "a picture starts", "a line starts" and "next byte" |
 | D0–D7 | The picture data. Eight wires send one byte at a time |
@@ -96,7 +96,7 @@ The Pico reads D0–D7 at every PCLK signal using PIO (a small circuit for readi
 
 ## Making the project
 
-1. Open **New C/C++ Project** in the "Raspberry Pi Pico" VS Code extension (Chapter 3). Name it `camera`, put it in `~/apps`, tick **Console over USB** and **Generate C++ code**, and create it
+1. Open **New C/C++ Project** in the "Raspberry Pi Pico" VS Code extension (Chapter 4). Name it `camera`, put it in `~/apps`, tick **Console over USB** and **Generate C++ code**, and create it
 2. In the VS Code terminal, download the camera library [PicoCamera](https://github.com/umeiko/PicoCamera) into the project
 
 ```bash
@@ -268,7 +268,7 @@ JPG 18234          ← first line: how many bytes follow
 
 ### The PC program
 
-Install OpenCV (a Python library for working with pictures). You installed pyserial in Chapter 2.
+Install OpenCV (a Python library for working with pictures). You installed pyserial in Chapter 3.
 
 ```bash
 sudo apt install python3-opencv
@@ -386,7 +386,7 @@ Saved: photos/20261121_093015.jpg
 | File | When it appears and what it is |
 | --- | --- |
 | `PicoCamera/` | When you `git clone`. The library that drives the camera (C++ source) |
-| `build/camera.uf2` | When you Compile. The program written to the Pico (Chapter 3) |
+| `build/camera.uf2` | When you Compile. The program written to the Pico (Chapter 4) |
 | `camera_view.py` | When you save it yourself. The program that runs on the PC |
 | `photos/20261121_093015.jpg` | When you press **s** (or every so many seconds if you set `AUTO_SAVE`). A picture you took, named by date and time |
 
@@ -410,7 +410,7 @@ Saved: photos/20261121_093015.jpg
 
 ![A crow](images/h-crow.jpg)
 
-- Point the camera where crows come, by a window for example, and run it with `AUTO_SAVE = 10` to collect pictures. Sorting them into folders of pictures with and without crows gives you the labels for training (Chapter 14)
+- Point the camera where crows come, by a window for example, and run it with `AUTO_SAVE = 10` to collect pictures. Sorting them into folders of pictures with and without crows gives you the labels for training (Chapter 15)
 - A program that spots crows will pass the `img` received by `get_photo()` to a trained model. The Pico side stays exactly as it is
 - To use it in the barn, plug it into the Raspberry Pi from Appendix H over USB instead of the PC. `camera_view.py` runs unchanged on the Raspberry Pi
 

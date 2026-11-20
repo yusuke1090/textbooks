@@ -20,5 +20,5 @@
 <text x="520.0" y="254.7" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">To the cloud with MQTT etc.</text>
 <text x="520.0" y="272.1" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">Sends from far away; uses a lot of battery</text>
 <path d="M182 150 C 240 150, 240 247, 296 247" stroke="#6b3fa0" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round" marker-end="url(#ah-6b3fa0)"/>
-<text x="20" y="308" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">This chapter explains ① and ②. For ③, see the link in Chapter 3 (umqtt.simple).</text>
+<text x="20" y="308" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">This chapter explains ① and ②. For ③, see wifi_udp.h in Appendix H.</text>
 </svg>

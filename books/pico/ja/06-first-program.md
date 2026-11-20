@@ -1,7 +1,7 @@
-# 6. はじめてのプログラム
+# 7. はじめてのプログラム
 
-3章で、VS Code のプロジェクトを作って Lチカを書き込めている前提です。
-この章のプログラムは、どれも「コピー」して、VS Code のプロジェクトの `.cpp` の中身と置き換え、**Compile Project → Run Project (USB)** で試します。出力は Serial Monitor か Pico Studio で見ます（3章）。
+4章で、VS Code のプロジェクトを作って Lチカを書き込めている前提です。
+この章のプログラムは、どれも「コピー」して、VS Code のプロジェクトの `.cpp` の中身と置き換え、**Compile Project → Run Project (USB)** で試します。出力は Serial Monitor か Pico Studio で見ます（4章）。
 
 ## C++ での進め方
 
@@ -157,7 +157,7 @@ int main() {
 `!` は「反対」という意味です。`gpio_get` で今の状態を読み、反対の値を出しています。
 
 光らないときは、LED の向き（長い足が GP15 側）と、ピン番号（物理ピンの20番 = GP15）を確かめてください。
-ピンの番号の読み方は7章、ブレッドボードの使い方は8章で詳しく説明します。
+ピンの番号の読み方は8章、ブレッドボードの使い方は9章で詳しく説明します。
 
 ### RGB LED（付いているボードだけ）
 
@@ -166,7 +166,7 @@ RGB LED が付いた互換ボードなら、色を変えて光らせられます
 Pico Studio に入っている `ws2812.h` を使います。中では PIO（ピコの、自由に作れる入出力回路）で RGB LED 用の信号を作っています。
 
 1. `ws2812.h` をプロジェクトのフォルダにコピーする（`cp ~/apps/pico-studio/cpp/include/ws2812.h ~/apps/blink/`）
-2. `CMakeLists.txt` の `target_link_libraries` に `hardware_pio` と `hardware_clocks` を足す（4章）
+2. `CMakeLists.txt` の `target_link_libraries` に `hardware_pio` と `hardware_clocks` を足す（5章）
 3. 次のプログラムを貼り付けて、Compile → Run
 
 ```cpp run
@@ -241,7 +241,7 @@ int main() {
 }
 ```
 
-`gpio_pull_up` はピコの中の抵抗を使う設定で、何もつながっていないときの値を 1 に固定します（7章で図を使って説明）。
+`gpio_pull_up` はピコの中の抵抗を使う設定で、何もつながっていないときの値を 1 に固定します（8章で図を使って説明）。
 `条件 ? A : B` は、条件が正しければ A、そうでなければ B になる書き方です。
 
 ### ボタンで LED を点ける

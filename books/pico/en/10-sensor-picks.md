@@ -1,14 +1,14 @@
-# 10. Recommended sensors
+# 11. Recommended sensors
 
-> For the SHT31 program, add `hardware_i2c`, and for the soil moisture sensor program, add `hardware_adc`, to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 4).
+> For the SHT31 program, add `hardware_i2c`, and for the soil moisture sensor program, add `hardware_adc`, to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 5).
 
 ## To start with
 
-These two are recommended. Both connect over I2C. The wiring is in Chapter 8, and the code is in Chapter 9 as is.
+These two are recommended. Both connect over I2C. The wiring is in Chapter 9, and the code is in Chapter 10 as is.
 
 | Sensor | What it measures | Good for |
 | --- | --- | --- |
-| **MPU-6050 (GY-521)** | Acceleration, tilt, rotation | Measuring movement. Classifying cow behavior (it carries through to machine learning in Chapter 14) |
+| **MPU-6050 (GY-521)** | Acceleration, tilt, rotation | Measuring movement. Classifying cow behavior (it carries through to machine learning in Chapter 15) |
 | **BMP280** | Air pressure, temperature | Changes in height, air temperature |
 
 ## For agriculture
@@ -18,13 +18,13 @@ These two are also candidates. How to connect them and the code are in the secti
 | Sensor | What it measures | Connection | Good for |
 | --- | --- | --- | --- |
 | **SHT31** | Temperature, humidity | I2C | Measuring conditions inside a greenhouse |
-| **Capacitive soil moisture sensor** | Soil moisture | ADC (Chapter 7) | A guide for watering. The electrodes do not rust easily |
+| **Capacitive soil moisture sensor** | Soil moisture | ADC (Chapter 8) | A guide for watering. The electrodes do not rust easily |
 
 ## Things to watch out for when choosing
 
-- **Choose ones that work at 3.3 V.** Take power from the Pico's 3V3(OUT) (Chapter 8)
-- **Check whether soldering is needed.** Many modules come with separate pins that need soldering (Chapter 8)
-- **When connecting several to the same I2C wires, choose ones whose addresses do not overlap.** You can check addresses with the I2C scan in Chapter 8
+- **Choose ones that work at 3.3 V.** Take power from the Pico's 3V3(OUT) (Chapter 9)
+- **Check whether soldering is needed.** Many modules come with separate pins that need soldering (Chapter 9)
+- **When connecting several to the same I2C wires, choose ones whose addresses do not overlap.** You can check addresses with the I2C scan in Chapter 9
 
 > The code for these two has not yet been tested with real sensors. If it does not work, compare it with the documentation of the module you bought.
 
@@ -39,7 +39,7 @@ It can share the same I2C wires as the MPU-6050. Wire it with USB unplugged. Pin
 | GP4 / I2C0 SDA (pin 6) | SDA |
 | GP5 / I2C0 SCL (pin 7) | SCL |
 
-The I2C address is `0x44` (`0x45` if the ADDR pin is connected to 3.3 V). You can check it with the I2C scan in Chapter 8.
+The I2C address is `0x44` (`0x45` if the ADDR pin is connected to 3.3 V). You can check it with the I2C scan in Chapter 9.
 
 ```cpp run
 #include <cstdio>

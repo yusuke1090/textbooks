@@ -1,6 +1,6 @@
-# 7. Pin and power basics
+# 8. Pin and power basics
 
-> For the programs in this chapter, add `hardware_adc` (for ADC) and `hardware_pwm` (for PWM) to `target_link_libraries` in `CMakeLists.txt` before building ("Adding libraries" in Chapter 4).
+> For the programs in this chapter, add `hardware_adc` (for ADC) and `hardware_pwm` (for PWM) to `target_link_libraries` in `CMakeLists.txt` before building ("Adding libraries" in Chapter 5).
 
 ## Two kinds of numbers
 
@@ -170,7 +170,7 @@ It is the temperature of the chip itself, so it reads a little higher than the r
 A GPIO can only output 0 V or 3.3 V, but if you **turn it on and off very quickly**, the LED looks partly bright. This is called **PWM**.
 Changing "the share of time it is on" (the duty cycle) changes the brightness.
 
-Try it with the external LED (GP15) from Chapter 6.
+Try it with the external LED (GP15) from Chapter 7.
 
 ```cpp run
 #include "pico/stdlib.h"
@@ -228,7 +228,7 @@ I2C, SPI and UART can also be assigned to pins other than those in the table.
 
 For which pins can be used, see the pinout diagram in the [Pico datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
 
-In C++, you switch the pins to the communication function before using them. Here is an example for I2C (details in Chapter 9).
+In C++, you switch the pins to the communication function before using them. Here is an example for I2C (details in Chapter 10).
 
 ```cpp
 #include "hardware/i2c.h"
@@ -246,7 +246,7 @@ gpio_pull_up(5);
 | SPI | `spi_init(spi0, speed)` | `GPIO_FUNC_SPI` |
 | UART | `uart_init(uart0, 115200)` | `GPIO_FUNC_UART` |
 
-In this guide, the I2C sensors from Chapter 8 onward use GP4 and GP5.
+In this guide, the I2C sensors from Chapter 9 onward use GP4 and GP5.
 
 ## Precautions to avoid damage
 

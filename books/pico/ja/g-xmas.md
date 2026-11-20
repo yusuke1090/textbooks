@@ -1,7 +1,7 @@
 # 付録G. クリスマスのイルミネーションを作る
 
 ふつうの LED を10個ピコにつないで、チカチカ・順番に点灯・ふわっと・きらきらと光らせます。
-プログラムは C++ で書き、VS Code で書き込んで（3章）、電池で動かします。
+プログラムは C++ で書き、VS Code で書き込んで（4章）、電池で動かします。
 
 ![LED のクリスマスツリー](images/xmas-tree.jpg)
 
@@ -14,7 +14,7 @@
 | 抵抗 100Ω | 6本 | 緑・青・白の LED 用 |
 | ブレッドボード | 1枚 | 830穴 |
 | ジャンパーワイヤー（オス-オス） | 11本 | やわらかい線。遠い LED まで届く長さのもの |
-| ピンヘッダ | 20ピン×2本 | ピコに付いてくることが多い。はんだ付けは8章 |
+| ピンヘッダ | 20ピン×2本 | ピコに付いてくることが多い。はんだ付けは9章 |
 | USB ケーブル | 1本 | データ転送ができるもの。ピコの差し口（USB-C かマイクロUSB）に合わせる |
 | 電池ボックス | 1個 | 単3×3本、スイッチ付き |
 | 単3電池 | 3本 | アルカリ |
@@ -59,8 +59,8 @@ Amazon でそろえて約3,000円です（2026年11月）。
 
 ## VS Code でプロジェクトを作る
 
-1. VS Code の拡張機能「Raspberry Pi Pico」で **New C/C++ Project** を開く（3章）。名前は `xmas`、場所は `~/apps`、**Console over USB** と **Generate C++ code** に ☑ して作る
-2. 明るさを変える PWM を使うので、`CMakeLists.txt` の `target_link_libraries` に `hardware_pwm` を足す（4章）
+1. VS Code の拡張機能「Raspberry Pi Pico」で **New C/C++ Project** を開く（4章）。名前は `xmas`、場所は `~/apps`、**Console over USB** と **Generate C++ code** に ☑ して作る
+2. 明るさを変える PWM を使うので、`CMakeLists.txt` の `target_link_libraries` に `hardware_pwm` を足す（5章）
 
 ```cmake
 target_link_libraries(xmas
@@ -166,7 +166,7 @@ void twinkle(int seconds = 15) {
 int main() {
     stdio_init_all();
     for (uint pin : PINS) {
-        gpio_set_function(pin, GPIO_FUNC_PWM);         // PWM 用にする（7章）
+        gpio_set_function(pin, GPIO_FUNC_PWM);         // PWM 用にする（8章）
         uint slice = pwm_gpio_to_slice_num(pin);
         pwm_set_clkdiv(slice, 125.0f);                 // 125MHz ÷ 125 ÷ 1000 = 1kHz
         pwm_set_wrap(slice, 999);
@@ -189,7 +189,7 @@ int main() {
 | `fade()` | ふわっと明るくして、ふわっと消す |
 | `twinkle()` | ランダムにきらきら |
 
-- 明るさは **PWM**（7章）で変えます。1秒に1000回、点けたり消したりして、点いている時間の割合を `pwm_set_gpio_level()` で決めます。`wrap` が 999 なので、0 で消え、1000 でいちばん明るくなります
+- 明るさは **PWM**（8章）で変えます。1秒に1000回、点けたり消したりして、点いている時間の割合を `pwm_set_gpio_level()` で決めます。`wrap` が 999 なので、0 で消え、1000 でいちばん明るくなります
 - `light()` は、0〜100 の明るさを2乗してから 0〜1000 にします。比例させると、暗いところで急に明るくなって見えるためです
 - 2本の GP で1つの PWM の回路（スライス）を使うので、GP0〜GP9 は5つの回路を使います。同じ回路を2回設定しても問題ありません
 - 最後の `while (true)` が、4つの光り方を順番にくり返します（1周35秒くらい）
@@ -265,7 +265,7 @@ E: 長い足（＋）を抵抗の側に、短い足（−）を GND の側にし
 
 Q: PWM を使うために、`CMakeLists.txt` の `target_link_libraries` に足すライブラリは何ですか。
 A: hardware_pwm
-E: ADC なら `hardware_adc`、I2C なら `hardware_i2c` のように、使う機能のライブラリを足します（4章）。
+E: ADC なら `hardware_adc`、I2C なら `hardware_i2c` のように、使う機能のライブラリを足します（5章）。
 
 Q: この付録のプログラム（`wrap` が 999）で、`pwm_set_gpio_level()` に入れていちばん明るくなる数はいくつですか。
 A: 1000 | 999

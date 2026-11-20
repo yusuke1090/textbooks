@@ -182,5 +182,61 @@
     "license": "CC BY-SA 2.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "page": "https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg"
+  },
+  {
+    "file": "usb-cable.jpg",
+    "src": "USB 2.0 A MACHO - MICRO USB B MACHO.jpg",
+    "author": "Electronicgrup",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:USB_2.0_A_MACHO_-_MICRO_USB_B_MACHO.jpg"
+  },
+  {
+    "file": "pin-header-strip.jpg",
+    "src": "16 Pin Header.jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:16_Pin_Header.jpg"
+  },
+  {
+    "file": "desolder-braid.jpg",
+    "src": "Circa 2000 Weller De Sold desoldering braid 2 mm 1 6 m made in Germany.jpg",
+    "author": "R. Henrik Nilsson",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Circa_2000_Weller_De_Sold_desoldering_braid_2_mm_1_6_m_made_in_Germany.jpg"
+  },
+  {
+    "file": "nipper.jpg",
+    "src": "Red flush cutters.jpg",
+    "author": "4300streetcar",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Red_flush_cutters.jpg"
+  },
+  {
+    "file": "wire-stripper.jpg",
+    "src": "Wire stripper HOZAN JAPAN 01.jpg",
+    "author": "ja:User:Shampoorobot aka ja:User:A16504601",
+    "license": "CC BY-SA 3.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/3.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Wire_stripper_HOZAN_JAPAN_01.jpg"
+  },
+  {
+    "file": "pliers.jpg",
+    "src": "Long-nosePliers.jpg",
+    "author": "Raysonho @ Open Grid Scheduler / Grid Engine",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Long-nosePliers.jpg"
+  },
+  {
+    "file": "heat-shrink.jpg",
+    "src": "Heat-shrink tubing.jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg"
   }
 ]
