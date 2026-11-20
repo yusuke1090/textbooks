@@ -216,6 +216,11 @@ main { padding-bottom: 30px; }
 .whd { display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 10px; margin: 2px 2px 10px; }
 .whd h3 { margin: 0 !important; font-size: 17px; }
 .whd span { font-size: 13px; color: var(--muted); }
+.wct { display: flex; flex-wrap: wrap; gap: 6px; margin: 0 2px 12px; }
+.wct button { padding: 4px 10px; font: inherit; font-size: 13px; color: var(--text); background: var(--panel); border: 1px solid var(--border); border-radius: 999px; cursor: pointer; }
+.wct button small { margin-left: 4px; font-size: 12px; color: var(--muted); }
+.wct button[aria-pressed="true"] { color: var(--accent); background: var(--accent-soft); border-color: var(--accent); font-weight: bold; }
+.wct button[aria-pressed="true"] small { color: var(--accent); }
 .wmsg { padding: 18px 14px; font-size: 14px; color: var(--muted); text-align: center; background: var(--panel); border: 1px dashed var(--border); border-radius: 10px; }
 .wl { border: 1px solid var(--border); border-radius: 10px; background: var(--panel); overflow: hidden; }
 .wr { display: flex; gap: 8px; padding: 9px 12px 10px 8px; border-top: 1px solid var(--border); }
@@ -365,6 +370,7 @@ li > .sticky-bar { margin-top: 4px; }
 @media (prefers-reduced-motion: reduce) { .td-map .ring { animation: none; opacity: 0; } }
 .td-map text { fill: var(--text); stroke: var(--panel); stroke-width: 3; paint-order: stroke; font-weight: 700; }
 .td-map text.rg { fill: var(--muted); letter-spacing: .15em; }
+.td-map text.dt { fill: var(--muted); font-weight: 600; }
 .td-zoom { position: absolute; right: 8px; bottom: 8px; padding: 3px 10px; font: inherit; font-size: 12px; font-weight: 700; color: var(--text);
   background: color-mix(in srgb, var(--panel) 88%, transparent); border: 0; border-radius: 999px; cursor: pointer; }
 .td-next { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 10px; margin-top: 6px; font-size: 12.5px; }
@@ -579,7 +585,7 @@ li > .sticky-bar { margin-top: 4px; }
           wTopics: "☰ 話題", wChk: "✓ 見直す", wHide: "意味を隠す", wQ: "単語・意味で探す", wMark: "あとで見直す（チェック）", wRead: "既読", wReadN: "既読 {n}",
           wSay: "発音を聞く", wNone: "まだチェックした単語はありません。わからない単語の ○ を押すと、ここに集まります。",
           wNoHit: "見つかりません", wWords: "語", wBack: "← 話題の一覧", wPrev: "◀ 前", wNextP: "次 ▶", wNextT: "次の話題へ",
-          wChkTitle: "✓ チェックした単語", wFound: "の検索結果",
+          wChkTitle: "✓ チェックした単語", wFound: "の検索結果", wAll: "全部",
           wFirst: "最初の話題へ" },
     en: { prev: "Previous", next: "Next", shelf: "📚 Textbooks", home: "Back to all textbooks", close: "Close",
           copy: "Copy", copied: "Copied",
@@ -590,7 +596,7 @@ li > .sticky-bar { margin-top: 4px; }
           wTopics: "☰ Topics", wChk: "✓ Review", wHide: "Hide meanings", wQ: "Search words or meanings", wMark: "Mark to review", wRead: "Read", wReadN: "{n} read",
           wSay: "Hear it", wNone: "No words marked yet. Tap the ○ next to a word you don't know to collect it here.",
           wNoHit: "No matches", wWords: "words", wBack: "← All topics", wPrev: "◀ Prev", wNextP: "Next ▶", wNextT: "Next topic",
-          wChkTitle: "✓ Marked words", wFound: ": search results",
+          wChkTitle: "✓ Marked words", wFound: ": search results", wAll: "All",
           wFirst: "Back to the first topic" },
   };
 
@@ -706,13 +712,19 @@ li > .sticky-bar { margin-top: 4px; }
     const at = `font-size="${12.5 / k}" style="stroke-width:${3 / k}"`, txw = (t) => t.length * 13 / k;
     const above = (q, t, below) => `<text x="${Math.min(Math.max(q.x, L + txw(t) / 2), R - txw(t) / 2)}" y="${q.y + (below ? 16 / k : -9 / k)}" text-anchor="middle" ${at}>${esc(t)}</text>`;
     let labels;
+    const used = [A, B, { x: px, y: py }].map((q) => [q.x - 8 / k, q.y - 8 / k, q.x + 8 / k, q.y + 8 / k]);   // 文字や印でふさがっている四角（日付を重ねないため）
     if (tripZoom) {
       // 町の名前: 2つの町が横に並ぶときは外側の横、縦に並ぶときは外側の上下に。地図のはしで切れるときは、反対側に出す
       const side = Math.abs(B.x - A.x) >= Math.abs(B.y - A.y), aw = side ? B.x > A.x : B.y > A.y;
       const label = (q, away) => {
-        const t = nm(q), g = 9 / k;
-        if (!side) return above(q, t, away);
-        const right = away ? q.x + g + txw(t) <= R : q.x - g - txw(t) < L;
+        const t = nm(q), g = 9 / k, tw = txw(t);
+        if (!side) {
+          const x = Math.min(Math.max(q.x, L + tw / 2), R - tw / 2), y = q.y + (away ? 16 / k : -9 / k);
+          used.push([x - tw / 2, y - 13 / k, x + tw / 2, y + 3 / k]);
+          return above(q, t, away);
+        }
+        const right = away ? q.x + g + tw <= R : q.x - g - tw < L;
+        used.push(right ? [q.x + g, q.y - 8 / k, q.x + g + tw, q.y + 8 / k] : [q.x - g - tw, q.y - 8 / k, q.x - g, q.y + 8 / k]);
         return `<text x="${q.x + (right ? g : -g)}" y="${q.y}" dy=".35em" text-anchor="${right ? "start" : "end"}" ${at}>${esc(t)}</text>`;
       };
       labels = label(A, !aw) + label(B, aw);
@@ -722,7 +734,7 @@ li > .sticky-bar { margin-top: 4px; }
         + above(S[N], nm(S[N]), true)
         + (B !== S[N] && Math.hypot(B.x - S[N].x, B.y - S[N].y) * k > 45 ? above(B, B.ja) : "");
     }
-    // 進んだ道は、この周で勉強した日ごとに色を変える（となりの日はちがう色）
+    // 進んだ道は、この周で勉強した日ごとに、金の濃い・薄いを交互に
     const log = tripLog(s), lapStart = p.lap * trip.total;
     const days = log.map((d, n) => ({ d, c: DAY_COLORS[n % DAY_COLORS.length] })).filter(({ d }) => d.b > lapStart);
     const path = (a, b) => {   // a 秒から b 秒までに進んだ道（とちゅうで着いた町を通る）
@@ -732,11 +744,21 @@ li > .sticky-bar { margin-top: 4px; }
     };
     const went = days.map(({ d, c }) => `<polyline class="went" points="${pts(path(Math.max(d.a, lapStart), d.b))}" style="stroke:${c}" vector-effect="non-scaling-stroke"/>`).join("");
     // 足あと（大きく見るときだけ）: この周で、毎日の勉強が終わったところ（今日の分は今いるところ）
-    const foot = !tripZoom ? "" : days.filter(({ d }) => d.b < total).map(({ d, c }) => { const q = tripPos(d.b); return `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke:${c};stroke-width:${1.5 / k}"/>`; }).join("");
+    const ends = !tripZoom ? [] : days.filter(({ d }) => d.b < total).map(({ d }) => ({ d, q: tripPos(d.b) }));
+    const foot = ends.map(({ q }) => `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke-width:${1.5 / k}"/>`).join("");
+    // 日付（大きく見るときだけ）: 足あとの上に「11/18」。ほかの文字と重なる日は出さない（新しい日が先）
+    let dates = "";
+    for (const { d, q } of ends.slice().reverse()) {
+      const t = `${+d.k.slice(5, 7)}/${+d.k.slice(8)}`, tw = t.length * 6.5 / k;
+      const x = Math.min(Math.max(q.x, L + tw / 2), R - tw / 2), y = q.y - 6 / k, b = [x - tw / 2 - 2 / k, y - 11 / k, x + tw / 2 + 2 / k, y + 2 / k];
+      if (used.some((u) => b[0] < u[2] && b[2] > u[0] && b[1] < u[3] && b[3] > u[1])) continue;
+      used.push(b);
+      dates += `<text class="dt" x="${x}" y="${y}" text-anchor="middle" font-size="${10.5 / k}" style="stroke-width:${3 / k}">${t}</text>`;
+    }
     const svg = `<svg viewBox="${L} ${cy - h / 2} ${w} ${h}" height="${H}" role="img" aria-label="${esc(A.ja)}から${esc(B.ja)}へ">`
       + `<path class="land" d="${trip.land}"/><path class="lake" d="${trip.lakes}"/>`
       + `<polyline class="rt" points="${pts(last ? S : S.slice(0, -1))}" vector-effect="non-scaling-stroke"/>`
-      + went + foot + dots + labels
+      + went + foot + dots + labels + dates
       + `<circle class="ring" cx="${px}" cy="${py}" r="${6 / k}"/><circle class="me" cx="${px}" cy="${py}" r="${6 / k}" style="stroke-width:${2 / k}"/></svg>`;
     // 着いた町（この周）と、次の町（ぼかして）
     const towns = S.slice(0, p.i + 1).map((q, j) => `<button type="button" data-j="${j}"><img src="${q.thumb}" alt="" loading="lazy"><span>${esc(q.ja)}</span></button>`).join("")
@@ -777,7 +799,7 @@ li > .sticky-bar { margin-top: 4px; }
     };
   }
   let tripResize = 0, diaryOpen = false, tripZoom = false;
-  const DAY_COLORS = ["#e8a317", "#e5604d", "#8e6fe0", "#d4569b", "#2f9fd8"];   // 地図の、日ごとの道の色（金・朱・紫・桃・空）
+  const DAY_COLORS = ["#e8a317", "#f6d27a"];   // 地図の、日ごとの道の色（金と薄い金を交互に）
   // 目標に届いた日にもらった写真を大きく（名前・もらった日と町・撮影者とライセンス・出典）
   function photoZoom(d) {
     const q = d.photo, md = `${+d.k.slice(5, 7)}月${+d.k.slice(8)}日`;
@@ -1993,7 +2015,7 @@ li > .sticky-bar { margin-top: 4px; }
   const keySet = (k) => { try { return new Set(JSON.parse(store.get(k, "[]"))); } catch (e) { return new Set(); } };
   const wordSet = () => keySet(WORDS_KEY());
   const readSet = () => keySet(WREAD_KEY());
-  let wv = { v: "home", t: 0, p: 0, q: "" };
+  let wv = { v: "home", t: 0, p: 0, q: "", ct: -1 };   // ct: 見直すで絞っている話題（-1 は全部）
   function initWords() {
     const box = body.querySelector(".wbk");
     if (!box || !wordBook) return;
@@ -2001,19 +2023,21 @@ li > .sticky-bar { margin-top: 4px; }
     let saved = null;
     try { saved = JSON.parse(store.get(WVIEW_KEY(), "null")); } catch (e) { saved = null; }
     wv = { v: saved && saved.v === "topic" ? "topic" : saved && saved.v === "chk" ? "chk" : "home",
-           t: Math.min(Math.max(0, saved ? saved.t | 0 : 0), wordBook.topics.length - 1), p: saved ? saved.p | 0 : 0, q: "", last: saved ? saved.last : null };
+           t: Math.min(Math.max(0, saved ? saved.t | 0 : 0), wordBook.topics.length - 1), p: saved ? saved.p | 0 : 0, q: "", last: saved ? saved.last : null,
+           ct: saved && saved.ct != null ? saved.ct | 0 : -1 };
     const hide = store.get("textbooks-words-hide") === "1";
     body.classList.toggle("wl-hide", hide);
     box.querySelector(".wt-hide").setAttribute("aria-pressed", hide);
     drawWords();
   }
+  const topicShort = (i) => wordBook.topics[i].name.replace(/\s*[（(:：].*$/, "");
   function wordRow(r, set, tag, read) {
     const on = set.has(r.k), rd = read.has(r.k);
     return `<div class="wr${on ? " chk" : ""}${rd ? " read" : ""}" data-k="${esc(r.k)}">`
       + `<input type="checkbox" class="wrd"${rd ? " checked" : ""} title="${t("wRead")}" aria-label="${t("wRead")}">`
       + `<button type="button" class="wc" aria-pressed="${on}" title="${t("wMark")}" aria-label="${t("wMark")}">✓</button>`
       + `<div class="wb"><div class="wh"><b class="ww">${esc(r.w)}</b><span class="wp">${esc(r.pos)}</span>`
-      + (tag ? `<span class="wtag">${esc(wordBook.topics[r.t].name.replace(/\s*[（(:：].*$/, ""))}</span>` : "")
+      + (tag ? `<span class="wtag">${esc(topicShort(r.t))}</span>` : "")
       + (wordBook.audio || wordVoice() !== false ? `<button type="button" class="ws" title="${t("wSay")}" aria-label="${t("wSay")}">🔊</button>` : "") + `</div>`
       + `<div class="wm">${inline(r.mean)}</div><div class="we">${inline(r.ex)}</div></div></div>`;
   }
@@ -2048,15 +2072,25 @@ li > .sticky-bar { margin-top: 4px; }
             + (n ? `<i class="wrbar" style="width:${(100 * n / tp.rows.length).toFixed(1)}%"></i>` : "") + `</button>`;
         }).join("") + `</div>`).join("");
     } else {
-      let rows, title, tag = true;
+      let rows, title, tag = true, chips = "";
       if (wv.v === "topic") { rows = W.topics[wv.t].rows; title = W.topics[wv.t].name; tag = false; }
-      else if (wv.v === "chk") { rows = W.all.filter((r) => set.has(r.k)); title = t("wChkTitle"); }
+      else if (wv.v === "chk") {   // 見直す: チェックのある話題が2つ以上なら、話題で絞れる
+        const all = W.all.filter((r) => set.has(r.k)), cnt = W.topics.map(() => 0);
+        all.forEach((r) => cnt[r.t]++);
+        if (!cnt[wv.ct]) wv.ct = -1;
+        rows = wv.ct < 0 ? all : all.filter((r) => r.t === wv.ct);
+        title = t("wChkTitle");
+        tag = wv.ct < 0;
+        const has = cnt.map((n, i) => i).filter((i) => cnt[i]);
+        const chip = (i, name, n) => `<button type="button" data-wct="${i}" aria-pressed="${wv.ct === i}">${esc(name)}<small>${n}</small></button>`;
+        if (has.length > 1) chips = `<div class="wct">${chip(-1, t("wAll"), all.length)}${has.map((i) => chip(i, topicShort(i), cnt[i])).join("")}</div>`;
+      }
       else { const q = wv.q.toLowerCase(); rows = W.all.filter((r) => r.low.includes(q)); title = `「${esc(wv.q)}」${t("wFound")}`; }
       const pages = Math.max(1, Math.ceil(rows.length / WPAGE));
       wv.p = Math.min(Math.max(0, wv.p), pages - 1);
       const from = wv.p * WPAGE, part = rows.slice(from, from + WPAGE);
       const range = rows.length ? `${from + 1}–${from + part.length} / ${rows.length} ${t("wWords")}` : "";
-      let h = `<div class="whd"><h3>${title}</h3><span>${range}</span></div>`;
+      let h = `<div class="whd"><h3>${title}</h3><span>${range}</span></div>` + chips;
       if (!rows.length) h += `<p class="wmsg">${wv.v === "chk" ? t("wNone") : t("wNoHit")}</p>`;
       else h += `<div class="wl">${part.map((r) => wordRow(r, set, tag, read)).join("")}</div>` + pager(rows.length);
       if (wv.v === "topic" && wv.p === pages - 1) {
@@ -2067,7 +2101,7 @@ li > .sticky-bar { margin-top: 4px; }
       main.innerHTML = h;
     }
     if (wv.v === "topic") wv.last = wv.t;
-    if (wv.v !== "search") store.set(WVIEW_KEY(), JSON.stringify({ v: wv.v, t: wv.t, p: wv.p, last: wv.last }));
+    if (wv.v !== "search") store.set(WVIEW_KEY(), JSON.stringify({ v: wv.v, t: wv.t, p: wv.p, last: wv.last, ct: wv.ct }));
   }
   function wordsTop() {
     const box = body.querySelector(".wbk");
@@ -2125,13 +2159,15 @@ li > .sticky-bar { margin-top: 4px; }
     const go = (v) => { Object.assign(wv, v); drawWords(); wordsTop(); return true; };
     const tp = e.target.closest("[data-wt]");
     if (tp) { body.querySelector(".wt-q").value = ""; return go({ v: "topic", t: +tp.dataset.wt, p: 0, q: "" }); }
+    const ct = e.target.closest("[data-wct]");
+    if (ct) return go({ ct: +ct.dataset.wct, p: 0 });
     const pg = e.target.closest("[data-wp]");
     if (pg && !pg.disabled) return go({ p: +pg.dataset.wp });
     const vb = e.target.closest("[data-wv]");
     if (vb) {
       body.querySelector(".wt-q").value = "";
       if (vb.dataset.wv === "chk" && wv.v === "chk") return go(wv.last != null ? { v: "topic", t: wv.last, p: 0, q: "" } : { v: "home", p: 0, q: "" });   // もう一度押すと、前の話題へ戻る
-      return go({ v: vb.dataset.wv, p: 0, q: "" });
+      return go({ v: vb.dataset.wv, p: 0, q: "", ct: -1 });
     }
     const h = e.target.closest(".wt-hide");
     if (h) {
