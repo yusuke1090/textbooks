@@ -700,7 +700,6 @@ li > .sticky-bar { margin-top: 4px; }
     const h = w * H / W, k = W / w, L = cx - w / 2, R = cx + w / 2;
     const nm = (q) => (q === S[N] ? "東京（ゴール）" : q.ja);
     const pts = (a) => a.map((q) => `${q.x},${q.y}`).join(" ");
-    const went = S.slice(0, p.i + 1).concat([{ x: px, y: py }]);
     const last = p.i + 1 === N;   // 東京へ帰る最後の道のりは、そこを進むときだけ描く（はじめの東京と重なるので）
     const r = tripZoom ? 3.5 : 2.5;
     const dots = S.map((q, j) => j === N && !last ? "" : `<circle class="st${j <= p.i ? " v" : j === p.i + 1 ? " n" : ""}" cx="${q.x}" cy="${q.y}" r="${(j === p.i + 1 ? r + 1 : r) / k}"${j === p.i + 1 ? ` style="stroke-width:${2 / k}"` : ""}/>`).join("");
@@ -723,14 +722,21 @@ li > .sticky-bar { margin-top: 4px; }
         + above(S[N], nm(S[N]), true)
         + (B !== S[N] && Math.hypot(B.x - S[N].x, B.y - S[N].y) * k > 45 ? above(B, B.ja) : "");
     }
-    // 足あと（大きく見るときだけ）: この周で、毎日の勉強が終わったところ（今日の分は今いるところ）
+    // 進んだ道は、この周で勉強した日ごとに色を変える（となりの日はちがう色）
     const log = tripLog(s), lapStart = p.lap * trip.total;
-    const foot = !tripZoom ? "" : log.filter((d) => d.b > lapStart && d.b < total).map((d) => { const q = tripPos(d.b); return `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke-width:${1.5 / k}"/>`; }).join("");
+    const days = log.map((d, n) => ({ d, c: DAY_COLORS[n % DAY_COLORS.length] })).filter(({ d }) => d.b > lapStart);
+    const path = (a, b) => {   // a 秒から b 秒までに進んだ道（とちゅうで着いた町を通る）
+      const q = [tripPos(a)];
+      for (let j = 1; j < N; j++) { const t = lapStart + trip.cum[j]; if (t > a && t < b) q.push(S[j]); }
+      return q.concat([tripPos(b)]);
+    };
+    const went = days.map(({ d, c }) => `<polyline class="went" points="${pts(path(Math.max(d.a, lapStart), d.b))}" style="stroke:${c}" vector-effect="non-scaling-stroke"/>`).join("");
+    // 足あと（大きく見るときだけ）: この周で、毎日の勉強が終わったところ（今日の分は今いるところ）
+    const foot = !tripZoom ? "" : days.filter(({ d }) => d.b < total).map(({ d, c }) => { const q = tripPos(d.b); return `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke:${c};stroke-width:${1.5 / k}"/>`; }).join("");
     const svg = `<svg viewBox="${L} ${cy - h / 2} ${w} ${h}" height="${H}" role="img" aria-label="${esc(A.ja)}から${esc(B.ja)}へ">`
       + `<path class="land" d="${trip.land}"/><path class="lake" d="${trip.lakes}"/>`
       + `<polyline class="rt" points="${pts(last ? S : S.slice(0, -1))}" vector-effect="non-scaling-stroke"/>`
-      + `<polyline class="went" points="${pts(went)}" vector-effect="non-scaling-stroke"/>`
-      + foot + dots + labels
+      + went + foot + dots + labels
       + `<circle class="ring" cx="${px}" cy="${py}" r="${6 / k}"/><circle class="me" cx="${px}" cy="${py}" r="${6 / k}" style="stroke-width:${2 / k}"/></svg>`;
     // 着いた町（この周）と、次の町（ぼかして）
     const towns = S.slice(0, p.i + 1).map((q, j) => `<button type="button" data-j="${j}"><img src="${q.thumb}" alt="" loading="lazy"><span>${esc(q.ja)}</span></button>`).join("")
@@ -771,6 +777,7 @@ li > .sticky-bar { margin-top: 4px; }
     };
   }
   let tripResize = 0, diaryOpen = false, tripZoom = false;
+  const DAY_COLORS = ["#e8a317", "#e5604d", "#8e6fe0", "#d4569b", "#2f9fd8"];   // 地図の、日ごとの道の色（金・朱・紫・桃・空）
   // 目標に届いた日にもらった写真を大きく（名前・もらった日と町・撮影者とライセンス・出典）
   function photoZoom(d) {
     const q = d.photo, md = `${+d.k.slice(5, 7)}月${+d.k.slice(8)}日`;
