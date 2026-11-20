@@ -216,28 +216,28 @@ Alkaline AA batteries last about 40–50 hours (around 10 days at 4 hours a nigh
 
 ## Hanging it on the tree
 
-Once every LED lights on the breadboard, take the LEDs off the board, extend them with jumper wires and hang them on the branches.
+Once every LED lights on the breadboard, take the LEDs off the board, extend them with red-and-black two-core wire and hang them on the branches.
 The Pico, resistors and battery stay on the board at the foot of the tree.
 
-![Extending the LEDs with wires and hanging them on the tree](images/en/xmas-hang.svg)
+![Extending the LEDs with wire and hanging them on the tree](images/en/xmas-hang.svg)
 
 | Item | How many | Notes |
 | --- | --- | --- |
-| Jumper wires (male-male, 20 cm) | 20 | Two per LED. With the 11 on the breadboard that makes 31, so a set of 40 is enough |
+| Red-and-black two-core wire (UL2468, 24 AWG) | 20 m | Red for the long leg (+), black for the short leg (−). Available on AliExpress |
+| Jumper wires (male-male, 20 cm) | 10 | Cut in half to make 20 wires with a male end. These go into the board |
 | Insulating tape | A little | To wrap the soldered joints. Heat-shrink tubing is neater if you have it |
-| Wire cutters | 1 | To cut the wires and strip the ends. Scissors will do |
+| Wire cutters | 1 | To cut the wire and strip the ends. Scissors will do |
 
 1. Unplug the USB cable and switch off the battery
-2. Take two jumper wires and cut one male end off each, close to the pin. Strip about 5 mm from the cut end and twist the thin strands together
-3. Choose one wire for the long leg and mark it with tape near the remaining male end
-4. Take one LED off the board. Cut the long leg to about 1 cm and solder the marked wire to it. Then cut the short leg and solder the other wire
-5. Wrap each joint separately in tape, then wrap the two together. If the metal parts touch, that LED won't light
-6. Put the marked wire's male end in the column below the resistor (where the long leg was) and the other in the − row
-7. When all ten are done, switch on the battery and check they all light. If one doesn't, check for a loose joint and that the long and short legs aren't swapped
-8. Hang the LEDs on the branches and wind the wires around them
-
-One wire reaches only about 20 cm, so this suits a small tabletop tree.
-For a bigger tree, buy red-and-black two-core wire and solder it the same way.
+2. Cut ten jumper wires in the middle. That gives 20 wires with a male end; strip about 5 mm from each cut end
+3. Decide which branch each LED goes on, and cut the two-core wire to the distance from the foot of the tree to that branch plus 20 cm. You are splitting 20 m into ten, so keep the average to 2 m or less
+4. At both ends, split the red and black apart for about 3 cm, strip about 5 mm and twist the thin strands together
+5. At one end, solder a male-ended wire to the red and another to the black
+6. Take one LED off the board. Cut the long leg to about 1 cm and solder the red to it, then cut the short leg and solder the black
+7. Wrap each joint separately in tape. At the LED end, wrap the two together as well. If the metal parts touch, that LED won't light
+8. Put the red wire's male end in the column below the resistor (where that LED's long leg was) and the black wire's in the − row. Doing one LED at a time and putting it back where it came from keeps each colour with the right resistor
+9. When all ten are done, switch on the battery and check they all light. If one doesn't, check for a loose joint and that red and black aren't swapped
+10. Hang the LEDs on the branches and wind the wire around them. Running the wires near the trunk down to the foot of the tree makes them less visible
 
 ## Summary
 
@@ -246,7 +246,7 @@ For a bigger tree, buy red-and-black two-core wire and solder it the same way.
 - The program is C++. It uses PWM, so add `hardware_pwm` to `CMakeLists.txt`, then write it with Compile → Run (USB)
 - Set the brightness with `pwm_set_gpio_level()` (0–1000 in this appendix)
 - Once written, the lights come on just by switching on the battery. The battery goes to VSYS (1.8–5.5 V); switch it off when the USB cable is connected
-- To hang them on a tree, solder jumper wires to the LED legs to extend them, and keep the Pico, resistors and battery at the foot of the tree
+- To hang them on a tree, solder red-and-black two-core wire to the LED legs, with half a jumper wire's male end on the board side. Keep the Pico, resistors and battery at the foot of the tree
 
 ## Exercises
 

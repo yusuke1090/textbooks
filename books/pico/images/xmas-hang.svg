@@ -1,114 +1,127 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
-<rect width="760" height="470" rx="10" fill="#ffffff"/>
-<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">LED をワイヤーで延ばして木にかける</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 520" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="520" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">LED を線で延ばして木にかける</text>
 <text x="40.0" y="64.0" font-size="13" text-anchor="start" font-weight="700" fill="#2b2f36">① LED 1個のつなぎ方</text>
 <text x="420.0" y="64.0" font-size="13" text-anchor="start" font-weight="700" fill="#2b2f36">② 枝にかける</text>
-<path d="M169.0 122 L169.0 98 A15 15 0 0 1 199.0 98 L199.0 122 Z" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
-<rect x="166.0" y="122" width="36" height="5" rx="1" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
-<text x="164.0" y="140.0" font-size="11" text-anchor="end" font-weight="700" fill="#d93a3a">長い足（＋）</text>
-<text x="204.0" y="140.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">短い足（−）</text>
-<line x1="172.0" y1="127.0" x2="172.0" y2="162.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
-<line x1="174.5" y1="150.0" x2="174.5" y2="172.0" stroke="#c87533" stroke-width="2" stroke-linecap="round"/>
-<ellipse cx="173" cy="158" rx="4.5" ry="7" fill="#b8bec7"/>
-<rect x="165" y="146" width="14" height="30" rx="3" fill="#f3e2a9" opacity=".8"/>
-<path d="M174.5 176 L174.5 180" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
-<line x1="196.0" y1="127.0" x2="196.0" y2="162.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
-<line x1="198.5" y1="150.0" x2="198.5" y2="172.0" stroke="#c87533" stroke-width="2" stroke-linecap="round"/>
-<ellipse cx="197" cy="158" rx="4.5" ry="7" fill="#b8bec7"/>
-<rect x="189" y="146" width="14" height="30" rx="3" fill="#f3e2a9" opacity=".8"/>
-<path d="M198.5 176 L198.5 180" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
-<text x="214.0" y="158.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">はんだ付けして、</text>
-<text x="214.0" y="173.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">1本ずつテープで包む</text>
-<path d="M174.5 180 C174.5 230 133 230 133 339" stroke="#d93a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
-<path d="M198.5 180 C198.5 240 177 240 177 364" stroke="#2b2f36" stroke-width="3" fill="none" stroke-linecap="round"/>
-<text x="226.0" y="222.0" font-size="11" text-anchor="start" font-weight="700" fill="#555c66">ジャンパーワイヤー（オス-オス 20cm）</text>
-<text x="226.0" y="238.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">片方のオスを切って、線の先をむく</text>
-<rect x="60" y="288" width="196" height="106" rx="6" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>
-<rect x="64" y="294" width="188" height="10" fill="#e2dccb"/>
-<line x1="70.0" y1="373.0" x2="246.0" y2="373.0" stroke="#2f6fde" stroke-width="1.5" stroke-linecap="round"/>
-<text x="72.0" y="384.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2f6fde">−</text>
-<rect x="98.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="98.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="98.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="98.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="109.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="109.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="109.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="109.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="109.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="120.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="120.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="120.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="120.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="120.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="131.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="131.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="131.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="131.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="131.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="142.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="142.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="142.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="142.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="142.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="153.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="153.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="153.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="153.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="153.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="164.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="164.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="164.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="164.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="164.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="175.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="175.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="175.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="175.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="175.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="186.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="186.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="186.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="186.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="186.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="197.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="197.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="197.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="197.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="197.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="208.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="208.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="208.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="208.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="208.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="219.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="219.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="219.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="219.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="219.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="230.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="230.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="230.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="230.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="230.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="241.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="241.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="241.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="241.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
-<rect x="241.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
-<line x1="133.0" y1="278.0" x2="133.0" y2="322.0" stroke="#8a8f98" stroke-width="1.5" stroke-linecap="round"/>
-<rect x="129" y="290" width="8" height="20" rx="3" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1"/>
-<rect x="129" y="293" width="8" height="2.4" fill="#f08c00"/>
-<rect x="129" y="297" width="8" height="2.4" fill="#f08c00"/>
-<rect x="129" y="301" width="8" height="2.4" fill="#8b4513"/>
-<rect x="129" y="305" width="8" height="2.4" fill="#c9a227"/>
-<text x="123.0" y="286.0" font-size="11" text-anchor="end" font-weight="700" fill="#555c66">抵抗</text>
-<rect x="128" y="338" width="10" height="15" rx="2" fill="#3a3f47"/>
-<circle cx="133" cy="355" r="2.8" fill="#d93a3a"/>
-<rect x="172" y="363" width="10" height="15" rx="2" fill="#3a3f47"/>
-<circle cx="177" cy="380" r="2.8" fill="#2b2f36"/>
-<text x="266.0" y="359.0" font-size="11" text-anchor="start" font-weight="700" fill="#d93a3a">抵抗の下の列へ</text>
-<text x="266.0" y="384.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">− の列へ</text>
+<path d="M105.0 122 L105.0 98 A15 15 0 0 1 135.0 98 L135.0 122 Z" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
+<rect x="102.0" y="122" width="36" height="5" rx="1" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
+<text x="100.0" y="140.0" font-size="11" text-anchor="end" font-weight="700" fill="#d93a3a">長い足（＋）</text>
+<text x="140.0" y="140.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">短い足（−）</text>
+<line x1="108.0" y1="127.0" x2="108.0" y2="162.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
+<line x1="110.5" y1="150.0" x2="110.5" y2="172.0" stroke="#c87533" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="109" cy="159" rx="4.5" ry="7" fill="#b8bec7"/>
+<rect x="102" y="146" width="14" height="28" rx="3" fill="#f3e2a9" opacity=".8"/>
+<line x1="132.0" y1="127.0" x2="132.0" y2="162.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
+<line x1="134.5" y1="150.0" x2="134.5" y2="172.0" stroke="#c87533" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="133" cy="159" rx="4.5" ry="7" fill="#b8bec7"/>
+<rect x="126" y="146" width="14" height="28" rx="3" fill="#f3e2a9" opacity=".8"/>
+<text x="154.0" y="160.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">はんだ付けして、1本ずつテープで包む</text>
+<path d="M110.5 176 C110.5 193.0 117.0 193.0 117.0 210" stroke="#d93a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M134.5 176 C134.5 193.0 123.0 193.0 123.0 210" stroke="#2b2f36" stroke-width="3" fill="none" stroke-linecap="round"/>
+<line x1="117.0" y1="210.0" x2="117.0" y2="246.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<line x1="123.0" y1="210.0" x2="123.0" y2="246.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="117.0" y1="256.0" x2="117.0" y2="268.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<line x1="123.0" y1="256.0" x2="123.0" y2="268.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<path d="M110.0 252 L130.0 244 M110.0 260 L130.0 252" stroke="#555c66" stroke-width="1.5"/>
+<text x="142.0" y="230.0" font-size="11" text-anchor="start" font-weight="700" fill="#555c66">赤黒の2芯の線（UL2468・24AWG）</text>
+<text x="142.0" y="246.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">長さは、根元から枝まで＋20cm</text>
+<path d="M117.0 268 C117.0 284.0 92 284.0 92 300" stroke="#d93a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M123.0 268 C123.0 284.0 148 284.0 148 300" stroke="#2b2f36" stroke-width="3" fill="none" stroke-linecap="round"/>
+<ellipse cx="92" cy="309" rx="4.5" ry="7" fill="#b8bec7"/>
+<rect x="85" y="296" width="14" height="28" rx="3" fill="#f3e2a9" opacity=".8"/>
+<ellipse cx="148" cy="309" rx="4.5" ry="7" fill="#b8bec7"/>
+<rect x="141" y="296" width="14" height="28" rx="3" fill="#f3e2a9" opacity=".8"/>
+<text x="166.0" y="310.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">ジャンパーを半分に切って、</text>
+<text x="166.0" y="325.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">オスの側をはんだ付け</text>
+<rect x="60" y="368" width="196" height="106" rx="6" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>
+<rect x="64" y="374" width="188" height="10" fill="#e2dccb"/>
+<line x1="70.0" y1="453.0" x2="246.0" y2="453.0" stroke="#2f6fde" stroke-width="1.5" stroke-linecap="round"/>
+<text x="72.0" y="464.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2f6fde">−</text>
+<rect x="98.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="98.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="98.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="98.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="400.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="411.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="422.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="433.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="458.4" width="3.2" height="3.2" fill="#9a927e"/>
+<line x1="166.0" y1="358.0" x2="166.0" y2="402.0" stroke="#8a8f98" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="162" y="370" width="8" height="20" rx="3" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1"/>
+<rect x="162" y="373" width="8" height="2.4" fill="#f08c00"/>
+<rect x="162" y="377" width="8" height="2.4" fill="#f08c00"/>
+<rect x="162" y="381" width="8" height="2.4" fill="#8b4513"/>
+<rect x="162" y="385" width="8" height="2.4" fill="#c9a227"/>
+<text x="176.0" y="366.0" font-size="11" text-anchor="start" font-weight="700" fill="#555c66">抵抗</text>
+<path d="M92 324 C92 405 142 413 166 419" stroke="#9aa0a8" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M148 324 C148 420 186 438 210 444" stroke="#9aa0a8" stroke-width="3" fill="none" stroke-linecap="round"/>
+<rect x="161" y="418" width="10" height="15" rx="2" fill="#3a3f47"/>
+<circle cx="166" cy="435" r="2.8" fill="#d93a3a"/>
+<rect x="205" y="443" width="10" height="15" rx="2" fill="#3a3f47"/>
+<circle cx="210" cy="460" r="2.8" fill="#2b2f36"/>
+<text x="266.0" y="439.0" font-size="11" text-anchor="start" font-weight="700" fill="#d93a3a">赤 → 抵抗の下の列</text>
+<text x="266.0" y="464.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">黒 → − の列</text>
+<g transform="translate(0 40)">
 <path d="M575 80 L630 170 L520 170 Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>
 <path d="M575 135 L670 255 L480 255 Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>
 <path d="M575 200 L710 340 L440 340 Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>
@@ -148,4 +161,5 @@
 <rect x="723" y="410" width="6" height="7" rx="1" fill="#ffffff"/>
 <line x1="635.0" y1="409.0" x2="655.0" y2="409.0" stroke="#d93a3a" stroke-width="2" stroke-linecap="round"/>
 <text x="575.0" y="444.0" font-size="11" text-anchor="middle" font-weight="700" fill="#2b2f36">ピコ・抵抗・電池は根元に置く</text>
+</g>
 </svg>
