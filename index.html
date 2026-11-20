@@ -2058,7 +2058,7 @@ li > .sticky-bar { margin-top: 4px; }
     const box = body.querySelector(".wbk");
     if (!box || !wordBook) return;
     const set = wordSet(), read = readSet(), main = box.querySelector(".wmain"), W = wordBook;
-    box.querySelector('[data-wv="home"]').setAttribute("aria-pressed", wv.v === "home" || wv.v === "topic");
+    box.querySelector('[data-wv="home"]').setAttribute("aria-pressed", wv.v === "home" || wv.v === "topic" || (wv.v === "chk" && wv.ct >= 0));
     box.querySelector('[data-wv="chk"]').setAttribute("aria-pressed", wv.v === "chk");
     box.querySelector(".wn").textContent = chkCount(set);
     if (wv.v === "home") {
@@ -2157,7 +2157,15 @@ li > .sticky-bar { margin-top: 4px; }
     const vb = e.target.closest("[data-wv]");
     if (vb) {
       body.querySelector(".wt-q").value = "";
-      if (vb.dataset.wv === "chk" && wv.v === "chk") return go(wv.last != null ? { v: "topic", t: wv.last, p: 0, q: "" } : { v: "home", p: 0, q: "" });   // もう一度押すと、前の話題へ戻る
+      // 「☰ 話題」と「✓ 見直す」は、両方押すとその話題のチェックだけ、見直すだけなら全部の話題のチェック
+      if (vb.dataset.wv === "home" && wv.v === "chk" && vb.closest(".wtool")) {
+        if (wv.ct >= 0) return go({ ct: -1, p: 0 });
+        if (wv.last != null) return go({ ct: wv.last, p: 0 });
+      }
+      if (vb.dataset.wv === "chk" && wv.v === "chk") {   // 見直すを外すと、その話題（なければ前の話題）へ戻る
+        const tt = wv.ct >= 0 ? wv.ct : wv.last;
+        return go(tt != null ? { v: "topic", t: tt, p: 0, q: "" } : { v: "home", p: 0, q: "" });
+      }
       return go({ v: vb.dataset.wv, p: 0, q: "", ct: vb.dataset.wv === "chk" && wv.v === "topic" ? wv.t : -1 });
     }
     const h = e.target.closest(".wt-hide");
