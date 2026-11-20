@@ -729,9 +729,9 @@ li > .sticky-bar { margin-top: 4px; }
         + above(S[N], nm(S[N]), true)
         + (B !== S[N] && Math.hypot(B.x - S[N].x, B.y - S[N].y) * k > 45 ? above(B, B.ja) : "");
     }
-    // 進んだ道は、旅日記の棒と同じ色（目標に届いた日は金、届かなかった日は緑）
+    // 進んだ道は、旅日記の棒と同じ色（目標に届いた日は金、届かなかった日は緑）。となりの日と見分けられるよう、1日おきに少し文字の色に寄せる
     const log = tripLog(s), lapStart = p.lap * trip.total;
-    const days = log.map((d) => ({ d, c: d.met ? "#e8a317" : "var(--accent)" })).filter(({ d }) => d.b > lapStart);
+    const days = log.map((d, n) => { const c = d.met ? "#e8a317" : "var(--accent)"; return { d, c: n % 2 ? `color-mix(in srgb, ${c} 70%, var(--text))` : c }; }).filter(({ d }) => d.b > lapStart);
     const path = (a, b) => {   // a 秒から b 秒までに進んだ道（とちゅうで着いた町を通る）
       const q = [tripPos(a)];
       for (let j = 1; j < N; j++) { const t = lapStart + trip.cum[j]; if (t > a && t < b) q.push(S[j]); }
