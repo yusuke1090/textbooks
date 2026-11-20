@@ -382,5 +382,21 @@
  "ジャンパーを半分に切って、": "Cut a jumper wire in half and",
  "オスの側をはんだ付け": "solder on the male-ended half",
  "赤 → 抵抗の下の列": "Red → below the resistor",
- "黒 → − の列": "Black → − row"
+ "黒 → − の列": "Black → − row",
+ "カメラ（OV2640・18ピン）とピコの配線": "Wiring the camera (OV2640, 18-pin) to the Pico",
+ "3V3（36番）": "3V3 (pin 36)",
+ "GP13（17番）": "GP13 (pin 17)",
+ "GP12（16番）": "GP12 (pin 16)",
+ "GP14（19番）": "GP14 (pin 19)",
+ "GP16（21番）": "GP16 (pin 21)",
+ "GP17（22番）": "GP17 (pin 22)",
+ "GP18（24番）": "GP18 (pin 24)",
+ "GP19（25番）": "GP19 (pin 25)",
+ "GP20（26番）": "GP20 (pin 26)",
+ "GP21（27番）": "GP21 (pin 27)",
+ "設定（I2C と同じ）": "Settings (like I2C)",
+ "合図": "Signals",
+ "時計": "Clock",
+ "データ 8本": "Data (8 wires)",
+ "基板の名前が D2〜D9 のときは、D2 を GP14、D9 を GP21 につなぎます。": "If the board says D2–D9, connect D2 to GP14 and D9 to GP21."
 }

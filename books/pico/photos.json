@@ -166,5 +166,21 @@
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Tower_Pro_SG90_micro_servo_motor.jpg"
+  },
+  {
+    "file": "esp32-cam.jpg",
+    "src": "ESP32-CAM.jpg",
+    "author": "Nowforever",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg"
+  },
+  {
+    "file": "image-sensor.jpg",
+    "src": "OV7670 camera sensor (50498341363).jpg",
+    "author": "Daniel Garcia",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg"
   }
 ]

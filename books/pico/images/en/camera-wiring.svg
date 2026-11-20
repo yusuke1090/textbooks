@@ -1,0 +1,106 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 554" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="554" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Wiring the camera (OV2640, 18-pin) to the Pico</text>
+<rect x="30" y="54" width="170" height="404" rx="8" fill="#1f7a3d"/>
+<text x="70.0" y="262.0" font-size="18" text-anchor="middle" font-weight="700" fill="#ffffff">Pico</text>
+<rect x="560" y="54" width="170" height="452" rx="8" fill="#1d3557"/>
+<circle cx="680" cy="280.0" r="30" fill="#0b1320" stroke="#8a8f98" stroke-width="4"/>
+<circle cx="680" cy="280.0" r="11" fill="#2a4a7a"/>
+<text x="680.0" y="334.0" font-size="13" text-anchor="middle" font-weight="700" fill="#ffffff">OV2640</text>
+<text x="190.0" y="80.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">3V3 (pin 36)</text>
+<circle cx="200" cy="76" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="76.0" x2="554.0" y2="76.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="104.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GND (pin 38)</text>
+<circle cx="200" cy="100" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="100.0" x2="554.0" y2="100.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="128.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP13 (pin 17)</text>
+<circle cx="200" cy="124" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="124.0" x2="554.0" y2="124.0" stroke="#2e7d32" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="152.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP12 (pin 16)</text>
+<circle cx="200" cy="148" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="148.0" x2="554.0" y2="148.0" stroke="#2e7d32" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="176.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP2 (pin 4)</text>
+<circle cx="200" cy="172" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="172.0" x2="554.0" y2="172.0" stroke="#7b4fd6" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="200.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP3 (pin 5)</text>
+<circle cx="200" cy="196" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="196.0" x2="554.0" y2="196.0" stroke="#7b4fd6" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="224.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP4 (pin 6)</text>
+<circle cx="200" cy="220" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="220.0" x2="554.0" y2="220.0" stroke="#7b4fd6" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="248.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP5 (pin 7)</text>
+<circle cx="200" cy="244" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="244.0" x2="554.0" y2="244.0" stroke="#e07b00" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="272.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP14 (pin 19)</text>
+<circle cx="200" cy="268" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="268.0" x2="554.0" y2="268.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="296.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP15 (pin 20)</text>
+<circle cx="200" cy="292" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="292.0" x2="554.0" y2="292.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="320.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP16 (pin 21)</text>
+<circle cx="200" cy="316" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="316.0" x2="554.0" y2="316.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="344.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP17 (pin 22)</text>
+<circle cx="200" cy="340" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="340.0" x2="554.0" y2="340.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="368.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP18 (pin 24)</text>
+<circle cx="200" cy="364" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="364.0" x2="554.0" y2="364.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="392.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP19 (pin 25)</text>
+<circle cx="200" cy="388" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="388.0" x2="554.0" y2="388.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="416.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP20 (pin 26)</text>
+<circle cx="200" cy="412" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="412.0" x2="554.0" y2="412.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<text x="190.0" y="440.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP21 (pin 27)</text>
+<circle cx="200" cy="436" r="5" fill="#e0a800"/>
+<line x1="206.0" y1="436.0" x2="554.0" y2="436.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<circle cx="560" cy="76" r="5" fill="#e0a800"/>
+<text x="572.0" y="80.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">3.3V</text>
+<circle cx="560" cy="100" r="5" fill="#e0a800"/>
+<text x="572.0" y="104.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">GND</text>
+<circle cx="560" cy="124" r="5" fill="#e0a800"/>
+<text x="572.0" y="128.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">SIOC</text>
+<circle cx="560" cy="148" r="5" fill="#e0a800"/>
+<text x="572.0" y="152.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">SIOD</text>
+<circle cx="560" cy="172" r="5" fill="#e0a800"/>
+<text x="572.0" y="176.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">VSYNC</text>
+<circle cx="560" cy="196" r="5" fill="#e0a800"/>
+<text x="572.0" y="200.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">HREF</text>
+<circle cx="560" cy="220" r="5" fill="#e0a800"/>
+<text x="572.0" y="224.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">PCLK</text>
+<circle cx="560" cy="244" r="5" fill="#e0a800"/>
+<text x="572.0" y="248.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">XCLK</text>
+<circle cx="560" cy="268" r="5" fill="#e0a800"/>
+<text x="572.0" y="272.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D0</text>
+<circle cx="560" cy="292" r="5" fill="#e0a800"/>
+<text x="572.0" y="296.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D1</text>
+<circle cx="560" cy="316" r="5" fill="#e0a800"/>
+<text x="572.0" y="320.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D2</text>
+<circle cx="560" cy="340" r="5" fill="#e0a800"/>
+<text x="572.0" y="344.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D3</text>
+<circle cx="560" cy="364" r="5" fill="#e0a800"/>
+<text x="572.0" y="368.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D4</text>
+<circle cx="560" cy="388" r="5" fill="#e0a800"/>
+<text x="572.0" y="392.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D5</text>
+<circle cx="560" cy="412" r="5" fill="#e0a800"/>
+<text x="572.0" y="416.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D6</text>
+<circle cx="560" cy="436" r="5" fill="#e0a800"/>
+<text x="572.0" y="440.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">D7</text>
+<circle cx="560" cy="460" r="5" fill="#e0a800"/>
+<text x="572.0" y="464.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">RESET</text>
+<circle cx="560" cy="484" r="5" fill="#e0a800"/>
+<text x="572.0" y="488.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">PWDN</text>
+<line x1="554.0" y1="460.0" x2="236.0" y2="460.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<line x1="236.0" y1="460.0" x2="236.0" y2="76.0" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<circle cx="236" cy="76" r="4" fill="#d93a3a"/>
+<line x1="554.0" y1="484.0" x2="252.0" y2="484.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<line x1="252.0" y1="484.0" x2="252.0" y2="100.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<circle cx="252" cy="100" r="4" fill="#2b2f36"/>
+<text x="400.0" y="70.0" font-size="11" text-anchor="middle" font-weight="700" fill="#d93a3a">PWR</text>
+<text x="400.0" y="118.0" font-size="11" text-anchor="middle" font-weight="700" fill="#2e7d32">Settings (like I2C)</text>
+<text x="400.0" y="166.0" font-size="11" text-anchor="middle" font-weight="700" fill="#7b4fd6">Signals</text>
+<text x="400.0" y="238.0" font-size="11" text-anchor="middle" font-weight="700" fill="#e07b00">Clock</text>
+<text x="400.0" y="262.0" font-size="11" text-anchor="middle" font-weight="700" fill="#2f6fde">Data (8 wires)</text>
+<text x="30.0" y="536.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">If the board says D2–D9, connect D2 to GP14 and D9 to GP21.</text>
+</svg>

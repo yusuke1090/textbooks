@@ -62,3 +62,10 @@
 | [バルククーラー（生乳を冷やして貯めるタンク）](https://commons.wikimedia.org/wiki/File:New_milking_parlour,_a_bulk_tank_and_a_Friesian_herd_(1554595).jpg) | Geoff Charles | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [ハシブトガラス（大阪）](https://commons.wikimedia.org/wiki/File:Large-billed_crow_at_Tenn%C5%8Dji_Park,_Osaka,_Japan,_December_2023_-_4408.jpg) | Laitche | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [サーボモーター（SG90）](https://commons.wikimedia.org/wiki/File:Tower_Pro_SG90_micro_servo_motor.jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+## 付録I. 安いカメラの写真を PC に映す
+
+| 写真 | 撮影者 | ライセンス |
+| --- | --- | --- |
+| [ESP32-CAM（OV2640 が細い帯の線でつながっている）](https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg) | Nowforever | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [カメラの中のイメージセンサー（OV7670）。光を受けて、点ごとの明るさを数にする](https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg) | Daniel Garcia | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |

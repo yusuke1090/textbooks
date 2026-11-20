@@ -62,3 +62,10 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | [A bulk tank (a tank that cools and stores raw milk)](https://commons.wikimedia.org/wiki/File:New_milking_parlour,_a_bulk_tank_and_a_Friesian_herd_(1554595).jpg) | Geoff Charles | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [A large-billed crow (Osaka)](https://commons.wikimedia.org/wiki/File:Large-billed_crow_at_Tenn%C5%8Dji_Park,_Osaka,_Japan,_December_2023_-_4408.jpg) | Laitche | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [A servo motor (SG90)](https://commons.wikimedia.org/wiki/File:Tower_Pro_SG90_micro_servo_motor.jpg) | Suyash Dwivedi | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+
+## Appendix I. Showing a cheap camera's pictures on a PC
+
+| Photo | Author | Licence |
+| --- | --- | --- |
+| [ESP32-CAM (the OV2640 is joined by a thin ribbon cable)](https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg) | Nowforever | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [The image sensor inside a camera (OV7670). It takes in light and turns the brightness of each dot into a number](https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg) | Daniel Garcia | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
