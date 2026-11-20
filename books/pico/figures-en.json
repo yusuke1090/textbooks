@@ -370,5 +370,16 @@
  "GND の線へ": "to the GND line",
  "赤・黄 → 330Ω": "Red, yellow → 330 Ω",
  "緑・青・白 → 100Ω": "Green, blue, white → 100 Ω",
- "USB をつなぐときは、電池のスイッチを切ります。": "Switch the battery off whenever USB is connected."
+ "USB をつなぐときは、電池のスイッチを切ります。": "Switch the battery off whenever USB is connected.",
+ "LED をワイヤーで延ばして木にかける": "Extending the LEDs with wires and hanging them on the tree",
+ "① LED 1個のつなぎ方": "① Wiring one LED",
+ "② 枝にかける": "② Hanging them on the branches",
+ "はんだ付けして、": "Solder, then wrap",
+ "1本ずつテープで包む": "each joint in tape",
+ "ジャンパーワイヤー（オス-オス 20cm）": "Jumper wire (male-male, 20 cm)",
+ "片方のオスを切って、線の先をむく": "Cut off one male end and strip the wire",
+ "抵抗の下の列へ": "Below the resistor",
+ "− の列へ": "To the − row",
+ "ブレッドボード": "Breadboard",
+ "ピコ・抵抗・電池は根元に置く": "Pico, resistors and battery at the foot"
 }

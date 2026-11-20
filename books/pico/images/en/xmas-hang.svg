@@ -1,0 +1,151 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="470" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Extending the LEDs with wires and hanging them on the tree</text>
+<text x="40.0" y="64.0" font-size="13" text-anchor="start" font-weight="700" fill="#2b2f36">① Wiring one LED</text>
+<text x="420.0" y="64.0" font-size="13" text-anchor="start" font-weight="700" fill="#2b2f36">② Hanging them on the branches</text>
+<path d="M169.0 122 L169.0 98 A15 15 0 0 1 199.0 98 L199.0 122 Z" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
+<rect x="166.0" y="122" width="36" height="5" rx="1" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
+<text x="164.0" y="140.0" font-size="11" text-anchor="end" font-weight="700" fill="#d93a3a">Long leg (+)</text>
+<text x="204.0" y="140.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">Short leg (−)</text>
+<line x1="172.0" y1="127.0" x2="172.0" y2="162.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
+<line x1="174.5" y1="150.0" x2="174.5" y2="172.0" stroke="#c87533" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="173" cy="158" rx="4.5" ry="7" fill="#b8bec7"/>
+<rect x="165" y="146" width="14" height="30" rx="3" fill="#f3e2a9" opacity=".8"/>
+<path d="M174.5 176 L174.5 180" stroke="#d93a3a" stroke-width="3" stroke-linecap="round"/>
+<line x1="196.0" y1="127.0" x2="196.0" y2="162.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
+<line x1="198.5" y1="150.0" x2="198.5" y2="172.0" stroke="#c87533" stroke-width="2" stroke-linecap="round"/>
+<ellipse cx="197" cy="158" rx="4.5" ry="7" fill="#b8bec7"/>
+<rect x="189" y="146" width="14" height="30" rx="3" fill="#f3e2a9" opacity=".8"/>
+<path d="M198.5 176 L198.5 180" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<text x="214.0" y="158.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">Solder, then wrap</text>
+<text x="214.0" y="173.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">each joint in tape</text>
+<path d="M174.5 180 C174.5 230 133 230 133 339" stroke="#d93a3a" stroke-width="3" fill="none" stroke-linecap="round"/>
+<path d="M198.5 180 C198.5 240 177 240 177 364" stroke="#2b2f36" stroke-width="3" fill="none" stroke-linecap="round"/>
+<text x="226.0" y="222.0" font-size="11" text-anchor="start" font-weight="700" fill="#555c66">Jumper wire (male-male, 20 cm)</text>
+<text x="226.0" y="238.0" font-size="11" text-anchor="start" font-weight="400" fill="#555c66">Cut off one male end and strip the wire</text>
+<rect x="60" y="288" width="196" height="106" rx="6" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>
+<rect x="64" y="294" width="188" height="10" fill="#e2dccb"/>
+<line x1="70.0" y1="373.0" x2="246.0" y2="373.0" stroke="#2f6fde" stroke-width="1.5" stroke-linecap="round"/>
+<text x="72.0" y="384.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2f6fde">−</text>
+<rect x="98.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="98.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="98.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="98.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="109.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="120.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="131.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="142.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="153.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="164.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="175.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="186.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="197.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="208.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="219.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="230.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="320.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="331.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="342.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="353.4" width="3.2" height="3.2" fill="#9a927e"/>
+<rect x="241.4" y="378.4" width="3.2" height="3.2" fill="#9a927e"/>
+<line x1="133.0" y1="278.0" x2="133.0" y2="322.0" stroke="#8a8f98" stroke-width="1.5" stroke-linecap="round"/>
+<rect x="129" y="290" width="8" height="20" rx="3" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1"/>
+<rect x="129" y="293" width="8" height="2.4" fill="#f08c00"/>
+<rect x="129" y="297" width="8" height="2.4" fill="#f08c00"/>
+<rect x="129" y="301" width="8" height="2.4" fill="#8b4513"/>
+<rect x="129" y="305" width="8" height="2.4" fill="#c9a227"/>
+<text x="123.0" y="286.0" font-size="11" text-anchor="end" font-weight="700" fill="#555c66">Resistor</text>
+<rect x="128" y="338" width="10" height="15" rx="2" fill="#3a3f47"/>
+<circle cx="133" cy="355" r="2.8" fill="#d93a3a"/>
+<rect x="172" y="363" width="10" height="15" rx="2" fill="#3a3f47"/>
+<circle cx="177" cy="380" r="2.8" fill="#2b2f36"/>
+<text x="266.0" y="359.0" font-size="11" text-anchor="start" font-weight="700" fill="#d93a3a">Below the resistor</text>
+<text x="266.0" y="384.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">To the − row</text>
+<path d="M575 80 L630 170 L520 170 Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>
+<path d="M575 135 L670 255 L480 255 Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>
+<path d="M575 200 L710 340 L440 340 Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>
+<rect x="563" y="340" width="24" height="40" fill="#8b5a2b"/>
+<path d="M575 64 L580 76 L592 76 L582 83 L586 95 L575 87 L564 95 L568 83 L558 76 L570 76 Z" fill="#f2c200"/>
+<path d="M553 140 Q570.6 158 567.8 170 L567.8 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M599 156 Q579.8 174 569.4 186 L569.4 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M525 205 Q565.0 223 571.0 235 L571.0 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M583 190 Q576.6 208 572.6 220 L572.6 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M627 228 Q585.4 246 574.2 258 L574.2 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M495 270 Q559.0 288 575.8 300 L575.8 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M551 250 Q570.2 268 577.4 280 L577.4 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M609 286 Q581.8 304 579.0 316 L579.0 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M665 316 Q593.0 334 580.6 346 L580.6 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<path d="M513 322 Q562.6 340 582.2 352 L582.2 392" stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>
+<circle cx="553" cy="140" r="7" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
+<circle cx="599" cy="156" r="7" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="525" cy="205" r="7" fill="#fff59d" stroke="#c79100" stroke-width="2"/>
+<circle cx="583" cy="190" r="7" fill="#bbdefb" stroke="#1e63d6" stroke-width="2"/>
+<circle cx="627" cy="228" r="7" fill="#ffffff" stroke="#8a8f98" stroke-width="2"/>
+<circle cx="495" cy="270" r="7" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>
+<circle cx="551" cy="250" r="7" fill="#c8e6c9" stroke="#2e7d32" stroke-width="2"/>
+<circle cx="609" cy="286" r="7" fill="#fff59d" stroke="#c79100" stroke-width="2"/>
+<circle cx="665" cy="316" r="7" fill="#bbdefb" stroke="#1e63d6" stroke-width="2"/>
+<circle cx="513" cy="322" r="7" fill="#ffffff" stroke="#8a8f98" stroke-width="2"/>
+<rect x="495" y="392" width="140" height="34" rx="5" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>
+<rect x="585" y="398" width="44" height="22" rx="3" fill="#1f7a3d"/>
+<text x="543.0" y="414.0" font-size="10" text-anchor="middle" font-weight="700" fill="#555c66">Breadboard</text>
+<rect x="655" y="394" width="84" height="30" rx="5" fill="#3a3f47"/>
+<rect x="663.0" y="403" width="14.7" height="12" rx="4" fill="#c9ced6"/>
+<rect x="677.7" y="405.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="681.7" y="403" width="14.7" height="12" rx="4" fill="#c9ced6"/>
+<rect x="696.3" y="405.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="700.3" y="403" width="14.7" height="12" rx="4" fill="#c9ced6"/>
+<rect x="715.0" y="405.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="721" y="408" width="10" height="18" rx="2" fill="#8a8f98"/>
+<rect x="723" y="410" width="6" height="7" rx="1" fill="#ffffff"/>
+<line x1="635.0" y1="409.0" x2="655.0" y2="409.0" stroke="#d93a3a" stroke-width="2" stroke-linecap="round"/>
+<text x="575.0" y="444.0" font-size="11" text-anchor="middle" font-weight="700" fill="#2b2f36">Pico, resistors and battery at the foot</text>
+</svg>

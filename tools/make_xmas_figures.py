@@ -5,6 +5,7 @@
 
 - books/pico/images/xmas-circuit.svg     LED 10個と電池の回路
 - books/pico/images/xmas-breadboard.svg  ブレッドボードへの並べ方
+- books/pico/images/xmas-hang.svg        LED をワイヤーで延ばして木にかける
 作り直したら python3 tools/translate_figures.py pico で英語の図も作り直す。
 """
 from pathlib import Path
@@ -181,10 +182,89 @@ def breadboard():
     return svg(760, 490, "ブレッドボードへの並べ方", b)
 
 
+def hang():
+    """LED をジャンパーワイヤー（オス-オス）で延ばして、ツリーの枝にかける。片方のオスを切って、LED の足にはんだ付けする"""
+    LONG, SHORT, MALE, COPPER, SOLDER = "#d93a3a", "#2b2f36", "#3a3f47", "#c87533", "#b8bec7"
+    b = [text(40, 64, "① LED 1個のつなぎ方", 13, "start", 700), text(420, 64, "② 枝にかける", 13, "start", 700)]
+    # ---- 左: LED → はんだ → ワイヤー → オス → ブレッドボード ----
+    lx, rx = 172, 196                                   # 長い足・短い足
+    cx = (lx + rx) / 2
+    b.append(f'<path d="M{cx - 15} 122 L{cx - 15} 98 A15 15 0 0 1 {cx + 15} 98 L{cx + 15} 122 Z" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>')
+    b.append(f'<rect x="{cx - 18}" y="122" width="36" height="5" rx="1" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>')
+    b.append(text(lx - 8, 140, "長い足（＋）", 11, "end", 700, LONG))
+    b.append(text(rx + 8, 140, "短い足（−）", 11, "start", 700, INK))
+    for x, c in ((lx, LONG), (rx, SHORT)):              # 足 → むいた線 → はんだ → テープ
+        b.append(line(x, 127, x, 162, "#8a8f98", 2))
+        b.append(line(x + 2.5, 150, x + 2.5, 172, COPPER, 2))
+        b.append(f'<ellipse cx="{x + 1}" cy="{158}" rx="4.5" ry="7" fill="{SOLDER}"/>')
+        b.append(f'<rect x="{x - 7}" y="146" width="14" height="30" rx="3" fill="#f3e2a9" opacity=".8"/>')
+        b.append(f'<path d="M{x + 2.5} 176 L{x + 2.5} 180" stroke="{c}" stroke-width="3" stroke-linecap="round"/>')
+    b.append(text(rx + 18, 158, "はんだ付けして、", 11, "start", 400, SUB))
+    b.append(text(rx + 18, 173, "1本ずつテープで包む", 11, "start", 400, SUB))
+    # ワイヤー（20cm）。もう片方のオスはブレッドボードへ
+    gy = 300                                            # ブレッドボードの溝
+    rows = {"g": gy + 22, "h": gy + 33, "i": gy + 44, "j": gy + 55}
+    rail = gy + 80
+    px = [100 + 11 * i for i in range(14)]
+    res_x, rail_x = px[3], px[7]                        # 抵抗の列・− の列でつなぐ穴
+    b.append(f'<path d="M{lx + 2.5} 180 C{lx + 2.5} 230 {res_x} 230 {res_x} {rows["j"] - 16}" stroke="{LONG}" stroke-width="3" fill="none" stroke-linecap="round"/>')
+    b.append(f'<path d="M{rx + 2.5} 180 C{rx + 2.5} 240 {rail_x} 240 {rail_x} {rail - 16}" stroke="{SHORT}" stroke-width="3" fill="none" stroke-linecap="round"/>')
+    b.append(text(rx + 30, 222, "ジャンパーワイヤー（オス-オス 20cm）", 11, "start", 700, SUB))
+    b.append(text(rx + 30, 238, "片方のオスを切って、線の先をむく", 11, "start", 400, SUB))
+    # ブレッドボード（下の半分と − の列）
+    b.append(f'<rect x="60" y="{gy - 12}" width="196" height="{rail - gy + 26}" rx="6" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>')
+    b.append(f'<rect x="64" y="{gy - 6}" width="188" height="10" fill="#e2dccb"/>')
+    b.append(line(70, rail - 7, 246, rail - 7, SIG, 1.5))
+    b.append(text(72, rail + 4, "−", 12, "middle", 700, SIG))
+    for x in px:
+        for y in rows.values():
+            b.append(f'<rect x="{x - 1.6:.1f}" y="{y - 1.6:.1f}" width="3.2" height="3.2" fill="#9a927e"/>')
+        if x != px[0]:
+            b.append(f'<rect x="{x - 1.6:.1f}" y="{rail - 1.6:.1f}" width="3.2" height="3.2" fill="#9a927e"/>')
+    # 抵抗（溝をまたいで、下の足は g）
+    b.append(line(res_x, gy - 22, res_x, rows["g"], "#8a8f98", 1.5))
+    b.append(f'<rect x="{res_x - 4}" y="{gy - 10}" width="8" height="20" rx="3" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1"/>')
+    for j, c in enumerate(BANDS["330Ω"]):
+        b.append(f'<rect x="{res_x - 4}" y="{gy - 7 + j * 4}" width="8" height="2.4" fill="{c}"/>')
+    b.append(text(res_x - 10, gy - 14, "抵抗", 11, "end", 700, SUB))
+    # オス（穴に差す）
+    for x, y, c in ((res_x, rows["j"], LONG), (rail_x, rail, SHORT)):
+        b.append(f'<rect x="{x - 5}" y="{y - 17}" width="10" height="15" rx="2" fill="{MALE}"/>')
+        b.append(f'<circle cx="{x}" cy="{y}" r="2.8" fill="{c}"/>')
+    b.append(text(266, rows["j"] + 4, "抵抗の下の列へ", 11, "start", 700, LONG))
+    b.append(text(266, rail + 4, "− の列へ", 11, "start", 700, INK))
+    # ---- 右: ツリー ----
+    tx = 575
+    tiers = [(80, 170, 55), (135, 255, 95), (200, 340, 135)]   # 上・下・半分の幅
+    for top, bottom, half in tiers:
+        b.append(f'<path d="M{tx} {top} L{tx + half} {bottom} L{tx - half} {bottom} Z" fill="#3f8f4a" stroke="#2e6b36" stroke-width="2" stroke-linejoin="round"/>')
+    b.append(f'<rect x="{tx - 12}" y="340" width="24" height="40" fill="#8b5a2b"/>')
+    b.append(f'<path d="M{tx} 64 L{tx + 5} 76 L{tx + 17} 76 L{tx + 7} 83 L{tx + 11} 95 L{tx} 87 L{tx - 11} 95 L{tx - 7} 83 L{tx - 17} 76 L{tx - 5} 76 Z" fill="#f2c200"/>')
+    spots = [(-22, 140), (24, 156), (-50, 205), (8, 190), (52, 228), (-80, 270),
+             (-24, 250), (34, 286), (90, 316), (-62, 322)]
+    base_y = 392
+    for k, (dx, y) in enumerate(spots):
+        x = tx + dx
+        b.append(f'<path d="M{x} {y} Q{tx + dx * 0.2:.1f} {y + 18} {tx + (k - 4.5) * 1.6:.1f} {y + 30} L{tx + (k - 4.5) * 1.6:.1f} {base_y}" '
+                 f'stroke="#d8dde3" stroke-width="1.6" fill="none" opacity=".9"/>')
+    for k, (dx, y) in enumerate(spots):
+        name, stroke, fill = COLORS[k]
+        b.append(f'<circle cx="{tx + dx}" cy="{y}" r="7" fill="{fill}" stroke="{stroke}" stroke-width="2"/>')
+    # 根元: ブレッドボード（ピコ・抵抗）と電池
+    b.append(f'<rect x="{tx - 80}" y="{base_y}" width="140" height="34" rx="5" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>')
+    b.append(f'<rect x="{tx + 10}" y="{base_y + 6}" width="44" height="22" rx="3" fill="{PICO}"/>')
+    b.append(text(tx - 32, base_y + 22, "ブレッドボード", 10, "middle", 700, SUB))
+    b += battery(tx + 80, base_y + 2, 84, 30)
+    b.append(line(tx + 60, base_y + 17, tx + 80, base_y + 17, VSYS, 2))
+    b.append(text(tx, base_y + 52, "ピコ・抵抗・電池は根元に置く", 11, "middle", 700))
+    return svg(760, 470, "LED をワイヤーで延ばして木にかける", b)
+
+
 def main():
     (OUT / "xmas-circuit.svg").write_text(circuit())
     (OUT / "xmas-breadboard.svg").write_text(breadboard())
-    print("xmas-circuit.svg と xmas-breadboard.svg を作りました")
+    (OUT / "xmas-hang.svg").write_text(hang())
+    print("xmas-circuit.svg・xmas-breadboard.svg・xmas-hang.svg を作りました")
 
 
 if __name__ == "__main__":
