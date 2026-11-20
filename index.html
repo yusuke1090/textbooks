@@ -377,7 +377,7 @@ li > .sticky-bar { margin-top: 4px; }
 .td-towns .next img { filter: grayscale(1) blur(2px); opacity: .55; border: 2px dashed var(--muted); }
 .td-towns .next span { color: var(--muted); }
 .td-map .ft { fill: var(--panel); stroke: #e8a317; }
-/* 旅日記: 勉強した日ごとに、もらった写真（目標に届いた日だけ）・日付・分の棒（地図のその日の道と同じ色）・着いた町 */
+/* 旅日記: 勉強した日ごとに、もらった写真（目標に届いた日だけ）・日付・分の棒（目標に届いた日は金色）・着いた町 */
 .td-log { margin-top: 12px; }
 .td-log-h { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
 .td-log-h span { font-size: 12px; color: var(--muted); }
@@ -398,6 +398,7 @@ li > .sticky-bar { margin-top: 4px; }
 .td-log .d { color: var(--muted); white-space: nowrap; }
 .td-log .bar { height: 8px; border-radius: 4px; background: var(--border); overflow: hidden; }
 .td-log .bar i { display: block; height: 100%; border-radius: 4px; background: var(--accent); }
+.td-log .met .bar i { background: #e8a317; }
 .td-log .m { text-align: right; white-space: nowrap; }
 .td-log .w { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .td-more { display: block; margin: 4px auto 0; padding: 2px 14px; font: inherit; font-size: 12px; color: var(--muted); background: none; border: 1px solid var(--border); border-radius: 999px; cursor: pointer; }
@@ -728,9 +729,9 @@ li > .sticky-bar { margin-top: 4px; }
         + above(S[N], nm(S[N]), true)
         + (B !== S[N] && Math.hypot(B.x - S[N].x, B.y - S[N].y) * k > 45 ? above(B, B.ja) : "");
     }
-    // 進んだ道は、この周で勉強した日ごとに、金の濃い・薄いを交互に
+    // 進んだ道は、旅日記の棒と同じ色（目標に届いた日は金、届かなかった日は緑）
     const log = tripLog(s), lapStart = p.lap * trip.total;
-    const days = log.map((d, n) => ({ d, c: DAY_COLORS[n % DAY_COLORS.length] })).filter(({ d }) => d.b > lapStart);
+    const days = log.map((d) => ({ d, c: d.met ? "#e8a317" : "var(--accent)" })).filter(({ d }) => d.b > lapStart);
     const path = (a, b) => {   // a 秒から b 秒までに進んだ道（とちゅうで着いた町を通る）
       const q = [tripPos(a)];
       for (let j = 1; j < N; j++) { const t = lapStart + trip.cum[j]; if (t > a && t < b) q.push(S[j]); }
@@ -738,8 +739,8 @@ li > .sticky-bar { margin-top: 4px; }
     };
     const went = days.map(({ d, c }) => `<polyline class="went" points="${pts(path(Math.max(d.a, lapStart), d.b))}" style="stroke:${c}" vector-effect="non-scaling-stroke"/>`).join("");
     // 足あと（大きく見るときだけ）: この周で、毎日の勉強が終わったところ（今日の分は今いるところ）
-    const ends = !tripZoom ? [] : days.filter(({ d }) => d.b < total).map(({ d }) => ({ d, q: tripPos(d.b) }));
-    const foot = ends.map(({ q }) => `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke-width:${1.5 / k}"/>`).join("");
+    const ends = !tripZoom ? [] : days.filter(({ d }) => d.b < total).map(({ d, c }) => ({ d, c, q: tripPos(d.b) }));
+    const foot = ends.map(({ q, c }) => `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke:${c};stroke-width:${1.5 / k}"/>`).join("");
     // 日付（大きく見るときだけ）: 足あとの上に「11/18」。ほかの文字と重なる日は出さない（新しい日が先）
     let dates = "";
     for (const { d, q } of ends.slice().reverse()) {
@@ -761,7 +762,7 @@ li > .sticky-bar { margin-top: 4px; }
     const today = dayKey(), maxV = Math.max(s.goal * 60, ...log.map((d) => d.v));
     const what = (d) => d.got.includes(N) ? "世界一周 🌏" : d.got.length ? d.got.map((j) => S[j].ja).join("・") + "に着いた 🎉" : "";
     const rows = log.slice(diaryOpen ? 0 : -3).reverse().map((d) => `<li data-k="${d.k}"${d.met ? ` class="met"` : ""}><span class="g">${d.photo ? `<img src="${d.photo.thumb}" alt="" loading="lazy">` : ""}</span>`
-      + `<span class="d">${d.k === today ? "今日" : `${+d.k.slice(5, 7)}/${+d.k.slice(8)}`}</span><span class="bar"><i style="width:${(d.v / maxV * 100).toFixed(1)}%;background:${DAY_COLORS[log.indexOf(d) % DAY_COLORS.length]}"></i></span>`
+      + `<span class="d">${d.k === today ? "今日" : `${+d.k.slice(5, 7)}/${+d.k.slice(8)}`}</span><span class="bar"><i style="width:${(d.v / maxV * 100).toFixed(1)}%"></i></span>`
       + `<span class="m">${Math.max(1, Math.floor(d.v / 60))}分</span><span class="w">${esc(what(d))}</span></li>`).join("");
     const diary = log.length ? `<div class="td-log"><div class="td-log-h"><b>旅日記</b><button type="button" class="td-album">📷 写真 ${log.filter((d) => d.photo).length}枚</button></div><ol>${rows}</ol>`
       + (log.length > 3 ? `<button type="button" class="td-more">${diaryOpen ? "閉じる" : "もっと見る"}</button>` : "") + `</div>` : "";
@@ -793,7 +794,6 @@ li > .sticky-bar { margin-top: 4px; }
     };
   }
   let tripResize = 0, diaryOpen = false, tripZoom = false;
-  const DAY_COLORS = ["#e8a317", "#f6d27a"];   // 地図の、日ごとの道の色（金と薄い金を交互に）
   // 目標に届いた日にもらった写真を大きく（名前・もらった日と町・撮影者とライセンス・出典）
   function photoZoom(d) {
     const q = d.photo, md = `${+d.k.slice(5, 7)}月${+d.k.slice(8)}日`;
