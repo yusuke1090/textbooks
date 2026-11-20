@@ -29,13 +29,13 @@ OLD_HEAD = {"ja": "## 単語帳の使い方", "en": "## How to use this word lis
 INTRO_IELTS = {
     "ja": """- IELTS のバンド7 に役立つ言葉 **{n:,} 語**を、{t} の話題に分けました。品詞・意味・例文つきです
 - 下の一覧で話題を選ぶと、**20語ずつ**のページで出ます。下の番号で次のページへ、最後のページの「次の話題へ」で続けられます。次に開いたときは、前に見ていた所から始まります
-- わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを全部の話題から集めて出します（覚えたら、もう一度押して外す）
+- わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを出します。話題の中で押すとその話題だけ、話題の一覧で押すと全部の話題から集めます（覚えたら、もう一度押して外す）
 - 読んだ単語は、左はしの **□** にチェックを入れます（既読）。話題の一覧に、既読の数が出ます
 - 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。🔊 で発音、「単語・意味で探す」で全部の話題から探せます
 - 品詞の記号: **名** 名詞、**動** 動詞、**形** 形容詞、**副** 副詞、**句** いくつかの語のまとまり、**句動** 句動詞、**接** 接続詞、**前** 前置詞、**慣** 慣用句。例文の太字がその言葉で、`sth` は something、`sb` は somebody の略です""",
     "en": """- **{n:,} words** that help with IELTS Band 7, in {t} topics, each with its part of speech, meaning and an example
 - Choose a topic below to see it **20 words per page**. Use the numbers at the bottom to turn pages, and "Next topic" on the last page to carry on. Next time, you start where you left off
-- Tap the **○** next to a word you don't know to mark it. "**✓ Review**" at the top collects your marked words from every topic (tap ○ again to unmark once you know it)
+- Tap the **○** next to a word you don't know to mark it. "**✓ Review**" at the top shows only your marked words: from that topic when you are in one, or from every topic on the topic list (tap ○ again to unmark once you know it)
 - Tick the **box** at the far left once you've read a word. The topic list shows how many you've read
 - "**Hide meanings**" blurs meanings and examples. Try to recall the meaning, then tap to check. Tap 🔊 to hear a word, and search all topics with the search box
 - Parts of speech: **n.** noun, **v.** verb, **adj.** adjective, **adv.** adverb, **phr.** phrase, **phr. v.** phrasal verb, **conj.** conjunction, **prep.** preposition, **idiom**. The word is in bold in its example; `sth` means something and `sb` means somebody""",
@@ -44,7 +44,7 @@ INTRO_IELTS = {
 INTRO_SW = {
     "ja": """- この本の言葉と、東アフリカの暮らし・畑・牛と酪農でよく使う言葉 **{n:,} 語**を、{t} の話題に分けました。品詞・意味・例文（日本語の訳つき）があります
 - 下の一覧で話題を選ぶと、**20語ずつ**のページで出ます。下の番号で次のページへ、最後のページの「次の話題へ」で続けられます。次に開いたときは、前に見ていた所から始まります
-- わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを全部の話題から集めて出します（覚えたら、もう一度押して外す）
+- わからない単語は、左の **○** を押してチェックします。上の「**✓ 見直す**」で、チェックした単語だけを出します。話題の中で押すとその話題だけ、話題の一覧で押すと全部の話題から集めます（覚えたら、もう一度押して外す）
 - 読んだ単語は、左はしの **□** にチェックを入れます（既読）。話題の一覧に、既読の数が出ます
 - 「**意味を隠す**」で意味と例文がぼやけます。意味を言えるか試してから、押して確かめます。「単語・意味で探す」は、スワヒリ語でも日本語でも探せます。🔊 で発音を聞けます（機械で作った声です）
 - 名詞は（ ）に複数の形を、品詞にクラス（M-WA・KI-VI など、6章）を書きました。動詞は辞書の形（ku-）、形容詞は頭のない形（-zuri）です。例文の太字が、その言葉です""",
