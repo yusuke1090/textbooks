@@ -2,11 +2,12 @@
 """本棚の「今日の勉強」の旅（教科書をめぐる世界一周）のデータを作る。
 
   python3 tools/make_trip.py <Natural Earth の geojson のフォルダ>
+  （フォルダを付けないと、地図の陸と湖は今の trip.json のまま。町や写真の説明だけ直すとき）
 
 - trip/trip.json: 町（名前・経度緯度・その町に着くまでの時間・写真・もらえる写真）と、地図の陸と湖（メルカトルの SVG パス）
 - trip/<slug>.jpg: 町の写真の小さい版（教科書の写真から 160px の正方形に切る）
 - trip/gifts/: 1日の目標に届いた日にもらう、その土地ゆかりの写真（幅 960px）と、t/ に 240px の正方形
-  写真は trip/gifts.json に町ごとに並べる: {"kyoto": [{"src": "Commons のファイル名", "ja": "名前", "en": "name"}, ...]}
+  写真は trip/gifts.json に町ごとに並べる: {"kyoto": [{"src": "Commons のファイル名", "ja": "名前", "en": "name", "desc": "写真を見るときの説明"}, ...]}
   まだ取り込んでいない写真だけ Commons から取り、撮影者・ライセンスを gifts.json に書き戻す（fetch_photos.py と同じやり方）
 地図は Natural Earth の 1:50m（パブリックドメイン）の ne_50m_land.geojson と ne_50m_lakes.geojson を使う。
 https://github.com/nvkelso/natural-earth-vector/tree/master/geojson からダウンロードしておく。
@@ -53,6 +54,36 @@ STOPS = [
     ("edinburgh", "エディンバラ", "Edinburgh", -3.20, 55.95, 5, "uk/edinburgh-castle"),
     ("home", "東京", "Tokyo", 139.69, 35.69, 6, "religion/hatsumode"),
 ]
+
+# 町の写真を見るときの説明（国・町のこと）。最後の東京（home）は、はじめの東京と同じ
+NOTES = {
+    "tokyo": ("日本", "旅の出発地で、ゴールでもある日本の首都。写真は明治神宮の初詣で、お正月の三が日には毎年300万人ほどがお参りに来ます。"),
+    "kyoto": ("日本", "1,000年以上、日本の都だった町。写真の伏見稲荷大社では、お礼に納められた朱色の鳥居が、山の上まで1万基ほども続きます。"),
+    "beijing": ("中国", "明と清の時代から続く中国の首都。写真の天壇・祈年殿は、皇帝が豊作を祈った建物で、くぎを使わずに木を組んで建てられています。"),
+    "lhasa": ("中国・チベット", "標高約3,650mにある、チベットの祈りの町。写真のポタラ宮はダライ・ラマの宮殿だった建物で、部屋は1,000をこえます。"),
+    "lumbini": ("ネパール", "お釈迦さまが生まれたと伝わる場所。写真のマーヤーデーヴィー寺院は、お母さんのマーヤー夫人の名前から付けられ、世界遺産になっています。"),
+    "varanasi": ("インド", "ガンジス川のほとりの、ヒンドゥー教でいちばん大切な聖地のひとつ。川へ下りる石段（ガート）が80以上並び、朝は沐浴する人で、夜は祈りの火でにぎわいます。"),
+    "amritsar": ("インド", "シク教の中心の町。写真の黄金寺院の無料の食堂では、宗教や身分に関係なく、毎日何万人もの人が並んで食事をします。"),
+    "yazd": ("イラン", "砂漠のオアシスの古い町。日干しれんがの家と、風を取りこむ塔（バードギール）が並びます。写真はゾロアスター教の寺院で、1,500年以上燃え続けていると伝わる火が守られています。"),
+    "istanbul": ("トルコ", "ヨーロッパとアジアのあいだのボスポラス海峡にまたがる町。写真のアヤソフィアは537年に教会として建てられ、のちにモスクになりました。"),
+    "jerusalem": ("", "ユダヤ教・キリスト教・イスラム教の聖地が、城壁に囲まれた旧市街に集まる町。写真の岩のドームは7世紀の終わりに建てられ、金色の屋根が町のあちこちから見えます。"),
+    "cairo": ("エジプト", "ナイル川のほとりの、アフリカでいちばん大きな町のひとつ。写真のアズハル・モスクは970年ごろに建てられ、世界でもっとも古い大学のひとつ、アズハル大学のもとになりました。"),
+    "lalibela": ("エチオピア", "標高約2,500mの高原にある、キリスト教の巡礼の町。写真の聖ギオルギス教会は、800年ほど前に、地面の岩を上から十字の形にほり抜いて作られました。"),
+    "nairobi": ("ケニア", "ケニアの首都で、名前はマサイの言葉で「冷たい水」。町のすぐ横に国立公園があり、高いビルのそばでキリンやライオンがくらしています。"),
+    "serengeti": ("タンザニア", "タンザニアに広がる、果てしない草原の国立公園。写真のヌーは100万頭をこえる大群で、雨と草を追って、一年じゅう草原をめぐって旅をしています。"),
+    "arusha": ("タンザニア", "サファリの出発点の町。真ん中の時計台は、カイロとケープタウンのちょうど中間にあると言われます。まわりを走るのは、バイクタクシーの「ボダボダ」です。"),
+    "kilimanjaro": ("タンザニア", "アフリカでいちばん高い山（5,895m）。赤道の近くなのに、山頂には氷河があります。写真は、国境の向こうのケニアのアンボセリから見た姿です。"),
+    "zanzibar": ("タンザニア", "インド洋にうかぶ島。香辛料と交易で栄えた古い町ストーンタウンは世界遺産です。写真のダウ船は、季節風に乗って昔からアラビアやインドと行き来してきた帆船です。"),
+    "dar": ("タンザニア", "タンザニアでいちばん大きな港町で、名前はアラビア語で「平和の家」。写真の海辺から、ザンジバル行きの船が出ています。"),
+    "malawi": ("マラウイ", "アフリカで3番目に大きな湖で、マラウイの国の5分の1ほどをしめます。魚の種類が世界のどの湖よりも多く、写真のケープ・マクレアの浜は、すんだ水で泳げます。"),
+    "rome": ("イタリア", "2,000年以上の歴史があるイタリアの首都。写真のサン・ピエトロ大聖堂は、町の中にある世界でいちばん小さな国、バチカン市国にあります。"),
+    "wittenberg": ("ドイツ", "1517年、マルティン・ルターがこの町で95か条の論題を出し、宗教改革が始まりました。写真の城教会の扉に、それを貼り出したと伝わっています。"),
+    "london": ("イギリス", "テムズ川が流れるイギリスの首都。写真のウェストミンスター宮殿は国会議事堂で、時計塔の大きな鐘の名前がビッグ・ベンです。"),
+    "stonehenge": ("イギリス", "5,000年ほど前から作られた、平原に大きな石が輪に並ぶ遺跡。夏至の日には、日の出の方向と石の並びがそろいます。"),
+    "cotswolds": ("イギリス", "なだらかな丘に、はちみつ色の石の家が並ぶ田舎。中世にはヒツジの毛（羊毛）の取引で栄えました。"),
+    "lakedistrict": ("イギリス", "イングランドでいちばん高い山々と、たくさんの湖がある国立公園。ピーターラビットの作者ビアトリクス・ポターが暮らし、写真のハードウィック種のヒツジを守る活動もしていました。"),
+    "edinburgh": ("イギリス", "スコットランドの首都。写真のエディンバラ城は、大昔の火山の岩の上に建っています。夏は町じゅうが芸術祭でにぎわいます。"),
+}
 
 # 地図に出す地域の名前（日本語, English, 経度, 緯度）。旅の全体を見るときだけ出す
 REGIONS = [
@@ -148,7 +179,7 @@ def fetch_gifts():
                 with Image.open(img) as im:
                     ImageOps.fit(im.convert("RGB"), (240, 240), Image.LANCZOS).save(th, quality=80, optimize=True)
             out.setdefault(slug, []).append({"ja": it["ja"], "en": it["en"], "img": f"trip/gifts/{key}.jpg", "thumb": f"trip/gifts/t/{key}.jpg",
-                                             "src": it["src"], "author": it["author"], "license": it["license"]})
+                                             "src": it["src"], "author": it["author"], "license": it["license"], "desc": it.get("desc", "")})
     path.write_text(json.dumps(g, ensure_ascii=False, indent=1) + "\n")
     print(f"もらえる写真 {sum(len(v) for v in out.values())} 枚")
     return out
@@ -170,12 +201,17 @@ def main():
             with Image.open(img) as im:
                 ImageOps.fit(im.convert("RGB"), (160, 160), Image.LANCZOS).save(thumb, quality=82, optimize=True)
         x, y = merc(lon, lat)
-        stops.append({"ja": ja, "en": en, "x": round(x, 2), "y": round(y, 2), "h": h,
+        country, desc = NOTES["tokyo" if slug == "home" else slug]
+        stops.append({"ja": ja, "en": en, "x": round(x, 2), "y": round(y, 2), "h": h, "country": country, "desc": desc,
                       "gifts": gifts.get(slug, []), "img": f"books/{book}/images/{name}.jpg", "thumb": f"trip/{'tokyo' if slug == 'home' else slug}.jpg", "src": src})
     regions = [{"ja": ja, "en": en, "x": round(merc(lon, lat)[0], 2), "y": round(merc(lon, lat)[1], 2)} for ja, en, lon, lat in REGIONS]
-    data = {"stops": stops, "regions": regions,
-            "land": path_of(src_dir / "ne_50m_land.geojson", MIN_AREA),
-            "lakes": path_of(src_dir / "ne_50m_lakes.geojson", 0.15)}
+    if (src_dir / "ne_50m_land.geojson").exists():
+        land, lakes = path_of(src_dir / "ne_50m_land.geojson", MIN_AREA), path_of(src_dir / "ne_50m_lakes.geojson", 0.15)
+    else:   # geojson がなければ、今の trip.json の地図をそのまま使う（町や写真だけ直すとき）
+        old = json.loads((OUT / "trip.json").read_text())
+        land, lakes = old["land"], old["lakes"]
+        print("地図は今の trip.json のまま")
+    data = {"stops": stops, "regions": regions, "land": land, "lakes": lakes}
     (OUT / "trip.json").write_text(json.dumps(data, ensure_ascii=False, separators=(",", ":")))
     total = sum(s["h"] for s in stops)
     print(f"{len(stops)} 町、全部で {total} 時間、trip.json {len((OUT / 'trip.json').read_bytes()) // 1024} KB")
