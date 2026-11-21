@@ -2460,7 +2460,7 @@ li > .sticky-bar { margin-top: 4px; }
   });
   document.addEventListener("click", (e) => {
     if (!e.target.isConnected) return;
-    if (!e.target.closest(".bar") && (!$("toc").hidden || !$("notes").hidden)) closeDrops();
+    if (!e.target.closest("#tocBtn, #annoBtn, .drop-in") && (!$("toc").hidden || !$("notes").hidden)) closeDrops();
     if (!e.target.closest("#body, #tip")) hideTip();
   });
   document.addEventListener("keydown", (e) => {
