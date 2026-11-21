@@ -1940,9 +1940,9 @@ li > .sticky-bar { margin-top: 4px; }
       getSelection().removeAllRanges();
       closePop();
       if (b.dataset.color) { addItem("mark", an, { color: b.dataset.color }); refreshAnno(); }
-      else if (b.dataset.act === "memo") { const it = addItem("mark", an); refreshAnno(); editMark(it.id, true); }
+      else if (b.dataset.act === "memo") { const it = addItem("mark", an, { color: "blue" }); refreshAnno(); editMark(it.id, true); }
       else if (b.dataset.act === "sticky") {
-        const it = addItem("sticky", { ...an, exact: an.exact.slice(0, 40), suffix: (an.exact.slice(40) + an.suffix).slice(0, 32) });
+        const it = addItem("sticky", { ...an, exact: an.exact.slice(0, 40), suffix: (an.exact.slice(40) + an.suffix).slice(0, 32) }, { color: "pink" });
         refreshAnno(); editSticky(it.id, true);
       } else if (b.dataset.act === "tr" && window.agriTranslate) window.agriTranslate(text.trim());
     };
