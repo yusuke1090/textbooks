@@ -72,6 +72,43 @@ hello, pico!
 | `%02x` | 16進数（2けた、0 で埋める） | `printf("%02x", 104)` → `68` |
 | `\n` | 改行 | |
 
+### `#include` はどこからファイルを読むか
+
+`#include "pico/stdlib.h"` の `pico` は、ボードのことではなく**フォルダの名前**です。読み込むのもピコではなく、ビルドするときの PC です。
+
+コンパイラは「インクルードを探すフォルダ」の一覧を持っていて、その1つずつに `pico/stdlib.h` をつなげて、ファイルがあるかを調べます。VS Code で作ったプロジェクトでは、次のファイルが見つかります。
+
+| 部分 | 中身 |
+| --- | --- |
+| 探すフォルダ（SDK が登録する） | `~/.pico-sdk/sdk/2.3.1/src/common/pico_stdlib_headers/include` |
+| `#include` に書いた部分 | `pico/stdlib.h` |
+
+`2.3.1` は SDK のバージョンで、`CMakeLists.txt` の `DO NOT EDIT` の部分の `sdkVersion` で決まります。
+
+このフォルダを一覧に入れているのは、`CMakeLists.txt` の次の行です（4章）。
+
+```cmake
+target_link_libraries(blink
+        pico_stdlib)
+```
+
+`pico_stdlib` を消してビルドすると、次のエラーで止まります。2行目の `#include "pico/stdlib.h"` で、ファイルが見つからなかったという意味です。
+
+```text
+blink.cpp:2:10: fatal error: pico/stdlib.h: No such file or directory
+```
+
+`< >` と `" "` では、探す順番が違います。
+
+| 書き方 | 探す順番 | 使うもの |
+| --- | --- | --- |
+| `#include <cstdio>` | 登録されたフォルダだけ | C++ に元からあるもの |
+| `#include "pico/stdlib.h"` | ① その `.cpp` と同じフォルダ → ② 登録されたフォルダ | SDK や自分で作ったもの |
+
+下の RGB LED の `#include "ws2812.h"` は、①のプロジェクトのフォルダで見つかります。
+
+登録されたフォルダは、`build/compile_commands.json`（4章）で確かめられます。VS Code で開いて `pico_stdlib_headers` を検索すると、`-isystem /home/ユーザー名/.pico-sdk/sdk/2.3.1/src/common/pico_stdlib_headers/include` が見つかります。`-I` や `-isystem` の後ろが、登録されたフォルダです。
+
 ## LED を点滅させる（Lチカ）
 
 マイコンの最初の一歩は、LED を点滅させること（Lチカ）です。

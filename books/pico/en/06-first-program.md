@@ -72,6 +72,43 @@ Sum of 1 to 10: 55
 | `%02x` | Hexadecimal (2 digits, padded with 0) | `printf("%02x", 104)` → `68` |
 | `\n` | Newline | |
 
+### Where `#include` reads files from
+
+The `pico` in `#include "pico/stdlib.h"` is not the board. It is **the name of a folder**. And it is not the Pico that reads it, but the PC when it builds.
+
+The compiler has a list of "folders to search for includes". It adds `pico/stdlib.h` to each one in turn and checks whether the file is there. In a project made with VS Code, it finds this file.
+
+| Part | Contents |
+| --- | --- |
+| Folder to search (added by the SDK) | `~/.pico-sdk/sdk/2.3.1/src/common/pico_stdlib_headers/include` |
+| What you wrote in `#include` | `pico/stdlib.h` |
+
+`2.3.1` is the SDK version. It is set by `sdkVersion` in the `DO NOT EDIT` part of `CMakeLists.txt`.
+
+The line in `CMakeLists.txt` that puts this folder on the list is this one (Chapter 4).
+
+```cmake
+target_link_libraries(blink
+        pico_stdlib)
+```
+
+If you remove `pico_stdlib` and build, it stops with this error. It means the file in line 2, `#include "pico/stdlib.h"`, was not found.
+
+```text
+blink.cpp:2:10: fatal error: pico/stdlib.h: No such file or directory
+```
+
+`< >` and `" "` search in a different order.
+
+| Form | Search order | Used for |
+| --- | --- | --- |
+| `#include <cstdio>` | Only the listed folders | What comes with C++ |
+| `#include "pico/stdlib.h"` | ① The folder of that `.cpp` → ② the listed folders | The SDK and your own files |
+
+The `#include "ws2812.h"` in the RGB LED example below is found in ①, the project folder.
+
+You can check the listed folders in `build/compile_commands.json` (Chapter 4). Open it in VS Code and search for `pico_stdlib_headers`, and you find `-isystem /home/username/.pico-sdk/sdk/2.3.1/src/common/pico_stdlib_headers/include`. What follows `-I` or `-isystem` is a listed folder.
+
 ## Blinking an LED (blinky)
 
 A microcontroller's first step is blinking an LED (blinky).
