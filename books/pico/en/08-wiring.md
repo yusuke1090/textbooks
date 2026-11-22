@@ -29,7 +29,7 @@ Under the holes of a breadboard are metal strips that connect certain holes to e
 | The groove in the middle | Above the groove (a–e) and below it (f–j) are **not connected** |
 | The + / − rows at the top and bottom | **A whole horizontal row** is connected. Used to distribute power (3.3 V) and GND |
 
-- Plug the Pico in **straddling the groove**. That way its left and right pins do not short together
+- Plug the Pico in **straddling the groove**. That way its left and right pins do not short together. With USB on the right, the top row goes from pin 20 at the left end to 19, 18 … 1 on the right, and the bottom row from pin 21 at the left end to 22, 23 … 40
 - Legs of parts plugged into the same vertical column (for example a–e of column 5) are connected without any wire
 - If you connect the Pico's 3V3(OUT) to the + row and GND to the − row, it is easy to power sensors
 
@@ -50,7 +50,7 @@ Deciding on wire colors reduces mistakes (for example red = 3.3 V, black = GND, 
 A pin header is a part with metal pins lined up in a strip of black or yellow plastic.
 Soldering them into the holes along the edges of the Pico (20 on each side) lets you plug it into a breadboard.
 
-- **If you only connect USB and run programs, you do not need them.** They are needed when connecting sensors
+- **If you only connect USB and run programs, you do not need them.** They are needed when you connect LEDs or sensors on a breadboard (from the external LED in Chapter 7)
 - There are also models with pin headers already attached, the "Pico H" and "Pico WH". In that case, skip this section
 - The three small holes at the end of the Pico (DEBUG) are not used in this guide. You do not need to attach anything there
 
@@ -126,11 +126,11 @@ As long as addresses do not overlap, you can connect any number to the same wire
 ### Wiring steps
 
 1. **Unplug USB**
-2. Plug the Pico into the breadboard, straddling the groove
-3. Run a wire from the Pico's 3V3(OUT) (pin 36) to the + row, and from GND (pin 38) to the − row
-4. Plug the sensors into the breadboard one at a time
-5. Connect each sensor's VCC to the + row and GND to the − row
-6. Connect each sensor's SDA to the Pico's GP4 (pin 6) and SCL to GP5 (pin 7). The second sensor goes to the same GP4 and GP5
+2. Plug the Pico into the breadboard, straddling the groove (USB on the right)
+3. With jumper wires, connect a free hole in the column of pin 36 (3V3(OUT)) to the bottom + row, and the column of pin 38 (GND) to the bottom − row. Pin 36 is fifth from the right in the bottom row, and pin 38 is third from the right
+4. Push a sensor into a free spot to the left of the Pico. Line its pins up **in the same direction as the groove**, so each pin goes into a different vertical column (if they run across the groove, all the pins are connected inside). Put the second sensor on the other side of the groove, and it fits even on a half-size board
+5. With jumper wires, connect the sensor's VCC column to the bottom + row, and its GND column to the bottom − row
+6. Connect the sensor's SDA column to the column of the Pico's pin 6 (GP4), and its SCL column to the column of pin 7 (GP5). Pins 6 and 7 are sixth and seventh from the right in the top row. The second sensor goes to free holes in the same columns (a and b are free)
 7. Compare with the table and **check every wire once more**
 8. Plug in USB
 

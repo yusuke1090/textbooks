@@ -102,11 +102,15 @@ They are used for potentiometers (variable resistors), light sensors, sensors wi
 
 ### Connecting and reading a potentiometer
 
-1. Unplug USB
-2. Connect the potentiometer's three legs, from the left, to **3V3(OUT) (pin 36), GP26 (pin 31) and GND (pin 33)**
-3. Plug in USB and flash the program below
+Push it into the breadboard and connect it to the Pico with three jumper wires. How to push in the Pico, and the order of its pins, are the same as in "An external LED" in Chapter 7.
 
-4. Turn the knob and the value changes between 0 and 4095
+![How to push the potentiometer into the breadboard](images/en/pot-breadboard.svg)
+
+1. Unplug USB
+2. Push the potentiometer's three legs into a free spot below the groove, to the left of the Pico. Each leg should go into a different vertical column
+3. With jumper wires, connect the column of the left leg to **pin 36 (3V3(OUT))**, the middle leg to **pin 31 (GP26)**, and the right leg to **pin 28 (GND)**. All of them are in the bottom row (pin 21 at the left end, then 22, 23 … to the right)
+4. Plug in USB and flash the program below
+5. Turn the knob and the value changes between 0 and 4095
 
 ```cpp run
 #include <cstdio>

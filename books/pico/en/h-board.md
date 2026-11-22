@@ -338,6 +338,12 @@ The YF-S201 runs on 5 V, and its signal may also come out at 5 V. To keep 5 V of
 
 When the signal goes to 0 V, the pin is pulled low through the diode. When the signal is at 5 V, the diode blocks it, and the Pico's internal pull-up holds the pin at 3.3 V.
 
+Push the parts into the breadboard as follows. How to push in the Pico, and the order of its pins, are the same as in "An external LED" in Chapter 7.
+
+1. Push the diode's unbanded leg into a free hole in the column of pin 20 (GP15), and its banded leg into a free column to the left of the Pico
+2. If the sensor's wires end in a connector (female), push three male-male jumper wires into it to extend them
+3. Push yellow into the column of the diode's banded leg, red into the column of pin 40 (VBUS), and black into the column of pin 38 (GND). Pin 40 is at the right end of the bottom row, and pin 38 is third from the right
+
 ```cpp run
 #include <cstdio>
 #include "pico/stdlib.h"
@@ -396,7 +402,7 @@ The Pico measures temperature, humidity, THI and CO2. Counting cows with a camer
 
 ### Wiring
 
-The SHT31 and SCD41 are both I2C. Connect them side by side on the same four wires (Chapter 11).
+The SHT31 and SCD41 are both I2C. Connect them side by side on the same four wires (Chapter 11). Push them into the breadboard the same way as in "Wiring steps" in Chapter 9.
 
 | Pico | SHT31 and SCD41 |
 | --- | --- |
@@ -574,6 +580,12 @@ A cow in heat stands still when other cows mount her (standing heat). A pressure
 
 The harder it is pressed, the lower the FSR402's resistance and the higher the voltage at GP26.
 
+To try it on a desk, push the parts into the breadboard as follows.
+
+1. Push the FSR402's two legs into two free vertical columns to the left of the Pico. If they slip out easily, cover them with the female ends of male-female jumper wires to extend them
+2. With jumper wires, connect the column of one leg to the column of pin 36 (3V3(OUT)), and the column of the other leg to the column of pin 31 (GP26)
+3. Push one leg of the 10 kΩ resistor into the column of the leg connected to pin 31, and the other leg into a free column. Connect that column to the column of pin 33 (GND) with a wire
+
 ```cpp run
 #include <cstdio>
 #include "pico/stdlib.h"
@@ -695,6 +707,13 @@ Build it in two stages.
 - Connect the servos' red (+) and brown (−) to the 5 V 3 A adapter. Taking power from the Pico's 3V3 or VBUS stops the Pico. **Join the GND to the Pico's GND** so they share it
 - Wire the valve as 12 V + → valve → MOSFET module output. Across the valve's two wires, connect a 1N4007 diode with its banded end towards + (it protects the Pico from the voltage spike when the valve switches off)
 - For the first stage, connect an LED and a 330 Ω resistor to GP18 instead of the valve (Appendix G)
+
+Push the parts into the breadboard as follows. The pins you use (21 to 24) are the four at the left end of the bottom row.
+
+1. Use the bottom + / − rows only for the servos' 5 V (do not connect the Pico's 3V3). Fix male-male jumper wires in the screw terminals of the 5 V adapter's DC jack adapter, and push + into the bottom + row and − into the bottom − row
+2. Connect the column of the Pico's pin 23 (GND) to the bottom − row with a wire (so they share GND)
+3. Push three male-male jumper wires into each servo's connector (female) to extend it. Push orange into the columns of pin 21 (GP16) and pin 22 (GP17), red into the bottom + row, and brown into the bottom − row
+4. Push the female ends of male-female jumper wires onto the MOSFET module's signal (SIG or IN) and GND (if they are screw terminals, fix the male ends instead). Push the signal into the column of pin 24 (GP18), and GND into the bottom − row. Fix the valve and the 12 V wires in the module's output screw terminals
 
 ### The Pico program
 

@@ -161,11 +161,11 @@ If the small LED on the board blinks 10 times, it worked.
 
 ### An external LED
 
-Push an LED and a resistor into a breadboard and blink it in the same way. **No soldering is needed**. You just push the legs into the holes. Do the wiring **with USB unplugged**.
+Push an LED and a resistor into a breadboard and blink it in the same way. For the LED and the resistor, you just push the legs into the holes (no soldering). Do the wiring **with USB unplugged**.
 
 You need: a breadboard, 1 LED, 1 resistor (220 Ω–1 kΩ), and 1 jumper wire (male-male)
 
-> If your Pico has no pin headers (the legs that go into the breadboard), solder them on first (Chapter 9, "Attaching pin headers"). The Pico H and Pico WH come with them.
+> The Pico goes into the breadboard by its **pin headers** (the legs sticking out underneath). Just pushing pin headers into the Pico's holes does not connect them. If your Pico has none, solder them on first (Chapter 9, "Attaching pin headers"). The Pico H and Pico WH come with them.
 
 ![How to connect an external LED](images/en/led-circuit.svg)
 
@@ -174,7 +174,7 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 ![How to push the parts into the breadboard](images/en/led-breadboard.svg)
 
 1. Unplug USB
-2. Push the Pico in so it straddles the groove in the middle. With USB on the right, the left end of the top row is **pin 20 (GP15)**, and two to its right is **pin 18 (GND)**
+2. Push the Pico's **pin headers** in so they straddle the groove in the middle. With USB on the right, the top row starts with **pin 20 (GP15)** at the left end and goes 19, **18 (GND)** … to the right (the bottom row starts with pin 21 at the left end and goes 22, 23 … to the right)
 3. Push one leg of the resistor into a free hole in the same column as pin 20. Push the other leg into a free column to the left of the Pico
 4. Push the LED's **long leg (+)** into the same column as the resistor. Push the **short leg (−)** into the − row
 5. With a jumper wire, connect a free hole in the same column as pin 18 to the − row
@@ -266,7 +266,7 @@ The code you wrote stays in your VS Code project folder (`~/apps/blink` and so o
 ## Reading a button
 
 Some compatible boards have a user button (**USR**, often **GP24**). Flash the program below and press USR, and it shows "pressed".
-For an external button, connect one side of the button to a GPIO (for example GP14) and the other side to GND, and change `24` in the code to `14`.
+You can also try it with an external button (see "An external button" below).
 
 ```cpp run
 #include <cstdio>
@@ -289,6 +289,18 @@ int main() {
 
 `gpio_pull_up` is a setting that uses a resistor inside the Pico to fix the value at 1 when nothing is connected (explained with a figure in Chapter 8).
 `condition ? A : B` is a way of writing "A if the condition is true, otherwise B".
+
+### An external button
+
+A button (tactile switch) has four legs, connected in pairs inside. If you use **two diagonal legs**, you cannot get the direction wrong. As with the LED, you just push it into the breadboard.
+
+![How to push the button into the breadboard](images/en/button-breadboard.svg)
+
+1. Unplug USB
+2. Push the button into a free spot to the left of the Pico, straddling the groove in the middle
+3. With a jumper wire, connect the column of the button's top-left leg to the column of **pin 19 (GP14)**. Pin 19 is second from the left in the top row
+4. With a jumper wire, connect the column of the button's bottom-right leg to the column of **pin 23 (GND)**. Pin 23 is third from the left in the bottom row
+5. Change `24` to `14` in the program above and flash it. Press the button and "pressed" appears
 
 ### Lighting the LED with the button
 

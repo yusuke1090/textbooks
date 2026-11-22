@@ -30,7 +30,7 @@ These two are also candidates. How to connect them and the code are in the secti
 
 ## Connecting and reading the SHT31
 
-It can share the same I2C wires as the MPU-6050. Wire it with USB unplugged. Pin names differ between modules, so follow the markings on the product you bought.
+It can share the same I2C wires as the MPU-6050. Wire it with USB unplugged. Push it into the breadboard the same way as in "Wiring steps" in Chapter 9. Pin names differ between modules, so follow the markings on the product you bought.
 
 | Pico | SHT31 |
 | --- | --- |
@@ -97,6 +97,8 @@ Read it with analog input (ADC). The Pico's ADC goes only up to 3.3 V, so always
 | 3V3(OUT) (pin 36) | VCC |
 | GND (pin 38) | GND |
 | GP26 / ADC0 (pin 31) | AOUT |
+
+If the sensor's three wires end in female sockets, push male-male jumper wires into them to extend them, and push the other ends into the breadboard columns of the Pico's pins 36, 38 and 31. How to push in the Pico, and the order of its pins, are the same as in "An external LED" in Chapter 7.
 
 ```cpp run
 #include <algorithm>

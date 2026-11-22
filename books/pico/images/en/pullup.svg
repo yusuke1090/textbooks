@@ -47,6 +47,6 @@
 <line x1="650.0" y1="251" x2="670.0" y2="251" stroke="#2b2f36" stroke-width="2.5" stroke-linecap="round"/>
 <line x1="655.0" y1="257" x2="665.0" y2="257" stroke="#2b2f36" stroke-width="2.5" stroke-linecap="round"/>
 <text x="690" y="258" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">GND</text>
-<text x="20" y="290" font-size="12.5" text-anchor="start" font-weight="400" fill="#555c66">Pin(24, Pin.IN, Pin.PULL_UP): the resistor inside the Pico pulls it up to 3.3 V, so it is normally 1.</text>
+<text x="20" y="290" font-size="12.5" text-anchor="start" font-weight="400" fill="#555c66">gpio_pull_up(24): the resistor inside the Pico pulls it up to 3.3 V, so it is normally 1.</text>
 <text x="20" y="309" font-size="12.5" text-anchor="start" font-weight="400" fill="#555c66">Pressing the button connects it to GND (0 V), giving 0. Without the resistor, the value wanders when not pressed.</text>
 </svg>
