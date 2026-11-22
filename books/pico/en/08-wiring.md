@@ -74,7 +74,7 @@ Soldering them into the holes along the edges of the Pico (20 on each side) lets
 2. Push the pin headers into the breadboard **with the long side down**. Space the two strips to match the Pico's width, straddling the middle groove
 3. Place the Pico on top **with the chip side up**. The short side of the pins sticks out a little through the Pico's holes
 4. First solder only **two pins at opposite corners**. Check that the Pico is not tilted; if it is, reheat that pin and straighten it
-5. Solder the remaining pins one at a time
+5. Solder **all** the remaining pins too (40 in total), one at a time. Soldering the pins you do not use as well keeps the Pico steady and lets you use any pin later
    - Touch the iron tip to **both the pin and the metal around the hole (the pad)** and heat for 2–3 seconds
    - Then touch the solder there and let it melt in. Use enough to fill around the hole
    - **Remove the solder first, then remove the iron**
