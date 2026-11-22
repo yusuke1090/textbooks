@@ -285,6 +285,8 @@ View `printf` output in one of the following ways.
 
 **VS Code's Serial Monitor** (needs the Serial Monitor extension; Chapter 3)
 
+This is where the text your Pico program prints with `printf` shows up (`print()` in MicroPython). Output from the PC's terminal does not appear here.
+
 ![Serial Monitor (the numbers match the steps below; in this photo the Port says MicroPython)](images/serial-monitor.png)
 
 1. Open the **Serial Monitor** tab in the bottom panel (if you cannot see it, open View → Terminal first and look for it)

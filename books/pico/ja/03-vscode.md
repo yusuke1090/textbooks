@@ -285,6 +285,8 @@ Run を押すと、下の「ターミナル」に次のように出ます。**`T
 
 **VS Code の Serial Monitor**（拡張機能 Serial Monitor が必要。3章）
 
+ピコのプログラムが `printf` で出した文字が、そのまま流れてくる画面です（MicroPython なら `print()`）。PC 側のターミナルの出力は出ません。
+
 ![Serial Monitor（番号は下の手順。この写真では Port が MicroPython になっている）](images/serial-monitor.png)
 
 1. 下の欄の **Serial Monitor** タブを開く（なければ、表示 → ターミナルを開いてから探す）
