@@ -27,5 +27,5 @@
 <line x1="520" y1="142" x2="520" y2="200" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
 <line x1="520" y1="200" x2="196" y2="200" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
 <text x="494" y="134" font-size="14" text-anchor="end" font-weight="700" fill="#d93a3a">LED</text>
-<text x="30" y="250.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">LEDs have a direction. Without a resistor, the LED or the Pico can be damaged. In the program, use Pin(15, Pin.OUT).</text>
+<text x="30" y="250.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">LEDs have a direction. Without a resistor, the LED or the Pico can be damaged.</text>
 </svg>

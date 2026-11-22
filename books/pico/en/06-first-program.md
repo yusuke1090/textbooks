@@ -161,15 +161,24 @@ If the small LED on the board blinks 10 times, it worked.
 
 ### An external LED
 
-Connect an LED and a resistor on a breadboard and blink it in the same way. Do the wiring **with USB unplugged**.
+Push an LED and a resistor into a breadboard and blink it in the same way. **No soldering is needed**. You just push the legs into the holes. Do the wiring **with USB unplugged**.
+
+You need: a breadboard, 1 LED, 1 resistor (220 Ω–1 kΩ), and 1 jumper wire (male-male)
+
+> If your Pico has no pin headers (the legs that go into the breadboard), solder them on first (Chapter 9, "Attaching pin headers"). The Pico H and Pico WH come with them.
 
 ![How to connect an external LED](images/en/led-circuit.svg)
 
+Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) and **each − row (the whole horizontal row)** are connected. Legs pushed into the same column are connected without any wire.
+
+![How to push the parts into the breadboard](images/en/led-breadboard.svg)
+
 1. Unplug USB
-2. Connect the Pico's **GP15 (pin 20)** to a resistor (220 Ω–1 kΩ)
-3. Connect the other end of the resistor to the LED's **long leg (+)**
-4. Connect the LED's **short leg (−)** to the Pico's **GND (pin 18)**
-5. Plug in USB and flash the program below
+2. Push the Pico in so it straddles the groove in the middle. With USB on the right, the left end of the top row is **pin 20 (GP15)**, and two to its right is **pin 18 (GND)**
+3. Push one leg of the resistor into a free hole in the same column as pin 20. Push the other leg into a free column to the left of the Pico
+4. Push the LED's **long leg (+)** into the same column as the resistor. Push the **short leg (−)** into the − row
+5. With a jumper wire, connect a free hole in the same column as pin 18 to the − row
+6. Plug in USB and flash the program below
 
 ```cpp run
 #include "pico/stdlib.h"
@@ -193,7 +202,7 @@ int main() {
 
 `!` means "the opposite". It reads the current state with `gpio_get` and outputs the opposite value.
 
-If it does not light, check the LED's direction (the long leg on the GP15 side) and the pin number (physical pin 20 = GP15).
+If it does not light, check the LED's direction (the long leg on the resistor side), the pin number (physical pin 20 = GP15), and that the legs are pushed all the way into the holes.
 How to read pin numbers is explained in Chapter 8, and how to use a breadboard in Chapter 9.
 
 ### RGB LED (only on boards that have one)

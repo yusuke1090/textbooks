@@ -134,7 +134,6 @@
  "こちらを GP15 側に": "to the GP15 side",
  "短い足（−）": "Short leg (−)",
  "こちらを GND 側に": "to the GND side",
- "LED には向きがあります。抵抗を入れないと、LED やピコが壊れることがあります。プログラムでは Pin(15, Pin.OUT) で使います。": "LEDs have a direction. Without a resistor, the LED or the Pico can be damaged. In the program, use Pin(15, Pin.OUT).",
  "① 集める": "① Collect",
  "加速度を2秒ごとに": "Acceleration every 2 s",
  "特徴量にまとめ": "summarized into features",
@@ -399,5 +398,8 @@
  "合図": "Signals",
  "時計": "Clock",
  "データ 8本": "Data (8 wires)",
- "基板の名前が D2〜D9 のときは、D2 を GP14、D9 を GP21 につなぎます。": "If the board says D2–D9, connect D2 to GP14 and D9 to GP21."
+ "基板の名前が D2〜D9 のときは、D2 を GP14、D9 を GP21 につなぎます。": "If the board says D2–D9, connect D2 to GP14 and D9 to GP21.",
+ "LED には向きがあります。抵抗を入れないと、LED やピコが壊れることがあります。": "LEDs have a direction. Without a resistor, the LED or the Pico can be damaged.",
+ "ブレッドボードへの差し方": "How to push the parts into the breadboard",
+ "番号は本文の手順（② ピコ　③ 抵抗　④ LED　⑤ ワイヤー）。黄色の所は、中でつながっている穴": "Numbers are the steps in the text (② Pico, ③ resistor, ④ LED, ⑤ wire). Yellow holes are connected inside"
 }
