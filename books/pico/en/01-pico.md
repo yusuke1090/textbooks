@@ -72,14 +72,14 @@ This is an example of a compatible board with USB Type-C. On the official Pico, 
 | **LED** | A small lamp you can turn on and off from your program |
 | **RGB LED** | An LED that mixes red, green and blue to light in many colors |
 | **RP2040** | The brain of the board (the microcontroller chip) |
-| **Pins** | 20 on each side, 40 in total. Connect sensors and other parts (explained in Chapter 8) |
+| **Pins** | 20 on each side, 40 in total. Connect sensors and other parts (explained in Chapter 9) |
 
 ## The three buttons (BOOT, USR, RST)
 
 | Button | Name | Role |
 | --- | --- | --- |
 | **BOOT** | Boot button (BOOTSEL) | Starting up while holding it enters flashing mode, and the PC sees the board as a USB drive called "RPI-RP2". Copying a .uf2 file to it flashes the program |
-| **USR** | User button | A button you can use freely in your own program. On many boards it is connected to **GP24** (0 when pressed, 1 when released). Chapter 7 explains how to read it |
+| **USR** | User button | A button you can use freely in your own program. On many boards it is connected to **GP24** (0 when pressed, 1 when released). Chapter 8 explains how to read it |
 | **RST** | Reset button | Press it to restart the Pico. The same as unplugging and replugging USB. The flashed program starts again from the beginning |
 
 ### Entering flashing mode (BOOTSEL)
@@ -133,7 +133,7 @@ In this guide, Appendix E explains how to use it as a tool for quickly checking 
 | --- | --- | --- |
 | Making a product | **Suited** | Not suited |
 | Speed | Fast | Slow |
-| Battery life | Can be long (fine control of power-saving features; Chapter 16) | Shorter |
+| Battery life | Can be long (fine control of power-saving features; Chapter 17) | Shorter |
 | Reliability | You can plan memory use, so it is easier to run stably for a long time | Can stop because of things like running out of memory |
 | Flashing | Just flash one `.uf2` (easy for mass production) | Install MicroPython, then put `.py` files on it |
 | Trying things | Building and flashing take about 10 seconds | Runs immediately. One line at a time in the REPL |

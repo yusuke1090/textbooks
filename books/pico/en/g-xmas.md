@@ -14,7 +14,7 @@ The program is written in C++, written to the Pico from VS Code (Chapter 4), and
 | 100 Ω resistors | 6 | For the green, blue and white LEDs |
 | Breadboard | 1 | 830 holes |
 | Jumper wires (male-male) | 11 | Flexible ones, long enough to reach the far LEDs |
-| Pin headers | 2 × 20 pins | Often come with the Pico. Soldering is in Chapter 9 |
+| Pin headers | 2 × 20 pins | Often come with the Pico. Soldering is in Chapter 7 |
 | USB cable | 1 | One that can carry data. Match the Pico's port (USB-C or micro-USB) |
 | Battery box | 1 | 3 × AA, with a switch |
 | AA batteries | 3 | Alkaline |
@@ -166,7 +166,7 @@ void twinkle(int seconds = 15) {
 int main() {
     stdio_init_all();
     for (uint pin : PINS) {
-        gpio_set_function(pin, GPIO_FUNC_PWM);         // use the pin for PWM (Chapter 8)
+        gpio_set_function(pin, GPIO_FUNC_PWM);         // use the pin for PWM (Chapter 9)
         uint slice = pwm_gpio_to_slice_num(pin);
         pwm_set_clkdiv(slice, 125.0f);                 // 125 MHz / 125 / 1000 = 1 kHz
         pwm_set_wrap(slice, 999);
@@ -189,7 +189,7 @@ int main() {
 | `fade()` | Fade in, then fade out |
 | `twinkle()` | Twinkle at random |
 
-- The brightness is set with **PWM** (Chapter 8). The pin switches on and off 1000 times a second, and `pwm_set_gpio_level()` sets how much of the time it is on. With `wrap` at 999, 0 is off and 1000 is brightest
+- The brightness is set with **PWM** (Chapter 9). The pin switches on and off 1000 times a second, and `pwm_set_gpio_level()` sets how much of the time it is on. With `wrap` at 999, 0 is off and 1000 is brightest
 - `light()` squares the 0–100 brightness before turning it into 0–1000. With a straight proportion, the LEDs seem to jump up suddenly at the dim end
 - Two GP pins share one PWM circuit (slice), so GP0–GP9 use five slices. Setting the same slice twice does no harm
 - The `while (true)` at the end repeats the four patterns in turn (about 35 seconds per round)

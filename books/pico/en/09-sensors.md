@@ -1,6 +1,6 @@
-# 10. Reading sensors
+# 11. Reading sensors
 
-This assumes you have done the wiring and I2C scan in Chapter 9.
+This assumes you have done the wiring and I2C scan in Chapter 10.
 
 > The programs in this chapter use I2C. Add `hardware_i2c` to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 5).
 
@@ -294,7 +294,7 @@ temp 24.32 C  pressure 1008.51 hPa  altitude (approx.) 39.5 m
 
 ## Taking data at fixed intervals
 
-In machine learning (Chapter 15), it is important to take data at **fixed intervals**, such as "25 times a second".
+In machine learning (Chapter 16), it is important to take data at **fixed intervals**, such as "25 times a second".
 With `time.sleep(0.02)` alone, the interval drifts by the time the reading takes.
 
 ![Two ways to measure at fixed intervals](images/en/sampling.svg)
@@ -335,9 +335,9 @@ int main() {
 - `get_absolute_time()` is the time since the Pico started. `to_ms_since_boot` turns it into a number of milliseconds
 - `sleep_until` waits after subtracting the time taken by reading and `printf`, so the interval does not drift
 - Printing (`printf`) takes time, so it only prints once every 10 times
-- In C++, this way of writing keeps up to about 500 Hz. For more accuracy, use a timer interrupt (Chapter 13)
+- In C++, this way of writing keeps up to about 500 Hz. For more accuracy, use a timer interrupt (Chapter 14)
 
-Which sensors to buy is summarized in the next chapter, Chapter 11.
+Which sensors to buy is summarized in the next chapter, Chapter 12.
 
 ## Summary
 

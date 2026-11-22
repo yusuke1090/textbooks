@@ -5,12 +5,12 @@
 <rect x="20" y="50" width="165" height="96" rx="8" fill="#eef4ff" stroke="#2f6fde" stroke-width="2"/>
 <text x="102.5" y="85.1" font-size="15" text-anchor="middle" font-weight="700" fill="#2b2f36">① Measure</text>
 <text x="102.5" y="106.5" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">Collar sensors</text>
-<text x="102.5" y="123.9" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">Accel, pressure (Ch. 9–10)</text>
+<text x="102.5" y="123.9" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">Accel, pressure (Ch. 10–11)</text>
 <line x1="187" y1="98" x2="201" y2="98" stroke="#8a919c" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-8a919c)"/>
 <rect x="205" y="50" width="165" height="96" rx="8" fill="#e7f4ec" stroke="#1f7a3d" stroke-width="2"/>
 <text x="287.5" y="85.1" font-size="15" text-anchor="middle" font-weight="700" fill="#2b2f36">② Record, classify</text>
 <text x="287.5" y="106.5" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">The Pico makes features</text>
-<text x="287.5" y="123.9" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">and classifies (Ch. 15)</text>
+<text x="287.5" y="123.9" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">and classifies (Ch. 16)</text>
 <line x1="372" y1="98" x2="386" y2="98" stroke="#8a919c" stroke-width="3" stroke-linecap="round" marker-end="url(#ah-8a919c)"/>
 <rect x="390" y="50" width="165" height="96" rx="8" fill="#fff6e0" stroke="#e0a800" stroke-width="2"/>
 <text x="472.5" y="85.1" font-size="15" text-anchor="middle" font-weight="700" fill="#2b2f36">③ Send</text>

@@ -1,4 +1,4 @@
-# 14. Recording and sending data
+# 15. Recording and sending data
 
 ## Comparing the methods
 
@@ -36,7 +36,7 @@ Here, **the last 256 KB** of flash is used for records. The program is placed fr
 
 ### Recording
 
-Using the MPU-6050 (the wiring from Chapters 9–10), record the acceleration every 0.1 seconds. One entry (one record) is 16 bytes, and 16 fit in one page.
+Using the MPU-6050 (the wiring from Chapters 10–11), record the acceleration every 0.1 seconds. One entry (one record) is 16 bytes, and 16 fit in one page.
 
 ```cpp run
 #include <cstdio>
@@ -110,7 +110,7 @@ int main() {
 | `flash_range_program(place, data, size)` | Writes. Size is a multiple of 256 |
 | `save_and_disable_interrupts()` | Stops interrupts. If other code reads flash while it is being written, it stops. Stopping for long drops USB, so do it a little at a time |
 
-> When using both cores, the other core must also be stopped (`multicore_lockout`, Chapter 13).
+> When using both cores, the other core must also be stopped (`multicore_lockout`, Chapter 14).
 
 ### Bringing it to the PC
 
@@ -261,7 +261,7 @@ void measure() {
 ```
 
 - Keep data in arrays whose size is fixed at the start (`float samples[N]`)
-- When a certain amount has built up, save or send it and start using the array again from the beginning (a ring buffer, Chapter 13)
+- When a certain amount has built up, save or send it and start using the array again from the beginning (a ring buffer, Chapter 14)
 
 > **The difference between RAM and flash**: RAM is the workspace while running (264 KB, erased when the power is off).
 > Flash is where the program and records are kept (2 MB, kept when the power is off).

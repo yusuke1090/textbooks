@@ -13,16 +13,16 @@
 
 ### Example: IoT for monitoring cow behavior
 
-Suppose you put a Pico and an accelerometer on a collar to measure a cow's movement. Chapters 7–15 of this guide follow this flow.
+Suppose you put a Pico and an accelerometer on a collar to measure a cow's movement. Chapters 8–16 of this guide follow this flow.
 
 ![The flow of IoT for monitoring cow behavior](images/en/iot-system.svg)
 
-1. **Measure**: measure neck movement with an accelerometer, and changes in head height with a pressure sensor (Chapters 9 and 10)
-2. **Record and classify**: summarize and save the data at regular intervals (Chapter 14), and classify "walking", "eating", "ruminating", "resting" and so on with machine learning (Chapter 15)
+1. **Measure**: measure neck movement with an accelerometer, and changes in head height with a pressure sensor (Chapters 10 and 11)
+2. **Record and classify**: summarize and save the data at regular intervals (Chapter 15), and classify "walking", "eating", "ruminating", "resting" and so on with machine learning (Chapter 16)
 3. **Send**: send the results with a WiFi board (Pico W and others) or LoRa
 4. **Collect and view**: collect them in the cloud or on a PC, make graphs, and report anything unusual
 
-The order for actually building it is summarized in Chapter 17.
+The order for actually building it is summarized in Chapter 18.
 
 If classification is done on the microcontroller, the data sent changes from "raw acceleration" to "the kind of behavior", saving a lot of data and battery.
 
@@ -51,16 +51,16 @@ These are the parts used to work through the whole guide. Search online shops fo
 | Part | Chapters | Note |
 | --- | --- | --- |
 | Raspberry Pi Pico (or a compatible board) | All | With pin headers (Pico H and others), no soldering is needed |
-| Debug Probe | 4, 17 | Lets you stop at a line and investigate. You can develop without it |
+| Debug Probe | 5, 19 | Lets you stop at a line and investigate. You can develop without it |
 | A USB cable that supports data | All | Match the board's connector (micro-B or Type-C) |
-| Breadboard | 6–9 | About 400 or 830 holes |
-| Jumper wires (male–male) | 6–9 | A set with various colors |
-| LEDs and resistors (220 Ω–1 kΩ) | 6, 7 | Often included in beginner electronics kits |
-| Tactile switches (push buttons) | 6, 7 | Not needed if the board has a USR button |
-| Potentiometer (variable resistor, 10 kΩ) | 7 | For practicing analog input |
-| MPU-6050 module (GY-521) | 8, 9, 13, 14 | Accelerometer and gyro sensor |
-| BMP280 module | 8, 9 | Pressure and temperature sensor |
-| Soldering iron set | 8 | Only if pin headers are not attached |
+| Breadboard | 7–11 | About 400 or 830 holes |
+| Jumper wires (male–male) | 7–11 | A set with various colors |
+| LEDs and resistors (220 Ω–1 kΩ) | 8, 9 | Often included in beginner electronics kits |
+| Tactile switches (push buttons) | 8, 9 | Not needed if the board has a USR button |
+| Potentiometer (variable resistor, 10 kΩ) | 9 | For practicing analog input |
+| MPU-6050 module (GY-521) | 10, 11, 15, 16 | Accelerometer and gyro sensor |
+| BMP280 module | 10, 11 | Pressure and temperature sensor |
+| Soldering iron set | 7 | Only if pin headers are not attached |
 
 > Even without parts, you can try a Pico and sensors in the browser on a site called [Wokwi](https://wokwi.com/).
 
@@ -91,7 +91,7 @@ These are the parts used to work through the whole guide. Search online shops fo
 ### Hardware documents
 
 - [Raspberry Pi Pico datasheet (PDF)](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf)
-  — The pinout and power specifications (Chapter 8)
+  — The pinout and power specifications (Chapter 9)
 - [RP2040 datasheet (PDF)](https://datasheets.raspberrypi.com/rp2040/rp2040-datasheet.pdf)
   — Detailed specifications of the chip. For looking up details such as the ADC, PWM, PIO and low power
 - [Debug Probe](https://www.raspberrypi.com/documentation/microcontrollers/debug-probe.html) — The official debugging tool (Chapter 5)
@@ -102,7 +102,7 @@ These are the parts used to work through the whole guide. Search online shops fo
   — Wiring and usage for each sensor. Search by model number
 - [Wokwi](https://wokwi.com/) — A simulator for trying a Pico and sensors in the browser
 
-### Machine learning (used in Chapter 15)
+### Machine learning (used in Chapter 16)
 
 - [emlearn](https://github.com/emlearn/emlearn)
   — Converts scikit-learn models into C code

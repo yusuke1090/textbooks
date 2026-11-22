@@ -58,7 +58,7 @@ Male–female wires are also on AliExpress (**dupont wire male female 10cm**, ab
 | Wire | Job |
 | --- | --- |
 | 3.3V, GND | Power |
-| SIOC, SIOD | Write the camera's settings. Works the same way as I2C (Chapter 9) |
+| SIOC, SIOD | Write the camera's settings. Works the same way as I2C (Chapter 10) |
 | XCLK | The clock the Pico sends to the camera (10 million ticks a second). The camera does not work without it |
 | VSYNC, HREF, PCLK | Signals for "a picture starts", "a line starts" and "next byte" |
 | D0–D7 | The picture data. Eight wires send one byte at a time |
@@ -410,7 +410,7 @@ Saved: photos/20261121_093015.jpg
 
 ![A crow](images/h-crow.jpg)
 
-- Point the camera where crows come, by a window for example, and run it with `AUTO_SAVE = 10` to collect pictures. Sorting them into folders of pictures with and without crows gives you the labels for training (Chapter 15)
+- Point the camera where crows come, by a window for example, and run it with `AUTO_SAVE = 10` to collect pictures. Sorting them into folders of pictures with and without crows gives you the labels for training (Chapter 16)
 - A program that spots crows will pass the `img` received by `get_photo()` to a trained model. The Pico side stays exactly as it is
 - To use it in the barn, plug it into the Raspberry Pi from Appendix H over USB instead of the PC. `camera_view.py` runs unchanged on the Raspberry Pi
 

@@ -1,4 +1,4 @@
-# 7. Your first programs
+# 8. Your first programs
 
 This assumes you have created a VS Code project and flashed the blinking LED in Chapter 4.
 For every program in this chapter, "Copy" it, replace the contents of the `.cpp` in your VS Code project, and try it with **Compile Project → Run Project (USB)**. View the output in Serial Monitor or Pico Studio (Chapter 4).
@@ -165,7 +165,7 @@ Push an LED and a resistor into a breadboard and blink it in the same way. For t
 
 You need: a breadboard, 1 LED, 1 resistor (220 Ω–1 kΩ), and 1 jumper wire (male-male)
 
-> The Pico goes into the breadboard by its **pin headers** (the legs sticking out underneath). Just pushing pin headers into the Pico's holes does not connect them. If your Pico has none, solder them on first (Chapter 9, "Attaching pin headers"). The Pico H and Pico WH come with them.
+> The Pico goes into the breadboard by its **pin headers** (the legs sticking out underneath). Just pushing pin headers into the Pico's holes does not connect them. If your Pico has none, solder them on first (Chapter 7, "Attaching pin headers"). The Pico H and Pico WH come with them.
 
 ![How to connect an external LED](images/en/led-circuit.svg)
 
@@ -203,7 +203,7 @@ int main() {
 `!` means "the opposite". It reads the current state with `gpio_get` and outputs the opposite value.
 
 If it does not light, check the LED's direction (the long leg on the resistor side), the pin number (physical pin 20 = GP15), and that the legs are pushed all the way into the holes.
-How to read pin numbers is explained in Chapter 8, and how to use a breadboard in Chapter 9.
+How to read pin numbers is explained in Chapter 9.
 
 ### RGB LED (only on boards that have one)
 
@@ -287,7 +287,7 @@ int main() {
 }
 ```
 
-`gpio_pull_up` is a setting that uses a resistor inside the Pico to fix the value at 1 when nothing is connected (explained with a figure in Chapter 8).
+`gpio_pull_up` is a setting that uses a resistor inside the Pico to fix the value at 1 when nothing is connected (explained with a figure in Chapter 9).
 `condition ? A : B` is a way of writing "A if the condition is true, otherwise B".
 
 ### An external button

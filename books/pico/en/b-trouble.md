@@ -47,7 +47,7 @@ When there are many errors, fix them **starting from the top one**.
 | `expected '}' at end of input` | The numbers of `{` and `}` do not match |
 | `invalid conversion from 'const char*' to 'char*'` | The types do not match. Add `const` |
 | `narrowing conversion` | The type does not match when initializing with `{}`. Convert with `static_cast<type>(value)` |
-| `region 'RAM' overflowed` | Not enough memory. Make large arrays smaller (Chapters 14 and 12) |
+| `region 'RAM' overflowed` | Not enough memory. Make large arrays smaller (Chapters 15 and 13) |
 | Pico Studio's "C++ development environment" has a ✗ | Install what is missing (Chapter 3). The SDK and compiler are installed when you create your first project in VS Code |
 
 ### When it behaves strangely after flashing
@@ -55,14 +55,14 @@ When there are many errors, fix them **starting from the top one**.
 | Symptom | Fix |
 | --- | --- |
 | Nothing appears in the output box | Do you call `stdio_init_all()`? Output right after start-up is lost, so put `sleep_ms(1500)` at the start |
-| It stops partway, or the Pico does not respond | Are you writing outside an array, or making a large array inside a function (the stack overflows; Chapter 14)? With a watchdog, it restarts automatically when it hangs (Chapter 16) |
+| It stops partway, or the Pico does not respond | Are you writing outside an array, or making a large array inside a function (the stack overflows; Chapter 15)? With a watchdog, it restarts automatically when it hangs (Chapter 17) |
 | The next flash cannot be done automatically | The previous program does not call `stdio_init_all()`, or it has stopped. Hold BOOT while reconnecting USB |
-| A sensor value stays at 0 | Check the return value (a negative number from `i2c_read_blocking` is an error). The wiring and the I2C scan (Chapter 9) |
+| A sensor value stays at 0 | Check the return value (a negative number from `i2c_read_blocking` is an error). The wiring and the I2C scan (Chapter 10) |
 | Decimal calculations are slow | Use `float`, not `double`. Put `f` on numbers (`3.3f`). Use `sqrtf`, not `sqrt` |
-| The LED does not light | Check the pin number (25 on the official Pico; see the documentation for compatible boards). On the Pico W, `cyw43_arch_gpio_put` (Chapter 7). For an external LED, its direction (long leg is +) and the resistor |
+| The LED does not light | Check the pin number (25 on the official Pico; see the documentation for compatible boards). On the Pico W, `cyw43_arch_gpio_put` (Chapter 8). For an external LED, its direction (long leg is +) and the resistor |
 | A sensor value never changes | Did you forget the setting that wakes the sensor (0 to 0x6B for the MPU-6050)? |
 | Values jump around a lot | Shorten the wiring, connect GND firmly, read several times and average |
-| The button value jumps around | Did you forget `gpio_pull_up` (Chapter 8)? |
+| The button value jumps around | Did you forget `gpio_pull_up` (Chapter 9)? |
 
 > When you cannot find the cause, stopping and investigating with a Debug Probe is quick (Chapter 5).
 
@@ -106,7 +106,7 @@ For when you want to erase all of flash and start fresh (for example, when setti
 
 1. Download [flash_nuke.uf2](https://datasheets.raspberrypi.com/soft/flash_nuke.uf2)
 2. Connect while holding the BOOT button and copy flash_nuke.uf2 to "RPI-RP2" (Pico Studio's ".uf2 ファイルを選ぶ" also works)
-3. All of flash is erased (the flash records and settings from Chapters 14 and 16 are erased too)
+3. All of flash is erased (the flash records and settings from Chapters 15 and 17 are erased too)
 4. Flash the program again with VS Code's Run Project (USB)
 
 ## Tips for looking things up

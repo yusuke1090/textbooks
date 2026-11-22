@@ -25,7 +25,7 @@
 - **1つの製品（プログラム）が、1つのプロジェクト**です。プロジェクトは1つのフォルダで、GitHub では1つのリポジトリにします
 - 場所は **`~/apps/名前`**（例: `~/apps/collar`）にそろえます。New C/C++ Project の Location で `~/apps` を選ぶと、その中に名前のフォルダができます
 - **順番は「VS Code で作る → GitHub に置く」** です。拡張機能がフォルダとファイル（`.gitignore` も）を作るので、先に作ってから GitHub に置くほうが簡単です
-- このガイドの7〜16章を試す**練習用**は、`~/apps/pico-practice` のようなプロジェクトを1つ作り、章ごとに `.cpp` の中身を置き換えて試すのが手軽です（GitHub に置かなくてもかまいません）
+- このガイドの8〜17章を試す**練習用**は、`~/apps/pico-practice` のようなプロジェクトを1つ作り、章ごとに `.cpp` の中身を置き換えて試すのが手軽です（GitHub に置かなくてもかまいません）
 - 製品のプログラムは、練習用とは別にプロジェクトを作って、GitHub に置きます
 
 ターミナルで作業するときも、このフォルダにいます。VS Code の中のターミナル（表示 → ターミナル）は、最初からプロジェクトのフォルダで開きます。
@@ -44,7 +44,7 @@
 | ④ | Pico SDK version | SDK のバージョン。いちばん新しいものでよい |
 | ⑤ | Features | 使う機能（SPI、I2C、UART、PIO、DMA、HW watchdog、HW timer、HW clocks など）。選ぶと `CMakeLists.txt` にライブラリが足され、使い方の例のコードも入る。あとから足すこともできる |
 | ⑥ | Stdio support | **Console over USB に ☑**。`printf` が USB で PC に届く。Console over UART の ☑ は外してよい |
-| ⑦ | Code generation options | **Generate C++ code に ☑**（`.cpp` ができる）。**Use project name as entry point file name も ☑ のまま**（`blink.cpp` ができる。☐ だと `main.cpp` になる）。Run the program from RAM rather than flash、Enable C++ exceptions と RTTI は ☐ のまま（12章） |
+| ⑦ | Code generation options | **Generate C++ code に ☑**（`.cpp` ができる）。**Use project name as entry point file name も ☑ のまま**（`blink.cpp` ができる。☐ だと `main.cpp` になる）。Run the program from RAM rather than flash、Enable C++ exceptions と RTTI は ☐ のまま（13章） |
 | ⑧ | Debugger | Debug Probe を使うなら **DebugProbe (CMSIS-DAP)**（そのままでよい） |
 
 最後に **Create** を押します。VS Code が、できたプロジェクトのフォルダを開き直します。
@@ -149,7 +149,7 @@ code collar
 
 VS Code でフォルダを開き、Compile と Run を押せば、続きから開発できます（その PC に拡張機能がまだなければ、3章の手順で入れます。必要な SDK などは、拡張機能がダウンロードします）。
 
-非公開のリポジトリをクローンするには、その PC でも GitHub にログインしておく必要があります（`gh auth login` か、SSH キーの登録）。SSH キーを登録したら、URL は `git@github.com:ユーザー名/collar.git` にします。ラズパイや Jetson で取ってくるだけのときは、読むだけの鍵（デプロイキー）にできます。くわしくは [GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) の8章です。
+非公開のリポジトリをクローンするには、その PC でも GitHub にログインしておく必要があります（`gh auth login` か、SSH キーの登録）。SSH キーを登録したら、URL は `git@github.com:ユーザー名/collar.git` にします。ラズパイや Jetson で取ってくるだけのときは、読むだけの鍵（デプロイキー）にできます。くわしくは [GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) の9章です。
 
 ## ③ 書く（Lチカ）
 
@@ -176,12 +176,12 @@ int main() {
 }
 ```
 
-中身の意味は7章で説明します。
+中身の意味は8章で説明します。
 
 - 関数名を打ち始めると、候補が出ます（補完）。`gpio_` まで打つと、GPIO の関数の一覧が出ます
 - まちがいがあると、**ビルドする前に**赤い波線が出ます
 
-> ②の Board type が Pico W のときは、LED の点け方が違います（7章）。ふつうの Pico（RP2040）と Pico 2 は、このままで動きます。
+> ②の Board type が Pico W のときは、LED の点け方が違います（8章）。ふつうの Pico（RP2040）と Pico 2 は、このままで動きます。
 
 ## ④ ビルドする
 
@@ -325,11 +325,11 @@ Monitor Mode・View Mode・Line ending は、そのままでかまいません�
 保存（Ctrl + S）→ Compile → Run と進めると、LED が速く点滅し、Serial Monitor の `LED ON` / `LED OFF` も速く流れます。
 これが、ふだんの開発のくり返しです。
 
-### 7章から先のコードを試すとき
+### 8章から先のコードを試すとき
 
 - 練習用のプロジェクト（`~/apps/pico-practice` など）の `.cpp` の中身を置き換えて試します
 - I2C などを使うコードは、`target_link_libraries` にライブラリを足します（5章の表）
-- 10章の `mpu6050.h` など、Pico Studio に入っているヘッダーを使うときは、プロジェクトのフォルダにコピーします
+- 11章の `mpu6050.h` など、Pico Studio に入っているヘッダーを使うときは、プロジェクトのフォルダにコピーします
 
 ```bash
 # blink のところは、自分のプロジェクトの名前にする

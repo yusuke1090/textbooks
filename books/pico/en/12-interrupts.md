@@ -1,6 +1,6 @@
-# 13. Interrupts, timers and two cores
+# 14. Interrupts, timers and two cores
 
-This assumes you understand the "no-waiting style" in Chapter 12.
+This assumes you understand the "no-waiting style" in Chapter 13.
 
 ## What is an interrupt?
 
@@ -78,7 +78,7 @@ In the handler, **only read values and put them in variables or buffers**; do th
 
 ## Acting precisely at fixed intervals
 
-In Chapter 10, the interval was kept even with `sleep_until`, but if other work in the loop (classification or sending) takes time, the next measurement is late.
+In Chapter 11, the interval was kept even with `sleep_until`, but if other work in the loop (classification or sending) takes time, the next measurement is late.
 With a **repeating timer**, a function is called at fixed intervals even while other work is going on.
 
 The following program reads the MPU-6050 at 100 Hz (every 10 ms), and `main` prints the average every second.
@@ -256,13 +256,13 @@ critical_section_exit(&lock);
 
 - Use `printf` from only one core. If both use it, characters can get mixed up
 - Do not use the same I2C unit from both cores. Leave the sensors to one core
-- When writing to flash (Chapters 14 and 16), the other core must also be stopped. Call `multicore_lockout_victim_init()` on core 1, and on the writing side, wrap the write with `multicore_lockout_start_blocking()` and `multicore_lockout_end_blocking()`
+- When writing to flash (Chapters 15 and 17), the other core must also be stopped. Call `multicore_lockout_victim_init()` on core 1, and on the writing side, wrap the write with `multicore_lockout_start_blocking()` and `multicore_lockout_end_blocking()`
 
 ## Which to use
 
 | What you want to do | Method |
 | --- | --- |
-| Move several things forward at roughly regular intervals | The state machine in Chapter 12 (look at the time and move on) |
+| Move several things forward at roughly regular intervals | The state machine in Chapter 13 (look at the time and move on) |
 | Never miss a button or sensor signal | GPIO interrupts |
 | Measure precisely at fixed intervals | A repeating timer + a ring buffer |
 | Truly run heavy computation (such as classification) and measurement at the same time | The two cores |

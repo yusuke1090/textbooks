@@ -3,9 +3,9 @@
 
     python3 tools/make_breadboard_figures.py
 
-- books/pico/images/led-breadboard.svg     7章 外付けの LED
-- books/pico/images/button-breadboard.svg  7章 外付けのボタン
-- books/pico/images/pot-breadboard.svg     8章 ボリューム
+- books/pico/images/led-breadboard.svg     8章 外付けの LED
+- books/pico/images/button-breadboard.svg  8章 外付けのボタン
+- books/pico/images/pot-breadboard.svg     9章 ボリューム
 作り直したら python3 tools/translate_figures.py pico で英語の図も作り直す。
 
 ピンの番号と列: 上の列は 20番が 11列で、右へ 19、18 … 1番（30列）。下の列は 21番が 11列で、右へ 22 … 40番（30列）。
@@ -91,7 +91,7 @@ def note(s):
 
 
 def led():
-    """7章 外付けの LED: GP15（20番）→ 抵抗 → LED → − の列 ← GND（18番）"""
+    """8章 外付けの LED: GP15（20番）→ 抵抗 → LED → − の列 ← GND（18番）"""
     b = board(cols=[(7, "top"), (11, "top"), (13, "top")], rails=[TOP_MINUS])
     b += pico([(18, "GND（18番）", 0, "start"), (20, "GP15（20番）", 1, "start")])
     # 抵抗: 11列の b と 7列の b
@@ -123,7 +123,7 @@ def led():
 
 
 def button():
-    """7章 外付けのボタン: 溝をまたいで差し、対角の足を GP14（19番）と GND（23番）へ"""
+    """8章 外付けのボタン: 溝をまたいで差し、対角の足を GP14（19番）と GND（23番）へ"""
     b = board(cols=[(4, "top"), (12, "top"), (6, "bottom"), (13, "bottom")])
     b += pico([(19, "GP14（19番）", 0, "start"), (23, "GND（23番）", 0, "start")])
     # ボタン: 足は 4列と 6列の e・f
@@ -144,7 +144,7 @@ def button():
 
 
 def pot():
-    """8章 ボリューム: 足は 4・6・8列の f。左 → 36番、真ん中 → 31番（GP26）、右 → 28番（GND）"""
+    """9章 ボリューム: 足は 4・6・8列の f。左 → 36番、真ん中 → 31番（GP26）、右 → 28番（GND）"""
     b = board(cols=[(4, "bottom"), (6, "bottom"), (8, "bottom"), (18, "bottom"), (21, "bottom"), (26, "bottom")])
     b += pico([(28, "GND（28番）", 0, "end"), (31, "GP26（31番）", 0, "start"), (36, "3V3(OUT)（36番）", 1, "end")],
               name_dx=-30, name_dy=-6)

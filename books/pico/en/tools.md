@@ -40,7 +40,7 @@ Parts (LEDs, resistors, sensors) are listed under "What you need" in each chapte
 
 - A board where you build a circuit just by pushing component legs and wires into the holes. No soldering, so you can rebuild it as often as you like
 - Use it as a **test bench**: check it works on the breadboard first, then finish it with soldering
-- Metal strips inside connect each column of 5 holes, and each + / − row along the top and bottom (Chapter 9)
+- Metal strips inside connect each column of 5 holes, and each + / − row along the top and bottom (Chapter 7)
 - In the Christmas lights in Appendix G, it stays at the foot of the tree with the Pico and resistors on it, as the place the LED wires plug into
 - They come in 830 holes (full size) and 400 holes (half size). For the Pico plus parts, use 830
 
@@ -56,7 +56,7 @@ Parts (LEDs, resistors, sensors) are listed under "What you need" in each chapte
 
 ![Pin headers](images/pin-header-strip.jpg)
 
-- A row of pins soldered into the holes along the Pico's edges (20 each side) so it can plug into a breadboard (how to fit them is in Chapter 9)
+- A row of pins soldered into the holes along the Pico's edges (20 each side) so it can plug into a breadboard (how to fit them is in Chapter 7)
 - They often come with the Pico. A "Pico H" or "Pico WH" has them already, so you don't need them
 
 ## Tools for soldering
@@ -65,7 +65,7 @@ Parts (LEDs, resistors, sensors) are listed under "What you need" in each chapte
 
 ![Soldering iron, stand and solder](images/soldering-kit.jpg)
 
-- Melts solder (a thin wire of tin and other metals) to join metal parts (Chapter 9)
+- Melts solder (a thin wire of tin and other metals) to join metal parts (Chapter 7)
 - An iron with adjustable temperature is easiest (330–350 °C). Use 0.6–0.8 mm solder made for electronics
 - Rest it in the stand. The tip is very hot, so switch it off as soon as you finish
 
@@ -112,7 +112,7 @@ Parts (LEDs, resistors, sensors) are listed under "What you need" in each chapte
 
 ![Multimeter](images/multimeter.jpg)
 
-- Measures voltage (V), resistance (Ω) and current, and whether a wire is connected (continuity) (Chapter 16)
+- Measures voltage (V), resistance (Ω) and current, and whether a wire is connected (continuity) (Chapter 17)
 - Use it to check "what voltage is this battery?", "is this jumper wire broken inside?" and "is this solder joint connected?"
 - In continuity mode it beeps when there is a connection
 

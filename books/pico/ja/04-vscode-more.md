@@ -74,31 +74,31 @@ target_link_libraries(collar
 
 | 使うもの | 足すライブラリ | 使う章 |
 | --- | --- | --- |
-| GPIO・時間・`printf` | `pico_stdlib`（最初から入っている） | 7章 |
-| ADC（アナログ入力、内蔵温度センサー） | `hardware_adc` | 8章 |
-| PWM | `hardware_pwm` | 8章 |
-| I2C / SPI / UART | `hardware_i2c` / `hardware_spi` / `hardware_uart` | 9・10章 |
-| PIO（`ws2812.h` の RGB LED） | `hardware_pio`（と `hardware_clocks`） | 7章 |
-| フラッシュに書く | `hardware_flash` | 14・16章 |
-| 2つ目のコア | `pico_multicore` | 13章 |
-| ウォッチドッグ | `hardware_watchdog` | 16章 |
-| CPU のクロックを変える | `hardware_clocks` | 16章 |
-| 1台ずつの番号（ユニーク ID） | `pico_unique_id` | 18章 |
-| Pico W の LED | `pico_cyw43_arch_none` | 7章 |
+| GPIO・時間・`printf` | `pico_stdlib`（最初から入っている） | 8章 |
+| ADC（アナログ入力、内蔵温度センサー） | `hardware_adc` | 9章 |
+| PWM | `hardware_pwm` | 9章 |
+| I2C / SPI / UART | `hardware_i2c` / `hardware_spi` / `hardware_uart` | 10・11章 |
+| PIO（`ws2812.h` の RGB LED） | `hardware_pio`（と `hardware_clocks`） | 8章 |
+| フラッシュに書く | `hardware_flash` | 15・17章 |
+| 2つ目のコア | `pico_multicore` | 14章 |
+| ウォッチドッグ | `hardware_watchdog` | 17章 |
+| CPU のクロックを変える | `hardware_clocks` | 17章 |
+| 1台ずつの番号（ユニーク ID） | `pico_unique_id` | 19章 |
+| Pico W の LED | `pico_cyw43_arch_none` | 8章 |
 
 足し忘れると、ビルドのときに `fatal error: hardware/i2c.h: No such file or directory` や `undefined reference to ...` が出ます。
 保存すると CMake の設定が自動で読み直されます。うまくいかなければ Quick Access の **Configure CMake** を押します。
 
 ## ファイルを分ける
 
-プログラムが長くなったら、ファイルを分けます（分け方の考え方は12章）。
+プログラムが長くなったら、ファイルを分けます（分け方の考え方は13章）。
 
 ```text
 ~/apps/collar/
 ├── collar.cpp       main。全体の流れだけ
-├── mpu6050.h        センサーのクラス（10章）
-├── features.h       特徴量の計算（15・18章）
-├── model.h          判定（15章の train.py で作る）
+├── mpu6050.h        センサーのクラス（11章）
+├── features.h       特徴量の計算（16・19章）
+├── model.h          判定（16章の train.py で作る）
 ├── radio.h          送信
 └── radio.cpp        送信の中身
 ```
@@ -165,7 +165,7 @@ Quick Access の **Switch Build Type** で、ビルドの種類を切り替え�
 
 - **動くところまでできたら、こまめにコミット**します。動かなくなったときに、どこで壊したかがわかります
 - コミットの説明は「I2C の読み取りを足した」「ウォッチドッグを入れた」のように、何をしたかを短く書きます
-- 出荷するバージョンには、`git tag v1.0.0` → `git push --tags` で印を付けます（18章）
+- 出荷するバージョンには、`git tag v1.0.0` → `git push --tags` で印を付けます（19章）
 - `build/` は `.gitignore` で除かれているので、上がりません
 - VS Code でのくわしい使い方（ブランチ・コンフリクト・便利な拡張機能）、コマンドでの使い方、よくあるエラーは [GitHub の教科書](https://yusuke1090.github.io/textbooks/?b=github) にあります
 
@@ -179,7 +179,7 @@ Quick Access の **Switch Build Type** で、ビルドの種類を切り替え�
 | --- | --- |
 | Cortex-Debug（marus25） | Debug Probe でのデバッグ。行で止める、変数を見る。mcu-debug の4つ（メモリやレジスタを見る道具）も一緒に入る |
 | MicroPico（paulober） | VS Code で MicroPython を開発するためのもの。このガイドでは使わない（MicroPython のプロジェクトを開いたときだけ動き、MicroPython のピコに自動でつなぐ。そのときは Pico Studio とポートを取り合うので、片方だけ使う） |
-| Python（Microsoft） | Python のプログラムを書く。15章の `train.py` などにも使える |
+| Python（Microsoft） | Python のプログラムを書く。16章の `train.py` などにも使える |
 
 ### プロジェクトを開くとおすすめされるもの（入れる）
 
@@ -204,7 +204,7 @@ code --install-extension ms-vscode.vscode-serial-monitor
 | --- | --- | --- |
 | Error Lens（Alexander） | エラーや警告を、その行の右に文字で出す。問題の欄を開かなくても気付ける | `code --install-extension usernamehw.errorlens` |
 | Git Graph（mhutchie） | コミットの歴史を、枝分かれの図で見る | `code --install-extension mhutchie.git-graph` |
-| Rainbow CSV（mechatroner） | CSV を列ごとに色分けして見る。14・15章の記録や `features.csv` に便利 | `code --install-extension mechatroner.rainbow-csv` |
+| Rainbow CSV（mechatroner） | CSV を列ごとに色分けして見る。15・16章の記録や `features.csv` に便利 | `code --install-extension mechatroner.rainbow-csv` |
 | GitHub Actions（GitHub） | GitHub での自動ビルドの結果を VS Code で見る（製品のリポジトリで自動ビルドを入れたとき） | `code --install-extension github.vscode-github-actions` |
 | Japanese Language Pack（Microsoft） | VS Code のメニューを日本語にする（好みで） | `code --install-extension ms-ceintl.vscode-language-pack-ja` |
 
