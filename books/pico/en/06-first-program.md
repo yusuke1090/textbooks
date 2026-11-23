@@ -180,6 +180,13 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 5. With a jumper wire, connect a free hole in the same column as pin 18 to the − row
 6. Plug in USB and flash the program below
 
+**If you have no jumper wire**, move the resistor to the LED's short-leg side. The resistor works the same on either side of the LED. The − row is not used.
+
+![Without a jumper wire](images/en/led-nowire.svg)
+
+- Push the LED's long leg into hole a of the pin 20 (GP15) column, and its short leg into hole a of the column two to the left
+- Push one leg of the resistor into hole b of the short leg's column, and the other leg into hole b of the pin 18 (GND) column
+
 ```cpp run
 #include "pico/stdlib.h"
 

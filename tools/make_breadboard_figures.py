@@ -4,6 +4,7 @@
     python3 tools/make_breadboard_figures.py
 
 - books/pico/images/led-breadboard.svg     8章 外付けの LED
+- books/pico/images/led-nowire.svg         8章 外付けの LED（ジャンパーワイヤーなし）
 - books/pico/images/button-breadboard.svg  8章 外付けのボタン
 - books/pico/images/pot-breadboard.svg     9章 ボリューム
 作り直したら python3 tools/translate_figures.py pico で英語の図も作り直す。
@@ -90,18 +91,23 @@ def note(s):
     return text(70, 466, s, 12, "start", 400, SUB)
 
 
+def resistor(col1, col2, y):
+    """抵抗（220Ω: 赤・赤・茶・金）。col1 と col2 の、同じ段 y に足を差す"""
+    b = [line(X(col1), y, X(col2), y, LEG, 2)]
+    bx = (X(col1) + X(col2)) / 2
+    b.append(f'<rect x="{bx - 24}" y="{y - 8}" width="48" height="16" rx="5" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>')
+    for j, col in enumerate(["#d93a3a", "#d93a3a", "#8b4513", "#c9a227"]):
+        b.append(f'<rect x="{bx - 15 + j * 9}" y="{y - 8}" width="5" height="16" fill="{col}"/>')
+    return b + [dot(X(col1), y), dot(X(col2), y)]
+
+
 def led():
     """8章 外付けの LED: GP15（20番）→ 抵抗 → LED → − の列 ← GND（18番）"""
     b = board(cols=[(7, "top"), (11, "top"), (13, "top")], rails=[TOP_MINUS])
     b += pico([(18, "GND（18番）", 0, "start"), (20, "GP15（20番）", 1, "start")])
     # 抵抗: 11列の b と 7列の b
-    y = ROW["b"]
-    b.append(line(X(7), y, X(11), y, LEG, 2))
+    b += resistor(7, 11, ROW["b"])
     bx = (X(7) + X(11)) / 2
-    b.append(f'<rect x="{bx - 24}" y="{y - 8}" width="48" height="16" rx="5" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>')
-    for j, col in enumerate(["#d93a3a", "#d93a3a", "#8b4513", "#c9a227"]):    # 220Ω: 赤・赤・茶・金
-        b.append(f'<rect x="{bx - 15 + j * 9}" y="{y - 8}" width="5" height="16" fill="{col}"/>')
-    b += [dot(X(7), y), dot(X(11), y)]
     # LED: 長い足は 7列の a、短い足は上の − の列
     lx, ly = X(7) + P / 2, (ROW["a"] + TOP_MINUS) / 2
     b.append(line(X(7), ROW["a"], lx - 3, ly, LEG, 2))
@@ -120,6 +126,24 @@ def led():
     b += mark(5, X(13) + 28, (ROW["a"] + TOP_MINUS) / 2)
     b.append(note("番号は本文の手順（② ピコ　③ 抵抗　④ LED　⑤ ワイヤー）。黄色の所は、中でつながっている穴"))
     return svg(760, 486, "ブレッドボードへの差し方", b)
+
+
+def led_nowire():
+    """8章 外付けの LED（ジャンパーワイヤーなし）: GP15（20番）→ LED → 抵抗 → GND（18番）"""
+    b = board(cols=[(9, "top"), (11, "top"), (13, "top")])
+    b += pico([(18, "GND（18番）", 0, "start"), (20, "GP15（20番）", 1, "start")])
+    # LED: 長い足は 11列（20番）の a、短い足は 9列の a
+    lx, ly = X(10), ROW["a"] - 30
+    b.append(line(X(11), ROW["a"], lx + 3, ly, LEG, 2))
+    b.append(line(X(9), ROW["a"], lx - 3, ly, LEG, 2))
+    b.append(f'<circle cx="{lx}" cy="{ly}" r="9" fill="#ffcdd2" stroke="#d93a3a" stroke-width="2"/>')
+    b.append(text(X(11) + 10, ROW["a"] - 12, "長い足（＋）", 11, "start", 700, "#d93a3a"))
+    b.append(text(X(9) - 10, ROW["a"] - 12, "短い足（−）", 11, "end", 700, INK))
+    b += [dot(X(11), ROW["a"], "#d93a3a"), dot(X(9), ROW["a"])]
+    # 抵抗: 9列の b と 13列（18番）の b
+    b += resistor(9, 13, ROW["b"])
+    b.append(note("抵抗は LED の短い足の側に入れる。ジャンパーワイヤーはいらない。黄色の所は、中でつながっている穴"))
+    return svg(760, 486, "ジャンパーワイヤーなしの差し方", b)
 
 
 def button():
@@ -168,9 +192,10 @@ def pot():
 
 
 def main():
-    for name, make in (("led", led), ("button", button), ("pot", pot)):
-        (OUT / f"{name}-breadboard.svg").write_text(make())
-    print("led-breadboard.svg・button-breadboard.svg・pot-breadboard.svg を作りました")
+    for name, make in (("led-breadboard", led), ("led-nowire", led_nowire),
+                       ("button-breadboard", button), ("pot-breadboard", pot)):
+        (OUT / f"{name}.svg").write_text(make())
+    print("led-breadboard.svg・led-nowire.svg・button-breadboard.svg・pot-breadboard.svg を作りました")
 
 
 if __name__ == "__main__":

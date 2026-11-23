@@ -410,5 +410,7 @@
  "ボタンの差し方": "How to push the button into the breadboard",
  "ボリュームの差し方": "How to push the potentiometer into the breadboard",
  "番号は本文の手順（② ボタン　③④ ワイヤー）。ボタンは対角の2本の足を使う。黄色の所は、中でつながっている穴": "Numbers match the steps (② button, ③④ wires). Use two diagonal legs. Yellow holes are connected inside",
- "番号は本文の手順（② ボリューム　③ ワイヤー）。黄色の所は、中でつながっている穴": "Numbers are the steps in the text (② potentiometer, ③ wires). Yellow holes are connected inside"
+ "番号は本文の手順（② ボリューム　③ ワイヤー）。黄色の所は、中でつながっている穴": "Numbers are the steps in the text (② potentiometer, ③ wires). Yellow holes are connected inside",
+ "ジャンパーワイヤーなしの差し方": "Without a jumper wire",
+ "抵抗は LED の短い足の側に入れる。ジャンパーワイヤーはいらない。黄色の所は、中でつながっている穴": "The resistor goes on the LED's short-leg side. No jumper wire needed. Yellow holes are connected inside"
 }
