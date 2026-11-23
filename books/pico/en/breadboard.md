@@ -28,6 +28,8 @@ Under the holes of a breadboard are metal strips that connect certain holes to e
 - Legs of parts plugged into the same vertical column (for example a–e of column 5) are connected without any wire
 - If you connect the Pico's 3V3(OUT) to the + row and GND to the − row, it is easy to power sensors
 
+![Video: How to use a breadboard (LeftyMaker)](https://www.youtube.com/watch?v=W6mixXsn-Vc)
+
 ## Types of jumper wire
 
 | Type | Where it is used |
@@ -74,6 +76,8 @@ Soldering them into the holes along the edges of the Pico (20 on each side) lets
    - Then touch the solder there and let it melt in. Use enough to fill around the hole
    - **Remove the solder first, then remove the iron**
 6. When all are done, pull the Pico straight out of the breadboard
+
+![Video: Soldering header pins to a Raspberry Pi Pico (Learn Embedded Systems)](https://www.youtube.com/watch?v=R11QanPDccs)
 
 ### Checking the result
 

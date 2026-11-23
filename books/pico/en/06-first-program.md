@@ -180,6 +180,8 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 5. With a jumper wire, connect a free hole in the same column as pin 18 to the − row
 6. Plug in USB and flash the program below
 
+![Video: Connecting an external LED to a Raspberry Pi Pico with C/C++ (Dr Jon EA)](https://www.youtube.com/watch?v=gjSK2oaflSM)
+
 **If you have no jumper wire**, move the resistor to the LED's short-leg side. The resistor works the same on either side of the LED. The − row is not used.
 
 ![Without a jumper wire](images/en/led-nowire.svg)
