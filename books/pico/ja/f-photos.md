@@ -26,13 +26,21 @@
 | [熱収縮チューブ](https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [テスター](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
-## 8. ピンと電源の基本
+## 9. ピンと電源の基本
 
 | 写真 | 撮影者 | ライセンス |
 | --- | --- | --- |
 | [ボリューム（可変抵抗）](https://commons.wikimedia.org/wiki/File:Potentiometer.jpg) | Iainf | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) |
 
-## 10. センサーを読む
+## 10. 回路図の読み方
+
+| 写真 | 撮影者 | ライセンス |
+| --- | --- | --- |
+| [基板の白い文字（R1・C7 など）。回路図の部品の番号と同じ](https://commons.wikimedia.org/wiki/File:Smt_closeup.jpg) | en:User:John Fader | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) |
+| [いろいろなコンデンサ](https://commons.wikimedia.org/wiki/File:Selection_of_capacitors.jpg) | WizardTim | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [本物の OV7670（真ん中）と、まわりの小さなコンデンサ](https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg) | Daniel Garcia | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+
+## 12. センサーを読む
 
 | 写真 | 撮影者 | ライセンス |
 | --- | --- | --- |
@@ -70,4 +78,3 @@
 | 写真 | 撮影者 | ライセンス |
 | --- | --- | --- |
 | [ESP32-CAM（OV2640 が細い帯の線でつながっている）](https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg) | Nowforever | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
-| [カメラの中のイメージセンサー（OV7670）。光を受けて、点ごとの明るさを数にする](https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg) | Daniel Garcia | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |

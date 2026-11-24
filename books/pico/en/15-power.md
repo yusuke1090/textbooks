@@ -1,6 +1,6 @@
-# 17. Saving power and running for a long time
+# 18. Saving power and running for a long time
 
-For products that run on batteries for months, like a collar, this chapter is essential. How to calculate battery life is in Chapter 18.
+For products that run on batteries for months, like a collar, this chapter is essential. How to calculate battery life is in Chapter 19.
 
 ## Ways to reduce power
 
@@ -87,7 +87,7 @@ Put an ammeter (a multimeter's current range) or a USB current checker between t
 | Resting | While waiting in `sleep_until` |
 | Sending | While sending by radio (Pico W and others) |
 
-From each current and the share of time spent in it, work out the average current, and estimate battery life with the calculation in Chapter 18.
+From each current and the share of time spent in it, work out the average current, and estimate battery life with the calculation in Chapter 19.
 
 ![A multimeter (digital multimeter)](images/multimeter.jpg)
 
@@ -176,8 +176,8 @@ When flashed, the LED blinks, and pressing the USR button makes it hang. After 2
 
 ## Keeping settings (flash)
 
-You want sensor calibration values (such as the soil moisture sensor's `DRY` and `WET` in Chapter 12) and the cow's ID number to survive a power cut.
-Save them in **the last sector of flash (4096 bytes)**, the same way as in Chapter 15.
+You want sensor calibration values (such as the soil moisture sensor's `DRY` and `WET` in Chapter 13) and the cow's ID number to survive a power cut.
+Save them in **the last sector of flash (4096 bytes)**, the same way as in Chapter 16.
 
 To check that the values read back are correct, save **a marker (a magic number)** and **a check value (a CRC or the like)** along with them. This avoids using broken values on first start-up, or after the power is cut in the middle of writing.
 
@@ -252,9 +252,9 @@ int main() {
 After flashing, "start-up number N" goes up each time you unplug and replug USB.
 
 - Each sector can be erased about 100,000 times. **Do not save at every start-up or every measurement** (this example is just for trying it; in a product, save only when a value changes)
-- When using this together with the records in Chapter 15, move the record area one sector earlier so they do not overlap
+- When using this together with the records in Chapter 16, move the record area one sector earlier so they do not overlap
 - When you change the shape of the settings (the `struct`), increase `VERSION`. This prevents reading old-shaped values as if they were the new shape
-- When using both cores, also use `multicore_lockout` from Chapter 14
+- When using both cores, also use `multicore_lockout` from Chapter 15
 
 ## Summary
 

@@ -133,7 +133,7 @@ In this guide, Appendix E explains how to use it as a tool for quickly checking 
 | --- | --- | --- |
 | Making a product | **Suited** | Not suited |
 | Speed | Fast | Slow |
-| Battery life | Can be long (fine control of power-saving features; Chapter 17) | Shorter |
+| Battery life | Can be long (fine control of power-saving features; Chapter 18) | Shorter |
 | Reliability | You can plan memory use, so it is easier to run stably for a long time | Can stop because of things like running out of memory |
 | Flashing | Just flash one `.uf2` (easy for mass production) | Install MicroPython, then put `.py` files on it |
 | Trying things | Building and flashing take about 10 seconds | Runs immediately. One line at a time in the REPL |

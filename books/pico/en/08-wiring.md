@@ -1,4 +1,4 @@
-# 10. Connecting sensors
+# 11. Connecting sensors
 
 > For programs that use I2C, add `hardware_i2c` to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 5). If you choose **I2C** under Features when creating the project, it is included from the start.
 

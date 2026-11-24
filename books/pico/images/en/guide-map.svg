@@ -17,22 +17,23 @@
 <text x="232" y="99" font-size="12" text-anchor="start" fill="#555c66">7 Breadboards and pin headers</text>
 <text x="232" y="117" font-size="12" text-anchor="start" fill="#555c66">8 First programs</text>
 <text x="232" y="135" font-size="12" text-anchor="start" fill="#555c66">9 Pins and power</text>
-<text x="232" y="153" font-size="12" text-anchor="start" fill="#555c66">10 Connecting sensors</text>
-<text x="232" y="171" font-size="12" text-anchor="start" fill="#555c66">11 Reading sensors</text>
-<text x="232" y="189" font-size="12" text-anchor="start" fill="#555c66">12 Recommended sensors</text>
+<text x="232" y="153" font-size="12" text-anchor="start" fill="#555c66">10 Reading schematics</text>
+<text x="232" y="171" font-size="12" text-anchor="start" fill="#555c66">11 Connecting sensors</text>
+<text x="232" y="189" font-size="12" text-anchor="start" fill="#555c66">12 Reading sensors</text>
+<text x="232" y="207" font-size="12" text-anchor="start" fill="#555c66">13 Recommended sensors</text>
 <path d="M400 137 L418 137" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
 <rect x="420" y="55" width="180" height="165" rx="8" fill="#f1ebf8" stroke="#6b3fa0" stroke-width="2"/>
 <text x="432" y="77" font-size="14" text-anchor="start" font-weight="700" fill="#6b3fa0">Part 3: Deeper C++</text>
-<text x="432" y="99" font-size="12" text-anchor="start" fill="#555c66">13 C++ for MCUs</text>
-<text x="432" y="117" font-size="12" text-anchor="start" fill="#555c66">14 Interrupts, two cores</text>
-<text x="432" y="135" font-size="12" text-anchor="start" fill="#555c66">15 Recording and sending</text>
-<text x="432" y="153" font-size="12" text-anchor="start" fill="#555c66">16 Machine learning</text>
-<text x="432" y="171" font-size="12" text-anchor="start" fill="#555c66">17 Power saving</text>
+<text x="432" y="99" font-size="12" text-anchor="start" fill="#555c66">14 C++ for MCUs</text>
+<text x="432" y="117" font-size="12" text-anchor="start" fill="#555c66">15 Interrupts, two cores</text>
+<text x="432" y="135" font-size="12" text-anchor="start" fill="#555c66">16 Recording and sending</text>
+<text x="432" y="153" font-size="12" text-anchor="start" fill="#555c66">17 Machine learning</text>
+<text x="432" y="171" font-size="12" text-anchor="start" fill="#555c66">18 Power saving</text>
 <path d="M600 137 L618 137" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
 <rect x="620" y="55" width="180" height="165" rx="8" fill="#fff6e0" stroke="#c28a00" stroke-width="2"/>
 <text x="632" y="77" font-size="14" text-anchor="start" font-weight="700" fill="#c28a00">Part 4: Product</text>
-<text x="632" y="99" font-size="12" text-anchor="start" fill="#555c66">18 Real development</text>
-<text x="632" y="117" font-size="12" text-anchor="start" fill="#555c66">19 Preparing a product</text>
+<text x="632" y="99" font-size="12" text-anchor="start" fill="#555c66">19 Real development</text>
+<text x="632" y="117" font-size="12" text-anchor="start" fill="#555c66">20 Preparing a product</text>
 <rect x="20" y="238" width="780" height="66" rx="8" fill="#f3f4f6" stroke="#555c66" stroke-width="2"/>
 <text x="410.0" y="260" font-size="14" text-anchor="middle" font-weight="700" fill="#555c66">Appendix (read when needed)</text>
 <text x="410.0" y="282" font-size="12" text-anchor="middle" fill="#555c66">A Commands B Troubleshooting C Raspberry Pi vs Pico D Uses and links E Quick tests with MicroPython</text>

@@ -1,4 +1,4 @@
-# 13. Writing C++ for microcontrollers
+# 14. Writing C++ for microcontrollers
 
 This assumes you can create a VS Code project as in Chapter 4. The complete programs in this chapter can be tried by pasting them into your project's `.cpp` and doing Compile → Run.
 
@@ -11,7 +11,7 @@ This assumes you can create a VS Code project as in Chapter 4. The complete prog
 | Exceptions (`try` / `throw`) | Used | Turned off in the Pico SDK settings |
 | Standard library | All usable | Only part. Do not use `std::cout` or `std::thread` |
 | End of the program | It ends when `main` ends | `main` does not end. It repeats forever |
-| When it stops with an error | The OS tells you | It stops without saying anything. Make sure you can notice (the watchdog in Chapter 17) |
+| When it stops with an error | The OS tells you | It stops without saying anything. Make sure you can notice (the watchdog in Chapter 18) |
 
 ## Integer types
 
@@ -29,7 +29,7 @@ In C++ on the Pico, use **types with a fixed size**, because the size of `int` c
 
 ```cpp
 uint8_t hi = 200, lo = 100;
-int16_t raw = static_cast<int16_t>((hi << 8) | lo);   // join 2 bytes (Chapter 11)
+int16_t raw = static_cast<int16_t>((hi << 8) | lo);   // join 2 bytes (Chapter 12)
 uint32_t ms = to_ms_since_boot(get_absolute_time());  // milliseconds since startup. Wraps around after about 49 days
 ```
 
@@ -74,7 +74,7 @@ Mode mode = Mode::Idle;
 
 ## Where memory lives
 
-A review of Chapter 15. In products, the basic rule is to **decide how memory is used at build time**.
+A review of Chapter 16. In products, the basic rule is to **decide how memory is used at build time**.
 
 | Where | How to write it | Decided when | Caution |
 | --- | --- | --- | --- |
@@ -122,7 +122,7 @@ arm-none-eabi-size build/blink.elf
 | `<iostream>` (`std::cout`) | Makes the program hundreds of KB larger. Use `printf` |
 | `std::vector`, `std::string`, `std::map` | Use the heap. If you use them, `reserve` at the start and do not grow them |
 | `try` / `throw` | The Pico SDK is set not to use exceptions (`PICO_CXX_ENABLE_EXCEPTIONS=0`) |
-| `std::thread`, `std::mutex` | Cannot be used without an OS. The two cores are in Chapter 14 |
+| `std::thread`, `std::mutex` | Cannot be used without an OS. The two cores are in Chapter 15 |
 | `new` / `delete` | Use the heap. Once at the start is fine |
 
 ## Handling errors
@@ -158,14 +158,14 @@ SensorError read_sht31(float& temp, float& hum);
 
 ## Handling sensors with classes
 
-Making a class for each sensor shortens the code that uses it, and means fewer places to fix when you change sensors. The `Mpu6050` in Chapter 11 has this form.
+Making a class for each sensor shortens the code that uses it, and means fewer places to fix when you change sensors. The `Mpu6050` in Chapter 12 has this form.
 
 ```cpp
 class Sht31 {
 public:
     explicit Sht31(i2c_inst_t* i2c, uint8_t addr = 0x44) : i2c_(i2c), addr_(addr) {}
 
-    bool read(float& temp, float& hum);   // the body is the code from Chapter 12
+    bool read(float& temp, float& hum);   // the body is the code from Chapter 13
 
 private:
     i2c_inst_t* i2c_;                     // which I2C unit
@@ -296,7 +296,7 @@ Each press of the USR button changes the LED from "slow → fast → off". Meanw
 | Detect the moment of pressing | Compare with the previous value (`last_pressed`) and act only when it changes from released to pressed |
 | Check every 20 ms | Prevents the button contacts from bouncing so that one press looks like several (contact bounce) |
 
-This form is the same idea as MicroPython's `asyncio` or an event loop on a PC. To run at more precise times, use the interrupts in Chapter 14.
+This form is the same idea as MicroPython's `asyncio` or an event loop on a PC. To run at more precise times, use the interrupts in Chapter 15.
 
 ## Summary
 

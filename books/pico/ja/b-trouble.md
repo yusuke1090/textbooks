@@ -47,7 +47,7 @@ main.cpp:12:5: error: 'prinf' was not declared in this scope; did you mean 'prin
 | `expected '}' at end of input` | `{` と `}` の数が合っていない |
 | `invalid conversion from 'const char*' to 'char*'` | 型が合っていない。`const` を付ける |
 | `narrowing conversion` | `{}` で初期化するとき、型が合わない。`static_cast<型>(値)` で変える |
-| `region 'RAM' overflowed` | メモリが足りない。大きな配列を小さくする（15章・13章） |
+| `region 'RAM' overflowed` | メモリが足りない。大きな配列を小さくする（16章・14章） |
 | Pico Studio の「C++ の開発環境」に ✗ がある | 足りないものを入れる（3章）。SDK とコンパイラは、VS Code で最初のプロジェクトを作ると入る |
 
 ### 書き込んだあとに動きがおかしいとき
@@ -55,9 +55,9 @@ main.cpp:12:5: error: 'prinf' was not declared in this scope; did you mean 'prin
 | 症状 | 対処 |
 | --- | --- |
 | 出力欄に何も出ない | `stdio_init_all()` を呼んでいるか。起動直後の出力は消えるので、最初に `sleep_ms(1500)` を入れる |
-| 途中で止まる・ピコが反応しない | 配列の外に書いていないか、関数の中に大きな配列を作っていないか（スタックがあふれる。15章）。ウォッチドッグを入れると、止まったときに自動で再起動する（17章） |
+| 途中で止まる・ピコが反応しない | 配列の外に書いていないか、関数の中に大きな配列を作っていないか（スタックがあふれる。16章）。ウォッチドッグを入れると、止まったときに自動で再起動する（18章） |
 | 次の書き込みが自動でできない | 前のプログラムが `stdio_init_all()` を呼んでいないか、止まっている。BOOT を押しながら USB をつなぎ直す |
-| センサーの値がずっと 0 | 戻り値を確かめる（`i2c_read_blocking` が負の数ならエラー）。配線と I2C スキャン（10章） |
+| センサーの値がずっと 0 | 戻り値を確かめる（`i2c_read_blocking` が負の数ならエラー）。配線と I2C スキャン（11章） |
 | 小数の計算が遅い | `double` ではなく `float` を使う。数に `f` を付ける（`3.3f`）。`sqrt` ではなく `sqrtf` |
 | LED が光らない | ピン番号を確かめる（公式ピコは 25、互換ボードは説明書）。Pico W は `cyw43_arch_gpio_put`（8章）。外付けなら LED の向き（長い足が＋）と抵抗 |
 | センサーの値がずっと同じ | センサーを起こす設定（MPU-6050 なら 0x6B に 0）を忘れていないか |
@@ -106,7 +106,7 @@ lsblk -o NAME,LABEL | grep RP2   # 書き込みモードのドライブを探す
 
 1. [flash_nuke.uf2](https://datasheets.raspberrypi.com/soft/flash_nuke.uf2) をダウンロードする
 2. BOOT ボタンを押しながらつなぎ、「RPI-RP2」に flash_nuke.uf2 をコピーする（Pico Studio の「.uf2 ファイルを選ぶ」でもよい）
-3. フラッシュがすべて消える（15・17章のフラッシュの記録や設定も消える）
+3. フラッシュがすべて消える（16・18章のフラッシュの記録や設定も消える）
 4. VS Code の Run Project (USB) で、プログラムを書き込み直す
 
 ## 調べるときのコツ

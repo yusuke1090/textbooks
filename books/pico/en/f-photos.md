@@ -26,13 +26,21 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | [Heat-shrink tubing](https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [Multimeter](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
-## 8. Pin and power basics
+## 9. Pin and power basics
 
 | Photo | Author | Licence |
 | --- | --- | --- |
 | [A potentiometer (variable resistor)](https://commons.wikimedia.org/wiki/File:Potentiometer.jpg) | Iainf | [CC BY 2.5](https://creativecommons.org/licenses/by/2.5) |
 
-## 10. Reading sensors
+## 10. Reading schematics
+
+| Photo | Author | Licence |
+| --- | --- | --- |
+| [White letters on a board (R1, C7 and so on), the same as the references on the schematic](https://commons.wikimedia.org/wiki/File:Smt_closeup.jpg) | en:User:John Fader | [CC BY-SA 3.0](http://creativecommons.org/licenses/by-sa/3.0/) |
+| [Various capacitors](https://commons.wikimedia.org/wiki/File:Selection_of_capacitors.jpg) | WizardTim | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
+| [A real OV7670 (center) and the tiny capacitors around it](https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg) | Daniel Garcia | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+
+## 12. Reading sensors
 
 | Photo | Author | Licence |
 | --- | --- | --- |
@@ -70,4 +78,3 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | Photo | Author | Licence |
 | --- | --- | --- |
 | [ESP32-CAM (the OV2640 is joined by a thin ribbon cable)](https://commons.wikimedia.org/wiki/File:ESP32-CAM.jpg) | Nowforever | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
-| [The image sensor inside a camera (OV7670). It takes in light and turns the brightness of each dot into a number](https://commons.wikimedia.org/wiki/File:OV7670_camera_sensor_(50498341363).jpg) | Daniel Garcia | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |

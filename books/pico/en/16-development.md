@@ -1,4 +1,4 @@
-# 18. The real development flow
+# 19. The real development flow
 
 This chapter is an example plan using a cow behavior classification system. The numbers are rough guides to explain the ideas, and have not been tested on real cows.
 
@@ -45,15 +45,15 @@ Data to send: cow ID, resting 40 s, eating 20 s, walking 0 s, ruminating 0 s
 
 ## The shape of the collar's program
 
-In a product, the collar's program is written in C++. Its shape is the following loop. Measuring is based on Chapter 11, classification on Chapter 16, and making the battery last on Chapter 17.
+In a product, the collar's program is written in C++. Its shape is the following loop. Measuring is based on Chapter 12, classification on Chapter 17, and making the battery last on Chapter 18.
 The code below shows the shape and will not run as is.
 
 ```text
-#include "model.h"                 // the classification code made in Chapter 16
+#include "model.h"                 // the classification code made in Chapter 17
 
 int main() {
     stdio_init_all();
-    watchdog_enable(5000, true);   // restart if no response for 5 s (Chapter 17)
+    watchdog_enable(5000, true);   // restart if no response for 5 s (Chapter 18)
     init_sensor();
     init_radio();
 
@@ -67,12 +67,12 @@ int main() {
             reset_counts();
         }
         watchdog_update();             // report "I'm alive"
-        sleep_until_next_window();     // wait for the next measurement at low power (Chapter 17)
+        sleep_until_next_window();     // wait for the next measurement at low power (Chapter 18)
     }
 }
 ```
 
-Things to think about when making it a product are collected in Chapter 19.
+Things to think about when making it a product are collected in Chapter 20.
 
 ## The order of development
 
@@ -81,10 +81,10 @@ Do not build everything at once; check things one at a time in this order.
 | Order | What to do | Where | Related chapters |
 | --- | --- | --- | --- |
 | 1 | Decide what you want to report | At the desk | This chapter |
-| 2 | Read the sensor | At the desk | Chapters 8, 11 |
-| 3 | Record data in flash | At the desk | Chapter 15 |
-| 4 | Put it on a cow and collect data and video | In the barn | Chapter 15 |
-| 5 | Build the behavior classification | PC | Chapter 16 |
+| 2 | Read the sensor | At the desk | Chapters 8, 12 |
+| 3 | Record data in flash | At the desk | Chapter 16 |
+| 4 | Put it on a cow and collect data and video | In the barn | Chapter 16 |
+| 5 | Build the behavior classification | PC | Chapter 17 |
 | 6 | Send by radio | At the desk, in the barn | This chapter |
 | 7 | Store on the receiver | In the barn | Appendix C |
 | 8 | Make the screen to view on a phone | In the barn | This chapter |
@@ -105,7 +105,7 @@ First decide who wants to know what. Once this is decided, what to measure and w
 
 This is the most important step and takes the most time. To build a classifier, you need the right answer: "what was the cow doing at this time?"
 
-1. Put the collar on a cow and record acceleration in flash (Chapter 15)
+1. Put the collar on a cow and record acceleration in flash (Chapter 16)
 2. Film the same period on video. Match the times of the microcontroller and the video
 3. Watch the video and label the behavior for each period
 4. Collect from several cows, not just one
@@ -114,7 +114,7 @@ When the cow's body or the way the collar is fitted changes, the data changes to
 
 ### 5. Build the behavior classification
 
-Make a decision tree with the steps in Chapter 16. The example in Chapter 16 has three kinds: resting, walking and eating. To classify rumination, collect rumination data and add more kinds.
+Make a decision tree with the steps in Chapter 17. The example in Chapter 17 has three kinds: resting, walking and eating. To classify rumination, collect rumination data and add more kinds.
 
 Check the classifier's scores **on data from cows not used for training**. If you check only with data from the same cows, you will not notice that it fails on other cows.
 

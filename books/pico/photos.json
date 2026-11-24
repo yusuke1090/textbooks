@@ -238,5 +238,21 @@
     "license": "CC BY-SA 2.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
     "page": "https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg"
+  },
+  {
+    "file": "pcb-silkscreen.jpg",
+    "src": "Smt closeup.jpg",
+    "author": "en:User:John Fader",
+    "license": "CC BY-SA 3.0",
+    "license_url": "http://creativecommons.org/licenses/by-sa/3.0/",
+    "page": "https://commons.wikimedia.org/wiki/File:Smt_closeup.jpg"
+  },
+  {
+    "file": "capacitors.jpg",
+    "src": "Selection of capacitors.jpg",
+    "author": "WizardTim",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Selection_of_capacitors.jpg"
   }
 ]

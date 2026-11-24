@@ -1,4 +1,4 @@
-# 10. センサーのつなぎ方
+# 11. センサーのつなぎ方
 
 > I2C を使うプログラムは、`CMakeLists.txt` の `target_link_libraries` に `hardware_i2c` を足してからビルドします（5章）。プロジェクトを作るときに Features で **I2C** を選んでおけば、最初から入ります。
 

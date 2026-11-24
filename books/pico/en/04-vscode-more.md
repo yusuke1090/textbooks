@@ -77,13 +77,13 @@ target_link_libraries(collar
 | GPIO, time, `printf` | `pico_stdlib` (included from the start) | Chapter 8 |
 | ADC (analog input, built-in temperature sensor) | `hardware_adc` | Chapter 9 |
 | PWM | `hardware_pwm` | Chapter 9 |
-| I2C / SPI / UART | `hardware_i2c` / `hardware_spi` / `hardware_uart` | Chapters 10–11 |
+| I2C / SPI / UART | `hardware_i2c` / `hardware_spi` / `hardware_uart` | Chapters 11–12 |
 | PIO (the RGB LED in `ws2812.h`) | `hardware_pio` (and `hardware_clocks`) | Chapter 8 |
-| Writing to flash | `hardware_flash` | Chapters 15, 17 |
-| The second core | `pico_multicore` | Chapter 14 |
-| Watchdog | `hardware_watchdog` | Chapter 17 |
-| Changing the CPU clock | `hardware_clocks` | Chapter 17 |
-| A number for each unit (unique ID) | `pico_unique_id` | Chapter 19 |
+| Writing to flash | `hardware_flash` | Chapters 16, 18 |
+| The second core | `pico_multicore` | Chapter 15 |
+| Watchdog | `hardware_watchdog` | Chapter 18 |
+| Changing the CPU clock | `hardware_clocks` | Chapter 18 |
+| A number for each unit (unique ID) | `pico_unique_id` | Chapter 20 |
 | The Pico W's LED | `pico_cyw43_arch_none` | Chapter 8 |
 
 If you forget to add one, building gives `fatal error: hardware/i2c.h: No such file or directory` or `undefined reference to ...`.
@@ -91,14 +91,14 @@ Saving reloads the CMake settings automatically. If it does not work, press **Co
 
 ## Splitting files
 
-When the program gets long, split it into files (how to think about splitting is in Chapter 13).
+When the program gets long, split it into files (how to think about splitting is in Chapter 14).
 
 ```text
 ~/apps/collar/
 ├── collar.cpp       main. Only the overall flow
-├── mpu6050.h        The sensor class (Chapter 11)
-├── features.h       Feature calculation (Chapters 16, 19)
-├── model.h          Classification (made by train.py in Chapter 16)
+├── mpu6050.h        The sensor class (Chapter 12)
+├── features.h       Feature calculation (Chapters 17, 20)
+├── model.h          Classification (made by train.py in Chapter 17)
 ├── radio.h          Sending
 └── radio.cpp        The sending code
 ```
@@ -165,7 +165,7 @@ How to put a project on GitHub is in "Putting it on GitHub" in Chapter 4. After 
 
 - **Commit often whenever something works**. When it stops working, you can tell where you broke it
 - Write commit descriptions briefly, saying what you did, like "Add I2C reading" or "Add the watchdog"
-- Mark versions you ship with `git tag v1.0.0` → `git push --tags` (Chapter 19)
+- Mark versions you ship with `git tag v1.0.0` → `git push --tags` (Chapter 20)
 - `build/` is excluded by `.gitignore`, so it is not uploaded
 - Detailed use in VS Code (branches, conflicts, handy extensions), use with commands, and common errors are in the [GitHub Textbook](https://yusuke1090.github.io/textbooks/?b=github)
 
@@ -179,7 +179,7 @@ These are already there without installing them yourself.
 | --- | --- |
 | Cortex-Debug (marus25) | Debugging with a Debug Probe. Stop at lines, view variables. Four mcu-debug tools (for viewing memory and registers) are installed with it |
 | MicroPico (paulober) | For developing MicroPython in VS Code. Not used in this guide (it only runs when you open a MicroPython project, and connects automatically to a Pico running MicroPython; at that point it competes with Pico Studio for the port, so use only one of them) |
-| Python (Microsoft) | For writing Python programs. Also usable for `train.py` in Chapter 16 and the like |
+| Python (Microsoft) | For writing Python programs. Also usable for `train.py` in Chapter 17 and the like |
 
 ### Recommended when you open a project (install them)
 
@@ -204,7 +204,7 @@ code --install-extension ms-vscode.vscode-serial-monitor
 | --- | --- | --- |
 | Error Lens (Alexander) | Shows errors and warnings as text to the right of the line. You notice them without opening the Problems panel | `code --install-extension usernamehw.errorlens` |
 | Git Graph (mhutchie) | Shows the commit history as a branching diagram | `code --install-extension mhutchie.git-graph` |
-| Rainbow CSV (mechatroner) | Colors CSV files by column. Handy for the logs in Chapters 15–16 and `features.csv` | `code --install-extension mechatroner.rainbow-csv` |
+| Rainbow CSV (mechatroner) | Colors CSV files by column. Handy for the logs in Chapters 16–17 and `features.csv` | `code --install-extension mechatroner.rainbow-csv` |
 | GitHub Actions (GitHub) | Shows the results of automatic builds on GitHub in VS Code (when you set up automatic builds for a product repository) | `code --install-extension github.vscode-github-actions` |
 | Japanese Language Pack (Microsoft) | Puts VS Code's menus in Japanese (if you like) | `code --install-extension ms-ceintl.vscode-language-pack-ja` |
 

@@ -232,7 +232,7 @@ I2C・SPI・UART は、上の表以外のピンにも割り当てられます。
 
 どのピンが使えるかは [Pico のデータシート](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf) のピン配置図を見てください。
 
-C++ では、ピンを通信用に切り替えてから使います。I2C の例です（くわしくは11章）。
+C++ では、ピンを通信用に切り替えてから使います。I2C の例です（くわしくは12章）。
 
 ```cpp
 #include "hardware/i2c.h"
@@ -250,7 +250,7 @@ gpio_pull_up(5);
 | SPI | `spi_init(spi0, 速さ)` | `GPIO_FUNC_SPI` |
 | UART | `uart_init(uart0, 115200)` | `GPIO_FUNC_UART` |
 
-このガイドでは、10章からの I2C センサーで GP4・GP5 を使います。
+このガイドでは、11章からの I2C センサーで GP4・GP5 を使います。
 
 ## 壊さないための注意
 

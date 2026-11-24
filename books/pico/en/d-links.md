@@ -13,16 +13,16 @@
 
 ### Example: IoT for monitoring cow behavior
 
-Suppose you put a Pico and an accelerometer on a collar to measure a cow's movement. Chapters 8–16 of this guide follow this flow.
+Suppose you put a Pico and an accelerometer on a collar to measure a cow's movement. Chapters 8–17 of this guide follow this flow.
 
 ![The flow of IoT for monitoring cow behavior](images/en/iot-system.svg)
 
-1. **Measure**: measure neck movement with an accelerometer, and changes in head height with a pressure sensor (Chapters 10 and 11)
-2. **Record and classify**: summarize and save the data at regular intervals (Chapter 15), and classify "walking", "eating", "ruminating", "resting" and so on with machine learning (Chapter 16)
+1. **Measure**: measure neck movement with an accelerometer, and changes in head height with a pressure sensor (Chapters 11 and 12)
+2. **Record and classify**: summarize and save the data at regular intervals (Chapter 16), and classify "walking", "eating", "ruminating", "resting" and so on with machine learning (Chapter 17)
 3. **Send**: send the results with a WiFi board (Pico W and others) or LoRa
 4. **Collect and view**: collect them in the cloud or on a PC, make graphs, and report anything unusual
 
-The order for actually building it is summarized in Chapter 18.
+The order for actually building it is summarized in Chapter 19.
 
 If classification is done on the microcontroller, the data sent changes from "raw acceleration" to "the kind of behavior", saving a lot of data and battery.
 
@@ -102,7 +102,7 @@ These are the parts used to work through the whole guide. Search online shops fo
   — Wiring and usage for each sensor. Search by model number
 - [Wokwi](https://wokwi.com/) — A simulator for trying a Pico and sensors in the browser
 
-### Machine learning (used in Chapter 16)
+### Machine learning (used in Chapter 17)
 
 - [emlearn](https://github.com/emlearn/emlearn)
   — Converts scikit-learn models into C code

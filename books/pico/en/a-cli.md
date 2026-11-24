@@ -2,7 +2,7 @@
 
 Everyday development is done in VS Code (Chapter 4). Use this appendix in situations like these.
 
-- You want to put the steps into a script (such as flashing for mass production; Chapter 19)
+- You want to put the steps into a script (such as flashing for mass production; Chapter 20)
 - You want to know what is happening inside VS Code
 - You want to try many small programs together in one folder
 
@@ -28,7 +28,7 @@ The script does the following five things, from top to bottom. You can read it a
 | 2/5 | Download Pico SDK 2.1.1 (`git clone` and `git submodule update --init`) | `~/pico/pico-sdk` | The SDK itself and the libraries it uses (table below) |
 | 3/5 | Register the SDK's location | One line at the end of `~/.bashrc` | `export PICO_SDK_PATH=/home/username/pico/pico-sdk` |
 | 4/5 | Prepare the project folder and check that everything is in place | `~/apps/pico-cpp` | `CMakeLists.txt`, `pico_sdk_import.cmake`, `.gitignore`, `blink.cpp`, `mpu6050.h`, `ws2812.h` |
-| 5/5 | Build and install picotool (`git clone` and build). Also installs a udev rule so it works without sudo | `~/pico/picotool` (source), `~/.local/bin/picotool`, `/etc/udev/rules.d/60-picotool.rules` | A tool to put the Pico into flashing mode over USB, flash it and inspect it (this appendix, Chapter 19). Building works even without it |
+| 5/5 | Build and install picotool (`git clone` and build). Also installs a udev rule so it works without sudo | `~/pico/picotool` (source), `~/.local/bin/picotool`, `/etc/udev/rules.d/60-picotool.rules` | A tool to put the Pico into flashing mode over USB, flash it and inspect it (this appendix, Chapter 20). Building works even without it |
 
 The libraries downloaded with the SDK (submodules) are as follows.
 
@@ -130,7 +130,7 @@ It does not overwrite existing files, so running it again is fine. To create it 
 ├── pico_sdk_import.cmake   loads the SDK (copied from the SDK)
 ├── .gitignore              settings so git does not track the build folder
 ├── blink.cpp               blinking LED (the first program)
-├── mpu6050.h               a class for reading the MPU-6050 (Chapter 11)
+├── mpu6050.h               a class for reading the MPU-6050 (Chapter 12)
 ├── ws2812.h                a class for lighting the RGB LED (Chapter 8)
 └── build/                  files made by building (.uf2 and so on). Created when you run cmake
 ```
@@ -140,7 +140,7 @@ If you used `setup-sdk.sh`, it is already there.
 ### CMakeLists.txt
 
 The build settings. **Each `.cpp` in this folder becomes one program** (`blink.cpp` → `build/blink.uf2`).
-Any of the C++ code from Chapters 8–17 can be built as is by saving it as a `.cpp`. The heart of it is as follows.
+Any of the C++ code from Chapters 8–18 can be built as is by saving it as a `.cpp`. The heart of it is as follows.
 
 ```cmake
 cmake_minimum_required(VERSION 3.13)
@@ -171,8 +171,8 @@ endforeach()
 | `pico_enable_stdio_usb(... 1)` | Sends `printf` output to USB serial. **Without this, you cannot see the output** |
 | `pico_add_extra_outputs` | Also makes the `.uf2` file for flashing |
 
-- `.cpp` files starting with `test_` are tests for the PC (Chapter 19), so they are not built for the Pico
-- To split one program into several `.cpp` files (Chapter 13), add a line yourself, such as `add_executable(collar collar.cpp sensor.cpp)`
+- `.cpp` files starting with `test_` are tests for the PC (Chapter 20), so they are not built for the Pico
+- To split one program into several `.cpp` files (Chapter 14), add a line yourself, such as `add_executable(collar collar.cpp sensor.cpp)`
 
 ## The overall flow
 
@@ -285,7 +285,7 @@ With picotool, you can see the name of the flashed program, its build date and t
 picotool info -a
 ```
 
-How to put a name and version into a program is in Chapter 19.
+How to put a name and version into a program is in Chapter 20.
 
 ## Putting the steps into a script
 

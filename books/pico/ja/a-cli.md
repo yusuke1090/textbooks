@@ -2,7 +2,7 @@
 
 ふだんの開発は VS Code で行います（4章）。この付録は、次のようなときに使います。
 
-- 手順をスクリプトにまとめたい（量産の書き込みなど。19章）
+- 手順をスクリプトにまとめたい（量産の書き込みなど。20章）
 - VS Code の中で何が起きているかを知りたい
 - 小さなプログラムを、いくつも1つのフォルダでまとめて試したい
 
@@ -28,7 +28,7 @@ sh ~/apps/pico-studio/cpp/setup-sdk.sh
 | 2/5 | Pico SDK 2.1.1 をダウンロードする（`git clone` と `git submodule update --init`） | `~/pico/pico-sdk` | SDK 本体と、SDK が使うライブラリ（下の表） |
 | 3/5 | SDK の場所を登録する | `~/.bashrc` の最後に1行 | `export PICO_SDK_PATH=/home/ユーザー名/pico/pico-sdk` |
 | 4/5 | プロジェクトのフォルダを用意して、そろったか確かめる | `~/apps/pico-cpp` | `CMakeLists.txt`、`pico_sdk_import.cmake`、`.gitignore`、`blink.cpp`、`mpu6050.h`、`ws2812.h` |
-| 5/5 | picotool を作って入れる（`git clone` してビルド）。sudo なしで使えるように udev ルールも入れる | `~/pico/picotool`（ソース）、`~/.local/bin/picotool`、`/etc/udev/rules.d/60-picotool.rules` | USB でピコを書き込みモードにする・書き込む・中を調べるツール（この付録・19章）。なくてもビルドはできる |
+| 5/5 | picotool を作って入れる（`git clone` してビルド）。sudo なしで使えるように udev ルールも入れる | `~/pico/picotool`（ソース）、`~/.local/bin/picotool`、`/etc/udev/rules.d/60-picotool.rules` | USB でピコを書き込みモードにする・書き込む・中を調べるツール（この付録・20章）。なくてもビルドはできる |
 
 SDK と一緒にダウンロードされるライブラリ（サブモジュール）は次のとおりです。
 
@@ -130,7 +130,7 @@ python3 ~/apps/pico-studio/devenv.py init
 ├── pico_sdk_import.cmake   SDK を読み込む（SDK からコピーしたもの）
 ├── .gitignore              git で build フォルダを管理しないための設定
 ├── blink.cpp               Lチカ（最初のプログラム）
-├── mpu6050.h               MPU-6050 を読むクラス（11章）
+├── mpu6050.h               MPU-6050 を読むクラス（12章）
 ├── ws2812.h                RGB LED を光らせるクラス（8章）
 └── build/                  ビルドしてできたファイル（.uf2 など）。cmake を打つとできる
 ```
@@ -140,7 +140,7 @@ python3 ~/apps/pico-studio/devenv.py init
 ### CMakeLists.txt
 
 ビルドの設定です。**このフォルダの `.cpp` が、1つずつプログラムになります**（`blink.cpp` → `build/blink.uf2`）。
-8〜17章の C++ のコードは、`.cpp` として保存すれば、どれもそのままビルドできます。中心の部分は次のとおりです。
+8〜18章の C++ のコードは、`.cpp` として保存すれば、どれもそのままビルドできます。中心の部分は次のとおりです。
 
 ```cmake
 cmake_minimum_required(VERSION 3.13)
@@ -171,8 +171,8 @@ endforeach()
 | `pico_enable_stdio_usb(... 1)` | `printf` の出力を USB シリアルに出す。**これがないと出力が見えない** |
 | `pico_add_extra_outputs` | 書き込み用の `.uf2` ファイルも作る |
 
-- `test_` で始まる `.cpp` は、PC 用のテスト（19章）なので、ピコ用にはビルドしません
-- 1つのプログラムを複数の `.cpp` に分けたいとき（13章）は、`add_executable(collar collar.cpp sensor.cpp)` のように、自分で行を書き足します
+- `test_` で始まる `.cpp` は、PC 用のテスト（20章）なので、ピコ用にはビルドしません
+- 1つのプログラムを複数の `.cpp` に分けたいとき（14章）は、`add_executable(collar collar.cpp sensor.cpp)` のように、自分で行を書き足します
 
 ## 全体の流れ
 
@@ -285,7 +285,7 @@ picotool で、書き込まれているプログラムの名前・ビルドし�
 picotool info -a
 ```
 
-プログラムに名前やバージョンを入れる方法は19章にあります。
+プログラムに名前やバージョンを入れる方法は20章にあります。
 
 ## 手順をスクリプトにする
 

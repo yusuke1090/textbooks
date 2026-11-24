@@ -232,7 +232,7 @@ I2C, SPI and UART can also be assigned to pins other than those in the table.
 
 For which pins can be used, see the pinout diagram in the [Pico datasheet](https://datasheets.raspberrypi.com/pico/pico-datasheet.pdf).
 
-In C++, you switch the pins to the communication function before using them. Here is an example for I2C (details in Chapter 11).
+In C++, you switch the pins to the communication function before using them. Here is an example for I2C (details in Chapter 12).
 
 ```cpp
 #include "hardware/i2c.h"
@@ -250,7 +250,7 @@ gpio_pull_up(5);
 | SPI | `spi_init(spi0, speed)` | `GPIO_FUNC_SPI` |
 | UART | `uart_init(uart0, 115200)` | `GPIO_FUNC_UART` |
 
-In this guide, the I2C sensors from Chapter 10 onward use GP4 and GP5.
+In this guide, the I2C sensors from Chapter 11 onward use GP4 and GP5.
 
 ## Precautions to avoid damage
 

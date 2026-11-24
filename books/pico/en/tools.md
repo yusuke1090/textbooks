@@ -112,7 +112,7 @@ Parts (LEDs, resistors, sensors) are listed under "What you need" in each chapte
 
 ![Multimeter](images/multimeter.jpg)
 
-- Measures voltage (V), resistance (Ω) and current, and whether a wire is connected (continuity) (Chapter 17)
+- Measures voltage (V), resistance (Ω) and current, and whether a wire is connected (continuity) (Chapter 18)
 - Use it to check "what voltage is this battery?", "is this jumper wire broken inside?" and "is this solder joint connected?"
 - In continuity mode it beeps when there is a connection
 

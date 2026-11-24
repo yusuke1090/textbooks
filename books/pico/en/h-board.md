@@ -20,7 +20,7 @@ Raspberry Pi (barn)   collect, camera, page
 Phone                 view
 ```
 
-Everything runs inside the barn Wi-Fi, even without the internet (the same idea as Chapter 18).
+Everything runs inside the barn Wi-Fi, even without the internet (the same idea as Chapter 19).
 
 ![Raspberry Pi 5 (used as the barn receiver)](images/h-rpi5.jpg)
 
@@ -28,7 +28,7 @@ Everything runs inside the barn Wi-Fi, even without the internet (the same idea 
 
 | Board post | What the Pico builds | Difficulty |
 | --- | --- | --- |
-| #1 Cattle management system | Activity collar (continues Chapters 15–19) | ★★★ |
+| #1 Cattle management system | Activity collar (continues Chapters 16–20) | ★★★ |
 | #2 Single-purpose sensors | Leg and tail tags, drinking-water flow meter | ★★ |
 | #3 Barn environment | Temperature, humidity, THI and CO2 meter | ★ |
 | #4 Night mounting and cows that cannot stand | Tailhead mount sensor, leg tag | ★★ |
@@ -57,7 +57,7 @@ Search Amazon for the words in bold. Keep using what you bought for Appendix G (
 | **Digital multimeter** | 1 | About ¥2,000 |
 
 - Because the builds are wireless, the Pico must be **one with a W**. The Pico 2 W has a micro-USB port
-- For anything that transmits radio, choose a board with the Japanese **technical conformity mark (技適)** (Chapter 19). Some compatible boards shipped directly from abroad do not have it
+- For anything that transmits radio, choose a board with the Japanese **technical conformity mark (技適)** (Chapter 20). Some compatible boards shipped directly from abroad do not have it
 - The Raspberry Pi 5 went up in price several times in 2026. Check the price before buying. While you are trying things out, your usual PC can be the receiver
 
 ### Sending to the Raspberry Pi (used by every build)
@@ -194,13 +194,13 @@ ThreadingHTTPServer(("", 8000), Page).serve_forever()
 ```
 
 - Alert lines turn red on the page. To keep it running all the time, make it a systemd service (Appendix C)
-- To get a notification on your phone, send it to a notification service where the `print(now, "alert:" …)` line is. In a barn without the internet, use a lamp or a buzzer instead (Chapter 18)
+- To get a notification on your phone, send it to a notification service where the `print(now, "alert:" …)` line is. In a barn without the internet, use a lamp or a buzzer instead (Chapter 19)
 
 ## #1 Cattle management system (collar)
 
 > Board post: a buy-once, local-only system for small dairy farms, like U-motion
 
-This is exactly what Chapters 15–19 of this guide have been building. The Pico on the collar works out the behaviour (resting, eating, ruminating and so on) from the acceleration and sends a summary to the Raspberry Pi every minute.
+This is exactly what Chapters 16–20 of this guide have been building. The Pico on the collar works out the behaviour (resting, eating, ruminating and so on) from the acceleration and sends a summary to the Raspberry Pi every minute.
 
 ![A cow wearing a collar (New Zealand)](images/h-collar.jpg)
 
@@ -216,16 +216,16 @@ Cattle collars are also sold at livestock supply shops.
 
 ### How to build it
 
-1. On the desk, connect the GY-521 (Chapters 10 and 11) and record the acceleration to flash (Chapter 15)
+1. On the desk, connect the GY-521 (Chapters 11 and 12) and record the acceleration to flash (Chapter 16)
 2. Put the Pico, GY-521 and batteries in the waterproof case, and fix it to the strap so the case sits on top of the neck
-3. Put it on a cow and collect data together with video (Chapter 18, "4. Fit it to cows and collect data and video")
-4. Build the behaviour classifier in Chapter 16 and shape it like `collar.cpp` from Chapter 19
+3. Put it on a cow and collect data together with video (Chapter 19, "4. Fit it to cows and collect data and video")
+4. Build the behaviour classifier in Chapter 17 and shape it like `collar.cpp` from Chapter 20
 5. Send the summary every minute with `send_line()` (for example `collar,12,rest=40,eat=20,rum=0`)
-6. On the Raspberry Pi, compare each cow with its usual behaviour to flag possible heat or illness (Chapter 18, "9.")
+6. On the Raspberry Pi, compare each cow with its usual behaviour to flag possible heat or illness (Chapter 19, "9.")
 
 ### Things to watch out for
 
-- With Wi-Fi connected all the time, 3 AA batteries last only a few days. First build the classifier in a trial of a few days. Think about making the batteries last (Chapter 17) or moving to a low-power microcontroller with BLE (Chapter 18) after that
+- With Wi-Fi connected all the time, 3 AA batteries last only a few days. First build the classifier in a trial of a few days. Think about making the batteries last (Chapter 18) or moving to a low-power microcontroller with BLE (Chapter 19) after that
 - Decide how to fit it together with the person who looks after the cows
 
 ## #2 Single-purpose sensors
@@ -252,7 +252,7 @@ They all use the same `receiver.py` and the same page.
 | **Hook and loop strap 50mm** (around the leg) | One per tag | About ¥800 |
 | **Self-adhesive bandage** (around the tail; the kind vets use) | 1 roll | About ¥500 |
 
-The wiring is the same as Chapter 11 (GY-521 VCC→3V3(OUT), GND→GND, SDA→GP4, SCL→GP5).
+The wiring is the same as Chapter 12 (GY-521 VCC→3V3(OUT), GND→GND, SDA→GP4, SCL→GP5).
 Fix the GY-521 so the **Y arrow** printed on the board points down along the leg (or tail).
 
 ```cpp run
@@ -314,7 +314,7 @@ int main() {
 
 - On the desk, stand the board up, lay it down and shake it to check the values change before fitting it to a cow
 - Fit the tail tag a few days before the due date. When the tail is raised for much longer than usual, calving may be near
-- Judge heat and calving by comparing with that cow's last few days (Chapter 18, "9."). Adjust the numbers (1.4 g, 60 degrees, 180 minutes) as you test
+- Judge heat and calving by comparing with that cow's last few days (Chapter 19, "9."). Adjust the numbers (1.4 g, 60 degrees, 180 minutes) as you test
 
 ### Drinking-water flow meter
 
@@ -353,7 +353,7 @@ constexpr int ID = 1;
 constexpr uint PIN = 15;                 // yellow wire (to GP15 through the diode)
 constexpr float PULSES_PER_L = 450;      // pulses per litre (measure with a bucket and correct it)
 
-volatile uint32_t pulses = 0;            // counted in an interrupt (Chapter 14)
+volatile uint32_t pulses = 0;            // counted in an interrupt (Chapter 15)
 
 void on_pulse(uint, uint32_t) {
     pulses++;
@@ -402,7 +402,7 @@ The Pico measures temperature, humidity, THI and CO2. Counting cows with a camer
 
 ### Wiring
 
-The SHT31 and SCD41 are both I2C. Connect them side by side on the same four wires (Chapter 12). Push them into the breadboard the same way as in "Wiring steps" in Chapter 10.
+The SHT31 and SCD41 are both I2C. Connect them side by side on the same four wires (Chapter 13). Push them into the breadboard the same way as in "Wiring steps" in Chapter 11.
 
 | Pico | SHT31 and SCD41 |
 | --- | --- |
@@ -424,7 +424,7 @@ constexpr uint8_t SHT31 = 0x44;
 constexpr uint8_t SCD41 = 0x62;
 constexpr float THI_ALERT = 72;          // alert at this THI or above
 
-// Check byte (CRC). The SHT31 and SCD41 use the same rule (Chapter 12)
+// Check byte (CRC). The SHT31 and SCD41 use the same rule (Chapter 13)
 uint8_t crc8(const uint8_t* data, int len) {
     uint8_t crc = 0xFF;
     for (int i = 0; i < len; i++) {
@@ -546,7 +546,7 @@ def count_cows(detections, labels):
 
 - To run it without a screen, change `show_preview=True` in the example to `False`
 - At night it cannot see without some light
-- To tell lying cows apart, you need to label photos taken in the barn and train your own model (the same idea as Chapter 16)
+- To tell lying cows apart, you need to label photos taken in the barn and train your own model (the same idea as Chapter 17)
 
 ## #4 Night mounting and cows that cannot stand
 
@@ -559,7 +559,7 @@ The board idea uses a camera and AI, but with the Pico it is easier to learn the
 | Mounting | A pressure sensor on the tailhead counts one mount when pressed for 2 s or more |
 | Cannot stand | The leg tag (#2) shows the cow has been lying down for too long |
 
-If the sensors record when things happened, you can later use that as the correct answers (the labels in Chapter 16) when you build a camera AI.
+If the sensors record when things happened, you can later use that as the correct answers (the labels in Chapter 17) when you build a camera AI.
 
 ### Mount sensor
 

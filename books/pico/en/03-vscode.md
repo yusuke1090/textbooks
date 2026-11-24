@@ -25,7 +25,7 @@ This assumes the development environment from Chapter 3 is ready. If you follow 
 - **One product (program) is one project**. A project is one folder, and on GitHub it is one repository
 - Keep them all at **`~/apps/name`** (for example `~/apps/collar`). If you choose `~/apps` as the Location in New C/C++ Project, a folder with the name is created inside it
 - **The order is "create in VS Code → put on GitHub"**. The extension creates the folder and files (including `.gitignore`), so it is easier to create first and then put it on GitHub
-- For **practice** with Chapters 8–17 of this guide, it is handy to create one project such as `~/apps/pico-practice` and replace the contents of the `.cpp` for each chapter (it does not need to go on GitHub)
+- For **practice** with Chapters 8–18 of this guide, it is handy to create one project such as `~/apps/pico-practice` and replace the contents of the `.cpp` for each chapter (it does not need to go on GitHub)
 - Create a separate project for the product's program, apart from the practice one, and put it on GitHub
 
 When working in the terminal, stay in this folder. The terminal inside VS Code (View → Terminal) opens in the project folder from the start.
@@ -44,7 +44,7 @@ Click the Pico icon on the left and press **New C/C++ Project** in Quick Access 
 | ④ | Pico SDK version | The SDK version. The newest is fine |
 | ⑤ | Features | Features to use (SPI, I2C, UART, PIO, DMA, HW watchdog, HW timer, HW clocks and others). Choosing them adds libraries to `CMakeLists.txt` and inserts example code. You can add them later too |
 | ⑥ | Stdio support | **Check Console over USB**. `printf` reaches the PC over USB. You can uncheck Console over UART |
-| ⑦ | Code generation options | **Check Generate C++ code** (you get a `.cpp`). **Leave Use project name as entry point file name checked** (you get `blink.cpp`; unchecked gives `main.cpp`). Leave Run the program from RAM rather than flash, Enable C++ exceptions and RTTI unchecked (Chapter 13) |
+| ⑦ | Code generation options | **Check Generate C++ code** (you get a `.cpp`). **Leave Use project name as entry point file name checked** (you get `blink.cpp`; unchecked gives `main.cpp`). Leave Run the program from RAM rather than flash, Enable C++ exceptions and RTTI unchecked (Chapter 14) |
 | ⑧ | Debugger | If you use a Debug Probe, **DebugProbe (CMSIS-DAP)** (the default is fine) |
 
 Finally, press **Create**. VS Code reopens the newly created project folder.
@@ -329,7 +329,7 @@ This is the everyday development loop.
 
 - Try it by replacing the contents of the `.cpp` in your practice project (`~/apps/pico-practice` or the like)
 - For code that uses I2C and so on, add the library to `target_link_libraries` (the table in Chapter 5)
-- When using headers that come with Pico Studio, such as `mpu6050.h` in Chapter 11, copy them into your project folder
+- When using headers that come with Pico Studio, such as `mpu6050.h` in Chapter 12, copy them into your project folder
 
 ```bash
 # replace blink with your own project's name

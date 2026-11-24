@@ -1,14 +1,14 @@
-# 12. Recommended sensors
+# 13. Recommended sensors
 
 > For the SHT31 program, add `hardware_i2c`, and for the soil moisture sensor program, add `hardware_adc`, to `target_link_libraries` in `CMakeLists.txt` before building (Chapter 5).
 
 ## To start with
 
-These two are recommended. Both connect over I2C. The wiring is in Chapter 10, and the code is in Chapter 11 as is.
+These two are recommended. Both connect over I2C. The wiring is in Chapter 11, and the code is in Chapter 12 as is.
 
 | Sensor | What it measures | Good for |
 | --- | --- | --- |
-| **MPU-6050 (GY-521)** | Acceleration, tilt, rotation | Measuring movement. Classifying cow behavior (it carries through to machine learning in Chapter 16) |
+| **MPU-6050 (GY-521)** | Acceleration, tilt, rotation | Measuring movement. Classifying cow behavior (it carries through to machine learning in Chapter 17) |
 | **BMP280** | Air pressure, temperature | Changes in height, air temperature |
 
 ## For agriculture
@@ -22,15 +22,15 @@ These two are also candidates. How to connect them and the code are in the secti
 
 ## Things to watch out for when choosing
 
-- **Choose ones that work at 3.3 V.** Take power from the Pico's 3V3(OUT) (Chapter 10)
+- **Choose ones that work at 3.3 V.** Take power from the Pico's 3V3(OUT) (Chapter 11)
 - **Check whether soldering is needed.** Many modules come with separate pins that need soldering (Chapter 7)
-- **When connecting several to the same I2C wires, choose ones whose addresses do not overlap.** You can check addresses with the I2C scan in Chapter 10
+- **When connecting several to the same I2C wires, choose ones whose addresses do not overlap.** You can check addresses with the I2C scan in Chapter 11
 
 > The code for these two has not yet been tested with real sensors. If it does not work, compare it with the documentation of the module you bought.
 
 ## Connecting and reading the SHT31
 
-It can share the same I2C wires as the MPU-6050. Wire it with USB unplugged. Push it into the breadboard the same way as in "Wiring steps" in Chapter 10. Pin names differ between modules, so follow the markings on the product you bought.
+It can share the same I2C wires as the MPU-6050. Wire it with USB unplugged. Push it into the breadboard the same way as in "Wiring steps" in Chapter 11. Pin names differ between modules, so follow the markings on the product you bought.
 
 | Pico | SHT31 |
 | --- | --- |
@@ -39,7 +39,7 @@ It can share the same I2C wires as the MPU-6050. Wire it with USB unplugged. Pus
 | GP4 / I2C0 SDA (pin 6) | SDA |
 | GP5 / I2C0 SCL (pin 7) | SCL |
 
-The I2C address is `0x44` (`0x45` if the ADDR pin is connected to 3.3 V). You can check it with the I2C scan in Chapter 10.
+The I2C address is `0x44` (`0x45` if the ADDR pin is connected to 3.3 V). You can check it with the I2C scan in Chapter 11.
 
 ```cpp run
 #include <cstdio>

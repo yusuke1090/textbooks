@@ -232,7 +232,7 @@ for i in range(20):
     time.sleep(0.5)
 ```
 
-### I2C scan (Chapter 10)
+### I2C scan (Chapter 11)
 
 ```python run
 from machine import Pin, I2C
@@ -249,7 +249,7 @@ for addr in found:
     print("found: 0x{:02X}  {}".format(addr, name))
 ```
 
-### Reading the MPU-6050 (Chapter 11)
+### Reading the MPU-6050 (Chapter 12)
 
 ```python run
 from machine import Pin, I2C
@@ -346,7 +346,7 @@ Go from the top. From the second time on, start at step 2, and skip step 3 if Mi
 | `NameError: name 'xxx' isn't defined` | No variable or function with that name. Is it misspelled, or did you forget an `import`? |
 | `ImportError: no module named 'xxx'` | That library is not in MicroPython. Libraries for the PC (numpy and so on) cannot be used as is. If it is a file you made, is it saved on the Pico? |
 | `TypeError` | A wrong combination of types (numbers, text and so on). For example, joining text and a number with `+` → use `str(number)` |
-| `OSError: [Errno 5] EIO` | I2C communication failed. Check the wiring, address and power, and run the I2C scan from Chapter 10 |
+| `OSError: [Errno 5] EIO` | I2C communication failed. Check the wiring, address and power, and run the I2C scan from Chapter 11 |
 | `OSError: [Errno 110] ETIMEDOUT` | The sensor does not respond. Check the wiring and lower it to `freq=100000` |
 | `OSError: [Errno 2] ENOENT` | That file does not exist. Check the spelling of the file name and the "Files on the Pico" list |
 | `MemoryError` | Out of memory. Make lists smaller, use `array`, save often |

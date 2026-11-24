@@ -5,7 +5,7 @@ Here, "Raspberry Pi" means a board that runs Linux, such as the Raspberry Pi 4 o
 ## The biggest difference
 
 **The Pico has no Linux.** There is nothing to log in to, and no system for managing services.
-When the power comes on, only the one program you flashed runs. Within that one program, you can move several tasks forward (Chapters 13 and 14).
+When the power comes on, only the one program you flashed runs. Within that one program, you can move several tasks forward (Chapters 14 and 15).
 
 | Item | Raspberry Pi | Pico |
 | --- | --- | --- |
@@ -33,10 +33,10 @@ The numbers are rough guides.
 | Run automatically at start-up | A systemd service | The flashed program always runs |
 | Stop | Ctrl + C, `systemctl stop` | There is no stop operation. Flash a different program |
 | Restart | `sudo systemctl restart` | The RST button, unplugging and replugging USB |
-| View logs | `journalctl -u logger` | View `printf` in Serial Monitor. To keep them, write to flash (Chapter 15) |
-| Restart automatically after a crash | `Restart=always` in the service | The watchdog (`watchdog_enable`, Chapter 17) |
+| View logs | `journalctl -u logger` | View `printf` in Serial Monitor. To keep them, write to flash (Chapter 16) |
+| Restart automatically after a crash | `Restart=always` in the service | The watchdog (`watchdog_enable`, Chapter 18) |
 | Install libraries | `apt install`, `pip install` | Add Pico SDK components to `CMakeLists.txt` (Chapter 5). Put other libraries' source into the project |
-| Debug | `gdb` | A Debug Probe (SWD) and gdb (Chapters 5 and 19) |
+| Debug | `gdb` | A Debug Probe (SWD) and gdb (Chapters 5 and 20) |
 | Update the OS | `sudo apt upgrade` | None (raise the SDK version and rebuild) |
 | Shell scripts | Kept on the Raspberry Pi | Kept on the PC (Appendix A) |
 
@@ -46,13 +46,13 @@ If you have written C++ on a Raspberry Pi, watch out for the following differenc
 
 | Item | Raspberry Pi (C++ on Linux) | Pico (Pico SDK) |
 | --- | --- | --- |
-| What you can use | The whole standard library, exceptions, `std::thread`, files | Part of the standard library. No exceptions, `std::thread` or files (Chapter 13) |
-| Memory | Use `new` and `std::vector` without worrying | Fix sizes and place things outside functions (Chapters 13 and 15) |
-| Several tasks | Threads, processes | Move forward in turn by looking at the time (Chapter 13), interrupts, the two cores (Chapter 14) |
+| What you can use | The whole standard library, exceptions, `std::thread`, files | Part of the standard library. No exceptions, `std::thread` or files (Chapter 14) |
+| Memory | Use `new` and `std::vector` without worrying | Fix sizes and place things outside functions (Chapters 14 and 16) |
+| Several tasks | Threads, processes | Move forward in turn by looking at the time (Chapter 14), interrupts, the two cores (Chapter 15) |
 | Driving pins | Operated like files, with `libgpiod` and the like | Drive the hardware directly with `gpio_put` and the like (Chapter 8) |
-| I2C | Open `/dev/i2c-1` and use `ioctl` | `i2c_write_blocking` / `i2c_read_blocking` (Chapter 11) |
-| Time | `std::chrono`, `sleep` | `sleep_ms`, `get_absolute_time` (Chapter 11) |
-| When it stops with an error | The OS reports it, and the service restarts | It stops without saying anything. Restart with the watchdog (Chapter 17) |
+| I2C | Open `/dev/i2c-1` and use `ioctl` | `i2c_write_blocking` / `i2c_read_blocking` (Chapter 12) |
+| Time | `std::chrono`, `sleep` | `sleep_ms`, `get_absolute_time` (Chapter 12) |
+| When it stops with an error | The OS reports it, and the service restarts | It stops without saying anything. Restart with the watchdog (Chapter 18) |
 
 Comparing a blinking LED gives the following.
 
@@ -82,11 +82,11 @@ while (true) {
 ## Where Linux habits trip you up
 
 - **When `main` ends, it does nothing.** Repeat with `while (true)` (Chapter 8)
-- **`printf` output is not kept.** You only see it while connected by USB and watching. To keep it, write to flash (Chapter 15)
-- **When it stops with an error, nothing appears.** Add a watchdog and error records (Chapters 17 and 19)
-- **Write to flash sparingly.** The number of write cycles is limited (Chapter 15)
+- **`printf` output is not kept.** You only see it while connected by USB and watching. To keep it, write to flash (Chapter 16)
+- **When it stops with an error, nothing appears.** Add a watchdog and error records (Chapters 18 and 20)
+- **Write to flash sparingly.** The number of write cycles is limited (Chapter 16)
 - **A port can only be used by one program at a time.** Unlike ssh, you cannot have several connections at once
-- **Making a large array inside a function breaks things.** The stack is only a few KB (Chapter 13)
+- **Making a large array inside a function breaks things.** The stack is only a few KB (Chapter 14)
 
 ## Which to use
 
@@ -99,7 +99,7 @@ while (true) {
 | Running large machine learning models | Raspberry Pi, Jetson |
 | Running a web server or database | Raspberry Pi |
 
-You can also combine the two: the Pico reads sensors in the field, and the Raspberry Pi receives the data and stores and analyzes it (Chapter 18). Passing data over USB is in Chapter 15.
+You can also combine the two: the Pico reads sensors in the field, and the Raspberry Pi receives the data and stores and analyzes it (Chapter 19). Passing data over USB is in Chapter 16.
 
 ## Summary
 
