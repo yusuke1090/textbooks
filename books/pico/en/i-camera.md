@@ -1,12 +1,12 @@
 # Appendix I. Showing a cheap camera's pictures on a PC
 
-Connect an OV2640 camera from AliExpress (about 1,000 yen) to the Pico, send the pictures it takes to your PC over USB, and show them in a window.
+Connect an OV7670 camera from AliExpress (about 300 yen) to the Pico, send the pictures it takes to your PC over USB, and show them in a window.
 You can also save the pictures, so they become material for teaching a machine learning model to spot crows later (idea #6 in Appendix H).
 
 ## The overall shape
 
 ```text
-Camera (OV2640)  takes a JPEG picture
+Camera (OV7670)  takes a picture as a number for each dot's colour
    │ 18 wires
    ▼
 Pico             sends one when the PC asks
@@ -15,33 +15,32 @@ Pico             sends one when the PC asks
 PC               shows it and saves it
 ```
 
-The Pico has only 264 KB of memory, so it just receives pictures and passes them on. Recognising things (machine learning) is the PC's job.
+The Pico has only 264 KB of memory, so it just receives pictures and passes them on. One 320×240 picture uses 150 KB of it. Recognising things (machine learning) is the PC's job.
 
 ## Choosing a camera
 
 | Camera | Rough price | Differences |
 | --- | --- | --- |
-| **OV2640 (18-pin)** | 500–1,500 yen | Used in this appendix. 2 megapixels. It makes the JPEG inside the camera, so pictures travel quickly even over USB |
-| OV7670 | 200–400 yen | The cheapest. 0.3 megapixels, and it cannot make JPEGs. The programs in this appendix do not work with it |
+| **OV7670 (18-pin)** | 200–500 yen | Used in this appendix. The cheapest. 0.3 megapixels. It cannot make JPEGs, so it sends the colour numbers as they are |
+| OV2640 (18-pin) | 500–1,500 yen | 2 megapixels. It makes the JPEG inside the camera, so even big pictures travel quickly |
 | ESP32-CAM | 1,000–2,000 yen | A camera and a Wi-Fi microcontroller on one board. Shows pictures in a browser without a Pico, but many have no Japanese radio certification (giteki) |
 
-Prices are rough AliExpress figures from November 2026. Picture quality matters for spotting crows, so we use the OV2640.
+Prices are rough AliExpress figures from November 2026. To tell whether a crow is there, 0.3 megapixels is enough (machine learning shrinks pictures to about 96×96 anyway). So we use the cheapest, the OV7670.
 
 ![ESP32-CAM (the OV2640 is joined by a thin ribbon cable)](images/esp32-cam.jpg)
 
 ### What to check when buying
 
-Search AliExpress for **OV2640 camera module 18pin**.
+Search AliExpress for **OV7670 camera module**.
 
-- The photo should show **18 pins standing in 2 rows of 9**. An OV2640 on just a thin ribbon cable (FPC) has no power circuit for the camera, so you cannot connect it straight to the Pico
+- The photo should show **18 pins standing in 2 rows of 9**. The **FIFO** version (with a big "AL422B" chip on the back and 22 pins) is a different thing, and the programs in this appendix do not work with it
 - It should run on **3.3 V**
-- Choose a lens with a **normal angle of view (60–70°)**. Wide 120° and 160° lenses bend the edges. Ones labelled "Night Vision" or "850nm" let infrared through, so daytime colours look reddish
 
 ## What you need
 
 | Item | How many | Notes |
 | --- | --- | --- |
-| OV2640 camera (18-pin) | 1 | AliExpress |
+| OV7670 camera (18-pin, no FIFO) | 1 | AliExpress |
 | Pico | 1 | Your current RP2040 one. No wireless needed |
 | Breadboard | 1 | The one from Appendix G |
 | Jumper wires (male–female) | 18 | Female end on the camera pins, male end in the breadboard. 10 cm is best (long wires tend to spoil the picture) |
@@ -87,11 +86,13 @@ The Pico reads D0–D7 at every PCLK signal using PIO (a small circuit for readi
 
 1. Unplug the USB cable
 2. Push the Pico into the breadboard (as in Appendix G, across the middle groove)
-3. Look at the names printed on the camera board and push the female ends of the wires onto those pins. Push the male ends into the row of holes beside the Pico pin with the matching number
-4. Put RESET in the row for pin 36 and PWDN in the row for pin 38. Two wires in the same row is fine
+3. Look at the names printed on the camera board and push the female ends of the wires onto those pins
+4. Push each male end into a free hole in **the same vertical column** as the Pico pin number in the table. For the top row (pins 1–20) holes a and b are free; for the bottom row (pins 21–40), holes i and j
+5. Put RESET in the column for pin 36 and PWDN in the column for pin 38. Two wires in the same vertical column is fine (they are joined inside)
+
+![Video: wiring the camera to the Pico, then writing a program to check it](videos/en/camera-wiring.mp4)
 
 - D0–D7 must be **eight pins in a row** (GP14–GP21). The library needs it that way
-- Some boards name the data wires **D2–D9**. Then connect D2 to GP14, D3 to GP15 … D9 to GP21
 - If there is a protective film on the lens, peel it off
 
 ## Making the project
@@ -145,11 +146,21 @@ camera_config_t camera_config() {
     c.pin_pwdn = -1;                   // so the Pico does not drive them
     c.xclk_freq_hz = 10000000;         // clock sent to the camera (10 MHz)
     c.sccb_i2c_port = 0;               // GP12 and GP13 are I2C0
-    c.pixel_format = PIXFORMAT_JPEG;
-    c.frame_size = FRAMESIZE_VGA;      // 640×480
-    c.jpeg_quality = 12;               // 0–63. Smaller is sharper and gives more data
+    c.pixel_format = PIXFORMAT_RGB565; // send each dot's colour in 2 bytes
+    c.frame_size = FRAMESIZE_QVGA;     // 320×240
     c.fb_count = 1;
     return c;
+}
+
+// Brightness of the picture (0–255): the average green of all the dots
+int brightness(const camera_fb_t *fb) {
+    size_t n = fb->len / 2;                                         // number of dots (2 bytes each)
+    uint32_t sum = 0;
+    for (size_t i = 0; i < n; i++) {
+        uint16_t px = (fb->buf[2 * i] << 8) | fb->buf[2 * i + 1];   // the high byte comes first
+        sum += (px >> 5) & 0x3F;                                    // green (0–63)
+    }
+    return (int)(sum * 255 / (63 * n));
 }
 
 int main() {
@@ -167,9 +178,8 @@ int main() {
         if (fb == nullptr) {
             printf("Could not take a picture\n");
         } else {
-            bool jpeg = fb->len > 2 && fb->buf[0] == 0xFF && fb->buf[1] == 0xD8;   // a JPEG starts with FF D8
-            printf("%u×%u picture, %u bytes (JPEG %s)\n",
-                   (unsigned)fb->width, (unsigned)fb->height, (unsigned)fb->len, jpeg ? "OK" : "NG");
+            printf("%u×%u picture, %u bytes  brightness %d\n",
+                   (unsigned)fb->width, (unsigned)fb->height, (unsigned)fb->len, brightness(fb));
             pico_camera_fb_return(fb);
         }
         sleep_ms(1000);
@@ -177,26 +187,32 @@ int main() {
 }
 ```
 
-- `pico_camera_init()` finds the camera, sets it up and reserves space in memory for a picture (about 85 KB)
+- `pico_camera_init()` finds the camera, sets it up and reserves space in memory for a picture (153,600 bytes)
 - `pico_camera_fb_get()` takes one picture; when you have finished with it, give the space back with `pico_camera_fb_return()`. If you don't, the next picture cannot be taken
+- `PIXFORMAT_RGB565` stores the colour of one dot in 2 bytes (16 bits): 5 bits of red, 6 of green and 5 of blue, with the high byte first. At 320×240 that is 320×240×2 = 153,600 bytes
+- `brightness()` turns the average green (0–63) of all the dots into 0–255. Green is the colour the human eye feels most strongly as brightness
 
 ### Reading Serial Monitor
 
-If it works, the size of a picture appears every second (the number of bytes changes with what the camera sees).
+If it works, the picture size and brightness appear every second (the brightness numbers are just examples).
 
 ```text
-Camera: OV2640
-640×480 picture, 18234 bytes (JPEG OK)
-640×480 picture, 18190 bytes (JPEG OK)
+Camera: OV7670
+320×240 picture, 153600 bytes  brightness 118
+320×240 picture, 153600 bytes  brightness 121
+320×240 picture, 153600 bytes  brightness 6      ← lens covered with a hand
 ```
+
+The number of bytes is always 153600, whatever the camera sees (nothing is shrunk as in a JPEG). Use the **brightness** to check the wiring: if the number drops when you cover the lens with your hand and comes back when you take it away, it worked.
 
 | What appears | Cause and fix |
 | --- | --- |
-| `Camera setup failed: no sensor detected on the SCCB bus (check wiring/power)` | The Pico cannot talk to the camera. Check 3.3V, GND, SIOC (GP13), SIOD (GP12) and XCLK (GP5). SIOC and SIOD swapped round is common |
-| `Camera setup failed: not supported (e.g. JPEG on a sensor without a JPEG encoder)` | The camera is not an OV2640 (an OV7670, for example) |
+| `Camera setup failed: no sensor detected on the SCCB bus (check wiring/power)` | The Pico cannot talk to the camera. Check 3.3V, GND, SIOC (GP13), SIOD (GP12) and XCLK (GP5). SIOC and SIOD swapped round is common. If the wiring is right and this still appears, connect SIOC and SIOD each to the 3.3 V column through a 4.7 kΩ–10 kΩ resistor |
+| `Camera setup failed: not supported (e.g. JPEG on a sensor without a JPEG encoder)` | `c.pixel_format` is `PIXFORMAT_JPEG`. The OV7670 cannot make JPEGs, so use `PIXFORMAT_RGB565` |
 | `Camera setup failed: invalid argument (check pins, pixel_format, frame_size)` | The pin numbers in the program are wrong. D0–D7 must be eight in a row, and SIOD must be an even GP |
 | `Could not take a picture` again and again | One of VSYNC, HREF or PCLK is not connected |
-| `(JPEG NG)` | D0–D7 are in the wrong order. On a D2–D9 board, D2 goes to GP14 |
+| The brightness does not change when you cover the lens | One of D0–D7 is not connected, or they are in the wrong order |
+| Nothing appears after `Camera: OV7670` | The picture is too big: the Pico ran out of memory and stopped. Set `c.frame_size` to `FRAMESIZE_QVGA` |
 
 ## Showing it on the PC
 
@@ -224,9 +240,8 @@ camera_config_t camera_config() {
     c.pin_pwdn = -1;                   // so the Pico does not drive them
     c.xclk_freq_hz = 10000000;         // clock sent to the camera (10 MHz)
     c.sccb_i2c_port = 0;               // GP12 and GP13 are I2C0
-    c.pixel_format = PIXFORMAT_JPEG;
-    c.frame_size = FRAMESIZE_VGA;      // 640×480
-    c.jpeg_quality = 12;               // 0–63. Smaller is sharper and gives more data
+    c.pixel_format = PIXFORMAT_RGB565; // send each dot's colour in 2 bytes
+    c.frame_size = FRAMESIZE_QVGA;     // 320×240
     c.fb_count = 1;
     return c;
 }
@@ -247,7 +262,7 @@ int main() {
             printf("ERR could not take a picture\n");
             continue;
         }
-        printf("JPG %u\n", (unsigned)fb->len);          // first line: size of the picture in bytes
+        printf("RGB %u %u\n", (unsigned)fb->width, (unsigned)fb->height);   // first line: width and height of the picture
         stdio_put_string((const char *)fb->buf, (int)fb->len, false, false);   // send the picture unchanged
         stdio_flush();
         pico_camera_fb_return(fb);
@@ -258,11 +273,11 @@ int main() {
 When the PC sends the single character `c`, the Pico sends back one picture in this form.
 
 ```text
-JPG 18234          ← first line: how many bytes follow
-(18234 bytes of JPEG data)
+RGB 320 240        ← first line: width and height of the picture
+(colour data, 320×240×2 = 153600 bytes)
 ```
 
-- Because the size comes first, the PC knows the picture is complete once it has read that many bytes
+- Because the width and height come first, the PC knows the picture is complete once it has read width × height × 2 bytes
 - `printf()` changes `\n` into `\r\n` as it sends. The picture data also contains the same value as `\n`, so the picture goes out with `stdio_put_string()`, which sends it unchanged (the last `false` means "don't change")
 - The Pico only takes a picture when the PC asks, so even if the PC is slow (with machine learning later), pictures do not pile up
 
@@ -286,57 +301,62 @@ import serial
 PORT = "/dev/ttyACM0"
 SAVE_DIR = "photos"     # folder for pictures saved with s
 AUTO_SAVE = 0           # save automatically every this many seconds (0 = never)
+SCALE = 2               # how much to enlarge the window (320×240 is small, so ×2)
+
+
+def to_image(data, w, h):
+    """Turn RGB565 (2 bytes per dot) into an OpenCV image (blue, green, red 0-255 for each dot)"""
+    px = np.frombuffer(data, ">u2").reshape(h, w)     # 2 bytes at a time, high byte first
+    r = ((px >> 11) & 0x1F) << 3                       # red, 5 bits
+    g = ((px >> 5) & 0x3F) << 2                        # green, 6 bits
+    b = (px & 0x1F) << 3                               # blue, 5 bits
+    return np.dstack([b, g, r]).astype(np.uint8)
 
 
 def get_photo(ser):
-    """Send c to the Pico and receive one picture (JPEG). None if it fails"""
+    """Send c to the Pico and receive one picture. None if it fails"""
     ser.write(b"c")
     while True:
         line = ser.readline().decode(errors="replace").strip()
         if line == "":
             print("No reply from the Pico. Check that camera.cpp has been written to it")
             return None
-        if line.startswith("JPG "):
-            size = int(line[4:])
-            data = ser.read(size)
-            if len(data) < size:
+        if line.startswith("RGB "):
+            w, h = map(int, line.split()[1:])
+            data = ser.read(w * h * 2)
+            if len(data) < w * h * 2:
                 print("The picture was cut short")
                 return None
-            return data
+            return to_image(data, w, h)
         print("Pico:", line)            # messages such as ERR ...
         if line.startswith("ERR"):
             return None
 
 
-def save(data):
+def save(img):
     name = time.strftime(f"{SAVE_DIR}/%Y%m%d_%H%M%S.jpg")
-    with open(name, "wb") as f:
-        f.write(data)
+    cv2.imwrite(name, img)
     print("Saved:", name)
 
 
-ser = serial.Serial(PORT, 115200, timeout=2)
+ser = serial.Serial(PORT, 115200, timeout=3)
 ser.reset_input_buffer()
 os.makedirs(SAVE_DIR, exist_ok=True)
 print("s to save, q to quit")
 count, start, last_save = 0, time.time(), time.time()
 while True:
-    data = get_photo(ser)
-    if data is None:
+    img = get_photo(ser)
+    if img is None:
         time.sleep(1)
         continue
-    img = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_COLOR)
-    if img is None:
-        print("Could not read the JPEG (moving on to the next one)")
-        continue
-    cv2.imshow("camera", img)
+    cv2.imshow("camera", cv2.resize(img, None, fx=SCALE, fy=SCALE, interpolation=cv2.INTER_NEAREST))
     count += 1
     if time.time() - start >= 5:                # show the speed every 5 seconds
         print(f"{img.shape[1]}×{img.shape[0]}  {count / (time.time() - start):.1f} pictures a second")
         count, start = 0, time.time()
     key = cv2.waitKey(1) & 0xFF
     if key == ord("s") or (AUTO_SAVE and time.time() - last_save >= AUTO_SAVE):
-        save(data)
+        save(img)
         last_save = time.time()
     elif key == ord("q"):
         break
@@ -346,10 +366,12 @@ cv2.destroyAllWindows()
 
 | Part | What it does |
 | --- | --- |
-| `get_photo()` | Sends `c`, waits for the `JPG 18234` line, then reads that many bytes. If an `ERR` line comes, it prints it |
-| `cv2.imdecode()` | Turns the JPEG data back into an OpenCV image (a table of colours, one per dot) |
+| `get_photo()` | Sends `c`, waits for the `RGB 320 240` line, then reads width × height × 2 bytes. If an `ERR` line comes, it prints it |
+| `to_image()` | Takes red, green and blue out of each 2-byte colour (RGB565), stretches each to 0–255 and makes an OpenCV image (a table of colours, one per dot) |
+| `cv2.resize()` | 320×240 is small on a PC screen, so it enlarges the picture `SCALE` times |
 | `cv2.imshow()` | Shows it in a window called `camera` |
 | `cv2.waitKey(1)` | Redraws the window and picks up any key pressed. Without it the window freezes |
+| `cv2.imwrite()` | Saves the picture as a JPEG file (the name ends in `.jpg`, so it becomes a JPEG) |
 
 ### Running it
 
@@ -367,9 +389,11 @@ If it works, the terminal shows something like this (the pictures per second is 
 
 ```text
 s to save, q to quit
-640×480  4.8 pictures a second
-Saved: photos/20261121_093015.jpg
+320×240  2.0 pictures a second
+Saved: photos/20261124_093015.jpg
 ```
+
+Each picture is 150 KB going over USB, so you get about 2 a second. To go faster, make the picture smaller (see "Changing things" below).
 
 | What appears | Cause and fix |
 | --- | --- |
@@ -377,9 +401,10 @@ Saved: photos/20261121_093015.jpg
 | `could not open port /dev/ttyACM0: [Errno 2] No such file or directory` | The Pico is not connected. Check the USB cable |
 | `ModuleNotFoundError: No module named 'cv2'` | OpenCV is missing. `sudo apt install python3-opencv` |
 | `No reply from the Pico` | The Pico does not have `camera.cpp` (the one that shows pictures on the PC). Write it again |
-| `Pico: 640×480 picture, 18234 bytes (JPEG OK)` keeps scrolling | The Pico still has the wiring-check program. Write the PC one |
+| `Pico: 320×240 picture, 153600 bytes  brightness 118` keeps scrolling | The Pico still has the wiring-check program. Write the PC one |
 | `Pico: ERR no sensor detected …` | The Pico cannot talk to the camera. Check the wiring as in the Serial Monitor table |
-| The picture is whitish or blurry | Peel the protective film off the lens. Turning the lens a little brings it into focus (some are glued and do not turn) |
+| The colours are wrong or there are stripes | D0–D7 are in the wrong order. Check them against the wiring table |
+| The picture is whitish or blurry | Peel the protective film off the lens. Turning the lens a little brings it into focus |
 
 ### Files that appear
 
@@ -388,15 +413,15 @@ Saved: photos/20261121_093015.jpg
 | `PicoCamera/` | When you `git clone`. The library that drives the camera (C++ source) |
 | `build/camera.uf2` | When you Compile. The program written to the Pico (Chapter 4) |
 | `camera_view.py` | When you save it yourself. The program that runs on the PC |
-| `photos/20261121_093015.jpg` | When you press **s** (or every so many seconds if you set `AUTO_SAVE`). A picture you took, named by date and time |
+| `photos/20261124_093015.jpg` | When you press **s** (or every so many seconds if you set `AUTO_SAVE`). A picture you took, named by date and time |
 
 ### Changing things
 
 | What to change | Where |
 | --- | --- |
-| Picture size | `c.frame_size` in `camera.cpp`. `FRAMESIZE_QVGA` (320×240, fast), `FRAMESIZE_VGA` (640×480) or `FRAMESIZE_SVGA` (800×600; anything bigger runs out of memory) |
-| Picture quality | `c.jpeg_quality` in `camera.cpp` (10–20; smaller is sharper but slower) |
+| Picture size | `c.frame_size` in `camera.cpp`. `FRAMESIZE_QQVGA` (160×120; a quarter of the data, so more pictures a second) or `FRAMESIZE_QVGA` (320×240). `FRAMESIZE_VGA` (640×480) runs out of memory and the Pico stops |
 | Saving automatically | `AUTO_SAVE = 10` in `camera_view.py` (every 10 seconds) |
+| Window size | `SCALE` in `camera_view.py` (3 makes it three times bigger) |
 | Upside down | Add the code below on the line after `pico_camera_init()` in `camera.cpp` |
 
 ```cpp
@@ -411,16 +436,17 @@ Saved: photos/20261121_093015.jpg
 ![A crow](images/h-crow.jpg)
 
 - Point the camera where crows come, by a window for example, and run it with `AUTO_SAVE = 10` to collect pictures. Sorting them into folders of pictures with and without crows gives you the labels for training (Chapter 17)
-- A program that spots crows will pass the `img` received by `get_photo()` to a trained model. The Pico side stays exactly as it is
+- A program that spots crows will pass the `img` returned by `get_photo()` to a trained model. The Pico side stays exactly as it is
 - To use it in the barn, plug it into the Raspberry Pi from Appendix H over USB instead of the PC. `camera_view.py` runs unchanged on the Raspberry Pi
 
 ## Summary
 
-- The camera is an 18-pin OV2640 board. It makes the JPEG inside the camera, so 640×480 pictures fit through the Pico's small memory and USB
+- The camera is an 18-pin OV7670 board (no FIFO). It is the cheapest, with 0.3 megapixels. It cannot make JPEGs, so the colour numbers of a 320×240 picture (153,600 bytes) are sent as they are
 - There are 18 wires. D0–D7 go to eight pins in a row (GP14–GP21), SIOC and SIOD to I2C0 (GP13 and GP12), and XCLK is a 10 MHz clock from GP5
 - `git clone` the PicoCamera library and add `add_subdirectory(PicoCamera)` and `pico_camera` to `CMakeLists.txt`
-- When the PC sends `c`, the Pico replies with a `JPG <bytes>` line and the JPEG. The picture goes out unchanged with `stdio_put_string()`
-- `camera_view.py` on the PC shows it in a window and saves it to `photos/` with **s**. The pictures you collect are the material for teaching crow spotting
+- With the wiring-check program, if the brightness number drops when you cover the lens with your hand, the wiring is right
+- When the PC sends `c`, the Pico replies with an `RGB <width> <height>` line and the colour data. The data goes out unchanged with `stdio_put_string()`
+- `camera_view.py` on the PC turns the colour numbers back into a picture, shows it in a window and saves it to `photos/` with **s**. The pictures you collect are the material for teaching crow spotting
 
 ## Exercises
 
@@ -433,9 +459,9 @@ Q: The clock wire from the Pico goes to which pin on the camera?
 A: XCLK
 E: GP5 sends 10 MHz. Without it the camera does not work and you get `no sensor detected`.
 
-Q: What format does the OV2640 use to shrink a picture inside the camera?
-A: JPEG | JPG
-E: A 640×480 picture becomes a few tens of KB. The OV7670 cannot do this.
+Q: How many bytes is a 320×240 picture sent as RGB565 (2 bytes per dot)?
+A: 153600 | 153,600 | 153600 bytes | 153,600 bytes
+E: 320×240×2 = 153,600 bytes. The OV7670 cannot make JPEGs, so the size stays the same whatever the camera sees.
 
 Q: In `camera_view.py`, which key saves a picture?
 A: s

@@ -3,10 +3,10 @@
 
     python3 tools/make_camera_figures.py
 
-- books/pico/images/camera-wiring.svg  OV2640（18ピン）とピコの配線
+- books/pico/images/camera-wiring.svg  OV7670（18ピン）とピコの配線
 作り直したら python3 tools/translate_figures.py pico で英語の図も作り直す。
 """
-from make_xmas_figures import OUT, INK, SUB, PICO, PIN, line, svg, text
+from make_xmas_figures import OUT, PICO, PIN, line, svg, text
 
 POWER, GND, SCCB, SYNC, CLK, DATA = "#d93a3a", "#2b2f36", "#2e7d32", "#7b4fd6", "#e07b00", "#2f6fde"
 
@@ -30,7 +30,7 @@ def wiring():
     lens_y = (y0 + ys[17]) / 2
     b.append(f'<circle cx="{cx + 120}" cy="{lens_y}" r="30" fill="#0b1320" stroke="#8a8f98" stroke-width="4"/>')
     b.append(f'<circle cx="{cx + 120}" cy="{lens_y}" r="11" fill="#2a4a7a"/>')
-    b.append(text(cx + 120, lens_y + 54, "OV2640", 13, "middle", 700, "#ffffff"))
+    b.append(text(cx + 120, lens_y + 54, "OV7670", 13, "middle", 700, "#ffffff"))
     for (cam, pico, color), y in zip(ROWS, ys):
         b.append(text(px - 10, y + 4, pico, 12, "end", 700, "#ffffff"))
         b.append(f'<circle cx="{px}" cy="{y}" r="5" fill="{PIN}"/>')
@@ -45,8 +45,7 @@ def wiring():
         b.append(f'<circle cx="{x}" cy="{ys[row]}" r="4" fill="{color}"/>')
     for i, label in GROUPS:
         b.append(text(400, ys[i] - 6, label, 11, "middle", 700, ROWS[i][2]))
-    b.append(text(30, ys[17] + 52, "基板の名前が D2〜D9 のときは、D2 を GP14、D9 を GP21 につなぎます。", 12, "start", 400, SUB))
-    return svg(760, ys[17] + 70, "カメラ（OV2640・18ピン）とピコの配線", b)
+    return svg(760, ys[17] + 40, "カメラ（OV7670・18ピン）とピコの配線", b)
 
 
 def main():

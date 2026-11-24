@@ -1,12 +1,12 @@
 # 付録I. 安いカメラの写真を PC に映す
 
-アリエクで買える OV2640 のカメラ（1,000円くらい）をピコにつなぎ、撮った写真を USB で PC に送って、窓に映します。
+アリエクで買える OV7670 のカメラ（300円くらい）をピコにつなぎ、撮った写真を USB で PC に送って、窓に映します。
 写真は保存もできるので、あとでカラスを機械学習で見分けるとき（付録H の #6）の材料になります。
 
 ## 全体の形
 
 ```text
-カメラ（OV2640）  撮って JPEG にする
+カメラ（OV7670）  撮って、点ごとの色を数にする
    │ 18本の線
    ▼
 ピコ              PC に頼まれたら1枚送る
@@ -15,33 +15,32 @@
 PC                窓に映す・保存する
 ```
 
-ピコはメモリが 264KB しかないので、写真を受け取って送るだけにします。見分ける（機械学習）のは PC の仕事です。
+ピコはメモリが 264KB しかないので、写真を受け取って送るだけにします。320×240 の写真1枚で、そのうち 150KB を使います。見分ける（機械学習）のは PC の仕事です。
 
 ## カメラを選ぶ
 
 | カメラ | 値段の目安 | ちがい |
 | --- | --- | --- |
-| **OV2640（18ピン）** | 500〜1,500円 | この付録で使う。200万画素。カメラの中で JPEG にするので、USB でも速く送れる |
-| OV7670 | 200〜400円 | いちばん安い。30万画素で、JPEG にできない。この付録のプログラムでは動かない |
+| **OV7670（18ピン）** | 200〜500円 | この付録で使う。いちばん安い。30万画素。JPEG にできないので、色の数をそのまま送る |
+| OV2640（18ピン） | 500〜1,500円 | 200万画素。カメラの中で JPEG にするので、大きい写真も速く送れる |
 | ESP32-CAM | 1,000〜2,000円 | カメラと Wi-Fi のマイコンが1枚。ピコを使わずブラウザに映せるが、技適のない物が多い |
 
-値段は 2026年11月のアリエクの目安です。カラスを見分けるには写真のきれいさが大事なので、OV2640 にします。
+値段は 2026年11月のアリエクの目安です。カラスがいるかどうかを見分けるだけなら、30万画素で足ります（機械学習では、写真を 96×96 くらいに小さくして使います）。いちばん安い OV7670 にします。
 
 ![ESP32-CAM（OV2640 が細い帯の線でつながっている）](images/esp32-cam.jpg)
 
 ### 買うときに見ること
 
-アリエクで **OV2640 camera module 18pin** と検索します。
+アリエクで **OV7670 camera module** と検索します。
 
-- 写真で、**2列×9本（18本）のピン**が立っていること。細い帯の線（FPC）だけの OV2640 は、カメラ用の電源の回路がないので、ピコに直接つなげません
+- 写真で、**2列×9本（18本）のピン**が立っていること。**FIFO 付き**（裏に「AL422B」という大きいチップがあり、ピンが 22本）は別の物で、この付録のプログラムでは動きません
 - **3.3V** で動くこと
-- レンズは**ふつうの画角（60〜70°）**。120°・160° の広角は、端がゆがみます。「Night Vision」「850nm」と書いてあるものは赤外線を通すので、昼の色が赤っぽくなります
 
 ## 用意するもの
 
 | もの | 数 | メモ |
 | --- | --- | --- |
-| OV2640 カメラ（18ピン） | 1個 | アリエク |
+| OV7670 カメラ（18ピン・FIFO なし） | 1個 | アリエク |
 | ピコ | 1枚 | いまの RP2040 のもの。無線はいらない |
 | ブレッドボード | 1枚 | 付録G のもの |
 | ジャンパーワイヤー（オス-メス） | 18本 | メスをカメラのピンに、オスをブレッドボードに差す。10cm がよい（長いと写真が乱れやすい） |
@@ -87,11 +86,13 @@ PC                窓に映す・保存する
 
 1. USB を外しておく
 2. ピコをブレッドボードに差す（付録G と同じ。真ん中の溝をまたぐ）
-3. カメラの基板に書いてある名前を見て、ワイヤーのメスを差す。オスは、ピコの同じ番号のピンの列（横に並んだ穴）に差す
-4. RESET は 36番の列、PWDN は 38番の列に差す。同じ列に2本入って大丈夫です
+3. カメラの基板に書いてある名前を見て、ワイヤーのメスを差す
+4. オスは、表のピンの番号と**同じ縦の列**の、空いている穴に差す。上の列（1〜20番）は a・b、下の列（21〜40番）は i・j の穴が空いています
+5. RESET は 36番の列、PWDN は 38番の列に差す。同じ縦の列に2本入って大丈夫です（中でつながっています）
+
+![動画: カメラとピコの配線と、書き込んで確かめるまで](videos/camera-wiring.mp4)
 
 - D0〜D7 は、**続いた8本**（GP14〜GP21）にしてください。ライブラリの決まりです
-- データの線の名前が **D2〜D9** の基板もあります。そのときは D2 を GP14、D3 を GP15 … D9 を GP21 につなぎます
 - レンズに保護フィルムが貼ってあれば、はがします
 
 ## プロジェクトを作る
@@ -145,11 +146,21 @@ camera_config_t camera_config() {
     c.pin_pwdn = -1;                   // ピコからは動かさない
     c.xclk_freq_hz = 10000000;         // カメラに送る時計（10MHz）
     c.sccb_i2c_port = 0;               // GP12・GP13 は I2C0
-    c.pixel_format = PIXFORMAT_JPEG;
-    c.frame_size = FRAMESIZE_VGA;      // 640×480
-    c.jpeg_quality = 12;               // 0〜63。小さいほどきれいで、データが大きい
+    c.pixel_format = PIXFORMAT_RGB565; // 1つの点の色を2バイトで送る
+    c.frame_size = FRAMESIZE_QVGA;     // 320×240
     c.fb_count = 1;
     return c;
+}
+
+// 写真の明るさ（0〜255）。全部の点の、緑の平均
+int brightness(const camera_fb_t *fb) {
+    size_t n = fb->len / 2;                                         // 点の数（1つの点が2バイト）
+    uint32_t sum = 0;
+    for (size_t i = 0; i < n; i++) {
+        uint16_t px = (fb->buf[2 * i] << 8) | fb->buf[2 * i + 1];   // 上の桁のバイトが先に来る
+        sum += (px >> 5) & 0x3F;                                    // 緑（0〜63）
+    }
+    return (int)(sum * 255 / (63 * n));
 }
 
 int main() {
@@ -167,9 +178,8 @@ int main() {
         if (fb == nullptr) {
             printf("撮れなかった\n");
         } else {
-            bool jpeg = fb->len > 2 && fb->buf[0] == 0xFF && fb->buf[1] == 0xD8;   // JPEG は FF D8 で始まる
-            printf("%u×%u の写真 %u バイト（JPEG %s）\n",
-                   (unsigned)fb->width, (unsigned)fb->height, (unsigned)fb->len, jpeg ? "OK" : "NG");
+            printf("%u×%u の写真 %u バイト  明るさ %d\n",
+                   (unsigned)fb->width, (unsigned)fb->height, (unsigned)fb->len, brightness(fb));
             pico_camera_fb_return(fb);
         }
         sleep_ms(1000);
@@ -177,26 +187,32 @@ int main() {
 }
 ```
 
-- `pico_camera_init()` が、カメラを探して設定し、写真を入れる場所（約 85KB）をメモリにとります
+- `pico_camera_init()` が、カメラを探して設定し、写真を入れる場所（153,600 バイト）をメモリにとります
 - `pico_camera_fb_get()` で1枚撮り、使い終わったら `pico_camera_fb_return()` で場所を返します。返さないと、次の1枚が撮れません
+- `PIXFORMAT_RGB565` は、1つの点の色を2バイト（16ビット）で表す形です。赤5ビット・緑6ビット・青5ビットで、上の桁のバイトが先に来ます。320×240 なら 320×240×2 = 153,600 バイトです
+- `brightness()` は、全部の点の緑（0〜63）の平均を 0〜255 にします。緑は、人の目が明るさをいちばん強く感じる色です
 
 ### Serial Monitor の読み方
 
-うまくいくと、1秒ごとに写真の大きさが出ます（バイト数は、写すものによって変わります）。
+うまくいくと、1秒ごとに写真の大きさと明るさが出ます（明るさの数は例です）。
 
 ```text
-カメラ: OV2640
-640×480 の写真 18234 バイト（JPEG OK）
-640×480 の写真 18190 バイト（JPEG OK）
+カメラ: OV7670
+320×240 の写真 153600 バイト  明るさ 118
+320×240 の写真 153600 バイト  明るさ 121
+320×240 の写真 153600 バイト  明るさ 6      ← レンズを手でふさいだ
 ```
+
+バイト数は、写すものが変わってもいつも 153600 です（JPEG のように小さくしないため）。配線が合っているかは**明るさ**で見ます。レンズを手でふさいで数が小さくなり、手を離すと戻れば成功です。
 
 | 出たもの | 原因と直し方 |
 | --- | --- |
-| `カメラの準備に失敗: no sensor detected on the SCCB bus (check wiring/power)` | カメラと話せない。3.3V・GND・SIOC（GP13）・SIOD（GP12）・XCLK（GP5）を確かめる。SIOC と SIOD の入れ違いが多い |
-| `カメラの準備に失敗: not supported (e.g. JPEG on a sensor without a JPEG encoder)` | カメラが OV2640 ではない（OV7670 など） |
+| `カメラの準備に失敗: no sensor detected on the SCCB bus (check wiring/power)` | カメラと話せない。3.3V・GND・SIOC（GP13）・SIOD（GP12）・XCLK（GP5）を確かめる。SIOC と SIOD の入れ違いが多い。配線が合っていてもこれが出るときは、SIOC と SIOD を、それぞれ 4.7kΩ〜10kΩ の抵抗で 3.3V の列につなぐ |
+| `カメラの準備に失敗: not supported (e.g. JPEG on a sensor without a JPEG encoder)` | `c.pixel_format` が `PIXFORMAT_JPEG` になっている。OV7670 は JPEG を作れないので、`PIXFORMAT_RGB565` にする |
 | `カメラの準備に失敗: invalid argument (check pins, pixel_format, frame_size)` | プログラムのピンの番号が違う。D0〜D7 は続いた8本、SIOD は偶数の GP |
 | `撮れなかった` がくり返し出る | VSYNC・HREF・PCLK のどれかが抜けている |
-| `（JPEG NG）` | D0〜D7 の順番が違う。D2〜D9 の基板なら、D2 が GP14 |
+| 明るさが、手でふさいでも変わらない | D0〜D7 のどれかが抜けているか、順番が違う |
+| `カメラ: OV7670` のあと何も出ない | 写真が大きすぎて、メモリが足りずにピコが止まった。`c.frame_size` を `FRAMESIZE_QVGA` にする |
 
 ## PC に映す
 
@@ -224,9 +240,8 @@ camera_config_t camera_config() {
     c.pin_pwdn = -1;                   // ピコからは動かさない
     c.xclk_freq_hz = 10000000;         // カメラに送る時計（10MHz）
     c.sccb_i2c_port = 0;               // GP12・GP13 は I2C0
-    c.pixel_format = PIXFORMAT_JPEG;
-    c.frame_size = FRAMESIZE_VGA;      // 640×480
-    c.jpeg_quality = 12;               // 0〜63。小さいほどきれいで、データが大きい
+    c.pixel_format = PIXFORMAT_RGB565; // 1つの点の色を2バイトで送る
+    c.frame_size = FRAMESIZE_QVGA;     // 320×240
     c.fb_count = 1;
     return c;
 }
@@ -247,7 +262,7 @@ int main() {
             printf("ERR 撮れなかった\n");
             continue;
         }
-        printf("JPG %u\n", (unsigned)fb->len);          // 1行目: 写真のバイト数
+        printf("RGB %u %u\n", (unsigned)fb->width, (unsigned)fb->height);   // 1行目: 写真の幅と高さ
         stdio_put_string((const char *)fb->buf, (int)fb->len, false, false);   // 写真をそのまま送る
         stdio_flush();
         pico_camera_fb_return(fb);
@@ -258,11 +273,11 @@ int main() {
 PC が `c` を1文字送ると、ピコは次の形で1枚返します。
 
 ```text
-JPG 18234          ← 1行目: これから送るバイト数
-（JPEG のデータ 18234 バイト）
+RGB 320 240        ← 1行目: 写真の幅と高さ
+（色のデータ 320×240×2 = 153600 バイト）
 ```
 
-- 先にバイト数を送るので、PC はその数だけ読めば1枚が終わったとわかります
+- 先に幅と高さを送るので、PC は「幅×高さ×2」バイトを読めば1枚が終わったとわかります
 - `printf()` は `\n` を `\r\n` に変えて送ります。写真のデータの中にも `\n` と同じ値があるので、写真は変えずに送る `stdio_put_string()` を使います（最後の `false` が「変えない」）
 - PC が頼んだときだけ撮るので、PC の処理（あとの機械学習）が遅くても、写真がたまりません
 
@@ -286,57 +301,62 @@ import serial
 PORT = "/dev/ttyACM0"
 SAVE_DIR = "photos"     # s を押した写真を入れるフォルダ
 AUTO_SAVE = 0           # 何秒ごとに自動で保存するか（0 なら自動では保存しない）
+SCALE = 2               # 窓に映すときの倍率（320×240 は小さいので2倍）
+
+
+def to_image(data, w, h):
+    """RGB565（1つの点が2バイト）を、OpenCV の画像（点ごとに 青・緑・赤 の 0〜255）にする"""
+    px = np.frombuffer(data, ">u2").reshape(h, w)     # 2バイトずつ。上の桁のバイトが先
+    r = ((px >> 11) & 0x1F) << 3                       # 赤 5ビット
+    g = ((px >> 5) & 0x3F) << 2                        # 緑 6ビット
+    b = (px & 0x1F) << 3                               # 青 5ビット
+    return np.dstack([b, g, r]).astype(np.uint8)
 
 
 def get_photo(ser):
-    """ピコに c を送って、写真（JPEG）を1枚受け取る。だめなら None"""
+    """ピコに c を送って、写真を1枚受け取る。だめなら None"""
     ser.write(b"c")
     while True:
         line = ser.readline().decode(errors="replace").strip()
         if line == "":
             print("ピコから返事がありません。camera.cpp を書き込んだか確かめてください")
             return None
-        if line.startswith("JPG "):
-            size = int(line[4:])
-            data = ser.read(size)
-            if len(data) < size:
+        if line.startswith("RGB "):
+            w, h = map(int, line.split()[1:])
+            data = ser.read(w * h * 2)
+            if len(data) < w * h * 2:
                 print("写真が途中で切れました")
                 return None
-            return data
+            return to_image(data, w, h)
         print("ピコ:", line)            # ERR … などの知らせ
         if line.startswith("ERR"):
             return None
 
 
-def save(data):
+def save(img):
     name = time.strftime(f"{SAVE_DIR}/%Y%m%d_%H%M%S.jpg")
-    with open(name, "wb") as f:
-        f.write(data)
+    cv2.imwrite(name, img)
     print("保存しました:", name)
 
 
-ser = serial.Serial(PORT, 115200, timeout=2)
+ser = serial.Serial(PORT, 115200, timeout=3)
 ser.reset_input_buffer()
 os.makedirs(SAVE_DIR, exist_ok=True)
 print("s で保存、q で終了")
 count, start, last_save = 0, time.time(), time.time()
 while True:
-    data = get_photo(ser)
-    if data is None:
+    img = get_photo(ser)
+    if img is None:
         time.sleep(1)
         continue
-    img = cv2.imdecode(np.frombuffer(data, np.uint8), cv2.IMREAD_COLOR)
-    if img is None:
-        print("JPEG を読めませんでした（次の1枚へ）")
-        continue
-    cv2.imshow("camera", img)
+    cv2.imshow("camera", cv2.resize(img, None, fx=SCALE, fy=SCALE, interpolation=cv2.INTER_NEAREST))
     count += 1
     if time.time() - start >= 5:                # 5秒ごとに速さを出す
         print(f"{img.shape[1]}×{img.shape[0]}  1秒に {count / (time.time() - start):.1f} 枚")
         count, start = 0, time.time()
     key = cv2.waitKey(1) & 0xFF
     if key == ord("s") or (AUTO_SAVE and time.time() - last_save >= AUTO_SAVE):
-        save(data)
+        save(img)
         last_save = time.time()
     elif key == ord("q"):
         break
@@ -346,10 +366,12 @@ cv2.destroyAllWindows()
 
 | ところ | すること |
 | --- | --- |
-| `get_photo()` | `c` を送り、`JPG 18234` の行を待って、その数だけ読む。`ERR` の行が来たら、そのまま表示する |
-| `cv2.imdecode()` | JPEG のデータを、OpenCV の画像（点ごとの色の表）に戻す |
+| `get_photo()` | `c` を送り、`RGB 320 240` の行を待って、幅×高さ×2 バイト読む。`ERR` の行が来たら、そのまま表示する |
+| `to_image()` | 2バイトずつの色（RGB565）から赤・緑・青を取り出し、それぞれ 0〜255 に広げて、OpenCV の画像（点ごとの色の表）にする |
+| `cv2.resize()` | 320×240 は PC の画面では小さいので、`SCALE` 倍にする |
 | `cv2.imshow()` | `camera` という窓に映す |
 | `cv2.waitKey(1)` | 窓を描き直し、押されたキーを受け取る。これがないと窓が固まる |
+| `cv2.imwrite()` | 写真を JPEG のファイルにして保存する（名前が `.jpg` なので JPEG になる） |
 
 ### 動かす
 
@@ -367,9 +389,11 @@ python3 camera_view.py
 
 ```text
 s で保存、q で終了
-640×480  1秒に 4.8 枚
-保存しました: photos/20261121_093015.jpg
+320×240  1秒に 2.0 枚
+保存しました: photos/20261124_093015.jpg
 ```
+
+1枚 150KB を USB で送るので、1秒に 2枚くらいです。もっと速くしたいときは、下の「変えたいとき」で写真を小さくします。
 
 | 出たもの | 原因と直し方 |
 | --- | --- |
@@ -377,9 +401,10 @@ s で保存、q で終了
 | `could not open port /dev/ttyACM0: [Errno 2] No such file or directory` | ピコがつながっていない。USB ケーブルを確かめる |
 | `ModuleNotFoundError: No module named 'cv2'` | OpenCV がない。`sudo apt install python3-opencv` |
 | `ピコから返事がありません` | ピコに `camera.cpp`（PC に映すほう）が入っていない。書き込み直す |
-| `ピコ: 640×480 の写真 18234 バイト（JPEG OK）` が流れる | 配線を確かめるプログラムのまま。PC に映すほうを書き込む |
+| `ピコ: 320×240 の写真 153600 バイト  明るさ 118` が流れる | 配線を確かめるプログラムのまま。PC に映すほうを書き込む |
 | `ピコ: ERR no sensor detected …` | カメラと話せない。Serial Monitor の表と同じように配線を見る |
-| 写真が白っぽい・ぼやける | レンズの保護フィルムをはがす。レンズを少し回すとピントが合う（接着されていて回らないものもある） |
+| 色がおかしい・しま模様になる | D0〜D7 の順番が違う。配線の表と同じか確かめる |
+| 写真が白っぽい・ぼやける | レンズの保護フィルムをはがす。レンズを少し回すとピントが合う |
 
 ### できるファイル
 
@@ -388,15 +413,15 @@ s で保存、q で終了
 | `PicoCamera/` | `git clone` したとき。カメラを動かすライブラリ（C++ のソース） |
 | `build/camera.uf2` | Compile したとき。ピコに書き込むプログラム（4章） |
 | `camera_view.py` | 自分で保存したとき。PC で動かすプログラム |
-| `photos/20261121_093015.jpg` | **s** を押したとき（`AUTO_SAVE` を決めたら、その秒ごと）。撮った写真。名前は日付と時刻 |
+| `photos/20261124_093015.jpg` | **s** を押したとき（`AUTO_SAVE` を決めたら、その秒ごと）。撮った写真。名前は日付と時刻 |
 
 ### 変えたいとき
 
 | 変えたいこと | 直すところ |
 | --- | --- |
-| 写真の大きさ | `camera.cpp` の `c.frame_size`。`FRAMESIZE_QVGA`（320×240、速い）・`FRAMESIZE_VGA`（640×480）・`FRAMESIZE_SVGA`（800×600、これより大きいとメモリが足りない） |
-| 写真のきれいさ | `camera.cpp` の `c.jpeg_quality`（10〜20。小さいほどきれいで、遅くなる） |
+| 写真の大きさ | `camera.cpp` の `c.frame_size`。`FRAMESIZE_QQVGA`（160×120。データが 1/4 なので、1秒の枚数が増える）か `FRAMESIZE_QVGA`（320×240）。`FRAMESIZE_VGA`（640×480）はメモリが足りず、ピコが止まる |
 | 自動で保存 | `camera_view.py` の `AUTO_SAVE = 10`（10秒ごと） |
+| 窓の大きさ | `camera_view.py` の `SCALE`（3 なら3倍） |
 | 上下が逆 | 下のコードを、`camera.cpp` の `pico_camera_init()` の次の行に足す |
 
 ```cpp
@@ -411,16 +436,17 @@ s で保存、q で終了
 ![カラス](images/h-crow.jpg)
 
 - 窓ぎわなど、カラスの来る所にカメラを向けて `AUTO_SAVE = 10` で動かすと、写真がたまります。カラスが写った写真と、写っていない写真をフォルダに分けると、学習のラベルになります（17章）
-- 見分けるプログラムは、`get_photo()` で受け取った `img` を学習したモデルに渡す形になります。ピコの側は、このまま変えません
+- 見分けるプログラムは、`get_photo()` で受け取った `img` を、学習したモデルに渡す形になります。ピコの側は、このまま変えません
 - 牛舎で使うときは、PC の代わりに付録H のラズパイに USB でつなぎます。`camera_view.py` はラズパイでもそのまま動きます
 
 ## まとめ
 
-- カメラは OV2640 の18ピンの基板。カメラの中で JPEG にするので、ピコの少ないメモリと USB でも 640×480 を送れる
+- カメラは OV7670 の18ピン（FIFO なし）の基板。いちばん安く、30万画素。JPEG にできないので、320×240 の色の数（153,600 バイト）をそのまま送る
 - 線は18本。D0〜D7 は続いた8本（GP14〜GP21）、SIOC・SIOD は I2C0（GP13・GP12）、XCLK は GP5 からの 10MHz の時計
 - ライブラリは PicoCamera を `git clone` し、`CMakeLists.txt` に `add_subdirectory(PicoCamera)` と `pico_camera` を足す
-- PC が `c` を送ると、ピコは `JPG バイト数` の行と JPEG を返す。写真は `stdio_put_string()` で変えずに送る
-- PC の `camera_view.py` が窓に映し、**s** で `photos/` に保存する。集めた写真がカラスの学習の材料になる
+- 配線を確かめるプログラムで、レンズを手でふさぐと明るさの数が小さくなれば、配線は合っている
+- PC が `c` を送ると、ピコは `RGB 幅 高さ` の行と色のデータを返す。データは `stdio_put_string()` で変えずに送る
+- PC の `camera_view.py` が色の数を画像に戻して窓に映し、**s** で `photos/` に保存する。集めた写真がカラスの学習の材料になる
 
 ## 練習問題
 
@@ -433,9 +459,9 @@ Q: ピコからカメラに送る時計の線は、カメラの何というピ�
 A: XCLK
 E: GP5 から 10MHz を送ります。これがないとカメラは動かず、`no sensor detected` になります。
 
-Q: OV2640 が、カメラの中で写真を小さくする形式は何ですか。
-A: JPEG | JPG
-E: 640×480 の写真が、数十 KB になります。OV7670 はこれができません。
+Q: 320×240 の写真を RGB565（1つの点が2バイト）で送ると、何バイトですか。
+A: 153600 | 153,600 | 153600バイト | 153,600バイト
+E: 320×240×2 = 153,600 バイトです。OV7670 は JPEG にできないので、写すものが変わってもこの大きさです。
 
 Q: `camera_view.py` で、写真を保存するキーは何ですか。
 A: s
