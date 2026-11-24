@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 470" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
 <defs></defs>
 <rect width="760" height="470" rx="10" fill="#ffffff"/>
-<text x="380" y="26" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">The connections inside a breadboard</text>
+<text x="380" y="26" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Connections inside a breadboard</text>
 <rect x="40" y="44" width="680" height="340" rx="10" fill="#f2efe6" stroke="#d6cfbd" stroke-width="2"/>
 <rect x="70" y="61" width="629" height="18" rx="6" fill="#d93a3a" fill-opacity="0.22"/>
 <line x1="72" y1="61" x2="697" y2="61" stroke="#d93a3a" stroke-width="2" stroke-linecap="round"/>
