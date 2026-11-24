@@ -1,0 +1,59 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 388" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="388" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Wiring for the water-gun test</text>
+<rect x="30" y="60" width="160" height="190" rx="8" fill="#1f7a3d"/>
+<text x="70.0" y="160.0" font-size="18" text-anchor="middle" font-weight="700" fill="#ffffff">Pico</text>
+<text x="180.0" y="124.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GP22 (pin 29)</text>
+<circle cx="190" cy="120" r="5" fill="#e0a800"/>
+<text x="180.0" y="174.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">GND (pin 28)</text>
+<circle cx="190" cy="170" r="5" fill="#e0a800"/>
+<rect x="300" y="60" width="160" height="190" rx="6" fill="#2f5fa8"/>
+<rect x="354.0" y="130" width="22" height="30" rx="2" fill="#15181d"/>
+<rect x="384.0" y="130" width="22" height="30" rx="2" fill="#15181d"/>
+<rect x="300" y="108" width="22" height="24" fill="#2e9e5b"/>
+<circle cx="311" cy="120" r="6" fill="#c9ced6" stroke="#8a8f98" stroke-width="1.5"/>
+<text x="328.0" y="124.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">Signal</text>
+<rect x="300" y="158" width="22" height="24" fill="#2e9e5b"/>
+<circle cx="311" cy="170" r="6" fill="#c9ced6" stroke="#8a8f98" stroke-width="1.5"/>
+<text x="328.0" y="174.0" font-size="12" text-anchor="start" font-weight="700" fill="#ffffff">GND</text>
+<rect x="438" y="83" width="22" height="24" fill="#2e9e5b"/>
+<circle cx="449" cy="95" r="6" fill="#c9ced6" stroke="#8a8f98" stroke-width="1.5"/>
+<text x="432.0" y="99.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">VIN+</text>
+<rect x="438" y="113" width="22" height="24" fill="#2e9e5b"/>
+<circle cx="449" cy="125" r="6" fill="#c9ced6" stroke="#8a8f98" stroke-width="1.5"/>
+<text x="432.0" y="129.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">VIN−</text>
+<rect x="438" y="168" width="22" height="24" fill="#2e9e5b"/>
+<circle cx="449" cy="180" r="6" fill="#c9ced6" stroke="#8a8f98" stroke-width="1.5"/>
+<text x="432.0" y="184.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">OUT+</text>
+<rect x="438" y="198" width="22" height="24" fill="#2e9e5b"/>
+<circle cx="449" cy="210" r="6" fill="#c9ced6" stroke="#8a8f98" stroke-width="1.5"/>
+<text x="432.0" y="214.0" font-size="12" text-anchor="end" font-weight="700" fill="#ffffff">OUT−</text>
+<text x="380.0" y="236.0" font-size="12" text-anchor="middle" font-weight="700" fill="#ffffff">MOSFET module</text>
+<line x1="196.0" y1="120.0" x2="300.0" y2="120.0" stroke="#2f6fde" stroke-width="3" stroke-linecap="round"/>
+<line x1="196.0" y1="170.0" x2="300.0" y2="170.0" stroke="#2b2f36" stroke-width="3" stroke-linecap="round"/>
+<text x="635.0" y="62.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2b2f36">Battery box (3 × AA)</text>
+<rect x="560" y="72" width="150" height="46" rx="5" fill="#3a3f47"/>
+<rect x="568.0" y="81" width="36.7" height="28" rx="4" fill="#c9ced6"/>
+<rect x="604.7" y="91.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="608.7" y="81" width="36.7" height="28" rx="4" fill="#c9ced6"/>
+<rect x="645.3" y="91.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="649.3" y="81" width="36.7" height="28" rx="4" fill="#c9ced6"/>
+<rect x="686.0" y="91.0" width="3" height="8" fill="#c9ced6"/>
+<rect x="692" y="86" width="10" height="18" rx="2" fill="#8a8f98"/>
+<rect x="694" y="88" width="6" height="7" rx="1" fill="#ffffff"/>
+<path d="M560.0 82.0 L510.0 82.0 L510.0 95.0 L460.0 95.0" stroke="#d93a3a" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M560.0 104.0 L520.0 104.0 L520.0 125.0 L460.0 125.0" stroke="#2b2f36" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M560 228 L570 348 L650 348 L660 228 Z" fill="#ffffff" stroke="#8a8f98" stroke-width="2"/>
+<path d="M562 250 L570 346 L650 346 L658 250 Z" fill="#bfe3f7"/>
+<rect x="582" y="310" width="50" height="32" rx="6" fill="#3a3f47"/>
+<rect x="624" y="298" width="10" height="16" fill="#3a3f47"/>
+<path d="M460.0 180.0 L612.0 180.0 L612.0 310.0" stroke="#d93a3a" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M460.0 210.0 L592.0 210.0 L592.0 310.0" stroke="#2b2f36" stroke-width="3" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="530.0" y1="180.0" x2="530.0" y2="210.0" stroke="#8a8f98" stroke-width="2" stroke-linecap="round"/>
+<rect x="524" y="184.0" width="12" height="22" rx="3" fill="#15181d"/>
+<rect x="524" y="184.0" width="12" height="5" fill="#c9ced6"/>
+<text x="522.0" y="236.0" font-size="11" text-anchor="middle" font-weight="700" fill="#2b2f36">Diode (band to +)</text>
+<path d="M629 298 C629 238 669 218 719 188" stroke="#8fb8d8" stroke-width="7" fill="none" stroke-linecap="round"/>
+<text x="725.0" y="178.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">Hose</text>
+<text x="610.0" y="372.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2b2f36">Pump (under water)</text>
+</svg>

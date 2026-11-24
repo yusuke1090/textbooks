@@ -1,17 +1,20 @@
 #!/usr/bin/env python3
 """ピコの教科書の付録I（安いカメラの写真を PC に映す）の動画を作る（使い方は tools/video.py）。
 
-    .venv/bin/python tools/make_camera_videos.py              # 動画を作る
-    .venv/bin/python tools/make_camera_videos.py --still フォルダ 5 20   # その秒のコマを PNG にして見る
+    .venv/bin/python tools/make_camera_videos.py [名前 …]                # 動画を作る
+    .venv/bin/python tools/make_camera_videos.py --still フォルダ 名前 5 20   # その秒のコマを PNG にして見る
 
 - camera-wiring  カメラ（OV7670・18ピン）とピコの配線、書き込んで明るさで確かめるまで
+- water-gun      水鉄砲のテスト（MOSFET モジュール・電池・ポンプ）の配線と、動く物に水を出すまで
 
 ブレッドボードは make_breadboard_figures.py と同じ（ピコは USB を右にして 11〜30列）。
 """
+import math
 import sys
 
 from make_breadboard_figures import X, ROW, MARK, board, pico, col_of
-from make_xmas_figures import PIN
+from make_xmas_figures import PIN, battery
+from make_camera_figures import mosfet, cup_pump, diode
 from video import Steps, frame, group, draw_path, render, text, INK
 
 S, OX, OY = 0.7, 281, 27                 # ブレッドボードの図を縮めて、右に置く
@@ -237,31 +240,201 @@ def camera_wiring():
     return f, st.duration
 
 
-VIDEOS = {"camera-wiring": camera_wiring}
+# ---------------------------------------------------------------- 水鉄砲のテスト
+S2, OX2, OY2 = 0.55, -18.5, 122.5        # ブレッドボードは左下に小さく
+MS, MX, MY = 0.8, 420, 120               # MOSFET モジュール
+CUP = (640, 270)                         # コップ
+NOZZLE = (772, 196)                      # ホースの先
 
 
-def still(out, times):
-    """決めた秒のコマを、フォルダ out に PNG で出す（見た目を確かめる用）"""
+def at2(x, y):
+    return OX2 + S2 * x, OY2 + S2 * y
+
+
+def term(name):
+    """MOSFET モジュールの端子の、画面の座標"""
+    tx, ty = mosfet(0, 0)[1][name]
+    return MX + MS * tx, MY + MS * ty
+
+
+def gun_wire(pts, color, p):
+    if p <= 0:
+        return []
+    b = draw_path(rounded(pts, 6), color, p, 3)
+    if p >= 1:
+        x, y = pts[-1]
+        b.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="3" fill="{color}"/>')
+    return b
+
+
+def small_camera():
+    """左上のカメラと、ブレッドボードへ行く18本の線（薄く。配線はそのまま）"""
+    b = []
+    for k in range(7):
+        x2, y2 = at2(X(11 + k), ROW["a"])
+        b.append(f'<path d="M140 {44 + 9 * k} C{180 + 4 * k} {44 + 9 * k} {x2:.1f} {y2 - 50:.1f} {x2:.1f} {y2:.1f}" '
+                 f'stroke="#8fa6c8" stroke-width="2" fill="none" opacity=".55"/>')
+    b += ['<rect x="20" y="14" width="120" height="104" rx="8" fill="#1d3557"/>',
+          '<circle cx="62" cy="62" r="26" fill="#2b2f36"/>',
+          '<circle cx="62" cy="62" r="18" fill="#0b1320" stroke="#8a8f98" stroke-width="3"/>',
+          '<circle cx="62" cy="62" r="7" fill="#2a4a7a"/>',
+          text(62, 106, "OV7670", 11, "middle", 700, "#ffffff"),
+          text(20, 136, "カメラ（配線はそのまま）", 12, "start", 700, INK)]
+    return b
+
+
+def spray(t0, t, dur):
+    """ホースの先から、水が左上へ飛ぶ（t0 秒から dur 秒）"""
+    k = t - t0
+    if k < 0 or k > dur + 0.6:
+        return []
+    x0, y0 = NOZZLE
+    b = []
+    for i in range(14):
+        s = ((k * 1.8) + i / 14) % 1.0               # 水のつぶの、飛び出してからの進み
+        born = k - s / 1.8                           # そのつぶが出た時刻
+        if born < 0 or born > dur:
+            continue
+        x = x0 - 230 * s
+        y = y0 - 150 * s + 160 * s * s
+        b.append(f'<circle cx="{x:.1f}" cy="{y:.1f}" r="{4 - 1.5 * s:.1f}" fill="#4aa3df" opacity="{1 - 0.6 * s:.2f}"/>')
+    return b
+
+
+def water_gun():
+    st = Steps([("カメラの配線はそのまま。MOSFET モジュール・電池・ポンプを足す", 3),
+                ("① USB を外し、電池ボックスのスイッチを切っておく", 3),
+                ("② 29番（GP22）の列 → 信号、28番（GND）の列 → GND", 4.5),
+                ("③ 電池ボックス: 赤 → VIN+、黒 → VIN−", 4),
+                ("④ ポンプ: 赤 → OUT+、黒 → OUT−。ダイオードは帯を OUT+ に", 5),
+                ("⑤ ポンプを水に沈め、ホースの先をカメラが見ている方へ", 3.5),
+                ("電池のスイッチを入れ、USB をつないで書き込むと、少しだけ水が出る", 5),
+                ("カメラの前で手を動かすと、水が出る", 6.5)])
+    test_on = st.starts[6] + 3.2                    # 書き込んで3秒あとに、0.3秒
+    shot_on = st.starts[7] + 2.6                    # 手を動かしたあと、1秒
+
+    def f(t):
+        i = st.index(t)
+        sig_cols = [(19, "bottom"), (18, "bottom")] if i == 2 else []
+        b = small_camera()
+        b += group(board(sig_cols) + pico([], name_dx=60, name_dy=6), extra=f" translate({OX2} {OY2}) scale({S2})")
+        if i == 2:
+            for pin, dy in ((28, -17), (29, -7)):          # 並んでいるので、上下にずらす
+                x, _ = at2(X(col_of(pin)), 0)
+                b.append(text(x, at2(0, ROW["h"])[1] + dy, str(pin), 9, "middle", 700, "#ffffff"))
+        # USB
+        ux, uy = at2(X(30) + 30, (ROW["c"] + ROW["h"]) / 2)
+        out = st.p(t, 1, 0.8) * (1 - st.p(t, 6, 0.8, 0.8))          # 抜くと少し右へずれて薄くなる（ケーブルは上へ）
+        x = ux + 6 * out
+        b += group([f'<rect x="{x:.1f}" y="{uy - 6:.1f}" width="14" height="12" rx="2" fill="#3a3f47"/>',
+                    f'<path d="M{x + 14:.1f} {uy:.1f} Q{x + 20:.1f} {uy:.1f} {x + 20:.1f} {uy - 10:.1f} L{x + 20:.1f} -10" '
+                    f'stroke="#3a3f47" stroke-width="5" fill="none"/>'], opacity=1 - 0.65 * out)
+        # MOSFET モジュール（ON のときは LED がつく）
+        on = test_on <= t < test_on + 0.5 or shot_on <= t < shot_on + 1.0
+        m, _ = mosfet(0, 0)
+        b += group(m, extra=f" translate({MX} {MY}) scale({MS})")
+        b.append(f'<circle cx="{MX + 64}" cy="{MY + 20}" r="4" fill="{"#ff3b3b" if on else "#5a2a2a"}"/>')
+        # 電池ボックス（スイッチ: 切 → 入）
+        b.append(text(675, 30, "電池ボックス", 12, "middle", 700, INK))
+        b += battery(600, 40)
+        sw = st.p(t, 6, 0.4, 0.3)
+        b.append(text(760, 100, "入" if sw >= 1 else "切", 11, "middle", 700, "#2e7d32" if sw >= 1 else "#8a8f98"))
+        # コップとポンプ
+        c, e = cup_pump(*CUP)
+        b += c
+        b.append(text(CUP[0] - 8, CUP[1] + 70, "ポンプ", 12, "end", 700, INK))
+        # 線
+        sx, sy = at2(X(col_of(29)), ROW["j"])
+        gx, gy = at2(X(col_of(28)), ROW["j"])
+        dim = 0.3
+        steps = [      # (手順, [(通る点, 色, 遅れ), …])
+            (2, [([(sx, sy), (sx, 380), (402, 380), (402, term("信号")[1]), term("信号")], DATA, 0.0),
+                 ([(gx, gy), (gx, 390), (411, 390), (411, term("GND")[1]), term("GND")], GND, 1.2)]),
+            (3, [([(600, 50), (565, 50), (565, term("VIN+")[1]), term("VIN+")], POWER, 0.0),
+                 ([(600, 72), (575, 72), (575, term("VIN−")[1]), term("VIN−")], GND, 1.0)]),
+            (4, [([e["red"], (e["red"][0], term("OUT+")[1]), term("OUT+")], POWER, 0.0),
+                 ([e["black"], (e["black"][0], term("OUT−")[1]), term("OUT−")], GND, 1.0)]),
+        ]
+        for step, wires in steps:
+            if i < step:
+                continue
+            part = []
+            for pts, color, delay in wires:
+                part += gun_wire(pts, color, st.p(t, step, 1.0, delay))
+            b += group(part, opacity=dim) if step < i < 6 else part
+        if i >= 4:
+            q = st.p(t, 4, 0.5, 2.4)
+            d = diode(600, term("OUT+")[1], term("OUT−")[1])
+            b += group(d, dy=-(1 - q) * 40, opacity=q) if i == 4 else (group(d, opacity=dim) if i == 5 else d)
+            if i == 4 and q > 0:
+                b.append(text(600, term("OUT−")[1] + 24, "帯 → OUT+", 11, "middle", 700, INK))
+        # ホース（⑤ で先をカメラの方へ）
+        if i >= 5:
+            hx, hy = e["hose"]
+            d = f"M{hx} {hy} C{hx} {hy - 70} {NOZZLE[0]} {NOZZLE[1] + 50} {NOZZLE[0]} {NOZZLE[1]}"
+            b += draw_path(d, "#8fb8d8", st.p(t, 5, 1.2), 7)
+        # 水
+        b += spray(test_on, t, 0.3)
+        b += spray(shot_on, t, 1.0)
+        # 手（カメラの前で左右に動かす）
+        if i >= 7:
+            k = t - st.starts[7]
+            q = st.p(t, 7, 0.6)
+            dx = -120 * (1 - q) + 18 * math.sin(k * 6) * min(1.0, k)
+            b += group(hand_small(), dx=dx, opacity=q)
+        # Serial Monitor
+        lines = []
+        if t >= test_on - 0.3:
+            lines.append(("ポンプを試す", "#e6edf3"))
+        if i >= 7:
+            k = t - st.starts[7]
+            if k >= 1.4:
+                lines.append(("動いたます目 2", "#e6edf3"))
+            if k >= 2.1:
+                lines.append(("動いたます目 14", "#e6edf3"))
+            if k >= 2.5:
+                lines.append(("水を出す", "#ffb454"))
+        if lines:
+            b += monitor(lines, x=200, y=8, w=220)
+        return frame(b, st.caption(t))
+    return f, st.duration
+
+
+def hand_small():
+    """カメラの前の手（小さめ）"""
+    skin, edge = "#f1c7a5", "#d9a77f"
+    x, y = 62, 70
+    b = [f'<rect x="{x - 18 + 12 * k}" y="{y - 48 + abs(k - 1.5) * 6}" width="11" height="44" rx="5.5" fill="{skin}" stroke="{edge}" stroke-width="1.2"/>'
+         for k in range(4)]
+    b.append(f'<ellipse cx="{x + 2}" cy="{y + 6}" rx="30" ry="27" fill="{skin}" stroke="{edge}" stroke-width="1.2"/>')
+    return b
+
+
+VIDEOS = {"camera-wiring": camera_wiring, "water-gun": water_gun}
+
+
+def still(out, name, times):
+    """動画 name の決めた秒のコマを、フォルダ out に PNG で出す（見た目を確かめる用）"""
     from pathlib import Path
     from playwright.sync_api import sync_playwright
     from video import fit_caption, PX_W, PX_H
     out = Path(out)
     out.mkdir(parents=True, exist_ok=True)
-    f, _ = camera_wiring()
+    f, _ = VIDEOS[name]()
     with sync_playwright() as pw:
         browser = pw.chromium.launch(channel="chrome")
         page = browser.new_page(viewport={"width": PX_W, "height": PX_H})
         for t in times:
             page.set_content(f"<html><body style='margin:0;overflow:hidden'>{fit_caption(f(t))}</body></html>")
-            page.screenshot(path=str(out / f"still-{t:05.1f}.png"))
-            print(out / f"still-{t:05.1f}.png")
+            page.screenshot(path=str(out / f"{name}-{t:05.1f}.png"))
+            print(out / f"{name}-{t:05.1f}.png")
         browser.close()
 
 
 def main():
     args = sys.argv[1:]
     if args[:1] == ["--still"]:
-        still(args[1], [float(a) for a in args[2:]])
+        still(args[1], args[2], [float(a) for a in args[3:]])
         return
     for name in args or VIDEOS:
         f, duration = VIDEOS[name]()

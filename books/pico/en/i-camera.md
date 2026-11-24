@@ -439,6 +439,204 @@ Each picture is 150 KB going over USB, so you get about 2 a second. To go faster
 - A program that spots crows will pass the `img` returned by `get_photo()` to a trained model. The Pico side stays exactly as it is
 - To use it in the barn, plug it into the Raspberry Pi from Appendix H over USB instead of the PC. `camera_view.py` runs unchanged on the Raspberry Pi
 
+## A water-gun test to chase crows away
+
+When something moves in front of the camera, a small pump squirts water. No PC is needed: the Pico alone notices that "something moved". It does not tell whether it is a crow, so people and cats get water too. Aiming only at crows comes after machine learning with the pictures collected in the previous section (Chapter 17).
+
+```text
+Camera (OV7670)     keeps taking pictures
+   │
+   ▼
+Pico                compares brightness with the last picture; if many places changed, "something moved"
+   │ GP22
+   ▼
+MOSFET module       on the Pico's signal, lets current flow from the batteries to the pump
+   │
+   ▼
+Pump                squirts water for 1 second
+```
+
+A Pico pin gives only 3.3 V and a tiny current, so it cannot run a pump directly. A **MOSFET** is a switch that turns a large current on and off with the Pico's small signal.
+
+### What to buy
+
+| Item | How many | Notes |
+| --- | --- | --- |
+| Small submersible pump (3–5 V, with hose) | 1 | 200–400 yen on AliExpress. Search for **mini submersible water pump 5V** |
+| MOSFET module (D4184 or similar) | 1 | 100–300 yen on AliExpress. One that says it works with a **3.3 V** signal (the same as Appendix H) |
+| Diode 1N4007 | 1 | About 100 yen for 10. Protects the Pico from the reverse voltage when the pump stops |
+| Battery box (3 × AA, with switch) and AA batteries | 1 set | The one from Appendix G. Powers the pump (4.5 V) |
+| Jumper wires (male–male) | 2 | From the breadboard to the MOSFET module's screw terminals |
+| A cup or plastic bottle | 1 | Fill it with water and sink the pump in it |
+
+- This pump can only push water 40–110 cm high. The water reaches about 1 m, which is fine for a test
+- Do not choose a MOSFET module with an **IRF520**. With a 3.3 V signal it barely lets current through, and the pump does not run
+
+### Wiring
+
+![Wiring for the water-gun test](images/en/pump-wiring.svg)
+
+| What to connect | MOSFET module terminal |
+| --- | --- |
+| Pico pin 29 (GP22) column | Signal (labelled PWM, TRIG, SIG or similar) |
+| Pico pin 28 (GND) column | GND (next to the signal) |
+| Battery box red (+) and black (−) | VIN+ and VIN− (sometimes DC+ and DC−) |
+| Pump red (+) and black (−) | OUT+ and OUT− |
+| Diode 1N4007 | Band side to OUT+, other side to OUT− |
+
+1. Unplug USB and switch the battery box off. Leave the camera wiring as it is
+2. Push one end of each of the two male–male wires into the MOSFET module's signal and GND screw terminals and tighten the screws with a screwdriver. Push the other ends into free holes (i or j) in the pin 29 (GP22) and pin 28 (GND) columns
+3. Fix the battery box red wire in VIN+ and black in VIN−
+4. Fix the pump red wire in OUT+ and black in OUT−. Put the diode legs into the same two terminals (band side in OUT+)
+5. Sink the pump in a cup of water and point the end of the hose where the camera is looking. A narrow tube such as a ballpoint pen barrel in the end of the hose makes the water go further
+
+![Video: wiring the water gun, then spraying at something that moves](videos/en/water-gun.mp4)
+
+- Only run the pump under water. Running it dry soon breaks it
+- If the diode is the wrong way round, it shorts the batteries. If the pump does not run and the diode gets hot, switch the batteries off at once and turn the diode round
+- Do not point it at people, roads or the neighbours. The aim is not to hit crows but to startle them and keep them away
+
+### The Pico program
+
+Replace the contents of `camera.cpp` with this program. Sink the pump in water, switch the batteries on, connect USB to the PC and write it with **Compile → Run (USB)** (unlike Appendix G, the batteries only feed the pump, so having USB connected at the same time is fine).
+
+```cpp
+#include <cstdio>
+#include <cstdlib>
+#include <cstring>
+#include "pico/stdlib.h"
+#include "PicoCamera.h"
+
+const uint PUMP = 22;               // GP connected to the MOSFET module's signal
+const int BLOCK = 16;               // compare brightness in squares of 16×16 dots
+const int NX = 320 / BLOCK;         // number of squares across (20)
+const int NY = 240 / BLOCK;         // number of squares down (15)
+const int DIFF = 30;                // a square "moved" if its brightness (0–255) changes this much
+const int COUNT = 6;                // spray if at least this many squares moved
+const int SHOT_MS = 1000;           // how long to spray (ms)
+const int REST_MS = 10000;          // how long to rest after spraying (ms)
+
+// How the camera is connected (same GP numbers as the wiring table)
+camera_config_t camera_config() {
+    camera_config_t c = {};
+    c.pin_sccb_sda = 12;               // SIOD
+    c.pin_sccb_scl = 13;               // SIOC
+    c.pin_vsync = 2;
+    c.pin_href = 3;
+    c.pin_pclk = 4;
+    c.pin_xclk = 5;
+    c.pin_d0 = 14; c.pin_d1 = 15; c.pin_d2 = 16; c.pin_d3 = 17;   // D0–D7 are GP14–GP21 (eight in a row)
+    c.pin_d4 = 18; c.pin_d5 = 19; c.pin_d6 = 20; c.pin_d7 = 21;
+    c.pin_reset = -1;                  // RESET is tied to 3.3 V and PWDN to GND,
+    c.pin_pwdn = -1;                   // so the Pico does not drive them
+    c.xclk_freq_hz = 10000000;         // clock sent to the camera (10 MHz)
+    c.sccb_i2c_port = 0;               // GP12 and GP13 are I2C0
+    c.pixel_format = PIXFORMAT_RGB565; // send each dot's colour in 2 bytes
+    c.frame_size = FRAMESIZE_QVGA;     // 320×240
+    c.fb_count = 1;
+    return c;
+}
+
+// Put the brightness of each square (0–255, average green) into grid
+void block_brightness(const camera_fb_t *fb, uint8_t grid[NY][NX]) {
+    static uint32_t sum[NY][NX];
+    memset(sum, 0, sizeof(sum));
+    for (int y = 0; y < NY * BLOCK; y++) {
+        for (int x = 0; x < NX * BLOCK; x++) {
+            size_t i = 2 * (y * 320 + x);                           // where dot (x, y) starts
+            uint16_t px = (fb->buf[i] << 8) | fb->buf[i + 1];       // the high byte comes first
+            sum[y / BLOCK][x / BLOCK] += (px >> 5) & 0x3F;           // green (0–63)
+        }
+    }
+    for (int by = 0; by < NY; by++)
+        for (int bx = 0; bx < NX; bx++)
+            grid[by][bx] = sum[by][bx] * 255 / (63 * BLOCK * BLOCK);
+}
+
+// Run the pump for ms milliseconds
+void spray(int ms) {
+    gpio_put(PUMP, 1);                 // the MOSFET lets current through and the pump runs
+    sleep_ms(ms);
+    gpio_put(PUMP, 0);
+}
+
+int main() {
+    stdio_init_all();
+    gpio_init(PUMP);
+    gpio_set_dir(PUMP, GPIO_OUT);
+    gpio_put(PUMP, 0);
+    sleep_ms(3000);                    // wait for Serial Monitor to connect
+    camera_config_t config = camera_config();
+    pico_camera_err_t err = pico_camera_init(&config);
+    while (err != PICO_CAMERA_OK) {
+        printf("Camera setup failed: %s\n", pico_camera_err_str(err));
+        sleep_ms(1000);
+    }
+    printf("Testing the pump\n");
+    spray(300);                        // wiring check: one short squirt at the start
+
+    static uint8_t now[NY][NX], before[NY][NX];
+    bool first = true;
+    while (true) {
+        camera_fb_t *fb = pico_camera_fb_get();
+        if (fb == nullptr) {
+            printf("Could not take a picture\n");
+            continue;
+        }
+        block_brightness(fb, now);
+        pico_camera_fb_return(fb);
+        int moved = 0;                                               // number of squares whose brightness changed
+        for (int by = 0; by < NY; by++)
+            for (int bx = 0; bx < NX; bx++)
+                if (abs(now[by][bx] - before[by][bx]) >= DIFF) moved++;
+        memcpy(before, now, sizeof(now));
+        if (first) {                   // nothing to compare the first picture with
+            first = false;
+            continue;
+        }
+        if (moved > 0) printf("Squares that moved: %d\n", moved);
+        if (moved >= COUNT) {
+            printf("Spraying water\n");
+            spray(SHOT_MS);
+            sleep_ms(REST_MS);
+            first = true;              // the view changes while resting, so start comparing again
+        }
+    }
+}
+```
+
+- `block_brightness()` divides the picture into "squares" of 16×16 dots (20 across, 15 down) and works out the brightness of each square. Comparing single dots would always say "moved" because of small flickers
+- It counts the squares whose brightness changed by `DIFF` (30) or more since the last picture, and sprays if there are `COUNT` (6) or more
+- After spraying it rests for `REST_MS` (10 seconds) and does not compare the first picture after that. This stops splashes, or the camera adjusting its brightness, from setting it off again
+
+### Reading Serial Monitor
+
+About 3 seconds after writing, `Testing the pump` appears and water comes out for 0.3 seconds. After that, move your hand in front of the camera and you will see something like this (the numbers are examples).
+
+```text
+Testing the pump
+Squares that moved: 2
+Squares that moved: 14
+Spraying water
+```
+
+| What appears | Cause and fix |
+| --- | --- |
+| `Testing the pump` and `Spraying water` appear but no water comes out | Check the battery switch, which way round + and − go on VIN and OUT, and the signal and GND wires (pin 29 and 28 columns). An IRF520 MOSFET module will not run it |
+| `Camera setup failed: …` | Camera wiring. See the table in "Checking the wiring" |
+| `Squares that moved` does not appear when you move your hand | Try somewhere brighter. Make `DIFF` smaller (15, for example) |
+| `Spraying water` appears when nothing is happening | The overall brightness changed because of clouds or lights. Make `COUNT` bigger (30, for example). Turn the camera so the sun does not shine straight into it |
+| The Pico restarts when it sprays (`Testing the pump` appears again) | The diode is missing. The voltage when the pump stops is getting into the Pico |
+
+### Changing things
+
+| What to change | Where |
+| --- | --- |
+| Spray at smaller movements | Make `DIFF` smaller (20, for example) and `COUNT` smaller (3, for example). Too small and it sprays when leaves move |
+| How long to spray and rest | `SHOT_MS` and `REST_MS` (milliseconds) |
+| Run it outside without a PC | Plug the Pico's USB into a power bank |
+| Make the water go further | Use a 12 V diaphragm pump (RS-385 or similar) and a 12 V supply. The MOSFET module and the program stay the same |
+
 ## Summary
 
 - The camera is an 18-pin OV7670 board (no FIFO). It is the cheapest, with 0.3 megapixels. It cannot make JPEGs, so the colour numbers of a 320×240 picture (153,600 bytes) are sent as they are
@@ -447,6 +645,7 @@ Each picture is 150 KB going over USB, so you get about 2 a second. To go faster
 - With the wiring-check program, if the brightness number drops when you cover the lens with your hand, the wiring is right
 - When the PC sends `c`, the Pico replies with an `RGB <width> <height>` line and the colour data. The data goes out unchanged with `stdio_put_string()`
 - `camera_view.py` on the PC turns the colour numbers back into a picture, shows it in a window and saves it to `photos/` with **s**. The pictures you collect are the material for teaching crow spotting
+- The water-gun test compares the brightness of 16×16 squares with the last picture to notice movement, and runs the pump for 1 second through a MOSFET module. The pump's power comes from batteries, and the pump gets a diode
 
 ## Exercises
 
@@ -470,4 +669,8 @@ E: It saves into the `photos/` folder with the date and time as the name. q quit
 Q: `camera_view.py` says `Device or resource busy`. Which part of VS Code should you stop first?
 A: Serial Monitor | the Serial Monitor
 E: Only one program can use a port at a time. Disconnect Pico Studio too.
+
+Q: Which part turns the pump's large current on and off with the Pico's small signal?
+A: MOSFET | a MOSFET | MOSFET module | a MOSFET module
+E: A Pico pin gives 3.3 V and only a little current. The MOSFET module turns the current from the batteries to the pump on and off.
 ```

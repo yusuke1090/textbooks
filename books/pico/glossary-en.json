@@ -637,5 +637,7 @@
   "astype": "Changes the number type of an array (numpy). np.uint8 means numbers from 0 to 255.",
   "resize": "Changes the size of an image (OpenCV). fx and fy are the horizontal and vertical scale.",
   "INTER_NEAREST": "When enlarging an image, uses the colour of the nearest dot as it is (OpenCV). Nothing gets blurred.",
-  "imwrite": "Saves an image to a file (OpenCV). If the name ends in .jpg, it is saved as a JPEG."
+  "imwrite": "Saves an image to a file (OpenCV). If the name ends in .jpg, it is saved as a JPEG.",
+  "abs": "Returns the absolute value (the size without the minus sign) (C++). abs(-5) is 5. Used to count a change whether brightness went up or down.",
+  "#include <cstdlib>": "Makes functions for numbers, such as abs, available (C++)."
 }
