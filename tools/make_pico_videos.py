@@ -6,6 +6,8 @@
 
 - breadboard-inside  7章 ブレッドボードの中のつながり
 - pin-header         7章 ピンヘッダのはんだ付け
+- soldering-basics   7章 はんだごての準備（スポンジ・温め）・1か所の時間・片付け
+- solder-cleanup     7章 金属たわしでこて先をきれいにする・吸い取り線で余分なはんだを取る
 - led-wiring         8章 外付けの LED の差し方
 - button-wiring      8章 外付けのボタンの差し方
 - pot-wiring         9章 ボリュームの差し方
@@ -454,8 +456,314 @@ def bootsel():
     return f, st.duration
 
 
+# ---------------------------------------------------------------- 7章 はんだごての準備と片付け
+TRAY = (100, 262, 230, 40)               # スポンジの入れ物（x, y, 幅, 高さ）
+WORK = (460, 190)                        # 持っているときのこて先
+REST = (500, 288)                        # こて台に置いたときのこて先
+
+
+def mix(c1, c2, k):
+    """色 c1 → c2 を k（0〜1）で混ぜる"""
+    a = [int(c1[i:i + 2], 16) for i in (1, 3, 5)]
+    b = [int(c2[i:i + 2], 16) for i in (1, 3, 5)]
+    return "#" + "".join(f"{round(x + (y - x) * clamp(k)):02x}" for x, y in zip(a, b))
+
+
+def sponge(wet, squeeze=0.0):
+    """こて台のスポンジ。wet: 水を含んだ量（0〜1）、squeeze: しぼっている強さ（0〜1）"""
+    x, y, w, h = TRAY
+    sh = 24 * (1 - 0.4 * squeeze)
+    top = y + h - 6 - sh
+    return [f'<rect x="{x}" y="{y}" width="{w}" height="{h}" rx="6" fill="#3a3f47"/>',
+            f'<rect x="{x + 8}" y="{top:.1f}" width="{w - 16}" height="{sh:.1f}" rx="5" fill="{mix("#f4dc8e", "#c99a2e", wet)}"/>',
+            f'<line x1="{x + w / 2}" y1="{top + 3:.1f}" x2="{x + w / 2}" y2="{top + sh - 3:.1f}" stroke="#8a6d2b" stroke-width="2"/>',
+            text(x + w / 2, y + h + 20, "スポンジ", 12, "middle", 700, SUB)]
+
+
+def tip_at(x, y, p=1.0):
+    """iron(x, y, p) で描いたこての、先の座標"""
+    off = (1 - p) * 130
+    return x + 4 + off, y - 2 - off * 0.8
+
+
+def tip_color(tx, ty, k, blob=0.0):
+    """こて先の色。k=0 で黒っぽい（よごれ）、k=1 で銀色。blob はのせたはんだの量"""
+    b = [f'<circle cx="{tx:.1f}" cy="{ty:.1f}" r="5" fill="{mix("#4a3b30", "#e6eaef", k)}"/>']
+    if blob > 0:
+        b.append(f'<circle cx="{tx - 1:.1f}" cy="{ty + 2:.1f}" r="{3 + 4 * blob:.1f}" fill="{SOLDER}" stroke="#9aa1ab" stroke-width="1"/>')
+    if k > 0.6 or blob > 0:
+        b.append(f'<circle cx="{tx - 2:.1f}" cy="{ty - 2:.1f}" r="1.8" fill="#ffffff"/>')
+    return b
+
+
+def gauge(temp, label, clock, power):
+    """右の、こて先の温度と、経過時間"""
+    x, y0, y1 = 712, 74, 290
+    k = clamp((temp - 20) / (400 - 20))
+    color = mix("#2f6fde", "#e8590c", clamp((temp - 60) / 250))
+    y350 = y1 - (y1 - y0) * (350 - 20) / (400 - 20)
+    b = [text(x, 30, "こて先の温度", 12, "middle", 700, SUB),
+         text(x, 52, "電源 入" if power else "電源 切", 13, "middle", 700, "#2e7d32" if power else "#8a8f98"),
+         f'<rect x="{x - 11}" y="{y0}" width="22" height="{y1 - y0}" rx="11" fill="#eef0f3" stroke="#c9ced6"/>',
+         f'<rect x="{x - 7}" y="{y1 - (y1 - y0) * k:.1f}" width="14" height="{(y1 - y0) * k:.1f}" rx="7" fill="{color}"/>',
+         f'<line x1="{x - 22}" y1="{y350:.1f}" x2="{x + 22}" y2="{y350:.1f}" stroke="#d93a3a" stroke-width="1.5" stroke-dasharray="4 3"/>',
+         text(x - 26, y350 + 4, "350℃", 11, "end", 700, "#d93a3a"),
+         text(x, 322, f"{temp:.0f}℃", 22, "middle", 700, color)]
+    if label:
+        b += [text(x, 346, label, 11, "middle", 700, SUB), text(x, 368, clock, 16, "middle", 700, INK)]
+    return b
+
+
+def steam(tx, ty, k):
+    """スポンジでぬぐったときの湯気"""
+    b = []
+    for i in range(4):
+        s = (k * 1.5 + i / 4) % 1
+        b.append(f'<circle cx="{tx - 8 + 10 * i + 6 * s:.1f}" cy="{ty - 8 - 40 * s:.1f}" r="{4 + 6 * s:.1f}" fill="#c9ced6" opacity="{0.6 * (1 - s):.2f}"/>')
+    return b
+
+
+def stand(tx, ty):
+    """こて台（こてを差しておく、ばねの筒と台）"""
+    b = [f'<rect x="{tx - 40}" y="{ty + 34}" width="190" height="14" rx="4" fill="#3a3f47"/>',
+         f'<line x1="{tx + 60}" y1="{ty + 34}" x2="{tx + 40}" y2="{ty - 18}" stroke="#3a3f47" stroke-width="6"/>']
+    for k in range(6):                   # ばね: こての金属の部分に沿って
+        cx, cy = tx + 10 + 6 * k, ty - 8 - 4.8 * k
+        b.append(f'<ellipse cx="{cx:.1f}" cy="{cy:.1f}" rx="5" ry="13" transform="rotate(-38.7 {cx:.1f} {cy:.1f})" '
+                 f'fill="none" stroke="#8a8f98" stroke-width="2.5"/>')
+    return b
+
+
+def joint(x, y, fill):
+    """横から見た基板の穴と、部品の足。fill ははんだの量（0〜1）"""
+    b = [f'<rect x="{x - 110}" y="{y}" width="220" height="12" rx="2" fill="{PICO}"/>',
+         f'<rect x="{x - 16}" y="{y - 3}" width="32" height="3" fill="#c9a227"/>',
+         f'<rect x="{x - 16}" y="{y + 12}" width="32" height="3" fill="#c9a227"/>',
+         f'<line x1="{x}" y1="{y + 44}" x2="{x}" y2="{y - 50}" stroke="#9aa1ab" stroke-width="5" stroke-linecap="round"/>',
+         text(x - 110, y + 32, "基板", 12, "start", 700, SUB),
+         text(x + 10, y + 40, "部品の足", 12, "start", 700, SUB)]
+    if fill > 0:
+        top = y - 3
+        b.append(f'<path d="M{x - 15} {top} Q{x - 5} {top - 6 * fill:.1f} {x - 3} {top - 18 * fill:.1f} L{x + 3} {top - 18 * fill:.1f} '
+                 f'Q{x + 5} {top - 6 * fill:.1f} {x + 15} {top} Z" fill="{SOLDER}" stroke="#9aa1ab" stroke-width="1"/>')
+    return b
+
+
+def soldering_basics():
+    st = Steps([("はんだごての準備と片付け", 2.5),
+                ("① スポンジを水でぬらし、軽くしぼる（水がたれないくらい）", 4.5),
+                ("② 電源を入れて待つ。温度調節つきで30秒〜1分、なしは2〜3分", 5),
+                ("③ こて先を、ぬれたスポンジでさっとなでる（1秒）。銀色に光ればきれい", 5),
+                ("④ こて先にはんだを少しのせる。すぐ溶ければ準備OK", 4),
+                ("⑤ 足とパッドを2〜3秒温めてから、はんだを当てる。全部で5秒以内", 11),
+                ("⑥ 使い終わったら、こて先にはんだを少しのせて電源を切り、こて台へ", 4.5),
+                ("⑦ 電源を切っても10分くらいは熱い。冷めるまでさわらない", 5)])
+
+    def f(t):
+        i = st.index(t)
+        b = []
+        # 温度と時計
+        if i < 2:
+            temp, label, clock, power = 20, "", "", False
+        elif i == 2:
+            k = st.p(t, 2, 3.4)
+            temp, label, clock, power = 20 + 330 * k, "電源を入れてから", f"0:{round(45 * k):02d}", True
+        elif i < 6 or (i == 6 and st.local(t, 6) < 2.4):
+            temp, label, clock, power = 350, "", "", True
+        elif i == 6:
+            temp, label, clock, power = 350, "", "", False
+        else:
+            k = st.p(t, 7, 3.6)
+            m = 10 * k
+            temp, label, clock, power = 350 - 300 * k, "電源を切ってから", f"{int(m)}:{int(m % 1 * 60):02d}", False
+        b += gauge(temp, label, clock, power)
+        heat = clamp((temp - 150) / 200)
+        if i == 5:                                       # 1か所を付ける（大きく見せる）
+            x, y = 400, 300
+            lt = st.local(t, 5)
+            p_iron = st.p(t, 5, 0.8) * (1 - st.p(t, 5, 0.8, 6.2))
+            secs = clamp((lt - 1.2) / 4.6) * 4           # こてが当たってからの秒（動画では少しゆっくり）
+            p_sol = st.p(t, 5, 0.6, 3.4) * (1 - st.p(t, 5, 0.6, 5.0))
+            fill = st.p(t, 5, 1.4, 3.8)
+            body = joint(x, y, fill)
+            z = 1.7
+            body += solder_wire(x - 4, y - 8, p_sol, fill, 12 / z)
+            body += iron(x + 4, y - 6, p_iron, heat if p_iron > 0.99 else 0, 12 / z)
+            b += zoom(body, z, x, y - 10, 300, 240)
+            if lt >= 7.2:                                  # こてを離したら、固まるまで動かさない
+                n = min(3, int((lt - 7.2) / 0.9) + 1)
+                b.append(text(600, 110, str(n), 64, "middle", 700, "#2f6fde"))
+                b.append(text(600, 140, "秒", 16, "middle", 700, SUB))
+                b.append(text(600, 176, "固まるまで動かさない", 14, "middle", 700, INK))
+            elif 0 < secs:
+                n = min(4, int(secs) + 1)
+                b.append(text(600, 110, str(n), 64, "middle", 700, "#d93a3a" if n >= 4 else INK))
+                b.append(text(600, 140, "秒", 16, "middle", 700, SUB))
+                note = "温める" if n <= 3 and p_sol <= 0 else ("はんだを当てる" if fill < 1 else "はんだ → こての順に離す")
+                b.append(text(600, 176, note, 14, "middle", 700, INK))
+            return frame(b, st.caption(t))
+        # スポンジ
+        wet = st.p(t, 1, 1.2) if i >= 1 else 0
+        sq = 0.0
+        if i == 1:
+            lt = st.local(t, 1)
+            sq = clamp((lt - 1.8) / 0.5) * (1 - clamp((lt - 3.2) / 0.5))
+        b += sponge(wet, sq)
+        if i == 1 and sq > 0.2:                          # しぼると水がたれる
+            for k in range(3):
+                s = (st.local(t, 1) * 1.6 + k / 3) % 1
+                x0 = TRAY[0] + 60 + 50 * k
+                b.append(f'<circle cx="{x0}" cy="{TRAY[1] + TRAY[3] + 8 + 30 * s:.1f}" r="3" fill="#4aa3df" opacity="{1 - s:.2f}"/>')
+        # こて
+        clean = 0.0 if i < 3 else 1.0
+        blob = 0.0
+        if i <= 2:
+            x, y, p = WORK[0], WORK[1], 1.0
+        elif i == 3:                                     # スポンジの上をなでる
+            lt = st.local(t, 3)
+            down = clamp((lt - 0.4) / 0.7)
+            slide = clamp((lt - 1.1) / 1.2)
+            up = clamp((lt - 2.5) / 0.7)
+            sx0, sx1, sy = TRAY[0] + TRAY[2] - 40, TRAY[0] + 40, TRAY[1] + 14
+            x = WORK[0] + (sx0 - WORK[0]) * down + (sx1 - sx0) * slide + (WORK[0] - sx1) * up
+            y = WORK[1] + (sy - WORK[1]) * down + (WORK[1] - sy) * up
+            p = 1.0
+            clean = slide
+            if 0 < slide < 1:
+                b += steam(*tip_at(x, y), lt)
+        elif i == 4:
+            x, y, p = WORK[0], WORK[1], 1.0
+            blob = st.p(t, 4, 0.8, 1.2)
+        elif i == 6:
+            lt = st.local(t, 6)
+            blob = clamp((lt - 0.6) / 0.6)
+            k = st.p(t, 6, 1.2, 2.6)
+            x, y, p = WORK[0] + (REST[0] - WORK[0]) * k, WORK[1] + (REST[1] - WORK[1]) * k, 1.0
+        else:
+            x, y, p = REST[0], REST[1], 1.0
+            blob = 1.0
+        if i >= 6:
+            b += stand(*tip_at(*REST))
+        b += iron(x, y, p, heat)
+        b += tip_color(*tip_at(x, y, p), clean, blob)
+        if i == 4:
+            b += solder_wire(*tip_at(x, y), st.p(t, 4, 0.6) * (1 - st.p(t, 4, 0.6, 2.4)), blob)
+        if i == 7 and temp > 80:
+            tx, ty = tip_at(*REST)
+            b.append(text(tx - 30, ty - 40, "熱い！さわらない", 15, "end", 700, "#d93a3a"))
+        return frame(b, st.caption(t))
+    return f, st.duration
+
+
+# ---------------------------------------------------------------- 7章 こて先をきれいにする・吸い取り線
+COPPER = "#c77b3a"
+
+
+def iron_tip(tx, ty, heat=0.6, fs=12):
+    """こて先が (tx, ty) に来るように、こてを描く"""
+    return iron(tx - 4, ty + 2, 1.0, heat, fs)
+
+
+def wool(x, y):
+    """金属たわし（真ちゅうの細い線を丸めたもの）と入れ物"""
+    b = [f'<path d="M{x - 70} {y} L{x - 60} {y + 46} L{x + 60} {y + 46} L{x + 70} {y} Z" fill="#3a3f47"/>']
+    for k in range(26):                  # 細い線のかたまり
+        cx = x - 54 + (k * 37) % 108
+        cy = y - 8 + (k * 13) % 22
+        b.append(f'<ellipse cx="{cx}" cy="{cy}" rx="16" ry="7" transform="rotate({(k * 47) % 180} {cx} {cy})" '
+                 f'fill="none" stroke="#d4a52a" stroke-width="1.6"/>')
+    b.append(text(x, y + 64, "金属たわし", 9, "middle", 700, SUB))
+    return b
+
+
+def pins_side(x1, x2, y, bridge):
+    """横から見た基板と2本のピン。bridge は、ピンの間をつないだはんだの量（0〜1）"""
+    top = y - 3
+    b = [f'<rect x="{x1 - 140}" y="{y}" width="{x2 - x1 + 280}" height="12" rx="2" fill="{PICO}"/>']
+    for x in (x1, x2):
+        b += [f'<rect x="{x - 16}" y="{y - 3}" width="32" height="3" fill="#c9a227"/>',
+              f'<line x1="{x}" y1="{y + 40}" x2="{x}" y2="{y - 24}" stroke="#9aa1ab" stroke-width="5" stroke-linecap="round"/>',
+              f'<path d="M{x - 15} {top} Q{x - 5} {top - 6} {x - 3} {top - 18} L{x + 3} {top - 18} Q{x + 5} {top - 6} {x + 15} {top} Z" '
+              f'fill="{SOLDER}" stroke="#9aa1ab" stroke-width="1"/>']
+    if bridge > 0:
+        h = 16 * bridge
+        b.append(f'<path d="M{x1 + 3} {top} L{x1 + 3} {top - h:.1f} Q{(x1 + x2) / 2} {top - h - 6 * bridge:.1f} {x2 - 3} {top - h:.1f} '
+                 f'L{x2 - 3} {top} Z" fill="{SOLDER}" stroke="#9aa1ab" stroke-width="1"/>')
+    return b
+
+
+def braid(x0, x1, y, silver=0.0, cut=None):
+    """吸い取り線（横から見た、銅の編んだテープ）。x1 が先。silver は先から銀色になった長さ"""
+    b = [f'<rect x="{x0}" y="{y - 4}" width="{x1 - x0}" height="8" fill="{COPPER}"/>']
+    for x in range(int(x0) + 3, int(x1), 6):
+        b.append(f'<line x1="{x}" y1="{y - 4}" x2="{x + 4}" y2="{y + 4}" stroke="#9c5a24" stroke-width="1"/>')
+    if silver > 0:
+        b.append(f'<rect x="{x1 - silver:.1f}" y="{y - 4}" width="{silver:.1f}" height="8" fill="{SOLDER}" stroke="#9aa1ab" stroke-width="1"/>')
+    return b
+
+
+def solder_cleanup():
+    st = Steps([("こて先をきれいにする・余分なはんだを取る", 2.5),
+                ("① 金属たわしに、こて先を軽く差して抜く（2〜3回）。銀色に光ればきれい", 6),
+                ("② となりのピンと、はんだでつながってしまった（ブリッジ）", 3.5),
+                ("③ 吸い取り線をはんだの上に置き、上からこてを押し当てる（2〜3秒）", 5),
+                ("④ はんだが銅の線に吸い込まれて、銀色になる", 4),
+                ("⑤ 吸い取り線とこてを、いっしょに離す", 3.5),
+                ("⑥ 銀色になった先は、もう吸わないので、ニッパーで切って捨てる", 4)])
+
+    def f(t):
+        i = st.index(t)
+        if i <= 1:                                       # 金属たわし
+            b = wool(250, 300)
+            home, inside = (470, 190), (262, 292)
+            k = 0.0
+            if i == 1:
+                lt = st.local(t, 1) - 0.4
+                k = clamp(lt / 4.8)                      # 2回差して抜く
+                d = 0.5 - 0.5 * math.cos(2 * math.pi * min(2.0, max(0.0, lt / 2.4)))
+            else:
+                d = 0.0
+            tx, ty = home[0] + (inside[0] - home[0]) * d, home[1] + (inside[1] - home[1]) * d
+            b += iron_tip(tx, ty, 0.6, 12 / 1.6)
+            b += tip_color(tx, ty, k)
+            return frame(zoom(b, 1.6, 340, 250, 400, 215), st.caption(t))
+        x1, x2, y = 360, 440, 300
+        top = y - 3
+        bridge = 1 - st.p(t, 4, 2.4) if i >= 4 else 1.0
+        silver = 70 * st.p(t, 4, 2.4) if i >= 4 else 0
+        lift = 70 * st.p(t, 5, 1.2) if i >= 5 else 0
+        body = pins_side(x1, x2, y, bridge)
+        if i == 2:
+            body.append(text((x1 + x2) / 2, top - 70, "ブリッジ", 16, "middle", 700, "#d93a3a"))
+            body.append(f'<path d="M{(x1 + x2) / 2} {top - 62} L{(x1 + x2) / 2} {top - 28}" stroke="#d93a3a" stroke-width="3" marker-end="url(#arr)"/>')
+        if i >= 3:
+            slide = st.p(t, 3, 1.2)
+            end = x2 + 14
+            bx1 = end - (1 - slide) * 400
+            by = top - 30 - lift
+            if i < 6:
+                body += braid(bx1 - 420, bx1, by, silver)
+            else:                                        # 先を切る
+                c = st.p(t, 6, 0.8, 0.6)
+                fall = st.p(t, 6, 1.0, 1.6)
+                body += braid(bx1 - 420, bx1 - 70, by)
+                body += group(braid(bx1 - 70, bx1, by, 70), dx=30 * fall, dy=140 * fall, opacity=1 - fall)
+                if c > 0:
+                    body.append(f'<line x1="{bx1 - 72}" y1="{by - 18}" x2="{bx1 - 72}" y2="{by + 18}" stroke="#d93a3a" stroke-width="2" stroke-dasharray="4 3" opacity="{c:.2f}"/>')
+                    body.append(text(bx1 - 72, by - 26, "ニッパーで切る", 13, "middle", 700, "#d93a3a"))
+            if i in (3, 4, 5):
+                p_iron = st.p(t, 3, 0.9, 1.4) if i == 3 else 1.0
+                body += iron(x1 + 44 - 4, by - 2, p_iron, 0.8 if p_iron >= 1 and i < 5 else 0, 12 / 1.6)
+                body.append(text(bx1 - 300, by + 26, "吸い取り線", 12 / 1.6 * 1.6, "start", 700, COPPER))
+        defs = ('<defs><marker id="arr" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="5" markerHeight="5" orient="auto">'
+                '<path d="M0 0 L10 5 L0 10 Z" fill="#d93a3a"/></marker></defs>')
+        return frame([defs] + zoom(body, 1.6, 400, 270, 400, 220), st.caption(t))
+    return f, st.duration
+
+
 VIDEOS = {"breadboard-inside": breadboard_inside, "pin-header": pin_header, "led-wiring": led_wiring,
-          "button-wiring": button_wiring, "pot-wiring": pot_wiring, "bootsel": bootsel}
+          "button-wiring": button_wiring, "pot-wiring": pot_wiring, "bootsel": bootsel,
+          "soldering-basics": soldering_basics, "solder-cleanup": solder_cleanup}
 
 
 def main():
