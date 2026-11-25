@@ -372,11 +372,12 @@ li > .sticky-bar { margin-top: 4px; }
 .td-map text.rg { fill: var(--muted); letter-spacing: .15em; }
 .td-map text.dt { fill: var(--muted); font-weight: 600; }
 .td-map text.fu { fill: var(--muted); }
-/* もらった写真のピン */
+/* 目標に届いた日にもらった写真の旗（地図とアルバム）: ポールの先に金の玉、写真は金のふちで少しなびく */
 .td-map .pin { cursor: pointer; }
-.td-map .pin line { stroke: #e8a317; }
-.td-map .pin circle { fill: #e8a317; stroke: var(--panel); }
-.td-map .pin:hover circle { fill: #fff; }
+.fl-pole { stroke: var(--text); stroke-linecap: round; }
+.fl-top, .fl-fr { fill: #e8a317; }
+.td-map .fl-fr { stroke: var(--panel); }
+.td-map .pin:hover .fl-fr { fill: #fff; }
 .td-zoom { position: absolute; right: 8px; bottom: 8px; padding: 3px 10px; font: inherit; font-size: 12px; font-weight: 700; color: var(--text);
   background: color-mix(in srgb, var(--panel) 88%, transparent); border: 0; border-radius: 999px; cursor: pointer; }
 .td-next { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0 10px; margin-top: 6px; font-size: 12.5px; }
@@ -399,7 +400,7 @@ li > .sticky-bar { margin-top: 4px; }
 .td-towns .next::after { background: var(--panel); border: 2px solid #e8a317; }
 .td-towns .me { position: absolute; z-index: 1; left: calc(50% + (100% + 10px) * var(--f)); bottom: 1px; box-sizing: border-box; width: 12px; height: 12px; margin-left: -6px; border-radius: 50%; background: #e8a317; border: 2px solid #fff; box-shadow: 0 0 3px rgba(0, 0, 0, .45); }
 .td-map .ft { fill: var(--panel); stroke: #e8a317; }
-/* 旅日記: 勉強した日ごとに、日付・分の棒（目標に届いた日は金色）・着いた町（もらった写真は地図のピン） */
+/* 旅日記: 勉強した日ごとに、日付・分の棒（目標に届いた日は金色）・着いた町（もらった写真は地図の旗） */
 .td-log { margin-top: 12px; }
 .td-log-h { display: flex; justify-content: space-between; align-items: baseline; font-size: 13px; }
 .td-log-h span { font-size: 12px; color: var(--muted); }
@@ -412,7 +413,8 @@ li > .sticky-bar { margin-top: 4px; }
 .album-h .x { padding: 7px 16px; font: inherit; font-size: 14px; font-weight: 700; color: #111; background: #fff; border: 0; border-radius: 999px; cursor: pointer; }
 .album-g { display: grid; grid-template-columns: repeat(auto-fill, minmax(104px, 1fr)); gap: 10px 8px; max-width: 900px; margin: 0 auto; }
 .album-g button { min-width: 0; padding: 0; font: inherit; font-size: 11.5px; color: #ddd; background: none; border: 0; cursor: pointer; }
-.album-g img { display: block; width: 100%; aspect-ratio: 1; object-fit: cover; border-radius: 8px; }
+.album-g svg { display: block; width: 100%; height: auto; aspect-ratio: 120 / 96; }
+.album .fl-pole { stroke: #ccc; }
 .album-g span { display: block; margin-top: 3px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
 .album p { max-width: 900px; margin: 30px auto; text-align: center; font-size: 14px; }
 .td-log .d { color: var(--muted); white-space: nowrap; }
@@ -504,6 +506,7 @@ li > .sticky-bar { margin-top: 4px; }
 <div id="tip" role="tooltip"></div>
 <div id="annoPop" hidden></div>
 <div id="toast"></div>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true"><clipPath id="tdWave" clipPathUnits="objectBoundingBox"><path d="M0,.0536C.333,-.125 .667,.232 1,.0536L1,.9464C.667,1.125 .333,.768 0,.9464Z"/></clipPath></svg>
 
 <script>
 (() => {
@@ -587,6 +590,15 @@ li > .sticky-bar { margin-top: 4px; }
   function tripPos(sec) {   // sec 秒 勉強したときの、地図の上の位置
     const p = tripAt(sec), A = trip.stops[p.i], B = trip.stops[p.i + 1];
     return { x: A.x + (B.x - A.x) * p.f, y: A.y + (B.y - A.y) * p.f };
+  }
+  // 目標に届いた日にもらった写真の旗（地図とアルバム）: (x, y) に立てたポールの先に、幅 w・高さ h の写真の旗。s は線の太さの倍率
+  function flagSvg(x, y, w, h, href, s) {
+    const t = y - h - 10 * s, a = h * 0.2, b = 2 * s, X = x + s;   // t: 旗の上、a: なびき
+    const hi = h - 2 * b, e = hi * 0.06;   // 写真は、なびいてはみ出す分（e）だけ上下に大きく置いて、#tdWave で旗の形に切る
+    const wave = `M${X},${t}C${X + w / 3},${t - a} ${X + 2 * w / 3},${t + a} ${X + w},${t}L${X + w},${t + h}C${X + 2 * w / 3},${t + h + a} ${X + w / 3},${t + h - a} ${X},${t + h}Z`;
+    return `<line class="fl-pole" x1="${x}" y1="${y}" x2="${x}" y2="${t - s}" style="stroke-width:${1.6 * s}"/><circle class="fl-top" cx="${x}" cy="${t - 2 * s}" r="${2.2 * s}"/>`
+      + `<path class="fl-fr" d="${wave}" style="stroke-width:${s}"/>`
+      + `<image href="${esc(href)}" x="${X + b}" y="${t + b - e}" width="${w - 2 * b}" height="${hi + 2 * e}" clip-path="url(#tdWave)" preserveAspectRatio="xMidYMid slice"/>`;
   }
   function tripLog(s) {   // 旅日記: 勉強した日ごとに、時間・その日の前と後の合計・着いた町・その日の終わりにいた町と、目標に届いた日はそこの写真
     const S = trip.stops, N = S.length - 1, seen = {};   // 写真は町ごとに順にもらう（全部もらったら、はじめから）
@@ -724,7 +736,7 @@ li > .sticky-bar { margin-top: 4px; }
   }
 
   // 旅の地図: ふつうは旅の全体、「大きく」で最後に着いた町と次の町に寄る。ドラッグで動かし、ピンチとホイールで大きさを変える
-  // もらった写真は、もらった日の足あとにピンで立てる（押すと大きく）。下に着いた町の写真と旅日記
+  // もらった写真は、もらった日の足あとに旗で立てる（押すと大きく）。下に着いた町の写真と旅日記
   function renderTrip() {
     const box = $("trip");
     if (!box || !trip) return;
@@ -779,16 +791,14 @@ li > .sticky-bar { margin-top: 4px; }
           + (B !== S[N] && Math.hypot(B.x - S[N].x, B.y - S[N].y) * k > 45 ? above(B, B.ja) : "");
       }
       const went = days.map(({ d, c }) => `<polyline class="went" points="${pts(path(Math.max(d.a, lapStart), d.b))}" style="stroke:${c}" vector-effect="non-scaling-stroke"/>`).join("");
-      // もらった写真のピン: その日の勉強が終わったところに立てる。新しい写真が上で、大きく重なる古い写真は寄ったときに出す
-      const pr = (zoom ? 15 : 10) / k, ps = (zoom ? 10 : 6) / k, put = [];
+      // 目標に届いた日の旗: その日の勉強が終わったところに立てる。新しい旗が上で、大きく重なる古い旗は寄ったときに出す
+      const fw = (zoom ? 36 : 24) / k, fh = fw * 2 / 3, put = [];
       const pins = days.filter(({ d }) => d.photo).reverse().map(({ d }) => {
-        const q = tripPos(d.b), y = q.y - ps - pr;
-        if (put.some((u) => Math.hypot(u.x - q.x, u.y - q.y) < pr * 1.2)) return "";
+        const q = tripPos(d.b);
+        if (put.some((u) => Math.abs(u.x - q.x) < fw * 0.6 && Math.abs(u.y - q.y) < fh * 0.6)) return "";
         put.push(q);
-        used.push([q.x - pr, y - pr, q.x + pr, q.y]);
-        return `<g class="pin" data-k="${d.k}"><line x1="${q.x}" y1="${q.y}" x2="${q.x}" y2="${y}" style="stroke-width:${2 / k}"/>`
-          + `<circle cx="${q.x}" cy="${y}" r="${pr + 2 / k}" style="stroke-width:${1.5 / k}"/>`
-          + `<image href="${d.photo.thumb}" x="${q.x - pr}" y="${y - pr}" width="${2 * pr}" height="${2 * pr}" clip-path="url(#tdPin)" preserveAspectRatio="xMidYMid slice"/></g>`;
+        used.push([q.x - 3 / k, q.y - fh - 14 / k, q.x + fw + 2 / k, q.y]);
+        return `<g class="pin" data-k="${d.k}">${flagSvg(q.x, q.y, fw, fh, d.photo.thumb, 1 / k)}</g>`;
       }).reverse().join("");
       // 寄って見ているときは、ほかの町の名前も（ほかの文字と重なるときは出さない）。動かして見に行けるように
       if (zoom) S.forEach((q, j) => {
@@ -801,7 +811,7 @@ li > .sticky-bar { margin-top: 4px; }
       // 足あと（寄って見るときだけ）: この周で、毎日の勉強が終わったところ（今日の分は今いるところ）
       const ends = !zoom ? [] : days.filter(({ d }) => d.b < total).map(({ d, c }) => ({ d, c, q: tripPos(d.b) }));
       const foot = ends.map(({ q, c }) => `<circle class="ft" cx="${q.x}" cy="${q.y}" r="${2.6 / k}" style="stroke:${c};stroke-width:${1.5 / k}"/>`).join("");
-      // 日付: 足あとの上に「11/18」。写真のピンが立つ日と、ほかの文字と重なる日は出さない（新しい日が先）
+      // 日付: 足あとの上に「11/18」。写真の旗が立つ日と、ほかの文字と重なる日は出さない（新しい日が先）
       let dates = "";
       for (const { d, q } of ends.slice().reverse()) {
         if (d.photo) continue;
@@ -812,7 +822,6 @@ li > .sticky-bar { margin-top: 4px; }
         dates += `<text class="dt" x="${x}" y="${y}" text-anchor="middle" font-size="${10.5 / k}" style="stroke-width:${3 / k}">${t}</text>`;
       }
       return `<svg viewBox="${L} ${v.cy - h / 2} ${w} ${h}" height="${H}" role="img" aria-label="${esc(A.ja)}から${esc(B.ja)}へ">`
-        + `<defs><clipPath id="tdPin" clipPathUnits="objectBoundingBox"><circle cx=".5" cy=".5" r=".5"/></clipPath></defs>`
         + `<path class="land" d="${trip.land}"/><path class="lake" d="${trip.lakes}"/>`
         + `<polyline class="rt" points="${pts(last ? S : S.slice(0, -1))}" vector-effect="non-scaling-stroke"/>`
         + went + foot + dots + labels + dates
@@ -824,7 +833,7 @@ li > .sticky-bar { margin-top: 4px; }
       ? `<button type="button" class="now" data-j="${j}" style="--f:${p.f.toFixed(3)}">${card(q)}<i class="me"></i></button>`
       : `<button type="button" data-j="${j}">${card(q)}</button>`).join("")
       + `<button type="button" class="next" data-j="next">${card(B)}</button>`;
-    // 旅日記: 新しい日が上。はじめは3日分。言葉は町に着いた日だけ（もらった写真は地図のピンで見る）
+    // 旅日記: 新しい日が上。はじめは3日分。言葉は町に着いた日だけ（もらった写真は地図の旗で見る）
     const today = dayKey(), maxV = Math.max(s.goal * 60, ...log.map((d) => d.v));
     const what = (d) => d.got.includes(N) ? "世界一周 🌏" : d.got.length ? d.got.map((j) => S[j].ja).join("・") + "に着いた 🎉" : "";
     const rows = log.slice(diaryOpen ? 0 : -3).reverse().map((d) => `<li data-k="${d.k}"${d.met ? ` class="met"` : ""}>`
@@ -862,7 +871,7 @@ li > .sticky-bar { margin-top: 4px; }
     };
   }
   let tripResize = 0, diaryOpen = false, tripZoom = false, tripView = null;   // tripView: 動かしたり大きさを変えたりした見る範囲（null は「全体」か「大きく」のまま）
-  // 地図をドラッグで動かす・2本指（ピンチ）とホイールで大きさを変える。動かさずに押したピンは、その写真を開く
+  // 地図をドラッグで動かす・2本指（ピンチ）とホイールで大きさを変える。動かさずに押した旗は、その写真を開く
   function tripPan(el, view, all, ar, redraw, open) {
     const ptrs = new Map();
     let g = null, moved = false, down = null, timer = 0;
@@ -939,7 +948,7 @@ li > .sticky-bar { margin-top: 4px; }
     const got = log.filter((d) => d.photo).reverse(), el = document.createElement("div");
     el.className = "album";
     el.innerHTML = `<div class="album-h"><b>📷 旅でもらった写真 ${got.length}枚</b><button type="button" class="x">✕ 閉じる</button></div>`
-      + `<div class="album-g">${got.map((d, i) => `<button type="button" data-i="${i}"><img src="${d.photo.thumb}" alt="" loading="lazy"><span>${esc(d.photo.ja)}</span></button>`).join("")}</div>`
+      + `<div class="album-g">${got.map((d, i) => `<button type="button" data-i="${i}"><svg viewBox="0 0 120 96" aria-hidden="true">${flagSvg(4, 94, 112, 74, d.photo.thumb, 1)}</svg><span>${esc(d.photo.ja)}</span></button>`).join("")}</div>`
       + (got.length ? "" : `<p>1日の目標に届いた日に、その日にいた土地の写真がもらえます</p>`);
     const close = () => { el.remove(); document.body.style.overflow = ""; removeEventListener("keydown", esc1); };
     const esc1 = (e) => { if (e.key === "Escape" && !zoomEl) close(); };
