@@ -5,7 +5,7 @@
   （フォルダを付けないと、地図の陸と湖は今の trip.json のまま。町や写真の説明だけ直すとき）
 
 - trip/trip.json: 町（名前・経度緯度・その町に着くまでの時間・写真・もらえる写真）と、地図の陸と湖（メルカトルの SVG パス）
-- trip/<slug>.jpg: 町の写真の小さい版（教科書の写真から 160px の正方形に切る）
+- trip/<slug>.jpg: 町の写真の小さい版（教科書の写真から 240×160px の横長に切る。旅の下の行き先のカード）
 - trip/gifts/: 1日の目標に届いた日にもらう、その土地ゆかりの写真（幅 960px）と、t/ に 240px の正方形
   写真は trip/gifts.json に町ごとに並べる: {"kyoto": [{"src": "Commons のファイル名", "ja": "名前", "en": "name", "desc": "写真を見るときの説明"}, ...]}
   まだ取り込んでいない写真だけ Commons から取り、撮影者・ライセンスを gifts.json に書き戻す（fetch_photos.py と同じやり方）
@@ -199,7 +199,7 @@ def main():
         thumb = OUT / f"{slug}.jpg"
         if slug != "home":
             with Image.open(img) as im:
-                ImageOps.fit(im.convert("RGB"), (160, 160), Image.LANCZOS).save(thumb, quality=82, optimize=True)
+                ImageOps.fit(im.convert("RGB"), (240, 160), Image.LANCZOS).save(thumb, quality=82, optimize=True)
         x, y = merc(lon, lat)
         country, desc = NOTES["tokyo" if slug == "home" else slug]
         stops.append({"ja": ja, "en": en, "x": round(x, 2), "y": round(y, 2), "h": h, "country": country, "desc": desc,
