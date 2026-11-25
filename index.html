@@ -567,7 +567,7 @@ li > .sticky-bar { margin-top: 4px; }
   const studyTotal = (s) => Object.values(s.days).reduce((a, b) => a + b, 0);
 
   // ---------- 旅（教科書をめぐる世界一周）: これまでに勉強した時間の合計で、町から町へ進む ----------
-  // trip/trip.json は tools/make_trip.py で作る（町の h = 前の町からの時間）。最後の町（東京）に着くと、次の周へ
+  // trip/trip.json は tools/make_trip.py で作る（町の h = 前の町から車で走った時間）。最後の町（東京）に着くと、次の周へ
   let trip = null, tripLoad = null;
   const loadTrip = () => tripLoad || (tripLoad = getJSON("trip/trip.json").then((x) => {
     let c = 0;
@@ -846,7 +846,7 @@ li > .sticky-bar { margin-top: 4px; }
     const zl = () => (tripZoom || tripView ? "🌏 全体" : "🔍 大きく");
     box.innerHTML = `<div class="td-trip-h"><b>🌏 教科書をめぐる世界一周${p.lap ? `（${p.lap + 1}周目）` : ""}</b><span>${p.i} / ${N}町</span></div>`
       + `<div class="td-map">${mapSvg()}<button type="button" class="td-zoom">${zl()}</button></div>`
-      + `<div class="td-next"><b>✈ ${esc(B.ja)}まで あと ${fmtLeft(p.left)}</b>${last ? "" : `<span>ゴールの東京まで あと ${fmtLeft((p.lap + 1) * trip.total - total)}</span>`}</div>`
+      + `<div class="td-next"><b>🚗 ${esc(B.ja)}まで あと ${fmtLeft(p.left)}</b>${last ? "" : `<span>ゴールの東京まで あと ${fmtLeft((p.lap + 1) * trip.total - total)}</span>`}</div>`
       + `<div class="td-towns">${towns}</div>${diary}`;
     const mapEl = box.querySelector(".td-map"), zb = mapEl.querySelector(".td-zoom");
     const redraw = () => { const old = mapEl.querySelector("svg"); old.insertAdjacentHTML("afterend", mapSvg()); old.remove(); zb.textContent = zl(); };
