@@ -173,12 +173,13 @@ def fetch_gifts():
     from fetch_photos import get, info, save
     g = json.loads(path.read_text())
     (OUT / "gifts" / "t").mkdir(parents=True, exist_ok=True)
-    out = {}
+    out, keys = {}, {}
     for slug, items in g.items():
         for it in items:
             key = re.sub(r"[^a-z0-9]+", "-", Path(it["src"]).stem.lower()).strip("-")[:70]
-            if len(key) < 8:   # ヘブライ語などの名前は英数字が残らないので、名前から作った符号にする
-                key = (key + "-" if key else "") + hashlib.md5(it["src"].encode()).hexdigest()[:10]
+            if len(key) < 8 or keys.get(key, it["src"]) != it["src"]:   # ヘブライ語などの名前は英数字が残らないので、名前から作った符号にする。
+                key = (key + "-" if key else "") + hashlib.md5(it["src"].encode()).hexdigest()[:10]   # 70文字で切ると同じになる別の写真も
+            keys[key] = it["src"]
             img, th = OUT / "gifts" / f"{key}.jpg", OUT / "gifts" / "t" / f"{key}.jpg"
             if not img.exists() or "author" not in it:
                 url, meta = info(it["src"])

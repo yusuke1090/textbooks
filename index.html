@@ -601,14 +601,16 @@ li > .sticky-bar { margin-top: 4px; }
       + `<image href="${esc(href)}" x="${X + b}" y="${t + b - e}" width="${w - 2 * b}" height="${hi + 2 * e}" clip-path="url(#tdWave)" preserveAspectRatio="xMidYMid slice"/>`;
   }
   function tripLog(s) {   // 旅日記: 勉強した日ごとに、時間・その日の前と後の合計・着いた町・その日の終わりにいた町と、目標に届いた日はそこの写真
-    const S = trip.stops, N = S.length - 1, seen = {};   // 写真は町ごとに順にもらう（全部もらったら、はじめから）
+    // 写真はその町のものを順にもらい、同じ写真は2度もらわない。その町の写真を使い切ったら、先の町のまだもらっていない写真を先にもらう
+    const S = trip.stops, N = S.length - 1, given = new Set();
     let c = 0;
     return Object.keys(s.days).sort().filter((k) => s.days[k] > 0).map((k) => {
       const v = s.days[k], a = c, b = (c += v), pa = tripAt(a), pb = tripAt(b), got = [];
       for (let n = pa.n + 1; n <= pb.n; n++) got.push(n % N || N);   // N は東京に帰った（世界一周）
-      const at = S[pb.i], met = !!s.met[k], g = at.gifts || [];
+      const at = S[pb.i], met = !!s.met[k];
       let photo = null;
-      if (met && g.length) { seen[pb.i] = (seen[pb.i] || 0) + 1; photo = g[(seen[pb.i] - 1) % g.length]; }
+      for (let m = 0; met && !photo && m < N; m++) photo = (S[(pb.i + m) % N].gifts || []).find((x) => !given.has(x.img)) || null;
+      if (photo) given.add(photo.img);
       return { k, v, a, b, got, at, met, photo };
     });
   }
