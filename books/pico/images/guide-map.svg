@@ -14,7 +14,7 @@
 <path d="M200 137 L218 137" fill="none" stroke="#2f6fde" stroke-width="2" marker-end="url(#ah-2f6fde)"/>
 <rect x="220" y="55" width="180" height="165" rx="8" fill="#e7f4ec" stroke="#1f7a3d" stroke-width="2"/>
 <text x="232" y="77" font-size="14" text-anchor="start" font-weight="700" fill="#1f7a3d">第2部 基本</text>
-<text x="232" y="99" font-size="12" text-anchor="start" fill="#555c66">7 ブレッドボードとはんだ付け</text>
+<text x="232" y="99" font-size="12" text-anchor="start" fill="#555c66">7 道具の使い方</text>
 <text x="232" y="117" font-size="12" text-anchor="start" fill="#555c66">8 はじめてのプログラム</text>
 <text x="232" y="135" font-size="12" text-anchor="start" fill="#555c66">9 ピンと電源の基本</text>
 <text x="232" y="153" font-size="12" text-anchor="start" fill="#555c66">10 回路図の読み方</text>

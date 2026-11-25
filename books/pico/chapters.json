@@ -6,7 +6,7 @@
   {"part": {"ja": "第1部 準備", "en": "Part 1: Getting ready"}, "file": "03-vscode.md", "title": {"ja": "4. VS Code でプロジェクトを作って動かす", "en": "4. Creating and running a project in VS Code"}},
   {"part": {"ja": "第1部 準備", "en": "Part 1: Getting ready"}, "file": "04-vscode-more.md", "title": {"ja": "5. VS Code の便利な使い方", "en": "5. Getting more out of VS Code"}},
   {"part": {"ja": "第1部 準備", "en": "Part 1: Getting ready"}, "file": "05-studio.md", "title": {"ja": "6. Pico Studio でつながりを確かめる", "en": "6. Checking the connection with Pico Studio"}},
-  {"part": {"ja": "第2部 基本", "en": "Part 2: Basics"}, "file": "breadboard.md", "title": {"ja": "7. ブレッドボードとはんだ付け", "en": "7. Breadboards and soldering"}},
+  {"part": {"ja": "第2部 基本", "en": "Part 2: Basics"}, "file": "breadboard.md", "title": {"ja": "7. 道具の使い方（ブレッドボード・はんだ付け）", "en": "7. Using the tools (breadboards and soldering)"}},
   {"part": {"ja": "第2部 基本", "en": "Part 2: Basics"}, "file": "06-first-program.md", "title": {"ja": "8. はじめてのプログラム", "en": "8. Your first programs"}},
   {"part": {"ja": "第2部 基本", "en": "Part 2: Basics"}, "file": "07-pins.md", "title": {"ja": "9. ピンと電源の基本", "en": "9. Pin and power basics"}},
   {"part": {"ja": "第2部 基本", "en": "Part 2: Basics"}, "file": "schematic.md", "title": {"ja": "10. 回路図の読み方", "en": "10. Reading schematics"}},
