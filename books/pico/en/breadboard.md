@@ -1,4 +1,4 @@
-# 7. Breadboards and pin headers
+# 7. Breadboards and soldering
 
 How to use the tools that connect parts to the Pico. You use them from the external LED in Chapter 8 on.
 
