@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 390" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="390" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">抵抗の帯の読み方（330Ω の例）</text>
+<text x="380.0" y="52.0" font-size="13" text-anchor="middle" font-weight="400" fill="#555c66">離れた帯（金・茶）を右にして、左から読む</text>
+<text x="40.0" y="105.0" font-size="14" text-anchor="start" font-weight="700" fill="#2b2f36">4本帯</text>
+<line x1="110.0" y1="100.0" x2="560.0" y2="100.0" stroke="#8a8f98" stroke-width="4" stroke-linecap="round"/>
+<rect x="150" y="78" width="370" height="44" rx="20" fill="#e8d5a8" stroke="#7d7462" stroke-width="1.5"/>
+<rect x="191" y="78" width="18" height="44" fill="#f08c00" stroke="#7d7462" stroke-width="0.8"/>
+<text x="200.0" y="142.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">橙</text>
+<text x="200.0" y="160.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">3</text>
+<rect x="241" y="78" width="18" height="44" fill="#f08c00" stroke="#7d7462" stroke-width="0.8"/>
+<text x="250.0" y="142.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">橙</text>
+<text x="250.0" y="160.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">3</text>
+<rect x="291" y="78" width="18" height="44" fill="#8b4513" stroke="#7d7462" stroke-width="0.8"/>
+<text x="300.0" y="142.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">茶</text>
+<text x="300.0" y="160.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">0を1つ</text>
+<rect x="461" y="78" width="18" height="44" fill="#c9a227" stroke="#7d7462" stroke-width="0.8"/>
+<text x="470.0" y="142.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">金</text>
+<text x="470.0" y="160.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">誤差</text>
+<text x="590.0" y="107.0" font-size="20" text-anchor="start" font-weight="700" fill="#2b2f36">→ 330Ω</text>
+<text x="40.0" y="220.0" font-size="14" text-anchor="start" font-weight="700" fill="#2b2f36">5本帯</text>
+<line x1="110.0" y1="215.0" x2="560.0" y2="215.0" stroke="#8a8f98" stroke-width="4" stroke-linecap="round"/>
+<rect x="150" y="193" width="370" height="44" rx="20" fill="#9cc3e6" stroke="#7d7462" stroke-width="1.5"/>
+<rect x="181" y="193" width="18" height="44" fill="#f08c00" stroke="#7d7462" stroke-width="0.8"/>
+<text x="190.0" y="257.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">橙</text>
+<text x="190.0" y="275.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">3</text>
+<rect x="231" y="193" width="18" height="44" fill="#f08c00" stroke="#7d7462" stroke-width="0.8"/>
+<text x="240.0" y="257.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">橙</text>
+<text x="240.0" y="275.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">3</text>
+<rect x="281" y="193" width="18" height="44" fill="#222222" stroke="#7d7462" stroke-width="0.8"/>
+<text x="290.0" y="257.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">黒</text>
+<text x="290.0" y="275.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">0</text>
+<rect x="331" y="193" width="18" height="44" fill="#222222" stroke="#7d7462" stroke-width="0.8"/>
+<text x="340.0" y="257.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">黒</text>
+<text x="340.0" y="275.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">0なし</text>
+<rect x="461" y="193" width="18" height="44" fill="#8b4513" stroke="#7d7462" stroke-width="0.8"/>
+<text x="470.0" y="257.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">茶</text>
+<text x="470.0" y="275.0" font-size="13" text-anchor="middle" font-weight="700" fill="#2b2f36">誤差</text>
+<text x="590.0" y="222.0" font-size="20" text-anchor="start" font-weight="700" fill="#2b2f36">→ 330Ω</text>
+<text x="40.0" y="336.0" font-size="14" text-anchor="start" font-weight="700" fill="#2b2f36">色と数字</text>
+<rect x="140" y="310" width="52" height="34" rx="5" fill="#222222" stroke="#7d7462" stroke-width="1"/>
+<text x="166.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">0</text>
+<text x="166.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">黒</text>
+<rect x="200" y="310" width="52" height="34" rx="5" fill="#8b4513" stroke="#7d7462" stroke-width="1"/>
+<text x="226.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">1</text>
+<text x="226.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">茶</text>
+<rect x="260" y="310" width="52" height="34" rx="5" fill="#d93a3a" stroke="#7d7462" stroke-width="1"/>
+<text x="286.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">2</text>
+<text x="286.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">赤</text>
+<rect x="320" y="310" width="52" height="34" rx="5" fill="#f08c00" stroke="#7d7462" stroke-width="1"/>
+<text x="346.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">3</text>
+<text x="346.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">橙</text>
+<rect x="380" y="310" width="52" height="34" rx="5" fill="#f2c500" stroke="#7d7462" stroke-width="1"/>
+<text x="406.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">4</text>
+<text x="406.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">黄</text>
+<rect x="440" y="310" width="52" height="34" rx="5" fill="#2e7d32" stroke="#7d7462" stroke-width="1"/>
+<text x="466.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">5</text>
+<text x="466.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">緑</text>
+<rect x="500" y="310" width="52" height="34" rx="5" fill="#1e63d6" stroke="#7d7462" stroke-width="1"/>
+<text x="526.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">6</text>
+<text x="526.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">青</text>
+<rect x="560" y="310" width="52" height="34" rx="5" fill="#7b3fb0" stroke="#7d7462" stroke-width="1"/>
+<text x="586.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">7</text>
+<text x="586.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">紫</text>
+<rect x="620" y="310" width="52" height="34" rx="5" fill="#8a8f98" stroke="#7d7462" stroke-width="1"/>
+<text x="646.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#ffffff">8</text>
+<text x="646.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">灰</text>
+<rect x="680" y="310" width="52" height="34" rx="5" fill="#ffffff" stroke="#7d7462" stroke-width="1"/>
+<text x="706.0" y="333.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">9</text>
+<text x="706.0" y="364.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">白</text>
+</svg>

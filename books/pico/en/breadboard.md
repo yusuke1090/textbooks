@@ -9,6 +9,7 @@ How to use the tools that connect parts to the Pico. You use them from the exter
 | Breadboard | A board you wire just by pushing parts into holes. No soldering needed |
 | Jumper wires | Wires that connect breadboard holes to each other, or to a module's pins |
 | Pin headers | Attached to the Pico or a sensor board so it can be plugged into a breadboard (soldering is often needed) |
+| Resistor | A part that holds back the flow of electricity. Connected together with an LED |
 
 ![A breadboard (half size)](images/breadboard.jpg)
 
@@ -41,6 +42,33 @@ Under the holes of a breadboard are metal strips that connect certain holes to e
 Deciding on wire colors reduces mistakes (for example red = 3.3 V, black = GND, blue = SDA, yellow = SCL).
 
 ![Male–male jumper wires](images/jumper-wires.jpg)
+
+## Reading a resistor's value
+
+A resistor is a part that holds back the flow of electricity. Always connect an LED together with a resistor (without one, the LED or the Pico's pin can be damaged).
+For the external LED in Chapter 8, anything from **220 Ω to 1 kΩ** works. If in doubt, use **330 Ω**. The bigger the number, the dimmer the LED. The legs have no direction.
+
+![Resistors (the color bands show the value)](images/resistors.jpg)
+
+The value is not printed as a number. It is shown by **color bands**. A number printed on the bag or kit (a part number) is often not the value.
+
+![Reading a resistor's bands](images/en/resistor-bands.svg)
+
+1. Hold it with the band that sits a little apart (gold on a 4-band resistor, brown on a 5-band one) on the right
+2. From the left, read the digit bands (2 on a 4-band resistor, 3 on a 5-band one)
+3. The next band is how many zeros to add (brown adds one 0, black adds none)
+4. The band at the right end is the tolerance (gold ±5%, brown ±1%). It is not part of the value
+
+| Value | 4 bands | 5 bands |
+| --- | --- | --- |
+| 100 Ω | brown, black, brown, gold | brown, black, black, black, brown |
+| 220 Ω | red, red, brown, gold | red, red, black, black, brown |
+| 330 Ω | orange, orange, brown, gold | orange, orange, black, black, brown |
+| 1 kΩ | brown, black, red, gold | brown, black, black, brown, brown |
+| 4.7 kΩ | yellow, violet, red, gold | yellow, violet, black, brown, brown |
+| 10 kΩ | brown, black, orange, gold | brown, black, black, red, brown |
+
+> Brown and red, or orange and red, can be hard to tell apart. If in doubt, measure it with a **multimeter**. Set it to Ω (on a meter where you pick the range, 2000 or 2k), and touch the red and black probes to the two legs. A 330 Ω resistor shows a number close to 330, such as `328`. If it only shows `OL` or `1`, the range is too small or a probe is not touching a leg.
 
 ## Soldering basics
 
@@ -199,6 +227,7 @@ When finished, connect USB and see whether all three items of the connection che
 ## Summary
 
 - On a breadboard, vertical groups of 5 holes and the horizontal + / − rows are connected. Plug the Pico in straddling the groove
+- Read a resistor's value from its color bands. For an LED, use 220 Ω–1 kΩ (330 Ω if in doubt)
 - For pin headers, push the long side into the breadboard as a jig and solder the Pico on from above
 - Use a temperature-controlled iron at 330–350 °C. Each joint takes 5 seconds or less. Wipe the tip quickly on a sponge that has been wetted and squeezed
 - When you finish, put solder on the tip and switch off. It stays hot for about 10 minutes, so leave it on the stand
@@ -210,6 +239,10 @@ When finished, connect USB and see whether all three items of the connection che
 Q: How many holes in a breadboard column are connected?
 A: 5 | five
 E: The long + / − rails are connected too.
+
+Q: A 4-band resistor's colors, from the left, are orange, orange, brown, gold. How many Ω is it?
+A: 330 | 330Ω | 330 Ω
+E: Orange is 3, orange is 3, and brown adds one 0, so 330 Ω. Gold is the tolerance.
 
 Q: Which side of a pin header goes into the breadboard, the long side or the short side?
 A: long | the long side | long side | the long one

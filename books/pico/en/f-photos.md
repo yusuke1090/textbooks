@@ -26,6 +26,12 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | [Heat-shrink tubing](https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [Multimeter](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
+## 7. Using the tools (breadboards and soldering)
+
+| Photo | Author | Licence |
+| --- | --- | --- |
+| [Resistors (the color bands show the value)](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |
+
 ## 9. Pin and power basics
 
 | Photo | Author | Licence |
@@ -58,7 +64,6 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | --- | --- | --- |
 | [An LED Christmas tree](https://commons.wikimedia.org/wiki/File:LED_Christmas_Lights_on_a_Tree.jpg) | HeatherMarieKosur | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 | [5 mm LEDs](https://commons.wikimedia.org/wiki/File:LED_Rainbow_Pack_-_5mm_PTH_12903-01.jpg) | SparkFun Electronics | [CC BY 2.0](https://creativecommons.org/licenses/by/2.0) |
-| [Resistors (the colour bands show the value)](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |
 
 ## Appendix H. Building the message-board ideas with the Pico
 

@@ -163,7 +163,7 @@ If the small LED on the board blinks 10 times, it worked.
 
 Push an LED and a resistor into a breadboard and blink it in the same way. For the LED and the resistor, you just push the legs into the holes (no soldering). Do the wiring **with USB unplugged**.
 
-You need: a breadboard, 1 LED, 1 resistor (220 Ω–1 kΩ), and 1 jumper wire (male-male)
+You need: a breadboard, 1 LED, 1 resistor (220 Ω–1 kΩ; Chapter 7 shows how to read its color bands), and 1 jumper wire (male-male)
 
 > The Pico goes into the breadboard by its **pin headers** (the legs sticking out underneath). Just pushing pin headers into the Pico's holes does not connect them. If your Pico has none, solder them on first (Chapter 7, "Attaching pin headers"). The Pico H and Pico WH come with them.
 

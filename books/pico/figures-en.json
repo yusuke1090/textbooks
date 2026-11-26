@@ -583,5 +583,19 @@
  "ニッパーで切る": "Cut with nippers",
  "ブリッジ": "Bridge",
  "吸い取り線": "Desoldering braid",
- "金属たわし": "Metal wool"
+ "金属たわし": "Metal wool",
+ "抵抗の帯の読み方（330Ω の例）": "Reading a resistor's bands (330 Ω)",
+ "離れた帯（金・茶）を右にして、左から読む": "Hold it with the separate band (gold or brown) on the right, and read from the left",
+ "4本帯": "4 bands",
+ "橙": "Orange",
+ "茶": "Brown",
+ "0を1つ": "+1 zero",
+ "金": "Gold",
+ "誤差": "tolerance",
+ "5本帯": "5 bands",
+ "黒": "Black",
+ "0なし": "no zeros",
+ "色と数字": "Colors",
+ "紫": "Violet",
+ "灰": "Grey"
 }
