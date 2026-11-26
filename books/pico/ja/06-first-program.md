@@ -178,7 +178,10 @@ int main() {
 3. 抵抗の片方の足を、20番と同じ縦の列の空いている穴に差す。もう片方は、ピコより左の空いている列に差す
 4. LED の **長い足（＋）** を、抵抗と同じ縦の列に差す。**短い足（−）** は − の列に差す
 5. ジャンパーワイヤーで、18番と同じ縦の列の空いている穴と、− の列をつなぐ
-6. USB をつないで、下のプログラムを書き込む
+6. USB をつなぐ
+7. VS Code で、4章で作ったプロジェクトの `.cpp`（`~/apps/blink` なら `blink.cpp`）を開く。中身を全部消して、下のプログラムを貼り付け、保存する（Ctrl + S）
+8. **Compile Project**（ビルド）を押し、続けて **Run Project (USB)**（書き込み）を押す。どちらも Quick Access か、下のバー（**Compile**・**Run**）にある
+9. 下のターミナルに `The device was rebooted to start the application.` が出て、LED が10回点滅すれば成功
 
 ![動画: ピコとブレッドボードで LED を点滅させる（TENTO ch.。動画のプログラムは Python なので、差し方だけ見る）](https://www.youtube.com/watch?v=EzkeYgjjIJU)
 

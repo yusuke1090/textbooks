@@ -178,7 +178,10 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 3. Push one leg of the resistor into a free hole in the same column as pin 20. Push the other leg into a free column to the left of the Pico
 4. Push the LED's **long leg (+)** into the same column as the resistor. Push the **short leg (−)** into the − row
 5. With a jumper wire, connect a free hole in the same column as pin 18 to the − row
-6. Plug in USB and flash the program below
+6. Plug in USB
+7. In VS Code, open the `.cpp` of the project you made in chapter 4 (`blink.cpp` for `~/apps/blink`). Delete everything in it, paste the program below, and save (Ctrl + S)
+8. Press **Compile Project** (build), then **Run Project (USB)** (flash). Both are in Quick Access or in the bar at the bottom (**Compile** / **Run**)
+9. If `The device was rebooted to start the application.` appears in the terminal at the bottom and the LED blinks 10 times, it worked
 
 ![Video: Connecting an external LED to a Raspberry Pi Pico with C/C++ (Dr Jon EA)](https://www.youtube.com/watch?v=gjSK2oaflSM)
 

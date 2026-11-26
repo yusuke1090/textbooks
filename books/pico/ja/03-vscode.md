@@ -235,6 +235,8 @@ Quick Access の **Compile Project** を押します（下のバーの **Compile
 ピコを USB でつないで、Quick Access の **Run Project (USB)** を押します（下のバーの **Run** でも同じ）。
 picotool がピコを書き込みモードにして書き込み、ピコが再起動してプログラムが動き出します。ボードの LED が点滅すれば成功です。
 
+> Run は、書き込む前に Compile も自動で行います。Compile を押し忘れても、変えた `.cpp` がビルドされてから書き込まれます。先に Compile を押すのは、ピコをつなぐ前にエラーがないかを見るためです。
+
 **ピコで今なにが動いているか**で、BOOT ボタンが要るかどうかが変わります。
 
 | ピコで動いているもの | Run Project (USB) で |

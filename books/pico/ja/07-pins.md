@@ -109,8 +109,17 @@ int main() {
 1. USB を抜く
 2. ボリュームの3本の足を、溝の下の、ピコより左の空いている所に差す。3本がちがう縦の列に入るようにする
 3. ジャンパーワイヤーで、左の足の列を **36番（3V3(OUT)）**、真ん中の足の列を **31番（GP26）**、右の足の列を **28番（GND）** の列につなぐ。どれも下の列にある（左はしが21番で、右へ 22、23 … と続く）
-4. USB をつないで、下のプログラムを書き込む
-5. つまみを回すと、値が 0〜4095 の間で変わる
+4. USB をつなぐ
+5. VS Code で `CMakeLists.txt` を開き、`target_link_libraries` に `hardware_adc` を足して保存する（5章）。足さないと、ビルドで `fatal error: hardware/adc.h: No such file or directory` が出る
+
+```cmake
+target_link_libraries(blink
+        pico_stdlib
+        hardware_adc)
+```
+
+6. `.cpp` の中身を全部消して、下のプログラムを貼り付けて保存し、Compile → Run（8章の「外付けの LED」と同じ）
+7. Serial Monitor か Pico Studio で出力を見る。つまみを回すと、値が 0〜4095 の間で変わる
 
 ```cpp run
 #include <cstdio>

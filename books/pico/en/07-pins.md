@@ -109,8 +109,17 @@ Push it into the breadboard and connect it to the Pico with three jumper wires. 
 1. Unplug USB
 2. Push the potentiometer's three legs into a free spot below the groove, to the left of the Pico. Each leg should go into a different vertical column
 3. With jumper wires, connect the column of the left leg to **pin 36 (3V3(OUT))**, the middle leg to **pin 31 (GP26)**, and the right leg to **pin 28 (GND)**. All of them are in the bottom row (pin 21 at the left end, then 22, 23 … to the right)
-4. Plug in USB and flash the program below
-5. Turn the knob and the value changes between 0 and 4095
+4. Plug in USB
+5. In VS Code, open `CMakeLists.txt`, add `hardware_adc` to `target_link_libraries`, and save (chapter 5). Without it, the build stops with `fatal error: hardware/adc.h: No such file or directory`
+
+```cmake
+target_link_libraries(blink
+        pico_stdlib
+        hardware_adc)
+```
+
+6. Delete everything in the `.cpp`, paste the program below, save, then Compile → Run (the same as "External LED" in chapter 8)
+7. Watch the output in Serial Monitor or Pico Studio. Turn the knob and the value changes between 0 and 4095
 
 ```cpp run
 #include <cstdio>

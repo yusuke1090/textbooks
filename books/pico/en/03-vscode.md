@@ -235,6 +235,8 @@ You can delete `build/` entirely (it is not put on GitHub either). If the build 
 Connect the Pico by USB and press **Run Project (USB)** in Quick Access (or **Run** in the bar at the bottom).
 picotool puts the Pico into flashing mode and flashes it, the Pico restarts and the program starts running. If the LED on the board blinks, it worked.
 
+> Run also does Compile automatically before flashing. Even if you forget to press Compile, your changed `.cpp` is built and then flashed. Pressing Compile first is for checking for errors before you connect the Pico.
+
 **What is currently running on the Pico** decides whether you need the BOOT button.
 
 | What is running on the Pico | With Run Project (USB) |
