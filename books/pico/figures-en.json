@@ -607,5 +607,11 @@
  "ボリュームの回路図": "Schematic of the potentiometer",
  "矢印が真ん中の足。つまみを回すと、矢印が上下に動く": "The arrow is the middle leg. Turning the knob moves the arrow up and down",
  "イルミネーションの回路図": "Schematic of the lights",
- "4.5V（単3×3本）": "4.5 V (3 × AA)"
+ "4.5V（単3×3本）": "4.5 V (3 × AA)",
+ "カメラとピコの回路図": "Schematic of the camera and the Pico",
+ "カメラ": "Camera",
+ "OV7670（18ピン）": "OV7670 (18 pins)",
+ "水鉄砲のテストの回路図": "Schematic of the water gun test",
+ "D4184 など": "D4184 or similar",
+ "ダイオードは、棒（帯）の側を OUT+ に": "Put the diode's bar (band) side on OUT+"
 }

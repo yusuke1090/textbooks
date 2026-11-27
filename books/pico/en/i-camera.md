@@ -69,6 +69,8 @@ The Pico reads D0–D7 at every PCLK signal using PIO (a small circuit for readi
 
 ![Wiring the camera to the Pico](images/en/camera-wiring.svg)
 
+![Schematic of the camera and the Pico](images/en/camera-sch.svg)
+
 | Camera | Pico | Pin number |
 | --- | --- | --- |
 | 3.3V | 3V3(OUT) | 36 |
@@ -475,6 +477,8 @@ A Pico pin gives only 3.3 V and a tiny current, so it cannot run a pump directly
 ### Wiring
 
 ![Wiring for the water-gun test](images/en/pump-wiring.svg)
+
+![Schematic of the water gun test](images/en/pump-sch.svg)
 
 | What to connect | MOSFET module terminal |
 | --- | --- |

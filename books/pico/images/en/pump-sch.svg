@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 328" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="328" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Schematic of the water gun test</text>
+<rect x="70" y="70" width="80" height="82" fill="#fff8d6" stroke="#2b2f36" stroke-width="2"/>
+<text x="70.0" y="63.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">Pico</text>
+<text x="70.0" y="168.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<path d="M150.0 84.0 L176.0 84.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="155.0" y="80.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">29</text>
+<text x="144.0" y="88.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP22</text>
+<path d="M150.0 138.0 L176.0 138.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="155.0" y="134.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">28</text>
+<text x="144.0" y="142.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GND</text>
+<rect x="300" y="70" width="110" height="190" fill="#fff8d6" stroke="#2b2f36" stroke-width="2"/>
+<text x="300.0" y="63.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">MOSFET module</text>
+<text x="300.0" y="276.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">D4184 or similar</text>
+<path d="M300.0 84.0 L274.0 84.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="295.0" y="80.0" font-size="10" text-anchor="end" font-weight="400" fill="#555c66"></text>
+<text x="306.0" y="88.0" font-size="11" text-anchor="start" font-weight="400" fill="#2b2f36">Signal</text>
+<path d="M300.0 138.0 L274.0 138.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="295.0" y="134.0" font-size="10" text-anchor="end" font-weight="400" fill="#555c66"></text>
+<text x="306.0" y="142.0" font-size="11" text-anchor="start" font-weight="400" fill="#2b2f36">GND</text>
+<path d="M410.0 84.0 L436.0 84.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="415.0" y="80.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<text x="404.0" y="88.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">VIN+</text>
+<path d="M410.0 138.0 L436.0 138.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="415.0" y="134.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<text x="404.0" y="142.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">VIN−</text>
+<path d="M410.0 192.0 L436.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="415.0" y="188.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<text x="404.0" y="196.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">OUT+</text>
+<path d="M410.0 246.0 L436.0 246.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="415.0" y="242.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<text x="404.0" y="250.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">OUT−</text>
+<path d="M176.0 84.0 L274.0 84.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M176.0 138.0 L274.0 138.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M436.0 84.0 L506.0 84.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M436.0 138.0 L506.0 138.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M506.0 84.0 L506.0 96.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M506.0 126.0 L506.0 138.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="492.0" y1="96.0" x2="520.0" y2="96.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<line x1="499.0" y1="106.0" x2="513.0" y2="106.0" stroke="#2b2f36" stroke-width="4" stroke-linecap="round"/>
+<line x1="492.0" y1="116.0" x2="520.0" y2="116.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<line x1="499.0" y1="126.0" x2="513.0" y2="126.0" stroke="#2b2f36" stroke-width="4" stroke-linecap="round"/>
+<text x="488.0" y="99.0" font-size="13" text-anchor="end" font-weight="700" fill="#2b2f36">+</text>
+<text x="528.0" y="109.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">BT1</text>
+<text x="528.0" y="124.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">4.5 V (3 × AA)</text>
+<path d="M436.0 192.0 L576.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M436.0 246.0 L576.0 246.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="486.0" cy="192.0" r="3.8" fill="#2b2f36"/>
+<circle cx="486.0" cy="246.0" r="3.8" fill="#2b2f36"/>
+<path d="M486.0 192.0 L486.0 210.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M486.0 228.0 L486.0 246.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M476 228.0 L496 228.0 L486 210.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="476.0" y1="210.0" x2="496.0" y2="210.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<text x="502.0" y="217.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">D1</text>
+<text x="502.0" y="232.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">1N4007</text>
+<path d="M576.0 192.0 L576.0 205.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M576.0 233.0 L576.0 246.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="576" cy="219.0" r="14" fill="none" stroke="#2b2f36" stroke-width="2"/>
+<text x="576.0" y="224.0" font-size="14" text-anchor="middle" font-weight="700" fill="#2b2f36">M</text>
+<text x="598.0" y="217.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">M1</text>
+<text x="598.0" y="232.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">Pump</text>
+<text x="380.0" y="310.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">Put the diode's bar (band) side on OUT+</text>
+</svg>

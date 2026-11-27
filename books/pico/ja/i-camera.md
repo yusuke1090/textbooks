@@ -69,6 +69,8 @@ PC                窓に映す・保存する
 
 ![カメラとピコの配線](images/camera-wiring.svg)
 
+![カメラとピコの回路図](images/camera-sch.svg)
+
 | カメラ | ピコ | ピンの番号 |
 | --- | --- | --- |
 | 3.3V | 3V3(OUT) | 36番 |
@@ -475,6 +477,8 @@ MOSFET モジュール   ピコの合図で、電池からポンプへ電気を�
 ### 配線
 
 ![水鉄砲のテストの配線](images/pump-wiring.svg)
+
+![水鉄砲のテストの回路図](images/pump-sch.svg)
 
 | つなぐもの | MOSFET モジュールの端子 |
 | --- | --- |
