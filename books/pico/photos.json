@@ -254,5 +254,45 @@
     "license": "CC BY 4.0",
     "license_url": "https://creativecommons.org/licenses/by/4.0",
     "page": "https://commons.wikimedia.org/wiki/File:Selection_of_capacitors.jpg"
+  },
+  {
+    "file": "jumper-mf.jpg",
+    "src": "Jumper male-to-female.jpg",
+    "author": "Edwiyanto",
+    "license": "CC BY-SA 4.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Jumper_male-to-female.jpg"
+  },
+  {
+    "file": "jumper-ff.jpg",
+    "src": "FF Jumper Wires.jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:FF_Jumper_Wires.jpg"
+  },
+  {
+    "file": "jumper-ribbon.jpg",
+    "src": "JUMP-40-FF (14151931428).jpg",
+    "author": "oomlout",
+    "license": "CC BY-SA 2.0",
+    "license_url": "https://creativecommons.org/licenses/by-sa/2.0",
+    "page": "https://commons.wikimedia.org/wiki/File:JUMP-40-FF_(14151931428).jpg"
+  },
+  {
+    "file": "multimeter-auto.jpg",
+    "src": "Aneng AN870 multimeter 01.jpg",
+    "author": "Retired electrician",
+    "license": "CC0",
+    "license_url": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "page": "https://commons.wikimedia.org/wiki/File:Aneng_AN870_multimeter_01.jpg"
+  },
+  {
+    "file": "tester-breadboard.jpg",
+    "src": "Multimeter probes on breadboard.jpg",
+    "author": "Zeroping",
+    "license": "CC BY 4.0",
+    "license_url": "https://creativecommons.org/licenses/by/4.0",
+    "page": "https://commons.wikimedia.org/wiki/File:Multimeter_probes_on_breadboard.jpg"
   }
 ]

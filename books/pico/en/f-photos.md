@@ -30,7 +30,12 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 
 | Photo | Author | Licence |
 | --- | --- | --- |
+| [Male–female](https://commons.wikimedia.org/wiki/File:Jumper_male-to-female.jpg) | Edwiyanto | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [Female–female](https://commons.wikimedia.org/wiki/File:FF_Jumper_Wires.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [A strip of 40 joined wires (female–female)](https://commons.wikimedia.org/wiki/File:JUMP-40-FF_(14151931428).jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [Resistors (the color bands show the value)](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |
+| [A multimeter that picks the range itself](https://commons.wikimedia.org/wiki/File:Aneng_AN870_multimeter_01.jpg) | Retired electrician | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) |
+| [Measuring by touching the probes to part legs and wires from above](https://commons.wikimedia.org/wiki/File:Multimeter_probes_on_breadboard.jpg) | Zeroping | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
 
 ## 9. Pin and power basics
 

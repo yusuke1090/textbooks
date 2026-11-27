@@ -10,6 +10,7 @@ How to use the tools that connect parts to the Pico. You use them from the exter
 | Jumper wires | Wires that connect breadboard holes to each other, or to a module's pins |
 | Pin headers | Attached to the Pico or a sensor board so it can be plugged into a breadboard (soldering is often needed) |
 | Resistor | A part that holds back the flow of electricity. Connected together with an LED |
+| Multimeter | Measures voltage, and whether a wire is connected (you can start without one) |
 
 ![A breadboard (half size)](images/breadboard.jpg)
 
@@ -31,17 +32,53 @@ Under the holes of a breadboard are metal strips that connect certain holes to e
 
 ![Video: How to use a breadboard (LeftyMaker)](https://www.youtube.com/watch?v=W6mixXsn-Vc)
 
-## Types of jumper wire
+## Using jumper wires
 
-| Type | Where it is used |
+A jumper wire is a wire with a connector on each end. There are two shapes of end.
+
+![Types of jumper wire](images/en/jumper-types.svg)
+
+| End | Shape | What it goes into |
+| --- | --- | --- |
+| **Male** | A metal pin sticks out of the tip | A breadboard hole, or a female end |
+| **Female** | The tip is a square sleeve with a hole inside | A pin, such as on a pin header |
+
+There are three types, one for each combination of ends.
+
+| Type | What it connects |
 | --- | --- |
-| Male–male | Connecting breadboard holes to each other (the most common) |
-| Male–female | Connecting the breadboard to a module with pin headers |
-| Female–female | Connecting pin headers directly to each other |
+| Male–male | Breadboard holes to each other. The most common (the LED in Chapter 8) |
+| Male–female | The breadboard to a module with pins sticking out (the camera in Appendix I) |
+| Female–female | Pins directly to each other. Connects the Pico and a sensor without a breadboard |
+
+![Male–male](images/jumper-wires.jpg)
+
+![Male–female](images/jumper-mf.jpg)
+
+![Female–female](images/jumper-ff.jpg)
+
+### Length
+
+| Length | Where it is used |
+| --- | --- |
+| 10 cm | On the breadboard. Fast signals such as a camera (long wires easily disturb them) |
+| 20 cm | Parts a little away from the breadboard (the LEDs in Appendix G) |
+| 30 cm or more | Sensors far away. Signals are easily disturbed, so use wires as short as you can |
+
+### When they arrive
+
+They often come as a strip of 40 joined side by side. Peel off as many as you need, one at a time from the edge.
+
+![A strip of 40 joined wires (female–female)](images/jumper-ribbon.jpg)
+
+### Pushing in and pulling out
+
+- Push them **all the way** in. If they are shallow, they connect and disconnect (in Chapter 8, an LED lit after the parts were pushed in again)
+- To pull one out, hold **the black part at the end** (the housing), not the wire. Pulling the wire breaks it inside
+- When a female end gets loose and slips off easily, replace the wire
+- Check whether a wire is broken inside with the multimeter's continuity mode (see "Using a multimeter" below)
 
 Deciding on wire colors reduces mistakes (for example red = 3.3 V, black = GND, blue = SDA, yellow = SCL).
-
-![Male–male jumper wires](images/jumper-wires.jpg)
 
 ## Reading a resistor's value
 
@@ -68,7 +105,7 @@ The value is not printed as a number. It is shown by **color bands**. A number p
 | 4.7 kΩ | yellow, violet, red, gold | yellow, violet, black, brown, brown |
 | 10 kΩ | brown, black, orange, gold | brown, black, black, red, brown |
 
-> Brown and red, or orange and red, can be hard to tell apart. If in doubt, measure it with a **multimeter**. Set it to Ω (on a meter where you pick the range, 2000 or 2k), and touch the red and black probes to the two legs. A 330 Ω resistor shows a number close to 330, such as `328`. If it only shows `OL` or `1`, the range is too small or a probe is not touching a leg.
+> Brown and red, or orange and red, can be hard to tell apart. If in doubt, measure it with a **multimeter** (see "Using a multimeter" below).
 
 ## Soldering basics
 
@@ -216,6 +253,7 @@ Soldering them into the holes along the edges of the Pico (20 on each side) lets
 - ○ Shaped like Mount Fuji, and shiny
 - × Rounded like a ball, or a gap between the pin and the pad → touch the iron to it and reheat
 - × Joined to the next pin by solder (a bridge) → heat it and draw off the extra solder with the iron tip
+- If you have a multimeter, you can check with its continuity mode (see "Using a multimeter" below)
 
 When finished, connect USB and see whether all three items of the connection check turn green.
 
@@ -224,14 +262,144 @@ When finished, connect USB and see whether all three items of the connection che
 > - Holding the iron on too long can melt the breadboard's plastic
 > - Attach headers to sensor modules in the same way. Here too, the short side goes to the board and the long side toward the breadboard
 
+## Using a multimeter
+
+A multimeter measures voltage, resistance, current and whether a wire is connected (continuity), all in one. Its full name is digital multimeter (DMM); in Japan it is often called a "tester". Values appear as numbers on the display.
+
+![A multimeter (you pick the range)](images/multimeter.jpg)
+
+![A multimeter that picks the range itself](images/multimeter-auto.jpg)
+
+### Names of the parts
+
+![Parts of a multimeter (digital multimeter)](images/en/tester-parts.svg)
+
+- Plug the black probe into **COM** and the red probe into **VΩmA** (some say VΩ). In this book, you never move them from there
+- **10A** is for large currents. This book does not use it
+
+### Dial symbols
+
+| Symbol | What it measures | Where this book uses it |
+| --- | --- | --- |
+| V (with a solid and a dashed line beside it) | DC voltage | Batteries, the Pico's 3.3 V, pin outputs |
+| V~ | AC voltage | Not used (household outlets) |
+| Ω | Resistance | A resistor's value |
+| ·))) | Continuity (beeps when connected) | Broken wires, solder bridges |
+| ▷\| | Diode | An LED's direction and color |
+| A (with a solid and a dashed line beside it) | DC current | Chapter 18 (how many days on batteries) |
+
+### Choosing the range
+
+On a meter where you pick the range yourself, choose **the smallest range that is bigger than the value you measure**.
+
+| What you measure | Range | Example reading |
+| --- | --- | --- |
+| The Pico's 3.3 V, a 4.5 V battery | V, 20 | `3.30` |
+| A 330 Ω resistor | Ω, 2000 | `328` |
+| A 10 kΩ resistor | Ω, 20k | `9.96` |
+
+- If the range is too small, only `1` (or `OL`) appears. Go up one range
+- If it is too big, you lose digits and get a rough reading such as `3.3`
+- On a meter that picks the range itself (auto-ranging), you only choose the symbol
+
+### Measuring voltage (the Pico's 3.3 V)
+
+1. Plug the black probe into COM and the red probe into VΩmA
+2. Turn the dial to DC voltage (V), 20
+3. Connect the Pico plugged into the breadboard over USB (the same as in Chapter 8)
+4. Push a male–male wire into a free hole in each of the columns of pin 36 (3V3) and pin 38 (GND). The probes are too thick to go into breadboard holes
+5. Touch the black probe to the tip of the GND wire, and the red probe to the tip of the 3V3 wire
+
+![Video: Measuring the Pico's 3.3 V, a wire's continuity and a resistor with a multimeter](videos/en/tester-basics.mp4)
+
+![Measuring by touching the probes to part legs and wires from above](images/tester-breadboard.jpg)
+
+| Reading | Meaning |
+| --- | --- |
+| `3.28`–`3.32` | It worked. The Pico's 3.3 V is there |
+| `-3.30` | Red and black are swapped. Nothing breaks, so just swap them |
+| `0.00` | A probe is not touching, a wire is in the wrong column, or USB is unplugged |
+| `1` (or `OL`) | The range is too small (it is on 2000m or similar) |
+
+- The same way, pin 40 (VBUS) gives USB's 5 V (`4.8`–`5.1`), and the red and black wires of the battery box give the battery voltage (3 × AA: `4.6`–`4.8` when new; replace them below `3.6`)
+- If you measure the column of pin 20 (GP15) while Chapter 8's blinking program runs, it shows about `3.2` and `0.00` in turn. You can check that a signal is coming out of the pin
+
+### Checking continuity (beep)
+
+This checks by sound whether two points are electrically connected. Measure **with USB unplugged**.
+
+1. Turn the dial to ·))) (often the same position as ▷|)
+2. Touch the tips of the red and black probes together. If it beeps, you are ready
+3. Touch one probe to each of the two points you want to check
+
+| What to check | Where to touch | When it is right |
+| --- | --- | --- |
+| Is a wire broken inside? | The pins at both ends of the wire | Beeps |
+| Pin header soldering | The tips of wires pushed into the columns of pins 18 and 38 | Beeps |
+| A bridge to the next pin | Two neighboring pins | Does not beep |
+
+- When they are not connected, it does not beep and shows `1` (or `OL`)
+- Pins 18 and 38 are both connected to GND inside the Pico. If both are soldered, it beeps. You can check the other GND pins (3, 8, 13, 23, 28, 33) against pin 38 the same way
+
+### Measuring resistance
+
+1. Unplug USB. Take the resistor out of the breadboard so it is on its own (if other parts are connected, they mix into the reading)
+2. Turn the dial to Ω, 2000 (for 330 Ω)
+3. Touch one probe to each leg of the resistor. Direction does not matter
+
+| Reading | Meaning |
+| --- | --- |
+| `314`–`346` | 330 Ω (a gold band means ±5%) |
+| `1` (or `OL`) | The range is too small, or a probe is not touching a leg |
+| A large resistor (10 kΩ or more) reads low | You are pinching both legs with your fingers. Your body's resistance mixes in, so hold only one |
+
+### Checking an LED's direction and color (diode)
+
+1. Unplug USB and take the LED out of the breadboard
+2. Turn the dial to ▷|
+3. Touch the red probe to the long leg and the black probe to the short leg
+
+| Reading | Meaning |
+| --- | --- |
+| About `1.6`–`2.2`, and the LED glows faintly | The direction is right (red, yellow, green and so on) |
+| About `2.5`–`3.0`, or `1` (OL) | Blue, white and so on. On some meters it does not glow |
+| `1` (or `OL`), and no glow | It is the wrong way round. Swap the probes |
+
+Some meters show it in mV, such as `1820`. It also tells you the color of a clear LED, because it glows faintly.
+
+### Measuring current (Chapter 18)
+
+To measure current, break the circuit at one point and put the meter in the gap. You use it to find out how many days something runs on batteries.
+
+1. Turn the dial to DC current (A), 200m. The red probe stays in VΩmA (on a meter with a separate mA socket, move it there)
+2. Put it between the battery's + and the Pico's VSYS (red probe on the battery's +, black probe on the VSYS side)
+
+> If you try to measure voltage while in current mode, the meter shorts inside and its fuse blows. After measuring current, put the dial (and the red probe) back right away.
+
+### Using it safely and putting it away
+
+- Do not measure household outlets (AC 100 V). In this book you only measure up to batteries and USB's 5 V
+- Move the probes away before turning the dial
+- Measure resistance, continuity and diodes with the power off (with current flowing, the reading is wrong)
+- Switch it OFF when you finish (left on, it drains its battery)
+- When a battery mark appears on the display, replace the meter's battery (readings drift)
+
+### Choosing one
+
+- A digital one for 2,000–3,000 yen is enough
+- One with a **continuity buzzer** (almost all have one)
+- One that picks the range itself (auto-ranging) is easy: just set the symbol. One where you pick the range is cheaper and teaches you how ranges work
+
 ## Summary
 
 - On a breadboard, vertical groups of 5 holes and the horizontal + / − rows are connected. Plug the Pico in straddling the groove
+- Jumper wires combine male ends (pins) and female ends (holes). Push them all the way in, and hold the end to pull them out
 - Read a resistor's value from its color bands. For an LED, use 220 Ω–1 kΩ (330 Ω if in doubt)
 - For pin headers, push the long side into the breadboard as a jig and solder the Pico on from above
 - Use a temperature-controlled iron at 330–350 °C. Each joint takes 5 seconds or less. Wipe the tip quickly on a sponge that has been wetted and squeezed
 - When you finish, put solder on the tip and switch off. It stays hot for about 10 minutes, so leave it on the stand
 - Just pushing pin headers into the holes does not connect them. Solder all 40
+- Plug the multimeter's black probe into COM and the red into VΩmA. Use the smallest range bigger than the value. Measure resistance and continuity with the power off
 
 ## Exercises
 
@@ -239,6 +407,10 @@ When finished, connect USB and see whether all three items of the connection che
 Q: How many holes in a breadboard column are connected?
 A: 5 | five
 E: The long + / − rails are connected too.
+
+Q: Which jumper wire connects the breadboard to a camera module with pins sticking out: male–male, male–female or female–female?
+A: male–female | male-female | male female | female-male
+E: The male end goes into a breadboard hole, and the female end onto the module's pin.
 
 Q: A 4-band resistor's colors, from the left, are orange, orange, brown, gold. How many Ω is it?
 A: 330 | 330Ω | 330 Ω
@@ -259,4 +431,12 @@ E: Heat the lead and pad for 2–3 seconds, then feed solder for 1–2 seconds. 
 Q: After wetting the sponge for wiping the tip, what do you do to it?
 A: squeeze it | squeeze | squeeze it lightly | wring it out
 E: If it is soaking wet, the tip temperature drops sharply. Make it so a little water oozes out when you press it.
+
+Q: You measure the Pico's 3.3 V with a meter where you pick the range. Which V range do you use (200m, 2000m, 20, 200, 600)?
+A: 20
+E: Use the smallest range bigger than the value. 2000m (2 V) is too small and shows `1`.
+
+Q: What is the multimeter mode called that checks by a beep whether a wire is broken inside?
+A: continuity | continuity test | continuity check
+E: Touch the probes to the pins at both ends; if it beeps, it is connected. Measure with USB unplugged.
 ```

@@ -30,7 +30,12 @@
 
 | 写真 | 撮影者 | ライセンス |
 | --- | --- | --- |
+| [オス-メス](https://commons.wikimedia.org/wiki/File:Jumper_male-to-female.jpg) | Edwiyanto | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
+| [メス-メス](https://commons.wikimedia.org/wiki/File:FF_Jumper_Wires.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
+| [40本がつながった帯（メス-メス）](https://commons.wikimedia.org/wiki/File:JUMP-40-FF_(14151931428).jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [抵抗（帯の色で値がわかる）](https://commons.wikimedia.org/wiki/File:Electronic-Axial-Lead-Resistors-Array.jpg) | Evan-Amos | Public domain |
+| [テスター（目盛りを自動で選ぶもの）](https://commons.wikimedia.org/wiki/File:Aneng_AN870_multimeter_01.jpg) | Retired electrician | [CC0](http://creativecommons.org/publicdomain/zero/1.0/deed.en) |
+| [部品の足やワイヤーに、上から棒を当てて測る](https://commons.wikimedia.org/wiki/File:Multimeter_probes_on_breadboard.jpg) | Zeroping | [CC BY 4.0](https://creativecommons.org/licenses/by/4.0) |
 
 ## 9. ピンと電源の基本
 

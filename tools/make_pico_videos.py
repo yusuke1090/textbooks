@@ -8,6 +8,7 @@
 - pin-header         7章 ピンヘッダのはんだ付け
 - soldering-basics   7章 はんだごての準備（スポンジ・温め）・1か所の時間・片付け
 - solder-cleanup     7章 金属たわしでこて先をきれいにする・吸い取り線で余分なはんだを取る
+- tester-basics      7章 テスターで、ピコの 3.3V・ワイヤーの導通・抵抗を測る
 - led-wiring         8章 外付けの LED の差し方
 - button-wiring      8章 外付けのボタンの差し方
 - pot-wiring         9章 ボリュームの差し方
@@ -761,9 +762,134 @@ def solder_cleanup():
     return f, st.duration
 
 
+# ---------------------------------------------------------------- 7章 テスターの使い方
+def tester_basics():
+    from make_tester_figures import meter, probe, cable, plug, male_end, line, TERM, DIAL
+    st = Steps([("テスターで、電圧・導通・抵抗を測る", 2.5),
+                ("① 黒い棒を COM、赤い棒を VΩmA に差す", 3.5),
+                ("② ダイヤルを、直流の電圧（V）の 20 にする", 3.5),
+                ("③ 36番（3V3）と 38番（GND）の列に、ワイヤーを1本ずつ差す", 4),
+                ("④ 黒い棒を GND、赤い棒を 3V3 のワイヤーの先に当てる → 3.30", 5),
+                ("⑤ USB を抜いて、ダイヤルを ·))) （導通）にする", 4),
+                ("⑥ ワイヤーの両はしに当てる。ピーと鳴れば、切れていない", 5),
+                ("⑦ ダイヤルを Ω の 2000 にして、抵抗の両方の足に当てる → 328", 5.5),
+                ("⑧ 使い終わったら OFF にする", 3)])
+    MX, MY, MS = 130, 14, 0.83                       # テスターの位置と大きさ
+    term = {k: (MX + x * MS, MY + y * MS) for k, (x, y) in TERM.items()}
+    ZS, ZOX, ZOY, ZDX = 1.15, 440, 190, 335          # ブレッドボードの下の段を、右に大きく写す
+    g = lambda x, y: (ZDX + ZS * (x - ZOX), ZS * (y - ZOY))
+    REST = {"COM": (285, 250, 15), "VΩmA": (318, 250, 15)}
+    VOLT = {"COM": (*g(488, 482), 90), "VΩmA": (*g(468, 455), 90)}
+    WIRE = {"COM": (420, 232, 20), "VΩmA": (740, 232, -20)}
+    RES = {"COM": (472, 232, 20), "VΩmA": (688, 232, -20)}
+    ANG = {k: v[0] for k, v in DIAL.items()}
+
+    def lerp(a, b, k):
+        return tuple(x + (y - x) * k for x, y in zip(a, b))
+
+    def f(t):
+        i = st.index(t)
+        # ダイヤルと画面
+        if i <= 1:
+            ang, shown = 0, ""
+        elif i == 2:
+            k = st.p(t, 2, 1.0)
+            ang, shown = ANG["V20"] * k, "0.00" if k >= 1 else ""
+        elif i in (3, 4):
+            ang, shown = ANG["V20"], "0.00"
+        elif i == 5:
+            k = st.p(t, 5, 1.2, 1.0)
+            ang, shown = ANG["V20"] + (ANG["CONT"] - ANG["V20"]) * k, "OL" if k >= 1 else "0.00"
+        elif i == 6:
+            ang, shown = ANG["CONT"], "OL"
+        elif i == 7:
+            k = st.p(t, 7, 1.0)
+            ang, shown = ANG["CONT"] + (ANG["R2000"] - ANG["CONT"]) * k, "OL"
+        else:
+            k = st.p(t, 8, 1.0, 0.6)
+            ang, shown = ANG["R2000"] * (1 - k), "OL" if k < 1 else ""
+        # 棒の位置
+        pos = dict(REST)
+        touch = False
+        if i == 4:
+            k = st.p(t, 4, 1.2)
+            pos = {n: lerp(REST[n], VOLT[n], k) for n in pos}
+            touch = k >= 1
+            if touch:
+                shown = "3.30" if int(st.local(t, 4) * 3) % 4 else "3.29"
+        elif i == 5:
+            k = st.p(t, 5, 0.8)
+            pos = {n: lerp(VOLT[n], REST[n], k) for n in pos}
+        elif i == 6:
+            k = st.p(t, 6, 1.2, 0.4)
+            pos = {n: lerp(REST[n], WIRE[n], k) for n in pos}
+            touch = k >= 1
+            if touch:
+                shown = "0.4"
+        elif i == 7:
+            back = st.p(t, 7, 0.6)
+            k = st.p(t, 7, 1.2, 1.4)
+            pos = {n: lerp(lerp(WIRE[n], REST[n], back), RES[n], k) for n in pos}
+            touch = k >= 1
+            if touch:
+                shown = "328"
+        elif i == 8:
+            k = st.p(t, 8, 0.6)
+            pos = {n: lerp(RES[n], REST[n], k) for n in pos}
+
+        b = ['<defs><clipPath id="bbc"><rect x="335" y="0" width="465" height="402"/></clipPath></defs>']
+        # 右: 測る物
+        if i <= 5:
+            wires = st.p(t, 3, 1.4) if i >= 3 else 0
+            cols = [(26, "bottom"), (28, "bottom")] if wires >= 1 else []
+            ux = 45 * st.p(t, 5, 0.8) if i == 5 else 0
+            z = board(cols) + pico([(36, "3V3（36番）", 0, "end"), (38, "GND（38番）", 1, "end")]) + usb_plug(ux)
+            for col, yy, tip, color in ((26, 455, 520, VSYS), (28, 482, 540, GND)):
+                x = X(col)
+                d = f"M{x} {ROW['j']} C{x} {yy - 10} {x - 10} {yy} {x - 40} {yy} L{tip} {yy}"
+                z += draw_path(d, color, wires)
+                if wires > 0:
+                    z.append(dot(x, ROW["j"], color))
+                if wires >= 1:
+                    z += male_end(tip, yy, -1, color)
+            b += ['<g clip-path="url(#bbc)">', f'<g transform="translate({ZDX} 0) scale({ZS}) translate({-ZOX} {-ZOY})">',
+                  *z, "</g></g>"]
+        elif i == 6:
+            b += [f'<line x1="470" y1="230" x2="690" y2="230" stroke="#2e7d32" stroke-width="4"/>',
+                  *male_end(470, 230, -1, "#2e7d32"), *male_end(690, 230, 1, "#2e7d32"),
+                  text(580, 200, "ジャンパーワイヤー（オス-オス）", 13, "middle", 700)]
+        else:
+            b += [line(470, 230, 690, 230, LEG, 3),
+                  '<rect x="545" y="216" width="70" height="28" rx="10" fill="#f4e3c4" stroke="#8a6d3b" stroke-width="1.5"/>']
+            for j, c in enumerate(["#f08c00", "#f08c00", "#8b4513", "#c9a227"]):
+                b.append(f'<rect x="{556 + j * 13 + (8 if j == 3 else 0)}" y="216" width="7" height="28" fill="{c}"/>')
+            b.append(text(580, 200, "抵抗 330Ω（橙・橙・茶・金）", 13, "middle", 700))
+        # 左: テスター
+        b += group(meter(ang, shown), MX, MY, extra=f" scale({MS})")
+        # 棒とコード
+        plug_p = st.p(t, 1, 1.0) if i == 1 else (0 if i == 0 else 1)
+        for n, color in (("COM", "#2b2f36"), ("VΩmA", "#d93a3a")):
+            tx, ty = term[n]
+            pr, back = probe(*pos[n], color)
+            off = (1 - plug_p) * 60
+            b.append(cable(tx, ty + off, back[0], back[1], color, 40))
+            if plug_p > 0:
+                b += group(plug(tx, ty + off, color), opacity=min(1, plug_p * 3))
+            b += pr
+        if i == 6 and touch:
+            bx, by = MX + 112, MY + 40
+            b.append(text(bx + 26, by + 6, "ピー", 18, "start", 700, "#d93a3a"))
+            for r in (8, 15, 22):
+                b.append(f'<path d="M{bx + r * 0.5:.1f} {by - r:.1f} Q{bx + r * 1.1:.1f} {by:.1f} {bx + r * 0.5:.1f} {by + r:.1f}" '
+                         f'stroke="#d93a3a" stroke-width="2" fill="none"/>')
+        return frame(b, st.caption(t))
+    return f, st.duration
+
+
 VIDEOS = {"breadboard-inside": breadboard_inside, "pin-header": pin_header, "led-wiring": led_wiring,
           "button-wiring": button_wiring, "pot-wiring": pot_wiring, "bootsel": bootsel,
-          "soldering-basics": soldering_basics, "solder-cleanup": solder_cleanup}
+          "soldering-basics": soldering_basics, "solder-cleanup": solder_cleanup,
+          "tester-basics": tester_basics}
 
 
 def main():
