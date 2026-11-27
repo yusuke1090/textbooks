@@ -181,7 +181,7 @@ int main() {
 6. USB をつなぐ
 7. VS Code で、4章で作ったプロジェクトの `.cpp`（`~/apps/blink` なら `blink.cpp`）を開く。中身を全部消して、下のプログラムを貼り付け、保存する（Ctrl + S）
 8. **Compile Project**（ビルド）を押し、続けて **Run Project (USB)**（書き込み）を押す。どちらも Quick Access か、下のバー（**Compile**・**Run**）にある
-9. 下のターミナルに `The device was rebooted to start the application.` が出て、LED が10回点滅すれば成功
+9. 下のターミナルに `The device was rebooted to start the application.` が出て、外付けの LED とボードの LED が 0.5秒ごとにいっしょに点滅すれば成功
 
 ![動画: ピコとブレッドボードで LED を点滅させる（TENTO ch.。動画のプログラムは Python なので、差し方だけ見る）](https://www.youtube.com/watch?v=EzkeYgjjIJU)
 
@@ -195,26 +195,39 @@ int main() {
 ```cpp run
 #include "pico/stdlib.h"
 
-constexpr uint LED_PIN = 15;      // GP15
+constexpr uint LED_PIN = 15;      // GP15（外付けの LED）
+constexpr uint BOARD_LED = 25;    // ボードの LED（プログラムが動いているかの目印）
 
 int main() {
     stdio_init_all();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_init(BOARD_LED);
+    gpio_set_dir(BOARD_LED, GPIO_OUT);
 
-    for (int i = 0; i < 20; i++) {
-        gpio_put(LED_PIN, !gpio_get(LED_PIN));   // 今の状態の反対にする（点いていたら消す）
-        sleep_ms(200);
+    while (true) {
+        bool on = !gpio_get(LED_PIN);   // 今の状態の反対（点いていたら消す）
+        gpio_put(LED_PIN, on);
+        gpio_put(BOARD_LED, on);
+        sleep_ms(500);
     }
-    gpio_put(LED_PIN, false);
-
-    while (true) sleep_ms(1000);
 }
 ```
 
 `!` は「反対」という意味です。`gpio_get` で今の状態を読み、反対の値を出しています。
 
-光らないときは、LED の向き（長い足が抵抗の側）、ピン番号（物理ピンの20番 = GP15）、足が穴の奥まで差さっているかを確かめてください。
+ずっと点滅し続けるので、光らないときは点滅させたまま確かめられます。USB を抜いて差し直し、つなぐと、書き込みなしでまた点滅が始まります。
+
+| ボードの LED | 原因 |
+| --- | --- |
+| 点滅しない | プログラムが書き込めていない。ターミナルの表示を確かめる（付録B） |
+| 点滅する | 配線。下を順に確かめる |
+
+- 足が穴の**奥まで**差さっているか（実際にあった例: 抵抗と LED を差し直したら光った）
+- 抵抗の足が、20番（GP15）と**同じ縦の列**に入っているか
+- LED の向き（長い足が抵抗の側）
+- LED の色（青・白・ピンク・紫は 3.3V ではほとんど光らない。まず赤で試す）
+
 ピンの番号の読み方は、9章で詳しく説明します。
 
 ### RGB LED（付いているボードだけ）

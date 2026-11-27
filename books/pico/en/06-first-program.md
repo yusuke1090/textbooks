@@ -181,7 +181,7 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 6. Plug in USB
 7. In VS Code, open the `.cpp` of the project you made in chapter 4 (`blink.cpp` for `~/apps/blink`). Delete everything in it, paste the program below, and save (Ctrl + S)
 8. Press **Compile Project** (build), then **Run Project (USB)** (flash). Both are in Quick Access or in the bar at the bottom (**Compile** / **Run**)
-9. If `The device was rebooted to start the application.` appears in the terminal at the bottom and the LED blinks 10 times, it worked
+9. If `The device was rebooted to start the application.` appears in the terminal at the bottom and the external LED and the board's LED blink together every 0.5 seconds, it worked
 
 ![Video: Connecting an external LED to a Raspberry Pi Pico with C/C++ (Dr Jon EA)](https://www.youtube.com/watch?v=gjSK2oaflSM)
 
@@ -195,26 +195,39 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 ```cpp run
 #include "pico/stdlib.h"
 
-constexpr uint LED_PIN = 15;      // GP15
+constexpr uint LED_PIN = 15;      // GP15 (the external LED)
+constexpr uint BOARD_LED = 25;    // the board's LED (a sign that the program is running)
 
 int main() {
     stdio_init_all();
     gpio_init(LED_PIN);
     gpio_set_dir(LED_PIN, GPIO_OUT);
+    gpio_init(BOARD_LED);
+    gpio_set_dir(BOARD_LED, GPIO_OUT);
 
-    for (int i = 0; i < 20; i++) {
-        gpio_put(LED_PIN, !gpio_get(LED_PIN));   // set the opposite of the current state (turn it off if on)
-        sleep_ms(200);
+    while (true) {
+        bool on = !gpio_get(LED_PIN);   // the opposite of the current state (off if it was on)
+        gpio_put(LED_PIN, on);
+        gpio_put(BOARD_LED, on);
+        sleep_ms(500);
     }
-    gpio_put(LED_PIN, false);
-
-    while (true) sleep_ms(1000);
 }
 ```
 
 `!` means "the opposite". It reads the current state with `gpio_get` and outputs the opposite value.
 
-If it does not light, check the LED's direction (the long leg on the resistor side), the pin number (physical pin 20 = GP15), and that the legs are pushed all the way into the holes.
+It keeps blinking, so if the LED does not light, you can check things while it blinks. Unplug USB, push the parts in again, and plug it back in: it starts blinking again without flashing.
+
+| The board's LED | Cause |
+| --- | --- |
+| Does not blink | The program was not flashed. Check the terminal output (Appendix B) |
+| Blinks | The wiring. Check the list below in order |
+
+- The legs are pushed **all the way** into the holes (a real case: it lit after pushing the resistor and the LED in again)
+- A leg of the resistor is in **the same vertical column** as pin 20 (GP15)
+- The LED's direction (the long leg on the resistor side)
+- The LED's color (blue, white, pink and purple barely light at 3.3 V; try red first)
+
 How to read pin numbers is explained in Chapter 9.
 
 ### RGB LED (only on boards that have one)
