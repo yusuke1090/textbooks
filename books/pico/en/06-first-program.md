@@ -173,6 +173,8 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 
 ![How to push the parts into the breadboard](images/en/led-breadboard.svg)
 
+![Schematic of the external LED](images/en/led-sch.svg)
+
 1. Unplug USB
 2. Push the Pico's **pin headers** in so they straddle the groove in the middle. With USB on the right, the top row starts with **pin 20 (GP15)** at the left end and goes 19, **18 (GND)** … to the right (the bottom row starts with pin 21 at the left end and goes 22, 23 … to the right)
 3. Push one leg of the resistor into a free hole in the same column as pin 20. Push the other leg into a free column to the left of the Pico
@@ -188,6 +190,8 @@ Inside a breadboard, **the 5 holes in the same vertical column** (a–e, f–j) 
 **If you have no jumper wire**, move the resistor to the LED's short-leg side. The resistor works the same on either side of the LED. The − row is not used.
 
 ![Without a jumper wire](images/en/led-nowire.svg)
+
+![Schematic without a jumper wire](images/en/led-nowire-sch.svg)
 
 - Push the LED's long leg into hole a of the pin 20 (GP15) column, and its short leg into hole a of the column two to the left
 - Push one leg of the resistor into hole b of the short leg's column, and the other leg into hole b of the pin 18 (GND) column
@@ -320,6 +324,8 @@ int main() {
 A button (tactile switch) has four legs, connected in pairs inside. If you use **two diagonal legs**, you cannot get the direction wrong. As with the LED, you just push it into the breadboard.
 
 ![How to push the button into the breadboard](images/en/button-breadboard.svg)
+
+![Schematic of the button](images/en/button-sch.svg)
 
 1. Unplug USB
 2. Push the button into a free spot to the left of the Pico, straddling the groove in the middle

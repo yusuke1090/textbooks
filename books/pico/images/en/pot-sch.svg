@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 252" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="252" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">Schematic of the potentiometer</text>
+<rect x="210" y="64" width="100" height="140" fill="#fff8d6" stroke="#2b2f36" stroke-width="2"/>
+<text x="210.0" y="57.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">Pico</text>
+<text x="210.0" y="220.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<path d="M310.0 78.0 L336.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="315.0" y="74.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">36</text>
+<text x="304.0" y="82.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">3V3(OUT)</text>
+<path d="M310.0 134.0 L336.0 134.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="315.0" y="130.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">31</text>
+<text x="304.0" y="138.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP26</text>
+<path d="M310.0 190.0 L336.0 190.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="315.0" y="186.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">28</text>
+<text x="304.0" y="194.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GND</text>
+<path d="M336.0 78.0 L496.0 78.0 L496.0 118.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M496.0 118.0 L502.0 122.0 L490.0 130.0 L502.0 138.0 L490.0 146.0 L496.0 150.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M496.0 150.0 L496.0 190.0 L336.0 190.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M336.0 134.0 L487.0 134.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M477 128 L487 134 L477 140 Z" fill="#2b2f36"/>
+<text x="512.0" y="132.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">RV1</text>
+<text x="512.0" y="147.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">10kΩ</text>
+<text x="380.0" y="234.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">The arrow is the middle leg. Turning the knob moves the arrow up and down</text>
+</svg>

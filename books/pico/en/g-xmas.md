@@ -47,6 +47,8 @@ If in doubt, 330 Ω for all of them is fine too (green, blue and white just get 
 
 ![Laying it out on the breadboard](images/en/xmas-breadboard.svg)
 
+![Schematic of the lights](images/en/xmas-sch.svg)
+
 1. Make sure the USB cable and the battery are disconnected
 2. Put the Pico at the right end with the USB port facing right, straddling the centre groove
 3. Put in the ten resistors so they straddle the centre groove. From the left, GP0, GP1 … with two empty columns between them

@@ -1,0 +1,25 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 224" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="224" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">外付けの LED の回路図</text>
+<rect x="202" y="64" width="80" height="112" fill="#fff8d6" stroke="#2b2f36" stroke-width="2"/>
+<text x="202.0" y="57.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">ピコ</text>
+<text x="202.0" y="192.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<path d="M282.0 78.0 L308.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="74.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">20</text>
+<text x="276.0" y="82.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP15</text>
+<path d="M282.0 162.0 L308.0 162.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="158.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">18</text>
+<text x="276.0" y="166.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GND</text>
+<path d="M308.0 78.0 L347.0 78.0 L351.0 72.0 L359.0 84.0 L367.0 72.0 L375.0 84.0 L379.0 78.0 L418.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="359.0" y="66.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R1</text>
+<text x="367.0" y="66.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">220Ω</text>
+<path d="M418.0 78.0 L454.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M472.0 78.0 L508.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M454.0 68.0 L454.0 88.0 L472.0 78.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="472.0" y1="68.0" x2="472.0" y2="88.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M462.0 65.0 L471.0 54.0 M465.0 55.0 L471.0 54.0 L470.0 60.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M469.0 67.0 L478.0 56.0 M472.0 57.0 L478.0 56.0 L477.0 62.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="463.0" y="108.0" font-size="12" text-anchor="middle" font-weight="700" fill="#2b2f36">D1</text>
+<path d="M508.0 78.0 L558.0 78.0 L558.0 162.0 L308.0 162.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="380.0" y="206.0" font-size="12" text-anchor="middle" font-weight="400" fill="#555c66">LED の記号は、三角の左が長い足（＋）。記号の読み方は10章</text>
+</svg>

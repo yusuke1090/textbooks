@@ -106,6 +106,8 @@ Push it into the breadboard and connect it to the Pico with three jumper wires. 
 
 ![How to push the potentiometer into the breadboard](images/en/pot-breadboard.svg)
 
+![Schematic of the potentiometer](images/en/pot-sch.svg)
+
 1. Unplug USB
 2. Push the potentiometer's three legs into a free spot below the groove, to the left of the Pico. Each leg should go into a different vertical column
 3. With jumper wires, connect the column of the left leg to **pin 36 (3V3(OUT))**, the middle leg to **pin 31 (GP26)**, and the right leg to **pin 28 (GND)**. All of them are in the bottom row (pin 21 at the left end, then 22, 23 … to the right)

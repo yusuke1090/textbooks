@@ -1,0 +1,184 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 760 548" font-family="system-ui, 'Noto Sans JP', sans-serif" font-size="13">
+<rect width="760" height="548" rx="10" fill="#ffffff"/>
+<text x="380.0" y="26.0" font-size="16" text-anchor="middle" font-weight="700" fill="#2b2f36">イルミネーションの回路図</text>
+<rect x="212" y="64" width="70" height="446" fill="#fff8d6" stroke="#2b2f36" stroke-width="2"/>
+<text x="212.0" y="57.0" font-size="12" text-anchor="start" font-weight="700" fill="#2b2f36">ピコ</text>
+<text x="212.0" y="526.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66"></text>
+<path d="M282.0 78.0 L308.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="74.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">1</text>
+<text x="276.0" y="82.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP0</text>
+<path d="M282.0 116.0 L308.0 116.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="112.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">2</text>
+<text x="276.0" y="120.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP1</text>
+<path d="M282.0 154.0 L308.0 154.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="150.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">4</text>
+<text x="276.0" y="158.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP2</text>
+<path d="M282.0 192.0 L308.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="188.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">5</text>
+<text x="276.0" y="196.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP3</text>
+<path d="M282.0 230.0 L308.0 230.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="226.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">6</text>
+<text x="276.0" y="234.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP4</text>
+<path d="M282.0 268.0 L308.0 268.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="264.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">7</text>
+<text x="276.0" y="272.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP5</text>
+<path d="M282.0 306.0 L308.0 306.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="302.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">9</text>
+<text x="276.0" y="310.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP6</text>
+<path d="M282.0 344.0 L308.0 344.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="340.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">10</text>
+<text x="276.0" y="348.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP7</text>
+<path d="M282.0 382.0 L308.0 382.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="378.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">11</text>
+<text x="276.0" y="386.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP8</text>
+<path d="M282.0 420.0 L308.0 420.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="416.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">12</text>
+<text x="276.0" y="424.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GP9</text>
+<path d="M282.0 458.0 L308.0 458.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="454.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">38</text>
+<text x="276.0" y="462.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">GND</text>
+<path d="M282.0 496.0 L308.0 496.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="287.0" y="492.0" font-size="10" text-anchor="start" font-weight="400" fill="#555c66">39</text>
+<text x="276.0" y="500.0" font-size="11" text-anchor="end" font-weight="400" fill="#2b2f36">VSYS</text>
+<path d="M308.0 78.0 L337.0 78.0 L341.0 72.0 L349.0 84.0 L357.0 72.0 L365.0 84.0 L369.0 78.0 L398.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="66.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R1</text>
+<text x="357.0" y="66.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">330Ω</text>
+<path d="M398.0 78.0 L429.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 78.0 L478.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 68.0 L429.0 88.0 L447.0 78.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="68.0" x2="447.0" y2="88.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 65.0 L446.0 54.0 M440.0 55.0 L446.0 54.0 L445.0 60.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 67.0 L453.0 56.0 M447.0 57.0 L453.0 56.0 L452.0 62.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="72.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D1</text>
+<text x="522.0" y="72.0" font-size="11" text-anchor="start" font-weight="700" fill="#d93a3a">赤</text>
+<path d="M478.0 78.0 L578.0 78.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M308.0 116.0 L337.0 116.0 L341.0 110.0 L349.0 122.0 L357.0 110.0 L365.0 122.0 L369.0 116.0 L398.0 116.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="104.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R2</text>
+<text x="357.0" y="104.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">100Ω</text>
+<path d="M398.0 116.0 L429.0 116.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 116.0 L478.0 116.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 106.0 L429.0 126.0 L447.0 116.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="106.0" x2="447.0" y2="126.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 103.0 L446.0 92.0 M440.0 93.0 L446.0 92.0 L445.0 98.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 105.0 L453.0 94.0 M447.0 95.0 L453.0 94.0 L452.0 100.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="110.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D2</text>
+<text x="522.0" y="110.0" font-size="11" text-anchor="start" font-weight="700" fill="#2e7d32">緑</text>
+<path d="M478.0 116.0 L578.0 116.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="116.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 154.0 L337.0 154.0 L341.0 148.0 L349.0 160.0 L357.0 148.0 L365.0 160.0 L369.0 154.0 L398.0 154.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="142.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R3</text>
+<text x="357.0" y="142.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">330Ω</text>
+<path d="M398.0 154.0 L429.0 154.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 154.0 L478.0 154.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 144.0 L429.0 164.0 L447.0 154.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="144.0" x2="447.0" y2="164.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 141.0 L446.0 130.0 M440.0 131.0 L446.0 130.0 L445.0 136.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 143.0 L453.0 132.0 M447.0 133.0 L453.0 132.0 L452.0 138.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="148.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D3</text>
+<text x="522.0" y="148.0" font-size="11" text-anchor="start" font-weight="700" fill="#c79100">黄</text>
+<path d="M478.0 154.0 L578.0 154.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="154.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 192.0 L337.0 192.0 L341.0 186.0 L349.0 198.0 L357.0 186.0 L365.0 198.0 L369.0 192.0 L398.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="180.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R4</text>
+<text x="357.0" y="180.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">100Ω</text>
+<path d="M398.0 192.0 L429.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 192.0 L478.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 182.0 L429.0 202.0 L447.0 192.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="182.0" x2="447.0" y2="202.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 179.0 L446.0 168.0 M440.0 169.0 L446.0 168.0 L445.0 174.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 181.0 L453.0 170.0 M447.0 171.0 L453.0 170.0 L452.0 176.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="186.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D4</text>
+<text x="522.0" y="186.0" font-size="11" text-anchor="start" font-weight="700" fill="#2f6fde">青</text>
+<path d="M478.0 192.0 L578.0 192.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="192.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 230.0 L337.0 230.0 L341.0 224.0 L349.0 236.0 L357.0 224.0 L365.0 236.0 L369.0 230.0 L398.0 230.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="218.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R5</text>
+<text x="357.0" y="218.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">100Ω</text>
+<path d="M398.0 230.0 L429.0 230.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 230.0 L478.0 230.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 220.0 L429.0 240.0 L447.0 230.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="220.0" x2="447.0" y2="240.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 217.0 L446.0 206.0 M440.0 207.0 L446.0 206.0 L445.0 212.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 219.0 L453.0 208.0 M447.0 209.0 L453.0 208.0 L452.0 214.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="224.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D5</text>
+<text x="522.0" y="224.0" font-size="11" text-anchor="start" font-weight="700" fill="#8a8f98">白</text>
+<path d="M478.0 230.0 L578.0 230.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="230.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 268.0 L337.0 268.0 L341.0 262.0 L349.0 274.0 L357.0 262.0 L365.0 274.0 L369.0 268.0 L398.0 268.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="256.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R6</text>
+<text x="357.0" y="256.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">330Ω</text>
+<path d="M398.0 268.0 L429.0 268.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 268.0 L478.0 268.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 258.0 L429.0 278.0 L447.0 268.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="258.0" x2="447.0" y2="278.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 255.0 L446.0 244.0 M440.0 245.0 L446.0 244.0 L445.0 250.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 257.0 L453.0 246.0 M447.0 247.0 L453.0 246.0 L452.0 252.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="262.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D6</text>
+<text x="522.0" y="262.0" font-size="11" text-anchor="start" font-weight="700" fill="#d93a3a">赤</text>
+<path d="M478.0 268.0 L578.0 268.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="268.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 306.0 L337.0 306.0 L341.0 300.0 L349.0 312.0 L357.0 300.0 L365.0 312.0 L369.0 306.0 L398.0 306.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="294.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R7</text>
+<text x="357.0" y="294.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">100Ω</text>
+<path d="M398.0 306.0 L429.0 306.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 306.0 L478.0 306.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 296.0 L429.0 316.0 L447.0 306.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="296.0" x2="447.0" y2="316.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 293.0 L446.0 282.0 M440.0 283.0 L446.0 282.0 L445.0 288.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 295.0 L453.0 284.0 M447.0 285.0 L453.0 284.0 L452.0 290.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="300.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D7</text>
+<text x="522.0" y="300.0" font-size="11" text-anchor="start" font-weight="700" fill="#2e7d32">緑</text>
+<path d="M478.0 306.0 L578.0 306.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="306.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 344.0 L337.0 344.0 L341.0 338.0 L349.0 350.0 L357.0 338.0 L365.0 350.0 L369.0 344.0 L398.0 344.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="332.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R8</text>
+<text x="357.0" y="332.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">330Ω</text>
+<path d="M398.0 344.0 L429.0 344.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 344.0 L478.0 344.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 334.0 L429.0 354.0 L447.0 344.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="334.0" x2="447.0" y2="354.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 331.0 L446.0 320.0 M440.0 321.0 L446.0 320.0 L445.0 326.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 333.0 L453.0 322.0 M447.0 323.0 L453.0 322.0 L452.0 328.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="338.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D8</text>
+<text x="522.0" y="338.0" font-size="11" text-anchor="start" font-weight="700" fill="#c79100">黄</text>
+<path d="M478.0 344.0 L578.0 344.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="344.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 382.0 L337.0 382.0 L341.0 376.0 L349.0 388.0 L357.0 376.0 L365.0 388.0 L369.0 382.0 L398.0 382.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="370.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R9</text>
+<text x="357.0" y="370.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">100Ω</text>
+<path d="M398.0 382.0 L429.0 382.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 382.0 L478.0 382.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 372.0 L429.0 392.0 L447.0 382.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="372.0" x2="447.0" y2="392.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 369.0 L446.0 358.0 M440.0 359.0 L446.0 358.0 L445.0 364.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 371.0 L453.0 360.0 M447.0 361.0 L453.0 360.0 L452.0 366.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="376.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D9</text>
+<text x="522.0" y="376.0" font-size="11" text-anchor="start" font-weight="700" fill="#2f6fde">青</text>
+<path d="M478.0 382.0 L578.0 382.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="382.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 420.0 L337.0 420.0 L341.0 414.0 L349.0 426.0 L357.0 414.0 L365.0 426.0 L369.0 420.0 L398.0 420.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<text x="349.0" y="408.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">R10</text>
+<text x="357.0" y="408.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">100Ω</text>
+<path d="M398.0 420.0 L429.0 420.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M447.0 420.0 L478.0 420.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M429.0 410.0 L429.0 430.0 L447.0 420.0 Z" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round"/>
+<line x1="447.0" y1="410.0" x2="447.0" y2="430.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<path d="M437.0 407.0 L446.0 396.0 M440.0 397.0 L446.0 396.0 L445.0 402.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<path d="M444.0 409.0 L453.0 398.0 M447.0 399.0 L453.0 398.0 L452.0 404.0" fill="none" stroke="#2b2f36" stroke-width="1.6" stroke-linecap="round"/>
+<text x="488.0" y="414.0" font-size="11" text-anchor="start" font-weight="700" fill="#2b2f36">D10</text>
+<text x="522.0" y="414.0" font-size="11" text-anchor="start" font-weight="700" fill="#8a8f98">白</text>
+<path d="M478.0 420.0 L578.0 420.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="420.0" r="3.8" fill="#2b2f36"/>
+<path d="M578.0 78.0 L578.0 496.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M308.0 458.0 L578.0 458.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<circle cx="578.0" cy="458.0" r="3.8" fill="#2b2f36"/>
+<path d="M308.0 496.0 L428.0 496.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<path d="M458.0 496.0 L578.0 496.0" fill="none" stroke="#2b2f36" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
+<line x1="428.0" y1="482.0" x2="428.0" y2="510.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<line x1="438.0" y1="489.0" x2="438.0" y2="503.0" stroke="#2b2f36" stroke-width="4" stroke-linecap="round"/>
+<line x1="448.0" y1="482.0" x2="448.0" y2="510.0" stroke="#2b2f36" stroke-width="2" stroke-linecap="round"/>
+<line x1="458.0" y1="489.0" x2="458.0" y2="503.0" stroke="#2b2f36" stroke-width="4" stroke-linecap="round"/>
+<text x="421.0" y="486.0" font-size="13" text-anchor="end" font-weight="700" fill="#2b2f36">+</text>
+<text x="443.0" y="530.0" font-size="12" text-anchor="end" font-weight="700" fill="#2b2f36">BT1</text>
+<text x="449.0" y="530.0" font-size="12" text-anchor="start" font-weight="400" fill="#555c66">4.5V（単3×3本）</text>
+</svg>
