@@ -26,7 +26,7 @@ The photos come from Wikimedia Commons. Authors and licences are listed below. T
 | [Heat-shrink tubing](https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [Multimeter](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
-## 7. Using the tools (breadboards and soldering)
+## 7. Using the tools
 
 | Photo | Author | Licence |
 | --- | --- | --- |

@@ -26,7 +26,7 @@
 | [熱収縮チューブ](https://commons.wikimedia.org/wiki/File:Heat-shrink_tubing.jpg) | oomlout | [CC BY-SA 2.0](https://creativecommons.org/licenses/by-sa/2.0) |
 | [テスター](https://commons.wikimedia.org/wiki/File:2017_Cyfrowy_miernik_uniwersalny.jpg) | Jacek Halicki | [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0) |
 
-## 7. 道具の使い方（ブレッドボード・はんだ付け）
+## 7. 道具の使い方
 
 | 写真 | 撮影者 | ライセンス |
 | --- | --- | --- |
