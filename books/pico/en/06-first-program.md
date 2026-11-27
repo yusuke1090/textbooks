@@ -358,6 +358,15 @@ int main() {
 }
 ```
 
+If the board's LED is on only while you hold USR down, and goes off when you let go, it worked.
+
+To use the external LED or button, change the numbers in the two lines at the top. The wiring stays as in "An external LED" and "An external button" above.
+
+| What you use | Line to change |
+| --- | --- |
+| The external LED (GP15) | `constexpr uint LED_PIN = 15;` |
+| The external button (GP14) | `constexpr uint BTN_PIN = 14;` |
+
 ## Try it yourself
 
 Change things little by little and see how the behavior changes.
