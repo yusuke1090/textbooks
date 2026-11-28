@@ -70,13 +70,13 @@ Amazon でそろえて約3,000円です（2026年11月）。
 | --- | --- | --- |
 | ① | Name | `xmas` と打つ。`xmas.cpp` や `xmas.uf2` の名前になる |
 | ② | Board type | **Pico** のまま。Pico 2 なら **Pico 2**、Pico W なら **Pico W** |
-| ③ | Location | **Change** を押し、ホームの中の `apps` フォルダを選ぶ。`/home/ユーザー名/apps` と出ればよい |
+| ③ | Location | **Change** を押し、ホームの中の `dev` フォルダを選ぶ。`/home/ユーザー名/dev` と出ればよい（`~/dev/xmas` ができる） |
 | ④ | Console over USB | ☑ する。`printf` が PC に届き、次の書き込みで BOOT ボタンを押さずにすむ |
 | ⑤ | Generate C++ code | ☑ する。☐ のままだと `xmas.c`（C 言語）ができる |
 
 番号のないところ（Pico SDK version、Features、☑ ずみの Use project name as entry point file name、いちばん下の Debugger）は、そのままにします。PWM は Features にないので、手順4で足します。
 
-3. いちばん下の **Create** を押す。VS Code が `~/apps/xmas` を開き直し、左に `xmas.cpp` と `CMakeLists.txt` が出れば成功（初めてのときは SDK のダウンロードで数分かかる）
+3. いちばん下の **Create** を押す。VS Code が `~/dev/xmas` を開き直し、左に `xmas.cpp` と `CMakeLists.txt` が出れば成功（初めてのときは SDK のダウンロードで数分かかる）
 4. 明るさを変える PWM を使うので、`CMakeLists.txt` の `target_link_libraries` に `hardware_pwm` を足す（5章）
 
 ```cmake

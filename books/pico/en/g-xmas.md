@@ -70,13 +70,13 @@ If the battery box wires end in thin stranded wire, tin them with solder first s
 | --- | --- | --- |
 | ① | Name | Type `xmas`. It becomes the name of `xmas.cpp` and `xmas.uf2` |
 | ② | Board type | Leave it at **Pico**. For a Pico 2 choose **Pico 2**, for a Pico W **Pico W** |
-| ③ | Location | Press **Change** and pick the `apps` folder in your home folder. It should show `/home/username/apps` |
+| ③ | Location | Press **Change** and pick the `dev` folder in your home folder. It should show `/home/username/dev` (this makes `~/dev/xmas`) |
 | ④ | Console over USB | Tick it. `printf` reaches your PC, and you won't need the BOOT button next time you write |
 | ⑤ | Generate C++ code | Tick it. If left unticked you get `xmas.c` (C language) |
 
 Leave everything without a number as it is (Pico SDK version, Features, the already-ticked Use project name as entry point file name, and Debugger at the bottom). PWM isn't in Features, so you add it in step 4.
 
-3. Press **Create** at the very bottom. VS Code reopens in `~/apps/xmas`; if `xmas.cpp` and `CMakeLists.txt` appear on the left, it worked (the first time takes a few minutes to download the SDK)
+3. Press **Create** at the very bottom. VS Code reopens in `~/dev/xmas`; if `xmas.cpp` and `CMakeLists.txt` appear on the left, it worked (the first time takes a few minutes to download the SDK)
 4. The brightness uses PWM, so add `hardware_pwm` to `target_link_libraries` in `CMakeLists.txt` (Chapter 5)
 
 ```cmake
