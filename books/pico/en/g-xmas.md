@@ -245,6 +245,8 @@ The Pico, resistors and battery stay on the board at the foot of the tree.
 | Insulating tape | A little | To wrap the soldered joints. Heat-shrink tubing is neater if you have it |
 | Wire cutters | 1 | To cut the wire and strip the ends. Scissors will do |
 
+![Video: extending an LED with red-black 2-core wire and hanging it on the tree (steps ①–⑩ below)](videos/en/xmas-hang.mp4)
+
 1. Unplug the USB cable and switch off the battery
 2. Cut ten jumper wires in the middle. That gives 20 wires with a male end; strip about 5 mm from each cut end
 3. Decide which branch each LED goes on, and cut the two-core wire to the distance from the foot of the tree to that branch plus 20 cm. You are splitting 20 m into ten, so keep the average to 2 m or less
