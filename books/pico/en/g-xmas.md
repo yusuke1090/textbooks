@@ -61,8 +61,23 @@ If the battery box wires end in thin stranded wire, tin them with solder first s
 
 ## Making the project in VS Code
 
-1. In VS Code, open **New C/C++ Project** from the Raspberry Pi Pico extension (Chapter 4). Name it `xmas`, put it in `~/apps`, and tick **Console over USB** and **Generate C++ code**
-2. The brightness uses PWM, so add `hardware_pwm` to `target_link_libraries` in `CMakeLists.txt` (Chapter 5)
+1. In VS Code, click the Pico icon on the left, then **New C/C++ Project** under Quick Access (Chapter 4)
+2. Set up the screen that opens as numbered in the photo
+
+![The New C/C++ Project screen (numbers match the table below; in this photo ④ and ⑤ are not ticked yet)](images/xmas-new-project.png)
+
+| No. | Item | Setting |
+| --- | --- | --- |
+| ① | Name | Type `xmas`. It becomes the name of `xmas.cpp` and `xmas.uf2` |
+| ② | Board type | Leave it at **Pico**. For a Pico 2 choose **Pico 2**, for a Pico W **Pico W** |
+| ③ | Location | Press **Change** and pick the `apps` folder in your home folder. It should show `/home/username/apps` |
+| ④ | Console over USB | Tick it. `printf` reaches your PC, and you won't need the BOOT button next time you write |
+| ⑤ | Generate C++ code | Tick it. If left unticked you get `xmas.c` (C language) |
+
+Leave everything without a number as it is (Pico SDK version, Features, the already-ticked Use project name as entry point file name, and Debugger at the bottom). PWM isn't in Features, so you add it in step 4.
+
+3. Press **Create** at the very bottom. VS Code reopens in `~/apps/xmas`; if `xmas.cpp` and `CMakeLists.txt` appear on the left, it worked (the first time takes a few minutes to download the SDK)
+4. The brightness uses PWM, so add `hardware_pwm` to `target_link_libraries` in `CMakeLists.txt` (Chapter 5)
 
 ```cmake
 target_link_libraries(xmas

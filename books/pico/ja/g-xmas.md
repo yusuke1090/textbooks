@@ -61,8 +61,23 @@ Amazon でそろえて約3,000円です（2026年11月）。
 
 ## VS Code でプロジェクトを作る
 
-1. VS Code の拡張機能「Raspberry Pi Pico」で **New C/C++ Project** を開く（4章）。名前は `xmas`、場所は `~/apps`、**Console over USB** と **Generate C++ code** に ☑ して作る
-2. 明るさを変える PWM を使うので、`CMakeLists.txt` の `target_link_libraries` に `hardware_pwm` を足す（5章）
+1. VS Code の左のピコのアイコンを押し、Quick Access の **New C/C++ Project** を押す（4章）
+2. 開いた画面を、写真の番号のとおりに設定する
+
+![New C/C++ Project の画面（番号は下の表。この写真は ④⑤ に ☑ する前）](images/xmas-new-project.png)
+
+| 番号 | 項目 | 設定 |
+| --- | --- | --- |
+| ① | Name | `xmas` と打つ。`xmas.cpp` や `xmas.uf2` の名前になる |
+| ② | Board type | **Pico** のまま。Pico 2 なら **Pico 2**、Pico W なら **Pico W** |
+| ③ | Location | **Change** を押し、ホームの中の `apps` フォルダを選ぶ。`/home/ユーザー名/apps` と出ればよい |
+| ④ | Console over USB | ☑ する。`printf` が PC に届き、次の書き込みで BOOT ボタンを押さずにすむ |
+| ⑤ | Generate C++ code | ☑ する。☐ のままだと `xmas.c`（C 言語）ができる |
+
+番号のないところ（Pico SDK version、Features、☑ ずみの Use project name as entry point file name、いちばん下の Debugger）は、そのままにします。PWM は Features にないので、手順4で足します。
+
+3. いちばん下の **Create** を押す。VS Code が `~/apps/xmas` を開き直し、左に `xmas.cpp` と `CMakeLists.txt` が出れば成功（初めてのときは SDK のダウンロードで数分かかる）
+4. 明るさを変える PWM を使うので、`CMakeLists.txt` の `target_link_libraries` に `hardware_pwm` を足す（5章）
 
 ```cmake
 target_link_libraries(xmas
